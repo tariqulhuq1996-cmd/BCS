@@ -1,0 +1,555 @@
+// ৫২তম বিসিএস প্রিলিমিনারি প্রস্তুতি প্ল্যাটফর্ম — ডেটাবেস স্কিমা
+// নকশার ব্যাখ্যা: docs/ARCHITECTURE.md
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─────────────────────────────────────────────── ব্যবহারকারী ও প্রমাণীকরণ
+
+enum Role {
+  STUDENT
+  ADMIN
+}
+
+model User {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  passwordHash String
+  role         Role      @default(STUDENT)
+  disabled     Boolean   @default(false)
+  createdAt    DateTime  @default(now())
+  lastLoginAt  DateTime?
+
+  profile        StudentProfile?
+  sessions       Session[]
+  resetTokens    PasswordResetToken[]
+  progress       StudentTaskProgress[]
+  attempts       TestAttempt[]
+  questionStats  QuestionStat[]
+  masteryRecords MasteryRecord[]
+  revisionDays   RevisionSession[]
+  bookmarks      Bookmark[]
+  achievements   UserAchievement[]
+}
+
+model StudentProfile {
+  userId       String   @id
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name         String
+  phone        String?
+  targetBcs    Int      @default(52)
+  dailyGoalMin Int      @default(120)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+/// সার্ভার-সাইড সেশন; কুকিতে শুধু র‍্যান্ডম টোকেন, ডেটাবেসে তার SHA-256 হ্যাশ।
+model Session {
+  id        String   @id // token hash
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  expiresAt DateTime
+  userAgent String?
+
+  @@index([userId])
+}
+
+model PasswordResetToken {
+  id        String    @id // token hash
+  userId    String
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+
+  @@index([userId])
+}
+
+// ─────────────────────────────────────────────── সিলেবাস-শ্রেণিবিন্যাস (Subject → Topic → Subtopic)
+
+enum PriorityGrade {
+  A
+  B
+  C
+  D
+}
+
+model Subject {
+  id       Int     @id @default(autoincrement())
+  code     String  @unique // BN, EN, BD, IA, GE, SC, IT, MA, MN, ET
+  nameBn   String
+  order    Int
+  marks200 Int // ৫১তম থেকে নতুন মানবণ্টন
+  topics   Topic[]
+}
+
+model Topic {
+  id            Int            @id @default(autoincrement())
+  code          String         @unique // যেমন BN.BH
+  subjectId     Int
+  subject       Subject        @relation(fields: [subjectId], references: [id])
+  nameBn        String
+  order         Int
+  priorityScore Float?
+  priorityGrade PriorityGrade?
+  subtopics     Subtopic[]
+}
+
+/// ধাপ ০৯-এর Priority List থেকে আসা সব তথ্য এখানে।
+model Subtopic {
+  id              Int            @id @default(autoincrement())
+  code            String         @unique // যেমন BN.BH.SHD
+  topicId         Int
+  topic           Topic          @relation(fields: [topicId], references: [id])
+  nameBn          String
+  order           Int
+  priorityGrade   PriorityGrade?
+  priorityScore   Float?
+  histTotal       Int? // সাধারণ বিসিএসে মোট প্রশ্ন
+  presenceAll     String? // যেমন "২৪/৩২"
+  presence200     String? // যেমন "১১/১২"
+  recentCount     Int?
+  trend           String? // বেড়েছে / কমেছে / স্থিতিশীল …
+  whyBn           String?
+  tipBn           String?
+  introBn         String? // Level 2 Topic Introduction (অ্যাডমিন লিখবেন)
+  targetQuestions Int? // Level 2-এ নতুন প্রশ্নের লক্ষ্য (অনুমোদনের পর বসবে)
+
+  questions Question[]
+  tasks     LearningTask[]
+}
+
+// ─────────────────────────────────────────────── পরীক্ষা ও প্রশ্ন
+
+enum ExamType {
+  GENERAL_100
+  GENERAL_200
+  SPECIAL
+}
+
+enum ExamCompleteness {
+  COMPLETE
+  PARTIAL
+}
+
+model Exam {
+  id            Int              @id @default(autoincrement())
+  bcsNo         Int              @unique
+  type          ExamType
+  expectedCount Int // ধরন থেকে নির্ণীত (১০০/২০০)
+  questionCount Int              @default(0)
+  completeness  ExamCompleteness @default(COMPLETE)
+  notesBn       String?
+  questions     Question[]
+  tasks         LearningTask[]
+}
+
+enum QuestionKind {
+  HISTORICAL // ১০ম–৫০তম বিসিএসের প্রকৃত প্রশ্ন
+  TOPIC // Level 2-এর নতুন প্রশ্ন
+}
+
+enum QuestionStatus {
+  DRAFT
+  VERIFIED // উত্তর ও উৎস যাচাইকৃত, এখনও প্রকাশিত নয়
+  PUBLISHED
+  RETIRED // ত্রুটিপূর্ণ / বাতিল
+}
+
+enum ExplanationStatus {
+  NONE
+  DRAFT // আছে, যাচাই বাকি — শিক্ষার্থী "যাচাই চলছে" লেবেলসহ দেখবে
+  VERIFIED
+}
+
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
+}
+
+model Question {
+  id                String            @id @default(cuid())
+  uid               String            @unique // H-<বিসিএস>-<প্রশ্ন নং> বা T-<subtopic>-<ক্রম>
+  kind              QuestionKind
+  text              String
+  options           String[] // ঠিক ৪টি
+  correctIndex      Int? // ০–৩; null = উত্তর নেই
+  explanation       String?
+  explanationStatus ExplanationStatus @default(NONE)
+  subtopicId        Int
+  subtopic          Subtopic          @relation(fields: [subtopicId], references: [id])
+  difficulty        Difficulty?
+  questionType      String? // যেমন সরাসরি তথ্য, প্রয়োগ, হিসাব …
+  source            String?
+  examId            Int?
+  exam              Exam?             @relation(fields: [examId], references: [id])
+  examQNo           String?
+  examPage          Int?
+  examSection       String? // সংশ্লিষ্ট পরীক্ষার ধরন-লেবেল (মূল TSV-র "ধরন")
+  verifyClass       String? // V C J S D X N (ধাপ ০৭)
+  verifyNote        String?
+  answerNote        String?
+  classConfidence   String? // স্বাভাবিক / নিম্ন
+  secondaryTag      String?
+  status            QuestionStatus    @default(DRAFT)
+  textHash          String // স্বাভাবিকীকৃত লেখার হ্যাশ — Duplicate শনাক্তকরণ
+  importBatchId     Int?
+  importBatch       ImportBatch?      @relation(fields: [importBatchId], references: [id])
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+
+  families      QuestionFamily[]
+  answers       AttemptAnswer[]
+  stats         QuestionStat[]
+  bookmarks     Bookmark[]
+  modelTestUses ModelTestQuestion[]
+
+  @@index([examId])
+  @@index([subtopicId, status])
+  @@index([textHash])
+  @@index([kind, status])
+}
+
+/// ধাপ ০৯-এর পুনরাবৃত্ত প্রশ্ন-পরিবার (১৭১টি)।
+model RepeatFamily {
+  id          Int              @id @default(autoincrement())
+  groupLabel  String? // উৎস ফাইলের প্রথম কলাম
+  sampleText  String
+  sampleOpts  String
+  subtopicBn  String
+  grade       PriorityGrade?
+  occurrences Int
+  matchType   String // হুবহু / একই তথ্য / ভিন্ন তথ্য …
+  refs        String // "36-70, 41-17, …"
+  members     QuestionFamily[]
+}
+
+model QuestionFamily {
+  familyId   Int
+  family     RepeatFamily @relation(fields: [familyId], references: [id], onDelete: Cascade)
+  questionId String
+  question   Question     @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@id([familyId, questionId])
+}
+
+model ImportBatch {
+  id         Int        @id @default(autoincrement())
+  source     String
+  format     String // json / csv / xlsx / tsv
+  rows       Int
+  inserted   Int
+  updated    Int        @default(0)
+  duplicates Int
+  errors     Json?
+  createdBy  String?
+  createdAt  DateTime   @default(now())
+  questions  Question[]
+}
+
+// ─────────────────────────────────────────────── Learning Roadmap ও নিয়ম
+
+model LearningLevel {
+  id            Int            @id @default(autoincrement())
+  no            Int            @unique
+  nameBn        String
+  descriptionBn String
+  active        Boolean        @default(true)
+  tasks         LearningTask[]
+}
+
+enum TaskKind {
+  L1_EXAM // একটি বিসিএস পরীক্ষার পূর্ণ Cycle
+  L1_FINAL
+  L2_SUBTOPIC
+  L2_CHECKPOINT // Priority Phase শেষের পরীক্ষা
+  L2_FINAL
+  L3_MODEL_TEST
+  L3_TIER_GATE
+}
+
+model LearningTask {
+  id          Int           @id @default(autoincrement())
+  key         String        @unique // যেমন L1:EXAM:10, L2:SUB:BN.BH.SHD, L3:MT:001
+  levelId     Int
+  level       LearningLevel @relation(fields: [levelId], references: [id])
+  kind        TaskKind
+  order       Int
+  phase       Int? // Level 2: ১=A … ৪=D; Level 3: স্তর ১–৩
+  titleBn     String
+  mandatory   Boolean       @default(true)
+  active      Boolean       @default(true)
+  examId      Int?
+  exam        Exam?         @relation(fields: [examId], references: [id])
+  subtopicId  Int?
+  subtopic    Subtopic?     @relation(fields: [subtopicId], references: [id])
+  modelTestId Int?
+  modelTest   ModelTest?    @relation(fields: [modelTestId], references: [id])
+
+  prerequisites TaskPrerequisite[]    @relation("TaskPrereq")
+  dependents    TaskPrerequisite[]    @relation("TaskPrereqOf")
+  progress      StudentTaskProgress[]
+  attempts      TestAttempt[]
+
+  @@index([levelId, order])
+}
+
+/// কোন কাজ শেষ হলে কোন কাজ খুলবে — সার্ভার এই টেবিল দেখেই Unlock যাচাই করে।
+model TaskPrerequisite {
+  taskId     Int
+  task       LearningTask @relation("TaskPrereq", fields: [taskId], references: [id], onDelete: Cascade)
+  requiresId Int
+  requires   LearningTask @relation("TaskPrereqOf", fields: [requiresId], references: [id], onDelete: Cascade)
+
+  @@id([taskId, requiresId])
+}
+
+/// অ্যাডমিন-নিয়ন্ত্রিত সব নিয়ম (Threshold, প্রশ্নসংখ্যা, Attempt-সীমা …)।
+/// scope: "global" | "level:1" | "task:L1:EXAM:39" ইত্যাদি — নির্দিষ্টতর scope আগে প্রযোজ্য।
+model RuleSetting {
+  key       String
+  scope     String   @default("global")
+  value     Json
+  noteBn    String?
+  updatedAt DateTime @updatedAt
+  updatedBy String?
+
+  @@id([key, scope])
+}
+
+// ─────────────────────────────────────────────── শিক্ষার্থীর অগ্রগতি
+
+enum TaskState {
+  LOCKED
+  AVAILABLE
+  IN_PROGRESS
+  COMPLETED
+}
+
+enum CycleStep {
+  SOLVE
+  REVIEW
+  REVISION
+  MASTERY
+  CUMULATIVE
+  DONE
+}
+
+model StudentTaskProgress {
+  userId      String
+  user        User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  taskId      Int
+  task        LearningTask @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  state       TaskState    @default(LOCKED)
+  step        CycleStep    @default(SOLVE)
+  bestScore   Float?
+  lastScore   Float?
+  unlockedAt  DateTime?
+  startedAt   DateTime?
+  completedAt DateTime?
+  overrideBy  String? // অ্যাডমিন হাতে Unlock করলে তাঁর id
+  overrideAt  DateTime?
+  updatedAt   DateTime     @updatedAt
+
+  @@id([userId, taskId])
+  @@index([userId, state])
+}
+
+enum AttemptKind {
+  SOLVE
+  REVISION
+  MASTERY
+  CUMULATIVE
+  PRACTICE
+  CHECKPOINT
+  LEVEL_FINAL
+  MODEL_TEST
+  SRS_REVIEW
+  MISTAKE_PRACTICE
+}
+
+model TestAttempt {
+  id          String          @id @default(cuid())
+  userId      String
+  user        User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  taskId      Int?
+  task        LearningTask?   @relation(fields: [taskId], references: [id])
+  kind        AttemptKind
+  partNo      Int             @default(1)
+  questionIds String[] // ক্রমানুসারে
+  optionPerms Json // প্রতিটি প্রশ্নের অপশন-বিন্যাস
+  startedAt   DateTime        @default(now())
+  deadlineAt  DateTime? // টাইমারযুক্ত পরীক্ষায়; সার্ভার এর পরে জমা নেয় না (Auto Submit)
+  submittedAt DateTime?
+  correct     Int?
+  wrong       Int?
+  unanswered  Int?
+  scorePct    Float?
+  netScore    Float? // নেগেটিভ মার্কিংসহ
+  threshold   Float?
+  passed      Boolean?
+  reviewedAt  DateTime? // ফলাফল ও ব্যাখ্যা দেখা নিশ্চিত
+  answers     AttemptAnswer[]
+
+  @@index([userId, taskId, kind])
+  @@index([userId, submittedAt])
+}
+
+enum Confidence {
+  SURE
+  UNSURE
+}
+
+model AttemptAnswer {
+  attemptId  String
+  attempt    TestAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  questionId String
+  question   Question    @relation(fields: [questionId], references: [id])
+  selected   Int? // মূল অপশন-সূচক (০–৩), বিন্যাস উল্টে সংরক্ষিত
+  isCorrect  Boolean?
+  confidence Confidence  @default(SURE)
+  marked     Boolean     @default(false)
+  timeMs     Int?
+
+  @@id([attemptId, questionId])
+  @@index([questionId])
+}
+
+/// প্রতি শিক্ষার্থী × প্রশ্ন: ভুলের ভান্ডার, দুর্বল প্রশ্ন ও Spaced Repetition (Leitner) একসঙ্গে।
+model QuestionStat {
+  userId         String
+  user           User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  questionId     String
+  question       Question  @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  seen           Int       @default(0)
+  correct        Int       @default(0)
+  wrong          Int       @default(0)
+  lastCorrect    Boolean?
+  lowConfCorrect Int       @default(0)
+  lastSeenAt     DateTime?
+  lastWrongAt    DateTime?
+  leitnerBox     Int       @default(0) // ০ = সারিতে নেই; ১–৫
+  dueAt          DateTime?
+  marked         Boolean   @default(false)
+
+  @@id([userId, questionId])
+  @@index([userId, dueAt])
+  @@index([userId, wrong])
+}
+
+model RevisionSession {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  day        DateTime @db.Date
+  dueCount   Int
+  doneCount  Int      @default(0)
+  attemptIds String[]
+
+  @@unique([userId, day])
+}
+
+enum MasteryScope {
+  EXAM
+  SUBTOPIC
+  TOPIC
+  SUBJECT
+  LEVEL
+}
+
+model MasteryRecord {
+  id        String       @id @default(cuid())
+  userId    String
+  user      User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  scope     MasteryScope
+  scopeRef  String // exam bcsNo / subtopic code / …
+  scorePct  Float
+  attemptId String?
+  createdAt DateTime     @default(now())
+
+  @@index([userId, scope, scopeRef])
+}
+
+// ─────────────────────────────────────────────── Level 3: Model Test
+
+enum ModelTestStatus {
+  DRAFT
+  APPROVED
+  PUBLISHED
+}
+
+model ModelTest {
+  id           Int                 @id @default(autoincrement())
+  no           Int                 @unique // ১–১৫০
+  tier         Int // ১: ১–৫০, ২: ৫১–১০০, ৩: ১০১–১৫০
+  status       ModelTestStatus     @default(DRAFT)
+  blueprint    Json
+  durationMin  Int                 @default(120)
+  negativeMark Float               @default(0.5)
+  createdAt    DateTime            @default(now())
+  publishedAt  DateTime?
+  questions    ModelTestQuestion[]
+  tasks        LearningTask[]
+}
+
+model ModelTestQuestion {
+  modelTestId Int
+  modelTest   ModelTest @relation(fields: [modelTestId], references: [id], onDelete: Cascade)
+  questionId  String
+  question    Question  @relation(fields: [questionId], references: [id])
+  position    Int
+
+  @@id([modelTestId, position])
+  @@unique([modelTestId, questionId])
+}
+
+// ─────────────────────────────────────────────── অন্যান্য
+
+model Bookmark {
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  questionId String
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  note       String?
+  createdAt  DateTime @default(now())
+
+  @@id([userId, questionId])
+}
+
+model Achievement {
+  key    String            @id
+  nameBn String
+  descBn String
+  icon   String
+  users  UserAchievement[]
+}
+
+model UserAchievement {
+  userId         String
+  user           User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievementKey String
+  achievement    Achievement @relation(fields: [achievementKey], references: [key])
+  earnedAt       DateTime    @default(now())
+
+  @@id([userId, achievementKey])
+}
+
+model AuditLog {
+  id       BigInt   @id @default(autoincrement())
+  actorId  String?
+  action   String
+  entity   String
+  entityId String?
+  data     Json?
+  at       DateTime @default(now())
+
+  @@index([entity, entityId])
+}
