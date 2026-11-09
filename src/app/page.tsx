@@ -1,69 +1,159 @@
-import Image from "next/image";
+import Link from "next/link";
+import { getResearch } from "@/lib/research/data";
+import { bn, bnNum } from "@/lib/bn";
+import { OmrQuestion } from "@/components/home/omr-question";
+import { Section, SourceNote } from "@/components/ui/section";
+import { SubjectShare } from "@/components/charts/subject-share";
+import { SubjectTimeline } from "@/components/charts/subject-timeline";
+import { TopicRanking } from "@/components/charts/topic-ranking";
+import { Heatmap } from "@/components/charts/heatmap";
+import { TrendChange } from "@/components/home/trend-change";
+import { RepeatList } from "@/components/home/repeat-list";
+import { RoadmapPreview } from "@/components/home/roadmap-preview";
 
-export default function Home() {
+export default async function Home() {
+  const r = await getResearch();
+  const t = r.totals;
+  const marks200 = Object.fromEntries(r.subjects.map((s) => [s.code, s.marks200]));
+  const priorityA = r.subtopics.filter((s) => s.grade === "A");
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
+    <>
+      {/* ── Hero */}
+      <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 pt-12 sm:px-6 sm:pt-16 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
+        <div>
+          <h1 className="text-[40px] font-extrabold leading-[1.15] sm:text-[56px]" style={{ fontStretch: "112%" }}>
+            ৫২তম BCS Preliminary — গবেষণাভিত্তিক স্মার্ট প্রস্তুতি
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="mt-5 max-w-xl text-lg text-ink-2">
+            বিগত BCS পরীক্ষার প্রশ্ন বিশ্লেষণ থেকে শুরু করে বিষয়ভিত্তিক অনুশীলন, Revision এবং পূর্ণাঙ্গ Model Test — সম্পূর্ণ প্রস্তুতি একটি নির্দিষ্ট
+            Learning Roadmap অনুসরণ করে।
+          </p>
+          <div className="mt-8 flex flex-wrap items-center gap-4">
+            <Link href="/register" className="rounded-lg bg-green px-6 py-3 text-lg font-semibold text-white hover:bg-green-strong dark:text-paper">
+              ৫২তম BCS প্রস্তুতি শুরু করুন
+            </Link>
+            <Link href="/login" className="text-ink-2 underline underline-offset-4 hover:text-ink">
+              আগে থেকে অ্যাকাউন্ট আছে? লগইন করুন
+            </Link>
+          </div>
+          <p className="mt-10 max-w-xl text-[15px] text-ink-2">
+            ভিত্তি: {bn(t.exams)}টি বিসিএস প্রিলিমিনারির {bnNum(t.questions)}টি প্রশ্ন, {bn(t.subjects)}টি বিষয়, {bn(t.topics)}টি টপিক ও {bn(t.subtopics)}টি উপবিষয়ে
+            ভাগ করে গোনা। এর মধ্যে {bn(t.families)}টি প্রশ্ন একাধিক পরীক্ষায় ফিরে এসেছে।
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <OmrQuestion
+          text={r.hero.text}
+          options={r.hero.options}
+          correctIndex={r.hero.correctIndex!}
+          examNos={r.hero.examNos}
+          explanation={r.hero.explanation}
+          explanationVerified={r.hero.explanationVerified}
+        />
+      </section>
+
+      {/* ── বিষয়ভিত্তিক বণ্টন */}
+      <Section
+        id="subjects"
+        title="কোন বিষয় থেকে কত প্রশ্ন আসে"
+        lead={`${bn(t.generalExams)}টি সাধারণ বিসিএস (১০০ ও ২০০ নম্বর) এবং ${bn(t.specialExams)}টি বিশেষ বিসিএস আলাদা করে গোনা হয়েছে, কারণ এদের বিষয়ের ভার আলাদা।`}
+      >
+        <SubjectShare data={r.subjectByType} marks200={marks200} />
+      </Section>
+
+      <Section
+        id="timeline"
+        title="বিসিএস থেকে বিসিএসে একটি বিষয়ের ভার"
+        lead="প্রতিটি সাধারণ বিসিএসে বাছাই করা বিষয়ের প্রশ্ন মোট প্রশ্নের কত শতাংশ। ৩৫তম থেকে পরীক্ষা ২০০ নম্বরের।"
+      >
+        <SubjectTimeline points={r.timeline} subjects={r.subjects} />
+      </Section>
+
+      {/* ── টপিক */}
+      <Section
+        id="topics"
+        title="কোন টপিক সবচেয়ে গুরুত্বপূর্ণ"
+        lead="৫২তম বিসিএসের জন্য টপিক-স্তরের Priority Score (১০০-এর মধ্যে): মোট প্রশ্ন, কতগুলো পরীক্ষায় এসেছে, ২০০ নম্বরের যুগে উপস্থিতি আর সাম্প্রতিক প্রবণতা মিলিয়ে। টপিকে চাপ দিলে বিস্তারিত দেখাবে।"
+      >
+        <TopicRanking topics={r.topics} subjects={r.subjects} />
+        <SourceNote>Score ও A–D শ্রেণি: গবেষণার ধাপ ০৯। প্রশ্নসংখ্যা: ডেটাবেস থেকে সরাসরি গোনা।</SourceNote>
+      </Section>
+
+      {/* ── Heatmap */}
+      <Section
+        id="heatmap"
+        title="কোন উপবিষয় বারবার আসে"
+        lead={`Priority Score অনুযায়ী শীর্ষ ২৫টি উপবিষয়, প্রতিটি সাধারণ বিসিএসে কতটি প্রশ্ন এসেছে। গাঢ় ঘর মানে বেশি প্রশ্ন; টানা গাঢ় সারি মানে ধারাবাহিকভাবে গুরুত্বপূর্ণ।`}
+        aside={<Link href="/research#heatmap" className="text-sm text-green underline underline-offset-4">সব {bn(t.subtopics)}টি উপবিষয় দেখুন</Link>}
+      >
+        <Heatmap rows={r.heat.rows.slice(0, 25)} exams={r.heat.exams} caption="শীর্ষ ২৫টি উপবিষয়ে প্রতিটি সাধারণ বিসিএসের প্রশ্নসংখ্যা" />
+      </Section>
+
+      {/* ── সাম্প্রতিক প্রবণতা */}
+      <Section
+        id="trend"
+        title="৪০তম–৫০তম বিসিএসে কী বদলেছে"
+        lead={`২০০ নম্বরের প্রথম চারটি পরীক্ষার (৩৫–৩৮তম) সঙ্গে সাম্প্রতিক আটটি সাধারণ পরীক্ষার তুলনা, টপিকে পরীক্ষাপ্রতি গড় প্রশ্ন ধরে। উপবিষয়-স্তরে ${bn(r.trendCounts["বেড়েছে"] ?? 0)}টির গুরুত্ব বেড়েছে, ${bn(r.trendCounts["কমেছে"] ?? 0)}টির কমেছে।`}
+      >
+        <TrendChange topics={r.topics} periods={r.periods} />
+      </Section>
+
+      {/* ── পুনরাবৃত্ত প্রশ্ন */}
+      <Section
+        id="repeats"
+        title="যে প্রশ্ন বারবার ফিরে আসে"
+        lead={`${bn(t.families)}টি প্রশ্ন অন্তত দুটি বিসিএসে এসেছে; এর মধ্যে ${bn(t.families3)}টি এসেছে তিন বা তার বেশি পরীক্ষায়। সেগুলো এখানে।`}
+        aside={<Link href="/repeated-questions" className="text-sm text-green underline underline-offset-4">সব {bn(t.families)}টি প্রশ্ন দেখুন</Link>}
+      >
+        <RepeatList families={r.families.filter((f) => f.occurrences >= 3)} />
+      </Section>
+
+      {/* ── Priority A */}
+      <Section
+        id="priority"
+        title="৫২তম বিসিএসের সর্বোচ্চ অগ্রাধিকার"
+        lead={`${bn(t.subtopics)}টি উপবিষয়ের মধ্যে Priority A পেয়েছে ${bn(priorityA.length)}টি: এগুলো প্রথমে, গভীরভাবে পড়ার এবং প্রতি সপ্তাহে Revision দেওয়ার মতো।`}
+        aside={<Link href="/research#priority" className="text-sm text-green underline underline-offset-4">পূর্ণ Priority List দেখুন</Link>}
+      >
+        <ul className="grid gap-x-10 sm:grid-cols-2">
+          {priorityA.map((s) => (
+            <li key={s.code} className="flex items-baseline gap-3 border-b border-line py-2.5">
+              <span className="w-10 shrink-0 text-sm tabular text-muted">{bnNum(s.score ?? 0, 1)}</span>
+              <span className="text-[15px] leading-snug">
+                {s.nameBn}
+                <span className="block text-xs text-muted">{s.subjectBn}</span>
+              </span>
+            </li>
+          ))}
+        </ul>
+        <SourceNote>
+          বাকি: {r.totals.gradeCounts.filter((g) => g.grade !== "A").map((g) => `Priority ${g.grade} ${bn(g.n)}টি`).join(", ")}।
+        </SourceNote>
+      </Section>
+
+      {/* ── Roadmap */}
+      <Section
+        id="roadmap"
+        title="প্রস্তুতি এগোবে তিনটি Level-এ"
+        lead="প্রতিটি ধাপ শেষ করে নির্ধারিত নম্বর পেলে তবেই পরের ধাপ খোলে। কী পড়তে হবে খুঁজতে হবে না: Dashboard প্রতিদিন বলে দেবে আজকের কাজ।"
+      >
+        <RoadmapPreview exams={t.exams} specialExams={t.specialExams} subtopics={t.subtopics} gradeCounts={t.gradeCounts} />
+      </Section>
+
+      {/* ── CTA */}
+      <section className="mx-auto max-w-6xl px-4 pt-24 sm:px-6">
+        <div className="flex flex-col items-start gap-5 rounded-2xl border border-green bg-green-wash px-6 py-10 sm:px-10 lg:flex-row lg:items-center lg:justify-between">
+          <div className="max-w-xl">
+            <h2 className="text-[26px] font-bold sm:text-[32px]" style={{ fontStretch: "110%" }}>
+              প্রথম কাজ: ১০ম বিসিএসের প্রশ্নপত্র
+            </h2>
+            <p className="mt-2 text-ink-2">অ্যাকাউন্ট খুললেই Level 1 শুরু। আপনার অগ্রগতি সংরক্ষিত থাকবে, অন্য দিন লগইন করে সেখান থেকেই চালিয়ে যেতে পারবেন।</p>
+          </div>
+          <Link href="/register" className="rounded-lg bg-green px-6 py-3 text-lg font-semibold text-white hover:bg-green-strong dark:text-paper">
+            আমি ৫২তম BCS-এর প্রস্তুতি শুরু করতে চাই
+          </Link>
         </div>
-      </main>
-    </div>
+      </section>
+    </>
   );
 }

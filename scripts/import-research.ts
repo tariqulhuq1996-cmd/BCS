@@ -230,6 +230,30 @@ async function main() {
     } else problems.push(`পুনরাবৃত্তি-পরিবার "${text.slice(0, 30)}…": কোনো রেফারেন্স মেলেনি`);
   }
 
+  // ── ৭. টপিক-স্তরের Priority Score (ধাপ ০৯ HTML-এর "টপিক-স্তর:" লাইন)
+  const html = readFileSync(path.join(SRC, "step09_priority.html"), "utf8")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&nbsp;/g, " ");
+  const topicByName = new Map((await prisma.topic.findMany()).map((t) => [t.nameBn, t.id]));
+  let topicScored = 0;
+  for (const line of html.matchAll(/টপিক-স্তর:([^\n]*?)(?=Priority A|\n)/g)) {
+    for (const m of line[1].matchAll(/([^;—]+?)\s+—\s+([০-৯.]+)\s+\(([A-D])\)/g)) {
+      const name = m[1].trim();
+      const id = topicByName.get(name);
+      if (!id) {
+        problems.push(`টপিক-স্কোর: "${name}" নামের টপিক ডেটাবেসে নেই`);
+        continue;
+      }
+      await prisma.topic.update({
+        where: { id },
+        data: { priorityScore: parseFloat(toAscii(m[2])), priorityGrade: m[3] as PriorityGrade },
+      });
+      topicScored++;
+    }
+  }
+  console.log(`টপিক-স্তরের Priority Score: ${topicScored}/${topicByName.size}`);
+
   await prisma.importBatch.update({
     where: { id: batch.id },
     data: { inserted, updated, duplicates: 0, errors: problems.length ? problems : undefined },
