@@ -4,7 +4,8 @@ import { Suspense } from "react";
 import { requireUser } from "@/lib/auth/session";
 import { getStudentTasks } from "@/lib/progress/dashboard";
 import { LOCKED_MESSAGE } from "@/lib/progress/cycle";
-import { bn } from "@/lib/bn";
+import { bn, bnNum } from "@/lib/bn";
+import { prisma } from "@/lib/db";
 import { GradeBadge } from "@/components/ui/grade";
 import { ProgressBar } from "@/components/portal/progress-bar";
 
@@ -30,12 +31,22 @@ async function Content() {
   const tasks = (await getStudentTasks(user.id)).filter((t) => t.levelNo === 2);
   const done = tasks.filter((t) => t.state === "COMPLETED").length;
   const levelLocked = tasks.every((t) => t.state === "LOCKED");
+  // প্রতিটি Priority ধাপে প্রশ্নের লক্ষ্য বনাম প্রকাশিত
+  const content = await prisma.$queryRaw<{ grade: string; target: number; published: number }[]>`
+    select st."priorityGrade"::text as grade, sum(st."targetQuestions")::int as target,
+      (select count(*)::int from "Question" q join "Subtopic" s2 on s2.id = q."subtopicId"
+        where q.kind = 'TOPIC' and q.status = 'PUBLISHED' and s2."priorityGrade" = st."priorityGrade") as published
+    from "Subtopic" st where st."priorityGrade" is not null group by st."priorityGrade"`;
+  const cBy = new Map(content.map((c) => [c.grade, c]));
+  const totTarget = content.reduce((a, c) => a + (c.target ?? 0), 0);
+  const totPub = content.reduce((a, c) => a + c.published, 0);
 
   return (
     <>
       <div className="mt-6 max-w-xl">
         <ProgressBar pct={(done / tasks.length) * 100} label="Level ২-এর অগ্রগতি" />
         <p className="mt-2 text-sm text-ink-2">{bn(done)}/{bn(tasks.length)} ধাপ সম্পন্ন</p>
+        <p className="mt-1 text-sm text-muted">প্রশ্নভান্ডার: লক্ষ্য {bnNum(totTarget)}টির মধ্যে {bnNum(totPub)}টি যাচাই করে প্রকাশিত</p>
       </div>
       {levelLocked && (
         <p className="mt-6 rounded-lg border border-dashed border-line-strong px-4 py-3 text-ink-2">
@@ -52,7 +63,9 @@ async function Content() {
             <summary className="flex cursor-pointer flex-wrap items-center gap-3 px-5 py-4">
               <GradeBadge grade={g} />
               <span className="text-lg font-bold">Priority {g}</span>
-              <span className="text-sm text-ink-2">{bn(subs.length)}টি উপবিষয়, {bn(phaseDone)}টি সম্পন্ন</span>
+              <span className="text-sm text-ink-2">
+                {bn(subs.length)}টি উপবিষয়, {bn(phaseDone)}টি সম্পন্ন; প্রশ্ন {bnNum(cBy.get(g)?.published ?? 0)}/{bnNum(cBy.get(g)?.target ?? 0)}
+              </span>
               <span className="ml-auto text-sm text-muted">{open ? "খোলা" : "তালাবন্ধ"}</span>
             </summary>
             <ul className="grid gap-x-8 border-t border-line px-5 py-3 sm:grid-cols-2">

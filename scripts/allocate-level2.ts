@@ -92,7 +92,9 @@ async function main() {
 
   // ── প্রতিবেদন
   const lines = [
-    "# Level 2: উপবিষয়ভিত্তিক নতুন প্রশ্নের লক্ষ্য (প্রস্তাব — অনুমোদন বাকি)",
+    WRITE
+      ? `# Level 2: উপবিষয়ভিত্তিক নতুন প্রশ্নের লক্ষ্য (অনুমোদিত, ${new Date().toLocaleDateString("bn-BD", { day: "numeric", month: "long", year: "numeric", timeZone: "Asia/Dhaka" })})`
+      : "# Level 2: উপবিষয়ভিত্তিক নতুন প্রশ্নের লক্ষ্য (প্রস্তাব — অনুমোদন বাকি)",
     "",
     `মোট **${bn(total.toLocaleString("en-IN"))}টি** নতুন প্রশ্ন, ${bn(rows.length)}টি উপবিষয়ে। প্রতিটি উপবিষয়ে ন্যূনতম ${bn(FLOOR)}টি।`,
     "",

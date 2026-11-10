@@ -65,7 +65,7 @@ async function Content({ params, searchParams }: { params: Promise<{ code: strin
       facts={[
         { k: "Priority Score", v: st.priorityScore != null ? bnNum(st.priorityScore, 1) : "—" },
         { k: "বিগত বিসিএসে প্রশ্ন", v: st.histTotal != null ? `${bn(st.histTotal)}টি` : "—" },
-        { k: "অনুশীলনের প্রশ্ন", v: `${bn(st._count.questions)}টি` },
+        { k: "অনুশীলনের প্রশ্ন", v: st.targetQuestions ? `${bn(st._count.questions)}/${bn(st.targetQuestions)}টি প্রকাশিত` : `${bn(st._count.questions)}টি` },
         { k: "Mastery-তে লাগবে", v: `${bn(rules.get<number>("l2.threshold.mastery"))}%` },
       ]}
     >

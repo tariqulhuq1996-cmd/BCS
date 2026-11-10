@@ -10,6 +10,7 @@ npm run db            # আলাদা টার্মিনালে: স্�
 npx prisma migrate deploy
 npm run db:import     # গবেষণার ৫,৩৫২ প্রশ্ন, Priority List, পুনরাবৃত্তি-পরিবার
 npm run db:seed       # Level, নিয়ম, Roadmap-এর কাজ
+npm run db:allocate   # Level 2-এর অনুমোদিত প্রশ্ন-লক্ষ্য (১০,৪০০, উপবিষয়ভিত্তিক)
 npm run db:verify     # উৎস-ফাইলের সঙ্গে স্বাধীন মিলিয়ে দেখা
 npm run dev           # http://localhost:3000
 ```
