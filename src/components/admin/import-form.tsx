@@ -5,6 +5,9 @@ import { importAction } from "@/lib/admin/actions";
 import { bnNum } from "@/lib/bn";
 import { Notice, btn, btnGhost, input } from "./ui";
 
+/** সার্ভারে পাঠানো যায় এমন সর্বোচ্চ ফাইল-আকার (Vercel-এ অনুরোধের সীমা ৪.৫ MB; VPS-এ বাড়ানো যায়) */
+const MAX_MB = Number(process.env.NEXT_PUBLIC_MAX_UPLOAD_MB) || 4;
+
 /** ফাইল বাছাই → পূর্বরূপ (কিছু লেখা হয় না) → নিশ্চিত করলে Import। ফাইল ক্লায়েন্টের অবস্থায় থাকে, তাই দুবার বাছাই করতে হয় না। */
 export function ImportForm() {
   const [file, setFile] = useState<File | null>(null);
@@ -21,6 +24,7 @@ export function ImportForm() {
     start(() => action(fd));
   };
   const r = state?.report;
+  const tooBig = !!file && file.size > MAX_MB * 1024 * 1024;
 
   return (
     <div className="mt-6 grid max-w-3xl gap-5">
@@ -38,11 +42,17 @@ export function ImportForm() {
           </select>
         </label>
         <div className="flex flex-wrap gap-3">
-          <button type="button" disabled={!file || pending} onClick={() => run(false)} className={btnGhost}>{pending && !state?.confirmed ? "পরীক্ষা হচ্ছে…" : "পূর্বরূপ দেখুন"}</button>
-          <button type="button" disabled={!file || pending || !r || state?.confirmed || r.inserted === 0} onClick={() => run(true)} className={btn}>
+          <button type="button" disabled={!file || tooBig || pending} onClick={() => run(false)} className={btnGhost}>{pending && !state?.confirmed ? "পরীক্ষা হচ্ছে…" : "পূর্বরূপ দেখুন"}</button>
+          <button type="button" disabled={!file || tooBig || pending || !r || state?.confirmed || r.inserted === 0} onClick={() => run(true)} className={btn}>
             {r && !state?.confirmed ? `${bnNum(r.inserted)}টি প্রশ্ন Import করুন` : "Import করুন"}
           </button>
         </div>
+        {tooBig && file && (
+          <Notice kind="error">
+            ফাইলটি {bnNum(Math.round((file.size / 1048576) * 10) / 10)} MB — সর্বোচ্চ {bnNum(MAX_MB)} MB পাঠানো যায়। ফাইলটি কয়েক ভাগে ভাগ করুন (যেমন বিষয় অনুযায়ী),
+            অথবা নিজের কম্পিউটার থেকে <code>npx tsx scripts/import-questions.ts</code> চালান (docs/QUESTION_IMPORT.md)।
+          </Notice>
+        )}
         <p className="text-sm text-muted">প্রথমে পূর্বরূপ দেখুন: কিছুই লেখা হয় না, শুধু কতটি যোগ হবে, কতটি বাদ পড়বে আর কোন সারিতে ত্রুটি তা দেখায়।</p>
       </div>
 

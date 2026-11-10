@@ -3,6 +3,8 @@
 প্ল্যাটফর্মটি একটি Next.js অ্যাপ + একটি PostgreSQL ডেটাবেস। যেকোনো জায়গায় চলে যেখানে Node.js ২০+ ও PostgreSQL ১৫+ পাওয়া যায়।
 নিচে দুটি পথ; **কোনটি বেছে নেবেন তা আপনার সিদ্ধান্ত** (খরচ, নিয়ন্ত্রণ, কে দেখাশোনা করবে)। দাম সময়ের সঙ্গে বদলায় — অ্যাকাউন্ট খোলার আগে সেবাদাতার বর্তমান মূল্য দেখে নিন।
 
+> **নির্বাচিত পথ: Hostinger (Business/Cloud) + Neon** — ধাপে ধাপে নির্দেশনা: [DEPLOY_HOSTINGER.md](DEPLOY_HOSTINGER.md)
+
 ## পথ ক: ব্যবস্থাপিত সেবা (সবচেয়ে কম রক্ষণাবেক্ষণ)
 
 | অংশ | উদাহরণ | মন্তব্য |
@@ -27,7 +29,7 @@
 git clone <repo> /srv/bcs52 && cd /srv/bcs52/platform
 cp .env.example .env && nano .env          # DATABASE_URL, APP_URL, SMTP_* বসান
 npm ci
-npm run build                               # .next/standalone তৈরি হয়
+BUILD_STANDALONE=1 npm run build            # .next/standalone তৈরি হয়
 npm run setup:prod                          # প্রথমবার: টেবিল, গবেষণার ডেটা, Roadmap, নিয়ম, যাচাই
 npx tsx scripts/create-admin.ts <ইমেইল> '<শক্ত পাসওয়ার্ড>'
 ```
@@ -60,7 +62,7 @@ nginx (HTTPS certbot দিয়ে): `proxy_pass http://127.0.0.1:3000;` এ�
 ## প্রথমবার ডেটা
 
 ```bash
-DATABASE_URL="<প্রোডাকশন ডেটাবেস>" npm run setup:prod
+DATABASE_URL="<প্রোডাকশন ডেটাবেস>" DIRECT_URL="<সরাসরি সংযোগ>" npm run setup:prod
 ```
 
 এটি একবারেই: টেবিল তৈরি (migration) → গবেষণার ৫,৩৫২ প্রশ্ন → Level, নিয়ম ও ৪৬৭টি ধাপ → Level ২-এর অনুমোদিত লক্ষ্য → উৎসের সঙ্গে মিল ও অখণ্ডতা যাচাই।

@@ -18,6 +18,7 @@ export function checkEnv(env = process.env): EnvReport {
     errors.push("প্রোডাকশনে স্থানীয় ডেভেলপমেন্ট ডেটাবেস ব্যবহার হচ্ছে। আসল ডেটাবেসের DATABASE_URL দিন (বা পরীক্ষার জন্য ALLOW_LOCAL_DB=1)।");
 
   if (prod) {
+    if (!env.DIRECT_URL) warnings.push("DIRECT_URL নেই — ডেটাবেস migration চালানো যাবে না (DATABASE_URL-এর সরাসরি, pool-ছাড়া ঠিকানা দিন)।");
     if (!env.APP_URL) errors.push("APP_URL নেই (যেমন https://bcs52.example.com) — ইমেইলের লিংক ও sitemap-এর জন্য লাগে।");
     else if (!/^https:\/\//.test(env.APP_URL) && env.ALLOW_LOCAL_DB !== "1") warnings.push("APP_URL https দিয়ে শুরু হয়নি।");
     const smtp = ["SMTP_HOST", "SMTP_PORT", "SMTP_USER", "SMTP_PASS", "MAIL_FROM"].filter((k) => !env[k]);
