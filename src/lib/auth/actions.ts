@@ -8,6 +8,7 @@ import { prisma } from "@/lib/db";
 import { createSession, destroySession, hashToken, newToken } from "./session";
 import { clearHits, rateLimited, recordHit } from "./rate-limit";
 import { sendPasswordResetLink } from "./mailer";
+import { ensureStarted } from "@/lib/progress/engine";
 import { LoginSchema, RegisterSchema, ResetRequestSchema, ResetSchema, type FormState } from "./schemas";
 
 const BCRYPT_COST = 12;
@@ -43,6 +44,7 @@ export async function register(_: FormState, fd: FormData): Promise<FormState> {
   const user = await prisma.user.create({
     data: { email, passwordHash: await bcrypt.hash(password, BCRYPT_COST), profile: { create: { name } } },
   });
+  await ensureStarted(prisma, user.id); // Level 1-এর প্রথম ধাপ (১০ম বিসিএস) খোলা
   await createSession(user.id, (await headers()).get("user-agent"));
   redirect(safeNext(fd.get("next")));
 }

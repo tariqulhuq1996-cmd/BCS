@@ -1,4 +1,4 @@
 {
   "_note": "শুধু স্থানীয় ডেভেলপমেন্ট ডেটাবেসের পরীক্ষামূলক অ্যাকাউন্ট। প্রোডাকশনে ব্যবহার করবেন না।",
-  "student": { "name": "পরীক্ষার্থী এক", "email": "student1@bcs52.test", "password": "Practice2026a", "passwordAfterReset": "Practice2026b" }
+  "student": { "name": "পরীক্ষার্থী এক", "email": "student1@bcs52.test", "password": "Practice2026c" }
 }

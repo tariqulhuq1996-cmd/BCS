@@ -1,0 +1,243 @@
+import "server-only";
+import type { TaskKind, TaskState } from "@prisma/client";
+import { prisma } from "@/lib/db";
+import { loadRules } from "@/lib/rules";
+import { bn, bnOrdinal } from "@/lib/bn";
+import { ensureStarted } from "./engine";
+import { L1_STEPS, L2_STEPS, type StepKey } from "./cycle";
+
+/** Level 3-এর পরিকল্পিত টেস্ট (কাজগুলো Phase 07-এ তৈরি হবে)। */
+const L3_PLANNED = 150;
+
+export type TaskView = {
+  id: number;
+  key: string;
+  kind: TaskKind;
+  levelNo: number;
+  order: number;
+  phase: number | null;
+  title: string;
+  state: TaskState;
+  step: StepKey;
+  bestScore: number | null;
+  lastScore: number | null;
+  href: string;
+  bcsNo?: number;
+  special?: boolean;
+  partial?: boolean;
+  subtopicCode?: string;
+  grade?: string | null;
+  subjectBn?: string;
+};
+
+export function taskHref(t: { kind: TaskKind; key: string; bcsNo?: number; subtopicCode?: string }): string {
+  switch (t.kind) {
+    case "L1_EXAM": return `/level-1/${t.bcsNo}`;
+    case "L1_FINAL": return "/level-1/final";
+    case "L2_SUBTOPIC": return `/level-2/${t.subtopicCode}`;
+    case "L2_CHECKPOINT": return `/level-2/checkpoint/${t.key.split(":").at(-1)}`;
+    case "L2_FINAL": return "/level-2/final";
+    default: return "/level-3";
+  }
+}
+
+/** একজন শিক্ষার্থীর সব কাজ, অবস্থাসহ (Level ও ক্রম অনুযায়ী)। */
+export async function getStudentTasks(userId: string): Promise<TaskView[]> {
+  await ensureStarted(prisma, userId);
+  const [tasks, rows] = await Promise.all([
+    prisma.learningTask.findMany({
+      where: { active: true },
+      orderBy: [{ level: { no: "asc" } }, { order: "asc" }],
+      include: {
+        level: { select: { no: true } },
+        exam: { select: { bcsNo: true, type: true, completeness: true } },
+        subtopic: { select: { code: true, priorityGrade: true, topic: { select: { subject: { select: { nameBn: true } } } } } },
+      },
+    }),
+    prisma.studentTaskProgress.findMany({ where: { userId } }),
+  ]);
+  const byTask = new Map(rows.map((r) => [r.taskId, r]));
+  return tasks.map((t) => {
+    const p = byTask.get(t.id);
+    const base = {
+      kind: t.kind,
+      key: t.key,
+      bcsNo: t.exam?.bcsNo,
+      subtopicCode: t.subtopic?.code,
+    };
+    return {
+      id: t.id,
+      key: t.key,
+      kind: t.kind,
+      levelNo: t.level.no,
+      order: t.order,
+      phase: t.phase,
+      title: t.titleBn,
+      state: p?.state ?? "LOCKED",
+      step: (p?.step ?? "SOLVE") as StepKey,
+      bestScore: p?.bestScore ?? null,
+      lastScore: p?.lastScore ?? null,
+      href: taskHref(base),
+      bcsNo: t.exam?.bcsNo,
+      special: t.exam?.type === "SPECIAL",
+      partial: t.exam?.completeness === "PARTIAL",
+      subtopicCode: t.subtopic?.code,
+      grade: t.subtopic?.priorityGrade ?? null,
+      subjectBn: t.subtopic?.topic.subject.nameBn,
+    };
+  });
+}
+
+/** বর্তমান কাজ: চলমান কাজ আগে, নইলে ক্রমের প্রথম খোলা কাজ। */
+export function pickCurrent(tasks: TaskView[]): TaskView | null {
+  return tasks.find((t) => t.state === "IN_PROGRESS") ?? tasks.find((t) => t.state === "AVAILABLE") ?? null;
+}
+
+export async function getDashboard(userId: string) {
+  const tasks = await getStudentTasks(userId);
+  const rules = await loadRules(prisma);
+  const current = pickCurrent(tasks);
+
+  // ── Level-সারসংক্ষেপ
+  const levels = [1, 2, 3].map((no) => {
+    const lt = tasks.filter((t) => t.levelNo === no);
+    const total = no === 3 && lt.length === 0 ? L3_PLANNED : lt.length;
+    const completed = lt.filter((t) => t.state === "COMPLETED").length;
+    const open = lt.filter((t) => t.state === "AVAILABLE" || t.state === "IN_PROGRESS").length;
+    return { no, total, completed, open, pct: total ? (completed / total) * 100 : 0, built: lt.length > 0, locked: completed === 0 && open === 0 };
+  });
+  const overallPct = levels.reduce((a, l) => a + l.pct, 0) / levels.length;
+  const completedTasks = levels.reduce((a, l) => a + l.completed, 0);
+  const totalTasks = levels.reduce((a, l) => a + l.total, 0);
+
+  // ── আজকের করণীয়
+  const action = current ? await describeAction(current, tasks, rules) : null;
+
+  // ── পরবর্তী Unlock লক্ষ্য
+  let nextUnlock: { title: string; condition: string } | null = null;
+  if (current) {
+    const dep = await prisma.taskPrerequisite.findFirst({
+      where: { requiresId: current.id },
+      orderBy: { task: { order: "asc" } },
+      include: { task: { select: { titleBn: true } } },
+    });
+    if (dep) {
+      const thr = (k: string) => bn(rules.get<number>(k));
+      const condition =
+        current.kind === "L1_EXAM"
+          ? `${current.title}-এর Mastery Test-এ ${thr("l1.threshold.mastery")}%${current.bcsNo! > 10 ? ` ও Cumulative Test-এ ${thr("l1.threshold.cumulative")}%` : ""} পেলে`
+          : current.kind === "L2_SUBTOPIC"
+            ? `এই Priority ধাপের সব উপবিষয়ে Mastery (${thr("l2.threshold.mastery")}%) অর্জন করলে`
+            : `${current.title}-এ নির্ধারিত নম্বর পেলে`;
+      nextUnlock = { title: dep.task.titleBn, condition };
+    }
+  }
+
+  // ── Revision, ফলাফল, দুর্বলতা, অর্জন
+  const now = new Date();
+  const [dueToday, wrongBank, attempts, mastery, achievements, earned, weakSubjects, weakSubtopics] = await Promise.all([
+    prisma.questionStat.count({ where: { userId, leitnerBox: { gt: 0 }, dueAt: { lte: now } } }),
+    prisma.questionStat.count({ where: { userId, wrong: { gt: 0 }, lastCorrect: false } }),
+    prisma.testAttempt.findMany({
+      where: { userId, submittedAt: { not: null } },
+      orderBy: { submittedAt: "desc" },
+      take: 6,
+      include: { task: { select: { titleBn: true } } },
+    }),
+    prisma.masteryRecord.aggregate({ where: { userId }, _avg: { scorePct: true }, _count: true }),
+    prisma.achievement.findMany(),
+    prisma.userAchievement.findMany({ where: { userId } }),
+    prisma.$queryRaw<{ subject: string; correct: number; wrong: number }[]>`
+      select sj."nameBn" as subject, sum(qs.correct)::int as correct, sum(qs.wrong)::int as wrong
+      from "QuestionStat" qs
+      join "Question" q on q.id = qs."questionId"
+      join "Subtopic" st on st.id = q."subtopicId"
+      join "Topic" tp on tp.id = st."topicId"
+      join "Subject" sj on sj.id = tp."subjectId"
+      where qs."userId" = ${userId}
+      group by sj."nameBn"
+      having sum(qs.correct + qs.wrong) >= 5
+      order by sum(qs.correct)::float / nullif(sum(qs.correct + qs.wrong), 0) asc
+      limit 5`,
+    prisma.$queryRaw<{ name: string; code: string; wrong: number; seen: number }[]>`
+      select st."nameBn" as name, st.code, sum(qs.wrong)::int as wrong, sum(qs.seen)::int as seen
+      from "QuestionStat" qs
+      join "Question" q on q.id = qs."questionId"
+      join "Subtopic" st on st.id = q."subtopicId"
+      where qs."userId" = ${userId} and qs.wrong > 0
+      group by st."nameBn", st.code
+      order by sum(qs.wrong) desc
+      limit 5`,
+  ]);
+  const earnedSet = new Set(earned.map((e) => e.achievementKey));
+
+  return {
+    current,
+    action,
+    nextUnlock,
+    levels,
+    overallPct,
+    completedTasks,
+    remainingTasks: totalTasks - completedTasks,
+    revision: { dueToday, wrongBank },
+    results: attempts.map((a) => ({
+      id: a.id,
+      kind: a.kind,
+      title: a.task?.titleBn ?? "",
+      scorePct: a.scorePct,
+      passed: a.passed,
+      threshold: a.threshold,
+      at: a.submittedAt!,
+    })),
+    avgMastery: mastery._count ? mastery._avg.scorePct : null,
+    weakSubjects: weakSubjects.map((w) => ({ ...w, accuracy: (w.correct / Math.max(1, w.correct + w.wrong)) * 100 })),
+    weakSubtopics,
+    achievements: achievements.map((a) => ({ ...a, earned: earnedSet.has(a.key) })),
+    l1: tasks.filter((t) => t.levelNo === 1),
+  };
+}
+
+/** "আজ তোমার করণীয়" — বর্তমান কাজ ও ধাপ থেকে তৈরি নির্দেশনা। */
+async function describeAction(t: TaskView, tasks: TaskView[], rules: Awaited<ReturnType<typeof loadRules>>) {
+  const pct = (k: string) => bn(rules.get<number>(k));
+  const prevDone = [...tasks].filter((x) => x.state === "COMPLETED").sort((a, b) => b.levelNo - a.levelNo || b.order - a.order)[0];
+  const congrats = prevDone && t.step === "SOLVE" && t.state === "AVAILABLE" ? `অভিনন্দন! তুমি ${prevDone.title} সম্পন্ন করেছ। ` : "";
+
+  if (t.kind === "L1_EXAM") {
+    const eligible = rules.get<string[]>("path.eligible_classes");
+    const n = await prisma.question.count({ where: { exam: { bcsNo: t.bcsNo }, status: "PUBLISHED", verifyClass: { in: eligible } } });
+    const parts = Math.ceil(n / rules.get<number>("l1.solve.part_size"));
+    const where = `তুমি বর্তমানে Level ১-এর ${bnOrdinal(t.bcsNo!)} বিসিএস পর্যায়ে আছো।`;
+    const thr = pct("l1.threshold.mastery");
+    const byStep: Record<StepKey, string> = {
+      SOLVE: `${congrats}${where} প্রথমে নির্ধারিত ${bn(n)}টি প্রশ্ন সমাধান করো${parts > 1 ? ` (${bn(parts)}টি ভাগে)` : ""}। এরপর উত্তর পর্যালোচনা ও Revision Test।`,
+      REVIEW: `${where} প্রথম সমাধান শেষ। এখন সঠিক ও ভুল উত্তর এবং ব্যাখ্যাগুলো পর্যালোচনা করো।`,
+      REVISION: `${where} এখন তোমার ভুল প্রশ্নগুলোর Revision Test দাও।`,
+      MASTERY:
+        t.lastScore != null && t.lastScore < rules.get<number>("l1.threshold.mastery")
+          ? `তোমার Mastery Score ${bn(Math.round(t.lastScore))}%। পরবর্তী ধাপ Unlock করতে ${thr}% প্রয়োজন। আবার অনুশীলন করো।`
+          : `${where} এখন Mastery Test দাও; পরের ধাপে যেতে ${thr}% লাগবে।`,
+      CUMULATIVE: `${where} এখন ১০ম থেকে ${bnOrdinal(t.bcsNo!)} পর্যন্ত Cumulative Revision Test দাও; ${pct("l1.threshold.cumulative")}% লাগবে।`,
+      DONE: `${t.title} সম্পন্ন।`,
+    };
+    const stepLabel = L1_STEPS.find((s) => s.key === t.step)?.label ?? "";
+    return { text: byStep[t.step], button: t.step === "SOLVE" && t.state === "AVAILABLE" ? "পরবর্তী কাজ শুরু করো" : "কাজ চালিয়ে যাও", stepLabel, href: t.href };
+  }
+  if (t.kind === "L1_FINAL")
+    return {
+      text: `${congrats}১০ম–৫০তম সব বিসিএসের Learning Cycle শেষ। এখন সব পরীক্ষা থেকে ${bn(rules.get<number>("l1.final.size"))}টি প্রশ্নের Level ১ Final Assessment দাও; পাস করতে ${pct("l1.threshold.final")}% লাগবে।`,
+      button: "Final Assessment শুরু করো", stepLabel: "Final Assessment", href: t.href,
+    };
+  if (t.kind === "L2_SUBTOPIC") {
+    const open = tasks.filter((x) => x.kind === "L2_SUBTOPIC" && x.phase === t.phase);
+    const done = open.filter((x) => x.state === "COMPLETED").length;
+    const stepLabel = L2_STEPS.find((s) => s.key === t.step)?.label ?? "";
+    return {
+      text: `${congrats}তুমি Level ২-এর Priority ${t.grade ?? ""} ধাপে আছো (${bn(done)}/${bn(open.length)} উপবিষয় সম্পন্ন)। পরের উপবিষয়: ${t.title} (${t.subjectBn})। পরিচিতি পড়ে প্রশ্ন সমাধান শুরু করো।`,
+      button: "পরবর্তী কাজ শুরু করো", stepLabel, href: t.href,
+    };
+  }
+  if (t.kind === "L2_CHECKPOINT")
+    return { text: `${congrats}এই Priority ধাপের সব উপবিষয় শেষ। এখন ${t.title} দাও; ${pct("l2.threshold.checkpoint")}% পেলে পরের ধাপ খুলবে।`, button: "Checkpoint শুরু করো", stepLabel: "Checkpoint", href: t.href };
+  return { text: `${congrats}${t.title} দাও।`, button: "শুরু করো", stepLabel: "", href: t.href };
+}

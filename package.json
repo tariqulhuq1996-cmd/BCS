@@ -12,7 +12,8 @@
     "db:import": "tsx scripts/import-research.ts",
     "db:seed": "tsx scripts/seed.ts",
     "db:verify": "tsx scripts/verify-data.ts",
-    "db:studio": "prisma studio"
+    "db:studio": "prisma studio",
+    "test:progress": "tsx scripts/test-progress.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.19.3",

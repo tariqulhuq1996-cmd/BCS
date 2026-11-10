@@ -13,9 +13,9 @@ export function SiteHeader() {
   return (
     <header className="border-b border-line bg-paper/90 backdrop-blur supports-[backdrop-filter]:bg-paper/80 sticky top-0 z-40">
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4 sm:gap-6 sm:px-6">
-        <Link href="/" className="flex shrink-0 items-center gap-2 whitespace-nowrap font-display text-base font-bold sm:text-lg" style={{ fontStretch: "115%" }}>
+        <Link href="/" aria-label="বিসিএস ৫২ প্রস্তুতি — হোমপেজ" className="flex shrink-0 items-center gap-2 whitespace-nowrap font-display text-base font-bold sm:text-lg" style={{ fontStretch: "115%" }}>
           <Bubbles />
-          <span>বিসিএস ৫২ প্রস্তুতি</span>
+          <span className="max-[359px]:hidden">বিসিএস ৫২ প্রস্তুতি</span>
         </Link>
         <nav aria-label="প্রধান" className="hidden md:flex items-center gap-5 text-[15px] text-ink-2">
           {NAV.map((n) => (
@@ -74,6 +74,9 @@ async function UserArea() {
     <>
       <Link href="/dashboard" className="rounded-md bg-green px-3 py-1.5 text-[15px] font-semibold text-white hover:bg-green-strong sm:px-3.5 dark:text-paper">
         Dashboard
+      </Link>
+      <Link href="/profile" className="hidden rounded-md px-2 py-1.5 text-[15px] text-ink-2 hover:text-ink sm:inline-block sm:px-3" title={user.email}>
+        প্রোফাইল
       </Link>
       <form action={logout}>
         <button className="rounded-md px-2 py-1.5 text-[15px] text-ink-2 hover:text-ink sm:px-3">লগআউট</button>
