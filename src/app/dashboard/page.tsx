@@ -61,6 +61,16 @@ async function Dashboard() {
         )}
       </section>
 
+      {/* ── আজকের Revision-স্মারক */}
+      {d.revision.dueToday > 0 && (
+        <section aria-label="আজকের Revision" className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-omr bg-omr-wash px-5 py-4">
+          <p className="text-[16px]">
+            আজ <span className="font-bold">{bn(d.revision.dueToday)}টি</span> প্রশ্ন Revision-এর জন্য অপেক্ষা করছে। ভুলগুলো ভুলে যাওয়ার আগেই আরেকবার দেখে নাও।
+          </p>
+          <Link href="/revision" className="rounded-lg border-2 border-omr bg-surface px-4 py-2 font-semibold text-omr hover:bg-omr hover:text-white">Revision শুরু করো</Link>
+        </section>
+      )}
+
       {/* ── সংখ্যায় অগ্রগতি */}
       <section aria-label="সংক্ষেপে অগ্রগতি" className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-5">
         {[
@@ -74,6 +84,12 @@ async function Dashboard() {
             <p className="text-sm text-muted">{x.k}</p>
             <p className="mt-1 font-display text-[28px] font-bold leading-none tabular">{x.v}</p>
             <p className="mt-1.5 text-xs text-muted">{x.s}</p>
+            {x.k === "আজকের Revision" && (
+              <p className="mt-1 flex gap-3 text-xs">
+                <Link href="/revision" className="text-green underline underline-offset-2">Revision</Link>
+                <Link href="/mistakes" className="text-green underline underline-offset-2">ভুলের ভান্ডার</Link>
+              </p>
+            )}
           </div>
         ))}
       </section>

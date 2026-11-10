@@ -3,7 +3,7 @@
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth/session";
-import { ExamError, acknowledgeReview, saveAnswer, startStep, submitAttempt } from "./service";
+import { ExamError, acknowledgeReview, saveAnswer, startMistakePractice, startRevision, startStep, submitAttempt } from "./service";
 
 async function uid() {
   const u = await getCurrentUser();
@@ -11,9 +11,11 @@ async function uid() {
   return u.id;
 }
 
+/** কাজের key থেকে তার পাতার ঠিকানা। */
 function stepPath(taskKey: string) {
   const [lvl, kind, ref] = taskKey.split(":");
   if (lvl === "L1") return kind === "FINAL" ? "/level-1/final" : `/level-1/${ref}`;
+  if (lvl === "L2") return kind === "FINAL" ? "/level-2/final" : kind === "CHECKPOINT" ? `/level-2/checkpoint/${ref}` : `/level-2/${ref}`;
   return "/dashboard";
 }
 
@@ -27,6 +29,33 @@ export async function startStepAction(fd: FormData) {
     id = await startStep(prisma, userId, taskKey, mode);
   } catch (e) {
     if (e instanceof ExamError) redirect(`${stepPath(taskKey)}?e=${e.code}`);
+    throw e;
+  }
+  redirect(`/test/${id}`);
+}
+
+/** দৈনিক Revision-এর পরের সেট। */
+export async function startRevisionAction() {
+  const userId = await uid();
+  let id: string;
+  try {
+    id = await startRevision(prisma, userId);
+  } catch (e) {
+    if (e instanceof ExamError) redirect(`/revision?e=${e.code}`);
+    throw e;
+  }
+  redirect(`/test/${id}`);
+}
+
+/** ভুলের ভান্ডার থেকে অনুশীলন (ঐচ্ছিক: একটি বিষয়)। */
+export async function startMistakeAction(fd: FormData) {
+  const userId = await uid();
+  const subject = String(fd.get("subject") ?? "") || undefined;
+  let id: string;
+  try {
+    id = await startMistakePractice(prisma, userId, subject);
+  } catch (e) {
+    if (e instanceof ExamError) redirect(`/mistakes?e=${e.code}`);
     throw e;
   }
   redirect(`/test/${id}`);

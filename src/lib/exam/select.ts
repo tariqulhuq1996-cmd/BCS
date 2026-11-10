@@ -70,6 +70,7 @@ export function pickProportional(ranked: Candidate[], size: number): string[] {
 
 /** পরীক্ষাকে সমান ভাগে ভাগ: ১০২টি → ৩৪+৩৪+৩৪, ১০০টি → ৫০+৫০। */
 export function splitParts<T>(items: T[], maxPart: number): T[][] {
+  if (!items.length) return [];
   const parts = Math.max(1, Math.ceil(items.length / maxPart));
   const base = Math.floor(items.length / parts);
   let extra = items.length % parts;

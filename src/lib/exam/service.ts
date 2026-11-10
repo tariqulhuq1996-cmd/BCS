@@ -1,5 +1,6 @@
 /**
- * পরীক্ষা-ইঞ্জিন (Level 1): Attempt তৈরি, উত্তর সংরক্ষণ, গ্রেডিং, Learning Cycle-এর ধাপ বদল, Unlock।
+ * পরীক্ষা-ইঞ্জিন (Level 1 ও Level 2) এবং Smart Revision:
+ * Attempt তৈরি, উত্তর সংরক্ষণ, গ্রেডিং, Learning Cycle-এর ধাপ বদল, Unlock, দৈনিক Revision-সারি, ভুলের অনুশীলন।
  *
  * নিরাপত্তা:
  *  - প্রতিটি ফাংশন userId নেয় এবং Attempt/কাজের মালিকানা ও প্রবেশাধিকার যাচাই করে।
@@ -7,22 +8,31 @@
  *  - একই Attempt দুবার জমা দেওয়া যায় না (ডেটাবেস-স্তরে শর্তসাপেক্ষ হালনাগাদ)।
  * এই ফাইল "server-only" নয়, যাতে স্বয়ংক্রিয় পরীক্ষা সরাসরি চালাতে পারে; ডেটাবেস-ক্লায়েন্ট প্যারামিটারে আসে।
  */
-import type { AttemptKind, PrismaClient, Prisma } from "@prisma/client";
+import type { AttemptKind, LearningTask, Exam, PrismaClient, Prisma } from "@prisma/client";
 import { loadRules, type Rules } from "@/lib/rules";
 import { OPEN_STATES, completeTask, markStarted } from "@/lib/progress/engine";
 import { pickCumulative, pickProportional, rank, optionPerm, revisionSize, shuffleArr, splitParts, type Candidate, type Stat, type Weights } from "./select";
 
 export class ExamError extends Error {
-  constructor(public code: "LOCKED" | "NOT_FOUND" | "FORBIDDEN" | "SUBMITTED" | "NEED_REVIEW" | "NOT_READY" | "BAD_INPUT", message: string) {
+  constructor(
+    public code: "LOCKED" | "NOT_FOUND" | "FORBIDDEN" | "SUBMITTED" | "NEED_REVIEW" | "NOT_READY" | "BAD_INPUT" | "BLOCKED" | "EMPTY",
+    message: string,
+  ) {
     super(message);
   }
 }
 
 type Db = PrismaClient;
-const MASTERY_KINDS: AttemptKind[] = ["MASTERY", "CUMULATIVE", "LEVEL_FINAL"];
+type Task = LearningTask & { exam: Exam | null };
 const GRACE_MS = 60_000;
-
+const bnD = (n: number | string) => String(n).replace(/\d/g, (d) => "০১২৩৪৫৬৭৮৯"[+d]);
 const qNoNum = (s: string | null) => parseInt(s ?? "0", 10) || 0;
+
+/** বাংলাদেশ সময়ে (UTC+৬) আজকের দিনের শুরু। */
+export function dhakaDayStart(now = new Date(), offsetDays = 0): Date {
+  const local = new Date(now.getTime() + 6 * 3600e3);
+  return new Date(Date.UTC(local.getUTCFullYear(), local.getUTCMonth(), local.getUTCDate() + offsetDays) - 6 * 3600e3);
+}
 
 async function loadTask(db: Db, userId: string, taskKey: string) {
   const task = await db.learningTask.findUnique({ where: { key: taskKey }, include: { exam: true } });
@@ -32,13 +42,25 @@ async function loadTask(db: Db, userId: string, taskKey: string) {
   return { task, progress };
 }
 
-/** Level 1-এর যোগ্য প্রশ্ন (প্রকাশিত + নির্ধারিত যাচাই-শ্রেণি), নির্দিষ্ট পরীক্ষাগুলো থেকে। */
-async function pool(db: Db, rules: Rules, examNos: number[]) {
+type Cand = Candidate & { qNo: number; uid: string; subject: string; options: string[] };
+
+/** Level 1-এর যোগ্য প্রশ্ন: প্রকাশিত ঐতিহাসিক প্রশ্ন, নির্ধারিত যাচাই-শ্রেণি, নির্দিষ্ট পরীক্ষাগুলো থেকে। */
+async function poolHistorical(db: Db, rules: Rules, examNos: number[]): Promise<Cand[]> {
   const rows = await db.question.findMany({
     where: { kind: "HISTORICAL", status: "PUBLISHED", verifyClass: { in: rules.get<string[]>("path.eligible_classes") }, exam: { bcsNo: { in: examNos } } },
-    select: { id: true, examQNo: true, options: true, exam: { select: { bcsNo: true } }, subtopic: { select: { priorityGrade: true } } },
+    select: { id: true, uid: true, examQNo: true, options: true, exam: { select: { bcsNo: true } }, subtopic: { select: { priorityGrade: true, topic: { select: { subject: { select: { code: true } } } } } } },
   });
-  return rows.map((r) => ({ id: r.id, examNo: r.exam!.bcsNo, qNo: qNoNum(r.examQNo), grade: r.subtopic.priorityGrade as string | null, options: r.options }));
+  return rows.map((r) => ({ id: r.id, uid: r.uid, examNo: r.exam!.bcsNo, qNo: qNoNum(r.examQNo), grade: r.subtopic.priorityGrade, subject: r.subtopic.topic.subject.code, options: r.options }));
+}
+
+/** Level 2-এর যোগ্য প্রশ্ন: প্রকাশিত (যাচাইকৃত) নতুন টপিকভিত্তিক প্রশ্ন। */
+async function poolTopic(db: Db, subtopicIds?: number[]): Promise<Cand[]> {
+  const rows = await db.question.findMany({
+    where: { kind: "TOPIC", status: "PUBLISHED", ...(subtopicIds ? { subtopicId: { in: subtopicIds } } : {}) },
+    select: { id: true, uid: true, options: true, subtopicId: true, subtopic: { select: { priorityGrade: true, topic: { select: { subject: { select: { code: true } } } } } } },
+    orderBy: { uid: "asc" },
+  });
+  return rows.map((r, i) => ({ id: r.id, uid: r.uid, examNo: r.subtopicId, qNo: i, grade: r.subtopic.priorityGrade, subject: r.subtopic.topic.subject.code, options: r.options }));
 }
 
 async function statsFor(db: Db, userId: string, ids: string[]): Promise<Map<string, Stat>> {
@@ -53,16 +75,85 @@ export async function firstSolveScore(db: Db, userId: string, taskId: number): P
   return total ? (a.reduce((s, x) => s + (x.correct ?? 0), 0) / total) * 100 : null;
 }
 
-export async function solvePlan(db: Db, userId: string, taskId: number, bcsNo: number, rules: Rules) {
-  const qs = (await pool(db, rules, [bcsNo])).sort((a, b) => a.qNo - b.qNo);
-  const parts = splitParts(qs, rules.get<number>("l1.solve.part_size"));
-  const attempts = await db.testAttempt.findMany({ where: { userId, taskId, kind: "SOLVE" }, select: { id: true, partNo: true, submittedAt: true, scorePct: true } });
+/** প্রথম সমাধানের প্রশ্ন ও ভাগ (Level 1: প্রশ্নপত্রের ক্রমে; Level 2: উপবিষয়ের প্রশ্ন, স্থির ক্রমে)। */
+async function solveParts(db: Db, task: Task, rules: Rules): Promise<Cand[][]> {
+  if (task.kind === "L1_EXAM") {
+    const qs = (await poolHistorical(db, rules, [task.exam!.bcsNo])).sort((a, b) => a.qNo - b.qNo);
+    return splitParts(qs, rules.get<number>("l1.solve.part_size"));
+  }
+  if (task.kind === "L2_SUBTOPIC") return splitParts(await poolTopic(db, [task.subtopicId!]), rules.get<number>("l2.solve.chunk_size"));
+  return [];
+}
+
+export async function solvePlan(db: Db, userId: string, task: Task, rules: Rules) {
+  const parts = await solveParts(db, task, rules);
+  const attempts = await db.testAttempt.findMany({ where: { userId, taskId: task.id, kind: "SOLVE" }, select: { id: true, partNo: true, submittedAt: true, scorePct: true } });
   return parts.map((p, i) => {
     const a = attempts.filter((x) => x.partNo === i + 1);
     const done = a.find((x) => x.submittedAt);
     const open = a.find((x) => !x.submittedAt);
-    return { partNo: i + 1, size: p.length, from: p[0]?.qNo, to: p.at(-1)?.qNo, questionIds: p.map((q) => q.id), doneAttemptId: done?.id ?? null, openAttemptId: open?.id ?? null, scorePct: done?.scorePct ?? null };
+    return {
+      partNo: i + 1, size: p.length,
+      from: task.kind === "L1_EXAM" ? p[0]?.qNo : (p[0]?.qNo ?? 0) + 1,
+      to: task.kind === "L1_EXAM" ? p.at(-1)?.qNo : (p.at(-1)?.qNo ?? 0) + 1,
+      questionIds: p.map((q) => q.id), doneAttemptId: done?.id ?? null, openAttemptId: open?.id ?? null, scorePct: done?.scorePct ?? null,
+    };
   });
+}
+
+export async function plannedParts(db: Db, task: Task): Promise<number> {
+  return Math.max(1, (await solveParts(db, task, await loadRules(db))).length);
+}
+
+// ─────────────────────────────────────────── Smart Revision: অবস্থা
+
+/** আজকের Revision-এর অবস্থা ও আগামী ১৪ দিনের ক্যালেন্ডার। */
+export async function revisionStatus(db: Db, userId: string, now = new Date()) {
+  const rules = await loadRules(db);
+  const cap = rules.get<number>("srs.daily_cap");
+  const today = dhakaDayStart(now);
+  const [dueNow, doneToday, upcoming, wrongBank] = await Promise.all([
+    db.questionStat.count({ where: { userId, leitnerBox: { gt: 0 }, dueAt: { lte: now } } }),
+    db.attemptAnswer.count({ where: { attempt: { userId, kind: "SRS_REVIEW", submittedAt: { gte: today } } } }),
+    db.questionStat.findMany({ where: { userId, leitnerBox: { gt: 0 }, dueAt: { gt: now, lt: dhakaDayStart(now, 14) } }, select: { dueAt: true } }),
+    db.questionStat.count({ where: { userId, wrong: { gt: 0 }, lastCorrect: false } }),
+  ]);
+  const remaining = Math.max(0, Math.min(dueNow, cap - doneToday));
+  const calendar = Array.from({ length: 14 }, (_, i) => {
+    const from = dhakaDayStart(now, i);
+    const to = dhakaDayStart(now, i + 1);
+    const n = upcoming.filter((u) => u.dueAt! >= from && u.dueAt! < to).length + (i === 0 ? dueNow : 0);
+    return { day: from.toISOString(), n };
+  });
+  return { dueNow, doneToday, cap, remaining, blocked: rules.get<boolean>("srs.block_new_when_due") && remaining > 0, calendar, wrongBank };
+}
+
+// ─────────────────────────────────────────── পরীক্ষা শুরু
+
+async function createAttempt(db: Db, userId: string, taskId: number | null, kind: AttemptKind, questionIds: string[], opts: { partNo?: number; threshold?: number | null; keepOrder?: boolean; rules: Rules }) {
+  if (!questionIds.length) throw new ExamError("EMPTY", "এই ধাপের জন্য এখনও কোনো যাচাইকৃত প্রশ্ন নেই।");
+  const shuffle = opts.rules.get<boolean>("shuffle.options") && !opts.keepOrder;
+  const qs = await db.question.findMany({ where: { id: { in: questionIds } }, select: { id: true, options: true } });
+  const perms: Record<string, number[]> = {};
+  for (const o of qs) perms[o.id] = optionPerm(o.options, shuffle, Math.random);
+  if (taskId) await markStarted(db, userId, taskId);
+  const a = await db.testAttempt.create({ data: { userId, taskId, kind, partNo: opts.partNo ?? 1, questionIds, optionPerms: perms, threshold: opts.threshold ?? null } });
+  return a.id;
+}
+
+/** Level 2 Final: ২০০ নম্বরের মানবণ্টন অনুযায়ী বিষয়ভিত্তিক কোটা, প্রতিটির ভেতরে অগ্রাধিকার-ক্রমে। */
+function pickBlueprint(ranked: Cand[], marks: Record<string, number>, size: number): string[] {
+  const total = Object.values(marks).reduce((a, b) => a + b, 0);
+  const chosen = new Set<string>();
+  for (const [code, m] of Object.entries(marks)) {
+    const q = Math.round((m / total) * size);
+    for (const c of ranked.filter((x) => x.subject === code).slice(0, q)) chosen.add(c.id);
+  }
+  for (const c of ranked) {
+    if (chosen.size >= size) break;
+    chosen.add(c.id);
+  }
+  return [...chosen].slice(0, size);
 }
 
 /**
@@ -71,27 +162,19 @@ export async function solvePlan(db: Db, userId: string, taskId: number, bcsNo: n
  */
 export async function startStep(db: Db, userId: string, taskKey: string, mode: "step" | "practice" = "step"): Promise<string> {
   const { task, progress } = await loadTask(db, userId, taskKey);
-  if (task.kind !== "L1_EXAM" && task.kind !== "L1_FINAL") throw new ExamError("NOT_READY", "এই ধাপের পরীক্ষা পরের Phase-এ যুক্ত হবে।");
   const rules = await loadRules(db);
   const w = rules.get<Weights>("select.weights");
   const now = new Date();
   const rnd = Math.random;
-  const shuffle = rules.get<boolean>("shuffle.options");
-  const bcsNo = task.exam?.bcsNo ?? 50;
+  const isL2 = task.kind.startsWith("L2_");
+  if (task.kind.startsWith("L3_")) throw new ExamError("NOT_READY", "Model Test পরের Phase-এ যুক্ত হবে।");
 
   let kind: AttemptKind;
-  let questionIds: string[] = [];
-  let partNo = 1;
-  let threshold: number | null = null;
-  let keepOrder = false;
-
-  if (mode === "practice") {
-    kind = "PRACTICE";
-  } else if (progress.state === "COMPLETED") {
-    throw new ExamError("SUBMITTED", "এই ধাপ আগেই সম্পন্ন। চাইলে অনুশীলন করতে পারো।");
-  } else if (task.kind === "L1_FINAL") {
-    kind = "LEVEL_FINAL";
-  } else {
+  if (mode === "practice") kind = "PRACTICE";
+  else if (progress.state === "COMPLETED") throw new ExamError("SUBMITTED", "এই ধাপ আগেই সম্পন্ন। চাইলে অনুশীলন করতে পারো।");
+  else if (task.kind === "L1_FINAL" || task.kind === "L2_FINAL") kind = "LEVEL_FINAL";
+  else if (task.kind === "L2_CHECKPOINT") kind = "CHECKPOINT";
+  else {
     const step = progress.step;
     if (step === "REVIEW") throw new ExamError("NEED_REVIEW", "আগে প্রথম সমাধানের উত্তর পর্যালোচনা শেষ করো।");
     kind = step === "SOLVE" ? "SOLVE" : step === "REVISION" ? "REVISION" : step === "MASTERY" ? "MASTERY" : "CUMULATIVE";
@@ -104,53 +187,100 @@ export async function startStep(db: Db, userId: string, taskKey: string, mode: "
   }
 
   if (kind === "SOLVE") {
-    const plan = await solvePlan(db, userId, task.id, bcsNo, rules);
+    const plan = await solvePlan(db, userId, task, rules);
+    if (!plan.length) throw new ExamError("EMPTY", "এই উপবিষয়ের প্রশ্ন এখনও প্রকাশিত হয়নি। প্রশ্ন যুক্ত হলে এখান থেকেই শুরু করা যাবে।");
     const next = plan.find((p) => !p.doneAttemptId);
     if (!next) throw new ExamError("NEED_REVIEW", "সব ভাগ সমাধান হয়েছে। এখন পর্যালোচনা করো।");
     if (next.openAttemptId) return next.openAttemptId;
-    partNo = next.partNo;
-    questionIds = next.questionIds;
-    keepOrder = true; // মূল প্রশ্নপত্রের ক্রম ও অপশন অপরিবর্তিত
-  } else {
-    const examNos = kind === "LEVEL_FINAL" || kind === "CUMULATIVE"
-      ? (await db.exam.findMany({ where: kind === "CUMULATIVE" ? { bcsNo: { lte: bcsNo } } : {}, select: { bcsNo: true } })).map((e) => e.bcsNo)
-      : [bcsNo];
-    const cands = await pool(db, rules, examNos);
-    const stats = await statsFor(db, userId, cands.map((c) => c.id));
-    const ranked = rank(cands as Candidate[], stats, w, now, rnd);
-
-    if (kind === "REVISION") {
-      const first = (await firstSolveScore(db, userId, task.id)) ?? 0;
-      questionIds = ranked.slice(0, revisionSize(rules.get<Record<string, number>>("l1.revision.bands"), first)).map((c) => c.id);
-    } else if (kind === "MASTERY") {
-      questionIds = ranked.slice(0, rules.get<number>("l1.mastery.size")).map((c) => c.id);
-      threshold = rules.get<number>("l1.threshold.mastery", [`task:${task.key}`, "level:1"]);
-    } else if (kind === "CUMULATIVE") {
-      const done = examNos.length; // ১০ম থেকে বর্তমান পর্যন্ত পরীক্ষার সংখ্যা
-      const size = Math.min(rules.get<number>("l1.cumulative.max"), rules.get<number>("l1.cumulative.base") + rules.get<number>("l1.cumulative.step") * (done - 1));
-      questionIds = pickCumulative(ranked, size, rules.get<number>("l1.cumulative.min_per_exam"));
-      threshold = rules.get<number>("l1.threshold.cumulative", [`task:${task.key}`, "level:1"]);
-    } else if (kind === "LEVEL_FINAL") {
-      questionIds = pickProportional(ranked, rules.get<number>("l1.final.size"));
-      threshold = rules.get<number>("l1.threshold.final", ["level:1"]);
-    } else {
-      // PRACTICE: ভুল/অনিশ্চিত প্রশ্ন আগে, ২০টি
-      const examScope = task.kind === "L1_FINAL" ? ranked : ranked.filter((c) => c.examNo === bcsNo);
-      questionIds = examScope.slice(0, 20).map((c) => c.id);
+    // Level 2: আজকের Revision বাকি থাকলে নতুন উপবিষয় শুরু নয়
+    if (isL2 && next.partNo === 1) {
+      const rs = await revisionStatus(db, userId, now);
+      if (rs.blocked) throw new ExamError("BLOCKED", `নতুন উপবিষয় শুরুর আগে আজকের Revision শেষ করো (${bnD(rs.remaining)}টি প্রশ্ন বাকি)।`);
     }
-    questionIds = shuffleArr(questionIds, rnd);
+    return createAttempt(db, userId, task.id, "SOLVE", next.questionIds, { partNo: next.partNo, keepOrder: !isL2, rules });
   }
-  if (!questionIds.length) throw new ExamError("NOT_READY", "এই ধাপের জন্য কোনো যাচাইকৃত প্রশ্ন পাওয়া যায়নি।");
 
-  const opts = await db.question.findMany({ where: { id: { in: questionIds } }, select: { id: true, options: true } });
-  const perms: Record<string, number[]> = {};
-  for (const o of opts) perms[o.id] = optionPerm(o.options, shuffle && !keepOrder, rnd);
+  // ── প্রার্থী-প্রশ্ন
+  let cands: Cand[];
+  if (!isL2) {
+    const bcsNo = task.exam?.bcsNo ?? 50;
+    const examNos =
+      kind === "LEVEL_FINAL" || kind === "CUMULATIVE"
+        ? (await db.exam.findMany({ where: kind === "CUMULATIVE" ? { bcsNo: { lte: bcsNo } } : {}, select: { bcsNo: true } })).map((e) => e.bcsNo)
+        : [bcsNo];
+    cands = await poolHistorical(db, rules, examNos);
+    if (kind === "PRACTICE" && task.kind === "L1_EXAM") cands = cands.filter((c) => c.examNo === bcsNo);
+  } else if (task.kind === "L2_SUBTOPIC") {
+    cands = await poolTopic(db, [task.subtopicId!]);
+  } else if (task.kind === "L2_CHECKPOINT") {
+    const subs = await db.learningTask.findMany({ where: { kind: "L2_SUBTOPIC", phase: task.phase }, select: { subtopicId: true } });
+    cands = await poolTopic(db, subs.map((s) => s.subtopicId!));
+  } else {
+    cands = await poolTopic(db);
+  }
+  const ranked = rank(cands, await statsFor(db, userId, cands.map((c) => c.id)), w, now, rnd) as Cand[];
+  const scopes = [`task:${task.key}`, `level:${isL2 ? 2 : 1}`];
 
-  await markStarted(db, userId, task.id);
-  const a = await db.testAttempt.create({
-    data: { userId, taskId: task.id, kind, partNo, questionIds, optionPerms: perms, threshold },
+  let ids: string[];
+  let threshold: number | null = null;
+  if (kind === "PRACTICE") ids = ranked.slice(0, 20).map((c) => c.id);
+  else if (kind === "REVISION") {
+    if (isL2) {
+      const st = await statsFor(db, userId, ranked.map((c) => c.id));
+      const weak = ranked.filter((c) => { const s = st.get(c.id); return s && (s.lastCorrect === false || s.lowConfCorrect > 0 || s.marked); }).length;
+      const size = Math.min(ranked.length, Math.max(rules.get<number>("l2.revision.min"), Math.min(weak, rules.get<number>("l2.revision.max"))));
+      ids = ranked.slice(0, size).map((c) => c.id);
+    } else {
+      const first = (await firstSolveScore(db, userId, task.id)) ?? 0;
+      ids = ranked.slice(0, revisionSize(rules.get<Record<string, number>>("l1.revision.bands"), first)).map((c) => c.id);
+    }
+  } else if (kind === "MASTERY") {
+    ids = ranked.slice(0, rules.get<number>(isL2 ? "l2.mastery.size" : "l1.mastery.size")).map((c) => c.id);
+    threshold = rules.get<number>(isL2 ? "l2.threshold.mastery" : "l1.threshold.mastery", scopes);
+  } else if (kind === "CUMULATIVE") {
+    const examCount = new Set(cands.map((c) => c.examNo)).size;
+    const size = Math.min(rules.get<number>("l1.cumulative.max"), rules.get<number>("l1.cumulative.base") + rules.get<number>("l1.cumulative.step") * (examCount - 1));
+    ids = pickCumulative(ranked, size, rules.get<number>("l1.cumulative.min_per_exam"));
+    threshold = rules.get<number>("l1.threshold.cumulative", scopes);
+  } else if (kind === "CHECKPOINT") {
+    ids = pickCumulative(ranked, rules.get<number>("l2.checkpoint.size"), 1); // প্রতিটি উপবিষয় থেকে অন্তত ১টি
+    threshold = rules.get<number>("l2.threshold.checkpoint", scopes);
+  } else if (isL2) {
+    ids = pickBlueprint(ranked, rules.get<Record<string, number>>("exam.marks_distribution"), rules.get<number>("l2.final.size"));
+    threshold = rules.get<number>("l2.threshold.final", scopes);
+  } else {
+    ids = pickProportional(ranked, rules.get<number>("l1.final.size"));
+    threshold = rules.get<number>("l1.threshold.final", scopes);
+  }
+  return createAttempt(db, userId, task.id, kind, shuffleArr(ids, rnd), { threshold, rules });
+}
+
+/** দৈনিক Revision-এর পরের সেট (Spaced Repetition-এর সারি থেকে, যার সময় হয়েছে)। */
+export async function startRevision(db: Db, userId: string): Promise<string> {
+  const open = await db.testAttempt.findFirst({ where: { userId, kind: "SRS_REVIEW", submittedAt: null }, orderBy: { startedAt: "desc" } });
+  if (open) return open.id;
+  const rules = await loadRules(db);
+  const st = await revisionStatus(db, userId);
+  if (st.remaining <= 0) throw new ExamError("EMPTY", st.dueNow > 0 ? "আজকের Revision-এর সীমা পূর্ণ হয়েছে। বাকিগুলো আগামীকাল।" : "এখন Revision-এর কোনো প্রশ্ন বাকি নেই।");
+  const due = await db.questionStat.findMany({
+    where: { userId, leitnerBox: { gt: 0 }, dueAt: { lte: new Date() }, question: { status: "PUBLISHED" } },
+    orderBy: [{ dueAt: "asc" }, { leitnerBox: "asc" }],
+    take: Math.min(rules.get<number>("srs.session_size"), st.remaining),
+    select: { questionId: true },
   });
-  return a.id;
+  return createAttempt(db, userId, null, "SRS_REVIEW", shuffleArr(due.map((d) => d.questionId), Math.random), { rules });
+}
+
+/** ভুলের ভান্ডার থেকে অনুশীলন (সবচেয়ে বেশি ভুল করা আগে), চাইলে নির্দিষ্ট বিষয়ের। */
+export async function startMistakePractice(db: Db, userId: string, subjectCode?: string): Promise<string> {
+  const rules = await loadRules(db);
+  const wrong = await db.questionStat.findMany({
+    where: { userId, wrong: { gt: 0 }, lastCorrect: false, question: { status: "PUBLISHED", ...(subjectCode ? { subtopic: { topic: { subject: { code: subjectCode } } } } : {}) } },
+    orderBy: [{ wrong: "desc" }, { lastWrongAt: "desc" }],
+    take: 20,
+    select: { questionId: true },
+  });
+  return createAttempt(db, userId, null, "MISTAKE_PRACTICE", shuffleArr(wrong.map((d) => d.questionId), Math.random), { rules });
 }
 
 // ─────────────────────────────────────────── পরীক্ষা চলাকালীন
@@ -162,18 +292,11 @@ async function ownAttempt(db: Db, userId: string, attemptId: string) {
   return a;
 }
 
-const KIND_TITLE: Record<string, string> = { SOLVE: "প্রশ্ন সমাধান", REVISION: "Revision Test", MASTERY: "Mastery Test", CUMULATIVE: "Cumulative Revision Test", LEVEL_FINAL: "Final Assessment", PRACTICE: "অনুশীলন", CHECKPOINT: "Checkpoint", MODEL_TEST: "Model Test", SRS_REVIEW: "দৈনিক Revision", MISTAKE_PRACTICE: "ভুলের অনুশীলন" };
+export const KIND_TITLE: Record<string, string> = { SOLVE: "প্রশ্ন সমাধান", REVISION: "Revision Test", MASTERY: "Mastery Test", CUMULATIVE: "Cumulative Revision Test", LEVEL_FINAL: "Final Assessment", PRACTICE: "অনুশীলন", CHECKPOINT: "Checkpoint Test", MODEL_TEST: "Model Test", SRS_REVIEW: "দৈনিক Revision", MISTAKE_PRACTICE: "ভুলের অনুশীলন" };
 
 export function attemptTitle(a: { kind: string; partNo: number; task: { titleBn: string } | null }, parts?: number) {
-  const base = a.task?.titleBn ?? "";
-  const bn = (n: number) => String(n).replace(/\d/g, (d) => "০১২৩৪৫৬৭৮৯"[+d]);
-  return `${base}: ${KIND_TITLE[a.kind]}${a.kind === "SOLVE" && parts && parts > 1 ? `, ভাগ ${bn(a.partNo)}/${bn(parts)}` : ""}`;
-}
-
-export async function plannedParts(db: Db, bcsNo: number): Promise<number> {
-  const rules = await loadRules(db);
-  const n = await db.question.count({ where: { kind: "HISTORICAL", status: "PUBLISHED", verifyClass: { in: rules.get<string[]>("path.eligible_classes") }, exam: { bcsNo } } });
-  return Math.max(1, Math.ceil(n / rules.get<number>("l1.solve.part_size")));
+  if (!a.task) return KIND_TITLE[a.kind];
+  return `${a.task.titleBn}: ${KIND_TITLE[a.kind]}${a.kind === "SOLVE" && parts && parts > 1 ? `, ভাগ ${bnD(a.partNo)}/${bnD(parts)}` : ""}`;
 }
 
 /** পরীক্ষার পর্দার জন্য: প্রশ্ন ও (বিন্যস্ত) অপশন, সংরক্ষিত উত্তর — সঠিক উত্তর ছাড়া। */
@@ -186,8 +309,7 @@ export async function getAttemptView(db: Db, userId: string, attemptId: string) 
   ]);
   const byId = new Map(qs.map((q) => [q.id, q]));
   const ansBy = new Map(answers.map((x) => [x.questionId, x]));
-  let parts: number | undefined;
-  if (a.kind === "SOLVE" && a.task?.exam) parts = await plannedParts(db, a.task.exam.bcsNo);
+  const parts = a.kind === "SOLVE" && a.task ? await plannedParts(db, a.task) : undefined;
   return {
     id: a.id,
     kind: a.kind,
@@ -242,7 +364,7 @@ export async function submitAttempt(db: Db, userId: string, attemptId: string): 
   const rules = await loadRules(db);
   const intervals = rules.get<number[]>("srs.intervals_days");
   const [qs, answers] = await Promise.all([
-    db.question.findMany({ where: { id: { in: a.questionIds } }, select: { id: true, correctIndex: true } }),
+    db.question.findMany({ where: { id: { in: a.questionIds } }, select: { id: true, correctIndex: true, subtopic: { select: { code: true } } } }),
     db.attemptAnswer.findMany({ where: { attemptId } }),
   ]);
   const correctOf = new Map(qs.map((q) => [q.id, q.correctIndex]));
@@ -256,17 +378,13 @@ export async function submitAttempt(db: Db, userId: string, attemptId: string): 
     if (sel == null) unanswered++;
     else if (ok) correct++;
     else wrong++;
-    return { qid, sel, ok, unsure: ans?.confidence === "UNSURE", marked: ans?.marked ?? false };
+    return { qid, ok, unsure: ans?.confidence === "UNSURE", marked: ans?.marked ?? false };
   });
-  const total = a.questionIds.length;
-  const scorePct = (correct / total) * 100;
+  const scorePct = (correct / a.questionIds.length) * 100;
   const passed = a.threshold != null ? scorePct >= a.threshold : null;
 
   await db.$transaction(async (tx) => {
-    const res = await tx.testAttempt.updateMany({
-      where: { id: attemptId, submittedAt: null },
-      data: { submittedAt: now, correct, wrong, unanswered, scorePct, passed },
-    });
+    const res = await tx.testAttempt.updateMany({ where: { id: attemptId, submittedAt: null }, data: { submittedAt: now, correct, wrong, unanswered, scorePct, passed } });
     if (res.count !== 1) throw new ExamError("SUBMITTED", "পরীক্ষাটি আগেই জমা হয়েছে।");
 
     for (const g of graded) {
@@ -275,90 +393,88 @@ export async function submitAttempt(db: Db, userId: string, attemptId: string): 
         update: { isCorrect: g.ok },
         create: { attemptId, questionId: g.qid, selected: null, isCorrect: false },
       });
+      // Leitner: ভুল/অনুত্তরিত → বাক্স ১ (আগামীকাল); নিশ্চিত সঠিক → পরের বাক্স; অনিশ্চিত সঠিক → একই বাক্স (অন্তত ১)
       const prev = await tx.questionStat.findUnique({ where: { userId_questionId: { userId, questionId: g.qid } } });
       const box = prev?.leitnerBox ?? 0;
-      let nextBox = box;
-      if (!g.ok) nextBox = 1; // ভুল বা অনুত্তরিত → আগামীকাল আবার
-      else if (g.unsure) nextBox = Math.max(1, box); // কম আত্মবিশ্বাসে সঠিক → একই বাক্সে
-      else if (box > 0) nextBox = Math.min(5, box + 1);
+      const nextBox = !g.ok ? 1 : g.unsure ? Math.max(1, box) : box > 0 ? Math.min(5, box + 1) : 0;
       const dueAt = nextBox > 0 ? new Date(now.getTime() + intervals[nextBox - 1] * 864e5) : null;
-      const data = {
-        seen: { increment: 1 },
-        correct: { increment: g.ok ? 1 : 0 },
-        wrong: { increment: g.ok ? 0 : 1 },
-        lastCorrect: g.ok,
-        lowConfCorrect: { increment: g.ok && g.unsure ? 1 : 0 },
-        lastSeenAt: now,
-        ...(g.ok ? {} : { lastWrongAt: now }),
-        leitnerBox: nextBox,
-        dueAt,
-        marked: g.marked,
-      };
+      const common = { lastCorrect: g.ok, lastSeenAt: now, leitnerBox: nextBox, dueAt, marked: g.marked };
       await tx.questionStat.upsert({
         where: { userId_questionId: { userId, questionId: g.qid } },
-        update: data,
-        create: {
-          userId, questionId: g.qid, seen: 1, correct: g.ok ? 1 : 0, wrong: g.ok ? 0 : 1, lastCorrect: g.ok,
-          lowConfCorrect: g.ok && g.unsure ? 1 : 0, lastSeenAt: now, lastWrongAt: g.ok ? null : now, leitnerBox: nextBox, dueAt, marked: g.marked,
+        update: {
+          ...common,
+          seen: { increment: 1 }, correct: { increment: g.ok ? 1 : 0 }, wrong: { increment: g.ok ? 0 : 1 },
+          lowConfCorrect: { increment: g.ok && g.unsure ? 1 : 0 }, ...(g.ok ? {} : { lastWrongAt: now }),
         },
+        create: { userId, questionId: g.qid, ...common, seen: 1, correct: g.ok ? 1 : 0, wrong: g.ok ? 0 : 1, lowConfCorrect: g.ok && g.unsure ? 1 : 0, lastWrongAt: g.ok ? null : now },
       });
     }
 
-    if (a.taskId && MASTERY_KINDS.includes(a.kind)) {
-      await tx.masteryRecord.create({
-        data: { userId, scope: a.kind === "LEVEL_FINAL" ? "LEVEL" : "EXAM", scopeRef: a.task?.exam ? String(a.task.exam.bcsNo) : "1", scorePct, attemptId },
-      });
+    if (a.task && ["MASTERY", "CUMULATIVE", "LEVEL_FINAL", "CHECKPOINT"].includes(a.kind)) {
+      const t = a.task;
+      const scope = t.kind === "L2_SUBTOPIC" ? "SUBTOPIC" : t.kind === "L1_EXAM" ? "EXAM" : "LEVEL";
+      const scopeRef = t.kind === "L2_SUBTOPIC" ? t.key.split(":").at(-1)! : t.exam ? String(t.exam.bcsNo) : t.key;
+      await tx.masteryRecord.create({ data: { userId, scope, scopeRef, scorePct, attemptId } });
     }
-    if (a.taskId) await advanceCycle(tx, userId, a, scorePct, passed);
+    if (a.task) await advanceCycle(tx, userId, a.task, a.kind, scorePct, passed, rules);
   });
 
-  // ধাপ সম্পন্ন হলে পরের কাজ খোলা (নিজস্ব Transaction)
+  // ── ধাপ সম্পন্ন হলে পরের কাজ খোলা (নিজস্ব Transaction)
   let opened: number[] = [];
   let completed = false;
-  if (a.taskId && passed && (a.kind === "LEVEL_FINAL" || a.kind === "CUMULATIVE" || (a.kind === "MASTERY" && a.task?.exam?.bcsNo === 10))) {
-    opened = await completeTask(db, userId, a.taskId);
+  const t = a.task;
+  const finishes =
+    !!t && passed === true &&
+    (a.kind === "LEVEL_FINAL" || a.kind === "CUMULATIVE" || a.kind === "CHECKPOINT" ||
+      (a.kind === "MASTERY" && (t.kind === "L2_SUBTOPIC" || t.exam?.bcsNo === 10)));
+  if (finishes) {
+    opened = await completeTask(db, userId, t!.id);
     completed = true;
     const doneExams = await db.studentTaskProgress.count({ where: { userId, state: "COMPLETED", task: { kind: "L1_EXAM" } } });
     if (doneExams >= 10) await award(db, userId, "l1_10");
-    if (a.kind === "LEVEL_FINAL") await award(db, userId, "l1_done");
+    if (t!.key === "L1:FINAL") await award(db, userId, "l1_done");
+    if (t!.key === "L2:CHECKPOINT:A") await award(db, userId, "phase_a");
+    if (t!.key === "L2:FINAL") await award(db, userId, "l2_done");
   }
-  if (a.kind === "SOLVE" && a.taskId) {
-    const p = await db.studentTaskProgress.findUnique({ where: { userId_taskId: { userId, taskId: a.taskId } } });
-    if (p?.step === "REVIEW") await award(db, userId, "first_exam"); // পুরো প্রশ্নপত্র (সব ভাগ) সমাধানের পর
+  if (a.kind === "SOLVE" && t) {
+    const p = await db.studentTaskProgress.findUnique({ where: { userId_taskId: { userId, taskId: t.id } } });
+    if (p?.step === "REVIEW" && t.kind === "L1_EXAM") await award(db, userId, "first_exam"); // পুরো প্রশ্নপত্র সমাধানের পর
   }
+  if (a.kind === "SRS_REVIEW") await recordRevisionDay(db, userId, attemptId, now);
   return { scorePct, passed, opened, completed };
 }
 
+/** দৈনিক Revision-এর দিনভিত্তিক রেকর্ড ও টানা ৭ দিনের অর্জন। */
+async function recordRevisionDay(db: Db, userId: string, attemptId: string, now: Date) {
+  const day = dhakaDayStart(now);
+  const st = await revisionStatus(db, userId, now);
+  await db.revisionSession.upsert({
+    where: { userId_day: { userId, day } },
+    update: { doneCount: st.doneToday, dueCount: st.doneToday + st.remaining, attemptIds: { push: attemptId } },
+    create: { userId, day, doneCount: st.doneToday, dueCount: st.doneToday + st.remaining, attemptIds: [attemptId] },
+  });
+  const days = await db.revisionSession.findMany({ where: { userId, doneCount: { gt: 0 }, day: { gte: dhakaDayStart(now, -6) } }, select: { day: true } });
+  if (days.length >= 7) await award(db, userId, "streak_7");
+}
+
 /** Learning Cycle-এর ধাপ বদল — একই Transaction-এ। */
-async function advanceCycle(
-  tx: Prisma.TransactionClient,
-  userId: string,
-  a: { taskId: number | null; kind: AttemptKind; task: { exam: { bcsNo: number } | null } | null },
-  scorePct: number,
-  passed: boolean | null,
-) {
-  const where = { userId_taskId: { userId, taskId: a.taskId! } };
+async function advanceCycle(tx: Prisma.TransactionClient, userId: string, task: Task, kind: AttemptKind, scorePct: number, passed: boolean | null, rules: Rules) {
+  const where = { userId_taskId: { userId, taskId: task.id } };
   const p = await tx.studentTaskProgress.findUnique({ where });
   if (!p || p.state === "COMPLETED") return;
+  const scores = { lastScore: scorePct, bestScore: Math.max(p.bestScore ?? 0, scorePct) };
 
-  if (a.kind === "SOLVE" && p.step === "SOLVE") {
-    // সব ভাগ জমা হলে পর্যালোচনায়
-    const rules = await loadRules(tx as unknown as PrismaClient);
-    const n = await tx.question.count({ where: { kind: "HISTORICAL", status: "PUBLISHED", verifyClass: { in: rules.get<string[]>("path.eligible_classes") }, exam: { bcsNo: a.task!.exam!.bcsNo } } });
-    const parts = Math.max(1, Math.ceil(n / rules.get<number>("l1.solve.part_size")));
-    const done = await tx.testAttempt.count({ where: { userId, taskId: a.taskId!, kind: "SOLVE", submittedAt: { not: null } } });
+  if (kind === "SOLVE" && p.step === "SOLVE") {
+    const parts = (await solveParts(tx as unknown as PrismaClient, task, rules)).length;
+    const done = await tx.testAttempt.count({ where: { userId, taskId: task.id, kind: "SOLVE", submittedAt: { not: null } } });
     if (done >= parts) await tx.studentTaskProgress.update({ where, data: { step: "REVIEW" } });
-  } else if (a.kind === "REVISION" && p.step === "REVISION") {
+  } else if (kind === "REVISION" && p.step === "REVISION") {
     await tx.studentTaskProgress.update({ where, data: { step: "MASTERY" } });
-  } else if (a.kind === "MASTERY" && p.step === "MASTERY") {
-    const best = Math.max(p.bestScore ?? 0, scorePct);
-    const isFirstExam = a.task?.exam?.bcsNo === 10;
-    await tx.studentTaskProgress.update({
-      where,
-      data: { lastScore: scorePct, bestScore: best, ...(passed && !isFirstExam ? { step: "CUMULATIVE" } : {}) },
-    });
-  } else if (a.kind === "CUMULATIVE" || a.kind === "LEVEL_FINAL") {
-    await tx.studentTaskProgress.update({ where, data: { lastScore: scorePct, bestScore: Math.max(p.bestScore ?? 0, scorePct) } });
+  } else if (kind === "MASTERY" && p.step === "MASTERY") {
+    const toCumulative = passed && task.kind === "L1_EXAM" && task.exam?.bcsNo !== 10;
+    await tx.studentTaskProgress.update({ where, data: { ...scores, ...(toCumulative ? { step: "CUMULATIVE" } : {}) } });
+  } else if (kind === "CUMULATIVE" || kind === "LEVEL_FINAL" || kind === "CHECKPOINT") {
+    await tx.studentTaskProgress.update({ where, data: scores });
   }
 }
 
@@ -379,7 +495,11 @@ export async function getResultView(db: Db, userId: string, attemptIds: string[]
   const [qs, answers] = await Promise.all([
     db.question.findMany({
       where: { id: { in: qids } },
-      select: { id: true, text: true, options: true, correctIndex: true, explanation: true, explanationStatus: true, examQNo: true, exam: { select: { bcsNo: true } }, subtopic: { select: { nameBn: true, topic: { select: { nameBn: true, subject: { select: { nameBn: true, order: true } } } } } } },
+      select: {
+        id: true, text: true, options: true, correctIndex: true, explanation: true, explanationStatus: true, examQNo: true, source: true, kind: true,
+        exam: { select: { bcsNo: true } },
+        subtopic: { select: { nameBn: true, topic: { select: { nameBn: true, subject: { select: { nameBn: true, order: true } } } } } },
+      },
     }),
     db.attemptAnswer.findMany({ where: { attemptId: { in: attemptIds } } }),
   ]);
@@ -404,7 +524,7 @@ export async function getResultView(db: Db, userId: string, attemptIds: string[]
           unsure: ans?.confidence === "UNSURE",
           explanation: q.explanation,
           explanationVerified: q.explanationStatus === "VERIFIED",
-          source: q.exam ? `${q.exam.bcsNo === 10 ? "১০ম" : `${q.exam.bcsNo}তম`} বিসিএস, প্রশ্ন ${q.examQNo}` : null,
+          source: q.exam ? `${q.exam.bcsNo === 10 ? "১০ম" : `${q.exam.bcsNo}তম`} বিসিএস, প্রশ্ন ${q.examQNo}` : q.source,
           subject: q.subtopic.topic.subject.nameBn,
           subjectOrder: q.subtopic.topic.subject.order,
           topic: q.subtopic.topic.nameBn,
@@ -433,7 +553,8 @@ export async function getResultView(db: Db, userId: string, attemptIds: string[]
     attempts: attempts.map((a) => ({ id: a.id, kind: a.kind, partNo: a.partNo, threshold: a.threshold, passed: a.passed, scorePct: a.scorePct })),
     kind: first.kind,
     taskKey: first.task?.key ?? null,
-    taskTitle: first.task?.titleBn ?? "",
+    taskKind: first.task?.kind ?? null,
+    taskTitle: first.task?.titleBn ?? KIND_TITLE[first.kind],
     bcsNo: first.task?.exam?.bcsNo ?? null,
     threshold: first.threshold,
     passed: attempts.length === 1 ? first.passed : null,

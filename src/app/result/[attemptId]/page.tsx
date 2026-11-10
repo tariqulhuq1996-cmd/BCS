@@ -4,15 +4,15 @@ import { Suspense } from "react";
 import { notFound, redirect } from "next/navigation";
 import { prisma } from "@/lib/db";
 import { requireUser } from "@/lib/auth/session";
-import { ExamError, getResultView } from "@/lib/exam/service";
-import { startStepAction } from "@/lib/exam/actions";
+import { ExamError, getResultView, revisionStatus } from "@/lib/exam/service";
+import { startRevisionAction, startStepAction } from "@/lib/exam/actions";
 import { taskHref } from "@/lib/progress/dashboard";
 import { bn, bnNum } from "@/lib/bn";
 import { ResultBody } from "@/components/exam/result-body";
 
 export const metadata: Metadata = { title: "ফলাফল", robots: { index: false } };
 
-const KIND_BN: Record<string, string> = { SOLVE: "প্রশ্ন সমাধান", REVISION: "Revision Test", MASTERY: "Mastery Test", CUMULATIVE: "Cumulative Revision Test", LEVEL_FINAL: "Final Assessment", PRACTICE: "অনুশীলন" };
+const KIND_BN: Record<string, string> = { SOLVE: "প্রশ্ন সমাধান", REVISION: "Revision Test", MASTERY: "Mastery Test", CUMULATIVE: "Cumulative Revision Test", LEVEL_FINAL: "Final Assessment", PRACTICE: "অনুশীলন", CHECKPOINT: "Checkpoint Test", SRS_REVIEW: "দৈনিক Revision", MISTAKE_PRACTICE: "ভুলের অনুশীলন" };
 
 export default function ResultPage({ params }: PageProps<"/result/[attemptId]">) {
   return (
@@ -47,19 +47,30 @@ async function Content({ params }: { params: Promise<{ attemptId: string }> }) {
     if (e instanceof ExamError) notFound();
     throw e;
   }
-  const taskKey = r.taskKey!;
-  const task = await prisma.learningTask.findUnique({ where: { key: taskKey }, include: { exam: true } });
+  const taskKey = r.taskKey ?? "";
+  const task = taskKey ? await prisma.learningTask.findUnique({ where: { key: taskKey }, include: { exam: true, subtopic: { select: { code: true } } } }) : null;
   const progress = task ? await prisma.studentTaskProgress.findUnique({ where: { userId_taskId: { userId: user.id, taskId: task.id } } }) : null;
-  const href = task ? taskHref({ kind: task.kind, key: task.key, bcsNo: task.exam?.bcsNo }) : "/dashboard";
+  const href = task ? taskHref({ kind: task.kind, key: task.key, bcsNo: task.exam?.bcsNo, subtopicCode: task.subtopic?.code }) : "/dashboard";
   const thr = r.threshold;
 
   // ── পরের করণীয়
   let headline = "";
   let next: React.ReactNode = null;
-  if (r.kind === "PRACTICE") {
+  if (r.kind === "SRS_REVIEW") {
+    const st = await revisionStatus(prisma, user.id);
+    headline = st.remaining > 0
+      ? `এই সেট শেষ। আজ আরও ${bn(st.remaining)}টি প্রশ্ন Revision বাকি।`
+      : "আজকের Revision শেষ। ঠিক উত্তর দেওয়া প্রশ্ন পরের বার আসবে আরও দেরিতে; ভুলগুলো আগামীকাল আবার।";
+    next = st.remaining > 0
+      ? <form action={startRevisionAction}><button className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">পরের সেট শুরু করো</button></form>
+      : <Link href="/dashboard" className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">Dashboard-এ যাও</Link>;
+  } else if (r.kind === "MISTAKE_PRACTICE") {
+    headline = "ভুলের অনুশীলন শেষ। যেগুলো এবার ঠিক হয়েছে, সেগুলো ভুলের ভান্ডার থেকে সরে গেছে।";
+    next = <Link href="/mistakes" className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">ভুলের ভান্ডারে ফিরে যাও</Link>;
+  } else if (r.kind === "PRACTICE") {
     headline = "অনুশীলন শেষ। এটি ধাপের অগ্রগতিতে গোনা হয় না, তবে ভুলগুলো Revision-সারিতে যুক্ত হয়েছে।";
     next = <Link href={href} className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">ধাপে ফিরে যাও</Link>;
-  } else if (progress?.state === "COMPLETED" && (r.kind === "MASTERY" || r.kind === "CUMULATIVE" || r.kind === "LEVEL_FINAL") && r.passed) {
+  } else if (progress?.state === "COMPLETED" && (r.kind === "MASTERY" || r.kind === "CUMULATIVE" || r.kind === "LEVEL_FINAL" || r.kind === "CHECKPOINT") && r.passed) {
     const opened = await prisma.taskPrerequisite.findMany({ where: { requiresId: task!.id }, include: { task: { select: { titleBn: true } } }, take: 3 });
     headline = `অভিনন্দন! তুমি ${r.taskTitle} সম্পন্ন করেছ।${opened.length ? ` ${opened.map((o) => o.task.titleBn).join(", ")}${opened.length >= 3 ? " ইত্যাদি" : ""} এখন খোলা।` : ""}`;
     next = <Link href="/dashboard" className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">পরবর্তী কাজে যাও</Link>;
@@ -91,7 +102,7 @@ async function Content({ params }: { params: Promise<{ attemptId: string }> }) {
 
   return (
     <>
-      <p className="text-sm text-muted">{r.taskTitle}: {KIND_BN[r.kind]}</p>
+      <p className="text-sm text-muted">{r.taskKey ? `${r.taskTitle}: ${KIND_BN[r.kind]}` : KIND_BN[r.kind]}</p>
       <div className="mt-2 flex flex-wrap items-end gap-x-6 gap-y-2">
         <h1 className="font-display text-[56px] font-extrabold leading-none tabular" style={{ fontStretch: "105%" }}>
           {bnNum(r.scorePct, 0)}%
