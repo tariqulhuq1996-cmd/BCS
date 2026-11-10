@@ -12,7 +12,7 @@
   --surface: #ffffff;
   --ink: #1c2733;
   --ink-2: #4a5662;
-  --muted: #6b7783;
+  --muted: #616d78; /* WCAG AA: কাগজে ৪.৮৭:১ */
   --line: #d9dfd9;
   --line-strong: #b9c2bb;
   --green: #006a4e;

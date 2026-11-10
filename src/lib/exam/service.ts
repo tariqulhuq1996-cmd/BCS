@@ -147,7 +147,19 @@ async function createAttempt(db: Db, userId: string, taskId: number | null, kind
   const perms: Record<string, number[]> = {};
   for (const o of qs) perms[o.id] = optionPerm(o.options, shuffle, Math.random);
   if (taskId) await markStarted(db, userId, taskId);
-  const a = await db.testAttempt.create({ data: { userId, taskId, kind, partNo: opts.partNo ?? 1, questionIds, optionPerms: perms, threshold: opts.threshold ?? null } });
+  const partNo = opts.partNo ?? 1;
+  const a = await db.testAttempt.create({ data: { userId, taskId, kind, partNo, questionIds, optionPerms: perms, threshold: opts.threshold ?? null } });
+  // একযোগে দুবার শুরু (যেমন দুবার ক্লিক) হলে দুটি পরীক্ষা তৈরি হতে পারে — সবচেয়ে আগেরটি রেখে নিজেরটি মুছে ফেলা।
+  // দুটি অনুরোধই একই ক্রম (startedAt, id) দেখে, তাই দুজনই একই "প্রথম" পরীক্ষা বেছে নেয়।
+  const twins = await db.testAttempt.findMany({
+    where: { userId, taskId, kind, partNo, submittedAt: null },
+    orderBy: [{ startedAt: "asc" }, { id: "asc" }],
+    select: { id: true },
+  });
+  if (twins.length > 1 && twins[0].id !== a.id) {
+    await db.testAttempt.deleteMany({ where: { id: a.id, submittedAt: null } });
+    return twins[0].id;
+  }
   return a.id;
 }
 

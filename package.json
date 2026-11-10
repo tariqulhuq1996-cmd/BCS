@@ -19,7 +19,12 @@
     "db:allocate": "tsx scripts/allocate-level2.ts --floor 10 --write",
     "test:level3": "tsx scripts/test-level3.ts",
     "backup": "tsx scripts/backup.ts",
-    "test:admin": "tsx scripts/test-admin.ts"
+    "test:admin": "tsx scripts/test-admin.ts",
+    "test": "tsx scripts/run-all-tests.ts",
+    "test:security": "tsx scripts/test-security.ts",
+    "test:http": "tsx scripts/test-http.ts",
+    "test:load": "tsx scripts/test-load.ts",
+    "check:integrity": "tsx scripts/check-integrity.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.19.3",
