@@ -65,7 +65,7 @@ export function SubtopicTable({ rows, subjects }: { rows: Row[]; subjects: { cod
               <th scope="col" className="px-3 py-2 font-medium">উপবিষয়</th>
               {th("score", "Score")}
               {th("histTotal", "মোট প্রশ্ন")}
-              <th scope="col" className="px-2 py-2 text-right font-medium">উপস্থিতি (সব · ২০০)</th>
+              <th scope="col" className="px-2 py-2 text-right font-medium">উপস্থিতি</th>
               {th("recentCount", "৪০–৫০তম")}
               <th scope="col" className="px-3 py-2 font-medium">প্রবণতা</th>
             </tr>
@@ -99,7 +99,10 @@ function FragmentRow({ r, open, onToggle }: { r: Row; open: boolean; onToggle: (
         </td>
         <td className="px-2 py-2 text-right">{r.score != null ? bnNum(r.score, 1) : "—"}</td>
         <td className="px-2 py-2 text-right">{r.histTotal != null ? bn(r.histTotal) : "—"}</td>
-        <td className="px-2 py-2 text-right text-ink-2">{r.presenceAll ?? "—"} · {r.presence200 ?? "—"}</td>
+        <td className="px-2 py-2 text-right text-ink-2">
+          {r.presenceAll ? bn(r.presenceAll) : "—"}
+          <span className="block text-xs text-muted">২০০ নম্বরে {r.presence200 ? bn(r.presence200) : "—"}</span>
+        </td>
         <td className="px-2 py-2 text-right">{r.recentCount != null ? bn(r.recentCount) : "—"}</td>
         <td className="px-3 py-2 text-ink-2">{r.trend ?? "—"}</td>
       </tr>

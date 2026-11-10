@@ -76,7 +76,7 @@ export default async function ResearchPage() {
             </tbody>
           </table>
         </div>
-        <SourceNote>পার্থক্য শতাংশ-বিন্দুতে; ৩-এর বেশি পার্থক্য গাঢ় করে দেখানো।</SourceNote>
+        <SourceNote>পার্থক্য শতাংশ-বিন্দুতে; ৩ বা তার বেশি পার্থক্য গাঢ় করে দেখানো।</SourceNote>
       </Section>
 
       <Section id="exams" title="পরীক্ষার তালিকা" lead="কোন পরীক্ষার কতটি প্রশ্ন ডেটাসেটে আছে। আংশিক প্রশ্নপত্র আলাদা করে চিহ্নিত।">

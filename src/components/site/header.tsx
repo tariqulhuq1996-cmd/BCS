@@ -12,8 +12,8 @@ const NAV = [
 export function SiteHeader() {
   return (
     <header className="border-b border-line bg-paper/90 backdrop-blur supports-[backdrop-filter]:bg-paper/80 sticky top-0 z-40">
-      <div className="mx-auto flex h-16 max-w-6xl items-center gap-6 px-4 sm:px-6">
-        <Link href="/" className="flex items-center gap-2 font-display text-lg font-bold" style={{ fontStretch: "115%" }}>
+      <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4 sm:gap-6 sm:px-6">
+        <Link href="/" className="flex shrink-0 items-center gap-2 whitespace-nowrap font-display text-base font-bold sm:text-lg" style={{ fontStretch: "115%" }}>
           <Bubbles />
           <span>বিসিএস ৫২ প্রস্তুতি</span>
         </Link>
@@ -24,7 +24,7 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <div className="ml-auto flex items-center gap-2">
+        <div className="ml-auto flex items-center gap-1 whitespace-nowrap sm:gap-2">
           <Suspense fallback={<AuthLinks />}>
             <UserArea />
           </Suspense>
@@ -57,10 +57,10 @@ function Bubbles() {
 function AuthLinks() {
   return (
     <>
-      <Link href="/login" className="rounded-md px-3 py-1.5 text-[15px] text-ink-2 hover:text-ink">
+      <Link href="/login" className="rounded-md px-2 py-1.5 text-[15px] text-ink-2 hover:text-ink sm:px-3">
         লগইন
       </Link>
-      <Link href="/register" className="rounded-md bg-green px-3.5 py-1.5 text-[15px] font-semibold text-white hover:bg-green-strong dark:text-paper">
+      <Link href="/register" className="rounded-md bg-green px-3 py-1.5 text-[15px] font-semibold text-white hover:bg-green-strong sm:px-3.5 dark:text-paper">
         শুরু করুন
       </Link>
     </>
@@ -72,11 +72,11 @@ async function UserArea() {
   if (!user) return <AuthLinks />;
   return (
     <>
-      <Link href="/dashboard" className="rounded-md bg-green px-3.5 py-1.5 text-[15px] font-semibold text-white hover:bg-green-strong dark:text-paper">
-        আমার Dashboard
+      <Link href="/dashboard" className="rounded-md bg-green px-3 py-1.5 text-[15px] font-semibold text-white hover:bg-green-strong sm:px-3.5 dark:text-paper">
+        Dashboard
       </Link>
       <form action={logout}>
-        <button className="rounded-md px-3 py-1.5 text-[15px] text-ink-2 hover:text-ink">লগআউট</button>
+        <button className="rounded-md px-2 py-1.5 text-[15px] text-ink-2 hover:text-ink sm:px-3">লগআউট</button>
       </form>
     </>
   );
