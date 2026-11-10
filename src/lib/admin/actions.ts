@@ -2,7 +2,6 @@
 
 import { redirect } from "next/navigation";
 import { updateTag } from "next/cache";
-import { headers } from "next/headers";
 import type { Prisma, QuestionStatus } from "@prisma/client";
 import { prisma } from "@/lib/db";
 import { getCurrentUser, hashToken, newToken } from "@/lib/auth/session";
@@ -12,6 +11,7 @@ import { importQuestions, parseCsv, parseXlsx, type ImportReport } from "@/lib/q
 import { approveModelTests, generateModelTests } from "@/lib/exam/model-tests";
 import { manualUnlock, reconcileDeactivated } from "@/lib/progress/engine";
 import { sendPasswordResetLink } from "@/lib/auth/mailer";
+import { appUrl } from "@/lib/env";
 
 /** প্রতিটি অ্যাডমিন-কাজের শুরুতে: সার্ভারে ভূমিকা যাচাই। */
 async function admin() {
@@ -221,8 +221,7 @@ export async function sendResetAction(fd: FormData) {
   const u = await prisma.user.findUniqueOrThrow({ where: { id: userId } });
   const token = newToken();
   await prisma.passwordResetToken.create({ data: { id: hashToken(token), userId, expiresAt: new Date(Date.now() + 60 * 60e3) } });
-  const h = await headers();
-  await sendPasswordResetLink(u.email, `${h.get("x-forwarded-proto") ?? "http"}://${h.get("host")}/reset-password/${token}`);
+  await sendPasswordResetLink(u.email, `${appUrl()}/reset-password/${token}`);
   await audit(a.id, "send_reset", "User", userId);
   back(`/admin/students/${userId}`, "পাসওয়ার্ড রিসেটের লিংক পাঠানো হয়েছে।");
 }

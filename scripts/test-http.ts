@@ -42,6 +42,16 @@ async function main() {
     }
     const home = await get("/");
     check("নিরাপত্তা-হেডার আছে", home.headers.get("x-frame-options") === "DENY" && home.headers.get("x-content-type-options") === "nosniff" && !!home.headers.get("referrer-policy"));
+    const csp = home.headers.get("content-security-policy") ?? "";
+    check("CSP: শুধু নিজের সাইট, ফ্রেম নিষেধ, plugin নিষেধ", /default-src 'self'/.test(csp) && /frame-ancestors 'none'/.test(csp) && /object-src 'none'/.test(csp) && !/https?:\/\//.test(csp), csp);
+    check("সার্ভারের পরিচয়-হেডার (X-Powered-By) নেই", !home.headers.get("x-powered-by"));
+    const health = await fetch(BASE + "/api/health");
+    const hj = await health.json().catch(() => ({}));
+    check("/api/health: অ্যাপ ও ডেটাবেস চালু", health.status === 200 && hj.ok === true && hj.db === "ok", hj);
+    const robots = await (await fetch(BASE + "/robots.txt")).text();
+    check("robots.txt: অ্যাডমিন ও শিক্ষার্থী-অংশ সার্চ ইঞ্জিনে নয়", /Disallow: \/admin/.test(robots) && /Disallow: \/dashboard/.test(robots) && /Sitemap:/.test(robots));
+    const sitemap = await (await fetch(BASE + "/sitemap.xml")).text();
+    check("sitemap.xml-এ শুধু জনসাধারণের পাতা", sitemap.includes("/research") && !sitemap.includes("/admin") && !sitemap.includes("/dashboard"));
 
     // ── শিক্ষার্থী
     const { ensureStarted } = await import("../src/lib/progress/engine");

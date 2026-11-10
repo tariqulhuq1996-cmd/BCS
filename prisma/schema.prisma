@@ -61,6 +61,15 @@ model Session {
   @@index([userId])
 }
 
+/// লগইন/রিসেটে বারবার চেষ্টার হিসাব (একাধিক সার্ভারেও কাজ করে); ২৪ ঘণ্টার পুরোনো সারি নিজে থেকে মুছে যায়।
+model RateHit {
+  id  BigInt   @id @default(autoincrement())
+  key String
+  at  DateTime @default(now())
+
+  @@index([key, at])
+}
+
 model PasswordResetToken {
   id        String    @id // token hash
   userId    String
