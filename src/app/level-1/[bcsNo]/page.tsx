@@ -1,29 +1,34 @@
 import type { Metadata } from "next";
-export const metadata: Metadata = { title: "প্রস্তুতির ধাপ" };
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/db";
 import { loadRules } from "@/lib/rules";
+import { requireUser } from "@/lib/auth/session";
 import { loadTaskForPage } from "@/lib/progress/access";
 import { L1_STEPS } from "@/lib/progress/cycle";
 import { bn, bnOrdinal } from "@/lib/bn";
-import { EngineComingNotice, LockedNotice, StepPage } from "@/components/portal/step-page";
+import { LockedNotice, StepPage } from "@/components/portal/step-page";
+import { L1StepActions } from "@/components/exam/step-actions";
 
-export default function L1TaskPage({ params }: PageProps<"/level-1/[bcsNo]">) {
+export const metadata: Metadata = { title: "প্রস্তুতির ধাপ" };
+
+export default function L1TaskPage({ params, searchParams }: PageProps<"/level-1/[bcsNo]">) {
   return (
     <Suspense fallback={<p className="px-4 pt-10 text-ink-2">লোড হচ্ছে…</p>}>
-      <Content params={params} />
+      <Content params={params} searchParams={searchParams} />
     </Suspense>
   );
 }
 
-async function Content({ params }: { params: Promise<{ bcsNo: string }> }) {
-  const { bcsNo } = await params;
+async function Content({ params, searchParams }: { params: Promise<{ bcsNo: string }>; searchParams: Promise<Record<string, string | string[] | undefined>> }) {
+  const [{ bcsNo }, sp] = await Promise.all([params, searchParams]);
+  const error = typeof sp.e === "string" ? sp.e : undefined;
   const isFinal = bcsNo === "final";
   if (!isFinal && !/^\d{2}$/.test(bcsNo)) notFound();
   const key = isFinal ? "L1:FINAL" : `L1:EXAM:${bcsNo}`;
   const { task, locked, current } = await loadTaskForPage(key, `/level-1/${bcsNo}`);
   if (locked) return <LockedNotice title={task.title} current={current} />;
+  const user = await requireUser();
 
   const rules = await loadRules(prisma);
   if (isFinal) {
@@ -34,7 +39,7 @@ async function Content({ params }: { params: Promise<{ bcsNo: string }> }) {
         steps={[{ key: "SOLVE", label: "Final Assessment", desc: `১০ম–৫০তম সব বিসিএস থেকে ${bn(rules.get<number>("l1.final.size"))}টি প্রশ্ন।` }]}
         facts={[{ k: "পাস করতে", v: `${bn(rules.get<number>("l1.threshold.final"))}%` }, { k: "পাস করলে", v: "Level ২ খুলবে" }]}
       >
-        <EngineComingNotice />
+        <L1StepActions task={task} userId={user.id} error={error} />
       </StepPage>
     );
   }
@@ -60,7 +65,7 @@ async function Content({ params }: { params: Promise<{ bcsNo: string }> }) {
       ]}
     >
       {exam?.notesBn && <p className="mt-6 text-sm text-danger">{bnOrdinal(no)} বিসিএস: {exam.notesBn}</p>}
-      <EngineComingNotice />
+      <L1StepActions task={task} userId={user.id} error={error} />
     </StepPage>
   );
 }

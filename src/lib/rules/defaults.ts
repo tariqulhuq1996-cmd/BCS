@@ -29,7 +29,9 @@ export const DEFAULT_RULES: Record<string, { value: RuleValue; noteBn: string }>
   "l1.cumulative.base": { value: 20, noteBn: "Cumulative Test: ভিত্তি প্রশ্নসংখ্যা" },
   "l1.cumulative.step": { value: 5, noteBn: "Cumulative Test: প্রতি সম্পন্ন পরীক্ষায় বাড়তি প্রশ্ন" },
   "l1.cumulative.max": { value: 100, noteBn: "Cumulative Test: সর্বোচ্চ প্রশ্ন" },
+  "l1.cumulative.min_per_exam": { value: 2, noteBn: "Cumulative Test-এ প্রতিটি আগের বিসিএস থেকে ন্যূনতম প্রশ্ন" },
   "l1.final.size": { value: 100, noteBn: "Level 1 Final Assessment-এর প্রশ্নসংখ্যা" },
+  "shuffle.options": { value: true, noteBn: "Revision/Mastery/Cumulative-এ অপশনের ক্রম এলোমেলো (\"সবগুলো\"/\"কোনটিই নয়\" ধরনের অপশন থাকলে নয়)" },
 
   // প্রশ্ন বাছাইয়ের ওজন (প্রোটোটাইপ থেকে)
   "select.weights": {
