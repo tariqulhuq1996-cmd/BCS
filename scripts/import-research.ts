@@ -7,7 +7,7 @@
  * বারবার চালানো নিরাপদ (idempotent): uid দিয়ে upsert; শিক্ষার্থীর কোনো তথ্য মোছে না।
  * কোনো সংখ্যা অনুমান করে বসানো হয় না — উৎসে না থাকলে ফাঁকা (null) থাকে।
  */
-import { PrismaClient, ExamType, PriorityGrade, QuestionStatus, ExplanationStatus } from "@prisma/client";
+import { PrismaClient, Prisma, ExamType, PriorityGrade, QuestionStatus, ExplanationStatus } from "@prisma/client";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { questionHash } from "../src/lib/questions/hash";
@@ -157,7 +157,8 @@ async function main() {
   const problems: string[] = [];
   const CHUNK = 250;
   for (let i = 0; i < data.q.length; i += CHUNK) {
-    const ops = data.q.slice(i, i + CHUNK).map((r) => {
+    const newRows: Prisma.QuestionCreateManyInput[] = [];
+    const ops = data.q.slice(i, i + CHUNK).flatMap((r) => {
       const [bcs, no, text, opts, ans, cls, verifyNote, answerNote, , , code, expl] = r;
       const uid = `H-${bcs}-${no}`;
       const t = tsv.get(`${bcs}-${no}`);
@@ -187,15 +188,17 @@ async function main() {
         status,
         textHash: questionHash(text, opts.map(String)),
       };
-      if (existing.has(uid)) updated++;
-      else inserted++;
-      return prisma.question.upsert({
-        where: { uid },
-        update: fields,
-        create: { uid, ...fields, importBatchId: batch.id },
-      });
+      // নতুন প্রশ্ন একসঙ্গে (createMany — দূরের ডেটাবেসে দ্রুত); আগে থেকে থাকা প্রশ্ন আলাদাভাবে হালনাগাদ
+      if (!existing.has(uid)) {
+        inserted++;
+        newRows.push({ uid, ...fields, importBatchId: batch.id });
+        return [];
+      }
+      updated++;
+      return [prisma.question.update({ where: { uid }, data: fields })];
     });
-    await prisma.$transaction(ops);
+    if (newRows.length) await prisma.question.createMany({ data: newRows, skipDuplicates: true });
+    if (ops.length) await prisma.$transaction(ops);
     process.stdout.write(`\rপ্রশ্ন: ${Math.min(i + CHUNK, data.q.length)}/${data.q.length}`);
   }
   console.log();

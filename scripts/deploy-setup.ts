@@ -1,17 +1,20 @@
 /**
- * Deploy-এর সময় ডেটাবেস প্রস্তুত করা — `npm run build`-এর শুরুতে নিজে থেকে চলে (Hostinger-এ আলাদা কিছু চালাতে হয় না)।
- *   ১. টেবিল তৈরি/হালনাগাদ (prisma migrate deploy) — প্রতিবার; শুধু নতুন migration প্রয়োগ হয়
- *   ২. ডেটাবেস খালি হলে (প্রথম Deploy): গবেষণার প্রশ্ন → Level, নিয়ম, ধাপ → Level ২-এর অনুমোদিত লক্ষ্য → উৎসের সঙ্গে মিল যাচাই
- *      পরের Deploy-গুলোতে: শুধু seed (নতুন নিয়ম/ধাপ যোগ হয়; অ্যাডমিনের বদলানো মান ও শিক্ষার্থীর অগ্রগতি অক্ষত)
+ * Deploy-এর সময় ডেটাবেসের দ্রুত প্রস্তুতি — `npm run build`-এর শুরুতে নিজে থেকে চলে। কয়েক সেকেন্ডের কাজ, তাই বিল্ড আটকায় না।
+ *   ১. টেবিল তৈরি/হালনাগাদ (prisma migrate deploy) — শুধু নতুন migration প্রয়োগ হয়
+ *   ২. গবেষণার ডেটা সম্পূর্ণ বসানো আছে কিনা পরীক্ষা — না থাকলে লগে স্পষ্ট নির্দেশনা (বিল্ড থামায় না)
  *   ৩. ADMIN_EMAIL ও ADMIN_PASSWORD দেওয়া থাকলে এবং কোনো অ্যাডমিন না থাকলে প্রথম অ্যাডমিন তৈরি
- * স্থানীয় ডেভেলপমেন্ট ডেটাবেসে (npm run db) কিছু করে না — সেখানে prisma migrate dev ব্যবহার হয়।
+ *
+ * গবেষণার ৫,৩৫২ প্রশ্ন বসানো (npm run setup:prod) বিল্ডের ভেতরে হয় না: দূরের ডেটাবেসে কয়েক মিনিট লাগে,
+ * আর Hostinger-এর বিল্ড-সময়সীমায় মাঝপথে কেটে যায়। এটি একবার আলাদাভাবে চালানো হয় (docs/DEPLOY_HOSTINGER.md)।
+ * স্থানীয় ডেভেলপমেন্ট ডেটাবেসে (npm run db) কিছু করে না।
  */
 import { execSync } from "node:child_process";
 import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcryptjs";
 
 const url = process.env.DATABASE_URL ?? "";
-const run = (cmd: string) => execSync(cmd, { stdio: "inherit", env: process.env });
+const EXPECTED_HISTORICAL = 5352;
+const EXPECTED_TASKS = 467;
 
 async function main() {
   if (!url) {
@@ -24,20 +27,21 @@ async function main() {
   }
 
   console.log("[deploy-setup] টেবিল তৈরি/হালনাগাদ…");
-  run("npx prisma migrate deploy");
+  execSync("npx prisma migrate deploy", { stdio: "inherit", env: process.env });
 
   const db = new PrismaClient();
   try {
-    const subjects = await db.subject.count();
-    if (subjects === 0) {
-      console.log("[deploy-setup] প্রথম Deploy: গবেষণার ডেটা বসানো হচ্ছে (কয়েক মিনিট লাগতে পারে)…");
-      run("npx tsx scripts/import-research.ts");
-      run("npx tsx scripts/seed.ts");
-      run("npx tsx scripts/allocate-level2.ts --floor 10 --write");
-      run("npx tsx scripts/verify-data.ts");
+    const [historical, tasks] = await Promise.all([
+      db.question.count({ where: { kind: "HISTORICAL" } }),
+      db.learningTask.count(),
+    ]);
+    if (historical >= EXPECTED_HISTORICAL && tasks >= EXPECTED_TASKS) {
+      console.log(`[deploy-setup] গবেষণার ডেটা সম্পূর্ণ (${historical} প্রশ্ন, ${tasks} ধাপ)।`);
     } else {
-      console.log("[deploy-setup] ডেটা আগে থেকেই আছে — শুধু নতুন নিয়ম/ধাপ যোগ (seed)।");
-      run("npx tsx scripts/seed.ts");
+      console.warn(
+        `[deploy-setup] সতর্কতা: গবেষণার ডেটা অসম্পূর্ণ (${historical}/${EXPECTED_HISTORICAL} প্রশ্ন, ${tasks}/${EXPECTED_TASKS} ধাপ)। ` +
+          "একবার `npm run setup:prod` চালাতে হবে (docs/DEPLOY_HOSTINGER.md)।",
+      );
     }
 
     const email = process.env.ADMIN_EMAIL?.trim().toLowerCase();
@@ -46,10 +50,11 @@ async function main() {
     if (admins > 0) {
       if (password) console.log("[deploy-setup] অ্যাডমিন আগে থেকেই আছে। নিরাপত্তার জন্য Hostinger থেকে ADMIN_PASSWORD মুছে দিন।");
     } else if (email && password.length >= 10) {
+      const passwordHash = await bcrypt.hash(password, 12);
       await db.user.upsert({
         where: { email },
-        update: { role: "ADMIN", passwordHash: await bcrypt.hash(password, 12) },
-        create: { email, role: "ADMIN", passwordHash: await bcrypt.hash(password, 12), profile: { create: { name: "অ্যাডমিন" } } },
+        update: { role: "ADMIN", passwordHash },
+        create: { email, role: "ADMIN", passwordHash, profile: { create: { name: "অ্যাডমিন" } } },
       });
       console.log(`[deploy-setup] প্রথম অ্যাডমিন তৈরি: ${email}। এখন Hostinger থেকে ADMIN_PASSWORD মুছে দিন।`);
     } else {
