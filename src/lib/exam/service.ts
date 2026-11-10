@@ -167,7 +167,8 @@ export async function startStep(db: Db, userId: string, taskKey: string, mode: "
   const now = new Date();
   const rnd = Math.random;
   const isL2 = task.kind.startsWith("L2_");
-  if (task.kind.startsWith("L3_")) throw new ExamError("NOT_READY", "Model Test পরের Phase-এ যুক্ত হবে।");
+  if (task.kind === "L3_MODEL_TEST") return startModelTest(db, userId, task, progress.state, mode, rules);
+  if (task.kind === "L3_TIER_GATE") throw new ExamError("NOT_READY", "স্তর-গেট আলাদা পরীক্ষা নয়; শর্ত পূরণ হলে নিজে থেকেই খোলে।");
 
   let kind: AttemptKind;
   if (mode === "practice") kind = "PRACTICE";
@@ -255,6 +256,68 @@ export async function startStep(db: Db, userId: string, taskKey: string, mode: "
   return createAttempt(db, userId, task.id, kind, shuffleArr(ids, rnd), { threshold, rules });
 }
 
+// ─────────────────────────────────────────── Level 3: Model Test
+
+/**
+ * Model Test শুরু: প্রকাশিত টেস্টের প্রশ্ন (প্রশ্নপত্রের ক্রমে), সময়সীমা = এখন + নির্ধারিত মিনিট।
+ * সম্পন্ন টেস্ট আবার দেওয়া যায় (mode "practice" = পুনরায় দেওয়া); নতুন চেষ্টাও স্তর-গেটের গড়ে গোনা হয়।
+ */
+async function startModelTest(db: Db, userId: string, task: Task, state: string, mode: "step" | "practice", rules: Rules): Promise<string> {
+  const open = await db.testAttempt.findFirst({ where: { userId, taskId: task.id, kind: "MODEL_TEST", submittedAt: null }, orderBy: { startedAt: "desc" } });
+  if (open) {
+    if (open.deadlineAt && Date.now() > open.deadlineAt.getTime() + GRACE_MS) await submitAttempt(db, userId, open.id); // সময় পেরোনো → স্বয়ংক্রিয় জমা
+    else return open.id;
+  }
+  if (state === "COMPLETED" && mode !== "practice") throw new ExamError("SUBMITTED", "এই Model Test আগেই সম্পন্ন। চাইলে আবার দিতে পারো।");
+  const unreviewed = await db.testAttempt.findFirst({ where: { userId, taskId: task.id, kind: "MODEL_TEST", submittedAt: { not: null }, reviewedAt: null } });
+  if (unreviewed && rules.get<boolean>("l3.require_review") && state !== "COMPLETED") throw new ExamError("NEED_REVIEW", "আগের চেষ্টার ভুলগুলো পর্যালোচনা শেষ করো।");
+  const mt = task.modelTestId ? await db.modelTest.findUnique({ where: { id: task.modelTestId }, include: { questions: { orderBy: { position: "asc" } } } }) : null;
+  if (!mt || mt.status !== "PUBLISHED") throw new ExamError("EMPTY", "এই Model Test এখনও প্রকাশিত হয়নি।");
+  const id = await createAttempt(db, userId, task.id, "MODEL_TEST", mt.questions.map((q) => q.questionId), { rules });
+  await db.testAttempt.update({ where: { id }, data: { deadlineAt: new Date(Date.now() + mt.durationMin * 60e3) } });
+  return id;
+}
+
+/** স্তর-গেট: শেষ N-টি Model Test-এর (ঐ স্তরের) গড় নেট নম্বর নির্ধারিত সীমা ছুঁলে পরের স্তর খোলে। */
+export async function tierGateStatus(db: Db, userId: string) {
+  const rules = await loadRules(db);
+  const window = rules.get<number>("l3.gate.window");
+  const out = [];
+  for (const tier of [1, 2]) {
+    const need = rules.get<number>(tier === 1 ? "l3.gate.tier1_net" : "l3.gate.tier2_net");
+    const last = await db.testAttempt.findMany({
+      where: { userId, kind: "MODEL_TEST", submittedAt: { not: null }, task: { phase: tier } },
+      orderBy: { submittedAt: "desc" },
+      take: window,
+      select: { netScore: true },
+    });
+    const avg = last.length ? last.reduce((a, x) => a + (x.netScore ?? 0), 0) / last.length : null;
+    const gate = await db.studentTaskProgress.findFirst({ where: { userId, task: { key: `L3:GATE:${tier}` } }, select: { state: true } });
+    out.push({ tier, need, window, count: last.length, avg, state: gate?.state ?? "LOCKED" });
+  }
+  return out;
+}
+
+export async function evaluateTierGates(db: Db, userId: string) {
+  for (const g of await tierGateStatus(db, userId)) {
+    if (g.state === "AVAILABLE" && g.count >= g.window && (g.avg ?? 0) >= g.need) {
+      const t = await db.learningTask.findUniqueOrThrow({ where: { key: `L3:GATE:${g.tier}` } });
+      await completeTask(db, userId, t.id);
+    }
+  }
+}
+
+/** Model Test-এর পর ভুলগুলো দেখা নিশ্চিত → টেস্ট সম্পন্ন, পরের টেস্ট খোলে (নিয়ম অনুযায়ী)। */
+export async function acknowledgeModelTestReview(db: Db, userId: string, attemptId: string) {
+  const a = await ownAttempt(db, userId, attemptId);
+  if (a.kind !== "MODEL_TEST" || !a.submittedAt || !a.taskId) throw new ExamError("BAD_INPUT", "এটি জমা দেওয়া Model Test নয়।");
+  if (!a.reviewedAt) await db.testAttempt.update({ where: { id: attemptId }, data: { reviewedAt: new Date() } });
+  const p = await db.studentTaskProgress.findUnique({ where: { userId_taskId: { userId, taskId: a.taskId } } });
+  if (p && p.state !== "COMPLETED") await completeTask(db, userId, a.taskId);
+  await evaluateTierGates(db, userId);
+  if (a.task?.key === "L3:MT:150") await award(db, userId, "l3_done");
+}
+
 /** দৈনিক Revision-এর পরের সেট (Spaced Repetition-এর সারি থেকে, যার সময় হয়েছে)। */
 export async function startRevision(db: Db, userId: string): Promise<string> {
   const open = await db.testAttempt.findFirst({ where: { userId, kind: "SRS_REVIEW", submittedAt: null }, orderBy: { startedAt: "desc" } });
@@ -296,12 +359,17 @@ export const KIND_TITLE: Record<string, string> = { SOLVE: "প্রশ্ন �
 
 export function attemptTitle(a: { kind: string; partNo: number; task: { titleBn: string } | null }, parts?: number) {
   if (!a.task) return KIND_TITLE[a.kind];
+  if (a.kind === "MODEL_TEST") return a.task.titleBn;
   return `${a.task.titleBn}: ${KIND_TITLE[a.kind]}${a.kind === "SOLVE" && parts && parts > 1 ? `, ভাগ ${bnD(a.partNo)}/${bnD(parts)}` : ""}`;
 }
 
 /** পরীক্ষার পর্দার জন্য: প্রশ্ন ও (বিন্যস্ত) অপশন, সংরক্ষিত উত্তর — সঠিক উত্তর ছাড়া। */
 export async function getAttemptView(db: Db, userId: string, attemptId: string) {
-  const a = await ownAttempt(db, userId, attemptId);
+  let a = await ownAttempt(db, userId, attemptId);
+  if (!a.submittedAt && a.deadlineAt && Date.now() > a.deadlineAt.getTime() + GRACE_MS) {
+    await submitAttempt(db, userId, attemptId); // সময় শেষ, পাতা বন্ধ ছিল — সংরক্ষিত উত্তর দিয়ে স্বয়ংক্রিয় জমা
+    a = await ownAttempt(db, userId, attemptId);
+  }
   const perms = a.optionPerms as Record<string, number[]>;
   const [qs, answers] = await Promise.all([
     db.question.findMany({ where: { id: { in: a.questionIds } }, select: { id: true, text: true, options: true } }),
@@ -350,6 +418,18 @@ export async function saveAnswer(db: Db, userId: string, attemptId: string, qid:
   });
 }
 
+/** একটি প্রশ্নে কাটানো সময় যোগ করা (প্রশ্ন বদলানোর সময় পর্দা থেকে পাঠানো হয়)। */
+export async function addTime(db: Db, userId: string, attemptId: string, qid: string, ms: number) {
+  const a = await ownAttempt(db, userId, attemptId);
+  if (a.submittedAt || !a.questionIds.includes(qid)) return;
+  const inc = Math.max(0, Math.min(Math.round(ms), 30 * 60e3));
+  // timeMs খালি (NULL) থাকলে increment কাজ করে না — তাই coalesce করে যোগ
+  const n = await db.$executeRaw`
+    update "AttemptAnswer" set "timeMs" = coalesce("timeMs", 0) + ${inc}
+    where "attemptId" = ${attemptId} and "questionId" = ${qid}`;
+  if (n === 0) await db.attemptAnswer.create({ data: { attemptId, questionId: qid, selected: null, timeMs: inc } });
+}
+
 // ─────────────────────────────────────────── জমা ও গ্রেডিং
 
 async function award(db: Db, userId: string, key: string) {
@@ -382,9 +462,14 @@ export async function submitAttempt(db: Db, userId: string, attemptId: string): 
   });
   const scorePct = (correct / a.questionIds.length) * 100;
   const passed = a.threshold != null ? scorePct >= a.threshold : null;
+  let netScore: number | null = null;
+  if (a.kind === "MODEL_TEST") {
+    const mt = a.task?.modelTestId ? await db.modelTest.findUnique({ where: { id: a.task.modelTestId }, select: { negativeMark: true } }) : null;
+    netScore = correct - (mt?.negativeMark ?? rules.get<number>("l3.negative_mark")) * wrong;
+  }
 
   await db.$transaction(async (tx) => {
-    const res = await tx.testAttempt.updateMany({ where: { id: attemptId, submittedAt: null }, data: { submittedAt: now, correct, wrong, unanswered, scorePct, passed } });
+    const res = await tx.testAttempt.updateMany({ where: { id: attemptId, submittedAt: null }, data: { submittedAt: now, correct, wrong, unanswered, scorePct, passed, netScore } });
     if (res.count !== 1) throw new ExamError("SUBMITTED", "পরীক্ষাটি আগেই জমা হয়েছে।");
 
     for (const g of graded) {
@@ -441,6 +526,11 @@ export async function submitAttempt(db: Db, userId: string, attemptId: string): 
     if (p?.step === "REVIEW" && t.kind === "L1_EXAM") await award(db, userId, "first_exam"); // পুরো প্রশ্নপত্র সমাধানের পর
   }
   if (a.kind === "SRS_REVIEW") await recordRevisionDay(db, userId, attemptId, now);
+  if (a.kind === "MODEL_TEST") {
+    if ((netScore ?? 0) >= 160) await award(db, userId, "mt_160");
+    if (!rules.get<boolean>("l3.require_review")) await acknowledgeModelTestReview(db, userId, attemptId);
+    else await evaluateTierGates(db, userId);
+  }
   return { scorePct, passed, opened, completed };
 }
 

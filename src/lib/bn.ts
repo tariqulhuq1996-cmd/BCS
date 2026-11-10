@@ -9,7 +9,7 @@ export function bn(v: number | string): string {
 export function bnNum(n: number, fractionDigits = 0): string {
   return bn(
     n.toLocaleString("en-IN", { minimumFractionDigits: fractionDigits, maximumFractionDigits: fractionDigits }),
-  );
+  ).replace(/^-/, "−"); // সঠিক বিয়োগ-চিহ্ন
 }
 
 /** "১০ম", "১১তম" … বিসিএস ক্রমবাচক */

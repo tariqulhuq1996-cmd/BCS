@@ -9,6 +9,7 @@ import { startRevisionAction, startStepAction } from "@/lib/exam/actions";
 import { taskHref } from "@/lib/progress/dashboard";
 import { bn, bnNum } from "@/lib/bn";
 import { ResultBody } from "@/components/exam/result-body";
+import { ModelTestResult } from "@/components/exam/model-test-result";
 
 export const metadata: Metadata = { title: "ফলাফল", robots: { index: false } };
 
@@ -47,6 +48,7 @@ async function Content({ params }: { params: Promise<{ attemptId: string }> }) {
     if (e instanceof ExamError) notFound();
     throw e;
   }
+  if (r.kind === "MODEL_TEST") return <ModelTestResult attemptId={attemptId} userId={user.id} r={r} />;
   const taskKey = r.taskKey ?? "";
   const task = taskKey ? await prisma.learningTask.findUnique({ where: { key: taskKey }, include: { exam: true, subtopic: { select: { code: true } } } }) : null;
   const progress = task ? await prisma.studentTaskProgress.findUnique({ where: { userId_taskId: { userId: user.id, taskId: task.id } } }) : null;

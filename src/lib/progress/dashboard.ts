@@ -37,6 +37,7 @@ export function taskHref(t: { kind: TaskKind; key: string; bcsNo?: number; subto
     case "L2_SUBTOPIC": return `/level-2/${t.subtopicCode}`;
     case "L2_CHECKPOINT": return `/level-2/checkpoint/${t.key.split(":").at(-1)}`;
     case "L2_FINAL": return "/level-2/final";
+    case "L3_MODEL_TEST": return `/level-3/${Number(t.key.split(":")[2])}`;
     default: return "/level-3";
   }
 }
@@ -237,6 +238,17 @@ async function describeAction(t: TaskView, tasks: TaskView[], rules: Awaited<Ret
       button: "পরবর্তী কাজ শুরু করো", stepLabel, href: t.href,
     };
   }
+  if (t.kind === "L3_MODEL_TEST") {
+    const no = Number(t.key.split(":")[2]);
+    return {
+      text: `${congrats}তুমি Level ৩-এর স্তর ${bn(t.phase ?? 1)}-এ আছো। এখন ${t.title} দাও: ২০০টি প্রশ্ন, ${bn(rules.get<number>("l3.duration_min"))} মিনিট, প্রতিটি ভুলে ${bn(rules.get<number>("l3.negative_mark"))} নম্বর কাটা। জমা দেওয়ার পর ভুলগুলো পর্যালোচনা করলে পরের টেস্ট খুলবে।`,
+      button: t.state === "IN_PROGRESS" ? "টেস্ট চালিয়ে যাও" : "পরবর্তী কাজ শুরু করো",
+      stepLabel: `Model Test ${bn(no)}/১৫০`,
+      href: t.href,
+    };
+  }
+  if (t.kind === "L3_TIER_GATE")
+    return { text: `স্তর ${bn(t.phase ?? 1)}-এর সব টেস্ট শেষ। পরের স্তর খুলতে শেষ ${bn(rules.get<number>("l3.gate.window"))}টি টেস্টের গড় নেট নম্বর লাগবে; আগের টেস্টগুলো আবার দিয়ে গড় বাড়াতে পারো।`, button: "অবস্থা দেখো", stepLabel: t.title, href: "/level-3" };
   if (t.kind === "L2_CHECKPOINT")
     return { text: `${congrats}এই Priority ধাপের সব উপবিষয় শেষ। এখন ${t.title} দাও; ${pct("l2.threshold.checkpoint")}% পেলে পরের ধাপ খুলবে।`, button: "Checkpoint শুরু করো", stepLabel: "Checkpoint", href: t.href };
   return { text: `${congrats}${t.title} দাও।`, button: "শুরু করো", stepLabel: "", href: t.href };

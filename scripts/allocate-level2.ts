@@ -112,6 +112,8 @@ async function main() {
 
   if (WRITE) {
     for (const r of rows) await db.subtopic.update({ where: { code: r.code }, data: { targetQuestions: r.target } });
+    for (const [id, est] of topicEst) await db.topic.update({ where: { id }, data: { estQuestions: est } });
+    console.log(`টপিকের আনুমানিক প্রশ্ন (Model Test-এর ভার): ${topicEst.size}টি টপিক`);
     console.log("ডেটাবেসে targetQuestions বসানো হয়েছে।");
   }
 }

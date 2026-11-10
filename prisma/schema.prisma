@@ -99,6 +99,7 @@ model Topic {
   order         Int
   priorityScore Float?
   priorityGrade PriorityGrade?
+  estQuestions  Float? // ধাপ ০৯: নতুন মানবণ্টনে আনুমানিক প্রশ্ন (Model Test-এর টপিক-ভার)
   subtopics     Subtopic[]
 }
 

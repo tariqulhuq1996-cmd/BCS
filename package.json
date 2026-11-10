@@ -16,7 +16,8 @@
     "test:progress": "tsx scripts/test-progress.ts",
     "test:level1": "tsx scripts/test-level1.ts",
     "test:level2": "tsx scripts/test-level2.ts",
-    "db:allocate": "tsx scripts/allocate-level2.ts --floor 10 --write"
+    "db:allocate": "tsx scripts/allocate-level2.ts --floor 10 --write",
+    "test:level3": "tsx scripts/test-level3.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.19.3",

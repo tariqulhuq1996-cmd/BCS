@@ -3,7 +3,7 @@
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth/session";
-import { ExamError, acknowledgeReview, saveAnswer, startMistakePractice, startRevision, startStep, submitAttempt } from "./service";
+import { ExamError, acknowledgeModelTestReview, acknowledgeReview, addTime, saveAnswer, startMistakePractice, startRevision, startStep, submitAttempt } from "./service";
 
 async function uid() {
   const u = await getCurrentUser();
@@ -16,6 +16,7 @@ function stepPath(taskKey: string) {
   const [lvl, kind, ref] = taskKey.split(":");
   if (lvl === "L1") return kind === "FINAL" ? "/level-1/final" : `/level-1/${ref}`;
   if (lvl === "L2") return kind === "FINAL" ? "/level-2/final" : kind === "CHECKPOINT" ? `/level-2/checkpoint/${ref}` : `/level-2/${ref}`;
+  if (lvl === "L3") return kind === "MT" ? `/level-3/${Number(ref)}` : "/level-3";
   return "/dashboard";
 }
 
@@ -71,6 +72,24 @@ export async function saveAnswerAction(attemptId: string, qid: string, display: 
     if (e instanceof ExamError) return { ok: false, error: e.message };
     throw e;
   }
+}
+
+/** একটি প্রশ্নে কাটানো সময় (মিলিসেকেন্ড) — প্রশ্ন বদলানোর সময় পর্দা থেকে। */
+export async function addTimeAction(attemptId: string, qid: string, ms: number) {
+  const userId = await uid();
+  try {
+    await addTime(prisma, userId, attemptId, qid, ms);
+  } catch (e) {
+    if (!(e instanceof ExamError)) throw e;
+  }
+}
+
+/** Model Test-এর ভুলগুলো দেখা শেষ → টেস্ট সম্পন্ন, পরেরটি খোলে। */
+export async function acknowledgeModelTestAction(fd: FormData) {
+  const userId = await uid();
+  const attemptId = String(fd.get("attemptId") ?? "");
+  await acknowledgeModelTestReview(prisma, userId, attemptId);
+  redirect(`/result/${attemptId}`);
 }
 
 export async function submitAttemptAction(attemptId: string) {

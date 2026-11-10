@@ -10,7 +10,7 @@ import { PrismaClient, Prisma, TaskKind } from "@prisma/client";
 import { DEFAULT_RULES } from "../src/lib/rules/defaults";
 
 const prisma = new PrismaClient();
-const bn = (n: number) => String(n).replace(/\d/g, (d) => "০১২৩৪৫৬৭৮৯"[+d]);
+const bn = (n: number | string) => String(n).replace(/\d/g, (d) => "০১২৩৪৫৬৭৮৯"[+d]);
 
 async function upsertTask(t: {
   key: string; levelId: number; kind: TaskKind; order: number; titleBn: string;
@@ -88,6 +88,25 @@ async function main() {
   }
   const l2Final = await upsertTask({ key: "L2:FINAL", levelId: levelId[2], kind: "L2_FINAL", order: order++, titleBn: "Level ২ Final Assessment" });
   await setPrereqs(l2Final.id, [gate]);
+
+  // ── Level 3: ১৫০টি Model Test, তিন স্তর; স্তরের মাঝে গেট (শেষ কয়েকটি টেস্টের গড় নেট নম্বর)
+  //   MT001 ← L2 Final;  MT(n) ← MT(n-1);  GATE1 ← MT050;  MT051 ← MT050 + GATE1;  GATE2 ← MT100;  MT101 ← MT100 + GATE2
+  let order3 = 1;
+  let prevMt = l2Final.id;
+  const gates: Record<number, number> = {};
+  for (let n = 1; n <= 150; n++) {
+    const tier = n <= 50 ? 1 : n <= 100 ? 2 : 3;
+    if (n === 51 || n === 101) {
+      const g = await upsertTask({ key: `L3:GATE:${tier - 1}`, levelId: levelId[3], kind: "L3_TIER_GATE", order: order3++, phase: tier - 1, titleBn: `স্তর ${bn(tier - 1)} → ${bn(tier)}: গড় নেট নম্বরের শর্ত` });
+      await setPrereqs(g.id, [prevMt]);
+      gates[tier - 1] = g.id;
+    }
+    const t = await upsertTask({ key: `L3:MT:${String(n).padStart(3, "0")}`, levelId: levelId[3], kind: "L3_MODEL_TEST", order: order3++, phase: tier, titleBn: `Model Test ${bn(String(n).padStart(2, "0"))}` });
+    await setPrereqs(t.id, n === 51 || n === 101 ? [prevMt, gates[tier - 1]] : [prevMt]);
+    prevMt = t.id;
+  }
+  const mtLinked = await prisma.modelTest.findMany({ select: { id: true, no: true } });
+  for (const m of mtLinked) await prisma.learningTask.update({ where: { key: `L3:MT:${String(m.no).padStart(3, "0")}` }, data: { modelTestId: m.id } });
 
   // ── অর্জন (Achievement)
   const ach = [

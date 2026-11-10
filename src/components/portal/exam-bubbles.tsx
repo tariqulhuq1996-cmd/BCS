@@ -5,7 +5,11 @@ import { useState } from "react";
 import { bn, bnOrdinal } from "@/lib/bn";
 import { LOCKED_MESSAGE } from "@/lib/progress/cycle";
 
-type Item = { key: string; bcsNo?: number; title: string; state: string; href: string; special?: boolean; partial?: boolean; bestScore: number | null };
+type Item = {
+  key: string; bcsNo?: number; title: string; state: string; href: string; special?: boolean; partial?: boolean; bestScore: number | null;
+  /** বৃত্তের ভেতরের লেখা ও পূর্ণ নাম (Model Test-এর মতো অন্য তালিকার জন্য) */
+  label?: string; name?: string; bestText?: string;
+};
 
 const STATE_BN: Record<string, string> = { COMPLETED: "সম্পন্ন", IN_PROGRESS: "চলছে", AVAILABLE: "খোলা", LOCKED: "তালাবন্ধ" };
 
@@ -13,15 +17,15 @@ const STATE_BN: Record<string, string> = { COMPLETED: "সম্পন্ন", I
  * Level 1-এর রাস্তা: প্রতিটি বিসিএস একটি OMR-বৃত্ত।
  * ভরাট সবুজ = সম্পন্ন, গোলাপি বৃত্ত = খোলা/চলছে, ড্যাশ-রেখা = তালাবন্ধ। বিশেষ বিসিএসের নিচে ছোট বিন্দু।
  */
-export function ExamBubbles({ items }: { items: Item[] }) {
+export function ExamBubbles({ items, listLabel = "Level ১: ১০ম থেকে ৫০তম বিসিএস", showLegendSpecial = true }: { items: Item[]; listLabel?: string; showLegendSpecial?: boolean }) {
   const [msg, setMsg] = useState<string | null>(null);
   return (
     <div>
-      <ol className="flex flex-wrap gap-x-2 gap-y-3" aria-label="Level ১: ১০ম থেকে ৫০তম বিসিএস">
+      <ol className="flex flex-wrap gap-x-2 gap-y-3" aria-label={listLabel}>
         {items.map((it) => {
-          const label = it.bcsNo ? bn(it.bcsNo) : "শেষ";
-          const name = it.bcsNo ? `${bnOrdinal(it.bcsNo)} বিসিএস${it.special ? " (বিশেষ)" : ""}` : it.title;
-          const aria = `${name}: ${STATE_BN[it.state]}${it.bestScore != null ? `, সেরা ${bn(Math.round(it.bestScore))}%` : ""}`;
+          const label = it.label ?? (it.bcsNo ? bn(it.bcsNo) : "শেষ");
+          const name = it.name ?? (it.bcsNo ? `${bnOrdinal(it.bcsNo)} বিসিএস${it.special ? " (বিশেষ)" : ""}` : it.title);
+          const aria = `${name}: ${STATE_BN[it.state]}${it.bestText ? `, ${it.bestText}` : it.bestScore != null ? `, সেরা ${bn(Math.round(it.bestScore))}%` : ""}`;
           const cls = {
             COMPLETED: "border-green bg-green text-white dark:text-paper",
             IN_PROGRESS: "border-omr bg-omr-wash text-omr ring-4 ring-omr/20",
@@ -53,7 +57,7 @@ export function ExamBubbles({ items }: { items: Item[] }) {
             <span className="flex items-center gap-1.5"><span className="size-3 rounded-full bg-green" />সম্পন্ন</span>
             <span className="flex items-center gap-1.5"><span className="size-3 rounded-full border-2 border-omr" />খোলা</span>
             <span className="flex items-center gap-1.5"><span className="size-3 rounded-full border-2 border-dashed border-line-strong" />তালাবন্ধ</span>
-            <span className="flex items-center gap-1.5"><span className="size-1.5 rounded-full bg-omr" />বিশেষ বিসিএস</span>
+            {showLegendSpecial && <span className="flex items-center gap-1.5"><span className="size-1.5 rounded-full bg-omr" />বিশেষ বিসিএস</span>}
           </span>
         )}
       </p>

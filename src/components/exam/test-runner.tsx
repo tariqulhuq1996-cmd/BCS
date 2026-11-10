@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState, useTransition } from "react";
-import { saveAnswerAction, submitAttemptAction } from "@/lib/exam/actions";
+import { addTimeAction, saveAnswerAction, submitAttemptAction } from "@/lib/exam/actions";
 import { bn } from "@/lib/bn";
 
 const LETTERS = ["ক", "খ", "গ", "ঘ"];
@@ -49,8 +49,19 @@ export function TestRunner({ attemptId, title, questions, deadlineAt }: { attemp
     [attemptId],
   );
 
+  // ── প্রতিটি প্রশ্নে কাটানো সময়: প্রশ্ন বদলালে আগেরটির সময় সার্ভারে যায়
+  const enter = useRef<{ qid: string; t: number } | null>(null);
+  useEffect(() => {
+    const now = Date.now();
+    const prev = enter.current;
+    if (prev && prev.qid !== q.qid) void addTimeAction(attemptId, prev.qid, now - prev.t);
+    enter.current = { qid: q.qid, t: now };
+  }, [q.qid, attemptId]);
+
   const submit = useCallback(() => {
     startSubmit(async () => {
+      const cur = enter.current;
+      if (cur) await addTimeAction(attemptId, cur.qid, Date.now() - cur.t);
       await chain.current; // সব উত্তর সংরক্ষণের পর জমা
       await submitAttemptAction(attemptId);
     });
