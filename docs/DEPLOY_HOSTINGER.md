@@ -23,13 +23,27 @@ hPanel → ওয়েবসাইটের Dashboard-এ সার্ভার
 hPanel → Emails → আপনার ডোমেইনে একটি মেইলবক্স, যেমন `no-reply@<ডোমেইন>`, পাসওয়ার্ড দিয়ে তৈরি করুন।
 SMTP-র ঠিকানা/পোর্ট hPanel-এর ইমেইল সেটিংয়ে মিলিয়ে নিন (সাধারণত `smtp.hostinger.com`, `465`)।
 
-## ধাপ ৩ — Hostinger-এ অ্যাপ
+## ধাপ ৩ — GitHub-এ বিল্ড (একবার সেটআপ)
+Hostinger-এর সার্ভারের Linux পুরোনো (GLIBC ২.২৯-এর নিচে), তাই সেখানে Next.js ১৬-এর compiler চলে না।
+সমাধান: **বিল্ড হয় GitHub-এ** (`.github/workflows/hostinger-build.yml`), তৈরি অ্যাপ যায় **`deploy`** শাখায়; Hostinger শুধু সেটি চালায়
+(চালাতে compiler লাগে না — compiler সরিয়ে রেখে পরীক্ষা করা হয়েছে)।
+
+GitHub → `BCS` repo → **Settings → Secrets and variables → Actions → New repository secret** — দুটি:
+
+| নাম | মান |
+|---|---|
+| `DATABASE_URL` | Neon ঠিকানা (`.env.hostinger`-এর মতোই) |
+| `APP_URL` | `https://<আপনার ডোমেইন>` |
+
+তারপর repo → **Actions → Build for Hostinger → Run workflow** (প্রথমবার; পরে `main`-এ প্রতিটি push-এ নিজে চলে)। সবুজ ✓ হলে `deploy` শাখা তৈরি হয়।
+
+## ধাপ ৪ — Hostinger-এ অ্যাপ
 hPanel → Websites → **Add website → Node.js Apps → Import Git repository** → GitHub যুক্ত করুন → `BCS` repo।
 
 | সেটিং | মান |
 |---|---|
 | Framework | Next.js |
-| Branch | `main` |
+| Branch | **`deploy`** (main নয়) |
 | Node.js version | 22 (না থাকলে 20) |
 | Build command | `npm run build` |
 | Start | Hostinger নিজে চালায় (দিতে হলে `npm run start`) |
@@ -60,7 +74,7 @@ $env:DATABASE_URL="<Neon ঠিকানা>"; npm run setup:prod
 ```
 মাঝপথে থেমে গেলে আবার চালান — যা আছে তা রেখে বাকিটা বসায়।
 
-## ধাপ ৪ — ডোমেইন, SSL, যাচাই
+## ধাপ ৫ — ডোমেইন, SSL, যাচাই
 1. ডোমেইন অ্যাপের সঙ্গে যুক্ত করুন, SSL চালু করুন।
 2. `https://<ডোমেইন>/api/health` → `{"ok":true,"db":"ok",…}`
 3. `/login`-এ অ্যাডমিন-ইমেইল ও পাসওয়ার্ডে ঢুকে `/admin` খুলুন।
@@ -78,7 +92,7 @@ $env:DATABASE_URL="<Neon ঠিকানা>"; npm run setup:prod
 ফাইলের গঠন: `docs/QUESTION_IMPORT.md`; কোন উপবিষয়ে কতটি: `docs/level2_targets.csv`।
 
 ## কোড বদলালে (আমি কিছু ঠিক/যোগ করলে)
-কোড GitHub-এ push হয় → Hostinger-এ **Redeploy** (স্বয়ংক্রিয় চালু থাকলে নিজেই)। ডেটাবেসের নতুন পরিবর্তনও তখন নিজে থেকে প্রয়োগ হয়; শিক্ষার্থীর অগ্রগতি ও আপনার প্রশ্ন অক্ষত থাকে।
+কোড `main`-এ push হয় → GitHub Actions কয়েক মিনিটে বিল্ড করে `deploy` শাখা হালনাগাদ করে (Actions-এ সবুজ ✓ দেখুন) → Hostinger-এ **Redeploy** (স্বয়ংক্রিয় চালু থাকলে নিজেই)। ডেটাবেসের নতুন পরিবর্তনও তখন নিজে থেকে প্রয়োগ হয়; শিক্ষার্থীর অগ্রগতি ও আপনার প্রশ্ন অক্ষত থাকে।
 
 ## Backup
 অ্যাডমিন → Backup থেকে নিয়মিত (সপ্তাহে অন্তত একবার) ফাইল ডাউনলোড করে রাখুন। Neon-এরও নিজস্ব পুনরুদ্ধার-ব্যবস্থা আছে।

@@ -1,4 +1,3 @@
-import type { NextConfig } from "next";
 
 const isDev = process.env.NODE_ENV === "development";
 // https-এ চালু থাকলেই HSTS ও upgrade-insecure-requests (স্থানীয় http-পরীক্ষা যেন না ভাঙে)
@@ -23,10 +22,11 @@ const csp = [
   ...(httpsSite ? ["upgrade-insecure-requests"] : []),
 ].join("; ");
 
-const nextConfig: NextConfig = {
+/** @type {import("next").NextConfig} */
+const nextConfig = {
   // স্বাভাবিক বিল্ড চলে "next start" দিয়ে (Hostinger-এর Node.js অ্যাপ এভাবেই চালায়)।
   // নিজস্ব VPS/Docker-এ স্বয়ংসম্পূর্ণ বিল্ড (.next/standalone) চাইলে: BUILD_STANDALONE=1 npm run build
-  ...(process.env.BUILD_STANDALONE === "1" ? { output: "standalone" as const } : {}),
+  ...(process.env.BUILD_STANDALONE === "1" ? { output: "standalone" } : {}),
   cacheComponents: true,
   experimental: {
     // অ্যাডমিন প্যানেল থেকে প্রশ্নভান্ডারের বড় CSV/Excel ফাইল আপলোডের জন্য (১০,৪০০ প্রশ্ন ≈ ৫–১০ MB)
