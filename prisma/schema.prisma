@@ -7,10 +7,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url       = env("DATABASE_URL")
-  // Migration-এর জন্য সরাসরি (pool ছাড়া) সংযোগ — Neon-এ pooled ঠিকানা DATABASE_URL-এ, সরাসরি ঠিকানা এখানে।
-  // স্থানীয়/VPS-এ দুটো একই ঠিকানা।
-  directUrl = env("DIRECT_URL")
+  url      = env("DATABASE_URL")
 }
 
 // ─────────────────────────────────────────────── ব্যবহারকারী ও প্রমাণীকরণ

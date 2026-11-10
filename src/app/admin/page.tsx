@@ -44,6 +44,16 @@ async function Content() {
         <Stat k="Model Test" v={`${bn(mts.find((m) => m.status === "PUBLISHED")?._count ?? 0)}/১৫০`} s={`খসড়া ${bn(mts.find((m) => m.status === "DRAFT")?._count ?? 0)}`} />
       </StatGrid>
 
+      <LaunchSteps
+        topicTotal={n("TOPIC", "DRAFT") + n("TOPIC", "VERIFIED") + topicPublished}
+        topicPending={n("TOPIC", "DRAFT") + n("TOPIC", "VERIFIED")}
+        topicPublished={topicPublished}
+        target={target._sum.targetQuestions ?? 0}
+        explPending={explDraft + explNone}
+        mtPublished={mts.find((m) => m.status === "PUBLISHED")?._count ?? 0}
+        mtDraft={mts.find((m) => m.status === "DRAFT")?._count ?? 0}
+      />
+
       <section className="mt-10">
         <h2 className="text-xl font-bold">যাচাইয়ের অপেক্ষায়</h2>
         <ul className="mt-3 divide-y divide-line border-y border-line text-[15px]">
@@ -87,5 +97,54 @@ async function Content() {
         ) : <p className="mt-3 text-ink-2">এখনও কোনো Import হয়নি।</p>}
       </section>
     </>
+  );
+}
+
+/** নতুন প্রশ্ন শিক্ষার্থীর কাছে পৌঁছানোর ধাপ — প্রতিটির বর্তমান অবস্থাসহ। প্রশ্ন ডেটাবেসে থাকে, তাই এগুলোর জন্য GitHub বা নতুন Deploy লাগে না। */
+function LaunchSteps(p: { topicTotal: number; topicPending: number; topicPublished: number; target: number; explPending: number; mtPublished: number; mtDraft: number }) {
+  const steps = [
+    {
+      t: "প্রশ্নভান্ডার Import",
+      d: `CSV/Excel ফাইল (প্রতিটি সর্বোচ্চ ৪ MB; বড় হলে বিষয় অনুযায়ী ভাগ করুন) → পূর্বরূপ → Import। এখন পর্যন্ত ${bnNum(p.topicTotal)}/${bnNum(p.target)}টি।`,
+      done: p.topicTotal >= p.target && p.target > 0, started: p.topicTotal > 0, href: "/admin/import", cta: "Import করুন",
+    },
+    {
+      t: "যাচাই করে প্রকাশ",
+      d: `প্রকাশিত প্রশ্নই শুধু শিক্ষার্থীর Level ২-এ আসে — প্রকাশ করামাত্র। প্রকাশিত ${bnNum(p.topicPublished)}টি, অপেক্ষায় ${bnNum(p.topicPending)}টি।`,
+      done: p.topicPublished > 0 && p.topicPending === 0, started: p.topicPublished > 0, href: "/admin/questions?kind=TOPIC&status=DRAFT", cta: "যাচাই ও প্রকাশ",
+    },
+    {
+      t: "ব্যাখ্যা যাচাই",
+      d: `খসড়া বা না-থাকা ব্যাখ্যা ${bnNum(p.explPending)}টি। প্রশ্ন খুলে ব্যাখ্যা ঠিক করে "যাচাইকৃত" করুন।`,
+      done: p.explPending === 0, started: false, href: "/admin/questions?expl=DRAFT", cta: "ব্যাখ্যা দেখুন",
+    },
+    {
+      t: "১৫০টি Model Test",
+      d: `Level ২-এর প্রশ্ন প্রকাশের পরে: খসড়া তৈরি → দেখে অনুমোদন। প্রকাশিত ${bnNum(p.mtPublished)}/১৫০, খসড়া ${bnNum(p.mtDraft)}টি।`,
+      done: p.mtPublished >= 150, started: p.mtPublished + p.mtDraft > 0, href: "/admin/model-tests", cta: "Model Test",
+    },
+  ];
+  return (
+    <section className="mt-10 rounded-xl border border-line bg-surface p-5">
+      <h2 className="text-xl font-bold">নতুন প্রশ্ন কীভাবে live হয়</h2>
+      <p className="mt-1 text-[15px] text-ink-2">
+        প্রশ্ন থাকে ডেটাবেসে, তাই এখানে Import ও প্রকাশ করলেই সাইটে চলে আসে — <b>GitHub-এ তোলা বা Hostinger-এ নতুন Deploy লাগে না</b>।
+        GitHub/Deploy শুধু অ্যাপের কোড বদলালে।
+      </p>
+      <ol className="mt-4 grid gap-3">
+        {steps.map((s, i) => (
+          <li key={s.t} className="flex flex-wrap items-start gap-3 border-t border-line pt-3">
+            <span aria-hidden className={`grid size-7 shrink-0 place-items-center rounded-full text-sm font-bold ${s.done ? "bg-green text-white dark:text-paper" : s.started ? "bg-omr-wash text-omr" : "bg-paper text-muted border border-line"}`}>
+              {s.done ? "✓" : bnNum(i + 1)}
+            </span>
+            <div className="min-w-0 flex-1">
+              <p className="font-semibold">{s.t} <span className="text-sm font-normal text-muted">— {s.done ? "সম্পন্ন" : s.started ? "চলছে" : "বাকি"}</span></p>
+              <p className="text-[15px] text-ink-2">{s.d}</p>
+            </div>
+            <Link href={s.href} className="text-[15px] font-semibold text-green underline underline-offset-4">{s.cta}</Link>
+          </li>
+        ))}
+      </ol>
+    </section>
   );
 }

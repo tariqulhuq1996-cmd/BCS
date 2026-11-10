@@ -29,8 +29,8 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
 async function Gate({ children }: { children: ReactNode }) {
   await requireAdmin("/admin");
   return (
-    <div className="mx-auto grid max-w-7xl gap-8 px-4 pt-6 sm:px-6 lg:grid-cols-[12rem_1fr]">
-      <nav aria-label="অ্যাডমিন" className="lg:sticky lg:top-20 lg:self-start">
+    <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 pt-6 sm:px-6 lg:grid-cols-[12rem_minmax(0,1fr)]">
+      <nav aria-label="অ্যাডমিন" className="min-w-0 lg:sticky lg:top-20 lg:self-start">
         <p className="mb-2 text-sm font-semibold text-omr">অ্যাডমিন প্যানেল</p>
         <ul className="flex gap-1 overflow-x-auto pb-2 text-[15px] lg:flex-col lg:overflow-visible">
           {NAV.map((n) => (

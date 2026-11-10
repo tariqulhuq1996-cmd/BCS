@@ -1,78 +1,78 @@
-# Hostinger (Business/Cloud) + Neon — ধাপে ধাপে
+# Hostinger-এ সাইট live করা — সহজ ধাপ
 
-অ্যাপ চলবে Hostinger-এর **Node.js Web App** হিসেবে (GitHub থেকে)। ডেটাবেস **Neon**-এ (PostgreSQL; Hostinger-এর shared/cloud প্ল্যানে PostgreSQL নেই)।
-ক্রম গুরুত্বপূর্ণ: **আগে ডেটাবেস তৈরি ও ডেটা বসানো, তারপর Hostinger-এ Deploy** — কারণ বিল্ডের সময়ই অ্যাপ ডেটাবেস থেকে গবেষণার পাতাগুলো তৈরি করে।
+## আগে বোঝার বিষয়: দুটি অংশ
+| অংশ | কোথায় থাকে | কী আছে |
+|---|---|---|
+| **কোড ও গবেষণার ডেটা-ফাইল** | GitHub → Hostinger | পাতা, নিয়ম, ৫,৩৫২টি বিগত প্রশ্নের ফাইল ✓ (আগেই তোলা) |
+| **চলমান ডেটাবেস** | Neon (অনলাইন PostgreSQL) | শিক্ষার্থীর অ্যাকাউন্ট, অগ্রগতি, ফলাফল, আপনার পরে দেওয়া প্রশ্ন |
 
-## ১. GitHub
-1. github.com → New repository → **Private**, README/.gitignore কিছু যোগ না করে খালি।
-2. কম্পিউটারে `platform` ফোল্ডারে:
-   ```bash
-   git remote add origin https://github.com/<নাম>/<repo>.git
-   git branch -M main
-   git push -u origin main
-   ```
-   `.env` ও স্থানীয় ডেটাবেস GitHub-এ যায় না (`.gitignore`-এ বাদ দেওয়া)।
+Hostinger Business/Cloud-এ PostgreSQL নেই, তাই ডেটাবেসটি Neon-এ (বিনামূল্যের প্ল্যান যথেষ্ট)।
+**প্রথম Deploy-এর সময় অ্যাপ নিজেই** ডেটাবেসে টেবিল বানায় এবং GitHub-এর ফাইল থেকে সব গবেষণার ডেটা বসায় — আপনাকে কম্পিউটার থেকে কিছু চালাতে হবে না।
 
-## ২. Neon ডেটাবেস
-1. neon.tech-এ অ্যাকাউন্ট → New Project → Region **AWS Asia Pacific (Singapore)** → PostgreSQL ১৬ বা নতুন।
-2. Dashboard → **Connect** থেকে দুটি ঠিকানা কপি করুন:
-   - **Pooled** (হোস্টে `-pooler` আছে) → এটি হবে `DATABASE_URL`; শেষে `&pgbouncer=true` যোগ করুন।
-   - **Direct** ("Connection pooling" বন্ধ করে) → এটি `DIRECT_URL`।
-3. নিজের কম্পিউটার থেকে একবার ডেটা বসান (`platform` ফোল্ডারে, PowerShell):
-   ```powershell
-   $env:DATABASE_URL="<Neon pooled ঠিকানা>"; $env:DIRECT_URL="<Neon direct ঠিকানা>"; npm run setup:prod
-   ```
-   এতে: টেবিল → গবেষণার ৫,৩৫২ প্রশ্ন → Level, নিয়ম, ৪৬৭ ধাপ → Level ২-এর লক্ষ্য → যাচাই। শেষে "ব্যর্থ: কিছু নয়" দেখা উচিত।
-4. অ্যাডমিন অ্যাকাউন্ট (একই PowerShell জানালায়):
-   ```powershell
-   npx tsx scripts/create-admin.ts <আপনার-ইমেইল> '<শক্ত পাসওয়ার্ড>'
-   ```
-5. Neon-এ Backup: ফ্রি প্ল্যানে সীমিত পুনরুদ্ধার-সময় থাকে; নিয়মিত `npm run backup` (বা অ্যাডমিন → Backup ডাউনলোড) নিজের কাছে রাখুন।
+## ধাপ ১ — Neon (৫ মিনিট)
+1. neon.tech → Sign up → **Create project** → Region: **Singapore** → Create।
+2. **Connect** বোতাম → "Connection pooling" **বন্ধ** করুন → যে ঠিকানা আসে (`postgresql://…?sslmode=require`) কপি করুন।
+   এটিই আপনার `DATABASE_URL`। কাউকে দেবেন না, চ্যাটেও না।
 
-## ৩. ইমেইল (পাসওয়ার্ড রিসেট)
-hPanel → Emails → ডোমেইনে একটি মেইলবক্স (যেমন `no-reply@<ডোমেইন>`)। Hostinger-এর SMTP সাধারণত `smtp.hostinger.com`, পোর্ট `465` — hPanel-এর "Connect apps & devices" পাতায় মিলিয়ে নিন।
+## ধাপ ২ — ইমেইল (পাসওয়ার্ড রিসেটের জন্য)
+hPanel → Emails → আপনার ডোমেইনে একটি মেইলবক্স, যেমন `no-reply@<ডোমেইন>`, পাসওয়ার্ড দিয়ে তৈরি করুন।
+SMTP-র ঠিকানা/পোর্ট hPanel-এর ইমেইল সেটিংয়ে মিলিয়ে নিন (সাধারণত `smtp.hostinger.com`, `465`)।
 
-## ৪. Hostinger-এ Node.js অ্যাপ
-hPanel → Websites → **Add website → Node.js Apps** → **Import Git repository** → GitHub যুক্ত করে repo বাছুন।
+## ধাপ ৩ — Hostinger-এ অ্যাপ
+hPanel → Websites → **Add website → Node.js Apps → Import Git repository** → GitHub যুক্ত করুন → `BCS` repo।
 
 | সেটিং | মান |
 |---|---|
 | Framework | Next.js |
 | Branch | `main` |
-| Node.js version | ২২ (না থাকলে ২০) |
-| Root directory | repo-র মূল (যেখানে `package.json`) |
+| Node.js version | 22 (না থাকলে 20) |
 | Build command | `npm run build` |
-| Start | Hostinger নিজে `next start` চালায়; আলাদা দিতে হলে `npm run start` |
+| Start | Hostinger নিজে চালায় (দিতে হলে `npm run start`) |
 
-**Environment variables** (এখানেই বসান, ফাইলে নয়):
+**Environment variables** — এখানে বসান:
 
 | নাম | মান |
 |---|---|
-| `DATABASE_URL` | Neon pooled ঠিকানা (`&pgbouncer=true` সহ) |
-| `DIRECT_URL` | Neon direct ঠিকানা |
-| `APP_URL` | `https://<আপনার ডোমেইন>` (শেষে `/` ছাড়া) |
-| `SMTP_HOST` / `SMTP_PORT` | `smtp.hostinger.com` / `465` |
-| `SMTP_USER` / `SMTP_PASS` | মেইলবক্সের ঠিকানা / পাসওয়ার্ড |
+| `DATABASE_URL` | ধাপ ১-এর Neon ঠিকানা |
+| `APP_URL` | `https://<আপনার ডোমেইন>` (শেষে `/` নয়) |
+| `ADMIN_EMAIL` | আপনার অ্যাডমিন-ইমেইল |
+| `ADMIN_PASSWORD` | শক্ত পাসওয়ার্ড (১০+ অক্ষর) — প্রথম Deploy-এর পর মুছে দেবেন |
+| `SMTP_HOST` | `smtp.hostinger.com` |
+| `SMTP_PORT` | `465` |
+| `SMTP_USER` | `no-reply@<ডোমেইন>` |
+| `SMTP_PASS` | ঐ মেইলবক্সের পাসওয়ার্ড |
 | `MAIL_FROM` | `বিসিএস ৫২ প্রস্তুতি <no-reply@<ডোমেইন>>` |
 | `NEXT_PUBLIC_MAX_UPLOAD_MB` | `4` |
 
-Deploy চাপুন। বিল্ড শেষে ডোমেইন যুক্ত করুন ও SSL চালু করুন। পরে কোনো ভেরিয়েবল বদলালে **Redeploy** করতে হয়।
+**Deploy** চাপুন। প্রথমবার কয়েক মিনিট বেশি লাগে (ডেটা বসানো হয়)। বিল্ড-লগে দেখবেন:
+`[deploy-setup] প্রথম Deploy: গবেষণার ডেটা বসানো হচ্ছে…` → `ব্যর্থ: কিছু নয়` → `প্রথম অ্যাডমিন তৈরি`।
 
-## ৫. চালুর পর যাচাই
-- `https://<ডোমেইন>/api/health` → `{"ok":true,"db":"ok",…}`
-- হোমপেজ, গবেষণা-পাতা, নিবন্ধন, লগইন ঠিক আছে
-- "পাসওয়ার্ড ভুলে গেছি" দিয়ে নিজের ঠিকানায় ইমেইল আসে (স্প্যামে নয়)
-- অ্যাডমিন অ্যাকাউন্টে লগইন করে অ্যাডমিন প্যানেল খোলে
-- UptimeRobot-এ `/api/health` পর্যবেক্ষণ
+## ধাপ ৪ — ডোমেইন, SSL, যাচাই
+1. ডোমেইন অ্যাপের সঙ্গে যুক্ত করুন, SSL চালু করুন।
+2. `https://<ডোমেইন>/api/health` → `{"ok":true,"db":"ok",…}`
+3. `/login`-এ অ্যাডমিন-ইমেইল ও পাসওয়ার্ডে ঢুকে `/admin` খুলুন।
+4. Hostinger → Environment variables থেকে **`ADMIN_PASSWORD` মুছে** Redeploy করুন।
+5. নিজের একটি শিক্ষার্থী-অ্যাকাউন্ট খুলে "পাসওয়ার্ড ভুলে গেছি" দিয়ে ইমেইল আসে কিনা দেখুন।
 
-## পরে কোড হালনাগাদ
-`git push` → Hostinger স্বয়ংক্রিয়/হাতে Redeploy। ডেটাবেসের গঠন বদলালে আগে নিজের কম্পিউটার থেকে:
-```powershell
-$env:DATABASE_URL="<pooled>"; $env:DIRECT_URL="<direct>"; npx prisma migrate deploy
-```
+## পরে প্রশ্নভান্ডার দেওয়া — GitHub লাগে না
+প্রশ্ন ডেটাবেসে থাকে, তাই **শুধু সাইটের অ্যাডমিন প্যানেল থেকে**:
+1. **Import** → CSV/Excel ফাইল (প্রতিটি ৪ MB-এর মধ্যে; বড় হলে বিষয় অনুযায়ী ভাগ) → পূর্বরূপ → Import (খসড়া হিসেবে)।
+2. **প্রশ্ন** → খসড়া প্রশ্ন দেখে নির্বাচন করে **প্রকাশ করুন** → সেই মুহূর্তে শিক্ষার্থীর Level ২-এ চলে আসে।
+3. ব্যাখ্যা যাচাই।
+4. **Model Test** → খসড়া তৈরি → দেখে অনুমোদন।
+
+অ্যাডমিন প্যানেলের প্রথম পাতায় **"নতুন প্রশ্ন কীভাবে live হয়"** অংশে এই চারটি ধাপ আর প্রতিটির বর্তমান অবস্থা (কতটি হলো, কতটি বাকি) দেখায়।
+ফাইলের গঠন: `docs/QUESTION_IMPORT.md`; কোন উপবিষয়ে কতটি: `docs/level2_targets.csv`।
+
+## কোড বদলালে (আমি কিছু ঠিক/যোগ করলে)
+কোড GitHub-এ push হয় → Hostinger-এ **Redeploy** (স্বয়ংক্রিয় চালু থাকলে নিজেই)। ডেটাবেসের নতুন পরিবর্তনও তখন নিজে থেকে প্রয়োগ হয়; শিক্ষার্থীর অগ্রগতি ও আপনার প্রশ্ন অক্ষত থাকে।
+
+## Backup
+অ্যাডমিন → Backup থেকে নিয়মিত (সপ্তাহে অন্তত একবার) ফাইল ডাউনলোড করে রাখুন। Neon-এরও নিজস্ব পুনরুদ্ধার-ব্যবস্থা আছে।
 
 ## সমস্যা হলে
-- **বিল্ড ব্যর্থ, ডেটাবেসের ত্রুটি** → ধাপ ২.৩ (`setup:prod`) আগে হয়েছে কিনা, `DATABASE_URL` ঠিক কিনা।
-- **সাইট চালু হয় না, লগে "APP_URL নেই"** → Environment variables-এ `APP_URL` দিন, Redeploy।
-- **রিসেট-ইমেইল আসে না** → SMTP মান; Hostinger-এর ইমেইল লগ; প্রেরকের SPF/DKIM (Hostinger ডোমেইনে সাধারণত নিজে থেকে থাকে)।
-- **বড় প্রশ্ন-ফাইল Import হয় না** → ৪ MB-এর ছোট ভাগে ভাগ করুন, অথবা নিজের কম্পিউটার থেকে `npx tsx scripts/import-questions.ts` (উপরের মতো `$env:DATABASE_URL` দিয়ে)।
+- **বিল্ড ব্যর্থ, ডেটাবেসের ত্রুটি** → `DATABASE_URL` ঠিকভাবে কপি হয়েছে কিনা (শেষে `?sslmode=require`)।
+- **লগে "কোনো অ্যাডমিন নেই"** → `ADMIN_EMAIL`, `ADMIN_PASSWORD` (১০+ অক্ষর) দিয়ে Redeploy।
+- **সাইট চালু হয় না, "APP_URL নেই"** → `APP_URL` দিয়ে Redeploy।
+- **রিসেট-ইমেইল আসে না** → SMTP মান ও মেইলবক্সের পাসওয়ার্ড।
+- বিল্ড-লগের লেখা কপি করে আমাকে পাঠালে বলে দেব কী করতে হবে (পাসওয়ার্ড/ঠিকানা থাকলে মুছে দিন)।
