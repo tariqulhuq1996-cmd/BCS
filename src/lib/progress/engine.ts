@@ -63,7 +63,7 @@ export async function completeTask(db: PrismaClient, userId: string, taskId: num
 async function unlockReady(tx: Db, userId: string, taskId: number): Promise<number[]> {
   const dependents = await tx.taskPrerequisite.findMany({
     where: { requiresId: taskId, task: { active: true } },
-    select: { taskId: true, task: { select: { prerequisites: { select: { requiresId: true } } } } },
+    select: { taskId: true, task: { select: { prerequisites: { select: { requiresId: true, requires: { select: { active: true } } } } } } },
   });
   if (!dependents.length) return [];
   const needed = [...new Set(dependents.flatMap((d) => d.task.prerequisites.map((p) => p.requiresId)))];
@@ -72,7 +72,8 @@ async function unlockReady(tx: Db, userId: string, taskId: number): Promise<numb
   );
   const opened: number[] = [];
   for (const d of dependents) {
-    if (!d.task.prerequisites.every((p) => done.has(p.requiresId))) continue;
+    // নিষ্ক্রিয় (অ্যাডমিন বন্ধ করেছেন) পূর্বশর্ত পূরণ হয়েছে বলে ধরা হয়
+    if (!d.task.prerequisites.every((p) => done.has(p.requiresId) || !p.requires.active || p.requiresId === taskId)) continue;
     const existing = await tx.studentTaskProgress.findUnique({ where: { userId_taskId: { userId, taskId: d.taskId } } });
     if (existing && existing.state !== "LOCKED") continue;
     await tx.studentTaskProgress.upsert({
@@ -83,6 +84,20 @@ async function unlockReady(tx: Db, userId: string, taskId: number): Promise<numb
     opened.push(d.taskId);
   }
   return opened;
+}
+
+/**
+ * অ্যাডমিন কোনো ধাপ নিষ্ক্রিয় করলে: যেসব শিক্ষার্থী ঐ ধাপে আছে বা যাদের জন্য ধাপটি খোলা,
+ * তাদের পরের ধাপ খুলে দেওয়া (নিষ্ক্রিয় ধাপ যেন কাউকে আটকে না রাখে)। ফেরত: কতজনের জন্য কিছু খুলেছে।
+ */
+export async function reconcileDeactivated(db: PrismaClient, taskId: number): Promise<number> {
+  const rows = await db.studentTaskProgress.findMany({ where: { taskId, state: { in: ["AVAILABLE", "IN_PROGRESS"] } }, select: { userId: true } });
+  let n = 0;
+  for (const r of rows) {
+    const opened = await db.$transaction((tx) => unlockReady(tx, r.userId, taskId));
+    if (opened.length) n++;
+  }
+  return n;
 }
 
 /** অ্যাডমিনের হাতে Unlock (বিশেষ পরিস্থিতি) — Audit Log-সহ। */

@@ -72,6 +72,11 @@ async function UserArea() {
   if (!user) return <AuthLinks />;
   return (
     <>
+      {user.role === "ADMIN" && (
+        <Link href="/admin" className="rounded-md px-2 py-1.5 text-[15px] font-semibold text-omr hover:underline sm:px-3">
+          অ্যাডমিন
+        </Link>
+      )}
       <Link href="/dashboard" className="rounded-md bg-green px-3 py-1.5 text-[15px] font-semibold text-white hover:bg-green-strong sm:px-3.5 dark:text-paper">
         Dashboard
       </Link>

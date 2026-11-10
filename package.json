@@ -17,11 +17,14 @@
     "test:level1": "tsx scripts/test-level1.ts",
     "test:level2": "tsx scripts/test-level2.ts",
     "db:allocate": "tsx scripts/allocate-level2.ts --floor 10 --write",
-    "test:level3": "tsx scripts/test-level3.ts"
+    "test:level3": "tsx scripts/test-level3.ts",
+    "backup": "tsx scripts/backup.ts",
+    "test:admin": "tsx scripts/test-admin.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.19.3",
     "bcryptjs": "^3.0.3",
+    "exceljs": "^4.4.0",
     "next": "16.4.5",
     "react": "19.3.0",
     "react-dom": "19.3.0",

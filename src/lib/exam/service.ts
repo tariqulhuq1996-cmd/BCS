@@ -11,6 +11,7 @@
 import type { AttemptKind, LearningTask, Exam, PrismaClient, Prisma } from "@prisma/client";
 import { loadRules, type Rules } from "@/lib/rules";
 import { OPEN_STATES, completeTask, markStarted } from "@/lib/progress/engine";
+import { normalizeOption } from "@/lib/questions/hash";
 import { pickCumulative, pickProportional, rank, optionPerm, revisionSize, shuffleArr, splitParts, type Candidate, type Stat, type Weights } from "./select";
 
 export class ExamError extends Error {
@@ -27,6 +28,15 @@ type Task = LearningTask & { exam: Exam | null };
 const GRACE_MS = 60_000;
 const bnD = (n: number | string) => String(n).replace(/\d/g, (d) => "০১২৩৪৫৬৭৮৯"[+d]);
 const qNoNum = (s: string | null) => parseInt(s ?? "0", 10) || 0;
+
+/**
+ * উত্তর সঠিক কি না। মূল প্রশ্নপত্রে কিছু প্রশ্নে দুটি অপশনের লেখা হুবহু এক (উৎসের ত্রুটি) — তখন সঠিক উত্তরের
+ * সঙ্গে হুবহু একই লেখার অন্য অপশনও সঠিক ধরা হয়, যাতে শিক্ষার্থী অন্যায়ভাবে নম্বর না হারায়।
+ */
+export function isCorrectChoice(q: { correctIndex: number | null; options: string[] }, sel: number): boolean {
+  if (q.correctIndex == null) return false;
+  return sel === q.correctIndex || normalizeOption(q.options[sel] ?? "") === normalizeOption(q.options[q.correctIndex]);
+}
 
 /** বাংলাদেশ সময়ে (UTC+৬) আজকের দিনের শুরু। */
 export function dhakaDayStart(now = new Date(), offsetDays = 0): Date {
@@ -444,17 +454,17 @@ export async function submitAttempt(db: Db, userId: string, attemptId: string): 
   const rules = await loadRules(db);
   const intervals = rules.get<number[]>("srs.intervals_days");
   const [qs, answers] = await Promise.all([
-    db.question.findMany({ where: { id: { in: a.questionIds } }, select: { id: true, correctIndex: true, subtopic: { select: { code: true } } } }),
+    db.question.findMany({ where: { id: { in: a.questionIds } }, select: { id: true, correctIndex: true, options: true } }),
     db.attemptAnswer.findMany({ where: { attemptId } }),
   ]);
-  const correctOf = new Map(qs.map((q) => [q.id, q.correctIndex]));
+  const qBy = new Map(qs.map((q) => [q.id, q]));
   const ansBy = new Map(answers.map((x) => [x.questionId, x]));
   const now = new Date();
   let correct = 0, wrong = 0, unanswered = 0;
   const graded = a.questionIds.map((qid) => {
     const ans = ansBy.get(qid);
     const sel = ans?.selected ?? null;
-    const ok = sel != null && sel === correctOf.get(qid);
+    const ok = sel != null && isCorrectChoice(qBy.get(qid)!, sel);
     if (sel == null) unanswered++;
     else if (ok) correct++;
     else wrong++;
@@ -603,7 +613,7 @@ export async function getResultView(db: Db, userId: string, attemptIds: string[]
         const perm = (a.optionPerms as Record<string, number[]>)[qid] ?? [0, 1, 2, 3];
         const ans = aBy.get(`${a.id}|${qid}`);
         const sel = ans?.selected ?? null;
-        const status = sel == null ? "unanswered" : sel === q.correctIndex ? "correct" : "wrong";
+        const status = sel == null ? "unanswered" : isCorrectChoice(q, sel) ? "correct" : "wrong";
         return {
           qid,
           text: q.text,

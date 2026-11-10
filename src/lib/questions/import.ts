@@ -10,7 +10,7 @@
  *  - ডিফল্ট অবস্থা DRAFT: যাচাই না হওয়া পর্যন্ত শিক্ষার্থীর পথে আসে না।
  */
 import type { Difficulty, PrismaClient, QuestionStatus } from "@prisma/client";
-import { normalizeText, questionHash } from "./hash";
+import { normalizeOption, normalizeText, questionHash } from "./hash";
 
 export type ImportRow = {
   uid?: string;
@@ -63,6 +63,25 @@ export function parseCsv(text: string): Record<string, string>[] {
   return rows.slice(1).map((r) => Object.fromEntries(head.map((h, i) => [h, (r[i] ?? "").trim()])));
 }
 
+/** Excel (.xlsx)-এর প্রথম শিট: প্রথম সারি কলামের নাম। */
+export async function parseXlsx(buf: ArrayBuffer | Buffer): Promise<Record<string, string>[]> {
+  const ExcelJS = (await import("exceljs")).default;
+  const wb = new ExcelJS.Workbook();
+  await wb.xlsx.load(buf as ArrayBuffer);
+  const ws = wb.worksheets[0];
+  if (!ws) return [];
+  const head: string[] = [];
+  ws.getRow(1).eachCell({ includeEmpty: true }, (c, i) => (head[i] = String(c.text ?? "").trim().toLowerCase()));
+  const records: Record<string, string>[] = [];
+  ws.eachRow((row, r) => {
+    if (r === 1) return;
+    const rec: Record<string, string> = {};
+    row.eachCell({ includeEmpty: true }, (c, i) => { if (head[i]) rec[head[i]] = String(c.text ?? "").trim(); });
+    if (Object.values(rec).some((v) => v !== "")) records.push(rec);
+  });
+  return records;
+}
+
 /** বিভিন্ন নামের কলাম/কী থেকে একটি সাধারণ রূপে আনা। */
 export function normalizeRecord(rec: Record<string, unknown>, rowNo: number): ImportRow | RowError {
   const g = (...keys: string[]) => {
@@ -81,10 +100,10 @@ export function normalizeRecord(rec: Record<string, unknown>, rowNo: number): Im
   if (!subtopicCode) return { row: rowNo, message: "উপবিষয় কোড নেই" };
   if (!text) return { row: rowNo, message: "প্রশ্নের লেখা নেই" };
   if (options.length !== 4 || options.some((o) => !o)) return { row: rowNo, message: "ঠিক ৪টি অপশন লাগবে (কোনোটি ফাঁকা নয়)" };
-  if (new Set(options.map(normalizeText)).size !== 4) return { row: rowNo, message: "দুটি অপশন একই" };
+  if (new Set(options.map(normalizeOption)).size !== 4) return { row: rowNo, message: "দুটি অপশন একই" };
   let answer = ansRaw != null ? LETTER[ansRaw.toLowerCase()] : undefined;
   if (answer == null && ansRaw != null) {
-    const i = options.findIndex((o) => normalizeText(o) === normalizeText(ansRaw));
+    const i = options.findIndex((o) => normalizeOption(o) === normalizeOption(ansRaw));
     if (i >= 0) answer = i;
   }
   if (answer == null) return { row: rowNo, message: `সঠিক উত্তর বোঝা যায়নি ("${ansRaw ?? ""}") — ক/খ/গ/ঘ, A–D, ১–৪ অথবা অপশনের লেখা দিন` };

@@ -1,6 +1,6 @@
 import "server-only";
 import { cookies } from "next/headers";
-import { redirect } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { cache } from "react";
 import { createHash, randomBytes } from "node:crypto";
 import { prisma } from "@/lib/db";
@@ -50,6 +50,14 @@ export const getCurrentUser = cache(async (): Promise<CurrentUser | null> => {
   if (!s || s.expiresAt < new Date() || s.user.disabled) return null;
   return { id: s.user.id, name: s.user.profile?.name ?? s.user.email, email: s.user.email, role: s.user.role };
 });
+
+/** অ্যাডমিন-পাতা ও অ্যাডমিন-কাজের জন্য: লগইন না থাকলে লগইনে, অ্যাডমিন না হলে ৪০৪ (অ্যাডমিন অংশের অস্তিত্বও প্রকাশ নয়)। */
+export async function requireAdmin(next = "/admin"): Promise<CurrentUser> {
+  const u = await getCurrentUser();
+  if (!u) redirect(`/login?next=${encodeURIComponent(next)}`);
+  if (u.role !== "ADMIN") notFound();
+  return u;
+}
 
 /** লগইন বাধ্যতামূলক এমন পাতার জন্য। */
 export async function requireUser(next = "/dashboard"): Promise<CurrentUser> {
