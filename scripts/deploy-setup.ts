@@ -15,7 +15,47 @@ import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcryptjs";
 
 const url = process.env.DATABASE_URL ?? "";
+// --soft: ডেটাবেসে পৌঁছানো না গেলে ব্যর্থ না হয়ে সতর্কতা দিয়ে থামে (বিল্ড চলতে থাকে; অ্যাপ চালুর সময় আবার চেষ্টা হয়)
+const soft = process.argv.includes("--soft");
+const when = process.argv.includes("--on-start") ? "অ্যাপ চালুর সময়" : "বিল্ডের সময়";
 const EXPECTED_HISTORICAL = 5352;
+
+/** ডেটাবেসে সংযোগ পরীক্ষা; না হলে কারণসহ বাংলা বার্তা */
+async function canConnect(): Promise<boolean> {
+  const probe = new PrismaClient();
+  try {
+    await probe.$queryRaw`select 1`;
+    return true;
+  } catch (e) {
+    const msg = e instanceof Error ? e.message : String(e);
+    const code =
+      (e as { errorCode?: string }).errorCode ||
+      (/Authentication failed|credentials .* not valid|Access denied/i.test(msg) ? "P1000"
+        : /Can't reach|make sure your database server is running|ECONNREFUSED|timed out/i.test(msg) ? "P1001"
+        : /does not exist|Unknown database/i.test(msg) ? "P1003"
+        : "");
+    const host = (() => {
+      try {
+        const u = new URL(url);
+        return `${u.hostname}:${u.port || 3306}, ডেটাবেস ${u.pathname.slice(1)}, ব্যবহারকারী ${decodeURIComponent(u.username)}`;
+      } catch {
+        return "DATABASE_URL পড়া যায়নি";
+      }
+    })();
+    const why =
+      code === "P1000"
+        ? "ব্যবহারকারীর নাম বা পাসওয়ার্ড মেলেনি। hPanel → Databases-এ ব্যবহারকারী ও পাসওয়ার্ড মিলিয়ে দেখুন (উপসর্গসহ পুরো নাম, যেমন u123456789_…); পাসওয়ার্ডে @ : / # ? থাকলে URL-encode করুন বা এসব চিহ্ন ছাড়া নতুন পাসওয়ার্ড দিন; ব্যবহারকারী ডেটাবেসের সঙ্গে যুক্ত আছে কিনা দেখুন।"
+        : code === "P1001"
+          ? "ডেটাবেস-সার্ভারে পৌঁছানো যায়নি (host/port ভুল, বা এই পরিবেশ থেকে ডেটাবেস দেখা যায় না)।"
+          : code === "P1003"
+            ? "এই নামের ডেটাবেস নেই — নামটি উপসর্গসহ মিলিয়ে দেখুন।"
+            : (e instanceof Error ? e.message.split(/\r?\n/).filter(Boolean).slice(-1)[0] : String(e));
+    console.warn(`[deploy-setup] ${when} ডেটাবেসে সংযোগ হয়নি (${code || "অজানা"}; ${host}) — ${why}`);
+    return false;
+  } finally {
+    await probe.$disconnect().catch(() => {});
+  }
+}
 const EXPECTED_TASKS = 467;
 
 async function main() {
@@ -28,7 +68,15 @@ async function main() {
     return;
   }
 
-  console.log("[deploy-setup] টেবিল তৈরি/হালনাগাদ…");
+  if (!(await canConnect())) {
+    if (soft) {
+      console.warn(`[deploy-setup] ডেটাবেস-প্রস্তুতি বাদ রেখে এগোনো হচ্ছে — অ্যাপ চালুর সময় আবার চেষ্টা হবে। (বিল্ড এতে আটকায় না)`);
+      return;
+    }
+    process.exit(1);
+  }
+
+  console.log(`[deploy-setup] ${when}: টেবিল তৈরি/হালনাগাদ…`);
   execSync("npx prisma migrate deploy", { stdio: "inherit", env: process.env });
 
   const db = new PrismaClient();
@@ -88,5 +136,6 @@ async function main() {
 
 main().catch((e) => {
   console.error("[deploy-setup] ব্যর্থ:", e);
-  process.exit(1);
+  // --soft: বিল্ড/চালু থামানো হয় না; পরের চালুতে আবার চেষ্টা (প্রতিটি ধাপ বারবার চালানো নিরাপদ)
+  process.exit(soft ? 0 : 1);
 });

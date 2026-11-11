@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && tsx scripts/deploy-setup.ts && next build --webpack",
+    "build": "prisma generate && tsx scripts/deploy-setup.ts --soft && next build --webpack",
     "start": "next start",
     "lint": "eslint",
     "db": "tsx scripts/db.ts",
