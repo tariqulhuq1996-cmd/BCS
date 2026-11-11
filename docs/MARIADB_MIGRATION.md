@@ -4,7 +4,7 @@
 
 যা শেখা গেল (MariaDB-নির্দিষ্ট): একযোগে একই সারিতে লেখায় 1020 "Record has changed since last read" — `src/lib/db-retry.ts`-এর withWriteRetry; `@db.Date` কলামে সময়-বিন্দু দিয়ে খোঁজা মেলে না — দিনের হিসাব DateTime-এ; count()/sum() BigInt/Decimal ফেরত দেয় — `src/lib/sql.ts`-এর numify; Json-ঘরের ধরন prisma-json-types-generator দিয়ে string[]।
 লক্ষ্য: Neon/PostgreSQL বাদ; Hostinger Business-এর **MariaDB 11.8.9** (প্রতি ডেটাবেস ৩ GB) একই সার্ভারে।
-বিল্ড GitHub Actions-এ থাকবে (Hostinger-এর পুরোনো glibc-এ Next 16 compiler চলে না) — `.github/workflows/hostinger-build.yml`, `deploy` শাখা।
+বিল্ড এখন Hostinger-এই হয় (webpack + WebAssembly compiler, `next build --webpack`) — পুরোনো glibc-এ Next 16-এর native compiler চলে না। (আগে GitHub Actions + deploy শাখা ছিল, ২০২৬-১১-১২ সরানো হয়েছে।)
 
 ## ধাপ (ক্রমানুসারে; প্রতিটি শেষে `npx tsc --noEmit`)
 

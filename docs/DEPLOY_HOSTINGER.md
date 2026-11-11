@@ -21,28 +21,17 @@
 hPanel → Emails → আপনার ডোমেইনে একটি মেইলবক্স, যেমন `no-reply@<ডোমেইন>`, পাসওয়ার্ড দিয়ে তৈরি করুন।
 SMTP-র ঠিকানা/পোর্ট hPanel-এর ইমেইল সেটিংয়ে মিলিয়ে নিন (সাধারণত `smtp.hostinger.com`, `465`)।
 
-## ধাপ ৩ — GitHub-এ বিল্ড (একবার সেটআপ)
-Hostinger-এর সার্ভারের Linux পুরোনো (GLIBC ২.২৯-এর নিচে), তাই সেখানে Next.js ১৬-এর compiler চলে না।
-সমাধান: **বিল্ড হয় GitHub-এ** (`.github/workflows/hostinger-build.yml`), তৈরি অ্যাপ যায় **`deploy`** শাখায়; Hostinger শুধু সেটি চালায়
-(চালাতে compiler লাগে না — compiler সরিয়ে রেখে পরীক্ষা করা হয়েছে)।
+## ধাপ ৩ — Hostinger-এ অ্যাপ (GitHub-এ কিছু বদলাতে হয় না)
+Hostinger সরাসরি GitHub-এর `main` শাখা থেকে কোড নিয়ে নিজেই বিল্ড করে।
+(Hostinger-এর Linux পুরোনো, তাই Next.js-এর দ্রুত compiler সেখানে চলে না; বিল্ড নিজে থেকে ধীর কিন্তু সব জায়গায় চলা
+WebAssembly compiler ও webpack ব্যবহার করে — কয়েক মিনিট বেশি লাগে, ফল একই। এটি compiler সরিয়ে রেখে পরীক্ষা করা হয়েছে।)
 
-GitHub → `BCS` repo → **Settings → Secrets and variables → Actions → New repository secret** — একটি:
-
-| নাম | মান |
-|---|---|
-| `APP_URL` | `https://<আপনার ডোমেইন>` |
-
-(বিল্ড ডেটাবেস ছোঁয় না, তাই GitHub-এ ডেটাবেসের ঠিকানা দিতে হয় না। আগে `DATABASE_URL` secret দিয়ে থাকলে মুছে দিন।)
-
-তারপর repo → **Actions → Build for Hostinger → Run workflow** (প্রথমবার; পরে `main`-এ প্রতিটি push-এ নিজে চলে)। সবুজ ✓ হলে `deploy` শাখা তৈরি হয়।
-
-## ধাপ ৪ — Hostinger-এ অ্যাপ
 hPanel → Websites → **Add website → Node.js Apps → Import Git repository** → GitHub যুক্ত করুন → `BCS` repo।
 
 | সেটিং | মান |
 |---|---|
 | Framework | Next.js |
-| Branch | **`deploy`** (main নয়) |
+| Branch | **`main`** |
 | Node.js version | 22 (না থাকলে 20) |
 | Build command | `npm run build` |
 | Start | Hostinger নিজে চালায় (দিতে হলে `npm run start`) |
@@ -68,7 +57,7 @@ hPanel → Websites → **Add website → Node.js Apps → Import Git repository
 `[deploy-setup] গবেষণার ডেটা বসানো হচ্ছে…` → `ব্যর্থ: কিছু নয়` → `Current Affairs প্রশ্নব্যাংক বসানো হলো: 138টি` → `প্রথম অ্যাডমিন তৈরি`।
 পরের Deploy-গুলোতে: `গবেষণার ডেটা সম্পূর্ণ (5352 প্রশ্ন, 467 ধাপ)`। মাঝপথে থেমে গেলে আবার Deploy করুন — যা আছে তা রেখে বাকিটা বসায়।
 
-## ধাপ ৫ — ডোমেইন, SSL, যাচাই
+## ধাপ ৪ — ডোমেইন, SSL, যাচাই
 1. ডোমেইন অ্যাপের সঙ্গে যুক্ত করুন, SSL চালু করুন।
 2. `https://<ডোমেইন>/api/health` → `{"ok":true,"db":"ok",…}`
 3. `/login`-এ অ্যাডমিন-ইমেইল ও পাসওয়ার্ডে ঢুকে `/admin` খুলুন।
@@ -96,7 +85,7 @@ hPanel → Websites → **Add website → Node.js Apps → Import Git repository
 - তথ্য যাচাইয়ের তারিখ ৪৫ দিনের বেশি পুরোনো হলে শিক্ষার্থীরা সেই ব্যাংকের জন্য সতর্কবার্তা দেখে।
 
 ## কোড বদলালে (আমি কিছু ঠিক/যোগ করলে)
-কোড `main`-এ push হয় → GitHub Actions কয়েক মিনিটে বিল্ড করে `deploy` শাখা হালনাগাদ করে (Actions-এ সবুজ ✓ দেখুন) → Hostinger-এ **Redeploy** (স্বয়ংক্রিয় চালু থাকলে নিজেই)। ডেটাবেসের নতুন পরিবর্তনও তখন নিজে থেকে প্রয়োগ হয়; শিক্ষার্থীর অগ্রগতি ও আপনার প্রশ্ন অক্ষত থাকে।
+কোড `main`-এ push হয় → Hostinger-এ **Redeploy** (স্বয়ংক্রিয় চালু থাকলে নিজেই)। ডেটাবেসের নতুন পরিবর্তনও তখন নিজে থেকে প্রয়োগ হয়; শিক্ষার্থীর অগ্রগতি ও আপনার প্রশ্ন অক্ষত থাকে।
 
 ## Backup
 অ্যাডমিন → Backup থেকে নিয়মিত (সপ্তাহে অন্তত একবার) ফাইল ডাউনলোড করে রাখুন। hPanel → Backups-এ Hostinger-এর ডেটাবেস-Backup-ও আছে; ডেটাবেসের আকার hPanel-এ দেখা যায় (সীমা ৩ GB)।

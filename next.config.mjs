@@ -46,14 +46,7 @@ const nextConfig = {
     ];
     return [{ source: "/:path*", headers: h }];
   },
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
-  },
+  // Tailwind: postcss.config.mjs (Turbopack ও webpack দুটোই এটি পড়ে)
 };
 
 export default nextConfig;

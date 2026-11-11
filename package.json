@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && tsx scripts/deploy-setup.ts && next build",
+    "build": "prisma generate && tsx scripts/deploy-setup.ts && next build --webpack",
     "start": "next start",
     "lint": "eslint",
     "db": "tsx scripts/db.ts",
@@ -29,6 +29,7 @@
     "setup:prod": "prisma migrate deploy && tsx scripts/import-research.ts && tsx scripts/seed.ts && tsx scripts/allocate-level2.ts --floor 10 --write && tsx scripts/import-current-affairs.ts data/source/current-affairs/current-affairs.docx && tsx scripts/import-current-affairs.ts data/source/current-affairs/bnp-govt-political.docx && tsx scripts/verify-data.ts && tsx scripts/check-integrity.ts"
   },
   "dependencies": {
+    "@next/swc-wasm-nodejs": "16.4.5",
     "@prisma/client": "^6.19.3",
     "bcryptjs": "^3.0.3",
     "exceljs": "^4.4.0",
@@ -42,6 +43,7 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
     "@types/nodemailer": "^8.0.2",
