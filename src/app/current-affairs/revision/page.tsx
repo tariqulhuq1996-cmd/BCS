@@ -3,12 +3,12 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { prisma } from "@/lib/db";
 import { requireUser } from "@/lib/auth/session";
-import { latestBank } from "@/lib/current-affairs/service";
+import { listBanks } from "@/lib/current-affairs/service";
 import { bn } from "@/lib/bn";
 
 export const metadata: Metadata = { title: "Current Affairs — Quick Revision" };
 
-export default function CaRevisionPage() {
+export default function CaRevisionPage({ searchParams }: PageProps<"/current-affairs/revision">) {
   return (
     <section className="mx-auto max-w-5xl px-4 pt-8 sm:px-6">
       <Link href="/current-affairs" className="text-sm text-green underline underline-offset-4">← সাম্প্রতিক বিষয়াবলি</Link>
@@ -19,25 +19,42 @@ export default function CaRevisionPage() {
         <a href="#sources" className="text-green underline underline-offset-4">তথ্যসূত্র</a>
       </nav>
       <Suspense fallback={<p className="mt-8 text-ink-2">লোড হচ্ছে…</p>}>
-        <Content />
+        <Content searchParams={searchParams} />
       </Suspense>
     </section>
   );
 }
 
-async function Content() {
+async function Content({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
+  const sp = await searchParams;
   await requireUser("/current-affairs/revision");
-  const [bank, items, volatile, sources] = await Promise.all([
-    latestBank(prisma),
-    prisma.caRevisionItem.findMany({ orderBy: { order: "asc" } }),
-    prisma.caQuestion.findMany({ where: { active: true, volatile: true }, orderBy: { no: "asc" }, select: { no: true, text: true, volatileReason: true, eventDate: true } }),
-    prisma.caSource.findMany({ orderBy: { no: "asc" } }),
+  const banks = await listBanks(prisma);
+  if (!banks.length) return <p className="mt-8 text-lg text-ink-2">প্রশ্নব্যাংক এখনও যুক্ত হয়নি।</p>;
+  const bank = banks.find((b) => b.key === sp.bank) ?? banks[0];
+  const [items, volatile, sources] = await Promise.all([
+    prisma.caRevisionItem.findMany({ where: { bankKey: bank.key }, orderBy: { order: "asc" } }),
+    prisma.caQuestion.findMany({ where: { bankKey: bank.key, active: true, volatile: true }, orderBy: { no: "asc" }, select: { no: true, text: true, volatileReason: true, eventDate: true } }),
+    prisma.caSource.findMany({ where: { bankKey: bank.key }, orderBy: { no: "asc" } }),
   ]);
   const groups = [...new Set(items.map((i) => i.group))];
 
   return (
     <>
-      {bank?.verifiedBn && <p className="mt-3 text-sm text-muted">সব তথ্য যাচাই: {bank.verifiedBn}। সাম্প্রতিক তথ্য দ্রুত বদলায় — পরীক্ষার আগে আবার মিলিয়ে নাও।</p>}
+      {banks.length > 1 && (
+        <nav aria-label="প্রশ্নব্যাংক" className="mt-5 flex flex-wrap gap-2">
+          {banks.map((b) => (
+            <Link
+              key={b.key}
+              href={`/current-affairs/revision?bank=${b.key}`}
+              aria-current={b.key === bank.key ? "page" : undefined}
+              className={`rounded-full border px-3.5 py-1.5 text-[15px] ${b.key === bank.key ? "border-green bg-green-wash font-semibold" : "border-line-strong hover:border-green"}`}
+            >
+              {b.name}
+            </Link>
+          ))}
+        </nav>
+      )}
+      <p className="mt-3 text-sm text-muted">{bank.name} · সব তথ্য যাচাই: {bank.verifiedBn ?? "—"}। সাম্প্রতিক তথ্য দ্রুত বদলায় — পরীক্ষার আগে আবার মিলিয়ে নাও।</p>
 
       <section id="facts" aria-labelledby="facts-h" className="mt-8 scroll-mt-24">
         <h2 id="facts-h" className="text-xl font-bold">এক নজরে গুরুত্বপূর্ণ তথ্য</h2>
@@ -49,8 +66,14 @@ async function Content() {
               <tbody>
                 {items.filter((i) => i.group === g).map((i) => (
                   <tr key={i.id} className="border-b border-line align-top">
-                    <th scope="row" className="w-1/3 py-2 pr-4 font-semibold">{i.topic}</th>
-                    <td className="py-2 text-ink-2">{i.fact}</td>
+                    {i.topic ? (
+                      <>
+                        <th scope="row" className="w-1/3 py-2 pr-4 font-semibold">{i.topic}</th>
+                        <td className="py-2 text-ink-2">{i.fact}</td>
+                      </>
+                    ) : (
+                      <td colSpan={2} className="py-2 text-ink-2">• {i.fact}</td>
+                    )}
                   </tr>
                 ))}
               </tbody>

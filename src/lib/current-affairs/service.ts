@@ -22,6 +22,7 @@ export const MODES: Record<CaMode, string> = {
 export type CaPublicQuestion = {
   id: string;
   no: number;
+  bank: string;
   chapter: string;
   priority: PriorityGrade;
   text: string;
@@ -45,8 +46,18 @@ function shuffled(n: number) {
   return a;
 }
 
-export async function latestBank(db: PrismaClient) {
-  return db.caBank.findFirst({ orderBy: { importedAt: "desc" } });
+export type CaBankInfo = { key: string; name: string; title: string; version: string | null; verifiedBn: string | null; verifiedOn: Date | null; importedAt: Date };
+
+/** সব প্রশ্নব্যাংক (প্রতিটির সর্বশেষ Import-এর তথ্য) — প্রথম যুক্ত হওয়ার ক্রমে */
+export async function listBanks(db: PrismaClient): Promise<CaBankInfo[]> {
+  const rows = await db.caBank.findMany({ orderBy: { importedAt: "asc" } });
+  const by = new Map<string, CaBankInfo>();
+  for (const r of rows) by.set(r.bankKey, { key: r.bankKey, name: r.name ?? r.title, title: r.title, version: r.version, verifiedBn: r.verifiedBn, verifiedOn: r.verifiedOn, importedAt: r.importedAt });
+  return [...by.values()];
+}
+
+export async function latestBank(db: PrismaClient, bankKey?: string) {
+  return db.caBank.findFirst({ where: bankKey ? { bankKey } : {}, orderBy: { importedAt: "desc" } });
 }
 
 export function isStale(verifiedOn: Date | null | undefined, now = new Date()) {
@@ -56,9 +67,9 @@ export function isStale(verifiedOn: Date | null | undefined, now = new Date()) {
 /** সারসংক্ষেপ: অধ্যায়ভিত্তিক মোট/দেখা/আয়ত্ত, আর স্মার্ট সেটে কী আছে */
 export async function getOverview(db: PrismaClient, userId: string) {
   const now = new Date();
-  const [bank, chapters, answers] = await Promise.all([
-    latestBank(db),
-    db.caChapter.findMany({ orderBy: { no: "asc" }, include: { questions: { where: { active: true }, select: { id: true, priority: true, volatile: true } } } }),
+  const [banks, chapters, answers] = await Promise.all([
+    listBanks(db),
+    db.caChapter.findMany({ orderBy: [{ bankKey: "asc" }, { no: "asc" }], include: { questions: { where: { active: true }, select: { id: true, priority: true, volatile: true } } } }),
     db.caAnswer.findMany({ where: { userId, question: { active: true } }, select: { questionId: true, box: true, lastCorrect: true, dueAt: true } }),
   ]);
   const byQ = new Map(answers.map((a) => [a.questionId, a]));
@@ -70,14 +81,20 @@ export async function getOverview(db: PrismaClient, userId: string) {
       const mastered = qs.filter((q) => (byQ.get(q.id)?.box ?? 0) >= MASTERED_BOX).length;
       const wrong = qs.filter((q) => byQ.get(q.id)?.lastCorrect === false).length;
       const pr = (g: PriorityGrade) => qs.filter((q) => q.priority === g).length;
-      return { no: c.no, name: c.nameBn, total: qs.length, seen, mastered, wrong, a: pr("A"), b: pr("B"), c: pr("C") };
+      return { bank: c.bankKey, no: c.no, name: c.nameBn, total: qs.length, seen, mastered, wrong, a: pr("A"), b: pr("B"), c: pr("C") };
     });
+  const bankRows = banks
+    .map((b) => {
+      const ch = rows.filter((r) => r.bank === b.key);
+      const sum = (k: "total" | "seen" | "mastered" | "wrong") => ch.reduce((a, r) => a + r[k], 0);
+      return { ...b, stale: isStale(b.verifiedOn, now), chapters: ch, total: sum("total"), seen: sum("seen"), mastered: sum("mastered"), wrong: sum("wrong") };
+    })
+    .filter((b) => b.total > 0);
   const all = chapters.flatMap((c) => c.questions);
   const unseenA = all.filter((q) => q.priority === "A" && !byQ.has(q.id)).length;
   return {
-    bank,
-    stale: isStale(bank?.verifiedOn, now),
-    chapters: rows,
+    banks: bankRows,
+    stale: bankRows.some((b) => b.stale),
     total: all.length,
     seen: answers.length,
     mastered: answers.filter((a) => a.box >= MASTERED_BOX).length,
@@ -94,13 +111,19 @@ export async function getOverview(db: PrismaClient, userId: string) {
  * অনুশীলনের সেট বাছাই। স্মার্ট ক্রম:
  *  ১. শেষবার ভুল হয়েছে  ২. পুনরাবৃত্তির সময় হয়েছে  ৩. নতুন — Priority A → B → C  ৪. বাকিগুলো (সবচেয়ে আগে যার সময় আসবে)
  */
-export async function pickSet(db: PrismaClient, userId: string, opts: { mode: CaMode; chapter?: number; priority?: PriorityGrade }): Promise<CaPublicQuestion[]> {
+export async function pickSet(db: PrismaClient, userId: string, opts: { mode: CaMode; bank?: string; chapter?: number; priority?: PriorityGrade }): Promise<CaPublicQuestion[]> {
   const now = new Date();
   const qs = await db.caQuestion.findMany({
-    where: { active: true, ...(opts.chapter ? { chapter: { no: opts.chapter } } : {}), ...(opts.priority ? { priority: opts.priority } : {}) },
+    where: {
+      active: true,
+      ...(opts.bank ? { bankKey: opts.bank } : {}),
+      ...(opts.chapter ? { chapter: { no: opts.chapter } } : {}),
+      ...(opts.priority ? { priority: opts.priority } : {}),
+    },
     include: { chapter: { select: { nameBn: true } }, answers: { where: { userId }, select: { box: true, lastCorrect: true, dueAt: true } } },
-    orderBy: { no: "asc" },
+    orderBy: [{ bankKey: "asc" }, { no: "asc" }],
   });
+  const bankNames = new Map((await listBanks(db)).map((b) => [b.key, b.name]));
   const pRank = { A: 0, B: 1, C: 2, D: 3 } as const;
   const rank = (q: (typeof qs)[number]) => {
     const a = q.answers[0];
@@ -126,6 +149,7 @@ export async function pickSet(db: PrismaClient, userId: string, opts: { mode: Ca
     return {
       id: q.id,
       no: q.no,
+      bank: bankNames.get(q.bankKey) ?? q.bankKey,
       chapter: q.chapter.nameBn,
       priority: q.priority,
       text: q.text,

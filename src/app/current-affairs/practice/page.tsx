@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
 import { requireUser } from "@/lib/auth/session";
-import { MODES, pickSet, type CaMode } from "@/lib/current-affairs/service";
+import { MODES, latestBank, pickSet, type CaMode } from "@/lib/current-affairs/service";
 import { CaPractice } from "@/components/current-affairs/practice";
 import { prisma } from "@/lib/db";
 import { bn } from "@/lib/bn";
@@ -25,17 +25,19 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
   const user = await requireUser("/current-affairs/practice");
   const one = (k: string) => (typeof sp[k] === "string" ? (sp[k] as string) : undefined);
   const mode = (Object.keys(MODES).includes(one("mode") ?? "") ? one("mode") : "smart") as CaMode;
-  const chapter = Number(one("chapter")) || undefined;
+  const bank = /^[a-z0-9-]{2,60}$/.test(one("bank") ?? "") ? one("bank") : undefined;
+  const chapter = bank ? Number(one("chapter")) || undefined : undefined;
   const priority = (["A", "B", "C"] as const).find((g) => g === one("priority"));
-  const [questions, ch] = await Promise.all([
-    pickSet(prisma, user.id, { mode, chapter, priority }),
-    chapter ? prisma.caChapter.findUnique({ where: { no: chapter }, select: { nameBn: true } }) : null,
+  const [questions, ch, bk] = await Promise.all([
+    pickSet(prisma, user.id, { mode, bank, chapter, priority }),
+    bank && chapter ? prisma.caChapter.findUnique({ where: { bankKey_no: { bankKey: bank, no: chapter } }, select: { nameBn: true } }) : null,
+    bank ? latestBank(prisma, bank) : null,
   ]);
-  const title = [MODES[mode], ch && `অধ্যায় ${bn(chapter!)}: ${ch.nameBn}`, priority && `Priority ${priority}`].filter(Boolean).join(" · ");
+  const title = [MODES[mode], bk && !ch && (bk.name ?? bk.title), ch && `অধ্যায় ${bn(chapter!)}: ${ch.nameBn}`, priority && `Priority ${priority}`].filter(Boolean).join(" · ");
   return (
     <>
       <h1 className="mt-3 text-2xl font-extrabold sm:text-3xl" style={{ fontStretch: "110%" }}>{title}</h1>
-      <CaPractice key={`${mode}-${chapter}-${priority}`} questions={questions} title={title} backHref="/current-affairs" />
+      <CaPractice key={`${mode}-${bank}-${chapter}-${priority}`} questions={questions} title={title} backHref="/current-affairs" />
     </>
   );
 }

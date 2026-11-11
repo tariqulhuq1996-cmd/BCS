@@ -9,7 +9,7 @@
  * স্থানীয় ডেভেলপমেন্ট ডেটাবেসে (npm run db) কিছু করে না।
  */
 import { execSync } from "node:child_process";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcryptjs";
@@ -49,14 +49,20 @@ async function main() {
       run("npx tsx scripts/verify-data.ts");
     }
 
-    // Current Affairs: ডেটাবেসে না থাকলে repo-র প্রশ্নব্যাংক (data/source/current_affairs.docx) বসানো।
+    // Current Affairs: data/source/current-affairs/<key>.docx — যে ব্যাংক ডেটাবেসে নেই, সেটি বসানো।
     // পরে নতুন সংস্করণ অ্যাডমিন প্যানেল → Current Affairs থেকে Import করা হয় (এখানে আর বদলায় না)।
-    const caFile = path.resolve(__dirname, "..", "data", "source", "current_affairs.docx");
-    if ((await db.caQuestion.count()) === 0 && existsSync(caFile)) {
+    const caDir = path.resolve(__dirname, "..", "data", "source", "current-affairs");
+    if (existsSync(caDir)) {
       const { parseCurrentAffairsDocx } = await import("../src/lib/current-affairs/parse");
       const { importCurrentAffairs } = await import("../src/lib/current-affairs/import");
-      const r = await importCurrentAffairs(db, await parseCurrentAffairsDocx(readFileSync(caFile)), "deploy");
-      console.log(`[deploy-setup] Current Affairs প্রশ্নব্যাংক বসানো হলো: ${r.added}টি প্রশ্ন।`);
+      // সাধারণ Current Affairs আগে (পাতায় প্রথমে দেখায়), তারপর বাকিগুলো নামের ক্রমে
+      const files = readdirSync(caDir).filter((f) => f.endsWith(".docx")).sort((a, b) => Number(b === "current-affairs.docx") - Number(a === "current-affairs.docx") || a.localeCompare(b));
+      for (const file of files) {
+        const bankKey = file.replace(/.docx$/, "");
+        if ((await db.caQuestion.count({ where: { bankKey } })) > 0) continue;
+        const r = await importCurrentAffairs(db, await parseCurrentAffairsDocx(readFileSync(path.join(caDir, file))), bankKey, "deploy");
+        console.log(`[deploy-setup] Current Affairs "${bankKey}" বসানো হলো: ${r.added}টি প্রশ্ন।`);
+      }
     }
 
     const email = process.env.ADMIN_EMAIL?.trim().toLowerCase();

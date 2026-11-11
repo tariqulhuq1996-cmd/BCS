@@ -26,7 +26,7 @@
     "test:load": "tsx scripts/test-load.ts",
     "check:integrity": "tsx scripts/check-integrity.ts",
     "postinstall": "prisma generate",
-    "setup:prod": "prisma migrate deploy && tsx scripts/import-research.ts && tsx scripts/seed.ts && tsx scripts/allocate-level2.ts --floor 10 --write && tsx scripts/import-current-affairs.ts data/source/current_affairs.docx && tsx scripts/verify-data.ts && tsx scripts/check-integrity.ts"
+    "setup:prod": "prisma migrate deploy && tsx scripts/import-research.ts && tsx scripts/seed.ts && tsx scripts/allocate-level2.ts --floor 10 --write && tsx scripts/import-current-affairs.ts data/source/current-affairs/current-affairs.docx && tsx scripts/import-current-affairs.ts data/source/current-affairs/bnp-govt-political.docx && tsx scripts/verify-data.ts && tsx scripts/check-integrity.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.19.3",

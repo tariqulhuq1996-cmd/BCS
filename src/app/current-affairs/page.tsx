@@ -42,14 +42,12 @@ async function Content() {
 
   return (
     <>
-      {o.bank && (
-        <p className="mt-4 text-sm text-muted">
-          সংস্করণ {o.bank.version ?? "—"} · তথ্য যাচাই: {o.bank.verifiedBn ?? "—"} · মোট {bn(o.total)}টি প্রশ্ন, {bn(o.chapters.length)}টি অধ্যায়
-        </p>
-      )}
+      <p className="mt-4 text-sm text-muted">
+        {bn(o.banks.length)}টি প্রশ্নব্যাংক · মোট {bn(o.total)}টি প্রশ্ন — স্মার্ট সেট সব ব্যাংক মিলিয়ে বাছাই করে
+      </p>
       {o.stale && (
         <p role="note" className="mt-3 rounded-md border border-danger bg-danger-wash px-3 py-2 text-[15px]">
-          প্রশ্নব্যাংকের তথ্য যাচাই করা হয়েছে {bn(STALE_DAYS)} দিনেরও আগে। সাম্প্রতিক তথ্য দ্রুত বদলায় — ⚠ চিহ্নিত প্রশ্নগুলো পত্রিকা/সরকারি উৎসে মিলিয়ে নাও।
+          {o.banks.filter((b) => b.stale).map((b) => b.name).join(", ")} — তথ্য যাচাই করা হয়েছে {bn(STALE_DAYS)} দিনেরও আগে। সাম্প্রতিক তথ্য দ্রুত বদলায় — ⚠ চিহ্নিত প্রশ্নগুলো পত্রিকা/সরকারি উৎসে মিলিয়ে নাও।
         </p>
       )}
 
@@ -85,28 +83,36 @@ async function Content() {
         <Link href="/current-affairs/revision" className={chip}>Quick Revision ও উৎস</Link>
       </div>
 
-      <section aria-labelledby="ch" className="mt-10">
-        <h2 id="ch" className="text-xl font-bold">অধ্যায়ভিত্তিক</h2>
-        <ul className="mt-3 grid gap-3 sm:grid-cols-2">
-          {o.chapters.map((c) => (
-            <li key={c.no} className="rounded-xl border border-line bg-surface p-4">
-              <div className="flex items-baseline justify-between gap-3">
-                <h3 className="font-semibold">{bn(c.no)}. {c.name}</h3>
-                <span className="shrink-0 text-sm text-muted tabular">{bn(c.total)}টি</span>
-              </div>
-              <p className="mt-1 text-xs text-muted">A {bn(c.a)} · B {bn(c.b)} · C {bn(c.c)}{c.wrong ? ` · ভুল ${bn(c.wrong)}` : ""}</p>
-              <div className="mt-2 flex h-2 overflow-hidden rounded-full bg-line" role="img" aria-label={`আয়ত্তে ${bn(c.mastered)}, দেখা ${bn(c.seen)}, মোট ${bn(c.total)}`}>
-                <span className="bg-green" style={{ width: `${(c.mastered / c.total) * 100}%` }} />
-                <span className="bg-omr/50" style={{ width: `${((c.seen - c.mastered) / c.total) * 100}%` }} />
-              </div>
-              <Link href={`/current-affairs/practice?chapter=${c.no}`} className="mt-3 inline-block text-[15px] font-semibold text-green underline underline-offset-4">
-                {c.seen < c.total ? "অনুশীলন করো" : "আবার ঝালাই করো"}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <p className="mt-2 text-xs text-muted">সবুজ: আয়ত্তে · হালকা: দেখা হয়েছে</p>
-      </section>
+      {o.banks.map((b) => (
+        <section key={b.key} aria-labelledby={`bank-${b.key}`} className="mt-10">
+          <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+            <h2 id={`bank-${b.key}`} className="text-xl font-bold">{b.name}</h2>
+            <Link href={`/current-affairs/practice?bank=${b.key}`} className="text-[15px] font-semibold text-green underline underline-offset-4">শুধু এই ব্যাংক থেকে অনুশীলন</Link>
+          </div>
+          <p className="mt-1 text-sm text-muted">
+            {bn(b.total)}টি প্রশ্ন · {bn(b.chapters.length)}টি অধ্যায় · দেখা {bn(b.seen)} · আয়ত্তে {bn(b.mastered)} · সংস্করণ {b.version ?? "—"} · তথ্য যাচাই: {b.verifiedBn ?? "—"}
+          </p>
+          <ul className="mt-3 grid gap-3 sm:grid-cols-2">
+            {b.chapters.map((c) => (
+              <li key={c.no} className="rounded-xl border border-line bg-surface p-4">
+                <div className="flex items-baseline justify-between gap-3">
+                  <h3 className="font-semibold">{bn(c.no)}. {c.name}</h3>
+                  <span className="shrink-0 text-sm text-muted tabular">{bn(c.total)}টি</span>
+                </div>
+                <p className="mt-1 text-xs text-muted">A {bn(c.a)} · B {bn(c.b)} · C {bn(c.c)}{c.wrong ? ` · ভুল ${bn(c.wrong)}` : ""}</p>
+                <div className="mt-2 flex h-2 overflow-hidden rounded-full bg-line" role="img" aria-label={`আয়ত্তে ${bn(c.mastered)}, দেখা ${bn(c.seen)}, মোট ${bn(c.total)}`}>
+                  <span className="bg-green" style={{ width: `${(c.mastered / c.total) * 100}%` }} />
+                  <span className="bg-omr/50" style={{ width: `${((c.seen - c.mastered) / c.total) * 100}%` }} />
+                </div>
+                <Link href={`/current-affairs/practice?bank=${b.key}&chapter=${c.no}`} className="mt-3 inline-block text-[15px] font-semibold text-green underline underline-offset-4">
+                  {c.seen < c.total ? "অনুশীলন করো" : "আবার ঝালাই করো"}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+      <p className="mt-2 text-xs text-muted">সবুজ: আয়ত্তে · হালকা: দেখা হয়েছে</p>
 
       {(
         <section className="mt-10">

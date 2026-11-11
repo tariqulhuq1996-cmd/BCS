@@ -1,9 +1,14 @@
 /**
- * Current Affairs প্রশ্নব্যাংক (.docx) পড়া। নথির কাঠামো (সংস্করণ ১.০):
- *   ৩. বিষয়ভিত্তিক প্রশ্নব্যাংক — অধ্যায় (Heading 2) → "১. [A] ⚠ প্রশ্ন", i/ii/iii বিবৃতি, "নিচের কোনটি সঠিক?", ক)–ঘ) অপশন
- *   ৫. উত্তর ও ব্যাখ্যা — "সঠিক উত্তর: ক) …", "ব্যাখ্যা:", "মনে রাখুন:", "উৎস: … · ঘটনার/প্রকাশের তারিখ: … · যাচাই: …", "⚠ পরিবর্তনশীল: কারণ"
- *   ৬. Quick Revision — Heading 2 গোষ্ঠী + টেবিল (বিষয় ¦ তথ্য)
- *   ৭. তথ্যসূত্র — টেবিল (নং ¦ উৎস ¦ লিংক)
+ * Current Affairs প্রশ্নব্যাংক (.docx) পড়া। দুই ধরনের নথি চলে:
+ *  ক) উত্তর আলাদা অধ্যায়ে (সাধারণ Current Affairs, সংস্করণ ১.০):
+ *     "৩. বিষয়ভিত্তিক প্রশ্নব্যাংক" → অধ্যায় = নম্বরযুক্ত Heading 2; প্রশ্ন + অপশন
+ *     "৫. উত্তর ও ব্যাখ্যা" → একই নম্বরের প্রশ্নের উত্তর/ব্যাখ্যা/মনে রাখুন/উৎস
+ *  খ) উত্তর প্রশ্নের ঠিক নিচে (বিএনপি সরকার ও রাজনীতি, সংস্করণ ১.০):
+ *     প্রতিটি Heading 1 অধ্যায়ে সারসংক্ষেপ-টেবিল + "বহুনির্বাচনি প্রশ্ন" (প্রশ্ন, অপশন, সঠিক উত্তর, ব্যাখ্যা …)
+ * প্রশ্নের লাইন: "১. [A] ⚠ প্রশ্ন"; অপশন "ক) …"; বিবৃতি "i. …"; উত্তর-অংশ "সঠিক উত্তর: ক) …", "ব্যাখ্যা:", "মনে রাখুন:",
+ * "উৎস: … · ঘটনার/প্রকাশের তারিখ: … · যাচাই: …", "⚠ পরিবর্তনশীল: কারণ"।
+ * অন্যান্য অংশ শিরোনাম দেখে: Quick Revision / এক নজরে (টেবিল বা তালিকা), "সাল, তারিখ ও সংখ্যা" (টেবিল),
+ * তথ্যসূত্র (নং ¦ উৎস ¦ লিংক), "পরিবর্তনশীল" শিরোনামের টেবিল (নং ¦ প্রসঙ্গ ¦ কারণ), প্রশ্নের অধ্যায়ের সারসংক্ষেপ-টেবিল।
  * কিছু অনুমান করে বসানো হয় না: নথিতে যা নেই তা ফাঁকা থাকে; অমিল পেলে ত্রুটি/সতর্কতা।
  */
 import JSZip from "jszip";
@@ -27,6 +32,8 @@ export type CaParsedQuestion = {
 };
 
 export type CaParsed = {
+  /** মলাটের দ্বিতীয় লাইন — ছোট নাম */
+  name: string;
   title: string;
   version: string | null;
   verifiedBn: string | null;
@@ -54,7 +61,9 @@ export function parseBnDate(s: string | null | undefined): Date | null {
   return new Date(Date.UTC(bnToInt(m[3]), mon, bnToInt(m[1])) - 6 * 3600e3);
 }
 
-type Line = { kind: "P"; style: string; text: string } | { kind: "T"; cells: string[] };
+export { bankKeyFromFilename, isValidBankKey } from "./bank-key";
+
+type Line = { kind: "P"; style: string; text: string } | { kind: "T"; cells: string[]; head: boolean };
 
 function decode(s: string) {
   return s.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&amp;/g, "&");
@@ -75,8 +84,13 @@ export function docxXmlToLines(xml: string): Line[] {
   for (const m of body.matchAll(/<w:tbl>[\s\S]*?<\/w:tbl>|<w:p[ >][\s\S]*?<\/w:p>/g)) {
     const b = m[0];
     if (b.startsWith("<w:tbl>")) {
-      for (const r of b.match(/<w:tr[ >][\s\S]*?<\/w:tr>/g) ?? [])
-        out.push({ kind: "T", cells: (r.match(/<w:tc>[\s\S]*?<\/w:tc>/g) ?? []).map((c) => (c.match(/<w:p[ >][\s\S]*?<\/w:p>/g) ?? []).map(runText).filter(Boolean).join(" ")) });
+      (b.match(/<w:tr[ >][\s\S]*?<\/w:tr>/g) ?? []).forEach((r, i) =>
+        out.push({
+          kind: "T",
+          head: i === 0,
+          cells: (r.match(/<w:tc>[\s\S]*?<\/w:tc>/g) ?? []).map((c) => (c.match(/<w:p[ >][\s\S]*?<\/w:p>/g) ?? []).map(runText).filter(Boolean).join(" ")),
+        }),
+      );
     } else {
       const text = runText(b);
       if (text) out.push({ kind: "P", style: b.match(/<w:pStyle w:val="([^"]+)"/)?.[1] ?? "", text });
@@ -85,10 +99,6 @@ export function docxXmlToLines(xml: string): Line[] {
   return out;
 }
 
-const Q_RE = /^([০-৯\d]+)\.\s*\[([ABC])\]\s*(⚠\s*)?(.+)$/;
-const OPT_RE = /^([কখগঘ])\)\s*(.+)$/;
-const STMT_RE = /^(i{1,3}|iv|v)\.\s*(.+)$/;
-
 export async function parseCurrentAffairsDocx(buf: ArrayBuffer | Uint8Array | Buffer): Promise<CaParsed> {
   const zip = await JSZip.loadAsync(buf);
   const doc = zip.file("word/document.xml");
@@ -96,24 +106,26 @@ export async function parseCurrentAffairsDocx(buf: ArrayBuffer | Uint8Array | Bu
   return parseLines(docxXmlToLines(await doc.async("string")));
 }
 
+const Q_RE = /^([০-৯\d]+)\.\s*\[([ABC])\]\s*(⚠\s*)?(.+)$/;
+const OPT_RE = /^([কখগঘ])\)\s*(.+)$/;
+const STMT_RE = /^(i{1,3}|iv|v)\.\s*(.+)$/;
+const NUM_HEAD_RE = /^([০-৯\d]+)\.\s*(.+?)(?:\s*\([^)]*প্রশ্ন\))?$/;
+const isH1 = (l: Line) => l.kind === "P" && /^Heading1/.test(l.style);
+const isH2 = (l: Line) => l.kind === "P" && /^Heading2/.test(l.style);
+
 export function parseLines(lines: Line[]): CaParsed {
   const errors: string[] = [];
   const warnings: string[] = [];
-  const res: CaParsed = { title: "", version: null, verifiedBn: null, verifiedOn: null, howToUse: [], chapters: [], questions: [], revision: [], sources: [], errors, warnings };
+  const res: CaParsed = { name: "", title: "", version: null, verifiedBn: null, verifiedOn: null, howToUse: [], chapters: [], questions: [], revision: [], sources: [], errors, warnings };
 
-  // অধ্যায়-ভাগ: Heading1 "৩. …" ইত্যাদি
-  const h1 = lines.map((l, i) => (l.kind === "P" && /^Heading1/.test(l.style) ? { i, n: bnToInt(l.text.match(/^([০-৯\d]+)\./)?.[1] ?? "0") } : null)).filter((x): x is { i: number; n: number } => !!x && x.n > 0);
-  const part = (n: number) => {
-    const k = h1.findIndex((h) => h.n === n);
-    if (k < 0) return [];
-    return lines.slice(h1[k].i + 1, k + 1 < h1.length ? h1[k + 1].i : lines.length);
-  };
-
-  // মলাট: শুরুর অনুচ্ছেদ, সারাংশ-টেবিল, সংস্করণ, "কীভাবে ব্যবহার করবেন"
-  const firstH1 = h1.length ? h1[0].i : lines.length;
-  const coverIdx = lines.findIndex((l) => l.kind === "T");
-  res.title = lines.slice(0, coverIdx < 0 ? 3 : coverIdx).flatMap((l) => (l.kind === "P" ? [l.text] : [])).slice(0, 3).join(" — ") || "Current Affairs প্রশ্নব্যাংক";
-  for (const l of lines.slice(0, firstH1)) {
+  // ── মলাট: প্রথম টেবিলের আগের অনুচ্ছেদ, সারাংশ-টেবিল, সংস্করণ, "কীভাবে ব্যবহার করবেন"
+  const firstH1 = lines.findIndex(isH1);
+  const cover = lines.slice(0, firstH1 < 0 ? lines.length : firstH1);
+  const firstTable = cover.findIndex((l) => l.kind === "T");
+  const coverP = cover.slice(0, firstTable < 0 ? 3 : firstTable).flatMap((l) => (l.kind === "P" ? [l.text] : []));
+  res.title = coverP.slice(0, 3).join(" — ") || "Current Affairs প্রশ্নব্যাংক";
+  res.name = coverP[1] ?? coverP[0] ?? res.title;
+  for (const l of cover) {
     if (l.kind === "T" && /যাচাইয়ের তারিখ/.test(l.cells[0] ?? "")) res.verifiedBn = l.cells[1] ?? null;
     if (l.kind === "P" && /^সংস্করণ/.test(l.text)) res.version = l.text.split("·")[0].replace("সংস্করণ", "").trim() || null;
   }
@@ -125,104 +137,178 @@ export function parseLines(lines: Line[]): CaParsed {
       res.howToUse.push(l.text);
     }
 
-  // ৩. প্রশ্ন
-  let chapterNo = 0;
+  // ── এক পাসে: প্রশ্ন (প্রথম দেখা যেখানে, সেটিই অধ্যায়), উত্তর-অংশ, টেবিল ও তালিকা শিরোনাম অনুযায়ী
+  type H = { no: number; title: string };
+  let h1: H | null = null;
+  let h2 = "";
+  let numberedH2: H | null = null;
   let cur: CaParsedQuestion | null = null;
   const qs = new Map<number, CaParsedQuestion>();
-  const push = () => {
-    if (!cur) return;
-    if (cur.options.length !== 4) errors.push(`প্রশ্ন ${cur.no}: ৪টি অপশন নেই (${cur.options.length}টি)`);
-    if (qs.has(cur.no)) errors.push(`প্রশ্ন ${cur.no}: নম্বর দুবার আছে`);
-    qs.set(cur.no, cur);
-    cur = null;
+  const answered = new Set<number>();
+  const chapterNames = new Map<number, string>();
+  const qSections = new Set<number>(); // যেসব Heading 1 অংশে প্রশ্ন প্রথম এসেছে
+  const volatileReasons = new Map<number, string>();
+  const sectionTables: { h1: H; head: string[]; rows: string[][] }[] = [];
+  const revisionLater: { group: string; topic: string; fact: string }[] = [];
+
+  const h1Kind = () => {
+    const t = h1?.title ?? "";
+    if (/তথ্যসূত্র|Reference/i.test(t)) return "sources";
+    if (/Quick Revision|এক নজরে/i.test(t)) return "revision";
+    if (/সাল|তারিখ ও সংখ্যা/.test(t)) return "dates";
+    if (/Priority/i.test(t)) return "priority";
+    return "other";
   };
-  for (const l of part(3)) {
-    if (l.kind !== "P") continue;
-    if (/^Heading2/.test(l.style)) {
-      push();
-      const m = l.text.match(/^([০-৯\d]+)\.\s*(.+?)(?:\s*\([^)]*প্রশ্ন\))?$/);
-      if (m) {
-        chapterNo = bnToInt(m[1]);
-        res.chapters.push({ no: chapterNo, nameBn: m[2].trim() });
+
+  for (const l of lines.slice(firstH1 < 0 ? lines.length : firstH1)) {
+    if (isH1(l) && l.kind === "P") {
+      const m = l.text.match(NUM_HEAD_RE);
+      h1 = m ? { no: bnToInt(m[1]), title: m[2].trim() } : { no: 0, title: l.text };
+      h2 = "";
+      numberedH2 = null;
+      cur = null;
+      continue;
+    }
+    if (isH2(l) && l.kind === "P") {
+      h2 = l.text;
+      const m = l.text.match(NUM_HEAD_RE);
+      if (m && h1Kind() === "other") numberedH2 = { no: bnToInt(m[1]), title: m[2].trim() };
+      cur = null;
+      continue;
+    }
+
+    if (l.kind === "T") {
+      cur = null;
+      if (/পরিবর্তনশীল/.test(h2) || /পরিবর্তনশীল/.test(h1?.title ?? "")) {
+        if (!l.head && l.cells.length >= 3) {
+          const no = bnToInt(l.cells[0]);
+          if (no) volatileReasons.set(no, l.cells[l.cells.length - 1]);
+        }
+        continue;
+      }
+      const kind = h1Kind();
+      if (kind === "sources") {
+        if (l.head || l.cells.length < 2) continue;
+        const url = (l.cells[2] ?? "").trim();
+        res.sources.push({ no: bnToInt(l.cells[0]) || res.sources.length + 1, name: l.cells[1] ?? "", url: /^https?:\/\//.test(url) ? url : null });
+      } else if (kind === "revision" || kind === "dates") {
+        if (!l.head && l.cells.length >= 2) revisionLater.push({ group: h2 || h1!.title, topic: l.cells[0], fact: l.cells.slice(1).filter(Boolean).join(" — ") });
+      } else if (kind === "other" && h1) {
+        // অধ্যায়ের সারসংক্ষেপ-টেবিল — অধ্যায়ে প্রশ্ন থাকলে পরে Quick Revision-এ যোগ হবে
+        const last = sectionTables.at(-1);
+        if (l.head || !last || last.h1 !== h1) sectionTables.push({ h1, head: l.head ? l.cells : [], rows: l.head ? [] : [l.cells] });
+        else last.rows.push(l.cells);
       }
       continue;
     }
-    const q = l.text.match(Q_RE);
-    if (q) {
-      push();
-      if (!chapterNo) errors.push(`প্রশ্ন ${q[1]}: কোনো অধ্যায়ের অধীনে নেই`);
-      cur = { no: bnToInt(q[1]), chapterNo, priority: q[2] as "A" | "B" | "C", text: q[4].trim(), statements: [], stemTail: null, options: [], correctIndex: -1, explanation: null, remember: null, sourceText: null, eventDate: null, verifiedBn: null, volatile: !!q[3], volatileReason: null };
+
+    // অনুচ্ছেদ
+    const kind = h1Kind();
+    if ((kind === "revision" || kind === "dates") && /^ListParagraph/.test(l.style)) {
+      const i = l.text.indexOf(" — ");
+      revisionLater.push({ group: h2 || h1!.title, topic: i > 0 ? l.text.slice(0, i).trim() : "", fact: i > 0 ? l.text.slice(i + 3).trim() : l.text });
       continue;
     }
-    if (!cur) continue;
-    const o = l.text.match(OPT_RE);
-    const s = l.text.match(STMT_RE);
-    if (o) cur.options.push(o[2].trim());
-    else if (s && !cur.options.length) cur.statements.push(`${s[1]}. ${s[2].trim()}`);
-    else if (!cur.options.length) cur.stemTail = cur.stemTail ? `${cur.stemTail} ${l.text}` : l.text;
-  }
-  push();
+    if (kind === "priority" || kind === "sources") continue;
 
-  // ৫. উত্তর ও ব্যাখ্যা
-  let ans: CaParsedQuestion | null = null;
-  const seenAns = new Set<number>();
-  for (const l of part(5)) {
-    if (l.kind !== "P" || /^Heading/.test(l.style)) continue;
     const q = l.text.match(Q_RE);
     if (q) {
       const no = bnToInt(q[1]);
-      ans = qs.get(no) ?? null;
-      if (!ans) errors.push(`উত্তর-অংশে প্রশ্ন ${no} আছে, কিন্তু প্রশ্ন-অংশে নেই`);
-      else seenAns.add(no);
+      const seen = qs.get(no);
+      if (seen) {
+        cur = seen;
+        if (q[3]) seen.volatile = true;
+        continue;
+      }
+      const ch = numberedH2 ?? h1;
+      if (!ch || !ch.no) {
+        errors.push(`প্রশ্ন ${no}: কোনো নম্বরযুক্ত অধ্যায়ের অধীনে নেই`);
+        cur = null;
+        continue;
+      }
+      if (!chapterNames.has(ch.no)) chapterNames.set(ch.no, ch.title);
+      if (!numberedH2 && h1) qSections.add(h1.no);
+      cur = { no, chapterNo: ch.no, priority: q[2] as "A" | "B" | "C", text: q[4].trim(), statements: [], stemTail: null, options: [], correctIndex: -1, explanation: null, remember: null, sourceText: null, eventDate: null, verifiedBn: null, volatile: !!q[3], volatileReason: null };
+      qs.set(no, cur);
       continue;
     }
-    if (!ans) continue;
-    const [label, ...rest] = l.text.split(":");
-    const val = rest.join(":").trim();
+    if (!cur) continue;
+
+    const colon = l.text.indexOf(":");
+    const label = colon > 0 ? l.text.slice(0, colon).trim() : "";
+    const val = colon > 0 ? l.text.slice(colon + 1).trim() : "";
     if (label === "সঠিক উত্তর") {
+      answered.add(cur.no);
       const m = val.match(OPT_RE);
       const idx = m ? LETTERS.indexOf(m[1]) : -1;
-      if (idx < 0) errors.push(`প্রশ্ন ${ans.no}: সঠিক উত্তর পড়া যায়নি`);
+      if (idx < 0) errors.push(`প্রশ্ন ${cur.no}: সঠিক উত্তর পড়া যায়নি`);
       else {
-        ans.correctIndex = idx;
-        if (ans.options[idx] && m && ans.options[idx] !== m[2].trim()) warnings.push(`প্রশ্ন ${ans.no}: উত্তরের লেখা অপশনের সঙ্গে হুবহু মেলে না ("${m[2].trim()}" বনাম "${ans.options[idx]}")`);
+        cur.correctIndex = idx;
+        if (cur.options[idx] && m && cur.options[idx] !== m[2].trim()) warnings.push(`প্রশ্ন ${cur.no}: উত্তরের লেখা অপশনের সঙ্গে হুবহু মেলে না ("${m[2].trim()}" বনাম "${cur.options[idx]}")`);
       }
-    } else if (label === "ব্যাখ্যা") ans.explanation = val || null;
-    else if (label === "মনে রাখুন") ans.remember = val || null;
-    else if (label === "উৎস") {
+      continue;
+    }
+    if (label === "ব্যাখ্যা") {
+      cur.explanation = val || null;
+      continue;
+    }
+    if (label === "মনে রাখুন") {
+      cur.remember = val || null;
+      continue;
+    }
+    if (label === "উৎস") {
       const parts = val.split(" · ");
-      ans.sourceText = parts[0]?.trim() || null;
+      cur.sourceText = parts[0]?.trim() || null;
       for (const p of parts.slice(1)) {
         const [k, ...v] = p.split(":");
-        if (/তারিখ/.test(k)) ans.eventDate = v.join(":").trim() || null;
-        else if (/যাচাই/.test(k)) ans.verifiedBn = v.join(":").trim() || null;
+        if (/তারিখ/.test(k)) cur.eventDate = v.join(":").trim() || null;
+        else if (/যাচাই/.test(k)) cur.verifiedBn = v.join(":").trim() || null;
       }
-    } else if (/^⚠\s*পরিবর্তনশীল/.test(label)) {
-      ans.volatile = true;
-      ans.volatileReason = val || null;
+      continue;
+    }
+    if (/^⚠\s*পরিবর্তনশীল/.test(label)) {
+      cur.volatile = true;
+      cur.volatileReason = val || null;
+      continue;
+    }
+    if (answered.has(cur.no)) continue; // উত্তরের পরের অন্য লেখা
+    const o = l.text.match(OPT_RE);
+    const s = l.text.match(STMT_RE);
+    if (o) {
+      if (cur.options.length < 4) cur.options.push(o[2].trim());
+    } else if (s && !cur.options.length) cur.statements.push(`${s[1]}. ${s[2].trim()}`);
+    else if (!cur.options.length) cur.stemTail = cur.stemTail ? `${cur.stemTail} ${l.text}` : l.text;
+  }
+
+  // ── যাচাই
+  for (const q of qs.values()) {
+    if (q.options.length !== 4) errors.push(`প্রশ্ন ${q.no}: ৪টি অপশন নেই (${q.options.length}টি)`);
+    if (!answered.has(q.no)) errors.push(`প্রশ্ন ${q.no}: সঠিক উত্তর নেই`);
+    if (!q.explanation) warnings.push(`প্রশ্ন ${q.no}: ব্যাখ্যা নেই`);
+    if (!q.volatileReason && volatileReasons.has(q.no)) {
+      q.volatile = true;
+      q.volatileReason = volatileReasons.get(q.no)!;
     }
   }
-  for (const q of qs.values()) {
-    if (!seenAns.has(q.no)) errors.push(`প্রশ্ন ${q.no}: উত্তর-অংশে নেই`);
-    else if (q.correctIndex < 0) errors.push(`প্রশ্ন ${q.no}: সঠিক উত্তর নেই`);
-    if (!q.explanation) warnings.push(`প্রশ্ন ${q.no}: ব্যাখ্যা নেই`);
-  }
+  for (const no of volatileReasons.keys()) if (!qs.has(no)) warnings.push(`পরিবর্তনশীল-তালিকায় প্রশ্ন ${no} আছে, কিন্তু প্রশ্নটি নেই`);
   res.questions = [...qs.values()].sort((a, b) => a.no - b.no);
+  res.chapters = [...chapterNames.entries()].sort((a, b) => a[0] - b[0]).map(([no, nameBn]) => ({ no, nameBn }));
 
-  // ৬. Quick Revision
-  let group = "";
-  for (const l of part(6)) {
-    if (l.kind === "P" && /^Heading2/.test(l.style)) group = l.text;
-    else if (l.kind === "T" && l.cells.length >= 2 && l.cells[0] !== "বিষয়" && group) res.revision.push({ group, topic: l.cells[0], fact: l.cells.slice(1).join(" — ") });
+  // ── Quick Revision: আগে প্রশ্নের অধ্যায়গুলোর সারসংক্ষেপ-টেবিল, তারপর Revision/তারিখ-অংশ
+  for (const t of sectionTables) {
+    if (!qSections.has(t.h1.no)) continue;
+    for (const r of t.rows) {
+      if (!r[0]) continue;
+      const fact = r
+        .slice(1)
+        .map((c, i) => (c ? (t.head[i + 1] ? `${t.head[i + 1]}: ${c}` : c) : ""))
+        .filter(Boolean)
+        .join("; ");
+      if (fact) res.revision.push({ group: t.h1.title, topic: r[0], fact });
+    }
   }
+  res.revision.push(...revisionLater);
 
-  // ৭. তথ্যসূত্র
-  for (const l of part(7)) {
-    if (l.kind !== "T" || l.cells[0] === "নং") continue;
-    const url = (l.cells[2] ?? "").trim();
-    res.sources.push({ no: bnToInt(l.cells[0]) || res.sources.length + 1, name: l.cells[1] ?? "", url: /^https?:\/\//.test(url) ? url : null });
-  }
-
-  if (!res.questions.length) errors.push("কোনো প্রশ্ন পাওয়া যায়নি — নথির কাঠামো (অধ্যায় ৩ ও ৫) মিলিয়ে দেখুন।");
+  if (!res.questions.length) errors.push("কোনো প্রশ্ন পাওয়া যায়নি — নথির কাঠামো মিলিয়ে দেখুন।");
   return res;
 }

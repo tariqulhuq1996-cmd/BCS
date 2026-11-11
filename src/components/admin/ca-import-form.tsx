@@ -3,17 +3,27 @@
 import { useActionState, useState, useTransition } from "react";
 import { importCurrentAffairsAction } from "@/lib/admin/actions";
 import { bnNum } from "@/lib/bn";
+import { bankKeyFromFilename } from "@/lib/current-affairs/bank-key";
 import { Notice, btn, btnGhost } from "./ui";
 
 /** .docx বাছাই → পূর্বরূপ (কিছু লেখা হয় না) → নিশ্চিত করলে Import */
-export function CaImportForm() {
+export function CaImportForm({ banks }: { banks: { key: string; name: string; questions: number }[] }) {
   const [file, setFile] = useState<File | null>(null);
+  const [bank, setBank] = useState("");
+  const fromName = file ? bankKeyFromFilename(file.name) : "";
+  const isNew = !!file && !banks.some((b) => b.key === bank);
+  const pick = (f: File | null) => {
+    setFile(f);
+    // একই নামের ফাইল (নতুন সংস্করণ) হলে সেই ব্যাংক; নইলে ফাইলের নাম থেকে নতুন ব্যাংক
+    setBank(f ? bankKeyFromFilename(f.name) : "");
+  };
   const [state, action] = useActionState(importCurrentAffairsAction, undefined);
   const [pending, start] = useTransition();
   const run = (confirm: boolean) => {
     if (!file) return;
     const fd = new FormData();
     fd.set("file", file);
+    fd.set("bank", bank);
     if (confirm) fd.set("confirm", "1");
     start(() => action(fd));
   };
@@ -25,8 +35,24 @@ export function CaImportForm() {
       <div className="grid gap-3 rounded-xl border border-line bg-surface p-5">
         <label className="grid gap-1.5">
           <span className="font-medium">প্রশ্নব্যাংক (.docx — বর্তমান নথির কাঠামোয়)</span>
-          <input type="file" accept=".docx" onChange={(e) => setFile(e.target.files?.[0] ?? null)} className="text-[15px]" />
+          <input type="file" accept=".docx" onChange={(e) => pick(e.target.files?.[0] ?? null)} className="text-[15px]" />
         </label>
+        {file && (
+          <label className="grid gap-1.5">
+            <span className="font-medium">কোন প্রশ্নব্যাংকে বসবে</span>
+            <select value={bank} onChange={(e) => setBank(e.target.value)} className="rounded-md border border-line-strong bg-surface px-3 py-2 text-[15px]">
+              {banks.map((b) => (
+                <option key={b.key} value={b.key}>
+                  হালনাগাদ: {b.name} ({bnNum(b.questions)}টি প্রশ্ন)
+                </option>
+              ))}
+              {!banks.some((b) => b.key === fromName) && <option value={fromName}>নতুন প্রশ্নব্যাংক যোগ করুন ({fromName})</option>}
+            </select>
+            <span className="text-sm text-muted">
+              {isNew ? "নতুন ব্যাংক হিসেবে আগেরগুলোর পাশে যোগ হবে — আগের কোনো প্রশ্ন বদলাবে না।" : "এই ব্যাংকের প্রশ্নই শুধু হালনাগাদ হবে; অন্য ব্যাংক অপরিবর্তিত থাকবে। ভুল ব্যাংক বাছলে সেটির প্রশ্ন নিষ্ক্রিয় হয়ে যেতে পারে — নাম মিলিয়ে নিন।"}
+            </span>
+          </label>
+        )}
         <div className="flex flex-wrap gap-3">
           <button type="button" disabled={!file || pending} onClick={() => run(false)} className={btnGhost}>{pending && !state?.confirmed ? "পড়া হচ্ছে…" : "পূর্বরূপ দেখুন"}</button>
           <button type="button" disabled={!file || pending || !s || blocked || state?.confirmed} onClick={() => run(true)} className={btn}>Import করুন</button>

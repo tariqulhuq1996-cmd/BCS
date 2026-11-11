@@ -232,6 +232,7 @@ export type CaImportState =
   | {
       error?: string;
       confirmed?: boolean;
+      bankKey?: string;
       summary?: { title: string; version: string | null; verifiedBn: string | null; chapters: number; questions: number; a: number; b: number; c: number; volatile: number; revision: number; sources: number };
       problems?: string[];
       warnings?: string[];
@@ -246,7 +247,9 @@ export async function importCurrentAffairsAction(_: CaImportState, fd: FormData)
   if (!/\.docx$/i.test(file.name)) return { error: "শুধু .docx ফাইল (Word) দেওয়া যাবে।" };
   const confirm = fd.get("confirm") === "1";
   try {
-    const { parseCurrentAffairsDocx } = await import("@/lib/current-affairs/parse");
+    const { parseCurrentAffairsDocx, bankKeyFromFilename, isValidBankKey } = await import("@/lib/current-affairs/parse");
+    const bankKey = String(fd.get("bank") ?? "").trim() || bankKeyFromFilename(file.name);
+    if (!isValidBankKey(bankKey)) return { error: "প্রশ্নব্যাংকের key-তে শুধু ইংরেজি ছোট হাতের অক্ষর, সংখ্যা ও - চিহ্ন (২–৬০ অক্ষর)।" };
     const { importCurrentAffairs } = await import("@/lib/current-affairs/import");
     const p = await parseCurrentAffairsDocx(Buffer.from(await file.arrayBuffer()));
     const n = (g: string) => p.questions.filter((q) => q.priority === g).length;
@@ -254,10 +257,10 @@ export async function importCurrentAffairsAction(_: CaImportState, fd: FormData)
       title: p.title, version: p.version, verifiedBn: p.verifiedBn, chapters: p.chapters.length, questions: p.questions.length,
       a: n("A"), b: n("B"), c: n("C"), volatile: p.questions.filter((q) => q.volatile).length, revision: p.revision.length, sources: p.sources.length,
     };
-    if (p.errors.length || !confirm) return { summary, problems: p.errors, warnings: p.warnings, confirmed: false };
-    const result = await importCurrentAffairs(prisma, p, a.id);
-    await audit(a.id, "import_current_affairs", "CaBank", null, { file: file.name, ...result });
-    return { summary, warnings: p.warnings, result, confirmed: true };
+    if (p.errors.length || !confirm) return { bankKey, summary, problems: p.errors, warnings: p.warnings, confirmed: false };
+    const result = await importCurrentAffairs(prisma, p, bankKey, a.id);
+    await audit(a.id, "import_current_affairs", "CaBank", bankKey, { file: file.name, ...result });
+    return { bankKey, summary, warnings: p.warnings, result, confirmed: true };
   } catch (e) {
     return { error: e instanceof Error ? e.message : "ফাইল পড়া যায়নি।" };
   }
