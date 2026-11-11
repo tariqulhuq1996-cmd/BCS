@@ -94,6 +94,15 @@ async function Dashboard() {
         ))}
       </section>
 
+      {/* ── সাম্প্রতিক বিষয়াবলি (Roadmap-এর বাইরে, যেকোনো সময়) */}
+      <section aria-labelledby="ca" className="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-xl border border-line bg-surface p-5">
+        <div>
+          <h2 id="ca" className="text-lg font-bold">সাম্প্রতিক বিষয়াবলি (Current Affairs)</h2>
+          <p className="text-[15px] text-ink-2">প্রতিদিন ২০টি স্মার্ট প্রশ্ন — ভুল আর পুরোনো প্রশ্ন নিজে থেকে ফিরে আসে। যেকোনো Level-এ থাকা অবস্থায় করা যায়।</p>
+        </div>
+        <Link href="/current-affairs" className="rounded-lg bg-green px-5 py-2.5 font-semibold text-white hover:bg-green-strong dark:text-paper">অনুশীলন করো</Link>
+      </section>
+
       {/* ── তিন Level */}
       <section aria-labelledby="levels" className="mt-12">
         <h2 id="levels" className="text-2xl font-bold">তোমার Roadmap</h2>

@@ -7,6 +7,7 @@ const NAV = [
   { href: "/research", label: "গবেষণা" },
   { href: "/#roadmap", label: "Roadmap" },
   { href: "/repeated-questions", label: "পুনরাবৃত্ত প্রশ্ন" },
+  { href: "/current-affairs", label: "সাম্প্রতিক বিষয়াবলি" },
 ];
 
 export function SiteHeader() {

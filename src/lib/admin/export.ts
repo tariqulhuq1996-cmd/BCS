@@ -48,18 +48,19 @@ export async function progressCsv(db: PrismaClient) {
 
 /** পূর্ণ Backup (JSON): পুনরুদ্ধারের জন্য প্রতিটি টেবিলের সারি। */
 export async function fullBackup(db: PrismaClient) {
-  const [users, profiles, subjects, topics, subtopics, exams, questions, families, familyLinks, batches, levels, tasks, prereqs, rules, progress, attempts, answers, stats, revisions, mastery, modelTests, mtq, bookmarks, achievements, userAch, audit] = await Promise.all([
+  const [users, profiles, subjects, topics, subtopics, exams, questions, families, familyLinks, batches, levels, tasks, prereqs, rules, progress, attempts, answers, stats, revisions, mastery, modelTests, mtq, bookmarks, achievements, userAch, audit, caBanks, caChapters, caQuestions, caAnswers, caRevision, caSources] = await Promise.all([
     db.user.findMany(), db.studentProfile.findMany(), db.subject.findMany(), db.topic.findMany(), db.subtopic.findMany(), db.exam.findMany(),
     db.question.findMany(), db.repeatFamily.findMany(), db.questionFamily.findMany(), db.importBatch.findMany(), db.learningLevel.findMany(),
     db.learningTask.findMany(), db.taskPrerequisite.findMany(), db.ruleSetting.findMany(), db.studentTaskProgress.findMany(), db.testAttempt.findMany(),
     db.attemptAnswer.findMany(), db.questionStat.findMany(), db.revisionSession.findMany(), db.masteryRecord.findMany(), db.modelTest.findMany(),
     db.modelTestQuestion.findMany(), db.bookmark.findMany(), db.achievement.findMany(), db.userAchievement.findMany(), db.auditLog.findMany(),
+    db.caBank.findMany(), db.caChapter.findMany(), db.caQuestion.findMany(), db.caAnswer.findMany(), db.caRevisionItem.findMany(), db.caSource.findMany(),
   ]);
   return JSON.stringify(
     {
       createdAt: new Date().toISOString(),
       note: "সক্রিয় সেশন ও পাসওয়ার্ড-রিসেট টোকেন ইচ্ছাকৃতভাবে বাদ। পাসওয়ার্ড শুধু bcrypt-হ্যাশ।",
-      tables: { users, profiles, subjects, topics, subtopics, exams, questions, families, familyLinks, batches, levels, tasks, prereqs, rules, progress, attempts, answers, stats, revisions, mastery, modelTests, mtq, bookmarks, achievements, userAch, audit },
+      tables: { users, profiles, subjects, topics, subtopics, exams, questions, families, familyLinks, batches, levels, tasks, prereqs, rules, progress, attempts, answers, stats, revisions, mastery, modelTests, mtq, bookmarks, achievements, userAch, audit, caBanks, caChapters, caQuestions, caAnswers, caRevision, caSources },
     },
     (_, v) => (typeof v === "bigint" ? v.toString() : v),
   );

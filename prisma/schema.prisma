@@ -35,6 +35,7 @@ model User {
   masteryRecords MasteryRecord[]
   revisionDays   RevisionSession[]
   bookmarks      Bookmark[]
+  caAnswers      CaAnswer[]
   achievements   UserAchievement[]
 }
 
@@ -562,4 +563,84 @@ model AuditLog {
   at       DateTime @default(now())
 
   @@index([entity, entityId])
+}
+
+// ─────────────────────────────────────────────── সাম্প্রতিক বিষয়াবলি (Current Affairs)
+// উৎস: অ্যাডমিনের দেওয়া প্রশ্নব্যাংক (.docx) — scripts/import-current-affairs.ts বা অ্যাডমিন → Current Affairs থেকে Import।
+// তালিকা-ঘর Json-এ (PostgreSQL ও MariaDB দুটোতেই চলে)।
+
+model CaBank {
+  id         Int       @id @default(autoincrement())
+  title      String
+  version    String?
+  verifiedOn DateTime? // প্রশ্নব্যাংকের তথ্য যাচাইয়ের তারিখ
+  verifiedBn String? // যেমন "১১ নভেম্বর ২০২৬"
+  howToUse   Json // string[]
+  questions  Int
+  importedAt DateTime  @default(now())
+  importedBy String?
+}
+
+model CaChapter {
+  id        Int          @id @default(autoincrement())
+  no        Int          @unique
+  nameBn    String
+  questions CaQuestion[]
+}
+
+model CaQuestion {
+  id             String        @id @default(cuid())
+  no             Int           @unique // প্রশ্নব্যাংকের ক্রমিক নম্বর
+  chapterId      Int
+  chapter        CaChapter     @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  priority       PriorityGrade // A/B/C
+  text           String        @db.Text
+  statements     Json? // i/ii/iii বিবৃতি (string[])
+  stemTail       String? // যেমন "নিচের কোনটি সঠিক?"
+  options        Json // string[4]
+  correctIndex   Int
+  explanation    String?       @db.Text
+  remember       String?       @db.Text // "মনে রাখুন"
+  sourceText     String?       @db.Text
+  eventDate      String? // ঘটনার/প্রকাশের তারিখ (যেমন লেখা আছে)
+  verifiedBn     String?
+  volatile       Boolean       @default(false) // ⚠ পরিবর্তনশীল তথ্য
+  volatileReason String?
+  active         Boolean       @default(true)
+  updatedAt      DateTime      @updatedAt
+  answers        CaAnswer[]
+
+  @@index([chapterId, priority])
+}
+
+/// শিক্ষার্থীর প্রতিটি Current Affairs প্রশ্নের হিসাব — স্মার্ট অনুশীলনের ক্রম এখান থেকে
+model CaAnswer {
+  userId      String
+  user        User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  questionId  String
+  question    CaQuestion @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  seen        Int        @default(0)
+  correct     Int        @default(0)
+  lastCorrect Boolean
+  box         Int        @default(1) // ১–৫; ঠিক হলে বাড়ে, ভুল হলে ১
+  dueAt       DateTime
+  lastAt      DateTime   @default(now())
+
+  @@id([userId, questionId])
+  @@index([userId, dueAt])
+}
+
+model CaRevisionItem {
+  id    Int    @id @default(autoincrement())
+  order Int
+  group String
+  topic String
+  fact  String @db.Text
+}
+
+model CaSource {
+  id   Int     @id @default(autoincrement())
+  no   Int
+  name String
+  url  String?
 }

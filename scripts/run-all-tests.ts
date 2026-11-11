@@ -15,6 +15,7 @@ const SUITES = [
   ["Level ৩", "test-level3.ts"],
   ["অ্যাডমিন", "test-admin.ts"],
   ["নিরাপত্তা ও একযোগে অনুরোধ", "test-security.ts"],
+  ["Current Affairs", "test-current-affairs.ts"],
   ["HTTP (চালু অ্যাপ থাকলে)", "test-http.ts"],
 ];
 

@@ -9,6 +9,8 @@
  * স্থানীয় ডেভেলপমেন্ট ডেটাবেসে (npm run db) কিছু করে না।
  */
 import { execSync } from "node:child_process";
+import { existsSync, readFileSync } from "node:fs";
+import path from "node:path";
 import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcryptjs";
 
@@ -42,6 +44,16 @@ async function main() {
         `[deploy-setup] সতর্কতা: গবেষণার ডেটা অসম্পূর্ণ (${historical}/${EXPECTED_HISTORICAL} প্রশ্ন, ${tasks}/${EXPECTED_TASKS} ধাপ)। ` +
           "একবার `npm run setup:prod` চালাতে হবে (docs/DEPLOY_HOSTINGER.md)।",
       );
+    }
+
+    // Current Affairs: ডেটাবেসে না থাকলে repo-র প্রশ্নব্যাংক (data/source/current_affairs.docx) বসানো।
+    // পরে নতুন সংস্করণ অ্যাডমিন প্যানেল → Current Affairs থেকে Import করা হয় (এখানে আর বদলায় না)।
+    const caFile = path.resolve(__dirname, "..", "data", "source", "current_affairs.docx");
+    if ((await db.caQuestion.count()) === 0 && existsSync(caFile)) {
+      const { parseCurrentAffairsDocx } = await import("../src/lib/current-affairs/parse");
+      const { importCurrentAffairs } = await import("../src/lib/current-affairs/import");
+      const r = await importCurrentAffairs(db, await parseCurrentAffairsDocx(readFileSync(caFile)), "deploy");
+      console.log(`[deploy-setup] Current Affairs প্রশ্নব্যাংক বসানো হলো: ${r.added}টি প্রশ্ন।`);
     }
 
     const email = process.env.ADMIN_EMAIL?.trim().toLowerCase();

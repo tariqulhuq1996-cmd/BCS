@@ -36,7 +36,7 @@ async function main() {
       const r = await get(p);
       check(`সবার জন্য খোলা: ${p}`, r.status === 200, r.status);
     }
-    for (const p of ["/dashboard", "/level-1/10", "/test/x", "/result/x", "/admin", "/revision", "/profile"]) {
+    for (const p of ["/dashboard", "/level-1/10", "/test/x", "/result/x", "/admin", "/revision", "/profile", "/current-affairs"]) {
       const r = await get(p);
       check(`লগইন ছাড়া ${p} → লগইন পাতায়`, (r.status === 307 || r.status === 302) && r.location.includes("/login"), { s: r.status, l: r.location });
     }

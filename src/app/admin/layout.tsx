@@ -6,6 +6,7 @@ const NAV = [
   { href: "/admin", label: "সারসংক্ষেপ" },
   { href: "/admin/questions", label: "প্রশ্ন" },
   { href: "/admin/import", label: "Import" },
+  { href: "/admin/current-affairs", label: "Current Affairs" },
   { href: "/admin/rules", label: "নিয়ম ও Threshold" },
   { href: "/admin/roadmap", label: "Roadmap" },
   { href: "/admin/model-tests", label: "Model Test" },
