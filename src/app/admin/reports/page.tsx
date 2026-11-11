@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { prisma } from "@/lib/db";
 import { daysAgo } from "@/lib/time";
+import { numify } from "@/lib/sql";
 import { requireAdmin } from "@/lib/auth/session";
 import { bn, bnNum } from "@/lib/bn";
 import { AdminTitle, Stat, StatGrid } from "@/components/admin/ui";
@@ -22,19 +23,20 @@ async function Content() {
   const since = daysAgo(14);
   const [students, perDay, current, hardest, masteryAvg, mtAvg] = await Promise.all([
     prisma.user.count({ where: { role: "STUDENT" } }),
+    // তারিখ ঢাকার সময়ে (ডেটাবেসে UTC)
     prisma.$queryRaw<{ day: string; n: number }[]>`
-      select to_char(("submittedAt" at time zone 'Asia/Dhaka')::date, 'YYYY-MM-DD') as day, count(*)::int as n
-      from "TestAttempt" where "submittedAt" >= ${since} group by 1 order by 1`,
+      select date_format(convert_tz(submittedAt, '+00:00', '+06:00'), '%Y-%m-%d') as day, count(*) as n
+      from TestAttempt where submittedAt >= ${since} group by 1 order by 1`.then((r) => numify(r)),
     // প্রত্যেক শিক্ষার্থীর বর্তমান (ক্রমের প্রথম খোলা) কাজ কোন Level-এ
     prisma.$queryRaw<{ level: number; n: number }[]>`
-      select lvl as level, count(*)::int as n from (
-        select distinct on (p."userId") p."userId", l.no as lvl
-        from "StudentTaskProgress" p join "LearningTask" t on t.id = p."taskId" join "LearningLevel" l on l.id = t."levelId"
-        where p.state in ('AVAILABLE','IN_PROGRESS') order by p."userId", l.no, t."order") x group by lvl order by lvl`,
+      select lvl as level, count(*) as n from (
+        select l.no as lvl, row_number() over (partition by p.userId order by l.no, t.order) as rn
+        from StudentTaskProgress p join LearningTask t on t.id = p.taskId join LearningLevel l on l.id = t.levelId
+        where p.state in ('AVAILABLE','IN_PROGRESS')) x where rn = 1 group by lvl order by lvl`.then((r) => numify(r)),
     prisma.$queryRaw<{ id: string; uid: string; text: string; seen: number; wrong: number }[]>`
-      select q.id, q.uid, q.text, sum(s.seen)::int as seen, sum(s.wrong)::int as wrong
-      from "QuestionStat" s join "Question" q on q.id = s."questionId"
-      group by q.id having sum(s.seen) >= 5 order by sum(s.wrong)::float / sum(s.seen) desc, sum(s.seen) desc limit 15`,
+      select q.id, q.uid, q.text, sum(s.seen) as seen, sum(s.wrong) as wrong
+      from QuestionStat s join Question q on q.id = s.questionId
+      group by q.id, q.uid, q.text having sum(s.seen) >= 5 order by sum(s.wrong) / sum(s.seen) desc, sum(s.seen) desc limit 15`.then((r) => numify(r)),
     prisma.masteryRecord.aggregate({ _avg: { scorePct: true }, _count: true }),
     prisma.testAttempt.aggregate({ where: { kind: "MODEL_TEST", submittedAt: { not: null } }, _avg: { netScore: true }, _count: true }),
   ]);

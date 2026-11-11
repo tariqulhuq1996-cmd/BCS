@@ -6,7 +6,7 @@
 
 ```bash
 npm install
-npm run db            # আলাদা টার্মিনালে: স্থানীয় PostgreSQL (পোর্ট ৫৪৫২), চালু রাখুন
+npm run db            # আলাদা টার্মিনালে: স্থানীয় MariaDB 11.8 (পোর্ট ৩৩০৭), চালু রাখুন — আগে mariadb-11.8.9-winx64.zip .mariadb/-এ খুলুন (scripts/db.ts দেখুন)
 npx prisma migrate deploy
 npm run db:import     # গবেষণার ৫,৩৫২ প্রশ্ন, Priority List, পুনরাবৃত্তি-পরিবার
 npm run db:seed       # Level, নিয়ম, Roadmap-এর কাজ

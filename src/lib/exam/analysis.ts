@@ -2,23 +2,24 @@
  * Level 3 বিশ্লেষণ: একটি Model Test-এর বিস্তারিত ফল এবং সব টেস্ট মিলিয়ে Final Readiness Report।
  * কোনো স্কোরকে পাশের নিশ্চয়তা হিসেবে দেখানো হয় না — শুধু তোমার নিজের ফলের হিসাব।
  */
-import type { PrismaClient } from "@prisma/client";
+import { Prisma, type PrismaClient } from "@prisma/client";
+import { numify } from "../sql";
 import { ExamError } from "./service";
 
 type Db = PrismaClient;
 
 async function perSubject(db: Db, attemptIds: string[]) {
   const rows = await db.$queryRaw<{ attemptId: string; code: string; name: string; ord: number; total: number; correct: number; wrong: number; timeMs: number }[]>`
-    select aa."attemptId", sj.code, sj."nameBn" as name, sj."order" as ord,
-      count(*)::int as total,
-      sum(case when aa."isCorrect" then 1 else 0 end)::int as correct,
-      sum(case when aa.selected is not null and not aa."isCorrect" then 1 else 0 end)::int as wrong,
-      coalesce(sum(aa."timeMs"), 0)::int as "timeMs"
-    from "AttemptAnswer" aa join "Question" q on q.id = aa."questionId"
-    join "Subtopic" st on st.id = q."subtopicId" join "Topic" tp on tp.id = st."topicId" join "Subject" sj on sj.id = tp."subjectId"
-    where aa."attemptId" = any(${attemptIds}::text[])
-    group by aa."attemptId", sj.code, sj."nameBn", sj."order" order by sj."order"`;
-  return rows;
+    select aa.attemptId, sj.code, sj.nameBn as name, sj.order as ord,
+      count(*) as total,
+      sum(case when aa.isCorrect then 1 else 0 end) as correct,
+      sum(case when aa.selected is not null and not aa.isCorrect then 1 else 0 end) as wrong,
+      coalesce(sum(aa.timeMs), 0) as timeMs
+    from AttemptAnswer aa join Question q on q.id = aa.questionId
+    join Subtopic st on st.id = q.subtopicId join Topic tp on tp.id = st.topicId join Subject sj on sj.id = tp.subjectId
+    where aa.attemptId in (${Prisma.join(attemptIds)})
+    group by aa.attemptId, sj.code, sj.nameBn, sj.order order by sj.order`;
+  return numify(rows);
 }
 
 /** একটি Model Test-এর বিশ্লেষণ: নেট নম্বর, নেগেটিভ, বিষয়ভিত্তিক, দুর্বল টপিক, সময়, আগের টেস্টের সঙ্গে তুলনা। */
@@ -37,13 +38,13 @@ export async function getModelTestAnalysis(db: Db, userId: string, attemptId: st
   const neg = a.task?.modelTest?.negativeMark ?? 0.5;
 
   const weakTopics = await db.$queryRaw<{ topic: string; subject: string; miss: number; total: number }[]>`
-    select tp."nameBn" as topic, sj."nameBn" as subject,
-      sum(case when aa."isCorrect" then 0 else 1 end)::int as miss, count(*)::int as total
-    from "AttemptAnswer" aa join "Question" q on q.id = aa."questionId"
-    join "Subtopic" st on st.id = q."subtopicId" join "Topic" tp on tp.id = st."topicId" join "Subject" sj on sj.id = tp."subjectId"
-    where aa."attemptId" = ${a.id}
-    group by tp."nameBn", sj."nameBn" having sum(case when aa."isCorrect" then 0 else 1 end) > 0
-    order by miss desc, total desc limit 8`;
+    select tp.nameBn as topic, sj.nameBn as subject,
+      sum(case when aa.isCorrect then 0 else 1 end) as miss, count(*) as total
+    from AttemptAnswer aa join Question q on q.id = aa.questionId
+    join Subtopic st on st.id = q.subtopicId join Topic tp on tp.id = st.topicId join Subject sj on sj.id = tp.subjectId
+    where aa.attemptId = ${a.id}
+    group by tp.nameBn, sj.nameBn having sum(case when aa.isCorrect then 0 else 1 end) > 0
+    order by miss desc, total desc limit 8`.then((r) => numify(r));
 
   const slow = await db.attemptAnswer.findMany({
     where: { attemptId: a.id, timeMs: { gt: 0 } },

@@ -1,16 +1,16 @@
 # Deployment নির্দেশিকা
 
-প্ল্যাটফর্মটি একটি Next.js অ্যাপ + একটি PostgreSQL ডেটাবেস। যেকোনো জায়গায় চলে যেখানে Node.js ২০+ ও PostgreSQL ১৫+ পাওয়া যায়।
+প্ল্যাটফর্মটি একটি Next.js অ্যাপ + একটি MariaDB/MySQL ডেটাবেস (২০২৬-১১-১১ থেকে; আগে PostgreSQL ছিল)। যেকোনো জায়গায় চলে যেখানে Node.js ২০+ ও MariaDB ১০.১১+/MySQL ৮+ পাওয়া যায়।
 নিচে দুটি পথ; **কোনটি বেছে নেবেন তা আপনার সিদ্ধান্ত** (খরচ, নিয়ন্ত্রণ, কে দেখাশোনা করবে)। দাম সময়ের সঙ্গে বদলায় — অ্যাকাউন্ট খোলার আগে সেবাদাতার বর্তমান মূল্য দেখে নিন।
 
-> **নির্বাচিত পথ: Hostinger (Business/Cloud) + Neon** — ধাপে ধাপে: [DEPLOY_HOSTINGER.md](DEPLOY_HOSTINGER.md)
+> **নির্বাচিত পথ: Hostinger Business + নিজের MariaDB 11.8** — ধাপে ধাপে: [DEPLOY_HOSTINGER.md](DEPLOY_HOSTINGER.md)
 
 ## পথ ক: ব্যবস্থাপিত সেবা (সবচেয়ে কম রক্ষণাবেক্ষণ)
 
 | অংশ | উদাহরণ | মন্তব্য |
 |---|---|---|
 | অ্যাপ | Vercel | GitHub থেকে স্বয়ংক্রিয় Deploy; Function region **Singapore (sin1)** — বাংলাদেশের সবচেয়ে কাছে |
-| ডেটাবেস | Neon বা Supabase (PostgreSQL) | **একই অঞ্চলে (Singapore)**; স্বয়ংক্রিয় Backup চালু রাখুন |
+| ডেটাবেস | যেকোনো ব্যবস্থাপিত MySQL/MariaDB | **একই অঞ্চলে (Singapore)**; স্বয়ংক্রিয় Backup চালু রাখুন |
 | ইমেইল | Brevo, Amazon SES, Resend, Mailgun ইত্যাদি (SMTP) | প্রেরক-ডোমেইনের SPF/DKIM সেট করুন, নইলে ইমেইল স্প্যামে যাবে |
 
 ধাপ:
@@ -25,7 +25,7 @@
 যেমন DigitalOcean/AWS Lightsail (Singapore) বা বাংলাদেশের কোনো ডেটা সেন্টারের VPS। Ubuntu 24.04-এ:
 
 ```bash
-# Node 20+, PostgreSQL, nginx, certbot ইনস্টল করার পর
+# Node 20+, MariaDB, nginx, certbot ইনস্টল করার পর
 git clone <repo> /srv/bcs52 && cd /srv/bcs52/platform
 cp .env.example .env && nano .env          # DATABASE_URL, APP_URL, SMTP_* বসান
 npm ci
@@ -56,7 +56,7 @@ nginx (HTTPS certbot দিয়ে): `proxy_pass http://127.0.0.1:3000;` এ�
 দৈনিক Backup (cron, রাত ৩টা):
 
 ```bash
-0 3 * * * pg_dump "$DATABASE_URL" | gzip > /var/backups/bcs52-$(date +\%F).sql.gz && find /var/backups -name 'bcs52-*' -mtime +30 -delete
+0 3 * * * mariadb-dump --single-transaction -u<USER> -p<PASS> <DBNAME> | gzip > /var/backups/bcs52-$(date +\%F).sql.gz && find /var/backups -name 'bcs52-*' -mtime +30 -delete
 ```
 
 ## প্রথমবার ডেটা

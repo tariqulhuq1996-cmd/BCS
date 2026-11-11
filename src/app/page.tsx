@@ -10,8 +10,27 @@ import { Heatmap } from "@/components/charts/heatmap";
 import { TrendChange } from "@/components/home/trend-change";
 import { RepeatList } from "@/components/home/repeat-list";
 import { RoadmapPreview } from "@/components/home/roadmap-preview";
+import { Suspense } from "react";
+import { connection } from "next/server";
 
-export default async function Home() {
+/**
+ * গবেষণার ডেটা ডেটাবেস থেকে আসে, তাই পাতাটি বিল্ডের সময় নয়, প্রথম অনুরোধে তৈরি হয় (তারপর "use cache"-এ কয়েক ঘণ্টা থাকে)।
+ * এতে বিল্ড (GitHub Actions) ডেটাবেস ছোঁয় না — Hostinger-এর ডেটাবেস বাইরে খোলা রাখতে হয় না।
+ */
+export default function Home() {
+  return (
+    <Suspense fallback={<p className="mx-auto max-w-6xl px-4 pt-10 text-ink-2 sm:px-6">লোড হচ্ছে…</p>}>
+      <Deferred />
+    </Suspense>
+  );
+}
+
+async function Deferred() {
+  await connection();
+  return <HomeContent />;
+}
+
+async function HomeContent() {
   const r = await getResearch();
   const t = r.totals;
   const marks200 = Object.fromEntries(r.subjects.map((s) => [s.code, s.marks200]));

@@ -5,6 +5,7 @@ import { loadRules } from "@/lib/rules";
 import { bn, bnOrdinal } from "@/lib/bn";
 import { ensureStarted } from "./engine";
 import { L1_STEPS, L2_STEPS, type StepKey } from "./cycle";
+import { numify } from "@/lib/sql";
 
 /** Level 3-এর পরিকল্পিত টেস্ট (কাজগুলো Phase 07-এ তৈরি হবে)। */
 const L3_PLANNED = 150;
@@ -149,26 +150,26 @@ export async function getDashboard(userId: string) {
     prisma.achievement.findMany(),
     prisma.userAchievement.findMany({ where: { userId } }),
     prisma.$queryRaw<{ subject: string; correct: number; wrong: number }[]>`
-      select sj."nameBn" as subject, sum(qs.correct)::int as correct, sum(qs.wrong)::int as wrong
-      from "QuestionStat" qs
-      join "Question" q on q.id = qs."questionId"
-      join "Subtopic" st on st.id = q."subtopicId"
-      join "Topic" tp on tp.id = st."topicId"
-      join "Subject" sj on sj.id = tp."subjectId"
-      where qs."userId" = ${userId}
-      group by sj."nameBn"
+      select sj.nameBn as subject, sum(qs.correct) as correct, sum(qs.wrong) as wrong
+      from QuestionStat qs
+      join Question q on q.id = qs.questionId
+      join Subtopic st on st.id = q.subtopicId
+      join Topic tp on tp.id = st.topicId
+      join Subject sj on sj.id = tp.subjectId
+      where qs.userId = ${userId}
+      group by sj.nameBn
       having sum(qs.correct + qs.wrong) >= 5
-      order by sum(qs.correct)::float / nullif(sum(qs.correct + qs.wrong), 0) asc
-      limit 5`,
+      order by sum(qs.correct) / nullif(sum(qs.correct + qs.wrong), 0) asc
+      limit 5`.then((r) => numify(r)),
     prisma.$queryRaw<{ name: string; code: string; wrong: number; seen: number }[]>`
-      select st."nameBn" as name, st.code, sum(qs.wrong)::int as wrong, sum(qs.seen)::int as seen
-      from "QuestionStat" qs
-      join "Question" q on q.id = qs."questionId"
-      join "Subtopic" st on st.id = q."subtopicId"
-      where qs."userId" = ${userId} and qs.wrong > 0
-      group by st."nameBn", st.code
+      select st.nameBn as name, st.code, sum(qs.wrong) as wrong, sum(qs.seen) as seen
+      from QuestionStat qs
+      join Question q on q.id = qs.questionId
+      join Subtopic st on st.id = q.subtopicId
+      where qs.userId = ${userId} and qs.wrong > 0
+      group by st.nameBn, st.code
       order by sum(qs.wrong) desc
-      limit 5`,
+      limit 5`.then((r) => numify(r)),
   ]);
   const earnedSet = new Set(earned.map((e) => e.achievementKey));
 

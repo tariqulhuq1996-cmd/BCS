@@ -13,6 +13,7 @@ import { loadRules, type Rules } from "@/lib/rules";
 import { OPEN_STATES, completeTask, markStarted } from "@/lib/progress/engine";
 import { normalizeOption } from "@/lib/questions/hash";
 import { pickCumulative, pickProportional, rank, optionPerm, revisionSize, shuffleArr, splitParts, type Candidate, type Stat, type Weights } from "./select";
+import { withWriteRetry } from "@/lib/db-retry";
 
 export class ExamError extends Error {
   constructor(
@@ -433,11 +434,13 @@ export async function saveAnswer(db: Db, userId: string, attemptId: string, qid:
   if (display != null && (!Number.isInteger(display) || display < 0 || display > 3)) throw new ExamError("BAD_INPUT", "অপশন সঠিক নয়।");
   const perm = (a.optionPerms as Record<string, number[]>)[qid] ?? [0, 1, 2, 3];
   const selected = display == null ? null : perm[display];
-  await db.attemptAnswer.upsert({
-    where: { attemptId_questionId: { attemptId, questionId: qid } },
-    update: { selected, marked, confidence: unsure ? "UNSURE" : "SURE" },
-    create: { attemptId, questionId: qid, selected, marked, confidence: unsure ? "UNSURE" : "SURE" },
-  });
+  await withWriteRetry(() =>
+    db.attemptAnswer.upsert({
+      where: { attemptId_questionId: { attemptId, questionId: qid } },
+      update: { selected, marked, confidence: unsure ? "UNSURE" : "SURE" },
+      create: { attemptId, questionId: qid, selected, marked, confidence: unsure ? "UNSURE" : "SURE" },
+    }),
+  );
 }
 
 /** একটি প্রশ্নে কাটানো সময় যোগ করা (প্রশ্ন বদলানোর সময় পর্দা থেকে পাঠানো হয়)। */
@@ -446,10 +449,12 @@ export async function addTime(db: Db, userId: string, attemptId: string, qid: st
   if (a.submittedAt || !a.questionIds.includes(qid)) return;
   const inc = Math.max(0, Math.min(Math.round(ms), 30 * 60e3));
   // timeMs খালি (NULL) থাকলে increment কাজ করে না — তাই coalesce করে যোগ
-  const n = await db.$executeRaw`
-    update "AttemptAnswer" set "timeMs" = coalesce("timeMs", 0) + ${inc}
-    where "attemptId" = ${attemptId} and "questionId" = ${qid}`;
-  if (n === 0) await db.attemptAnswer.create({ data: { attemptId, questionId: qid, selected: null, timeMs: inc } });
+  await withWriteRetry(async () => {
+    const n = await db.$executeRaw`
+      update AttemptAnswer set timeMs = coalesce(timeMs, 0) + ${inc}
+      where attemptId = ${attemptId} and questionId = ${qid}`;
+    if (n === 0) await db.attemptAnswer.create({ data: { attemptId, questionId: qid, selected: null, timeMs: inc } });
+  });
 }
 
 // ─────────────────────────────────────────── জমা ও গ্রেডিং
@@ -490,7 +495,8 @@ export async function submitAttempt(db: Db, userId: string, attemptId: string): 
     netScore = correct - (mt?.negativeMark ?? rules.get<number>("l3.negative_mark")) * wrong;
   }
 
-  await db.$transaction(async (tx) => {
+  // একযোগে লেখার সংঘাতে পুরো লেনদেন আবার (প্রথমটি সম্পূর্ণ বাতিল হয়, তাই নিরাপদ)
+  await withWriteRetry(() => db.$transaction(async (tx) => {
     const res = await tx.testAttempt.updateMany({ where: { id: attemptId, submittedAt: null }, data: { submittedAt: now, correct, wrong, unanswered, scorePct, passed, netScore } });
     if (res.count !== 1) throw new ExamError("SUBMITTED", "পরীক্ষাটি আগেই জমা হয়েছে।");
 
@@ -524,7 +530,7 @@ export async function submitAttempt(db: Db, userId: string, attemptId: string): 
       await tx.masteryRecord.create({ data: { userId, scope, scopeRef, scorePct, attemptId } });
     }
     if (a.task) await advanceCycle(tx, userId, a.task, a.kind, scorePct, passed, rules);
-  });
+  }));
 
   // ── ধাপ সম্পন্ন হলে পরের কাজ খোলা (নিজস্ব Transaction)
   let opened: number[] = [];
@@ -560,10 +566,14 @@ export async function submitAttempt(db: Db, userId: string, attemptId: string): 
 async function recordRevisionDay(db: Db, userId: string, attemptId: string, now: Date) {
   const day = dhakaDayStart(now);
   const st = await revisionStatus(db, userId, now);
+  // MariaDB-তে তালিকা-কলাম নেই (JSON) — আগের তালিকা পড়ে যোগ
+  await withWriteRetry(async () => {
+  const prev = await db.revisionSession.findUnique({ where: { userId_day: { userId, day } }, select: { attemptIds: true } });
   await db.revisionSession.upsert({
     where: { userId_day: { userId, day } },
-    update: { doneCount: st.doneToday, dueCount: st.doneToday + st.remaining, attemptIds: { push: attemptId } },
+    update: { doneCount: st.doneToday, dueCount: st.doneToday + st.remaining, attemptIds: [...(prev?.attemptIds ?? []), attemptId] },
     create: { userId, day, doneCount: st.doneToday, dueCount: st.doneToday + st.remaining, attemptIds: [attemptId] },
+  });
   });
   const days = await db.revisionSession.findMany({ where: { userId, doneCount: { gt: 0 }, day: { gte: dhakaDayStart(now, -6) } }, select: { day: true } });
   if (days.length >= 7) await award(db, userId, "streak_7");

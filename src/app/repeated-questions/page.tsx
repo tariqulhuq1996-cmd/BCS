@@ -3,10 +3,29 @@ import Link from "next/link";
 import { getResearch } from "@/lib/research/data";
 import { bn } from "@/lib/bn";
 import { RepeatList } from "@/components/home/repeat-list";
+import { Suspense } from "react";
+import { connection } from "next/server";
 
 export const metadata: Metadata = { title: "পুনরাবৃত্ত প্রশ্ন" };
 
-export default async function RepeatedQuestionsPage() {
+/**
+ * গবেষণার ডেটা ডেটাবেস থেকে আসে, তাই পাতাটি বিল্ডের সময় নয়, প্রথম অনুরোধে তৈরি হয় (তারপর "use cache"-এ কয়েক ঘণ্টা থাকে)।
+ * এতে বিল্ড (GitHub Actions) ডেটাবেস ছোঁয় না — Hostinger-এর ডেটাবেস বাইরে খোলা রাখতে হয় না।
+ */
+export default function RepeatedQuestionsPage() {
+  return (
+    <Suspense fallback={<p className="mx-auto max-w-6xl px-4 pt-10 text-ink-2 sm:px-6">লোড হচ্ছে…</p>}>
+      <Deferred />
+    </Suspense>
+  );
+}
+
+async function Deferred() {
+  await connection();
+  return <RepeatedQuestionsPageContent />;
+}
+
+async function RepeatedQuestionsPageContent() {
   const r = await getResearch();
   const groups = [...new Set(r.families.map((f) => f.occurrences))].sort((a, b) => b - a);
 

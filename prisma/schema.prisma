@@ -5,8 +5,13 @@ generator client {
   provider = "prisma-client-js"
 }
 
+// Json-ঘরের সঠিক TypeScript ধরন (যেমন string[]) — src/types/prisma-json.d.ts
+generator json {
+  provider = "prisma-json-types-generator"
+}
+
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
@@ -57,7 +62,7 @@ model Session {
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   createdAt DateTime @default(now())
   expiresAt DateTime
-  userAgent String?
+  userAgent String? @db.Text
 
   @@index([userId])
 }
@@ -105,7 +110,7 @@ model Topic {
   code          String         @unique // যেমন BN.BH
   subjectId     Int
   subject       Subject        @relation(fields: [subjectId], references: [id])
-  nameBn        String
+  nameBn        String @db.Text
   order         Int
   priorityScore Float?
   priorityGrade PriorityGrade?
@@ -119,7 +124,7 @@ model Subtopic {
   code            String         @unique // যেমন BN.BH.SHD
   topicId         Int
   topic           Topic          @relation(fields: [topicId], references: [id])
-  nameBn          String
+  nameBn          String @db.Text
   order           Int
   priorityGrade   PriorityGrade?
   priorityScore   Float?
@@ -128,9 +133,9 @@ model Subtopic {
   presence200     String? // যেমন "১১/১২"
   recentCount     Int?
   trend           String? // বেড়েছে / কমেছে / স্থিতিশীল …
-  whyBn           String?
-  tipBn           String?
-  introBn         String? // Level 2 Topic Introduction (অ্যাডমিন লিখবেন)
+  whyBn           String? @db.Text
+  tipBn           String? @db.Text
+  introBn         String? @db.Text // Level 2 Topic Introduction (অ্যাডমিন লিখবেন)
   targetQuestions Int? // Level 2-এ নতুন প্রশ্নের লক্ষ্য (অনুমোদনের পর বসবে)
 
   questions Question[]
@@ -157,7 +162,7 @@ model Exam {
   expectedCount Int // ধরন থেকে নির্ণীত (১০০/২০০)
   questionCount Int              @default(0)
   completeness  ExamCompleteness @default(COMPLETE)
-  notesBn       String?
+  notesBn       String? @db.Text
   questions     Question[]
   tasks         LearningTask[]
 }
@@ -190,24 +195,25 @@ model Question {
   id                String            @id @default(cuid())
   uid               String            @unique // H-<বিসিএস>-<প্রশ্ন নং> বা T-<subtopic>-<ক্রম>
   kind              QuestionKind
-  text              String
-  options           String[] // ঠিক ৪টি
+  text              String @db.Text
+  /// [StringList]
+  options           Json // string[] — ঠিক ৪টি
   correctIndex      Int? // ০–৩; null = উত্তর নেই
-  explanation       String?
+  explanation       String? @db.Text
   explanationStatus ExplanationStatus @default(NONE)
   subtopicId        Int
   subtopic          Subtopic          @relation(fields: [subtopicId], references: [id])
   difficulty        Difficulty?
   questionType      String? // যেমন সরাসরি তথ্য, প্রয়োগ, হিসাব …
-  source            String?
+  source            String? @db.Text
   examId            Int?
   exam              Exam?             @relation(fields: [examId], references: [id])
   examQNo           String?
   examPage          Int?
-  examSection       String? // সংশ্লিষ্ট পরীক্ষার ধরন-লেবেল (মূল TSV-র "ধরন")
+  examSection       String? @db.Text // সংশ্লিষ্ট পরীক্ষার ধরন-লেবেল (মূল TSV-র "ধরন")
   verifyClass       String? // V C J S D X N (ধাপ ০৭)
-  verifyNote        String?
-  answerNote        String?
+  verifyNote        String? @db.Text
+  answerNote        String? @db.Text
   classConfidence   String? // স্বাভাবিক / নিম্ন
   secondaryTag      String?
   status            QuestionStatus    @default(DRAFT)
@@ -232,14 +238,14 @@ model Question {
 /// ধাপ ০৯-এর পুনরাবৃত্ত প্রশ্ন-পরিবার (১৭১টি)।
 model RepeatFamily {
   id          Int              @id @default(autoincrement())
-  groupLabel  String? // উৎস ফাইলের প্রথম কলাম
-  sampleText  String
-  sampleOpts  String
-  subtopicBn  String
+  groupLabel  String? @db.Text // উৎস ফাইলের প্রথম কলাম
+  sampleText  String @db.Text
+  sampleOpts  String @db.Text
+  subtopicBn  String @db.Text
   grade       PriorityGrade?
   occurrences Int
   matchType   String // হুবহু / একই তথ্য / ভিন্ন তথ্য …
-  refs        String // "36-70, 41-17, …"
+  refs        String @db.Text // "36-70, 41-17, …"
   members     QuestionFamily[]
 }
 
@@ -254,7 +260,7 @@ model QuestionFamily {
 
 model ImportBatch {
   id         Int        @id @default(autoincrement())
-  source     String
+  source     String @db.Text
   format     String // json / csv / xlsx / tsv
   rows       Int
   inserted   Int
@@ -272,7 +278,7 @@ model LearningLevel {
   id            Int            @id @default(autoincrement())
   no            Int            @unique
   nameBn        String
-  descriptionBn String
+  descriptionBn String @db.Text
   active        Boolean        @default(true)
   tasks         LearningTask[]
 }
@@ -295,7 +301,7 @@ model LearningTask {
   kind        TaskKind
   order       Int
   phase       Int? // Level 2: ১=A … ৪=D; Level 3: স্তর ১–৩
-  titleBn     String
+  titleBn     String @db.Text
   mandatory   Boolean       @default(true)
   active      Boolean       @default(true)
   examId      Int?
@@ -329,7 +335,7 @@ model RuleSetting {
   key       String
   scope     String   @default("global")
   value     Json
-  noteBn    String?
+  noteBn    String? @db.Text
   updatedAt DateTime @updatedAt
   updatedBy String?
 
@@ -395,7 +401,9 @@ model TestAttempt {
   task        LearningTask?   @relation(fields: [taskId], references: [id])
   kind        AttemptKind
   partNo      Int             @default(1)
-  questionIds String[] // ক্রমানুসারে
+  /// [StringList]
+  questionIds Json // string[] — ক্রমানুসারে
+  /// [OptionPerms]
   optionPerms Json // প্রতিটি প্রশ্নের অপশন-বিন্যাস
   startedAt   DateTime        @default(now())
   deadlineAt  DateTime? // টাইমারযুক্ত পরীক্ষায়; সার্ভার এর পরে জমা নেয় না (Auto Submit)
@@ -460,10 +468,11 @@ model RevisionSession {
   id         String   @id @default(cuid())
   userId     String
   user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  day        DateTime @db.Date
+  day        DateTime // ঢাকার দিনের শুরু (UTC সময়-বিন্দু; DATE নয় — MariaDB-তে তুলনা ঠিক রাখতে)
   dueCount   Int
   doneCount  Int      @default(0)
-  attemptIds String[]
+  /// [StringList]
+  attemptIds Json
 
   @@unique([userId, day])
 }
@@ -529,7 +538,7 @@ model Bookmark {
   user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   questionId String
   question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
-  note       String?
+  note       String? @db.Text
   createdAt  DateTime @default(now())
 
   @@id([userId, questionId])
@@ -538,7 +547,7 @@ model Bookmark {
 model Achievement {
   key    String            @id
   nameBn String
-  descBn String
+  descBn String @db.Text
   icon   String
   users  UserAchievement[]
 }
@@ -571,10 +580,11 @@ model AuditLog {
 
 model CaBank {
   id         Int       @id @default(autoincrement())
-  title      String
+  title      String @db.Text
   version    String?
   verifiedOn DateTime? // প্রশ্নব্যাংকের তথ্য যাচাইয়ের তারিখ
   verifiedBn String? // যেমন "১১ নভেম্বর ২০২৬"
+  /// [StringList]
   howToUse   Json // string[]
   questions  Int
   importedAt DateTime  @default(now())
@@ -584,7 +594,7 @@ model CaBank {
 model CaChapter {
   id        Int          @id @default(autoincrement())
   no        Int          @unique
-  nameBn    String
+  nameBn    String @db.Text
   questions CaQuestion[]
 }
 
@@ -595,17 +605,19 @@ model CaQuestion {
   chapter        CaChapter     @relation(fields: [chapterId], references: [id], onDelete: Cascade)
   priority       PriorityGrade // A/B/C
   text           String        @db.Text
+  /// [StringList]
   statements     Json? // i/ii/iii বিবৃতি (string[])
-  stemTail       String? // যেমন "নিচের কোনটি সঠিক?"
+  stemTail       String? @db.Text // যেমন "নিচের কোনটি সঠিক?"
+  /// [StringList]
   options        Json // string[4]
   correctIndex   Int
   explanation    String?       @db.Text
   remember       String?       @db.Text // "মনে রাখুন"
   sourceText     String?       @db.Text
-  eventDate      String? // ঘটনার/প্রকাশের তারিখ (যেমন লেখা আছে)
+  eventDate      String? @db.Text // ঘটনার/প্রকাশের তারিখ (যেমন লেখা আছে)
   verifiedBn     String?
   volatile       Boolean       @default(false) // ⚠ পরিবর্তনশীল তথ্য
-  volatileReason String?
+  volatileReason String? @db.Text
   active         Boolean       @default(true)
   updatedAt      DateTime      @updatedAt
   answers        CaAnswer[]
@@ -633,14 +645,14 @@ model CaAnswer {
 model CaRevisionItem {
   id    Int    @id @default(autoincrement())
   order Int
-  group String
-  topic String
+  group String @db.Text
+  topic String @db.Text
   fact  String @db.Text
 }
 
 model CaSource {
   id   Int     @id @default(autoincrement())
   no   Int
-  name String
-  url  String?
+  name String @db.Text
+  url  String? @db.Text
 }

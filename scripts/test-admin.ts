@@ -62,7 +62,7 @@ async function main() {
     // ── Backup
     const b = JSON.parse(await fullBackup(db));
     const tables = Object.keys(b.tables);
-    check("পূর্ণ Backup-এ ২৬টি টেবিল, প্রশ্ন সব", tables.length === 26 && b.tables.questions.length === total, tables.length);
+    check("পূর্ণ Backup-এ ৩২টি টেবিল (Current Affairs-সহ), প্রশ্ন সব", tables.length === 32 && b.tables.questions.length === total, tables.length);
     check("Backup-এ সেশন বা রিসেট-টোকেন নেই", !("sessions" in b.tables) && !("resetTokens" in b.tables) && !JSON.stringify(b).includes('"expiresAt"'));
   } finally {
     await db.learningTask.update({ where: { id: t10.id }, data: { active: true } });

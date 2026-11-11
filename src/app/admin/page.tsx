@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { prisma } from "@/lib/db";
 import { daysAgo } from "@/lib/time";
+import { numify } from "@/lib/sql";
 import { requireAdmin } from "@/lib/auth/session";
 import { bn, bnNum } from "@/lib/bn";
 import { AdminTitle, Stat, StatGrid, STATUS_BN } from "@/components/admin/ui";
@@ -20,7 +21,7 @@ export default function AdminHome() {
 async function Content() {
   await requireAdmin("/admin");
   const weekAgo = daysAgo(7);
-  const [students, active, byStatus, explNone, explDraft, mts, imports, attempts7, target] = await Promise.all([
+  const [students, active, byStatus, explNone, explDraft, mts, imports, attempts7, target, dbSize] = await Promise.all([
     prisma.user.count({ where: { role: "STUDENT" } }),
     prisma.user.count({ where: { role: "STUDENT", lastLoginAt: { gte: weekAgo } } }),
     prisma.question.groupBy({ by: ["kind", "status"], _count: true }),
@@ -30,7 +31,12 @@ async function Content() {
     prisma.importBatch.findMany({ orderBy: { createdAt: "desc" }, take: 5 }),
     prisma.testAttempt.count({ where: { submittedAt: { gte: weekAgo } } }),
     prisma.subtopic.aggregate({ _sum: { targetQuestions: true } }),
+    // ডেটাবেসের আকার (Hostinger-এ প্রতি ডেটাবেসে ৩ GB সীমা)
+    prisma.$queryRaw<{ bytes: number | null }[]>`select sum(data_length + index_length) as bytes from information_schema.tables where table_schema = database()`
+      .then((r) => numify(r)[0]?.bytes ?? 0)
+      .catch(() => null),
   ]);
+  const dbMb = dbSize == null ? null : dbSize / 1048576;
   const n = (kind: string, status: string) => byStatus.find((b) => b.kind === kind && b.status === status)?._count ?? 0;
   const topicPublished = n("TOPIC", "PUBLISHED");
 
@@ -43,6 +49,11 @@ async function Content() {
         <Stat k="Level ২ প্রশ্ন" v={`${bnNum(topicPublished)}/${bnNum(target._sum.targetQuestions ?? 0)}`} s={`খসড়া ${bnNum(n("TOPIC", "DRAFT"))}, যাচাইকৃত ${bnNum(n("TOPIC", "VERIFIED"))}`} />
         <Stat k="Model Test" v={`${bn(mts.find((m) => m.status === "PUBLISHED")?._count ?? 0)}/১৫০`} s={`খসড়া ${bn(mts.find((m) => m.status === "DRAFT")?._count ?? 0)}`} />
       </StatGrid>
+      {dbMb != null && (
+        <p className={`mt-3 text-sm ${dbMb > 2560 ? "font-semibold text-danger" : "text-muted"}`}>
+          ডেটাবেসের আকার: {bnNum(dbMb, 1)} MB / ৩,০৭২ MB{dbMb > 2560 ? " — সীমার কাছাকাছি! পুরোনো Revision-এর খুঁটিনাটি মুছতে বা বড় প্ল্যানে যেতে হবে।" : ""}
+        </p>
+      )}
 
       <LaunchSteps
         topicTotal={n("TOPIC", "DRAFT") + n("TOPIC", "VERIFIED") + topicPublished}

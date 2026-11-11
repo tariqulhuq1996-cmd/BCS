@@ -27,7 +27,7 @@ async function Content({ searchParams }: { searchParams: Promise<SP> }) {
   const s = (k: string) => (typeof sp[k] === "string" ? (sp[k] as string) : "");
   const page = Math.max(1, Number(s("page")) || 1);
   const where: Prisma.QuestionWhereInput = {};
-  if (s("q")) where.OR = [{ text: { contains: s("q"), mode: "insensitive" } }, { uid: { contains: s("q").toUpperCase() } }];
+  if (s("q")) where.OR = [{ text: { contains: s("q") } }, { uid: { contains: s("q").toUpperCase() } }];
   if (s("kind")) where.kind = s("kind") as "HISTORICAL" | "TOPIC";
   if (s("status")) where.status = s("status") as "DRAFT";
   if (s("expl")) where.explanationStatus = s("expl") as "NONE";

@@ -1,6 +1,8 @@
 # PostgreSQL → MariaDB (Hostinger Business) — কাজের পরিকল্পনা
 
-অবস্থা: **শুরু হয়নি (শুধু পরিকল্পনা ও তালিকা)** — ২০২৬-১১-১০। ব্যবহারকারী অনুমোদিত "পথ ১"।
+অবস্থা: **সম্পন্ন — ২০২৬-১১-১১।** সব পরীক্ষা MariaDB 11.8.9-এ পাস। নিচের তালিকা ইতিহাস হিসেবে রাখা।
+
+যা শেখা গেল (MariaDB-নির্দিষ্ট): একযোগে একই সারিতে লেখায় 1020 "Record has changed since last read" — `src/lib/db-retry.ts`-এর withWriteRetry; `@db.Date` কলামে সময়-বিন্দু দিয়ে খোঁজা মেলে না — দিনের হিসাব DateTime-এ; count()/sum() BigInt/Decimal ফেরত দেয় — `src/lib/sql.ts`-এর numify; Json-ঘরের ধরন prisma-json-types-generator দিয়ে string[]।
 লক্ষ্য: Neon/PostgreSQL বাদ; Hostinger Business-এর **MariaDB 11.8.9** (প্রতি ডেটাবেস ৩ GB) একই সার্ভারে।
 বিল্ড GitHub Actions-এ থাকবে (Hostinger-এর পুরোনো glibc-এ Next 16 compiler চলে না) — `.github/workflows/hostinger-build.yml`, `deploy` শাখা।
 

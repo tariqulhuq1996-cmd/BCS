@@ -21,7 +21,7 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
   const sp = await searchParams;
   const q = typeof sp.q === "string" ? sp.q.trim() : "";
   const users = await prisma.user.findMany({
-    where: q ? { OR: [{ email: { contains: q, mode: "insensitive" } }, { profile: { name: { contains: q, mode: "insensitive" } } }] } : {},
+    where: q ? { OR: [{ email: { contains: q } }, { profile: { name: { contains: q } } }] } : {},
     orderBy: { createdAt: "desc" },
     take: 100,
     include: { profile: true, _count: { select: { attempts: true } } },

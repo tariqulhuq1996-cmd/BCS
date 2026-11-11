@@ -14,7 +14,7 @@ export function checkEnv(env = process.env): EnvReport {
   const prod = env.NODE_ENV === "production";
 
   if (!env.DATABASE_URL) errors.push("DATABASE_URL নেই (PostgreSQL-এর সংযোগ-ঠিকানা)।");
-  else if (prod && /bcs_local_dev|localhost:5452/.test(env.DATABASE_URL) && env.ALLOW_LOCAL_DB !== "1")
+  else if (prod && /bcs_local_dev|127.0.0.1:3307|localhost:3307/.test(env.DATABASE_URL) && env.ALLOW_LOCAL_DB !== "1")
     errors.push("প্রোডাকশনে স্থানীয় ডেভেলপমেন্ট ডেটাবেস ব্যবহার হচ্ছে। আসল ডেটাবেসের DATABASE_URL দিন (বা পরীক্ষার জন্য ALLOW_LOCAL_DB=1)।");
 
   if (prod) {

@@ -14,6 +14,7 @@
 import { PrismaClient } from "@prisma/client";
 import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
+import { numify } from "../src/lib/sql";
 
 const db = new PrismaClient();
 const args = process.argv.slice(2);
@@ -56,10 +57,10 @@ async function main() {
 
   // ২০০ নম্বরের সাধারণ বিসিএসে উপবিষয়ভিত্তিক প্রশ্ন
   const counts = await db.$queryRaw<{ id: number; n: number }[]>`
-    select st.id, count(q.id)::int as n from "Subtopic" st
-    left join "Question" q on q."subtopicId" = st.id and q.kind = 'HISTORICAL'
-      and q."examId" in (select id from "Exam" where type = 'GENERAL_200')
-    group by st.id`;
+    select st.id, count(q.id) as n from Subtopic st
+    left join Question q on q.subtopicId = st.id and q.kind = 'HISTORICAL'
+      and q.examId in (select id from Exam where type = 'GENERAL_200')
+    group by st.id`.then((r) => numify(r));
   const n200 = new Map(counts.map((c) => [c.id, c.n]));
 
   type Row = { code: string; name: string; topic: string; subject: string; grade: string | null; hist200: number; target: number };

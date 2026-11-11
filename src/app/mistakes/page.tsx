@@ -4,6 +4,7 @@ import { prisma } from "@/lib/db";
 import { requireUser } from "@/lib/auth/session";
 import { startMistakeAction } from "@/lib/exam/actions";
 import { bn } from "@/lib/bn";
+import { numify } from "@/lib/sql";
 
 export const metadata: Metadata = { title: "ভুলের ভান্ডার" };
 const LETTERS = ["ক", "খ", "গ", "ঘ"];
@@ -34,11 +35,11 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
   const user = await requireUser("/mistakes");
   const [bySubject, top] = await Promise.all([
     prisma.$queryRaw<{ code: string; name: string; n: number }[]>`
-      select sj.code, sj."nameBn" as name, count(*)::int as n
-      from "QuestionStat" qs join "Question" q on q.id = qs."questionId"
-      join "Subtopic" st on st.id = q."subtopicId" join "Topic" tp on tp.id = st."topicId" join "Subject" sj on sj.id = tp."subjectId"
-      where qs."userId" = ${user.id} and qs.wrong > 0 and qs."lastCorrect" = false and q.status = 'PUBLISHED'
-      group by sj.code, sj."nameBn", sj."order" order by sj."order"`,
+      select sj.code, sj.nameBn as name, count(*) as n
+      from QuestionStat qs join Question q on q.id = qs.questionId
+      join Subtopic st on st.id = q.subtopicId join Topic tp on tp.id = st.topicId join Subject sj on sj.id = tp.subjectId
+      where qs.userId = ${user.id} and qs.wrong > 0 and qs.lastCorrect = false and q.status = 'PUBLISHED'
+      group by sj.code, sj.nameBn, sj.order order by sj.order`.then((r) => numify(r)),
     prisma.questionStat.findMany({
       where: { userId: user.id, wrong: { gt: 0 }, lastCorrect: false, question: { status: "PUBLISHED" } },
       orderBy: [{ wrong: "desc" }, { lastWrongAt: "desc" }],

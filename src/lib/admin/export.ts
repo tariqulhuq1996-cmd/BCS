@@ -4,6 +4,7 @@
  * প্রোডাকশনে এর পাশাপাশি হোস্টেড PostgreSQL-এর নিজস্ব দৈনিক Backup (pg_dump) চালু রাখতে হবে।
  */
 import type { PrismaClient } from "@prisma/client";
+import { numify } from "@/lib/sql";
 
 const LETTERS = ["ক", "খ", "গ", "ঘ"];
 const csvCell = (v: unknown) => {
@@ -33,9 +34,9 @@ export async function progressCsv(db: PrismaClient) {
   const users = await db.user.findMany({ where: { role: "STUDENT" }, include: { profile: true }, orderBy: { createdAt: "asc" } });
   const [done, levelTotals, attempts] = await Promise.all([
     db.$queryRaw<{ userId: string; no: number; n: number }[]>`
-      select p."userId", l.no, count(*)::int as n from "StudentTaskProgress" p join "LearningTask" t on t.id = p."taskId" join "LearningLevel" l on l.id = t."levelId"
-      where p.state = 'COMPLETED' group by p."userId", l.no`,
-    db.$queryRaw<{ no: number; n: number }[]>`select l.no, count(*)::int as n from "LearningTask" t join "LearningLevel" l on l.id = t."levelId" where t.active group by l.no`,
+      select p.userId, l.no, count(*) as n from StudentTaskProgress p join LearningTask t on t.id = p.taskId join LearningLevel l on l.id = t.levelId
+      where p.state = 'COMPLETED' group by p.userId, l.no`.then((r) => numify(r)),
+    db.$queryRaw<{ no: number; n: number }[]>`select l.no, count(*) as n from LearningTask t join LearningLevel l on l.id = t.levelId where t.active group by l.no`.then((r) => numify(r)),
     db.testAttempt.groupBy({ by: ["userId"], where: { submittedAt: { not: null } }, _count: true }),
   ]);
   const tot = new Map(levelTotals.map((x) => [x.no, x.n]));

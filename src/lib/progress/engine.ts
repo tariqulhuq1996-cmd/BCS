@@ -1,4 +1,5 @@
 import type { Prisma, PrismaClient, TaskState } from "@prisma/client";
+import { withWriteRetry } from "@/lib/db-retry";
 
 /**
  * Unlock-ইঞ্জিন — সব সিদ্ধান্ত সার্ভারে, ডেটাবেসের ওপর।
@@ -19,11 +20,13 @@ export const OPEN_STATES: TaskState[] = ["AVAILABLE", "IN_PROGRESS", "COMPLETED"
 export async function ensureStarted(db: Db, userId: string) {
   const roots = await db.learningTask.findMany({ where: { active: true, prerequisites: { none: {} } }, select: { id: true } });
   for (const r of roots) {
-    await db.studentTaskProgress.upsert({
-      where: { userId_taskId: { userId, taskId: r.id } },
-      update: {},
-      create: { userId, taskId: r.id, state: "AVAILABLE", unlockedAt: new Date() },
-    });
+    await withWriteRetry(() =>
+      db.studentTaskProgress.upsert({
+        where: { userId_taskId: { userId, taskId: r.id } },
+        update: {},
+        create: { userId, taskId: r.id, state: "AVAILABLE", unlockedAt: new Date() },
+      }),
+    );
   }
 }
 
@@ -46,7 +49,8 @@ export async function markStarted(db: Db, userId: string, taskId: number) {
  * ফেরত দেয়: নতুন খোলা কাজের id-তালিকা।
  */
 export async function completeTask(db: PrismaClient, userId: string, taskId: number): Promise<number[]> {
-  return db.$transaction(async (tx) => {
+  // একযোগে একই কাজ সম্পন্ন হলে MariaDB লেনদেন বাতিল করে — পুরো লেনদেন আবার (দ্বিতীয়বার "আগেই সম্পন্ন" দেখে কিছু বদলায় না)
+  return withWriteRetry(() => db.$transaction(async (tx) => {
     const cur = await tx.studentTaskProgress.findUnique({ where: { userId_taskId: { userId, taskId } } });
     if (!cur || !OPEN_STATES.includes(cur.state)) throw new Error("LOCKED_TASK");
     if (cur.state !== "COMPLETED") {
@@ -56,7 +60,7 @@ export async function completeTask(db: PrismaClient, userId: string, taskId: num
       });
     }
     return unlockReady(tx, userId, taskId);
-  });
+  }));
 }
 
 /** taskId-এর ওপর নির্ভরশীল যেসব কাজের সব পূর্বশর্ত শেষ, সেগুলো খোলা। */

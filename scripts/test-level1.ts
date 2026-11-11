@@ -158,9 +158,9 @@ async function main() {
     check("ফাংশন: \"উপরের সবগুলো\" থাকলে ক্রম অপরিবর্তিত", optionPerm(["ক", "খ", "গ", "উপরের সবগুলো"], true, rndAlways).join() === "0,1,2,3");
     check("ফাংশন: সাধারণ অপশনে ক্রম বদলায়", optionPerm(["ঢাকা", "খুলনা", "রাজশাহী", "সিলেট"], true, rndAlways).join() !== "0,1,2,3");
     check("ফাংশন: ১০০টি প্রশ্ন ৫০+৫০, ১০২টি ৩৪+৩৪+৩৪", splitParts([...Array(100).keys()], 50).map((p) => p.length).join() === "50,50" && splitParts([...Array(102).keys()], 50).map((p) => p.length).join() === "34,34,34");
-    const fixedQ = await db.question.findFirst({ where: { status: "PUBLISHED", exam: { bcsNo: { in: [10, 11] } }, options: { hasSome: ["উপরের সবগুলো", "সবগুলো", "কোনটিই নয়"] } } });
+    const fixedQ = (await db.question.findMany({ where: { status: "PUBLISHED", exam: { bcsNo: { in: [10, 11] } } } })).find((q) => q.options.some((o) => ["উপরের সবগুলো", "সবগুলো", "কোনটিই নয়"].includes(o)));
     if (fixedQ) {
-      const perms = (await db.testAttempt.findMany({ where: { userId: u.id, questionIds: { has: fixedQ.id } } })).map((a) => (a.optionPerms as Record<string, number[]>)[fixedQ.id]);
+      const perms = (await db.testAttempt.findMany({ where: { userId: u.id } })).filter((a) => a.questionIds.includes(fixedQ.id)).map((a) => (a.optionPerms as Record<string, number[]>)[fixedQ.id]);
       check("\"সবগুলো/কোনটিই নয়\" অপশনের ক্রম অপরিবর্তিত", perms.length > 0 && perms.every((p) => p.join() === "0,1,2,3"), perms);
     } else console.log("SKIP  (১০ম–১১তম-এ \"সবগুলো\" অপশনের প্রশ্ন নেই)");
 

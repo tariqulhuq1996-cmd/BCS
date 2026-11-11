@@ -2,6 +2,7 @@
  * Current Affairs-এর স্মার্ট অনুশীলন। "server-only" নয় (স্বয়ংক্রিয় পরীক্ষার জন্য); ডেটাবেস-ক্লায়েন্ট প্যারামিটারে আসে।
  */
 import type { PriorityGrade, PrismaClient } from "@prisma/client";
+import { withWriteRetry } from "../db-retry";
 
 /** Leitner-বাক্স অনুযায়ী পরের পুনরাবৃত্তি (দিন): ঠিক হলে বাক্স বাড়ে, ভুল হলে ১-এ ফেরে */
 const BOX_DAYS = [1, 3, 7, 14, 30];
@@ -155,14 +156,17 @@ export async function answerQuestion(db: PrismaClient, userId: string, questionI
   const q = await db.caQuestion.findFirst({ where: { id: questionId, active: true } });
   if (!q || !Number.isInteger(choice) || choice < 0 || choice > 3) return null;
   const correct = choice === q.correctIndex;
-  const prev = await db.caAnswer.findUnique({ where: { userId_questionId: { userId, questionId } } });
-  const box = correct ? Math.min((prev?.box ?? 0) + 1, BOX_DAYS.length) : 1;
+  let box = 1;
+  await withWriteRetry(async () => {
+    const prev = await db.caAnswer.findUnique({ where: { userId_questionId: { userId, questionId } } });
+    box = correct ? Math.min((prev?.box ?? 0) + 1, BOX_DAYS.length) : 1;
   // ভুল হলে আজই আবার (১০ মিনিট পরে স্মার্ট সেটে আগে আসবে)
-  const dueAt = new Date(Date.now() + (correct ? BOX_DAYS[box - 1] * 864e5 : 10 * 60e3));
-  await db.caAnswer.upsert({
+    const dueAt = new Date(Date.now() + (correct ? BOX_DAYS[box - 1] * 864e5 : 10 * 60e3));
+    await db.caAnswer.upsert({
     where: { userId_questionId: { userId, questionId } },
     update: { seen: { increment: 1 }, correct: { increment: correct ? 1 : 0 }, lastCorrect: correct, box, dueAt, lastAt: new Date() },
     create: { userId, questionId, seen: 1, correct: correct ? 1 : 0, lastCorrect: correct, box, dueAt },
+  });
   });
   return {
     correct,

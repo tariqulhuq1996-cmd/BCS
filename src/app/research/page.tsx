@@ -5,12 +5,31 @@ import { bn, bnNum, bnOrdinal } from "@/lib/bn";
 import { Section, SourceNote } from "@/components/ui/section";
 import { SubtopicTable } from "@/components/research/subtopic-table";
 import { HeatmapExplorer } from "@/components/research/heatmap-explorer";
+import { Suspense } from "react";
+import { connection } from "next/server";
 
 export const metadata: Metadata = { title: "গবেষণা: ১০ম–৫০তম বিসিএস" };
 
 const TYPE_BN = { GENERAL_100: "১০০ নম্বর", GENERAL_200: "২০০ নম্বর", SPECIAL: "বিশেষ" } as const;
 
-export default async function ResearchPage() {
+/**
+ * গবেষণার ডেটা ডেটাবেস থেকে আসে, তাই পাতাটি বিল্ডের সময় নয়, প্রথম অনুরোধে তৈরি হয় (তারপর "use cache"-এ কয়েক ঘণ্টা থাকে)।
+ * এতে বিল্ড (GitHub Actions) ডেটাবেস ছোঁয় না — Hostinger-এর ডেটাবেস বাইরে খোলা রাখতে হয় না।
+ */
+export default function ResearchPage() {
+  return (
+    <Suspense fallback={<p className="mx-auto max-w-6xl px-4 pt-10 text-ink-2 sm:px-6">লোড হচ্ছে…</p>}>
+      <Deferred />
+    </Suspense>
+  );
+}
+
+async function Deferred() {
+  await connection();
+  return <ResearchPageContent />;
+}
+
+async function ResearchPageContent() {
   const r = await getResearch();
   const special = r.subjectByType.find((s) => s.type === "SPECIAL")!;
   const g200 = r.subjectByType.find((s) => s.type === "GENERAL_200")!;

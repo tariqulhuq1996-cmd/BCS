@@ -8,6 +8,7 @@ import { bn, bnNum } from "@/lib/bn";
 import { prisma } from "@/lib/db";
 import { GradeBadge } from "@/components/ui/grade";
 import { ProgressBar } from "@/components/portal/progress-bar";
+import { numify } from "@/lib/sql";
 
 export const metadata: Metadata = { title: "Level ২: টপিকভিত্তিক প্রশ্ন" };
 const GRADES = ["A", "B", "C", "D"];
@@ -33,10 +34,10 @@ async function Content() {
   const levelLocked = tasks.every((t) => t.state === "LOCKED");
   // প্রতিটি Priority ধাপে প্রশ্নের লক্ষ্য বনাম প্রকাশিত
   const content = await prisma.$queryRaw<{ grade: string; target: number; published: number }[]>`
-    select st."priorityGrade"::text as grade, sum(st."targetQuestions")::int as target,
-      (select count(*)::int from "Question" q join "Subtopic" s2 on s2.id = q."subtopicId"
-        where q.kind = 'TOPIC' and q.status = 'PUBLISHED' and s2."priorityGrade" = st."priorityGrade") as published
-    from "Subtopic" st where st."priorityGrade" is not null group by st."priorityGrade"`;
+    select st.priorityGrade as grade, sum(st.targetQuestions) as target,
+      (select count(*) from Question q join Subtopic s2 on s2.id = q.subtopicId
+        where q.kind = 'TOPIC' and q.status = 'PUBLISHED' and s2.priorityGrade = st.priorityGrade) as published
+    from Subtopic st where st.priorityGrade is not null group by st.priorityGrade`.then((r) => numify(r));
   const cBy = new Map(content.map((c) => [c.grade, c]));
   const totTarget = content.reduce((a, c) => a + (c.target ?? 0), 0);
   const totPub = content.reduce((a, c) => a + c.published, 0);

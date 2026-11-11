@@ -1,11 +1,11 @@
 /**
- * Deploy-এর সময় ডেটাবেসের দ্রুত প্রস্তুতি — `npm run build`-এর শুরুতে নিজে থেকে চলে। কয়েক সেকেন্ডের কাজ, তাই বিল্ড আটকায় না।
+ * Hostinger-এ Deploy-এর সময় ডেটাবেস প্রস্তুত করা (deploy শাখার `npm run build`)। ডেটাবেস একই সার্ভারের MariaDB, তাই দ্রুত।
  *   ১. টেবিল তৈরি/হালনাগাদ (prisma migrate deploy) — শুধু নতুন migration প্রয়োগ হয়
- *   ২. গবেষণার ডেটা সম্পূর্ণ বসানো আছে কিনা পরীক্ষা — না থাকলে লগে স্পষ্ট নির্দেশনা (বিল্ড থামায় না)
- *   ৩. ADMIN_EMAIL ও ADMIN_PASSWORD দেওয়া থাকলে এবং কোনো অ্যাডমিন না থাকলে প্রথম অ্যাডমিন তৈরি
- *
- * গবেষণার ৫,৩৫২ প্রশ্ন বসানো (npm run setup:prod) বিল্ডের ভেতরে হয় না: দূরের ডেটাবেসে কয়েক মিনিট লাগে,
- * আর Hostinger-এর বিল্ড-সময়সীমায় মাঝপথে কেটে যায়। এটি একবার আলাদাভাবে চালানো হয় (docs/DEPLOY_HOSTINGER.md)।
+ *   ২. গবেষণার ডেটা অসম্পূর্ণ হলে (প্রথম Deploy বা মাঝপথে থেমে যাওয়া) বসানো; সম্পূর্ণ থাকলে আর ছোঁয় না
+ *      (অ্যাডমিনের সম্পাদিত ব্যাখ্যা ইত্যাদি অক্ষত থাকে)
+ *   ৩. seed — নতুন কোডে যোগ হওয়া নিয়ম/ধাপ (শুধু অনুপস্থিতগুলো)
+ *   ৪. Current Affairs প্রশ্নব্যাংক না থাকলে বসানো
+ *   ৫. ADMIN_EMAIL ও ADMIN_PASSWORD থাকলে এবং কোনো অ্যাডমিন না থাকলে প্রথম অ্যাডমিন
  * স্থানীয় ডেভেলপমেন্ট ডেটাবেসে (npm run db) কিছু করে না।
  */
 import { execSync } from "node:child_process";
@@ -23,7 +23,7 @@ async function main() {
     console.log("[deploy-setup] DATABASE_URL নেই — ডেটাবেস প্রস্তুতি বাদ (শুধু বিল্ড)।");
     return;
   }
-  if (/localhost:5452|bcs_local_dev/.test(url) && process.env.DEPLOY_SETUP_FORCE !== "1") {
+  if (/127.0.0.1:3307|localhost:3307|bcs_local_dev/.test(url) && process.env.DEPLOY_SETUP_FORCE !== "1") {
     console.log("[deploy-setup] স্থানীয় ডেভেলপমেন্ট ডেটাবেস — বাদ।");
     return;
   }
@@ -37,13 +37,16 @@ async function main() {
       db.question.count({ where: { kind: "HISTORICAL" } }),
       db.learningTask.count(),
     ]);
+    const run = (cmd: string) => execSync(cmd, { stdio: "inherit", env: process.env });
     if (historical >= EXPECTED_HISTORICAL && tasks >= EXPECTED_TASKS) {
-      console.log(`[deploy-setup] গবেষণার ডেটা সম্পূর্ণ (${historical} প্রশ্ন, ${tasks} ধাপ)।`);
+      console.log(`[deploy-setup] গবেষণার ডেটা সম্পূর্ণ (${historical} প্রশ্ন, ${tasks} ধাপ)। নতুন নিয়ম/ধাপ থাকলে যোগ…`);
+      run("npx tsx scripts/seed.ts");
     } else {
-      console.warn(
-        `[deploy-setup] সতর্কতা: গবেষণার ডেটা অসম্পূর্ণ (${historical}/${EXPECTED_HISTORICAL} প্রশ্ন, ${tasks}/${EXPECTED_TASKS} ধাপ)। ` +
-          "একবার `npm run setup:prod` চালাতে হবে (docs/DEPLOY_HOSTINGER.md)।",
-      );
+      console.log(`[deploy-setup] গবেষণার ডেটা বসানো হচ্ছে (${historical}/${EXPECTED_HISTORICAL} প্রশ্ন আছে)…`);
+      run("npx tsx scripts/import-research.ts");
+      run("npx tsx scripts/seed.ts");
+      run("npx tsx scripts/allocate-level2.ts --floor 10 --write");
+      run("npx tsx scripts/verify-data.ts");
     }
 
     // Current Affairs: ডেটাবেসে না থাকলে repo-র প্রশ্নব্যাংক (data/source/current_affairs.docx) বসানো।

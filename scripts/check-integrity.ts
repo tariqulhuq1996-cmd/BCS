@@ -5,6 +5,7 @@
 import { PrismaClient } from "@prisma/client";
 import { DEFAULT_RULES } from "../src/lib/rules/defaults";
 import { questionHash } from "../src/lib/questions/hash";
+import { numify } from "../src/lib/sql";
 
 const db = new PrismaClient();
 let fails = 0;
@@ -23,7 +24,7 @@ async function main() {
   const all = await db.question.findMany({ select: { uid: true, text: true, options: true, textHash: true } });
   const stale = all.filter((q) => questionHash(q.text, q.options) !== q.textHash);
   check("প্রতিটি প্রশ্নের duplicate-হ্যাশ হালনাগাদ", stale.length === 0, { n: stale.length, e: stale.slice(0, 3).map((q) => q.uid) });
-  const topicDup = await db.$queryRaw<{ n: number }[]>`select count(*)::int n from (select "textHash" from "Question" where kind='TOPIC' group by 1 having count(*)>1) t`;
+  const topicDup = await db.$queryRaw<{ n: number }[]>`select count(*) n from (select textHash from Question where kind='TOPIC' group by 1 having count(*)>1) t`.then((r) => numify(r));
   check("Level ২-এ হুবহু একই প্রশ্ন দুবার নেই", topicDup[0].n === 0, topicDup[0]);
 
   // ── শ্রেণিবিন্যাস ও লক্ষ্য
