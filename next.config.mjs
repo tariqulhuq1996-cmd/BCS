@@ -1,7 +1,9 @@
 
 const isDev = process.env.NODE_ENV === "development";
 // https-এ চালু থাকলেই HSTS ও upgrade-insecure-requests (স্থানীয় http-পরীক্ষা যেন না ভাঙে)
-const httpsSite = (process.env.APP_URL ?? "").startsWith("https://");
+// APP_URL-এ protocol না থাকলে (শুধু ডোমেইন) https ধরা হয় — src/lib/env.ts-এর normalizeAppUrl-এর মতো
+const appUrlRaw = (process.env.APP_URL ?? "").trim().replace(/^["']|["']$/g, "");
+const httpsSite = appUrlRaw !== "" && (appUrlRaw.startsWith("https://") || !/^[a-z][a-z0-9+.-]*:\/\//i.test(appUrlRaw));
 
 /**
  * Content-Security-Policy: শুধু নিজের সাইটের স্ক্রিপ্ট, স্টাইল, ছবি ও ফন্ট; অন্য কোনো সাইট থেকে কিছু লোড বা ফ্রেম নয়।
