@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Anek_Bangla, Hind_Siliguri } from "next/font/google";
+import { Anek_Bangla, Noto_Sans_Bengali } from "next/font/google";
 import { SiteHeader } from "@/components/site/header";
 import { SiteFooter } from "@/components/site/footer";
 import { appUrl } from "@/lib/env";
@@ -13,10 +13,12 @@ const display = Anek_Bangla({
   display: "swap",
 });
 
-const body = Hind_Siliguri({
+// সাধারণ লেখা: Noto Sans Bengali — মুক্ত লাইসেন্স (OFL), সব ওজন (variable, একটি ফাইল),
+// নির্ভুল যুক্তাক্ষর, আর বাংলা-ইংরেজি মেশানো লেখায় একই নকশা। শিরোনাম: Anek Bangla (সাইটের নিজস্ব চেহারা)।
+const body = Noto_Sans_Bengali({
   variable: "--font-body",
   subsets: ["bengali", "latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: "variable",
   display: "swap",
 });
 
