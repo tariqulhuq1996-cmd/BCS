@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "লগইন" };
 
 export default function LoginPage() {
   return (
-    <AuthShell title="লগইন করুন" lead="যেখানে থেমেছিলেন, সেখান থেকেই প্রস্তুতি চালিয়ে যান।">
+    <AuthShell title="লগইন করুন" lead="আবার স্বাগতম। যেখানে থেমেছিলেন, সেখান থেকেই শুরু করুন।">
       <Suspense>
         <LoginForm />
       </Suspense>

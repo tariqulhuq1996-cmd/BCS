@@ -9,8 +9,8 @@ export function SiteFooter() {
           কোনো স্কোরকে পাশের নিশ্চয়তা হিসেবে দেখানো হয় না।
         </p>
         <nav aria-label="ফুটার" className="flex flex-wrap gap-x-5 gap-y-1 sm:justify-end">
-          <Link href="/research" className="hover:text-ink">গবেষণা</Link>
-          <Link href="/repeated-questions" className="hover:text-ink">পুনরাবৃত্ত প্রশ্ন</Link>
+          <Link href="/research" className="hover:text-ink">প্রশ্ন-বিশ্লেষণ</Link>
+          <Link href="/repeated-questions" className="hover:text-ink">বারবার আসা প্রশ্ন</Link>
           <Link href="/login" className="hover:text-ink">লগইন</Link>
         </nav>
       </div>

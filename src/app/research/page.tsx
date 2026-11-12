@@ -115,7 +115,7 @@ async function ResearchPageContent() {
 
       <section className="mx-auto max-w-6xl px-4 pt-16 sm:px-6">
         <Link href="/register" className="inline-block rounded-lg bg-green px-6 py-3 text-lg font-semibold text-white hover:bg-green-strong dark:text-paper">
-          আমি ৫২তম BCS-এর প্রস্তুতি শুরু করতে চাই
+          প্রস্তুতি শুরু করুন
         </Link>
       </section>
     </>

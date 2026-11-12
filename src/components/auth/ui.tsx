@@ -15,7 +15,7 @@ export function AuthShell({ title, lead, children }: { title: string; lead?: Rea
         <p className="font-semibold">অ্যাকাউন্ট খোলার পর যা হবে</p>
         <ol className="mt-4 grid gap-4 text-[15px] text-ink-2">
           {[
-            ["১", "Level 1 শুরু হবে ১০ম বিসিএসের প্রশ্নপত্র দিয়ে।"],
+            ["১", "Level ১ শুরু হবে ১০ম বিসিএসের প্রশ্নপত্র দিয়ে।"],
             ["২", "প্রতিটি পরীক্ষার পর ভুলগুলোর Revision ও Mastery Test।"],
             ["৩", "৮০% পেলে পরের বিসিএস খুলবে; অগ্রগতি সার্ভারে সংরক্ষিত থাকবে।"],
           ].map(([n, t]) => (

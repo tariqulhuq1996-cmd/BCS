@@ -7,7 +7,7 @@ import { Suspense } from "react";
 import { connection } from "next/server";
 import { requireUser } from "@/lib/auth/session";
 
-export const metadata: Metadata = { title: "পুনরাবৃত্ত প্রশ্ন" };
+export const metadata: Metadata = { title: "বারবার আসা প্রশ্ন" };
 
 /**
  * গবেষণার ডেটা ডেটাবেস থেকে আসে, তাই পাতাটি বিল্ডের সময় নয়, প্রথম অনুরোধে তৈরি হয় (তারপর "use cache"-এ কয়েক ঘণ্টা থাকে)।
@@ -55,7 +55,7 @@ async function RepeatedQuestionsPageContent() {
       ))}
       <p className="mt-12">
         <Link href="/register" className="inline-block rounded-lg bg-green px-6 py-3 text-lg font-semibold text-white hover:bg-green-strong dark:text-paper">
-          আমি ৫২তম BCS-এর প্রস্তুতি শুরু করতে চাই
+          প্রস্তুতি শুরু করুন
         </Link>
       </p>
     </section>

@@ -47,23 +47,23 @@ async function HomeContent() {
       <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 pt-12 sm:px-6 sm:pt-16 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
         <div>
           <h1 className="text-[40px] font-extrabold leading-[1.15] sm:text-[56px]" style={{ fontStretch: "112%" }}>
-            ৫২তম BCS Preliminary — গবেষণাভিত্তিক স্মার্ট প্রস্তুতি
+            ৫২তম বিসিএস প্রিলিমিনারি: ডেটা দেখে প্রস্তুতি, অনুমানে নয়
           </h1>
           <p className="mt-5 max-w-xl text-lg text-ink-2">
-            বিগত BCS পরীক্ষার প্রশ্ন বিশ্লেষণ থেকে শুরু করে বিষয়ভিত্তিক অনুশীলন, Revision এবং পূর্ণাঙ্গ Model Test — সম্পূর্ণ প্রস্তুতি একটি নির্দিষ্ট
-            Learning Roadmap অনুসরণ করে।
+            {bn(t.exams)}টি বিসিএসের {bnNum(t.questions)}টি প্রশ্ন বিশ্লেষণ করে সাজানো একটি পূর্ণ পথ — বিগত প্রশ্ন, টপিকভিত্তিক অনুশীলন, Revision আর
+            Model Test। কী পড়বেন, কতটা পড়বেন, সাইটই বলে দেবে।
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/register" className="rounded-lg bg-green px-6 py-3 text-lg font-semibold text-white hover:bg-green-strong dark:text-paper">
-              ৫২তম BCS প্রস্তুতি শুরু করুন
+              প্রস্তুতি শুরু করুন
             </Link>
             <Link href="/login" className="text-ink-2 underline underline-offset-4 hover:text-ink">
-              আগে থেকে অ্যাকাউন্ট আছে? লগইন করুন
+              অ্যাকাউন্ট আছে? লগইন করুন
             </Link>
           </div>
           <p className="mt-10 max-w-xl text-[15px] text-ink-2">
-            ভিত্তি: {bn(t.exams)}টি বিসিএস প্রিলিমিনারির {bnNum(t.questions)}টি প্রশ্ন, {bn(t.subjects)}টি বিষয়, {bn(t.topics)}টি টপিক ও {bn(t.subtopics)}টি উপবিষয়ে
-            ভাগ করে গোনা। এর মধ্যে {bn(t.families)}টি প্রশ্ন একাধিক পরীক্ষায় ফিরে এসেছে।
+            ১০ম–৫০তম বিসিএসের প্রতিটি প্রশ্ন {bn(t.subjects)}টি বিষয়, {bn(t.topics)}টি টপিক ও {bn(t.subtopics)}টি উপবিষয়ে শ্রেণিবদ্ধ।{" "}
+            {bn(t.families)}টি প্রশ্ন একাধিকবার ফিরে এসেছে।
           </p>
         </div>
         <OmrQuestion
@@ -79,8 +79,8 @@ async function HomeContent() {
       {/* ── Heatmap */}
       <Section
         id="heatmap"
-        title="কোন উপবিষয় বারবার আসে"
-        lead={`Priority Score অনুযায়ী শীর্ষ ২৫টি উপবিষয়, প্রতিটি সাধারণ বিসিএসে কতটি প্রশ্ন এসেছে। গাঢ় ঘর মানে বেশি প্রশ্ন; টানা গাঢ় সারি মানে ধারাবাহিকভাবে গুরুত্বপূর্ণ।`}
+        title="যে উপবিষয়গুলো প্রায় প্রতিবার আসে"
+        lead="সবচেয়ে গুরুত্বপূর্ণ ২৫টি উপবিষয়ে প্রতিটি বিসিএসে কত প্রশ্ন এসেছে। রং যত গাঢ়, প্রশ্ন তত বেশি — পুরো সারি গাঢ় মানে এই অংশ বাদ দেওয়ার উপায় নেই।"
         aside={<Link href="/research#heatmap" className="text-sm text-green underline underline-offset-4">সব {bn(t.subtopics)}টি উপবিষয় দেখুন</Link>}
       >
         <Heatmap rows={r.heat.rows.slice(0, 25)} exams={r.heat.exams} canShowAll={!!user} loginHref="/login?next=/%23heatmap" caption="শীর্ষ ২৫টি উপবিষয়ে প্রতিটি সাধারণ বিসিএসের প্রশ্নসংখ্যা" />
@@ -89,8 +89,8 @@ async function HomeContent() {
       {/* ── সাম্প্রতিক প্রবণতা */}
       <Section
         id="trend"
-        title={`${bnOrdinal(r.periods.recent[0])}–${bnOrdinal(r.periods.recent.at(-1)!)} বিসিএসে কী বদলেছে`}
-        lead={`২০০ নম্বরের যুগের প্রথম ${bn(r.periods.prev.length)}টি সাধারণ বিসিএসের (${bn(r.periods.prev[0])}–${bnOrdinal(r.periods.prev.at(-1)!)}) সঙ্গে সাম্প্রতিক ${bn(r.periods.recent.length)}টির (${bn(r.periods.recent[0])}–${bnOrdinal(r.periods.recent.at(-1)!)}) তুলনা, টপিকে পরীক্ষাপ্রতি গড় প্রশ্ন ধরে। ${bn(trendUp)}টি টপিকে প্রশ্ন বেড়েছে, ${bn(trendDown)}টিতে কমেছে।`}
+        title="সাম্প্রতিক বিসিএসে প্রশ্নের ধারা যেভাবে বদলেছে"
+        lead={`আগের ${bn(r.periods.prev.length)}টি (${bn(r.periods.prev[0])}–${bnOrdinal(r.periods.prev.at(-1)!)}) আর সর্বশেষ ${bn(r.periods.recent.length)}টি (${bn(r.periods.recent[0])}–${bnOrdinal(r.periods.recent.at(-1)!)}) বিসিএসের তুলনা: ${bn(trendUp)}টি টপিকে প্রশ্ন বেড়েছে, ${bn(trendDown)}টিতে কমেছে। পুরোনো অভ্যাসে নয়, সাম্প্রতিক ধারা মেনে পড়ুন।`}
       >
         <TrendChange topics={r.topics} periods={r.periods} />
       </Section>
@@ -98,8 +98,8 @@ async function HomeContent() {
       {/* ── পুনরাবৃত্ত প্রশ্ন */}
       <Section
         id="repeats"
-        title="যে প্রশ্ন বারবার ফিরে আসে"
-        lead={`${bn(t.families)}টি প্রশ্ন অন্তত দুটি বিসিএসে এসেছে; এর মধ্যে ${bn(t.families3)}টি এসেছে তিন বা তার বেশি পরীক্ষায়। এখানে Priority A উপবিষয়ের সবচেয়ে বেশিবার আসা ${bn(repeatsA.length)}টি।`}
+        title="যে প্রশ্ন আবার আসতে পারে"
+        lead={`${bn(t.families)}টি প্রশ্ন একাধিক বিসিএসে হুবহু বা প্রায় একইভাবে এসেছে, ${bn(t.families3)}টি এসেছে তিনবার বা তার বেশি। নিচে সবচেয়ে গুরুত্বপূর্ণ ${bn(repeatsA.length)}টি।`}
         aside={<Link href="/repeated-questions" className="text-sm text-green underline underline-offset-4">সব {bn(t.families)}টি প্রশ্ন দেখুন</Link>}
       >
         <RepeatList families={repeatsA} />
@@ -108,8 +108,8 @@ async function HomeContent() {
       {/* ── Priority A */}
       <Section
         id="priority"
-        title="৫২তম বিসিএসের সর্বোচ্চ অগ্রাধিকার"
-        lead={`${bn(t.subtopics)}টি উপবিষয়ের মধ্যে Priority A পেয়েছে ${bn(priorityA.length)}টি: এগুলো প্রথমে, গভীরভাবে পড়ার এবং প্রতি সপ্তাহে Revision দেওয়ার মতো। এখানে Score অনুযায়ী শীর্ষ ${bn(topA.length)}টি।`}
+        title="৫২তম বিসিএসে প্রথমে যা পড়বেন"
+        lead={`${bn(t.subtopics)}টি উপবিষয়ের মধ্যে ${bn(priorityA.length)}টি Priority A — নম্বর তোলার সবচেয়ে নিশ্চিত জায়গা। নিচে Score অনুযায়ী শীর্ষ ${bn(topA.length)}টি।`}
         aside={<Link href="/research#priority" className="text-sm text-green underline underline-offset-4">পূর্ণ Priority List দেখুন</Link>}
       >
         {/* বাঁ কলামে ১–৫, ডান কলামে ৬–১০ */}
@@ -132,8 +132,8 @@ async function HomeContent() {
       {/* ── Roadmap */}
       <Section
         id="roadmap"
-        title="প্রস্তুতি এগোবে তিনটি Level-এ"
-        lead="প্রতিটি ধাপ শেষ করে নির্ধারিত নম্বর পেলে তবেই পরের ধাপ খোলে। কী পড়তে হবে খুঁজতে হবে না: Dashboard প্রতিদিন বলে দেবে আজকের কাজ।"
+        title="তিন ধাপে পূর্ণ প্রস্তুতি"
+        lead="প্রতিটি ধাপে নির্ধারিত নম্বর পেলেই পরের ধাপ খোলে, তাই ফাঁক থেকে যায় না। প্রতিদিন Dashboard বলে দেয় আজ কী করবেন।"
       >
         <RoadmapPreview exams={t.exams} specialExams={t.specialExams} subtopics={t.subtopics} gradeCounts={t.gradeCounts} />
       </Section>
@@ -143,12 +143,12 @@ async function HomeContent() {
         <div className="flex flex-col items-start gap-5 rounded-2xl border border-green bg-green-wash px-6 py-10 sm:px-10 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-xl">
             <h2 className="text-[26px] font-bold sm:text-[32px]" style={{ fontStretch: "110%" }}>
-              প্রথম কাজ: ১০ম বিসিএসের প্রশ্নপত্র
+              আজই প্রথম ধাপ: ১০ম বিসিএসের প্রশ্নপত্র
             </h2>
-            <p className="mt-2 text-ink-2">অ্যাকাউন্ট খুললেই Level 1 শুরু। আপনার অগ্রগতি সংরক্ষিত থাকবে, অন্য দিন লগইন করে সেখান থেকেই চালিয়ে যেতে পারবেন।</p>
+            <p className="mt-2 text-ink-2">অ্যাকাউন্ট খুললেই শুরু। প্রতিটি উত্তর, ভুল আর অগ্রগতি সংরক্ষিত থাকে — যেকোনো দিন, যেকোনো ডিভাইস থেকে ঠিক সেখান থেকে চালিয়ে যান।</p>
           </div>
           <Link href="/register" className="rounded-lg bg-green px-6 py-3 text-lg font-semibold text-white hover:bg-green-strong dark:text-paper">
-            আমি ৫২তম BCS-এর প্রস্তুতি শুরু করতে চাই
+            প্রস্তুতি শুরু করুন
           </Link>
         </div>
       </section>

@@ -9,13 +9,13 @@ export function RoadmapPreview({ exams, specialExams, subtopics, gradeCounts }: 
       n: 1,
       name: "বিগত বিসিএসের প্রশ্ন আয়ত্ত",
       body: `১০ম থেকে ৫০তম — ${bn(exams)}টি প্রশ্নপত্র (${bn(specialExams)}টি বিশেষ বিসিএসসহ) একটির পর একটি। প্রতিটিতে সমাধান, উত্তর পর্যালোচনা, ভুলের Revision, Mastery Test, আর আগের সব পরীক্ষা মিলিয়ে Cumulative Test।`,
-      gate: "প্রতিটি ধাপে ৮০% পেলে পরের বিসিএস খোলে; শেষে Level 1 Final Assessment।",
+      gate: "প্রতিটি ধাপে ৮০% পেলে পরের বিসিএস খোলে; শেষে Level ১ Final Assessment।",
     },
     {
       n: 2,
       name: "৯,০০০+ টপিকভিত্তিক প্রশ্ন আয়ত্ত",
       body: `${bn(subtopics)}টি উপবিষয়, ৫২তম Priority List-এর ক্রমে: আগে A (${bn(gradeCounts[0]?.n ?? 0)}টি), তারপর B, C, D। প্রতিটি উপবিষয়ে পরিচিতি, অনুশীলন, ভুলের Revision ও Mastery Test; ভুল প্রশ্ন নির্দিষ্ট দিন পরপর ফিরে আসে।`,
-      gate: "প্রতিটি Priority ধাপ শেষে Checkpoint; শেষে Level 2 Final Assessment।",
+      gate: "প্রতিটি Priority ধাপ শেষে Checkpoint; শেষে Level ২ Final Assessment।",
     },
     {
       n: 3,

@@ -4,9 +4,9 @@ import { getCurrentUser } from "@/lib/auth/session";
 import { logout } from "@/lib/auth/actions";
 
 const NAV = [
-  { href: "/research", label: "গবেষণা" },
+  { href: "/research", label: "প্রশ্ন-বিশ্লেষণ" },
   { href: "/#roadmap", label: "Roadmap" },
-  { href: "/repeated-questions", label: "পুনরাবৃত্ত প্রশ্ন" },
+  { href: "/repeated-questions", label: "বারবার আসা প্রশ্ন" },
   { href: "/current-affairs", label: "সাম্প্রতিক বিষয়াবলি" },
 ];
 
