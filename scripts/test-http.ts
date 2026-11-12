@@ -66,6 +66,29 @@ async function main() {
     const exp = await get("/admin/export/backup.json", ck);
     check("শিক্ষার্থী Backup ডাউনলোড পায় না (৪০৪)", exp.status === 404);
 
+    // লগইন থাকলে "অ্যাকাউন্ট খুলুন"/"লগইন করুন" কোথাও নয়
+    const homeIn = await get("/", ck);
+    check("লগইন থাকলে হোমপেজে অ্যাকাউন্ট খোলা/লগইনের লিংক নেই", homeIn.status === 200 && !homeIn.body.includes(`href="/register"`) && !homeIn.body.includes(`href="/login"`) && homeIn.body.includes("Dashboard-এ যান"));
+    const homeOut = await get("/");
+    check("লগইন ছাড়া হোমপেজে অ্যাকাউন্ট খোলার লিংক আছে", homeOut.body.includes(`href="/register"`) && !homeOut.body.includes("Dashboard-এ যান"));
+    for (const p of ["/login", "/register"]) {
+      const r = await get(p, ck);
+      const toDash = r.location.includes("/dashboard") || /__next-page-redirect[^>]*\/dashboard|NEXT_REDIRECT;[^;]*;\/dashboard/.test(r.body);
+      check(`লগইন থাকলে ${p} → Dashboard-এ, ফর্ম নেই`, toDash && !r.body.includes(`name="password"`) && !r.body.includes("লগইন করুন</h1>") && !r.body.includes("প্রস্তুতি শুরু করুন</h1>"), { s: r.status, l: r.location });
+    }
+
+    // ইমেইল যাচাই বাকি থাকলে কোনো শিক্ষার্থী-পাতা নয়
+    const pend = await db.user.create({ data: { email: `${Date.now()}-pending@http.test`, passwordHash: "x", emailVerifiedAt: null, profile: { create: { name: "যাচাই-বাকি" } } } });
+    try {
+      const pk = await session(pend.id);
+      const pd = await get("/dashboard", pk);
+      check("যাচাই-বাকি অ্যাকাউন্ট Dashboard-এ নয়, যাচাই-পাতায়", (pd.status === 307 || pd.status === 302) ? pd.location.includes("/verify-email") : !pd.body.includes("যাচাই-বাকি") || /verify-email/.test(pd.body), { s: pd.status, l: pd.location });
+      const pv = await get("/verify-email", pk);
+      check("যাচাই-পাতায় কোডের ঘর", pv.status === 200 && pv.body.includes(`name="code"`));
+    } finally {
+      await db.user.delete({ where: { id: pend.id } });
+    }
+
     // অন্যের পরীক্ষা
     const { startStep } = await import("../src/lib/exam/service");
     await startAtLevel1(db, other.id);

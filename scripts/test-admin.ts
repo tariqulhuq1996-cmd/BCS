@@ -65,6 +65,22 @@ async function main() {
     const tables = Object.keys(b.tables);
     check("পূর্ণ Backup-এ ৩২টি টেবিল (Current Affairs-সহ), প্রশ্ন সব", tables.length === 32 && b.tables.questions.length === total, tables.length);
     check("Backup-এ সেশন বা রিসেট-টোকেন নেই", !("sessions" in b.tables) && !("resetTokens" in b.tables) && !JSON.stringify(b).includes('"expiresAt"'));
+
+    // ── শিক্ষার্থীর অ্যাকাউন্ট মোছা: সব তথ্য মুছে যায়, অন্য কারও কিছু নয়
+    const gone = await db.user.create({ data: { email: `${tag}-gone@admin.test`, passwordHash: "x", profile: { create: { name: "মুছে ফেলা" } } } });
+    await startAtLevel1(db, gone.id);
+    await db.studentChecklist.create({ data: { userId: gone.id, item: "heatmap" } });
+    await db.session.create({ data: { id: `${tag}-sess`, userId: gone.id, expiresAt: new Date(Date.now() + 3600e3) } });
+    const before = await db.studentTaskProgress.count({ where: { userId: u.id } });
+    await db.user.delete({ where: { id: gone.id } });
+    const left = await Promise.all([
+      db.studentProfile.count({ where: { userId: gone.id } }),
+      db.session.count({ where: { userId: gone.id } }),
+      db.studentTaskProgress.count({ where: { userId: gone.id } }),
+      db.studentChecklist.count({ where: { userId: gone.id } }),
+    ]);
+    check("অ্যাকাউন্ট মুছলে প্রোফাইল, সেশন, অগ্রগতি, চেকলিস্ট সব মুছে যায়", left.every((n) => n === 0), left);
+    check("অন্য শিক্ষার্থীর অগ্রগতি অক্ষত", (await db.studentTaskProgress.count({ where: { userId: u.id } })) === before);
   } finally {
     await db.learningTask.update({ where: { id: t10.id }, data: { active: true } });
     await db.user.deleteMany({ where: { email: { startsWith: tag } } });

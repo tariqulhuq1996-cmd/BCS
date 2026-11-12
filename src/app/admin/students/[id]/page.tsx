@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { prisma } from "@/lib/db";
 import { requireAdmin } from "@/lib/auth/session";
 import { getStudentTasks, pickCurrent } from "@/lib/progress/dashboard";
-import { manualUnlockAction, sendResetAction, setDisabledAction } from "@/lib/admin/actions";
+import { deleteStudentAction, manualUnlockAction, sendResetAction, setDisabledAction } from "@/lib/admin/actions";
 import { ATTEMPT_KIND_BN } from "@/lib/progress/cycle";
 import { bn, bnNum } from "@/lib/bn";
 import { AdminTitle, Notice, btn, btnGhost, input } from "@/components/admin/ui";
@@ -26,11 +26,12 @@ async function Content({ params, searchParams }: { params: Promise<{ id: string 
   const [{ id }, sp] = await Promise.all([params, searchParams]);
   const u = await prisma.user.findUnique({ where: { id }, include: { profile: true } });
   if (!u) notFound();
-  const [tasks, attempts, overrides, wrongBank] = await Promise.all([
+  const [tasks, attempts, overrides, wrongBank, attemptCount] = await Promise.all([
     getStudentTasks(id),
     prisma.testAttempt.findMany({ where: { userId: id, submittedAt: { not: null } }, orderBy: { submittedAt: "desc" }, take: 15, include: { task: { select: { titleBn: true } } } }),
     prisma.studentTaskProgress.findMany({ where: { userId: id, overrideBy: { not: null } }, include: { task: { select: { key: true, titleBn: true } } } }),
     prisma.questionStat.count({ where: { userId: id, wrong: { gt: 0 }, lastCorrect: false } }),
+    prisma.testAttempt.count({ where: { userId: id } }),
   ]);
   const current = pickCurrent(tasks);
   const levels = [1, 2, 3].map((no) => {
@@ -72,6 +73,22 @@ async function Content({ params, searchParams }: { params: Promise<{ id: string 
               <input type="hidden" name="userId" value={u.id} /><input type="hidden" name="disabled" value={u.disabled ? "0" : "1"} />
               <button className={`${btnGhost} ${u.disabled ? "" : "text-danger"}`}>{u.disabled ? "অ্যাকাউন্ট আবার চালু করুন" : "অ্যাকাউন্ট বন্ধ করুন (সব ডিভাইস থেকে লগআউট)"}</button>
             </form>
+          )}
+          {u.role !== "ADMIN" && u.id !== me.id && (
+            <details className="rounded-lg border border-danger/40 px-4 py-3">
+              <summary className="cursor-pointer font-medium text-danger">অ্যাকাউন্ট স্থায়ীভাবে মুছুন</summary>
+              <form action={deleteStudentAction} className="mt-3 grid gap-3">
+                <input type="hidden" name="userId" value={u.id} />
+                <p id="del-hint" className="text-sm text-ink-2">
+                  প্রোফাইল, সব পরীক্ষা ({bn(attemptCount)}টি), অগ্রগতি, ভুলের ভান্ডার ও বুকমার্ক মুছে যাবে। <b>এটি আর ফেরানো যাবে না।</b> শুধু লগইন আটকাতে চাইলে ওপরের &quot;অ্যাকাউন্ট বন্ধ করুন&quot; ব্যবহার করুন।
+                </p>
+                <label className="grid gap-1 text-sm">
+                  <span>নিশ্চিত করতে শিক্ষার্থীর ইমেইল লিখুন: <span className="font-mono">{u.email}</span><span className="text-danger" aria-hidden="true"> *</span></span>
+                  <input name="confirm" autoComplete="off" spellCheck={false} autoCapitalize="none" required aria-required="true" aria-describedby="del-hint" className={`${input} font-mono`} />
+                </label>
+                <div><button className="rounded-md bg-danger px-4 py-2 text-[15px] font-semibold text-white hover:opacity-90">স্থায়ীভাবে মুছুন</button></div>
+              </form>
+            </details>
           )}
         </div>
       </div>

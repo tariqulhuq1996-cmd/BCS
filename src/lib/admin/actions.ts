@@ -288,3 +288,25 @@ export async function renameCaBankAction(fd: FormData) {
   await audit(a.id, "rename_ca_bank", "CaBank", bankKey, { name: String(fd.get("name") ?? ""), chapters: res.chapters });
   back(path, `নাম হালনাগাদ হয়েছে${res.chapters ? ` (অধ্যায় ${res.chapters}টি)` : ""}। পরের Import-এও এই নাম থাকবে।`);
 }
+
+// ─────────────────────────────────────────── শিক্ষার্থীর অ্যাকাউন্ট মোছা
+
+/**
+ * শিক্ষার্থীর অ্যাকাউন্ট স্থায়ীভাবে মোছা — প্রোফাইল, সেশন, অগ্রগতি, পরীক্ষা, ভুলের হিসাব, বুকমার্ক সব (Cascade)।
+ * নিশ্চিত করতে অ্যাডমিনকে শিক্ষার্থীর ইমেইল হুবহু লিখতে হয়। অ্যাডমিন অ্যাকাউন্ট (নিজেরটিসহ) এখান থেকে মোছা যায় না।
+ * Audit Log-এ কে, কখন, কার অ্যাকাউন্ট মুছল তা থাকে।
+ */
+export async function deleteStudentAction(fd: FormData) {
+  const a = await admin();
+  const userId = String(fd.get("userId") ?? "");
+  const confirm = String(fd.get("confirm") ?? "").trim().toLowerCase();
+  const path = `/admin/students/${userId}`;
+  const u = await prisma.user.findUnique({ where: { id: userId }, include: { profile: { select: { name: true } } } });
+  if (!u) back("/admin/students", "অ্যাকাউন্টটি পাওয়া যায়নি (হয়তো আগেই মোছা হয়েছে)।", "err");
+  if (u!.role === "ADMIN" || u!.id === a.id) back(path, "অ্যাডমিন অ্যাকাউন্ট এখান থেকে মোছা যায় না।", "err");
+  if (confirm !== u!.email.toLowerCase()) back(path, "নিশ্চিত করার ঘরে শিক্ষার্থীর ইমেইল হুবহু লিখুন। অ্যাকাউন্ট মোছা হয়নি।", "err");
+  const attempts = await prisma.testAttempt.count({ where: { userId } });
+  await prisma.user.delete({ where: { id: userId } });
+  await audit(a.id, "delete_user", "User", userId, { email: u!.email, name: u!.profile?.name ?? null, attempts });
+  back("/admin/students", `অ্যাকাউন্ট মুছে ফেলা হয়েছে: ${u!.profile?.name ? `${u!.profile.name} (${u!.email})` : u!.email}, সব তথ্যসহ।`);
+}

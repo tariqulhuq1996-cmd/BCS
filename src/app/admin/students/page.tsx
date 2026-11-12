@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import { prisma } from "@/lib/db";
 import { requireAdmin } from "@/lib/auth/session";
 import { bn, bnNum } from "@/lib/bn";
-import { AdminTitle, btnGhost, input } from "@/components/admin/ui";
+import { AdminTitle, Notice, btnGhost, input } from "@/components/admin/ui";
 
 export const metadata: Metadata = { title: "শিক্ষার্থী — অ্যাডমিন", robots: { index: false } };
 
@@ -32,6 +32,8 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
   return (
     <>
       <AdminTitle title="শিক্ষার্থী" lead="নাম বা ইমেইল দিয়ে খুঁজুন; বিস্তারিত পাতায় অগ্রগতি, পরীক্ষার ইতিহাস, হাতে Unlock ও অ্যাকাউন্টের কাজ।" />
+      {typeof sp.ok === "string" && <Notice>{sp.ok}</Notice>}
+      {typeof sp.err === "string" && <Notice kind="error">{sp.err}</Notice>}
       <form className="mt-6 flex gap-2" role="search">
         <input name="q" defaultValue={q} placeholder="নাম বা ইমেইল" aria-label="শিক্ষার্থী খুঁজুন" className={`${input} w-72`} />
         <button className={btnGhost}>খুঁজুন</button>

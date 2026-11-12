@@ -1,4 +1,12 @@
 import Link from "next/link";
+import { Suspense } from "react";
+import { getCurrentUser, getPendingUser } from "@/lib/auth/session";
+
+/** লগইন থাকলে Dashboard, না থাকলে লগইন। */
+async function AccountLink() {
+  const signedIn = (await getCurrentUser()) || (await getPendingUser());
+  return signedIn ? <Link href="/dashboard" className="hover:text-ink">Dashboard</Link> : <Link href="/login" className="hover:text-ink">লগইন</Link>;
+}
 
 export function SiteFooter() {
   return (
@@ -11,7 +19,9 @@ export function SiteFooter() {
         <nav aria-label="ফুটার" className="flex flex-wrap gap-x-5 gap-y-1 sm:justify-end">
           <Link href="/research" className="hover:text-ink">প্রশ্ন-বিশ্লেষণ</Link>
           <Link href="/repeated-questions" className="hover:text-ink">বারবার আসা প্রশ্ন</Link>
-          <Link href="/login" className="hover:text-ink">লগইন</Link>
+          <Suspense fallback={null}>
+            <AccountLink />
+          </Suspense>
         </nav>
       </div>
     </footer>

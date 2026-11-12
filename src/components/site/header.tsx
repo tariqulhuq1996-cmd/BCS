@@ -26,7 +26,8 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="ml-auto flex items-center gap-1 whitespace-nowrap sm:gap-2">
-          <Suspense fallback={<AuthLinks />}>
+          {/* লোড হওয়ার সময় ফাঁকা জায়গা — লগইন করা ব্যবহারকারীর কাছে "লগইন"/"শুরু করুন" এক ঝলকও না দেখায় */}
+          <Suspense fallback={<span className="block h-9 w-28" aria-hidden="true" />}>
             <UserArea />
           </Suspense>
         </div>

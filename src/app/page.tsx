@@ -9,7 +9,7 @@ import { RepeatList } from "@/components/home/repeat-list";
 import { RoadmapPreview } from "@/components/home/roadmap-preview";
 import { Suspense } from "react";
 import { connection } from "next/server";
-import { getCurrentUser } from "@/lib/auth/session";
+import { getCurrentUser, getPendingUser } from "@/lib/auth/session";
 import { prisma } from "@/lib/db";
 import { loadRules } from "@/lib/rules";
 import { EXAM50, MarksShift, OLD_MARKS } from "@/components/home/marks-shift";
@@ -32,7 +32,8 @@ async function Deferred() {
 }
 
 async function HomeContent() {
-  const [r, user, rules] = await Promise.all([getResearch(), getCurrentUser(), loadRules(prisma)]);
+  const [r, user, pending, rules] = await Promise.all([getResearch(), getCurrentUser(), getPendingUser(), loadRules(prisma)]);
+  const signedIn = !!(user || pending); // ইমেইল যাচাই বাকি থাকলেও লগইন করা — তাকে আর "অ্যাকাউন্ট খুলুন" দেখানো হয় না
   // নতুন মানবণ্টন অ্যাডমিন-নিয়ম থেকে (না থাকলে বিষয়-তালিকার marks200), পুরোনোটি ৩৫তম–৫০তম-এর
   const newMarks = rules.get<Record<string, number>>("exam.marks_distribution") ?? {};
   const marksRows = r.subjects
@@ -63,12 +64,20 @@ async function HomeContent() {
             Model Test। কী এবং কতটা পড়বেন, তার সুনির্দিষ্ট নির্দেশনা এখানেই পাবেন।
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <Link href="/register" className="rounded-lg bg-green px-6 py-3 text-lg font-semibold text-white hover:bg-green-strong dark:text-paper">
-              প্রস্তুতি শুরু করুন
-            </Link>
-            <Link href="/login" className="text-ink-2 underline underline-offset-4 hover:text-ink">
-              অ্যাকাউন্ট আছে? লগইন করুন
-            </Link>
+            {signedIn ? (
+              <Link href="/dashboard" className="rounded-lg bg-green px-6 py-3 text-lg font-semibold text-white hover:bg-green-strong dark:text-paper">
+                Dashboard-এ যান
+              </Link>
+            ) : (
+              <>
+                <Link href="/register" className="rounded-lg bg-green px-6 py-3 text-lg font-semibold text-white hover:bg-green-strong dark:text-paper">
+                  প্রস্তুতি শুরু করুন
+                </Link>
+                <Link href="/login" className="text-ink-2 underline underline-offset-4 hover:text-ink">
+                  অ্যাকাউন্ট আছে? লগইন করুন
+                </Link>
+              </>
+            )}
           </div>
           <p className="mt-10 max-w-xl text-[15px] text-ink-2">
             ১০ম–৫০তম BCS-এর প্রতিটি প্রশ্ন {bn(t.subjects)}টি বিষয়, {bn(t.topics)}টি টপিক ও {bn(t.subtopics)}টি উপবিষয়ে শ্রেণিবদ্ধ।{" "}
@@ -157,7 +166,8 @@ async function HomeContent() {
         <RoadmapPreview exams={t.exams} specialExams={t.specialExams} subtopics={t.subtopics} gradeCounts={t.gradeCounts} />
       </Section>
 
-      {/* ── CTA */}
+      {/* ── CTA (শুধু লগইন ছাড়া — অ্যাকাউন্ট খোলার আহ্বান) */}
+      {!signedIn && (
       <section className="mx-auto max-w-6xl px-4 pt-24 sm:px-6">
         <div className="flex flex-col items-start gap-5 rounded-2xl border border-green bg-green-wash px-6 py-10 sm:px-10 lg:flex-row lg:items-center lg:justify-between">
           <div className="min-w-0">
@@ -172,6 +182,7 @@ async function HomeContent() {
           </Link>
         </div>
       </section>
+      )}
     </>
   );
 }
