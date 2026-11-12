@@ -30,34 +30,7 @@ export function AuthShell({ title, lead, children }: { title: string; lead?: Rea
   );
 }
 
-export function Field({
-  name, label, type = "text", autoComplete, defaultValue, errors, hint, required = true,
-}: {
-  name: string; label: string; type?: string; autoComplete?: string; defaultValue?: string; errors?: string[]; hint?: string; required?: boolean;
-}) {
-  const id = `f-${name}`;
-  const describedBy = [errors?.length ? `${id}-err` : null, hint ? `${id}-hint` : null].filter(Boolean).join(" ") || undefined;
-  return (
-    <div className="grid gap-1.5">
-      <label htmlFor={id} className="text-[15px] font-medium">{label}</label>
-      <input
-        id={id}
-        name={name}
-        type={type}
-        autoComplete={autoComplete}
-        defaultValue={defaultValue}
-        required={required}
-        aria-invalid={errors?.length ? true : undefined}
-        aria-describedby={describedBy}
-        className={`rounded-md border bg-surface px-3 py-2.5 text-[16px] outline-none focus:border-green focus:ring-2 focus:ring-green/25 ${errors?.length ? "border-danger" : "border-line-strong"}`}
-      />
-      {hint && !errors?.length && <p id={`${id}-hint`} className="text-sm text-muted">{hint}</p>}
-      {errors?.length ? (
-        <p id={`${id}-err`} className="text-sm text-danger">{errors[0]}</p>
-      ) : null}
-    </div>
-  );
-}
+// ফর্ম-ঘর: ./field.tsx (ক্লায়েন্ট কম্পোনেন্ট — পাসওয়ার্ড দেখানোর বোতামসহ)
 
 export function FormMessage({ text, ok }: { text?: string; ok?: boolean }) {
   if (!text) return null;

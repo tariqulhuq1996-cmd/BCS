@@ -120,6 +120,20 @@ h3 {
   text-wrap: balance;
 }
 
+/* চেকবক্স ও রেডিও: চাপার জায়গা বড় ও দলের রং (WCAG 2.5.8 — label-সহ ২৪px-এর বেশি) */
+:where(input[type="checkbox"],
+input[type="radio"]) {
+  width: 1.125rem;
+  height: 1.125rem;
+  accent-color: var(--green);
+  flex-shrink: 0;
+}
+
+/* sticky হেডারের নিচে focus করা অংশ ঢাকা না পড়ে (WCAG 2.4.11) */
+html {
+  scroll-padding-top: 5.5rem;
+}
+
 :focus-visible {
   outline: 2px solid var(--green);
   outline-offset: 2px;

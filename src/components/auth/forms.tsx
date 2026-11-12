@@ -4,7 +4,8 @@ import Link from "next/link";
 import { use, useActionState } from "react";
 import { useSearchParams } from "next/navigation";
 import { login, register, requestPasswordReset, resetPassword } from "@/lib/auth/actions";
-import { Field, FormMessage, SubmitButton } from "./ui";
+import { FormMessage, SubmitButton } from "./ui";
+import { Field, RequiredNote, useErrorFocus } from "./field";
 
 function useNext() {
   const n = useSearchParams().get("next");
@@ -14,8 +15,10 @@ function useNext() {
 export function RegisterForm() {
   const next = useNext();
   const [state, action, pending] = useActionState(register, undefined);
+  const formRef = useErrorFocus(state);
   return (
-    <form action={action} className="grid gap-5" noValidate>
+    <form ref={formRef} action={action} className="grid gap-5" noValidate>
+      <RequiredNote />
       <input type="hidden" name="next" value={next} />
       <FormMessage text={state?.message} />
       <Field name="name" label="পুরো নাম" autoComplete="name" defaultValue={state?.values?.name} errors={state?.errors?.name} />
@@ -33,8 +36,10 @@ export function RegisterForm() {
 export function LoginForm() {
   const next = useNext();
   const [state, action, pending] = useActionState(login, undefined);
+  const formRef = useErrorFocus(state);
   return (
-    <form action={action} className="grid gap-5" noValidate>
+    <form ref={formRef} action={action} className="grid gap-5" noValidate>
+      <RequiredNote />
       <input type="hidden" name="next" value={next} />
       <FormMessage text={state?.message} />
       <Field name="email" label="ইমেইল" type="email" autoComplete="email" defaultValue={state?.values?.email} errors={state?.errors?.email} />
@@ -50,6 +55,7 @@ export function LoginForm() {
 
 export function ResetRequestForm() {
   const [state, action, pending] = useActionState(requestPasswordReset, undefined);
+  const formRef = useErrorFocus(state);
   if (state?.ok)
     return (
       <div className="grid gap-5">
@@ -58,7 +64,8 @@ export function ResetRequestForm() {
       </div>
     );
   return (
-    <form action={action} className="grid gap-5" noValidate>
+    <form ref={formRef} action={action} className="grid gap-5" noValidate>
+      <RequiredNote />
       <FormMessage text={state?.message} />
       <Field name="email" label="অ্যাকাউন্টের ইমেইল" type="email" autoComplete="email" defaultValue={state?.values?.email} errors={state?.errors?.email} />
       <SubmitButton pending={pending} pendingText="পাঠানো হচ্ছে…">রিসেট লিংক পাঠান</SubmitButton>
@@ -70,8 +77,10 @@ export function ResetRequestForm() {
 export function ResetForm({ params }: { params: Promise<{ token: string }> }) {
   const { token } = use(params);
   const [state, action, pending] = useActionState(resetPassword, undefined);
+  const formRef = useErrorFocus(state);
   return (
-    <form action={action} className="grid gap-5" noValidate>
+    <form ref={formRef} action={action} className="grid gap-5" noValidate>
+      <RequiredNote />
       <input type="hidden" name="token" value={token} />
       <FormMessage text={state?.message ?? (state?.errors?.token ? "লিংকটি সঠিক নয়। নতুন রিসেট লিংক চান।" : undefined)} />
       <Field name="password" label="নতুন পাসওয়ার্ড" type="password" autoComplete="new-password" errors={state?.errors?.password} hint="অন্তত ৮ অক্ষর, একটি ইংরেজি বর্ণ ও একটি সংখ্যাসহ।" />

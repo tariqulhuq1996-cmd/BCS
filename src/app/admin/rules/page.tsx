@@ -96,8 +96,8 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
           <label className="grid gap-1 text-sm">নিয়ম
             <select name="key" className={input}>{keys.filter((k) => k.includes("threshold")).map((k) => <option key={k} value={k}>{k}</option>)}</select>
           </label>
-          <label className="grid gap-1 text-sm">পরিসর<input name="scope" placeholder="task:L1:EXAM:39" className={`${input} font-mono`} required /></label>
-          <label className="grid gap-1 text-sm">মান<input name="value" placeholder="75" className={`${input} w-24 font-mono`} required /></label>
+          <label className="grid gap-1 text-sm"><span>পরিসর<span className="text-danger" aria-hidden="true"> *</span></span><input name="scope" placeholder="task:L1:EXAM:39" className={`${input} font-mono`} required aria-required="true" /></label>
+          <label className="grid gap-1 text-sm"><span>মান<span className="text-danger" aria-hidden="true"> *</span></span><input name="value" placeholder="75" inputMode="decimal" className={`${input} w-24 font-mono`} required aria-required="true" /></label>
           <button className={btn}>ব্যতিক্রম যোগ করুন</button>
         </form>
       </section>

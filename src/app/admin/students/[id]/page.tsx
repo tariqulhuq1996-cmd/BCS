@@ -60,8 +60,8 @@ async function Content({ params, searchParams }: { params: Promise<{ id: string 
         <form action={manualUnlockAction} className="grid gap-3 rounded-xl border border-line bg-surface p-5">
           <h2 className="font-bold">হাতে Unlock (বিশেষ পরিস্থিতি)</h2>
           <input type="hidden" name="userId" value={u.id} />
-          <label className="grid gap-1 text-sm">কাজের key<input name="taskKey" placeholder="L1:EXAM:15" className={`${input} font-mono`} required /></label>
-          <p className="text-xs text-muted">শুধু ঐ ধাপ খোলে; আগের ধাপগুলো সম্পন্ন দেখায় না। Audit Log-এ আপনার নামসহ থাকে।</p>
+          <label className="grid gap-1 text-sm"><span>কাজের key<span className="text-danger" aria-hidden="true"> *</span></span><input name="taskKey" placeholder="L1:EXAM:15" className={`${input} font-mono`} required aria-required="true" aria-describedby="unlock-hint" /></label>
+          <p id="unlock-hint" className="text-xs text-muted">শুধু ঐ ধাপ খোলে; আগের ধাপগুলো সম্পন্ন দেখায় না। Audit Log-এ আপনার নামসহ থাকে।</p>
           <div><button className={btn}>Unlock করুন</button></div>
         </form>
         <div className="grid gap-3 rounded-xl border border-line bg-surface p-5">
