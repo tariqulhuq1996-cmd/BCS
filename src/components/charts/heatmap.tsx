@@ -86,13 +86,14 @@ export function Heatmap({
       </div>
 
       <div className="mt-2 overflow-x-auto rounded-lg border border-line bg-surface" onMouseLeave={() => setHover(null)}>
-        <table className="border-separate border-spacing-[2px] text-xs">
+        {/* পুরো প্রস্থ জুড়ে: কলাম কম থাকলে ঘর চওড়া হয় (ফাঁকা জায়গা থাকে না); বেশি হলে ন্যূনতম প্রস্থে পাশে সরানো যায় */}
+        <table className="w-full border-separate border-spacing-[2px] text-xs">
           <caption className="sr-only">{caption}</caption>
           <thead>
             <tr>
               <th scope="col" className="sticky left-0 z-10 bg-surface px-2 text-left font-medium text-muted">উপবিষয়</th>
               {cols.map(({ e }, c) => (
-                <th key={e} scope="col" className={`w-6 min-w-6 text-center font-normal tabular ${hover?.c === c ? "text-ink" : "text-muted"}`}>
+                <th key={e} scope="col" className={`min-w-6 text-center font-normal tabular ${hover?.c === c ? "text-ink" : "text-muted"}`}>
                   {bn(e)}
                 </th>
               ))}
@@ -120,7 +121,7 @@ export function Heatmap({
                       tabIndex={-1}
                       onMouseEnter={() => setHover({ r, c })}
                       onClick={() => setHover({ r, c })}
-                      className={`size-6 min-w-6 rounded-[3px] ${hover?.r === r && hover?.c === c ? "outline-2 outline-ink" : ""}`}
+                      className={`h-6 min-w-6 rounded-[3px] ${hover?.r === r && hover?.c === c ? "outline-2 outline-ink" : ""}`}
                       style={{ background: `var(--heat-${level(n)})` }}
                       aria-label={`${row.nameBn}, ${bnOrdinal(exams[i])}: ${bn(n)}টি`}
                     />

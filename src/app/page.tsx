@@ -32,6 +32,12 @@ async function HomeContent() {
   const [r, user] = await Promise.all([getResearch(), getCurrentUser()]);
   const t = r.totals;
   const priorityA = r.subtopics.filter((s) => s.grade === "A");
+  // হোমপেজে নমুনা: Priority A-র সবচেয়ে বেশিবার আসা ৫টি প্রশ্ন, আর শীর্ষ ১০টি উপবিষয় (পুরোটা লগইন করে)
+  const repeatsA = r.families
+    .filter((f) => f.grade === "A")
+    .sort((a, b) => b.occurrences - a.occurrences)
+    .slice(0, 5);
+  const topA = [...priorityA].sort((a, b) => (b.score ?? 0) - (a.score ?? 0)).slice(0, 10);
 
   return (
     <>
@@ -91,21 +97,22 @@ async function HomeContent() {
       <Section
         id="repeats"
         title="যে প্রশ্ন বারবার ফিরে আসে"
-        lead={`${bn(t.families)}টি প্রশ্ন অন্তত দুটি বিসিএসে এসেছে; এর মধ্যে ${bn(t.families3)}টি এসেছে তিন বা তার বেশি পরীক্ষায়। সেগুলো এখানে।`}
+        lead={`${bn(t.families)}টি প্রশ্ন অন্তত দুটি বিসিএসে এসেছে; এর মধ্যে ${bn(t.families3)}টি এসেছে তিন বা তার বেশি পরীক্ষায়। এখানে Priority A উপবিষয়ের সবচেয়ে বেশিবার আসা ${bn(repeatsA.length)}টি।`}
         aside={<Link href="/repeated-questions" className="text-sm text-green underline underline-offset-4">সব {bn(t.families)}টি প্রশ্ন দেখুন</Link>}
       >
-        <RepeatList families={r.families.filter((f) => f.occurrences >= 3)} />
+        <RepeatList families={repeatsA} />
       </Section>
 
       {/* ── Priority A */}
       <Section
         id="priority"
         title="৫২তম বিসিএসের সর্বোচ্চ অগ্রাধিকার"
-        lead={`${bn(t.subtopics)}টি উপবিষয়ের মধ্যে Priority A পেয়েছে ${bn(priorityA.length)}টি: এগুলো প্রথমে, গভীরভাবে পড়ার এবং প্রতি সপ্তাহে Revision দেওয়ার মতো।`}
+        lead={`${bn(t.subtopics)}টি উপবিষয়ের মধ্যে Priority A পেয়েছে ${bn(priorityA.length)}টি: এগুলো প্রথমে, গভীরভাবে পড়ার এবং প্রতি সপ্তাহে Revision দেওয়ার মতো। এখানে Score অনুযায়ী শীর্ষ ${bn(topA.length)}টি।`}
         aside={<Link href="/research#priority" className="text-sm text-green underline underline-offset-4">পূর্ণ Priority List দেখুন</Link>}
       >
-        <ul className="grid gap-x-10 sm:grid-cols-2">
-          {priorityA.map((s) => (
+        {/* বাঁ কলামে ১–৫, ডান কলামে ৬–১০ */}
+        <ul className="grid gap-x-10 sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-5">
+          {topA.map((s) => (
             <li key={s.code} className="flex items-baseline gap-3 border-b border-line py-2.5">
               <span className="w-10 shrink-0 text-sm tabular text-muted">{bnNum(s.score ?? 0, 1)}</span>
               <span className="text-[15px] leading-snug">
