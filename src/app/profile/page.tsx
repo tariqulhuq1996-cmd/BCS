@@ -37,7 +37,7 @@ async function Content() {
             <ProfileForm initial={{ name: p?.name ?? "", phone: p?.phone ?? "", dailyGoalMin: String(p?.dailyGoalMin ?? 120) }} />
           </div>
         </div>
-        <div>
+        <div id="password" className="scroll-mt-24">
           <h2 className="text-xl font-bold">পাসওয়ার্ড বদলান</h2>
           <div className="mt-5">
             <PasswordForm />
