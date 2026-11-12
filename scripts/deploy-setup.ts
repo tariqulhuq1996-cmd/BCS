@@ -113,20 +113,33 @@ async function main() {
       }
     }
 
-    const email = process.env.ADMIN_EMAIL?.trim().toLowerCase();
-    const password = process.env.ADMIN_PASSWORD ?? "";
-    const admins = await db.user.count({ where: { role: "ADMIN" } });
-    if (admins > 0) {
-      if (password) console.log("[deploy-setup] অ্যাডমিন আগে থেকেই আছে। নিরাপত্তার জন্য Hostinger থেকে ADMIN_PASSWORD মুছে দিন।");
-    } else if (email && password.length >= 10) {
-      const passwordHash = await bcrypt.hash(password, 12);
-      await db.user.upsert({
-        where: { email },
-        update: { role: "ADMIN", passwordHash },
-        create: { email, role: "ADMIN", passwordHash, profile: { create: { name: "অ্যাডমিন" } } },
-      });
-      console.log(`[deploy-setup] প্রথম অ্যাডমিন তৈরি: ${email}। এখন Hostinger থেকে ADMIN_PASSWORD মুছে দিন।`);
-    } else {
+    // অ্যাডমিন: ADMIN_EMAIL ও ADMIN_PASSWORD দেওয়া থাকলে সেই অ্যাকাউন্ট ঠিক ওই পাসওয়ার্ডে অ্যাডমিন করা হয় — প্রতিবার
+    // (নতুন হলে তৈরি, আগে থাকলে পাসওয়ার্ড হালনাগাদ; বন্ধ থাকলে চালু)। লগইনের পর ADMIN_PASSWORD মুছে দিলে আর বদলায় না।
+    // মানের চারপাশের উদ্ধৃতিচিহ্ন বাদ (Hostinger-এ হাতে "…" লিখলে সেটি পাসওয়ার্ডের অংশ হয়ে যেত)।
+    const clean = (v?: string) => (v ?? "").trim().replace(/^["'](.*)["']$/, "$1");
+    const email = clean(process.env.ADMIN_EMAIL).toLowerCase();
+    const password = clean(process.env.ADMIN_PASSWORD);
+    const admins = await db.user.count({ where: { role: "ADMIN", disabled: false } });
+    if (email && password) {
+      if (password.length < 10) {
+        console.warn(`[deploy-setup] ADMIN_PASSWORD ${password.length} অক্ষরের — অন্তত ১০ অক্ষর লাগবে। অ্যাডমিন অ্যাকাউন্ট তৈরি/হালনাগাদ হয়নি।`);
+      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        console.warn(`[deploy-setup] ADMIN_EMAIL সঠিক ইমেইল নয়: "${email}"। অ্যাডমিন অ্যাকাউন্ট তৈরি/হালনাগাদ হয়নি।`);
+      } else {
+        const passwordHash = await bcrypt.hash(password, 12);
+        const existed = await db.user.findUnique({ where: { email }, select: { id: true } });
+        await db.user.upsert({
+          where: { email },
+          update: { role: "ADMIN", passwordHash, disabled: false },
+          create: { email, role: "ADMIN", passwordHash, profile: { create: { name: "অ্যাডমিন" } } },
+        });
+        // আগের ভুল চেষ্টার লগইন-সীমা মুছে দেওয়া, যাতে সঙ্গে সঙ্গে লগইন করা যায়
+        await db.rateHit.deleteMany({ where: { key: { startsWith: `login:${email}:` } } });
+        console.log(
+          `[deploy-setup] অ্যাডমিন অ্যাকাউন্ট প্রস্তুত: ${email} (${existed ? "পাসওয়ার্ড হালনাগাদ" : "নতুন তৈরি"}; পাসওয়ার্ড ${password.length} অক্ষর)। লগইনের পর Hostinger থেকে ADMIN_PASSWORD মুছে দিন।`,
+        );
+      }
+    } else if (admins === 0) {
       console.log("[deploy-setup] কোনো অ্যাডমিন নেই। ADMIN_EMAIL ও ADMIN_PASSWORD (১০+ অক্ষর) দিয়ে আবার Deploy করুন।");
     }
   } finally {

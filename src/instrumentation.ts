@@ -12,7 +12,13 @@ export async function register() {
   // পটভূমিতে চলে, সার্ভার আটকায় না; সব ধাপ বারবার চালানো নিরাপদ। বন্ধ করতে: DB_SETUP_ON_START=0
   if (process.env.NODE_ENV === "production" && process.env.DB_SETUP_ON_START !== "0") {
     const { spawn } = await import("node:child_process");
-    const child = spawn("npx", ["tsx", "scripts/deploy-setup.ts", "--soft", "--on-start"], { cwd: process.cwd(), env: process.env, stdio: "inherit", shell: process.platform === "win32" });
+    const { existsSync } = await import("node:fs");
+    const path = await import("node:path");
+    const tsxCli = path.join(process.cwd(), "node_modules", "tsx", "dist", "cli.mjs");
+    const args = ["scripts/deploy-setup.ts", "--soft", "--on-start"];
+    const child = existsSync(tsxCli)
+      ? spawn(process.execPath, [tsxCli, ...args], { cwd: process.cwd(), env: process.env, stdio: "inherit" })
+      : spawn("npx", ["tsx", ...args], { cwd: process.cwd(), env: process.env, stdio: "inherit", shell: process.platform === "win32" });
     child.on("error", (e) => console.warn("[deploy-setup] চালু করা যায়নি:", e.message));
   }
 }
