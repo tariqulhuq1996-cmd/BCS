@@ -17,7 +17,7 @@ export const DEFAULT_RULES: Record<string, { value: RuleValue; noteBn: string }>
   "path.practice_classes": { value: ["J", "S"], noteBn: "শুধু ঐচ্ছিক অনুশীলনে আসবে এমন শ্রেণি" },
 
   // ── Level 1
-  "l1.threshold.mastery": { value: 80, noteBn: "প্রতিটি বিসিএসের Mastery Test-এ ন্যূনতম %" },
+  "l1.threshold.mastery": { value: 80, noteBn: "প্রতিটি BCS-এর Mastery Test-এ ন্যূনতম %" },
   "l1.threshold.cumulative": { value: 80, noteBn: "Cumulative Revision Test-এ ন্যূনতম %" },
   "l1.threshold.final": { value: 80, noteBn: "Level 1 Final Assessment-এ ন্যূনতম %" },
   "l1.solve.part_size": { value: 50, noteBn: "প্রথম সমাধানে প্রতি ভাগে প্রশ্ন" },
@@ -29,7 +29,7 @@ export const DEFAULT_RULES: Record<string, { value: RuleValue; noteBn: string }>
   "l1.cumulative.base": { value: 20, noteBn: "Cumulative Test: ভিত্তি প্রশ্নসংখ্যা" },
   "l1.cumulative.step": { value: 5, noteBn: "Cumulative Test: প্রতি সম্পন্ন পরীক্ষায় বাড়তি প্রশ্ন" },
   "l1.cumulative.max": { value: 100, noteBn: "Cumulative Test: সর্বোচ্চ প্রশ্ন" },
-  "l1.cumulative.min_per_exam": { value: 2, noteBn: "Cumulative Test-এ প্রতিটি আগের বিসিএস থেকে ন্যূনতম প্রশ্ন" },
+  "l1.cumulative.min_per_exam": { value: 2, noteBn: "Cumulative Test-এ প্রতিটি আগের BCS থেকে ন্যূনতম প্রশ্ন" },
   "l1.final.size": { value: 100, noteBn: "Level 1 Final Assessment-এর প্রশ্নসংখ্যা" },
   "shuffle.options": { value: true, noteBn: "Revision/Mastery/Cumulative-এ অপশনের ক্রম এলোমেলো (\"সবগুলো\"/\"কোনটিই নয়\" ধরনের অপশন থাকলে নয়)" },
 

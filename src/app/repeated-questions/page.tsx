@@ -35,10 +35,10 @@ async function RepeatedQuestionsPageContent() {
   return (
     <section className="mx-auto max-w-4xl px-4 pt-12 sm:px-6">
       <h1 className="text-[36px] font-extrabold sm:text-[46px]" style={{ fontStretch: "112%" }}>
-        যে {bn(r.totals.families)}টি প্রশ্ন একাধিক বিসিএসে এসেছে
+        যে {bn(r.totals.families)}টি প্রশ্ন একাধিক BCS-এ এসেছে
       </h1>
       <p className="mt-3 max-w-2xl text-lg text-ink-2">
-        হুবহু একই প্রশ্ন, অথবা একই তথ্য ভিন্নভাবে জিজ্ঞাসা। যতগুলো পরীক্ষায় এসেছে সেই অনুযায়ী সাজানো; প্রতিটির পাশে কোন কোন বিসিএসে এসেছে।
+        হুবহু একই প্রশ্ন, অথবা একই তথ্য ভিন্নভাবে জিজ্ঞাসা। যতগুলো পরীক্ষায় এসেছে সেই অনুযায়ী সাজানো; প্রতিটির পাশে কোন কোন BCS-এ এসেছে।
       </p>
       <nav aria-label="কতবার এসেছে" className="mt-6 flex flex-wrap gap-2">
         {groups.map((g) => (

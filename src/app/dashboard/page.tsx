@@ -20,7 +20,7 @@ export default function DashboardPage() {
   );
 }
 
-const LEVEL_NAME = ["", "বিগত বিসিএসের প্রশ্ন", "টপিকভিত্তিক প্রশ্ন", "পূর্ণাঙ্গ Model Test"];
+const LEVEL_NAME = ["", "বিগত BCS-এর প্রশ্ন", "টপিকভিত্তিক প্রশ্ন", "পূর্ণাঙ্গ Model Test"];
 
 async function Dashboard() {
   const user = await requireUser("/dashboard");
@@ -125,7 +125,7 @@ async function Dashboard() {
 
         <div className="mt-8 rounded-xl border border-line bg-surface p-5">
           <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
-            <h3 className="font-semibold">Level ১: ১০ম থেকে ৫০তম বিসিএস</h3>
+            <h3 className="font-semibold">Level ১: ১০ম থেকে ৫০তম BCS</h3>
             <Link href="/level-1" className="text-sm text-green underline underline-offset-4">বিস্তারিত দেখো</Link>
           </div>
           <ExamBubbles
@@ -152,7 +152,7 @@ async function Dashboard() {
               ))}
             </ul>
           ) : (
-            <p className="mt-4 text-ink-2">এখনও কোনো পরীক্ষা দাওনি। ১০ম বিসিএসের প্রশ্নপত্র দিয়ে শুরু করো — ফলাফল এখানে জমা হবে।</p>
+            <p className="mt-4 text-ink-2">এখনও কোনো পরীক্ষা দাওনি। ১০ম BCS-এর প্রশ্নপত্র দিয়ে শুরু করো — ফলাফল এখানে জমা হবে।</p>
           )}
         </section>
 

@@ -12,7 +12,7 @@ export function bnNum(n: number, fractionDigits = 0): string {
   ).replace(/^-/, "−"); // সঠিক বিয়োগ-চিহ্ন
 }
 
-/** "১০ম", "১১তম" … বিসিএস ক্রমবাচক */
+/** "১০ম", "১১তম" … BCS ক্রমবাচক */
 export function bnOrdinal(n: number): string {
   return n === 10 ? "১০ম" : `${bn(n)}তম`;
 }

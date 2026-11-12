@@ -56,7 +56,7 @@ async function Content({ searchParams }: { searchParams: Promise<SP> }) {
 
       <form className="mt-6 flex flex-wrap items-end gap-2" role="search">
         <input name="q" defaultValue={s("q")} placeholder="লেখা বা uid" aria-label="খুঁজুন" className={`${input} w-56`} />
-        <select name="kind" defaultValue={s("kind")} aria-label="ধরন" className={input}><option value="">সব ধরন</option><option value="HISTORICAL">বিগত বিসিএস</option><option value="TOPIC">Level ২</option></select>
+        <select name="kind" defaultValue={s("kind")} aria-label="ধরন" className={input}><option value="">সব ধরন</option><option value="HISTORICAL">বিগত BCS</option><option value="TOPIC">Level ২</option></select>
         <select name="status" defaultValue={s("status")} aria-label="অবস্থা" className={input}><option value="">সব অবস্থা</option>{Object.entries(STATUS_BN).filter(([k]) => k !== "APPROVED").map(([k, v]) => <option key={k} value={k}>{v}</option>)}</select>
         <select name="expl" defaultValue={s("expl")} aria-label="ব্যাখ্যা" className={input}><option value="">সব ব্যাখ্যা</option><option value="NONE">ব্যাখ্যা নেই</option><option value="DRAFT">ব্যাখ্যা খসড়া</option><option value="VERIFIED">ব্যাখ্যা যাচাইকৃত</option></select>
         <select name="subject" defaultValue={s("subject")} aria-label="বিষয়" className={input}><option value="">সব বিষয়</option>{subjects.map((x) => <option key={x.code} value={x.code}>{x.nameBn}</option>)}</select>

@@ -64,7 +64,7 @@ async function Content({ params, searchParams }: { params: Promise<{ code: strin
       steps={L2_STEPS}
       facts={[
         { k: "Priority Score", v: st.priorityScore != null ? bnNum(st.priorityScore, 1) : "—" },
-        { k: "বিগত বিসিএসে প্রশ্ন", v: st.histTotal != null ? `${bn(st.histTotal)}টি` : "—" },
+        { k: "বিগত BCS-এ প্রশ্ন", v: st.histTotal != null ? `${bn(st.histTotal)}টি` : "—" },
         { k: "অনুশীলনের প্রশ্ন", v: st.targetQuestions ? `${bn(st._count.questions)}/${bn(st.targetQuestions)}টি প্রকাশিত` : `${bn(st._count.questions)}টি` },
         { k: "Mastery-তে লাগবে", v: `${bn(rules.get<number>("l2.threshold.mastery"))}%` },
       ]}
@@ -80,14 +80,14 @@ async function Content({ params, searchParams }: { params: Promise<{ code: strin
         </dl>
         {st.questions.length > 0 && (
           <details className="mt-5 rounded-xl border border-line bg-surface">
-            <summary className="cursor-pointer px-5 py-3 font-semibold">এই উপবিষয়ে বিগত বিসিএসের প্রশ্ন ({bn(st.questions.length)}টি সাম্প্রতিক)</summary>
+            <summary className="cursor-pointer px-5 py-3 font-semibold">এই উপবিষয়ে বিগত BCS-এর প্রশ্ন ({bn(st.questions.length)}টি সাম্প্রতিক)</summary>
             <ol className="divide-y divide-line border-t border-line">
               {st.questions.map((q) => (
                 <li key={q.id} className="px-5 py-3 text-[15px]">
                   <p className="font-medium">{q.text}</p>
                   <p className="mt-1 text-ink-2">
                     উত্তর: <span className="font-semibold text-green">{q.correctIndex != null ? `${LETTERS[q.correctIndex]}) ${q.options[q.correctIndex]}` : "—"}</span>
-                    <span className="ml-2 text-sm text-muted">{q.exam ? `${bnOrdinal(q.exam.bcsNo)} বিসিএস` : ""}</span>
+                    <span className="ml-2 text-sm text-muted">{q.exam ? `${bnOrdinal(q.exam.bcsNo)} BCS` : ""}</span>
                   </p>
                 </li>
               ))}

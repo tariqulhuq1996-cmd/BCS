@@ -4,7 +4,7 @@ import { useState } from "react";
 import { bn, bnNum } from "@/lib/bn";
 import type { ResearchData } from "@/lib/research/data";
 
-const TAB_LABEL: Record<string, string> = { GENERAL_100: "১০০ নম্বরের পরীক্ষা", GENERAL_200: "২০০ নম্বরের পরীক্ষা", SPECIAL: "বিশেষ বিসিএস" };
+const TAB_LABEL: Record<string, string> = { GENERAL_100: "১০০ নম্বরের পরীক্ষা", GENERAL_200: "২০০ নম্বরের পরীক্ষা", SPECIAL: "বিশেষ BCS" };
 
 /** বিষয়ভিত্তিক গড় প্রশ্ন (পরীক্ষাপ্রতি), তিন ধরনের পরীক্ষা আলাদা ট্যাবে। ২০০-ট্যাবে ৫১তম থেকে নতুন মানবণ্টনের দাগ। */
 export function SubjectShare({ data, marks200 }: { data: ResearchData["subjectByType"]; marks200: Record<string, number> }) {
@@ -35,7 +35,7 @@ export function SubjectShare({ data, marks200 }: { data: ResearchData["subjectBy
       </div>
 
       <p className="mt-4 text-sm text-muted">
-        {cur.examNos.map((n) => bn(n)).join(", ")} বিসিএসের গড়
+        {cur.examNos.map((n) => bn(n)).join(", ")} BCS-এর গড়
       </p>
 
       {table ? (
@@ -89,7 +89,7 @@ export function SubjectShare({ data, marks200 }: { data: ResearchData["subjectBy
       {showMarks && !table && (
         <p className="mt-4 flex items-center gap-2 text-sm text-muted">
           <span className="inline-block h-4 w-[3px] rounded bg-omr" aria-hidden="true" />
-          ৫১তম বিসিএস থেকে প্রতিটি বিষয়ের নির্ধারিত নম্বর (২০০-এর মধ্যে)
+          ৫১তম BCS থেকে প্রতিটি বিষয়ের নির্ধারিত নম্বর (২০০-এর মধ্যে)
         </p>
       )}
     </div>

@@ -6,7 +6,7 @@ import { bn, bnNum, bnOrdinal } from "@/lib/bn";
 
 type Point = { bcsNo: number; shares: Record<string, number>; counts: Record<string, number>; total: number; partial: boolean };
 
-/** একটি বিষয়ের অংশ (%) সব সাধারণ বিসিএসে — গুরুত্ব কখন বেড়েছে/কমেছে। */
+/** একটি বিষয়ের অংশ (%) সব সাধারণ BCS-এ — গুরুত্ব কখন বেড়েছে/কমেছে। */
 export function SubjectTimeline({ points, subjects }: { points: Point[]; subjects: { code: string; nameBn: string }[] }) {
   const [code, setCode] = useState(subjects[2]?.code ?? subjects[0].code);
   const data = useMemo(() => points.map((p) => ({ x: p.bcsNo, v: p.shares[code] ?? 0, c: p.counts[code] ?? 0, t: p.total, partial: p.partial })), [points, code]);
@@ -30,7 +30,7 @@ export function SubjectTimeline({ points, subjects }: { points: Point[]; subject
           ))}
         </select>
       </label>
-      <div className="mt-4 h-72 w-full" role="img" aria-label={`${subjectName}: প্রতিটি সাধারণ বিসিএসে প্রশ্নের অংশ`}>
+      <div className="mt-4 h-72 w-full" role="img" aria-label={`${subjectName}: প্রতিটি সাধারণ BCS-এ প্রশ্নের অংশ`}>
         <ResponsiveContainer>
           <BarChart data={data} margin={{ top: 8, right: 8, bottom: 8, left: 0 }} barCategoryGap={2}>
             <CartesianGrid vertical={false} stroke="var(--line)" />
@@ -53,7 +53,7 @@ export function SubjectTimeline({ points, subjects }: { points: Point[]; subject
                 const d = payload[0].payload as (typeof data)[number];
                 return (
                   <div className="rounded-md border border-line bg-surface px-3 py-2 text-sm shadow-sm">
-                    <p className="font-semibold">{bnOrdinal(d.x)} বিসিএস</p>
+                    <p className="font-semibold">{bnOrdinal(d.x)} BCS</p>
                     <p className="text-ink-2">
                       {bn(d.t)}টির মধ্যে {bn(d.c)}টি প্রশ্ন ({bnNum(d.v, 1)}%)
                     </p>
@@ -73,7 +73,7 @@ export function SubjectTimeline({ points, subjects }: { points: Point[]; subject
       {partials.length > 0 && (
         <p className="mt-2 flex items-center gap-2 text-sm text-muted">
           <span className="inline-block size-3 rounded-[3px] bg-[var(--before)]" aria-hidden="true" />
-          ধূসর: আংশিক প্রশ্নপত্র ({partials.join(", ")} বিসিএস) — ডেটাসেটে সব প্রশ্ন নেই
+          ধূসর: আংশিক প্রশ্নপত্র ({partials.join(", ")} BCS) — ডেটাসেটে সব প্রশ্ন নেই
         </p>
       )}
     </div>

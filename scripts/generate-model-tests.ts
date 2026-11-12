@@ -2,7 +2,7 @@
  * Model Test তৈরি (খসড়া) ও অনুমোদন।
  *   npx tsx scripts/generate-model-tests.ts --from 1 --to 50 [--seed 52]      খসড়া তৈরি/নতুন করে তৈরি
  *   npx tsx scripts/generate-model-tests.ts --approve --from 1 --to 50        অনুমোদন (প্রকাশ)
- * Level 2-এর প্রশ্নভান্ডার Import হওয়ার পরে চালানো উচিত — নইলে শুধু বিগত বিসিএসের প্রশ্ন থেকে তৈরি হবে।
+ * Level 2-এর প্রশ্নভান্ডার Import হওয়ার পরে চালানো উচিত — নইলে শুধু বিগত BCS-এর প্রশ্ন থেকে তৈরি হবে।
  */
 import { PrismaClient } from "@prisma/client";
 import { approveModelTests, generateModelTests } from "../src/lib/exam/model-tests";

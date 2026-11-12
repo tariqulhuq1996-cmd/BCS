@@ -35,7 +35,7 @@ async function main() {
   // ── Roadmap-গ্রাফ
   const tasks = await db.learningTask.findMany({ include: { prerequisites: true, exam: true, subtopic: true, level: true } });
   const roots = tasks.filter((t) => t.prerequisites.length === 0);
-  check("Roadmap-এর শুরু একটিই (১০ম বিসিএস)", roots.length === 1 && roots[0].key === "L1:EXAM:10", roots.map((r) => r.key));
+  check("Roadmap-এর শুরু একটিই (১০ম BCS)", roots.length === 1 && roots[0].key === "L1:EXAM:10", roots.map((r) => r.key));
   const byId = new Map(tasks.map((t) => [t.id, t]));
   const seen = new Set<number>();
   const order: number[] = [];
@@ -59,7 +59,7 @@ async function main() {
   while (stack.length) for (const c of children.get(stack.pop()!) ?? []) if (!reach.has(c)) { reach.add(c); stack.push(c); }
   check("প্রতিটি ধাপে শুরু থেকে পৌঁছানো যায়", reach.size === tasks.length, { reach: reach.size, total: tasks.length });
   check("কাজ: Level ১ = ৪২, Level ২ = ২৭৩, Level ৩ = ১৫২", [1, 2, 3].map((n) => tasks.filter((t) => t.level.no === n).length).join() === "42,273,152");
-  check("প্রতিটি বিসিএস-ধাপের সঙ্গে পরীক্ষা, উপবিষয়-ধাপের সঙ্গে উপবিষয়", tasks.every((t) => (t.kind !== "L1_EXAM" || t.exam) && (t.kind !== "L2_SUBTOPIC" || t.subtopic)));
+  check("প্রতিটি BCS-ধাপের সঙ্গে পরীক্ষা, উপবিষয়-ধাপের সঙ্গে উপবিষয়", tasks.every((t) => (t.kind !== "L1_EXAM" || t.exam) && (t.kind !== "L2_SUBTOPIC" || t.subtopic)));
 
   // ── নিয়ম
   const rules = await db.ruleSetting.findMany({ where: { scope: "global" } });

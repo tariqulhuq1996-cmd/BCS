@@ -6,7 +6,7 @@ import { withWriteRetry } from "@/lib/db-retry";
  *
  * নিয়ম:
  *  - কোনো কাজের অবস্থা-সারি না থাকলে সেটি LOCKED।
- *  - পূর্বশর্তহীন কাজ (১০ম বিসিএস) শিক্ষার্থীর জন্য প্রথমেই AVAILABLE।
+ *  - পূর্বশর্তহীন কাজ (১০ম BCS) শিক্ষার্থীর জন্য প্রথমেই AVAILABLE।
  *  - একটি কাজ COMPLETED হলে, যেসব কাজের সব পূর্বশর্ত এখন COMPLETED, সেগুলো AVAILABLE হয় — একই Transaction-এ।
  *  - অ্যাডমিন হাতে Unlock করলে overrideBy/overrideAt-সহ AVAILABLE হয়।
  *

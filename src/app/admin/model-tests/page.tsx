@@ -35,7 +35,7 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
       <AdminTitle title="Model Test" lead="খসড়া তৈরি → দেখে নিন → অনুমোদন (প্রকাশ)। প্রকাশিত টেস্ট আর বদলায় না, তাই Level ২-এর প্রশ্নভান্ডার যুক্ত ও প্রকাশ করার পরে তৈরি করুন।" />
       {typeof sp.ok === "string" && <Notice>{sp.ok}</Notice>}
       {typeof sp.err === "string" && <Notice kind="error">{sp.err}</Notice>}
-      {topicPub === 0 && <Notice kind="error">Level ২-এর কোনো প্রশ্ন এখনও প্রকাশিত হয়নি। এখন তৈরি করলে টেস্টগুলো শুধু বিগত বিসিএসের প্রশ্ন থেকে আসবে।</Notice>}
+      {topicPub === 0 && <Notice kind="error">Level ২-এর কোনো প্রশ্ন এখনও প্রকাশিত হয়নি। এখন তৈরি করলে টেস্টগুলো শুধু বিগত BCS-এর প্রশ্ন থেকে আসবে।</Notice>}
 
       <div className="mt-6 grid gap-4 md:grid-cols-2">
         <form action={generateModelTestsAction} className="grid gap-3 rounded-xl border border-line bg-surface p-5">
@@ -93,7 +93,7 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
                   বিষয়ভিত্তিক: {Object.entries(bp.subjects ?? {}).map(([c, n]) => `${c} ${bn(n)}/${bn(bp.target?.[c] ?? 0)}`).join(", ")}
                 </p>
                 <p className="mt-1 text-[15px] text-ink-2">কঠিনতা: সহজ {bn(bp.difficulty?.EASY ?? 0)}, মাঝারি {bn(bp.difficulty?.MEDIUM ?? 0)}, কঠিন {bn(bp.difficulty?.HARD ?? 0)}</p>
-                <p className="mt-1 text-[15px] text-ink-2">উৎস: বিগত বিসিএস {bnNum(detail.questions.filter((q) => q.question.kind === "HISTORICAL").length)}টি, Level ২ {bnNum(detail.questions.filter((q) => q.question.kind === "TOPIC").length)}টি</p>
+                <p className="mt-1 text-[15px] text-ink-2">উৎস: বিগত BCS {bnNum(detail.questions.filter((q) => q.question.kind === "HISTORICAL").length)}টি, Level ২ {bnNum(detail.questions.filter((q) => q.question.kind === "TOPIC").length)}টি</p>
                 {(bp.warnings ?? []).length > 0 && <ul className="mt-2 list-disc pl-5 text-sm text-danger">{bp.warnings!.map((w) => <li key={w}>{w}</li>)}</ul>}
               </>
             );

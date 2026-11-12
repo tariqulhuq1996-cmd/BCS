@@ -14,9 +14,9 @@ export function SiteHeader() {
   return (
     <header className="border-b border-line bg-paper/90 backdrop-blur supports-[backdrop-filter]:bg-paper/80 sticky top-0 z-40">
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4 sm:gap-6 sm:px-6">
-        <Link href="/" aria-label="বিসিএস ৫২ প্রস্তুতি — হোমপেজ" className="flex shrink-0 items-center gap-2 whitespace-nowrap font-display text-base font-bold sm:text-lg" style={{ fontStretch: "115%" }}>
+        <Link href="/" aria-label="BCS ৫২ প্রস্তুতি — হোমপেজ" className="flex shrink-0 items-center gap-2 whitespace-nowrap font-display text-base font-bold sm:text-lg" style={{ fontStretch: "115%" }}>
           <Bubbles />
-          <span className="max-[359px]:hidden">বিসিএস ৫২ প্রস্তুতি</span>
+          <span className="max-[359px]:hidden">BCS ৫২ প্রস্তুতি</span>
         </Link>
         <nav aria-label="প্রধান" className="hidden md:flex items-center gap-5 text-[15px] text-ink-2">
           {NAV.map((n) => (

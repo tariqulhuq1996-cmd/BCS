@@ -209,7 +209,7 @@ async function describeAction(t: TaskView, tasks: TaskView[], rules: Awaited<Ret
     const eligible = rules.get<string[]>("path.eligible_classes");
     const n = await prisma.question.count({ where: { exam: { bcsNo: t.bcsNo }, status: "PUBLISHED", verifyClass: { in: eligible } } });
     const parts = Math.ceil(n / rules.get<number>("l1.solve.part_size"));
-    const where = `তুমি বর্তমানে Level ১-এর ${bnOrdinal(t.bcsNo!)} বিসিএস পর্যায়ে আছো।`;
+    const where = `তুমি বর্তমানে Level ১-এর ${bnOrdinal(t.bcsNo!)} BCS পর্যায়ে আছো।`;
     const thr = pct("l1.threshold.mastery");
     const byStep: Record<StepKey, string> = {
       SOLVE: `${congrats}${where} প্রথমে নির্ধারিত ${bn(n)}টি প্রশ্ন সমাধান করো${parts > 1 ? ` (${bn(parts)}টি ভাগে)` : ""}। এরপর উত্তর পর্যালোচনা ও Revision Test।`,
@@ -227,7 +227,7 @@ async function describeAction(t: TaskView, tasks: TaskView[], rules: Awaited<Ret
   }
   if (t.kind === "L1_FINAL")
     return {
-      text: `${congrats}১০ম–৫০তম সব বিসিএসের Learning Cycle শেষ। এখন সব পরীক্ষা থেকে ${bn(rules.get<number>("l1.final.size"))}টি প্রশ্নের Level ১ Final Assessment দাও; পাস করতে ${pct("l1.threshold.final")}% লাগবে।`,
+      text: `${congrats}১০ম–৫০তম সব BCS-এর Learning Cycle শেষ। এখন সব পরীক্ষা থেকে ${bn(rules.get<number>("l1.final.size"))}টি প্রশ্নের Level ১ Final Assessment দাও; পাস করতে ${pct("l1.threshold.final")}% লাগবে।`,
       button: "Final Assessment শুরু করো", stepLabel: "Final Assessment", href: t.href,
     };
   if (t.kind === "L2_SUBTOPIC") {

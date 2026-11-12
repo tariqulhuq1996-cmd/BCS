@@ -35,8 +35,8 @@ async function Content({ params, searchParams }: { params: Promise<{ bcsNo: stri
     return (
       <StepPage
         task={task}
-        levelLabel="Level ১: বিগত বিসিএসের প্রশ্ন আয়ত্ত"
-        steps={[{ key: "SOLVE", label: "Final Assessment", desc: `১০ম–৫০তম সব বিসিএস থেকে ${bn(rules.get<number>("l1.final.size"))}টি প্রশ্ন।` }]}
+        levelLabel="Level ১: বিগত BCS-এর প্রশ্ন আয়ত্ত"
+        steps={[{ key: "SOLVE", label: "Final Assessment", desc: `১০ম–৫০তম সব BCS থেকে ${bn(rules.get<number>("l1.final.size"))}টি প্রশ্ন।` }]}
         facts={[{ k: "পাস করতে", v: `${bn(rules.get<number>("l1.threshold.final"))}%` }, { k: "পাস করলে", v: "Level ২ খুলবে" }]}
       >
         <L1StepActions task={task} userId={user.id} error={error} />
@@ -54,17 +54,17 @@ async function Content({ params, searchParams }: { params: Promise<{ bcsNo: stri
   return (
     <StepPage
       task={task}
-      levelLabel="Level ১: বিগত বিসিএসের প্রশ্ন আয়ত্ত"
+      levelLabel="Level ১: বিগত BCS-এর প্রশ্ন আয়ত্ত"
       steps={steps}
       facts={[
-        { k: "পরীক্ষার ধরন", v: exam?.type === "SPECIAL" ? "বিশেষ বিসিএস" : exam?.type === "GENERAL_200" ? "২০০ নম্বর" : "১০০ নম্বর" },
+        { k: "পরীক্ষার ধরন", v: exam?.type === "SPECIAL" ? "বিশেষ BCS" : exam?.type === "GENERAL_200" ? "২০০ নম্বর" : "১০০ নম্বর" },
         { k: "বাধ্যতামূলক প্রশ্ন", v: `${bn(n)}টি (যাচাইকৃত)` },
         { k: "Mastery-তে লাগবে", v: `${bn(rules.get<number>("l1.threshold.mastery"))}%` },
         ...(no > 10 ? [{ k: "Cumulative-এ লাগবে", v: `${bn(rules.get<number>("l1.threshold.cumulative"))}%` }] : []),
         ...(task.bestScore != null ? [{ k: "তোমার সেরা স্কোর", v: `${bn(Math.round(task.bestScore))}%` }] : []),
       ]}
     >
-      {exam?.notesBn && <p className="mt-6 text-sm text-danger">{bnOrdinal(no)} বিসিএস: {exam.notesBn}</p>}
+      {exam?.notesBn && <p className="mt-6 text-sm text-danger">{bnOrdinal(no)} BCS: {exam.notesBn}</p>}
       <L1StepActions task={task} userId={user.id} error={error} />
     </StepPage>
   );

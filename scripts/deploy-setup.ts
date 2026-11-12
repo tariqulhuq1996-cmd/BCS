@@ -97,6 +97,10 @@ async function main() {
       run("npx tsx scripts/verify-data.ts");
     }
 
+    // পুরোনো ডেটায় প্রশ্নের উৎস "…তম বিসিএস প্রিলিমিনারি" — এখন সাইটজুড়ে "BCS Preliminary" (একবারই বদলায়)
+    const fixed = await db.$executeRaw`UPDATE Question SET source = REPLACE(source, ${"বিসিএস প্রিলিমিনারি"}, ${"BCS Preliminary"}) WHERE source LIKE ${"%বিসিএস প্রিলিমিনারি%"}`;
+    if (fixed) console.log(`[deploy-setup] ${fixed}টি প্রশ্নের উৎস "BCS Preliminary"-তে হালনাগাদ`);
+
     // Current Affairs: data/source/current-affairs/<key>.docx — যে ব্যাংক ডেটাবেসে নেই, সেটি বসানো।
     // পরে নতুন সংস্করণ অ্যাডমিন প্যানেল → Current Affairs থেকে Import করা হয় (এখানে আর বদলায় না)।
     const caDir = path.resolve(__dirname, "..", "data", "source", "current-affairs");

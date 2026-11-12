@@ -1,4 +1,4 @@
-// ৫২তম বিসিএস প্রিলিমিনারি প্রস্তুতি প্ল্যাটফর্ম — ডেটাবেস স্কিমা
+// ৫২তম BCS Preliminary প্রস্তুতি প্ল্যাটফর্ম — ডেটাবেস স্কিমা
 // নকশার ব্যাখ্যা: docs/ARCHITECTURE.md
 
 generator client {
@@ -128,7 +128,7 @@ model Subtopic {
   order           Int
   priorityGrade   PriorityGrade?
   priorityScore   Float?
-  histTotal       Int? // সাধারণ বিসিএসে মোট প্রশ্ন
+  histTotal       Int? // সাধারণ BCS-এ মোট প্রশ্ন
   presenceAll     String? // যেমন "২৪/৩২"
   presence200     String? // যেমন "১১/১২"
   recentCount     Int?
@@ -168,7 +168,7 @@ model Exam {
 }
 
 enum QuestionKind {
-  HISTORICAL // ১০ম–৫০তম বিসিএসের প্রকৃত প্রশ্ন
+  HISTORICAL // ১০ম–৫০তম BCS-এর প্রকৃত প্রশ্ন
   TOPIC // Level 2-এর নতুন প্রশ্ন
 }
 
@@ -193,7 +193,7 @@ enum Difficulty {
 
 model Question {
   id                String            @id @default(cuid())
-  uid               String            @unique // H-<বিসিএস>-<প্রশ্ন নং> বা T-<subtopic>-<ক্রম>
+  uid               String            @unique // H-<BCS>-<প্রশ্ন নং> বা T-<subtopic>-<ক্রম>
   kind              QuestionKind
   text              String            @db.Text
   /// [StringList]
@@ -284,7 +284,7 @@ model LearningLevel {
 }
 
 enum TaskKind {
-  L1_EXAM // একটি বিসিএস পরীক্ষার পূর্ণ Cycle
+  L1_EXAM // একটি BCS পরীক্ষার পূর্ণ Cycle
   L1_FINAL
   L2_SUBTOPIC
   L2_CHECKPOINT // Priority Phase শেষের পরীক্ষা

@@ -26,8 +26,8 @@ async function main() {
     await ensureStarted(db, a.id);
     await ensureStarted(db, a.id); // দ্বিতীয়বার ডাকলেও কিছু বদলাবে না
     const open = await db.studentTaskProgress.findMany({ where: { userId: a.id }, include: { task: true } });
-    check("শুরুতে শুধু ১০ম বিসিএস খোলা", open.length === 1 && open[0].task.key === "L1:EXAM:10", JSON.stringify(open.map((o) => o.task.key)));
-    check("১১তম বিসিএস তালাবন্ধ", !(await canAccess(db, a.id, await T("L1:EXAM:11"))));
+    check("শুরুতে শুধু ১০ম BCS খোলা", open.length === 1 && open[0].task.key === "L1:EXAM:10", JSON.stringify(open.map((o) => o.task.key)));
+    check("১১তম BCS তালাবন্ধ", !(await canAccess(db, a.id, await T("L1:EXAM:11"))));
     check("Level 2 তালাবন্ধ", !(await canAccess(db, a.id, await T("L2:SUB:BN.BH.SHD"))));
 
     let threw = false;

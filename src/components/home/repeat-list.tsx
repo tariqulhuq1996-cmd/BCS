@@ -4,7 +4,7 @@ import type { ResearchData } from "@/lib/research/data";
 
 const LETTERS = ["ক", "খ", "গ", "ঘ"];
 
-/** পুনরাবৃত্ত প্রশ্ন-পরিবার: প্রশ্ন, সঠিক উত্তর, কোন কোন বিসিএসে এসেছে। */
+/** পুনরাবৃত্ত প্রশ্ন-পরিবার: প্রশ্ন, সঠিক উত্তর, কোন কোন BCS-এ এসেছে। */
 export function RepeatList({ families }: { families: ResearchData["families"] }) {
   return (
     <ol className="divide-y divide-line border-y border-line">

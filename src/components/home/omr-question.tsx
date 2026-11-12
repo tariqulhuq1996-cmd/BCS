@@ -24,7 +24,7 @@ export function OmrQuestion({ text, options, correctIndex, examNos, explanation,
   return (
     <div className="rounded-xl border border-line bg-surface p-5 sm:p-6 shadow-[0_1px_0_var(--line)]">
       <p className="text-sm text-muted">
-        এই প্রশ্নটি এসেছে {examsText} বিসিএসে। উত্তর দিয়ে দেখুন।
+        এই প্রশ্নটি এসেছে {examsText} BCS-এ। উত্তর দিয়ে দেখুন।
       </p>
       <p className="mt-3 text-lg font-semibold leading-relaxed text-ink">{text}</p>
       <fieldset className="mt-4" disabled={done}>

@@ -76,7 +76,7 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
       <section className="mt-10">
         <h2 className="text-xl font-bold">নির্দিষ্ট ধাপের ব্যতিক্রম</h2>
         <p className="mt-1 text-[15px] text-ink-2">
-          যেমন শুধু ৩৯তম বিসিএসে Mastery-র Threshold ৭৫% করতে: নিয়ম <code>l1.threshold.mastery</code>, পরিসর <code>task:L1:EXAM:39</code>, মান <code>75</code>।
+          যেমন শুধু ৩৯তম BCS-এ Mastery-র Threshold ৭৫% করতে: নিয়ম <code>l1.threshold.mastery</code>, পরিসর <code>task:L1:EXAM:39</code>, মান <code>75</code>।
           পরিসর হতে পারে <code>task:&lt;কাজের key&gt;</code> বা <code>level:1</code>/<code>level:2</code>।
         </p>
         {overrides.length > 0 && (

@@ -9,7 +9,7 @@ import { Suspense } from "react";
 import { connection } from "next/server";
 import { requireUser } from "@/lib/auth/session";
 
-export const metadata: Metadata = { title: "গবেষণা: ১০ম–৫০তম বিসিএস" };
+export const metadata: Metadata = { title: "গবেষণা: ১০ম–৫০তম BCS" };
 
 const TYPE_BN = { GENERAL_100: "১০০ নম্বর", GENERAL_200: "২০০ নম্বর", SPECIAL: "বিশেষ" } as const;
 
@@ -41,7 +41,7 @@ async function ResearchPageContent() {
     <>
       <section className="mx-auto max-w-6xl px-4 pt-12 sm:px-6">
         <h1 className="text-[36px] font-extrabold sm:text-[46px]" style={{ fontStretch: "112%" }}>
-          ১০ম–৫০তম বিসিএস: পূর্ণ গবেষণা
+          ১০ম–৫০তম BCS: পূর্ণ গবেষণা
         </h1>
         <p className="mt-3 max-w-2xl text-lg text-ink-2">
           {bn(r.totals.exams)}টি প্রিলিমিনারি পরীক্ষার {bnNum(r.totals.questions)}টি প্রশ্ন, {bn(r.totals.subtopics)}টি উপবিষয়ে ভাগ করা। নিচের প্রতিটি সারণি ও চার্ট
@@ -50,24 +50,24 @@ async function ResearchPageContent() {
         <nav aria-label="এই পাতায়" className="mt-6 flex flex-wrap gap-x-5 gap-y-1 text-[15px] text-green">
           <a href="#priority" className="underline underline-offset-4">Priority List</a>
           <a href="#heatmap" className="underline underline-offset-4">উপবিষয় × পরীক্ষা</a>
-          <a href="#special" className="underline underline-offset-4">বিশেষ বিসিএস</a>
+          <a href="#special" className="underline underline-offset-4">বিশেষ BCS</a>
           <a href="#exams" className="underline underline-offset-4">পরীক্ষার তালিকা</a>
         </nav>
       </section>
 
-      <Section id="priority" title="৫২তম বিসিএস Priority List" lead="সব উপবিষয়ের Priority Score (১০০-এর মধ্যে) ও A–D শ্রেণি, কারণ ও পড়ার পরামর্শসহ।">
+      <Section id="priority" title="৫২তম BCS Priority List" lead="সব উপবিষয়ের Priority Score (১০০-এর মধ্যে) ও A–D শ্রেণি, কারণ ও পড়ার পরামর্শসহ।">
         <SubtopicTable rows={r.subtopics} subjects={r.subjects} />
-        <SourceNote>উৎস: গবেষণার ধাপ ০৯। &ldquo;মোট প্রশ্ন&rdquo; সব সাধারণ বিসিএসে (১৯তমসহ)।</SourceNote>
+        <SourceNote>উৎস: গবেষণার ধাপ ০৯। &ldquo;মোট প্রশ্ন&rdquo; সব সাধারণ BCS-এ (১৯তমসহ)।</SourceNote>
       </Section>
 
-      <Section id="heatmap" title="উপবিষয় × সাধারণ বিসিএস" lead={`প্রতিটি উপবিষয়ে ${bn(r.heat.exams.length)}টি সাধারণ বিসিএসের প্রতিটিতে কতটি প্রশ্ন এসেছে।`}>
+      <Section id="heatmap" title="উপবিষয় × সাধারণ BCS" lead={`প্রতিটি উপবিষয়ে ${bn(r.heat.exams.length)}টি সাধারণ BCS-এর প্রতিটিতে কতটি প্রশ্ন এসেছে।`}>
         <HeatmapExplorer rows={r.heat.rows} exams={r.heat.exams} subjects={r.subjects} />
       </Section>
 
       <Section
         id="special"
-        title="বিশেষ বিসিএস আলাদা কেন"
-        lead={`${special.examNos.map(bnOrdinal).join(", ")} বিসিএস বিশেষ পরীক্ষা হিসেবে চিহ্নিত। এগুলোতে বিষয়ের ভার সাধারণ পরীক্ষা থেকে আলাদা, তাই প্রবণতার হিসাবে মেশানো হয়নি।`}
+        title="বিশেষ BCS আলাদা কেন"
+        lead={`${special.examNos.map(bnOrdinal).join(", ")} BCS বিশেষ পরীক্ষা হিসেবে চিহ্নিত। এগুলোতে বিষয়ের ভার সাধারণ পরীক্ষা থেকে আলাদা, তাই প্রবণতার হিসাবে মেশানো হয়নি।`}
       >
         <div className="overflow-x-auto rounded-lg border border-line bg-surface">
           <table className="w-full min-w-[34rem] text-left text-[15px] tabular">

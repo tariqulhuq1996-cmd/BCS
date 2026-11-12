@@ -111,7 +111,7 @@ function FragmentRow({ r, open, onToggle }: { r: Row; open: boolean; onToggle: (
           <td colSpan={6} className="px-4 py-3 text-sm text-ink-2">
             {r.whyBn && <p><span className="font-semibold text-ink">কেন এই অগ্রাধিকার:</span> {r.whyBn}</p>}
             {r.tipBn && <p className="mt-1"><span className="font-semibold text-ink">পরামর্শ:</span> {r.tipBn}</p>}
-            {!r.whyBn && !r.tipBn && <p>এই উপবিষয়ে বিগত বিসিএসে প্রশ্ন আসেনি।</p>}
+            {!r.whyBn && !r.tipBn && <p>এই উপবিষয়ে বিগত BCS-এ প্রশ্ন আসেনি।</p>}
           </td>
         </tr>
       )}

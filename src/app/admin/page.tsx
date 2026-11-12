@@ -87,7 +87,7 @@ async function Content() {
         <table className="mt-3 w-full max-w-2xl text-left text-[15px] tabular">
           <thead className="text-sm text-muted"><tr className="border-b border-line"><th className="py-2 font-medium">ধরন</th>{["DRAFT", "VERIFIED", "PUBLISHED", "RETIRED"].map((s) => <th key={s} className="py-2 text-right font-medium">{STATUS_BN[s]}</th>)}</tr></thead>
           <tbody>
-            {[["HISTORICAL", "বিগত বিসিএস"], ["TOPIC", "Level ২ (নতুন)"]].map(([k, label]) => (
+            {[["HISTORICAL", "বিগত BCS"], ["TOPIC", "Level ২ (নতুন)"]].map(([k, label]) => (
               <tr key={k} className="border-b border-line"><td className="py-2">{label}</td>{["DRAFT", "VERIFIED", "PUBLISHED", "RETIRED"].map((s) => <td key={s} className="py-2 text-right">{bnNum(n(k, s))}</td>)}</tr>
             ))}
           </tbody>

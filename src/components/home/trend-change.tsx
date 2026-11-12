@@ -1,7 +1,7 @@
 import { bn, bnNum } from "@/lib/bn";
 import type { ResearchData } from "@/lib/research/data";
 
-/** ডাম্বেল: টপিকে পরীক্ষাপ্রতি গড় প্রশ্ন, আগের পর্ব বনাম সাম্প্রতিক পর্ব (৬টি করে সাধারণ বিসিএস)। ধূসর বিন্দু = আগে, সবুজ = এখন। */
+/** ডাম্বেল: টপিকে পরীক্ষাপ্রতি গড় প্রশ্ন, আগের পর্ব বনাম সাম্প্রতিক পর্ব (৬টি করে সাধারণ BCS)। ধূসর বিন্দু = আগে, সবুজ = এখন। */
 export function TrendChange({ topics, periods, take = 7 }: { topics: ResearchData["topics"]; periods: ResearchData["periods"]; take?: number }) {
   const withDelta = topics.map((t) => ({ ...t, d: t.recentPerExam - t.prevPerExam }));
   const up = withDelta.filter((t) => t.d > 0).sort((a, b) => b.d - a.d).slice(0, take);

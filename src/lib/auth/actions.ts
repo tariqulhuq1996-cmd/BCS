@@ -47,7 +47,7 @@ export async function register(_: FormState, fd: FormData): Promise<FormState> {
   const user = await prisma.user.create({
     data: { email, passwordHash: await bcrypt.hash(password, BCRYPT_COST), profile: { create: { name } } },
   });
-  await ensureStarted(prisma, user.id); // Level 1-এর প্রথম ধাপ (১০ম বিসিএস) খোলা
+  await ensureStarted(prisma, user.id); // Level 1-এর প্রথম ধাপ (১০ম BCS) খোলা
   await createSession(user.id, (await headers()).get("user-agent"));
   redirect(safeNext(fd.get("next")));
 }

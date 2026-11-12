@@ -31,7 +31,7 @@ async function Content({ params }: { params: Promise<{ id: string }> }) {
   return (
     <>
       <p className="text-sm"><Link href="/admin/questions" className="text-green underline">প্রশ্নের তালিকা</Link></p>
-      <AdminTitle title={q.uid} lead={`${q.kind === "HISTORICAL" ? `বিগত বিসিএস${q.exam ? ` (${bn(q.exam.bcsNo)}তম, প্রশ্ন ${bn(q.examQNo ?? "")})` : ""}` : "Level ২ প্রশ্ন"}। শিক্ষার্থীরা ${bn(seen)} বার উত্তর দিয়েছে${seen ? `, সঠিক ${bn(Math.round(((stats._sum.correct ?? 0) / seen) * 100))}%` : ""}।`} />
+      <AdminTitle title={q.uid} lead={`${q.kind === "HISTORICAL" ? `বিগত BCS${q.exam ? ` (${bn(q.exam.bcsNo)}তম, প্রশ্ন ${bn(q.examQNo ?? "")})` : ""}` : "Level ২ প্রশ্ন"}। শিক্ষার্থীরা ${bn(seen)} বার উত্তর দিয়েছে${seen ? `, সঠিক ${bn(Math.round(((stats._sum.correct ?? 0) / seen) * 100))}%` : ""}।`} />
       {q.families.length > 0 && <p className="mt-2 text-sm text-ink-2">পুনরাবৃত্ত প্রশ্ন-পরিবারের অংশ ({q.families[0].family.refs})।</p>}
       <QuestionForm
         q={{

@@ -646,7 +646,7 @@ export async function getResultView(db: Db, userId: string, attemptIds: string[]
           unsure: ans?.confidence === "UNSURE",
           explanation: q.explanation,
           explanationVerified: q.explanationStatus === "VERIFIED",
-          source: q.exam ? `${q.exam.bcsNo === 10 ? "১০ম" : `${q.exam.bcsNo}তম`} বিসিএস, প্রশ্ন ${q.examQNo}` : q.source,
+          source: q.exam ? `${q.exam.bcsNo === 10 ? "১০ম" : `${q.exam.bcsNo}তম`} BCS, প্রশ্ন ${q.examQNo}` : q.source,
           subject: q.subtopic.topic.subject.nameBn,
           subjectOrder: q.subtopic.topic.subject.order,
           topic: q.subtopic.topic.nameBn,

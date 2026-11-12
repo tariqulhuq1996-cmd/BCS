@@ -1,10 +1,10 @@
 /** Learning Cycle-এর ধাপের নাম ও বর্ণনা — Dashboard, ধাপ-পাতা ও পরে পরীক্ষা-ইঞ্জিন একই শব্দ ব্যবহার করবে। */
 export const L1_STEPS = [
-  { key: "SOLVE", label: "প্রশ্ন সমাধান", desc: "এই বিসিএসের সব যাচাইকৃত প্রশ্ন, ৫০টি করে ভাগে।" },
+  { key: "SOLVE", label: "প্রশ্ন সমাধান", desc: "এই BCS-এর সব যাচাইকৃত প্রশ্ন, ৫০টি করে ভাগে।" },
   { key: "REVIEW", label: "উত্তর পর্যালোচনা", desc: "সঠিক, ভুল ও অনুত্তরিত প্রশ্ন, ব্যাখ্যা ও বিষয়ভিত্তিক ফল।" },
   { key: "REVISION", label: "ভুলের Revision", desc: "ভুল ও অনিশ্চিত প্রশ্ন নিয়ে Revision Test।" },
-  { key: "MASTERY", label: "Mastery Test", desc: "এই বিসিএস থেকে ৪০টি প্রশ্ন; নির্ধারিত নম্বর লাগবে।" },
-  { key: "CUMULATIVE", label: "Cumulative Test", desc: "১০ম থেকে এই বিসিএস পর্যন্ত সব প্রশ্ন থেকে।" },
+  { key: "MASTERY", label: "Mastery Test", desc: "এই BCS থেকে ৪০টি প্রশ্ন; নির্ধারিত নম্বর লাগবে।" },
+  { key: "CUMULATIVE", label: "Cumulative Test", desc: "১০ম থেকে এই BCS পর্যন্ত সব প্রশ্ন থেকে।" },
 ] as const;
 
 export const L2_STEPS = [

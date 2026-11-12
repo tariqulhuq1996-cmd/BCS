@@ -111,7 +111,7 @@ export async function generateModelTests(db: PrismaClient, opts: { from: number;
         diffCount[best.q.diff]++;
       }
     }
-    // বিসিএস প্রশ্নপত্রের মতো বিষয় অনুযায়ী সাজানো; বিষয়ের ভেতরে এলোমেলো
+    // BCS প্রশ্নপত্রের মতো বিষয় অনুযায়ী সাজানো; বিষয়ের ভেতরে এলোমেলো
     chosen.sort((a, b) => a.subjectOrder - b.subjectOrder || rnd() - 0.5);
     for (const q of chosen) {
       lastUsed.set(q.id, no);

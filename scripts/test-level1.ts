@@ -42,7 +42,7 @@ async function main() {
     await ensureStarted(db, other.id);
 
     // ── তালাবন্ধ ধাপ
-    check("তালাবন্ধ ১১তম বিসিএস শুরু করা যায় না", (await code(() => startStep(db, u.id, "L1:EXAM:11"))) === "LOCKED");
+    check("তালাবন্ধ ১১তম BCS শুরু করা যায় না", (await code(() => startStep(db, u.id, "L1:EXAM:11"))) === "LOCKED");
 
     // ── ১০ম: প্রথম সমাধান, ভাগ ১
     const p1 = await startStep(db, u.id, "L1:EXAM:10");
@@ -111,8 +111,8 @@ async function main() {
     const m2 = await startStep(db, u.id, "L1:EXAM:10");
     await answer(u.id, m2, 1);
     const mr2 = await submitAttempt(db, u.id, m2);
-    check("১০০% → ১০ম বিসিএস সম্পন্ন", mr2.passed === true && mr2.completed && (await state(u.id, "L1:EXAM:10"))?.state === "COMPLETED");
-    check("১১তম বিসিএস খুলেছে", (await state(u.id, "L1:EXAM:11"))?.state === "AVAILABLE");
+    check("১০০% → ১০ম BCS সম্পন্ন", mr2.passed === true && mr2.completed && (await state(u.id, "L1:EXAM:10"))?.state === "COMPLETED");
+    check("১১তম BCS খুলেছে", (await state(u.id, "L1:EXAM:11"))?.state === "AVAILABLE");
     check("সম্পন্ন ধাপ আবার শুরু করা যায় না (অনুশীলন ছাড়া)", (await code(() => startStep(db, u.id, "L1:EXAM:10"))) === "SUBMITTED");
     check("অর্জন: প্রথম পদক্ষেপ", !!(await db.userAchievement.findFirst({ where: { userId: u.id, achievementKey: "first_exam" } })));
 
@@ -169,7 +169,7 @@ async function main() {
     const f = await startStep(db, u.id, "L1:FINAL");
     const fA = await db.testAttempt.findUniqueOrThrow({ where: { id: f } });
     const fEx = new Set((await db.question.findMany({ where: { id: { in: fA.questionIds } }, select: { exam: { select: { bcsNo: true } } } })).map((q) => q.exam?.bcsNo));
-    check("Final: ১০০টি প্রশ্ন, প্রায় সব বিসিএস থেকে", fA.questionIds.length === 100 && fEx.size >= 35, { n: fA.questionIds.length, exams: fEx.size });
+    check("Final: ১০০টি প্রশ্ন, প্রায় সব BCS থেকে", fA.questionIds.length === 100 && fEx.size >= 35, { n: fA.questionIds.length, exams: fEx.size });
     await answer(u.id, f, 0.9);
     const fr = await submitAttempt(db, u.id, f);
     const phaseA = await db.studentTaskProgress.count({ where: { userId: u.id, state: "AVAILABLE", task: { kind: "L2_SUBTOPIC", phase: 1 } } });

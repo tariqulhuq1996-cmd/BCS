@@ -7,7 +7,7 @@ import { bn, bnOrdinal } from "@/lib/bn";
 import { ExamBubbles } from "@/components/portal/exam-bubbles";
 import { ProgressBar } from "@/components/portal/progress-bar";
 
-export const metadata: Metadata = { title: "Level ১: বিগত বিসিএসের প্রশ্ন" };
+export const metadata: Metadata = { title: "Level ১: বিগত BCS-এর প্রশ্ন" };
 
 const STATE_BN: Record<string, string> = { COMPLETED: "সম্পন্ন", IN_PROGRESS: "চলছে", AVAILABLE: "খোলা", LOCKED: "তালাবন্ধ" };
 const STEP_BN: Record<string, string> = { SOLVE: "প্রশ্ন সমাধান", REVIEW: "পর্যালোচনা", REVISION: "Revision", MASTERY: "Mastery Test", CUMULATIVE: "Cumulative Test", DONE: "সম্পন্ন" };
@@ -15,8 +15,8 @@ const STEP_BN: Record<string, string> = { SOLVE: "প্রশ্ন সমা�
 export default function Level1Page() {
   return (
     <section className="mx-auto max-w-5xl px-4 pt-10 sm:px-6">
-      <h1 className="text-[32px] font-extrabold sm:text-[40px]" style={{ fontStretch: "110%" }}>Level ১: বিগত বিসিএসের প্রশ্ন আয়ত্ত</h1>
-      <p className="mt-2 max-w-2xl text-ink-2">১০ম থেকে ৫০তম বিসিএস, একটির পর একটি। প্রতিটির Learning Cycle শেষ করে নির্ধারিত নম্বর পেলে পরেরটি খোলে।</p>
+      <h1 className="text-[32px] font-extrabold sm:text-[40px]" style={{ fontStretch: "110%" }}>Level ১: বিগত BCS-এর প্রশ্ন আয়ত্ত</h1>
+      <p className="mt-2 max-w-2xl text-ink-2">১০ম থেকে ৫০তম BCS, একটির পর একটি। প্রতিটির Learning Cycle শেষ করে নির্ধারিত নম্বর পেলে পরেরটি খোলে।</p>
       <Suspense fallback={<p className="mt-8 text-ink-2">লোড হচ্ছে…</p>}>
         <Content />
       </Suspense>
@@ -41,7 +41,7 @@ async function Content() {
         {tasks.map((t) => (
           <li key={t.key} className="flex flex-wrap items-center justify-between gap-x-6 gap-y-1 py-3">
             <span className="font-medium">
-              {t.bcsNo ? `${bnOrdinal(t.bcsNo)} বিসিএস` : t.title}
+              {t.bcsNo ? `${bnOrdinal(t.bcsNo)} BCS` : t.title}
               {t.special && <span className="ml-2 rounded-full border border-omr px-2 text-xs text-omr">বিশেষ</span>}
               {t.partial && <span className="ml-2 rounded-full border border-danger px-2 text-xs text-danger">আংশিক</span>}
             </span>

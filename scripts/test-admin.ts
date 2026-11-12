@@ -57,7 +57,7 @@ async function main() {
     await db.learningTask.update({ where: { id: t10.id }, data: { active: false } });
     const moved = await reconcileDeactivated(db, t10.id);
     const s11 = await db.studentTaskProgress.findFirst({ where: { userId: u.id, task: { key: "L1:EXAM:11" } } });
-    check("১০ম বিসিএস নিষ্ক্রিয় করলে ঐ ধাপে থাকা শিক্ষার্থীর ১১তম খোলে", moved >= 1 && s11?.state === "AVAILABLE", { moved, s11: s11?.state });
+    check("১০ম BCS নিষ্ক্রিয় করলে ঐ ধাপে থাকা শিক্ষার্থীর ১১তম খোলে", moved >= 1 && s11?.state === "AVAILABLE", { moved, s11: s11?.state });
 
     // ── Backup
     const b = JSON.parse(await fullBackup(db));

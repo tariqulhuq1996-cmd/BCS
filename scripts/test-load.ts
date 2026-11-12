@@ -63,7 +63,7 @@ async function main() {
     const [, tSub] = await time(() => submitAttempt(db, heavy.id, r1));
     check(`২০ প্রশ্নের জমা ও Leitner হালনাগাদ < ১৫০০ মি.সে. (${tSub.toFixed(0)})`, tSub < 1500);
 
-    // ৫০তম বিসিএসের Cumulative (সবচেয়ে বড় পুল) ও Level ১ Final
+    // ৫০তম BCS-এর Cumulative (সবচেয়ে বড় পুল) ও Level ১ Final
     const admin = await db.user.create({ data: { email: `${tag}-admin@load.test`, passwordHash: "x", role: "ADMIN" } });
     const t50 = exams.at(-1)!;
     await manualUnlock(db, heavy.id, t50.id, admin.id);

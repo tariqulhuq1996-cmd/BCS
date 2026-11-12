@@ -7,9 +7,9 @@ export function RoadmapPreview({ exams, specialExams, subtopics, gradeCounts }: 
   const levels = [
     {
       n: 1,
-      name: "বিগত বিসিএসের প্রশ্ন আয়ত্ত",
-      body: `১০ম থেকে ৫০তম — ${bn(exams)}টি প্রশ্নপত্র (${bn(specialExams)}টি বিশেষ বিসিএসসহ) একটির পর একটি। প্রতিটিতে সমাধান, উত্তর পর্যালোচনা, ভুলের Revision, Mastery Test, আর আগের সব পরীক্ষা মিলিয়ে Cumulative Test।`,
-      gate: "প্রতিটি ধাপে ৮০% পেলে পরের বিসিএস খোলে; শেষে Level ১ Final Assessment।",
+      name: "বিগত BCS-এর প্রশ্ন আয়ত্ত",
+      body: `১০ম থেকে ৫০তম — ${bn(exams)}টি প্রশ্নপত্র (${bn(specialExams)}টি বিশেষ BCS-সহ) একটির পর একটি। প্রতিটিতে সমাধান, উত্তর পর্যালোচনা, ভুলের Revision, Mastery Test, আর আগের সব পরীক্ষা মিলিয়ে Cumulative Test।`,
+      gate: "প্রতিটি ধাপে ৮০% পেলে পরের BCS খোলে; শেষে Level ১ Final Assessment।",
     },
     {
       n: 2,

@@ -13,8 +13,8 @@ const LEGEND = ["০", "১", "২", "৩", "৪", "৫+"];
 export const HEAT_DEFAULT_FROM = 35;
 
 /**
- * উপবিষয় × সাধারণ বিসিএস: কোন পরীক্ষায় কতটি প্রশ্ন। একটিমাত্র রঙের ধাপ (কম → হালকা, বেশি → গাঢ়)।
- * উপবিষয়ের পুরো নাম দেখায় (প্রয়োজনে একাধিক লাইনে)। শুরুতে ৩৫তম–৫০তম; "সব বিসিএস" লগইন করা থাকলে খোলে,
+ * উপবিষয় × সাধারণ BCS: কোন পরীক্ষায় কতটি প্রশ্ন। একটিমাত্র রঙের ধাপ (কম → হালকা, বেশি → গাঢ়)।
+ * উপবিষয়ের পুরো নাম দেখায় (প্রয়োজনে একাধিক লাইনে)। শুরুতে ৩৫তম–৫০তম; "সব BCS" লগইন করা থাকলে খোলে,
  * নইলে লগইন-পাতায় নিয়ে যায় (loginHref)।
  */
 export function Heatmap({
@@ -41,16 +41,16 @@ export function Heatmap({
 
   const toggle = all ? (
     <button type="button" onClick={() => { setAll(false); setHover(null); }} className="text-sm font-semibold text-green underline underline-offset-4">
-      শুধু {bnOrdinal(HEAT_DEFAULT_FROM)}–{bnOrdinal(last)} বিসিএস দেখুন
+      শুধু {bnOrdinal(HEAT_DEFAULT_FROM)}–{bnOrdinal(last)} BCS দেখুন
     </button>
   ) : hidden > 0 ? (
     canShowAll ? (
       <button type="button" onClick={() => { setAll(true); setHover(null); }} className="text-sm font-semibold text-green underline underline-offset-4">
-        সব বিসিএস দেখুন ({bnOrdinal(first)}–{bnOrdinal(last)})
+        সব BCS দেখুন ({bnOrdinal(first)}–{bnOrdinal(last)})
       </button>
     ) : (
       <Link href={loginHref} className="text-sm font-semibold text-green underline underline-offset-4">
-        সব বিসিএস ({bnOrdinal(first)}–{bnOrdinal(last)}) দেখতে লগইন করুন
+        সব BCS ({bnOrdinal(first)}–{bnOrdinal(last)}) দেখতে লগইন করুন
       </Link>
     )
   ) : null;
@@ -61,7 +61,7 @@ export function Heatmap({
         <p className="min-h-6 text-sm text-ink-2" aria-live="polite">
           {h ? (
             <>
-              <span className="font-semibold text-ink">{h.row.nameBn}</span> — {bnOrdinal(h.exam)} বিসিএসে {bn(h.n)}টি প্রশ্ন
+              <span className="font-semibold text-ink">{h.row.nameBn}</span> — {bnOrdinal(h.exam)} BCS-এ {bn(h.n)}টি প্রশ্ন
             </>
           ) : (
             "ঘরের ওপর মাউস রাখুন বা ট্যাপ করুন"
@@ -80,7 +80,7 @@ export function Heatmap({
 
       <div className="mt-2 flex flex-wrap items-center justify-between gap-2 text-sm text-muted">
         <span>
-          দেখানো হচ্ছে: {bnOrdinal(cols[0]?.e ?? first)}–{bnOrdinal(last)} বিসিএস ({bn(cols.length)}টি সাধারণ বিসিএস)
+          দেখানো হচ্ছে: {bnOrdinal(cols[0]?.e ?? first)}–{bnOrdinal(last)} BCS ({bn(cols.length)}টি সাধারণ BCS)
         </span>
         {toggle}
       </div>

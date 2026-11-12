@@ -32,7 +32,7 @@ async function setPrereqs(taskId: number, requires: number[]) {
 async function main() {
   // ── Level
   const levels = [
-    { no: 1, nameBn: "Historical BCS Question Mastery", descriptionBn: "১০ম–৫০তম বিসিএসের প্রশ্ন সমাধান, Revision ও Mastery — পরীক্ষার ধরন ও পুনরাবৃত্ত ধারণার শক্ত ভিত্তি।" },
+    { no: 1, nameBn: "Historical BCS Question Mastery", descriptionBn: "১০ম–৫০তম BCS-এর প্রশ্ন সমাধান, Revision ও Mastery — পরীক্ষার ধরন ও পুনরাবৃত্ত ধারণার শক্ত ভিত্তি।" },
     { no: 2, nameBn: "৯,০০০+ Topic-wise Question Mastery", descriptionBn: "বিষয় → টপিক → উপবিষয় অনুযায়ী বৃহৎ প্রশ্নভান্ডার, ৫২তম Priority List-এর ক্রমে।" },
     { no: 3, nameBn: "Full-length Model Test Mastery", descriptionBn: "২০০ নম্বরের ১৫০টি পূর্ণাঙ্গ Model Test — চূড়ান্ত প্রস্তুতি।" },
   ];
@@ -58,7 +58,7 @@ async function main() {
   const l1Ids: number[] = [];
   for (const [i, e] of exams.entries()) {
     const tag = e.type === "SPECIAL" ? " (বিশেষ)" : "";
-    const t = await upsertTask({ key: `L1:EXAM:${e.bcsNo}`, levelId: levelId[1], kind: "L1_EXAM", order: i + 1, titleBn: `${e.bcsNo === 10 ? "১০ম" : bn(e.bcsNo) + "তম"} বিসিএস${tag}`, examId: e.id });
+    const t = await upsertTask({ key: `L1:EXAM:${e.bcsNo}`, levelId: levelId[1], kind: "L1_EXAM", order: i + 1, titleBn: `${e.bcsNo === 10 ? "১০ম" : bn(e.bcsNo) + "তম"} BCS${tag}`, examId: e.id });
     await setPrereqs(t.id, prev ? [prev] : []);
     prev = t.id;
     l1Ids.push(t.id);
@@ -110,7 +110,7 @@ async function main() {
 
   // ── অর্জন (Achievement)
   const ach = [
-    { key: "first_exam", nameBn: "প্রথম পদক্ষেপ", descBn: "প্রথম বিসিএস প্রশ্নপত্র সমাধান", icon: "flag" },
+    { key: "first_exam", nameBn: "প্রথম পদক্ষেপ", descBn: "প্রথম BCS প্রশ্নপত্র সমাধান", icon: "flag" },
     { key: "l1_10", nameBn: "দশে দশ", descBn: "Level ১-এর ১০টি পরীক্ষায় Mastery", icon: "medal" },
     { key: "l1_done", nameBn: "ইতিহাসের কারিগর", descBn: "Level ১ সম্পন্ন", icon: "trophy" },
     { key: "streak_7", nameBn: "সাত দিনের ধারা", descBn: "টানা ৭ দিন Revision", icon: "flame" },

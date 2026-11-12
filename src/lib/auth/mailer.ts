@@ -3,7 +3,7 @@ import nodemailer, { type Transporter } from "nodemailer";
 
 /**
  * ইমেইল পাঠানো (SMTP) — যেকোনো সেবা চলে: Amazon SES, Brevo, Mailgun, Resend (SMTP), Zoho, Gmail Workspace ইত্যাদি।
- * পরিবেশ-চলক: SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, MAIL_FROM (যেমন "বিসিএস ৫২ প্রস্তুতি <no-reply@example.com>")।
+ * পরিবেশ-চলক: SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, MAIL_FROM (যেমন "BCS ৫২ প্রস্তুতি <no-reply@example.com>")।
  * কনফিগার করা না থাকলে: ডেভেলপমেন্টে লিংক সার্ভারের টার্মিনালে ছাপা হয়; প্রোডাকশনে ত্রুটি লগ হয় (ইমেইল যায় না)।
  */
 let cached: Transporter | null = null;
@@ -18,7 +18,7 @@ function transport(): Transporter | null {
 }
 
 export function resetEmail(link: string) {
-  const subject = "পাসওয়ার্ড রিসেট — বিসিএস ৫২ প্রস্তুতি";
+  const subject = "পাসওয়ার্ড রিসেট — BCS ৫২ প্রস্তুতি";
   const text = [
     "আপনার অ্যাকাউন্টের পাসওয়ার্ড রিসেটের অনুরোধ পাওয়া গেছে।",
     "",

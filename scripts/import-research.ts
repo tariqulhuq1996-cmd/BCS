@@ -17,7 +17,7 @@ const SRC = path.resolve(__dirname, "..", "data", "source");
 
 // research_questions.json-এর প্রতিটি প্রশ্ন-সারির কলাম-ক্রম
 type QRow = [
-  number, // 0 বিসিএস নং
+  number, // 0 BCS নং
   string, // 1 প্রশ্ন নং
   string, // 2 প্রশ্ন
   string[], // 3 চারটি অপশন
@@ -175,7 +175,7 @@ async function main() {
         explanation,
         explanationStatus: (explanation ? "DRAFT" : "NONE") as ExplanationStatus,
         subtopicId: subtopicId[code],
-        source: `${bcs}তম বিসিএস প্রিলিমিনারি, প্রশ্ন ${no}`,
+        source: `${bcs}তম BCS Preliminary, প্রশ্ন ${no}`,
         examId: examId[bcs],
         examQNo: String(no),
         examPage: t?.page ?? null,

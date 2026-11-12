@@ -22,7 +22,7 @@ export function HeatmapExplorer({ rows, exams, subjects }: { rows: Row[]; exams:
         </select>
       </label>
       <div className="mt-4">
-        <Heatmap rows={shown} exams={exams} caption={`${name}: প্রতিটি উপবিষয়ে প্রতিটি সাধারণ বিসিএসের প্রশ্নসংখ্যা`} />
+        <Heatmap rows={shown} exams={exams} caption={`${name}: প্রতিটি উপবিষয়ে প্রতিটি সাধারণ BCS-এর প্রশ্নসংখ্যা`} />
       </div>
     </div>
   );

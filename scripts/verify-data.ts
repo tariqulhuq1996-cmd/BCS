@@ -35,7 +35,7 @@ async function main() {
   const actualPerExam = await prisma.question.groupBy({ by: ["examId"], _count: true });
   const idToNo = Object.fromEntries(dbExam.map((e) => [e.id, e.bcsNo]));
   check("প্রশ্ন-টেবিলে পরীক্ষাভিত্তিক গণনা", perExam, Object.fromEntries(actualPerExam.map((g) => [idToNo[g.examId!], g._count]).sort((a, b) => a[0] - b[0])));
-  check("বিশেষ বিসিএস", Object.entries(src.types).filter(([, t]) => t === "বিশেষ").map(([n]) => +n),
+  check("বিশেষ BCS", Object.entries(src.types).filter(([, t]) => t === "বিশেষ").map(([n]) => +n),
     dbExam.filter((e) => e.type === "SPECIAL").map((e) => e.bcsNo));
 
   // বিষয়ভিত্তিক
@@ -75,7 +75,7 @@ async function main() {
   const chainOk = l1.every((t, i) => (i === 0 ? t.prerequisites.length === 0 : t.prerequisites.length === 1 && t.prerequisites[0].requiresId === l1[i - 1].id));
   check("Level 1 ক্রমিক শৃঙ্খল (১০ম → ৫০তম)", true, chainOk && l1[0].exam?.bcsNo === 10 && l1.at(-1)?.exam?.bcsNo === 50);
   const noRoot = await prisma.learningTask.count({ where: { prerequisites: { none: {} } } });
-  check("পূর্বশর্তহীন কাজ শুধু ১টি (১০ম বিসিএস)", 1, noRoot);
+  check("পূর্বশর্তহীন কাজ শুধু ১টি (১০ম BCS)", 1, noRoot);
 
   console.log(fails ? `\nব্যর্থ: ${fails}টি` : "\nব্যর্থ: কিছু নয়");
   if (fails) process.exitCode = 1;

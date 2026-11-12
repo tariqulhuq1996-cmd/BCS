@@ -28,7 +28,7 @@ async function Content() {
   return (
     <>
       <p className="mt-2 text-ink-2">
-        {user.email}। অ্যাকাউন্ট খোলা হয়েছে {joined}। লক্ষ্য: {bn(p?.targetBcs ?? 52)}তম বিসিএস প্রিলিমিনারি।
+        {user.email}। অ্যাকাউন্ট খোলা হয়েছে {joined}। লক্ষ্য: {bn(p?.targetBcs ?? 52)}তম BCS Preliminary।
       </p>
       <div className="mt-10 grid gap-12 md:grid-cols-2">
         <div>
