@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getResearch } from "@/lib/research/data";
-import { bn, bnNum } from "@/lib/bn";
+import { bn, bnNum, bnOrdinal } from "@/lib/bn";
 import { OmrQuestion } from "@/components/home/omr-question";
 import { Section, SourceNote } from "@/components/ui/section";
 import { Heatmap } from "@/components/charts/heatmap";
@@ -32,6 +32,8 @@ async function HomeContent() {
   const [r, user] = await Promise.all([getResearch(), getCurrentUser()]);
   const t = r.totals;
   const priorityA = r.subtopics.filter((s) => s.grade === "A");
+  const trendUp = r.topics.filter((x) => x.recentPerExam > x.prevPerExam).length;
+  const trendDown = r.topics.filter((x) => x.recentPerExam < x.prevPerExam).length;
   // হোমপেজে নমুনা: Priority A-র সবচেয়ে বেশিবার আসা ৫টি প্রশ্ন, আর শীর্ষ ১০টি উপবিষয় (পুরোটা লগইন করে)
   const repeatsA = r.families
     .filter((f) => f.grade === "A")
@@ -87,8 +89,8 @@ async function HomeContent() {
       {/* ── সাম্প্রতিক প্রবণতা */}
       <Section
         id="trend"
-        title="৪০তম–৫০তম বিসিএসে কী বদলেছে"
-        lead={`২০০ নম্বরের প্রথম চারটি পরীক্ষার (৩৫–৩৮তম) সঙ্গে সাম্প্রতিক আটটি সাধারণ পরীক্ষার তুলনা, টপিকে পরীক্ষাপ্রতি গড় প্রশ্ন ধরে। উপবিষয়-স্তরে ${bn(r.trendCounts["বেড়েছে"] ?? 0)}টির গুরুত্ব বেড়েছে, ${bn(r.trendCounts["কমেছে"] ?? 0)}টির কমেছে।`}
+        title={`${bnOrdinal(r.periods.recent[0])}–${bnOrdinal(r.periods.recent.at(-1)!)} বিসিএসে কী বদলেছে`}
+        lead={`২০০ নম্বরের যুগের প্রথম ${bn(r.periods.prev.length)}টি সাধারণ বিসিএসের (${bn(r.periods.prev[0])}–${bnOrdinal(r.periods.prev.at(-1)!)}) সঙ্গে সাম্প্রতিক ${bn(r.periods.recent.length)}টির (${bn(r.periods.recent[0])}–${bnOrdinal(r.periods.recent.at(-1)!)}) তুলনা, টপিকে পরীক্ষাপ্রতি গড় প্রশ্ন ধরে। ${bn(trendUp)}টি টপিকে প্রশ্ন বেড়েছে, ${bn(trendDown)}টিতে কমেছে।`}
       >
         <TrendChange topics={r.topics} periods={r.periods} />
       </Section>

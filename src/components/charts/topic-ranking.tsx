@@ -50,7 +50,7 @@ export function TopicRanking({ topics, subjects }: { topics: ResearchData["topic
               </button>
               {isOpen && (
                 <div className="mb-2 ml-12 rounded-md border border-line bg-surface px-4 py-3 text-sm text-ink-2">
-                  সাধারণ বিসিএসে মোট {bn(t.totalGeneral)}টি প্রশ্ন। পরীক্ষাপ্রতি গড়: ৩৫–৩৮তম-এ {bnNum(t.prevPerExam, 1)}টি, ৪০–৫০তম-এ{" "}
+                  সাধারণ বিসিএসে মোট {bn(t.totalGeneral)}টি প্রশ্ন। পরীক্ষাপ্রতি গড়: আগের পর্বে {bnNum(t.prevPerExam, 1)}টি, সাম্প্রতিক পর্বে{" "}
                   {bnNum(t.recentPerExam, 1)}টি ({delta >= 0 ? "বেড়েছে" : "কমেছে"} {bnNum(Math.abs(delta), 1)})।
                 </div>
               )}

@@ -5,7 +5,8 @@ import { prisma } from "@/lib/db";
 /**
  * হোমপেজ ও গবেষণা-পাতার সব পরিসংখ্যান — প্রতিটি সংখ্যা ডেটাবেসের প্রশ্ন থেকে গোনা।
  * পদ্ধতি গবেষণা-রিপোর্টের মতোই: সাধারণ = ১০০ ও ২০০ নম্বরের পরীক্ষা; বিশেষ বিসিএস আলাদা।
- * (যাচাই: সংবিধান ৩৫–৩৮ = ২.৮, ৪০–৫০ = ৫.১ প্রশ্ন/পরীক্ষা — ধাপ ০৯-এর সঙ্গে হুবহু।)
+ * প্রবণতা: ২০০ নম্বরের যুগের সর্বশেষ ৬টি সাধারণ বিসিএস বনাম তার আগের ৬টি (২০২৬-১১-১২ থেকে; আগে ধাপ ০৯-এর মতো ৩৫–৩৮ বনাম ৪০–৫০ ছিল)।
+ * উপবিষয়ের "প্রবণতা" লেবেল (বেড়েছে/কমেছে) এখনও ধাপ ০৯-এর গবেষণা থেকে, অপরিবর্তিত।
  * প্রশ্ন Import হলে `revalidateTag("research")` দিয়ে নতুন করে গোনা হয়।
  */
 
@@ -21,9 +22,10 @@ export async function getResearch() {
   return computeResearch();
 }
 
-const RECENT_FROM = 40; // সাম্প্রতিক পর্ব: ৪০তম–৫০তম (সাধারণ)
-const PREV_FROM = 35; // তুলনার পর্ব: ৩৫তম–৩৮তম (২০০ নম্বরের প্রথম চারটি)
-const PREV_TO = 38;
+// প্রবণতার তুলনা: ২০০ নম্বরের যুগের (৩৫তম থেকে) সাধারণ বিসিএস — সর্বশেষ ৬টি বনাম তার আগের ৬টি
+// (এখন: ৩৫, ৩৬, ৩৭, ৩৮, ৪০, ৪১ বনাম ৪৩, ৪৪, ৪৫, ৪৬, ৪৭, ৫০)। নতুন পরীক্ষা যুক্ত হলে নিজে থেকে সরে যায়।
+const ERA_FROM = 35;
+const TREND_WINDOW = 6;
 
 async function computeResearch() {
   const [subjects, topics, subtopics, exams, questions, families] = await Promise.all([
@@ -95,8 +97,9 @@ async function computeResearch() {
   });
 
   // ── ২. টপিক: Priority Score + সাধারণ পরীক্ষায় মোট প্রশ্ন + পর্বভিত্তিক পরিবর্তন
-  const prevNos = generalExams.filter((n) => n >= PREV_FROM && n <= PREV_TO);
-  const recentNos = generalExams.filter((n) => n >= RECENT_FROM);
+  const era = generalExams.filter((n) => n >= ERA_FROM).sort((a, b) => a - b);
+  const recentNos = era.slice(-TREND_WINDOW);
+  const prevNos = era.slice(-2 * TREND_WINDOW, -TREND_WINDOW);
   const topicRows = topics
     .map((t) => {
       const inT = (s: (typeof subtopics)[number]) => s.topicId === t.id;
