@@ -4,9 +4,10 @@
  *   npx tsx scripts/test-load.ts [--users 300] [--base http://localhost:3100]
  * --base দিলে চালু অ্যাপে (প্রোডাকশন বিল্ড হলে ভালো) একসঙ্গে ২০টি অনুরোধ পাঠিয়ে পাতার সময়ও মাপে।
  */
+import { startAtLevel1 } from "./_journey";
 import { PrismaClient } from "@prisma/client";
 import { createHash, randomBytes } from "node:crypto";
-import { completeTask, ensureStarted, manualUnlock } from "../src/lib/progress/engine";
+import { completeTask, manualUnlock } from "../src/lib/progress/engine";
 import { getResultView, revisionStatus, startRevision, startStep, submitAttempt } from "../src/lib/exam/service";
 
 const db = new PrismaClient();
@@ -33,7 +34,7 @@ async function main() {
     await db.user.createMany({ data: Array.from({ length: N }, (_, i) => ({ email: `${tag}-${i}@load.test`, passwordHash: "x" })) });
     const users = await db.user.findMany({ where: { email: { startsWith: tag } }, select: { id: true } });
     const exams = await db.learningTask.findMany({ where: { kind: "L1_EXAM" }, orderBy: { order: "asc" } });
-    for (const u of users) await ensureStarted(db, u.id);
+    for (const u of users) await startAtLevel1(db, u.id);
     // এক-তৃতীয়াংশ ১০ম–২০তম শেষ করেছে
     for (const u of users.slice(0, Math.floor(N / 3))) for (const e of exams.slice(0, 11)) await completeTask(db, u.id, e.id);
 

@@ -1,6 +1,6 @@
 /**
  * Learning Roadmap ও নিয়মের বীজ-ডেটা। import-research.ts চালানোর পরে চালাতে হবে।
- *  - ৩টি Level
+ *  - Level ০ (যাত্রার শুরু: প্রশ্ন-বিশ্লেষণ, শুরুর মূল্যায়ন, সাম্প্রতিক বিষয়াবলির শর্ত) ও ৩টি Level
  *  - RuleSetting: শুধু অনুপস্থিত key যোগ হয় (অ্যাডমিনের বদলানো মান অক্ষত থাকে)
  *  - Level 1: ৪১টি পরীক্ষা কালানুক্রমে + Final Assessment, শৃঙ্খলিত পূর্বশর্ত
  *  - Level 2: ২৬৮ উপবিষয় চারটি Priority Phase-এ (A→D) + প্রতিটি Phase-এর Checkpoint + Final
@@ -32,6 +32,7 @@ async function setPrereqs(taskId: number, requires: number[]) {
 async function main() {
   // ── Level
   const levels = [
+    { no: 0, nameBn: "যাত্রার শুরু", descriptionBn: "প্রশ্ন-বিশ্লেষণ পড়া ও শুরুর মূল্যায়ন — কেন, কী আর কতটা পড়বেন তা বোঝা। সঙ্গে সাম্প্রতিক বিষয়াবলির পাশের পথ।" },
     { no: 1, nameBn: "Historical BCS Question Mastery", descriptionBn: "১০ম–৫০তম BCS-এর প্রশ্ন সমাধান, Revision ও Mastery — পরীক্ষার ধরন ও পুনরাবৃত্ত ধারণার শক্ত ভিত্তি।" },
     { no: 2, nameBn: "৯,০০০+ Topic-wise Question Mastery", descriptionBn: "বিষয় → টপিক → উপবিষয় অনুযায়ী বৃহৎ প্রশ্নভান্ডার, ৫২তম Priority List-এর ক্রমে।" },
     { no: 3, nameBn: "Full-length Model Test Mastery", descriptionBn: "২০০ নম্বরের ১৫০টি পূর্ণাঙ্গ Model Test — চূড়ান্ত প্রস্তুতি।" },
@@ -52,9 +53,17 @@ async function main() {
     }
   }
 
+  // ── ধাপ ০: প্রশ্ন-বিশ্লেষণ → শুরুর মূল্যায়ন → Level 1;  সাম্প্রতিক বিষয়াবলির শর্ত (CA:GATE) প্রশ্ন-বিশ্লেষণের পরেই খোলে
+  const orient = await upsertTask({ key: "L0:ORIENT", levelId: levelId[0], kind: "L0_ORIENTATION", order: 1, titleBn: "প্রশ্ন-বিশ্লেষণ পড়া" });
+  await setPrereqs(orient.id, []);
+  const diag = await upsertTask({ key: "L0:DIAGNOSTIC", levelId: levelId[0], kind: "L0_DIAGNOSTIC", order: 2, titleBn: "শুরুর মূল্যায়ন" });
+  await setPrereqs(diag.id, [orient.id]);
+  const caGate = await upsertTask({ key: "CA:GATE", levelId: levelId[0], kind: "CA_GATE", order: 3, titleBn: "সাম্প্রতিক বিষয়াবলি: প্রতিটি প্রশ্নব্যাংক আয়ত্ত" });
+  await setPrereqs(caGate.id, [orient.id]);
+
   // ── Level 1
   const exams = await prisma.exam.findMany({ orderBy: { bcsNo: "asc" } });
-  let prev: number | null = null;
+  let prev: number | null = diag.id;
   const l1Ids: number[] = [];
   for (const [i, e] of exams.entries()) {
     const tag = e.type === "SPECIAL" ? " (বিশেষ)" : "";
@@ -63,8 +72,11 @@ async function main() {
     prev = t.id;
     l1Ids.push(t.id);
   }
-  const l1Final = await upsertTask({ key: "L1:FINAL", levelId: levelId[1], kind: "L1_FINAL", order: exams.length + 1, titleBn: "Level ১ Final Assessment" });
-  await setPrereqs(l1Final.id, prev ? [prev] : []);
+  // সব BCS শেষে: বারবার আসা প্রশ্নের Mastery, তারপর Final
+  const repeat = await upsertTask({ key: "L1:REPEAT", levelId: levelId[1], kind: "L1_REPEAT", order: exams.length + 1, titleBn: "বারবার আসা প্রশ্ন: Repeat Mastery" });
+  await setPrereqs(repeat.id, prev ? [prev] : []);
+  const l1Final = await upsertTask({ key: "L1:FINAL", levelId: levelId[1], kind: "L1_FINAL", order: exams.length + 2, titleBn: "Level ১ Final Assessment" });
+  await setPrereqs(l1Final.id, [repeat.id]);
 
   // ── Level 2
   const subs = await prisma.subtopic.findMany({ orderBy: [{ priorityScore: "desc" }, { code: "asc" }] });
@@ -93,6 +105,7 @@ async function main() {
   //   MT001 ← L2 Final;  MT(n) ← MT(n-1);  GATE1 ← MT050;  MT051 ← MT050 + GATE1;  GATE2 ← MT100;  MT101 ← MT100 + GATE2
   let order3 = 1;
   let prevMt = l2Final.id;
+  let first = true; // MT001 ← L2 Final + সাম্প্রতিক বিষয়াবলির শর্ত
   const gates: Record<number, number> = {};
   for (let n = 1; n <= 150; n++) {
     const tier = n <= 50 ? 1 : n <= 100 ? 2 : 3;
@@ -102,7 +115,8 @@ async function main() {
       gates[tier - 1] = g.id;
     }
     const t = await upsertTask({ key: `L3:MT:${String(n).padStart(3, "0")}`, levelId: levelId[3], kind: "L3_MODEL_TEST", order: order3++, phase: tier, titleBn: `Model Test ${bn(String(n).padStart(2, "0"))}` });
-    await setPrereqs(t.id, n === 51 || n === 101 ? [prevMt, gates[tier - 1]] : [prevMt]);
+    await setPrereqs(t.id, n === 51 || n === 101 ? [prevMt, gates[tier - 1]] : first ? [prevMt, caGate.id] : [prevMt]);
+    first = false;
     prevMt = t.id;
   }
   const mtLinked = await prisma.modelTest.findMany({ select: { id: true, no: true } });

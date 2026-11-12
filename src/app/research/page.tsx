@@ -7,9 +7,16 @@ import { SubtopicTable } from "@/components/research/subtopic-table";
 import { HeatmapExplorer } from "@/components/research/heatmap-explorer";
 import { Suspense } from "react";
 import { connection } from "next/server";
-import { requireUser } from "@/lib/auth/session";
+import { requireUser, type CurrentUser } from "@/lib/auth/session";
+import { prisma } from "@/lib/db";
+import { ORIENT_ITEMS, orientationStatus } from "@/lib/progress/journey";
+import { ensureStarted } from "@/lib/progress/engine";
+import { OrientBanner, OrientProvider, ReadCheck } from "@/components/research/read-check";
+import { TrendChange } from "@/components/home/trend-change";
+import { RepeatList } from "@/components/home/repeat-list";
+import { RoadmapPreview } from "@/components/home/roadmap-preview";
 
-export const metadata: Metadata = { title: "গবেষণা: ১০ম–৫০তম BCS" };
+export const metadata: Metadata = { title: "প্রশ্ন-বিশ্লেষণ: ১০ম–৫০তম BCS" };
 
 const TYPE_BN = { GENERAL_100: "১০০ নম্বর", GENERAL_200: "২০০ নম্বর", SPECIAL: "বিশেষ" } as const;
 
@@ -28,41 +35,73 @@ export default function ResearchPage() {
 async function Deferred() {
   await connection();
   // পূর্ণ তালিকা শুধু লগইন করা ব্যবহারকারীর জন্য (হোমপেজে নমুনা খোলা থাকে)
-  await requireUser("/research");
-  return <ResearchPageContent />;
+  const user = await requireUser("/research");
+  return <ResearchPageContent user={user} />;
 }
 
-async function ResearchPageContent() {
-  const r = await getResearch();
+const label = (id: string) => ORIENT_ITEMS.find((i) => i.id === id)!.label;
+
+/** যাত্রার প্রথম ধাপ (ধাপ ০): পাঁচটি অংশ, প্রতিটির শেষে "পড়েছি"। পরিশিষ্টে বিশেষ BCS ও পরীক্ষার তালিকা। */
+async function ResearchPageContent({ user }: { user: CurrentUser }) {
+  await ensureStarted(prisma, user.id);
+  const [r, orient] = await Promise.all([getResearch(), orientationStatus(prisma, user.id)]);
+  const trendUp = r.topics.filter((x) => x.recentPerExam > x.prevPerExam).length;
+  const trendDown = r.topics.filter((x) => x.recentPerExam < x.prevPerExam).length;
+  const repeatsA = r.families.filter((f) => f.grade === "A").sort((a, b) => b.occurrences - a.occurrences).slice(0, 5);
   const special = r.subjectByType.find((s) => s.type === "SPECIAL")!;
   const g200 = r.subjectByType.find((s) => s.type === "GENERAL_200")!;
 
   return (
-    <>
+    <OrientProvider initial={orient.checked} done={orient.done} total={ORIENT_ITEMS.length}>
       <section className="mx-auto max-w-6xl px-4 pt-12 sm:px-6">
         <h1 className="text-[36px] font-extrabold sm:text-[46px]" style={{ fontStretch: "112%" }}>
-          ১০ম–৫০তম BCS: পূর্ণ গবেষণা
+          প্রশ্ন-বিশ্লেষণ: ১০ম–৫০তম BCS
         </h1>
         <p className="mt-3 max-w-2xl text-lg text-ink-2">
           {bn(r.totals.exams)}টি প্রিলিমিনারি পরীক্ষার {bnNum(r.totals.questions)}টি প্রশ্ন, {bn(r.totals.subtopics)}টি উপবিষয়ে ভাগ করা। নিচের প্রতিটি সারণি ও চার্ট
           সরাসরি এই প্রশ্নগুলো থেকে তৈরি।
         </p>
-        <nav aria-label="এই পাতায়" className="mt-6 flex flex-wrap gap-x-5 gap-y-1 text-[15px] text-green">
-          <a href="#priority" className="underline underline-offset-4">Priority List</a>
-          <a href="#heatmap" className="underline underline-offset-4">উপবিষয় × পরীক্ষা</a>
-          <a href="#special" className="underline underline-offset-4">বিশেষ BCS</a>
-          <a href="#exams" className="underline underline-offset-4">পরীক্ষার তালিকা</a>
-        </nav>
+        <OrientBanner items={ORIENT_ITEMS} />
       </section>
 
-      <Section id="priority" title="৫২তম BCS Priority List" lead="সব উপবিষয়ের Priority Score (১০০-এর মধ্যে) ও A–D শ্রেণি, কারণ ও পড়ার পরামর্শসহ।">
-        <SubtopicTable rows={r.subtopics} subjects={r.subjects} />
-        <SourceNote>উৎস: গবেষণার ধাপ ০৯। &ldquo;মোট প্রশ্ন&rdquo; সব সাধারণ BCS-এ (১৯তমসহ)।</SourceNote>
+      <Section id="heatmap" title={`১. ${label("heatmap")}`} lead={`প্রতিটি উপবিষয়ে ${bn(r.heat.exams.length)}টি সাধারণ BCS-এর প্রতিটিতে কতটি প্রশ্ন এসেছে। পুরো সারি গাঢ় মানে অংশটি প্রায় প্রতিবার আসে — বাদ দেওয়ার উপায় নেই।`}>
+        <HeatmapExplorer rows={r.heat.rows} exams={r.heat.exams} subjects={r.subjects} />
+        <ReadCheck id="heatmap" label={label("heatmap")} />
       </Section>
 
-      <Section id="heatmap" title="উপবিষয় × সাধারণ BCS" lead={`প্রতিটি উপবিষয়ে ${bn(r.heat.exams.length)}টি সাধারণ BCS-এর প্রতিটিতে কতটি প্রশ্ন এসেছে।`}>
-        <HeatmapExplorer rows={r.heat.rows} exams={r.heat.exams} subjects={r.subjects} />
+      <Section
+        id="trend"
+        title={`২. ${label("trend")}`}
+        lead={`আগের ${bn(r.periods.prev.length)}টি (${bn(r.periods.prev[0])}–${bnOrdinal(r.periods.prev.at(-1)!)}) আর সর্বশেষ ${bn(r.periods.recent.length)}টি (${bn(r.periods.recent[0])}–${bnOrdinal(r.periods.recent.at(-1)!)}) BCS-এর তুলনা: ${bn(trendUp)}টি টপিকে প্রশ্ন বেড়েছে, ${bn(trendDown)}টিতে কমেছে।`}
+      >
+        <TrendChange topics={r.topics} periods={r.periods} />
+        <ReadCheck id="trend" label={label("trend")} />
       </Section>
+
+      <Section
+        id="repeats"
+        title={`৩. ${label("repeats")}`}
+        lead={`${bn(r.totals.families)}টি প্রশ্ন একাধিক BCS-এ এসেছে, ${bn(r.totals.families3)}টি তিনবার বা তার বেশি। নিচে Priority A-র সবচেয়ে বেশিবার আসা ${bn(repeatsA.length)}টি। পুরো তালিকা খুলবে ধাপে ধাপে — যে BCS-গুলো সমাধান করবেন, সেগুলোর পুনরাবৃত্ত প্রশ্ন; Level ১-এর শেষে Repeat Mastery-তে Priority A-র সবগুলো।`}
+        aside={<Link href="/repeated-questions" className="text-sm text-green underline underline-offset-4">বারবার আসা প্রশ্ন</Link>}
+      >
+        <RepeatList families={repeatsA} />
+        <ReadCheck id="repeats" label={label("repeats")} />
+      </Section>
+
+      <Section id="priority" title={`৪. ৫২তম BCS ${label("priority")}`} lead="সব উপবিষয়ের Priority Score (১০০-এর মধ্যে) ও A–D শ্রেণি, কারণ ও পড়ার পরামর্শসহ। Level ২ এই ক্রমেই চলে: আগে A, তারপর B, C, D।">
+        <SubtopicTable rows={r.subtopics} subjects={r.subjects} />
+        <SourceNote>উৎস: গবেষণার ধাপ ০৯। &ldquo;মোট প্রশ্ন&rdquo; সব সাধারণ BCS-এ (১৯তমসহ)।</SourceNote>
+        <ReadCheck id="priority" label={label("priority")} />
+      </Section>
+
+      <Section id="roadmap" title={`৫. ${label("roadmap")}`} lead="প্রতিটি ধাপে নির্ধারিত নম্বর পেলেই পরেরটি খোলে। প্রতিদিন Dashboard বলে দেয় আজ কী করবেন: মূল পথের কাজ, রিভিশন আর সাম্প্রতিক বিষয়াবলি।">
+        <RoadmapPreview exams={r.totals.exams} specialExams={r.totals.specialExams} subtopics={r.totals.subtopics} gradeCounts={r.totals.gradeCounts} />
+        <ReadCheck id="roadmap" label={label("roadmap")} />
+      </Section>
+
+      <section className="mx-auto max-w-6xl px-4 pt-24 sm:px-6">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-muted">পরিশিষ্ট</h2>
+      </section>
 
       <Section
         id="special"
@@ -114,10 +153,10 @@ async function ResearchPageContent() {
       </Section>
 
       <section className="mx-auto max-w-6xl px-4 pt-16 sm:px-6">
-        <Link href="/register" className="inline-block rounded-lg bg-green px-6 py-3 text-lg font-semibold text-white hover:bg-green-strong dark:text-paper">
-          প্রস্তুতি শুরু করুন
+        <Link href="/dashboard" className="inline-block rounded-lg bg-green px-6 py-3 text-lg font-semibold text-white hover:bg-green-strong dark:text-paper">
+          Dashboard-এ যান
         </Link>
       </section>
-    </>
+    </OrientProvider>
   );
 }

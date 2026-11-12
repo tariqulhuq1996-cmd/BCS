@@ -26,7 +26,13 @@ async function main() {
     await ensureStarted(db, a.id);
     await ensureStarted(db, a.id); // দ্বিতীয়বার ডাকলেও কিছু বদলাবে না
     const open = await db.studentTaskProgress.findMany({ where: { userId: a.id }, include: { task: true } });
-    check("শুরুতে শুধু ১০ম BCS খোলা", open.length === 1 && open[0].task.key === "L1:EXAM:10", JSON.stringify(open.map((o) => o.task.key)));
+    check("শুরুতে শুধু ধাপ ০ (প্রশ্ন-বিশ্লেষণ) খোলা", open.length === 1 && open[0].task.key === "L0:ORIENT", JSON.stringify(open.map((o) => o.task.key)));
+    check("১০ম BCS তালাবন্ধ (ধাপ ০ বাকি)", !(await canAccess(db, a.id, await T("L1:EXAM:10"))));
+    await completeTask(db, a.id, await T("L0:ORIENT"));
+    check("প্রশ্ন-বিশ্লেষণ শেষ → শুরুর মূল্যায়ন ও সাম্প্রতিক বিষয়াবলি খোলে", (await state(a.id, "L0:DIAGNOSTIC")) === "AVAILABLE" && (await state(a.id, "CA:GATE")) === "AVAILABLE");
+    check("মূল্যায়নের আগে ১০ম BCS তালাবন্ধ", (await state(a.id, "L1:EXAM:10")) === "LOCKED");
+    await completeTask(db, a.id, await T("L0:DIAGNOSTIC"));
+    check("মূল্যায়ন শেষ → ১০ম BCS খোলে", (await state(a.id, "L1:EXAM:10")) === "AVAILABLE");
     check("১১তম BCS তালাবন্ধ", !(await canAccess(db, a.id, await T("L1:EXAM:11"))));
     check("Level 2 তালাবন্ধ", !(await canAccess(db, a.id, await T("L2:SUB:BN.BH.SHD"))));
 
@@ -41,14 +47,16 @@ async function main() {
     check("একই কাজ আবার সম্পন্ন করলে নতুন কিছু খোলে না", again.length === 0);
 
     await ensureStarted(db, b.id);
-    check("অন্য শিক্ষার্থীর অগ্রগতি আলাদা", (await state(b.id, "L1:EXAM:11")) === "LOCKED");
+    check("অন্য শিক্ষার্থীর অগ্রগতি আলাদা", (await state(b.id, "L1:EXAM:11")) === "LOCKED" && (await state(b.id, "L1:EXAM:10")) === "LOCKED");
 
     // ১১তম–৫০তম শেষ
     const exams = await db.learningTask.findMany({ where: { kind: "L1_EXAM" }, orderBy: { order: "asc" } });
     for (const e of exams.slice(1, -1)) await completeTask(db, a.id, e.id);
     check("৪৯তম শেষ হলেও Final তালাবন্ধ (৫০তম বাকি)", (await state(a.id, "L1:FINAL")) === "LOCKED");
     await completeTask(db, a.id, exams.at(-1)!.id);
-    check("৫০তম শেষ → Level 1 Final খোলে", (await state(a.id, "L1:FINAL")) === "AVAILABLE");
+    check("৫০তম শেষ → Repeat Mastery খোলে, Final তখনও তালাবন্ধ", (await state(a.id, "L1:REPEAT")) === "AVAILABLE" && (await state(a.id, "L1:FINAL")) === "LOCKED");
+    await completeTask(db, a.id, await T("L1:REPEAT"));
+    check("Repeat Mastery শেষ → Level 1 Final খোলে", (await state(a.id, "L1:FINAL")) === "AVAILABLE");
     check("Final-এর আগে Level 2 তালাবন্ধ", (await state(a.id, "L2:SUB:BN.BH.SHD")) === "LOCKED");
 
     await completeTask(db, a.id, await T("L1:FINAL"));

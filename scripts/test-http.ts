@@ -3,6 +3,7 @@
  * আসল কুকি দিয়ে: অপরিচিত, শিক্ষার্থী, মেয়াদোত্তীর্ণ সেশন — কে কী দেখতে পায়।
  *   npx tsx scripts/test-http.ts [base-url]
  */
+import { startAtLevel1 } from "./_journey";
 import { PrismaClient } from "@prisma/client";
 import { createHash, randomBytes } from "node:crypto";
 
@@ -54,8 +55,7 @@ async function main() {
     check("sitemap.xml-এ শুধু জনসাধারণের পাতা", sitemap.includes("/register") && !sitemap.includes("/research") && !sitemap.includes("/admin") && !sitemap.includes("/dashboard"));
 
     // ── শিক্ষার্থী
-    const { ensureStarted } = await import("../src/lib/progress/engine");
-    await ensureStarted(db, stu.id);
+    await startAtLevel1(db, stu.id);
     const ck = await session(stu.id);
     const dash = await get("/dashboard", ck);
     check("শিক্ষার্থী নিজের Dashboard দেখে", dash.status === 200 && dash.body.includes("এইচটিটিপি পরীক্ষার্থী"));
@@ -68,7 +68,7 @@ async function main() {
 
     // অন্যের পরীক্ষা
     const { startStep } = await import("../src/lib/exam/service");
-    await ensureStarted(db, other.id);
+    await startAtLevel1(db, other.id);
     const oa = await startStep(db, other.id, "L1:EXAM:10");
     const oq = (await db.testAttempt.findUniqueOrThrow({ where: { id: oa } })).questionIds[0];
     const qText = (await db.question.findUniqueOrThrow({ where: { id: oq } })).text;

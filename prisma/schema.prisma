@@ -35,6 +35,7 @@ model User {
   sessions       Session[]
   resetTokens    PasswordResetToken[]
   progress       StudentTaskProgress[]
+  checklist      StudentChecklist[]
   attempts       TestAttempt[]
   questionStats  QuestionStat[]
   masteryRecords MasteryRecord[]
@@ -284,13 +285,17 @@ model LearningLevel {
 }
 
 enum TaskKind {
+  L0_ORIENTATION // ধাপ ০: প্রশ্ন-বিশ্লেষণ পড়া (৫টি অংশে "পড়েছি")
+  L0_DIAGNOSTIC // ধাপ ০: শুরুর মূল্যায়ন (৫০ প্রশ্ন)
   L1_EXAM // একটি BCS পরীক্ষার পূর্ণ Cycle
+  L1_REPEAT // বারবার আসা প্রশ্নের Mastery (Level 1 Final-এর আগে)
   L1_FINAL
   L2_SUBTOPIC
   L2_CHECKPOINT // Priority Phase শেষের পরীক্ষা
   L2_FINAL
   L3_MODEL_TEST
   L3_TIER_GATE
+  CA_GATE // সাম্প্রতিক বিষয়াবলি: প্রতিটি প্রশ্নব্যাংক শেষ ও নির্ধারিত নম্বর (Level 3-এর শর্ত)
 }
 
 model LearningTask {
@@ -360,6 +365,16 @@ enum CycleStep {
   DONE
 }
 
+/// ধাপ ০-এর "পড়েছি" চিহ্ন (প্রশ্ন-বিশ্লেষণের অংশ)
+model StudentChecklist {
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  item      String // যেমন "orient:heatmap"
+  checkedAt DateTime @default(now())
+
+  @@id([userId, item])
+}
+
 model StudentTaskProgress {
   userId      String
   user        User         @relation(fields: [userId], references: [id], onDelete: Cascade)
@@ -391,6 +406,8 @@ enum AttemptKind {
   MODEL_TEST
   SRS_REVIEW
   MISTAKE_PRACTICE
+  DIAGNOSTIC // শুরুর মূল্যায়ন
+  REPEAT // বারবার আসা প্রশ্নের Mastery
 }
 
 model TestAttempt {

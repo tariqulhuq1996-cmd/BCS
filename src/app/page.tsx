@@ -132,8 +132,8 @@ async function HomeContent() {
       {/* ── Roadmap */}
       <Section
         id="roadmap"
-        title="তিন ধাপে পূর্ণ প্রস্তুতি"
-        lead="প্রতিটি ধাপে নির্ধারিত নম্বর পেলেই পরের ধাপ খোলে, তাই ফাঁক থেকে যায় না। প্রতিদিন Dashboard বলে দেয় আজ কী করবেন।"
+        title="শুরু থেকে শেষ: পূর্ণ প্রস্তুতির পথ"
+        lead="প্রশ্ন-বিশ্লেষণ দিয়ে শুরু, তারপর তিনটি Level — প্রতিটি ধাপে নির্ধারিত নম্বর পেলেই পরেরটি খোলে, তাই ফাঁক থেকে যায় না। প্রতিদিন Dashboard বলে দেয় আজ কী করবেন।"
       >
         <RoadmapPreview exams={t.exams} specialExams={t.specialExams} subtopics={t.subtopics} gradeCounts={t.gradeCounts} />
       </Section>

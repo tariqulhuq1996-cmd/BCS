@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
 import { requireUser } from "@/lib/auth/session";
+import { lockedBy } from "@/lib/progress/access";
+import { CaLocked } from "@/components/current-affairs/locked";
 import { prisma } from "@/lib/db";
 import { getOverview, SET_SIZE, STALE_DAYS } from "@/lib/current-affairs/service";
 import { bn } from "@/lib/bn";
@@ -29,6 +31,8 @@ const chip = "rounded-full border border-line-strong px-3.5 py-1.5 text-[15px] h
 
 async function Content() {
   const user = await requireUser("/current-affairs");
+  const locked = await lockedBy(user, "CA:GATE");
+  if (locked) return <CaLocked current={locked.current} />;
   const o = await getOverview(prisma, user.id);
   if (!o.total)
     return <p className="mt-8 text-lg text-ink-2">প্রশ্নব্যাংক এখনও যুক্ত হয়নি। শিগগিরই আসছে।</p>;

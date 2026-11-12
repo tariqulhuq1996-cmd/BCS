@@ -10,6 +10,7 @@ const SUITES = [
   ["ডেটা (উৎসের সঙ্গে মিল)", "verify-data.ts"],
   ["ডেটার অখণ্ডতা", "check-integrity.ts"],
   ["Unlock-ইঞ্জিন", "test-progress.ts"],
+  ["যাত্রা (ধাপ ০, Repeat, CA-শর্ত)", "test-journey.ts"],
   ["Level ১", "test-level1.ts"],
   ["Level ২ ও Revision", "test-level2.ts"],
   ["Level ৩", "test-level3.ts"],

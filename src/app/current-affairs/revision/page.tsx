@@ -3,6 +3,8 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { prisma } from "@/lib/db";
 import { requireUser } from "@/lib/auth/session";
+import { lockedBy } from "@/lib/progress/access";
+import { CaLocked } from "@/components/current-affairs/locked";
 import { listBanks } from "@/lib/current-affairs/service";
 import { bn } from "@/lib/bn";
 
@@ -27,7 +29,9 @@ export default function CaRevisionPage({ searchParams }: PageProps<"/current-aff
 
 async function Content({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   const sp = await searchParams;
-  await requireUser("/current-affairs/revision");
+  const user = await requireUser("/current-affairs/revision");
+  const locked = await lockedBy(user, "CA:GATE");
+  if (locked) return <CaLocked current={locked.current} />;
   const banks = await listBanks(prisma);
   if (!banks.length) return <p className="mt-8 text-lg text-ink-2">প্রশ্নব্যাংক এখনও যুক্ত হয়নি।</p>;
   const bank = banks.find((b) => b.key === sp.bank) ?? banks[0];

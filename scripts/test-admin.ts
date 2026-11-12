@@ -3,9 +3,10 @@
  * ধাপ নিষ্ক্রিয় করলে শিক্ষার্থী আটকে না থাকা, পূর্ণ Backup-এ গোপন তথ্য না থাকা।
  *   npm run test:admin
  */
+import { startAtLevel1 } from "./_journey";
 import { PrismaClient } from "@prisma/client";
 import ExcelJS from "exceljs";
-import { ensureStarted, reconcileDeactivated } from "../src/lib/progress/engine";
+import { reconcileDeactivated } from "../src/lib/progress/engine";
 import { importQuestions, parseCsv, parseXlsx } from "../src/lib/questions/import";
 import { fullBackup, progressCsv, questionsCsv } from "../src/lib/admin/export";
 import { isCorrectChoice } from "../src/lib/exam/service";
@@ -53,7 +54,7 @@ async function main() {
     check("অগ্রগতি-CSV তৈরি হয়", prog.split("\n")[0].includes("level1_done_of_"));
 
     // ── নিষ্ক্রিয় ধাপ শিক্ষার্থীকে আটকায় না
-    await ensureStarted(db, u.id);
+    await startAtLevel1(db, u.id);
     await db.learningTask.update({ where: { id: t10.id }, data: { active: false } });
     const moved = await reconcileDeactivated(db, t10.id);
     const s11 = await db.studentTaskProgress.findFirst({ where: { userId: u.id, task: { key: "L1:EXAM:11" } } });

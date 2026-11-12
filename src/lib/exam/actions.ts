@@ -14,7 +14,8 @@ async function uid() {
 /** কাজের key থেকে তার পাতার ঠিকানা। */
 function stepPath(taskKey: string) {
   const [lvl, kind, ref] = taskKey.split(":");
-  if (lvl === "L1") return kind === "FINAL" ? "/level-1/final" : `/level-1/${ref}`;
+  if (lvl === "L0") return "/start";
+  if (lvl === "L1") return kind === "FINAL" ? "/level-1/final" : kind === "REPEAT" ? "/level-1/repeat" : `/level-1/${ref}`;
   if (lvl === "L2") return kind === "FINAL" ? "/level-2/final" : kind === "CHECKPOINT" ? `/level-2/checkpoint/${ref}` : `/level-2/${ref}`;
   if (lvl === "L3") return kind === "MT" ? `/level-3/${Number(ref)}` : "/level-3";
   return "/dashboard";

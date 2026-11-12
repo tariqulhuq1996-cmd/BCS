@@ -29,6 +29,7 @@ function Start({ taskKey, label, mode = "step", primary = true }: { taskKey: str
 }
 
 const SINGLE: Record<string, { label: string; thr: string }> = {
+  L1_REPEAT: { label: "Repeat Mastery Test", thr: "l1.threshold.repeat" },
   L1_FINAL: { label: "Final Assessment", thr: "l1.threshold.final" },
   L2_FINAL: { label: "Final Assessment", thr: "l2.threshold.final" },
   L2_CHECKPOINT: { label: "Checkpoint Test", thr: "l2.threshold.checkpoint" },

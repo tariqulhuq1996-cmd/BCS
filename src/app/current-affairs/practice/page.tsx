@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
 import { requireUser } from "@/lib/auth/session";
+import { lockedBy } from "@/lib/progress/access";
+import { CaLocked } from "@/components/current-affairs/locked";
 import { MODES, latestBank, pickSet, type CaMode } from "@/lib/current-affairs/service";
 import { CaPractice } from "@/components/current-affairs/practice";
 import { prisma } from "@/lib/db";
@@ -23,6 +25,8 @@ export default function CaPracticePage({ searchParams }: PageProps<"/current-aff
 async function Content({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   const sp = await searchParams;
   const user = await requireUser("/current-affairs/practice");
+  const locked = await lockedBy(user, "CA:GATE");
+  if (locked) return <CaLocked current={locked.current} />;
   const one = (k: string) => (typeof sp[k] === "string" ? (sp[k] as string) : undefined);
   const mode = (Object.keys(MODES).includes(one("mode") ?? "") ? one("mode") : "smart") as CaMode;
   const bank = /^[a-z0-9-]{2,60}$/.test(one("bank") ?? "") ? one("bank") : undefined;

@@ -64,6 +64,24 @@ async function poolHistorical(db: Db, rules: Rules, examNos: number[]): Promise<
   return rows.map((r) => ({ id: r.id, uid: r.uid, examNo: r.exam!.bcsNo, qNo: qNoNum(r.examQNo), grade: r.subtopic.priorityGrade, subject: r.subtopic.topic.subject.code, options: r.options }));
 }
 
+/**
+ * Repeat Mastery-র প্রশ্ন: নির্ধারিত Priority শ্রেণির প্রতিটি পুনরাবৃত্ত প্রশ্ন-পরিবার থেকে একটি
+ * (সর্বশেষ BCS-এর প্রকাশিত, উত্তরসহ রূপ)।
+ */
+export async function poolRepeat(db: Db, grades: string[]): Promise<Cand[]> {
+  const fams = await db.repeatFamily.findMany({
+    where: { grade: { in: grades as ("A" | "B" | "C" | "D")[] } },
+    select: { members: { select: { question: { select: { id: true, uid: true, examQNo: true, options: true, status: true, correctIndex: true, exam: { select: { bcsNo: true } }, subtopic: { select: { priorityGrade: true, topic: { select: { subject: { select: { code: true } } } } } } } } } } },
+  });
+  const out: Cand[] = [];
+  for (const f of fams) {
+    const q = f.members.map((m) => m.question).filter((q) => q.status === "PUBLISHED" && q.correctIndex != null)
+      .sort((a, b) => (b.exam?.bcsNo ?? 0) - (a.exam?.bcsNo ?? 0))[0];
+    if (q) out.push({ id: q.id, uid: q.uid, examNo: q.exam?.bcsNo ?? 0, qNo: qNoNum(q.examQNo), grade: q.subtopic.priorityGrade, subject: q.subtopic.topic.subject.code, options: q.options });
+  }
+  return out;
+}
+
 /** Level 2-এর যোগ্য প্রশ্ন: প্রকাশিত (যাচাইকৃত) নতুন টপিকভিত্তিক প্রশ্ন। */
 async function poolTopic(db: Db, subtopicIds?: number[]): Promise<Cand[]> {
   const rows = await db.question.findMany({
@@ -192,6 +210,19 @@ export async function startStep(db: Db, userId: string, taskKey: string, mode: "
   const isL2 = task.kind.startsWith("L2_");
   if (task.kind === "L3_MODEL_TEST") return startModelTest(db, userId, task, progress.state, mode, rules);
   if (task.kind === "L3_TIER_GATE") throw new ExamError("NOT_READY", "স্তর-গেট আলাদা পরীক্ষা নয়; শর্ত পূরণ হলে নিজে থেকেই খোলে।");
+  if (task.kind === "L0_ORIENTATION" || task.kind === "CA_GATE") throw new ExamError("NOT_READY", "এই ধাপে আলাদা পরীক্ষা নেই।");
+  if (task.kind === "L0_DIAGNOSTIC") return startDiagnostic(db, userId, task, progress.state, rules);
+  if (task.kind === "L1_REPEAT") {
+    const open = await db.testAttempt.findFirst({ where: { userId, taskId: task.id, kind: mode === "practice" ? "PRACTICE" : "REPEAT", submittedAt: null }, orderBy: { startedAt: "desc" } });
+    if (open) return open.id;
+    if (mode !== "practice" && progress.state === "COMPLETED") throw new ExamError("SUBMITTED", "এই ধাপ আগেই সম্পন্ন। চাইলে অনুশীলন করতে পারো।");
+    // অনুশীলনে সব শ্রেণির পুনরাবৃত্ত প্রশ্ন, দুর্বলগুলো আগে; ধাপের পরীক্ষায় নির্ধারিত শ্রেণির সবগুলো
+    const grades = mode === "practice" ? ["A", "B", "C", "D"] : rules.get<string[]>("l1.repeat.grades");
+    const pool = await poolRepeat(db, grades);
+    const ranked = rank(pool, await statsFor(db, userId, pool.map((c) => c.id)), w, now, rnd) as Cand[];
+    if (mode === "practice") return createAttempt(db, userId, task.id, "PRACTICE", ranked.slice(0, 20).map((c) => c.id), { rules });
+    return createAttempt(db, userId, task.id, "REPEAT", shuffleArr(ranked.map((c) => c.id), rnd), { threshold: rules.get<number>("l1.threshold.repeat", [`task:${task.key}`, "level:1"]), rules });
+  }
 
   let kind: AttemptKind;
   if (mode === "practice") kind = "PRACTICE";
@@ -277,6 +308,27 @@ export async function startStep(db: Db, userId: string, taskKey: string, mode: "
     threshold = rules.get<number>("l1.threshold.final", scopes);
   }
   return createAttempt(db, userId, task.id, kind, shuffleArr(ids, rnd), { threshold, rules });
+}
+
+// ─────────────────────────────────────────── ধাপ ০: শুরুর মূল্যায়ন
+
+/**
+ * শুরুর মূল্যায়ন: ২০০ নম্বরের যুগের (৩৫তম থেকে) প্রশ্ন থেকে মানবণ্টন অনুযায়ী বিষয়ভিত্তিক, এলোমেলোভাবে বাছাই;
+ * সময়সীমাসহ, একবারই দেওয়া যায়। পাস-ফেল নেই — জমা দিলেই ধাপ সম্পন্ন এবং Level 1 খোলে।
+ */
+async function startDiagnostic(db: Db, userId: string, task: Task, state: string, rules: Rules): Promise<string> {
+  const open = await db.testAttempt.findFirst({ where: { userId, taskId: task.id, kind: "DIAGNOSTIC", submittedAt: null }, orderBy: { startedAt: "desc" } });
+  if (open) {
+    if (open.deadlineAt && Date.now() > open.deadlineAt.getTime() + GRACE_MS) await submitAttempt(db, userId, open.id);
+    else return open.id;
+  }
+  if (state === "COMPLETED" || open) throw new ExamError("SUBMITTED", "শুরুর মূল্যায়ন আগেই দেওয়া হয়েছে।");
+  const exams = (await db.exam.findMany({ where: { bcsNo: { gte: 35 }, type: { not: "SPECIAL" } }, select: { bcsNo: true } })).map((e) => e.bcsNo);
+  const pool = shuffleArr(await poolHistorical(db, rules, exams), Math.random);
+  const ids = pickBlueprint(pool, rules.get<Record<string, number>>("exam.marks_distribution"), rules.get<number>("l0.diagnostic.size"));
+  const id = await createAttempt(db, userId, task.id, "DIAGNOSTIC", shuffleArr(ids, Math.random), { rules });
+  await db.testAttempt.update({ where: { id }, data: { deadlineAt: new Date(Date.now() + rules.get<number>("l0.diagnostic.minutes") * 60e3) } });
+  return id;
 }
 
 // ─────────────────────────────────────────── Level 3: Model Test
@@ -378,11 +430,11 @@ async function ownAttempt(db: Db, userId: string, attemptId: string) {
   return a;
 }
 
-export const KIND_TITLE: Record<string, string> = { SOLVE: "প্রশ্ন সমাধান", REVISION: "Revision Test", MASTERY: "Mastery Test", CUMULATIVE: "Cumulative Revision Test", LEVEL_FINAL: "Final Assessment", PRACTICE: "অনুশীলন", CHECKPOINT: "Checkpoint Test", MODEL_TEST: "Model Test", SRS_REVIEW: "দৈনিক Revision", MISTAKE_PRACTICE: "ভুলের অনুশীলন" };
+export const KIND_TITLE: Record<string, string> = { SOLVE: "প্রশ্ন সমাধান", REVISION: "Revision Test", MASTERY: "Mastery Test", CUMULATIVE: "Cumulative Revision Test", LEVEL_FINAL: "Final Assessment", PRACTICE: "অনুশীলন", CHECKPOINT: "Checkpoint Test", MODEL_TEST: "Model Test", SRS_REVIEW: "দৈনিক Revision", MISTAKE_PRACTICE: "ভুলের অনুশীলন", DIAGNOSTIC: "শুরুর মূল্যায়ন", REPEAT: "Repeat Mastery Test" };
 
 export function attemptTitle(a: { kind: string; partNo: number; task: { titleBn: string } | null }, parts?: number) {
   if (!a.task) return KIND_TITLE[a.kind];
-  if (a.kind === "MODEL_TEST") return a.task.titleBn;
+  if (a.kind === "MODEL_TEST" || a.kind === "DIAGNOSTIC") return a.task.titleBn;
   return `${a.task.titleBn}: ${KIND_TITLE[a.kind]}${a.kind === "SOLVE" && parts && parts > 1 ? `, ভাগ ${bnD(a.partNo)}/${bnD(parts)}` : ""}`;
 }
 
@@ -523,7 +575,7 @@ export async function submitAttempt(db: Db, userId: string, attemptId: string): 
       });
     }
 
-    if (a.task && ["MASTERY", "CUMULATIVE", "LEVEL_FINAL", "CHECKPOINT"].includes(a.kind)) {
+    if (a.task && ["MASTERY", "CUMULATIVE", "LEVEL_FINAL", "CHECKPOINT", "REPEAT"].includes(a.kind)) {
       const t = a.task;
       const scope = t.kind === "L2_SUBTOPIC" ? "SUBTOPIC" : t.kind === "L1_EXAM" ? "EXAM" : "LEVEL";
       const scopeRef = t.kind === "L2_SUBTOPIC" ? t.key.split(":").at(-1)! : t.exam ? String(t.exam.bcsNo) : t.key;
@@ -537,9 +589,10 @@ export async function submitAttempt(db: Db, userId: string, attemptId: string): 
   let completed = false;
   const t = a.task;
   const finishes =
-    !!t && passed === true &&
-    (a.kind === "LEVEL_FINAL" || a.kind === "CUMULATIVE" || a.kind === "CHECKPOINT" ||
-      (a.kind === "MASTERY" && (t.kind === "L2_SUBTOPIC" || t.exam?.bcsNo === 10)));
+    (!!t && a.kind === "DIAGNOSTIC") || // শুরুর মূল্যায়ন: পাস-ফেল নেই
+    (!!t && passed === true &&
+      (a.kind === "LEVEL_FINAL" || a.kind === "CUMULATIVE" || a.kind === "CHECKPOINT" || a.kind === "REPEAT" ||
+        (a.kind === "MASTERY" && (t.kind === "L2_SUBTOPIC" || t.exam?.bcsNo === 10))));
   if (finishes) {
     opened = await completeTask(db, userId, t!.id);
     completed = true;
@@ -595,7 +648,7 @@ async function advanceCycle(tx: Prisma.TransactionClient, userId: string, task: 
   } else if (kind === "MASTERY" && p.step === "MASTERY") {
     const toCumulative = passed && task.kind === "L1_EXAM" && task.exam?.bcsNo !== 10;
     await tx.studentTaskProgress.update({ where, data: { ...scores, ...(toCumulative ? { step: "CUMULATIVE" } : {}) } });
-  } else if (kind === "CUMULATIVE" || kind === "LEVEL_FINAL" || kind === "CHECKPOINT") {
+  } else if (kind === "CUMULATIVE" || kind === "LEVEL_FINAL" || kind === "CHECKPOINT" || kind === "REPEAT" || kind === "DIAGNOSTIC") {
     await tx.studentTaskProgress.update({ where, data: scores });
   }
 }

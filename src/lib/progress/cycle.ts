@@ -27,6 +27,8 @@ export const ATTEMPT_KIND_BN: Record<string, string> = {
   MODEL_TEST: "Model Test",
   SRS_REVIEW: "দৈনিক Revision",
   MISTAKE_PRACTICE: "ভুলের অনুশীলন",
+  DIAGNOSTIC: "শুরুর মূল্যায়ন",
+  REPEAT: "Repeat Mastery Test",
 };
 
 export const LOCKED_MESSAGE = "এই ধাপটি Unlock করতে আগের ধাপের নির্ধারিত কাজ সম্পন্ন করুন।";

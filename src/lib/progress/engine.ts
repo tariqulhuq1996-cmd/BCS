@@ -16,18 +16,39 @@ type Db = PrismaClient | Prisma.TransactionClient;
 
 export const OPEN_STATES: TaskState[] = ["AVAILABLE", "IN_PROGRESS", "COMPLETED"];
 
-/** শিক্ষার্থীর যাত্রা শুরু: পূর্বশর্তহীন সব সক্রিয় কাজ AVAILABLE। বারবার ডাকা নিরাপদ। */
+/**
+ * শিক্ষার্থীর যাত্রা শুরু: পূর্বশর্তহীন সব সক্রিয় কাজ (ধাপ ০: প্রশ্ন-বিশ্লেষণ) AVAILABLE। বারবার ডাকা নিরাপদ।
+ * পুরোনো শিক্ষার্থী (ধাপ ০ যোগ হওয়ার আগে যারা শুরু করেছে) আটকে যান না: তাঁদের ধাপ ০ সম্পন্ন ধরা হয়,
+ * আর যাঁদের Level 1 Final আগেই খোলা, তাঁদের Repeat Mastery-ও সম্পন্ন ধরা হয়।
+ */
 export async function ensureStarted(db: Db, userId: string) {
-  const roots = await db.learningTask.findMany({ where: { active: true, prerequisites: { none: {} } }, select: { id: true } });
-  for (const r of roots) {
-    await withWriteRetry(() =>
+  const [roots, rows] = await Promise.all([
+    db.learningTask.findMany({ where: { active: true, prerequisites: { none: {} } }, select: { id: true, kind: true } }),
+    db.studentTaskProgress.findMany({ where: { userId }, select: { taskId: true, state: true, task: { select: { key: true } } } }),
+  ]);
+  const has = new Set(rows.map((r) => r.taskId));
+  const now = new Date();
+  const put = (taskId: number, state: TaskState) =>
+    withWriteRetry(() =>
       db.studentTaskProgress.upsert({
-        where: { userId_taskId: { userId, taskId: r.id } },
+        where: { userId_taskId: { userId, taskId } },
         update: {},
-        create: { userId, taskId: r.id, state: "AVAILABLE", unlockedAt: new Date() },
+        create: { userId, taskId, state, unlockedAt: now, ...(state === "COMPLETED" ? { step: "DONE" as const, completedAt: now } : {}) },
       }),
     );
+  const legacy = rows.some((r) => !/^(L0:|CA:)/.test(r.task.key));
+  const byKey = async (keys: string[]) => db.learningTask.findMany({ where: { key: { in: keys } }, select: { id: true, key: true } });
+
+  for (const r of roots) {
+    if (has.has(r.id)) continue;
+    if (legacy && r.kind === "L0_ORIENTATION") {
+      await put(r.id, "COMPLETED");
+      for (const t of await byKey(["L0:DIAGNOSTIC", "CA:GATE"])) if (!has.has(t.id)) await put(t.id, t.key === "CA:GATE" ? "AVAILABLE" : "COMPLETED");
+    } else await put(r.id, "AVAILABLE");
   }
+  // Repeat Mastery যোগ হওয়ার আগেই যাঁদের Level 1 Final খুলেছে
+  const final = rows.find((r) => r.task.key === "L1:FINAL" && r.state !== "LOCKED");
+  if (final) for (const t of await byKey(["L1:REPEAT"])) if (!has.has(t.id)) await put(t.id, "COMPLETED");
 }
 
 /** একটি কাজ শিক্ষার্থী খুলতে পারবে কি না (সার্ভার-সাইড প্রবেশ-যাচাই)। */

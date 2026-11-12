@@ -6,6 +6,7 @@ import { bn, bnOrdinal } from "@/lib/bn";
 import { ensureStarted } from "./engine";
 import { L1_STEPS, L2_STEPS, type StepKey } from "./cycle";
 import { numify } from "@/lib/sql";
+import { caGateStatus, evaluateCaGate, finalStretch, orientationStatus, ORIENT_ITEMS } from "./journey";
 
 /** Level 3-এর পরিকল্পিত টেস্ট (কাজগুলো Phase 07-এ তৈরি হবে)। */
 const L3_PLANNED = 150;
@@ -34,6 +35,10 @@ export type TaskView = {
 export function taskHref(t: { kind: TaskKind; key: string; bcsNo?: number; subtopicCode?: string }): string {
   switch (t.kind) {
     case "L1_EXAM": return `/level-1/${t.bcsNo}`;
+    case "L0_ORIENTATION": return "/research";
+    case "L0_DIAGNOSTIC": return "/start";
+    case "CA_GATE": return "/current-affairs";
+    case "L1_REPEAT": return "/level-1/repeat";
     case "L1_FINAL": return "/level-1/final";
     case "L2_SUBTOPIC": return `/level-2/${t.subtopicCode}`;
     case "L2_CHECKPOINT": return `/level-2/checkpoint/${t.key.split(":").at(-1)}`;
@@ -90,12 +95,34 @@ export async function getStudentTasks(userId: string): Promise<TaskView[]> {
   });
 }
 
-/** বর্তমান কাজ: চলমান কাজ আগে, নইলে ক্রমের প্রথম খোলা কাজ। */
+/** বর্তমান কাজ: চলমান কাজ আগে, নইলে ক্রমের প্রথম খোলা কাজ। সাম্প্রতিক বিষয়াবলির শর্ত পাশের পথ — মূল কাজ নয়। */
 export function pickCurrent(tasks: TaskView[]): TaskView | null {
-  return tasks.find((t) => t.state === "IN_PROGRESS") ?? tasks.find((t) => t.state === "AVAILABLE") ?? null;
+  const main = tasks.filter((t) => t.kind !== "CA_GATE");
+  return main.find((t) => t.state === "IN_PROGRESS") ?? main.find((t) => t.state === "AVAILABLE") ?? null;
+}
+
+export type JourneyStage = { key: string; label: string; href: string; state: "done" | "current" | "locked" | "open" };
+
+/** যাত্রার ধাপ-রেখা: ধাপ ০ → Level ১ → Repeat Mastery → Level ২ → Level ৩। */
+export function journeyStages(tasks: TaskView[], current: TaskView | null): JourneyStage[] {
+  const groups: { key: string; label: string; href: string; match: (t: TaskView) => boolean }[] = [
+    { key: "L0", label: "ধাপ ০: প্রশ্ন-বিশ্লেষণ", href: "/start", match: (t) => t.levelNo === 0 && t.kind !== "CA_GATE" },
+    { key: "L1", label: "Level ১: বিগত BCS", href: "/level-1", match: (t) => t.kind === "L1_EXAM" },
+    { key: "REPEAT", label: "Repeat Mastery ও Final", href: "/level-1/repeat", match: (t) => t.kind === "L1_REPEAT" || t.kind === "L1_FINAL" },
+    { key: "L2", label: "Level ২: টপিকভিত্তিক", href: "/level-2", match: (t) => t.levelNo === 2 },
+    { key: "L3", label: "Level ৩: Model Test", href: "/level-3", match: (t) => t.levelNo === 3 },
+  ];
+  return groups.map((g) => {
+    const ts = tasks.filter(g.match);
+    const done = ts.length > 0 && ts.every((t) => t.state === "COMPLETED");
+    const isCur = !!current && g.match(current);
+    const open = ts.some((t) => t.state !== "LOCKED");
+    return { key: g.key, label: g.label, href: g.href, state: done ? "done" : isCur ? "current" : open ? "open" : "locked" };
+  });
 }
 
 export async function getDashboard(userId: string) {
+  await evaluateCaGate(prisma, userId); // আগে থেকে শর্ত পূরণ হয়ে থাকলে Level 3-এর পথ খোলা
   const tasks = await getStudentTasks(userId);
   const rules = await loadRules(prisma);
   const current = pickCurrent(tasks);
@@ -125,8 +152,17 @@ export async function getDashboard(userId: string) {
     });
     if (dep) {
       const thr = (k: string) => bn(rules.get<number>(k));
+      const caGate = tasks.find((t) => t.kind === "CA_GATE");
       const condition =
-        current.kind === "L1_EXAM"
+        current.kind === "L0_ORIENTATION"
+          ? `প্রশ্ন-বিশ্লেষণের ${bn(ORIENT_ITEMS.length)}টি অংশে "পড়েছি" চিহ্ন দিলে`
+          : current.kind === "L0_DIAGNOSTIC"
+            ? "শুরুর মূল্যায়ন জমা দিলেই"
+            : current.kind === "L1_REPEAT"
+              ? `Repeat Mastery Test-এ ${thr("l1.threshold.repeat")}% পেলে`
+              : current.kind === "L2_FINAL"
+                ? `Level ২ Final-এ ${thr("l2.threshold.final")}% পেলে${caGate && caGate.state !== "COMPLETED" ? `, আর সাম্প্রতিক বিষয়াবলির প্রতিটি প্রশ্নব্যাংকে ${thr("ca.gate.min_pct")}% হলে` : ""}`
+                : current.kind === "L1_EXAM"
           ? `${current.title}-এর Mastery Test-এ ${thr("l1.threshold.mastery")}%${current.bcsNo! > 10 ? ` ও Cumulative Test-এ ${thr("l1.threshold.cumulative")}%` : ""} পেলে`
           : current.kind === "L2_SUBTOPIC"
             ? `এই Priority ধাপের সব উপবিষয়ে Mastery (${thr("l2.threshold.mastery")}%) অর্জন করলে`
@@ -172,6 +208,12 @@ export async function getDashboard(userId: string) {
       limit 5`.then((r) => numify(r)),
   ]);
   const earnedSet = new Set(earned.map((e) => e.achievementKey));
+  const [ca, caDue, stretch, orient] = await Promise.all([
+    caGateStatus(prisma, userId),
+    prisma.caAnswer.count({ where: { userId, dueAt: { lte: now }, question: { active: true } } }),
+    finalStretch(prisma, now),
+    current?.kind === "L0_ORIENTATION" ? orientationStatus(prisma, userId) : null,
+  ]);
 
   return {
     current,
@@ -196,6 +238,11 @@ export async function getDashboard(userId: string) {
     weakSubtopics,
     achievements: achievements.map((a) => ({ ...a, earned: earnedSet.has(a.key) })),
     l1: tasks.filter((t) => t.levelNo === 1),
+    stages: journeyStages(tasks, current),
+    ca: { ...ca, due: caDue, total: ca.banks.reduce((a, b) => a + b.total, 0), answered: ca.banks.reduce((a, b) => a + b.answered, 0) },
+    stretch,
+    orient,
+    l3Open: tasks.some((t) => t.kind === "L3_MODEL_TEST" && t.state !== "LOCKED"),
   };
 }
 
@@ -225,6 +272,21 @@ async function describeAction(t: TaskView, tasks: TaskView[], rules: Awaited<Ret
     const stepLabel = L1_STEPS.find((s) => s.key === t.step)?.label ?? "";
     return { text: byStep[t.step], button: t.step === "SOLVE" && t.state === "AVAILABLE" ? "পরবর্তী কাজ শুরু করো" : "কাজ চালিয়ে যাও", stepLabel, href: t.href };
   }
+  if (t.kind === "L0_ORIENTATION")
+    return {
+      text: `স্বাগতম! যাত্রার প্রথম ধাপ প্রশ্ন-বিশ্লেষণ: কোন উপবিষয় প্রায় প্রতিবার আসে, সাম্প্রতিক ধারা, বারবার আসা প্রশ্ন, Priority List আর পুরো পথ। পাঁচটি অংশ পড়ে প্রতিটির শেষে "পড়েছি" চিহ্ন দাও — তারপর শুরুর মূল্যায়ন।`,
+      button: "প্রশ্ন-বিশ্লেষণ পড়ো", stepLabel: "প্রশ্ন-বিশ্লেষণ", href: "/research",
+    };
+  if (t.kind === "L0_DIAGNOSTIC")
+    return {
+      text: `${congrats}এবার শুরুর মূল্যায়ন: ${bn(rules.get<number>("l0.diagnostic.size"))}টি প্রশ্ন, ${bn(rules.get<number>("l0.diagnostic.minutes"))} মিনিট। পাস-ফেল নেই — জমা দিলেই Level ১ খুলবে, আর শেষে দেখবে শুরু থেকে কতটা এগোলে।`,
+      button: t.state === "IN_PROGRESS" ? "মূল্যায়ন চালিয়ে যাও" : "শুরুর মূল্যায়ন দাও", stepLabel: "শুরুর মূল্যায়ন", href: "/start",
+    };
+  if (t.kind === "L1_REPEAT")
+    return {
+      text: `${congrats}১০ম–৫০তম সব BCS শেষ! Level ১ Final-এর আগে বারবার আসা প্রশ্ন পাকা করো: Priority ${rules.get<string[]>("l1.repeat.grades").join(", ")}-এর প্রতিটি পুনরাবৃত্ত প্রশ্ন থেকে একটি করে — পাস করতে ${pct("l1.threshold.repeat")}% লাগবে।`,
+      button: "Repeat Mastery শুরু করো", stepLabel: "Repeat Mastery", href: t.href,
+    };
   if (t.kind === "L1_FINAL")
     return {
       text: `${congrats}১০ম–৫০তম সব BCS-এর Learning Cycle শেষ। এখন সব পরীক্ষা থেকে ${bn(rules.get<number>("l1.final.size"))}টি প্রশ্নের Level ১ Final Assessment দাও; পাস করতে ${pct("l1.threshold.final")}% লাগবে।`,

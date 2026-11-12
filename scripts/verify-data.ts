@@ -69,13 +69,15 @@ async function main() {
   check("সংযোগহীন পুনরাবৃত্তি-পরিবার", 0, orphan);
 
   // Roadmap
-  check("Level 1 কাজ (পরীক্ষা + Final)", dbExam.length + 1, await prisma.learningTask.count({ where: { level: { no: 1 } } }));
+  check("Level 1 কাজ (পরীক্ষা + Repeat Mastery + Final)", dbExam.length + 2, await prisma.learningTask.count({ where: { level: { no: 1 } } }));
   check("Level 2 উপবিষয়-কাজ", Object.keys(src.pri).length, await prisma.learningTask.count({ where: { kind: "L2_SUBTOPIC" } }));
   const l1 = await prisma.learningTask.findMany({ where: { kind: "L1_EXAM" }, orderBy: { order: "asc" }, include: { prerequisites: true, exam: true } });
-  const chainOk = l1.every((t, i) => (i === 0 ? t.prerequisites.length === 0 : t.prerequisites.length === 1 && t.prerequisites[0].requiresId === l1[i - 1].id));
-  check("Level 1 ক্রমিক শৃঙ্খল (১০ম → ৫০তম)", true, chainOk && l1[0].exam?.bcsNo === 10 && l1.at(-1)?.exam?.bcsNo === 50);
+  const diag = await prisma.learningTask.findUnique({ where: { key: "L0:DIAGNOSTIC" } });
+  // ১০ম BCS খোলে শুরুর মূল্যায়নের পরে; তারপর একটির পর একটি
+  const chainOk = l1.every((t, i) => t.prerequisites.length === 1 && t.prerequisites[0].requiresId === (i === 0 ? diag?.id : l1[i - 1].id));
+  check("Level 1 ক্রমিক শৃঙ্খল (শুরুর মূল্যায়ন → ১০ম → ৫০তম)", true, chainOk && l1[0].exam?.bcsNo === 10 && l1.at(-1)?.exam?.bcsNo === 50);
   const noRoot = await prisma.learningTask.count({ where: { prerequisites: { none: {} } } });
-  check("পূর্বশর্তহীন কাজ শুধু ১টি (১০ম BCS)", 1, noRoot);
+  check("পূর্বশর্তহীন কাজ শুধু ১টি (ধাপ ০: প্রশ্ন-বিশ্লেষণ)", 1, noRoot);
 
   console.log(fails ? `\nব্যর্থ: ${fails}টি` : "\nব্যর্থ: কিছু নয়");
   if (fails) process.exitCode = 1;

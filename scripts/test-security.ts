@@ -4,9 +4,10 @@
  * অবৈধ ইনপুট, অন্যের পরীক্ষায় হস্তক্ষেপ, পাসওয়ার্ড সংরক্ষণ। অস্থায়ী তথ্য শেষে মুছে যায়।
  *   npx tsx scripts/test-security.ts
  */
+import { startAtLevel1 } from "./_journey";
 import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcryptjs";
-import { completeTask, ensureStarted } from "../src/lib/progress/engine";
+import { completeTask } from "../src/lib/progress/engine";
 import { ExamError, acknowledgeModelTestReview, getAttemptView, getResultView, saveAnswer, startStep, submitAttempt } from "../src/lib/exam/service";
 
 const db = new PrismaClient();
@@ -24,8 +25,8 @@ async function main() {
   const mk = (n: string, extra = {}) => db.user.create({ data: { email: `${tag}-${n}@sec.test`, passwordHash: bcrypt.hashSync("Secret12345", 4), ...extra } });
   const a = await mk("a"), b = await mk("b");
   try {
-    await ensureStarted(db, a.id);
-    await ensureStarted(db, b.id);
+    await startAtLevel1(db, a.id);
+    await startAtLevel1(db, b.id);
 
     // ── একই ধাপ একসঙ্গে ৫ বার শুরু
     const ids = await Promise.all([1, 2, 3, 4, 5].map(() => startStep(db, a.id, "L1:EXAM:10")));

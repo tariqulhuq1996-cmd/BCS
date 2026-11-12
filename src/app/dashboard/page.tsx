@@ -26,24 +26,64 @@ async function Dashboard() {
   const user = await requireUser("/dashboard");
   const d = await getDashboard(user.id);
   const curLevel = d.current?.levelNo ?? 1;
+  const caPct = d.ca.total ? (d.ca.answered / d.ca.total) * 100 : 0;
+  const caLocked = d.ca.state === "LOCKED";
 
   return (
     <>
       <p className="text-ink-2">স্বাগতম, {user.name}</p>
 
+      {/* ── যাত্রার ধাপ-রেখা */}
+      <nav aria-label="তোমার যাত্রা" className="relative mt-3 overflow-x-auto pb-1">
+        <ol className="flex min-w-max items-center gap-1.5 text-sm">
+          {d.stages.map((st, i) => (
+            <li key={st.key} className="flex items-center gap-1.5">
+              {i > 0 && <span aria-hidden="true" className={`h-px w-5 ${st.state === "locked" ? "bg-line-strong" : "bg-green"}`} />}
+              <Link
+                href={st.href}
+                aria-current={st.state === "current" ? "step" : undefined}
+                className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 ${
+                  st.state === "done" ? "border-green bg-green-wash" : st.state === "current" ? "border-green bg-green font-semibold text-white dark:text-paper" : st.state === "open" ? "border-green text-ink" : "border-dashed border-line-strong text-muted"
+                }`}
+              >
+                <span aria-hidden="true">{st.state === "done" ? "✓" : st.state === "locked" ? "⊘" : "●"}</span>
+                {st.label}
+                <span className="sr-only">{st.state === "done" ? " (সম্পন্ন)" : st.state === "current" ? " (এখন এখানে)" : st.state === "locked" ? " (তালাবন্ধ)" : ""}</span>
+              </Link>
+            </li>
+          ))}
+        </ol>
+      </nav>
+
+      {/* ── শেষ দিনগুলো: চূড়ান্ত রিভিশন */}
+      {d.stretch.active && (
+        <section aria-labelledby="stretch" className="mt-4 rounded-2xl border-2 border-omr bg-omr-wash p-5 sm:p-6">
+          <h2 id="stretch" className="text-xl font-bold">পরীক্ষার আর {bn(d.stretch.daysLeft!)} দিন — চূড়ান্ত রিভিশন</h2>
+          <p className="mt-1 text-ink-2">শেষ {bn(d.stretch.days)} দিন নতুন কিছু নয়, যা পড়েছ তা পাকা করো। প্রতিদিন এই চারটি:</p>
+          <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+            <li><Link href={d.l3Open ? "/level-3" : "/level-1/final"} className="font-semibold text-omr underline underline-offset-4">{d.l3Open ? "একটি Model Test" : "Final Assessment-এর অনুশীলন"}</Link></li>
+            <li><Link href="/repeated-questions" className="font-semibold text-omr underline underline-offset-4">Priority A-র বারবার আসা প্রশ্ন</Link></li>
+            <li><Link href="/current-affairs/revision" className="font-semibold text-omr underline underline-offset-4">সাম্প্রতিক বিষয়াবলির রিভিশন</Link></li>
+            <li><Link href="/mistakes" className="font-semibold text-omr underline underline-offset-4">নিজের ভুলগুলো</Link></li>
+          </ul>
+        </section>
+      )}
+
       {/* ── আজ তোমার করণীয় */}
       <section aria-labelledby="today" className="mt-3 grid gap-6 rounded-2xl border-2 border-green bg-surface p-6 sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
         <div>
+          <p className="text-sm font-semibold text-green">আজকের কাজ ১/৩: মূল পথ</p>
           <h1 id="today" className="text-[30px] font-extrabold sm:text-[36px]" style={{ fontStretch: "110%" }}>
             আজ তোমার করণীয়
           </h1>
           {d.action ? (
             <>
               <p className="mt-1 text-sm text-muted">
-                Level {bn(curLevel)}, {d.current?.title}
+                {curLevel === 0 ? "ধাপ ০" : `Level ${bn(curLevel)}`}, {d.current?.title}
                 {d.action.stepLabel && ` — ধাপ: ${d.action.stepLabel}`}
               </p>
               <p className="mt-4 max-w-2xl text-lg leading-relaxed">{d.action.text}</p>
+              {d.orient && <p className="mt-2 text-[15px] text-ink-2">পড়া হয়েছে {bn(d.orient.checked.length)}/৫টি অংশ।</p>}
               {d.nextUnlock && (
                 <p className="mt-3 text-[15px] text-ink-2">
                   পরবর্তী Unlock: <span className="font-semibold text-ink">{d.nextUnlock.title}</span> — {d.nextUnlock.condition}।
@@ -61,15 +101,60 @@ async function Dashboard() {
         )}
       </section>
 
-      {/* ── আজকের Revision-স্মারক */}
-      {d.revision.dueToday > 0 && (
-        <section aria-label="আজকের Revision" className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-omr bg-omr-wash px-5 py-4">
-          <p className="text-[16px]">
-            আজ <span className="font-bold">{bn(d.revision.dueToday)}টি</span> প্রশ্ন Revision-এর জন্য অপেক্ষা করছে। ভুলগুলো ভুলে যাওয়ার আগেই আরেকবার দেখে নাও।
-          </p>
-          <Link href="/revision" className="rounded-lg border-2 border-omr bg-surface px-4 py-2 font-semibold text-omr hover:bg-omr hover:text-white">Revision শুরু করো</Link>
+      {/* ── আজকের কাজ ২/৩ ও ৩/৩ */}
+      <div className="mt-4 grid gap-4 md:grid-cols-2">
+        <section aria-labelledby="rev" className="flex flex-col justify-between gap-3 rounded-xl border border-omr bg-omr-wash px-5 py-4">
+          <div>
+            <h2 id="rev" className="text-sm font-semibold text-omr">আজকের কাজ ২/৩: রিভিশন</h2>
+            <p className="mt-1 text-[16px]">
+              {d.revision.dueToday > 0 ? (
+                <>আজ <span className="font-bold">{bn(d.revision.dueToday)}টি</span> প্রশ্ন Revision-এর জন্য অপেক্ষা করছে। ভুলগুলো ভুলে যাওয়ার আগেই আরেকবার দেখে নাও।</>
+              ) : (
+                "আজ Revision বাকি নেই। ভুল করা প্রশ্নগুলো নির্দিষ্ট দিন পরপর নিজে থেকেই এখানে ফিরে আসবে।"
+              )}
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center gap-3">
+            {d.revision.dueToday > 0 && <Link href="/revision" className="rounded-lg border-2 border-omr bg-surface px-4 py-2 font-semibold text-omr hover:bg-omr hover:text-white">Revision শুরু করো</Link>}
+            <Link href="/mistakes" className="py-2 text-[15px] text-omr underline underline-offset-4">ভুলের ভান্ডার ({bn(d.revision.wrongBank)})</Link>
+          </div>
         </section>
-      )}
+
+        <section aria-labelledby="ca" className="flex flex-col justify-between gap-3 rounded-xl border border-line bg-surface px-5 py-4">
+          <div>
+            <h2 id="ca" className="text-sm font-semibold text-green">আজকের কাজ ৩/৩: সাম্প্রতিক বিষয়াবলি</h2>
+            {caLocked ? (
+              <p className="mt-1 text-[15px] text-ink-2">প্রশ্ন-বিশ্লেষণ পড়া শেষ হলেই খুলবে; তারপর প্রতিদিন ২০টি প্রশ্ন, মূল পথের পাশাপাশি।</p>
+            ) : (
+              <>
+                <p className="mt-1 text-[15px] text-ink-2">
+                  প্রতিদিন ২০টি স্মার্ট প্রশ্ন{d.ca.due > 0 ? ` — আজ ${bn(d.ca.due)}টি পুনরাবৃত্তির পালা` : ""}।{" "}
+                  {d.ca.state === "COMPLETED" ? "Level ৩-এর শর্ত পূরণ হয়েছে ✓" : `Level ৩-এর শর্ত: প্রতিটি প্রশ্নব্যাংকের সব প্রশ্ন, ${bn(d.ca.min)}% সঠিক।`}
+                </p>
+                {d.ca.state !== "COMPLETED" && (
+                  <ul className="mt-2 grid gap-2">
+                    {d.ca.banks.map((b) => (
+                      <li key={b.bankKey}>
+                        <div className="flex justify-between gap-3 text-sm">
+                          <span>{b.title}</span>
+                          <span className="whitespace-nowrap tabular text-ink-2">{bn(b.answered)}/{bn(b.total)}, {bnNum(b.pct, 0)}% সঠিক{b.met ? " ✓" : ""}</span>
+                        </div>
+                        <ProgressBar pct={(b.answered / Math.max(b.total, 1)) * 100} label={`${b.title}: কতটি প্রশ্ন দেওয়া হয়েছে`} />
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </>
+            )}
+          </div>
+          {!caLocked && (
+            <div className="flex flex-wrap items-center gap-3">
+              <Link href="/current-affairs/practice?mode=smart" className="rounded-lg bg-green px-5 py-2.5 font-semibold text-white hover:bg-green-strong dark:text-paper">আজকের ২০টি প্রশ্ন</Link>
+              <span className="text-sm tabular text-muted">মোট {bnNum(caPct, 0)}% প্রশ্ন দেখা</span>
+            </div>
+          )}
+        </section>
+      </div>
 
       {/* ── সংখ্যায় অগ্রগতি */}
       <section aria-label="সংক্ষেপে অগ্রগতি" className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-5">
@@ -92,15 +177,6 @@ async function Dashboard() {
             )}
           </div>
         ))}
-      </section>
-
-      {/* ── সাম্প্রতিক বিষয়াবলি (Roadmap-এর বাইরে, যেকোনো সময়) */}
-      <section aria-labelledby="ca" className="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-xl border border-line bg-surface p-5">
-        <div>
-          <h2 id="ca" className="text-lg font-bold">সাম্প্রতিক বিষয়াবলি (Current Affairs)</h2>
-          <p className="text-[15px] text-ink-2">প্রতিদিন ২০টি স্মার্ট প্রশ্ন — ভুল আর পুরোনো প্রশ্ন নিজে থেকে ফিরে আসে। যেকোনো Level-এ থাকা অবস্থায় করা যায়।</p>
-        </div>
-        <Link href="/current-affairs" className="rounded-lg bg-green px-5 py-2.5 font-semibold text-white hover:bg-green-strong dark:text-paper">অনুশীলন করো</Link>
       </section>
 
       {/* ── তিন Level */}

@@ -20,11 +20,53 @@ export default function ReadinessPage() {
   );
 }
 
+/**
+ * শুরু থেকে কতটা এগোলে: শুরুর মূল্যায়নের স্কোর বনাম এখনকার স্কোর — Model Test থাকলে শেষ ৫টির গড় সঠিকের হার,
+ * নইলে শেষ ৫টি মূল্যায়ন-পরীক্ষার (Mastery, Cumulative, Checkpoint, Final, Repeat) গড়।
+ */
+async function Baseline({ userId }: { userId: string }) {
+  const diag = await prisma.testAttempt.findFirst({ where: { userId, kind: "DIAGNOSTIC", submittedAt: { not: null } }, orderBy: { submittedAt: "asc" }, select: { scorePct: true, submittedAt: true } });
+  if (!diag) return null;
+  const mts = await prisma.testAttempt.findMany({ where: { userId, kind: "MODEL_TEST", submittedAt: { not: null } }, orderBy: { submittedAt: "desc" }, take: 5, select: { scorePct: true } });
+  const recent = mts.length
+    ? mts
+    : await prisma.testAttempt.findMany({ where: { userId, kind: { in: ["MASTERY", "CUMULATIVE", "CHECKPOINT", "LEVEL_FINAL", "REPEAT"] }, submittedAt: { gt: diag.submittedAt! } }, orderBy: { submittedAt: "desc" }, take: 5, select: { scorePct: true } });
+  const start = diag.scorePct ?? 0;
+  const now = recent.length ? recent.reduce((a, x) => a + (x.scorePct ?? 0), 0) / recent.length : null;
+  return (
+    <section aria-labelledby="baseline" className="mt-8 rounded-xl border-2 border-green bg-green-wash p-5 sm:p-6">
+      <h2 id="baseline" className="text-xl font-bold">শুরু থেকে কতটা এগোলে</h2>
+      <div className="mt-4 grid gap-4 sm:grid-cols-3">
+        <div>
+          <p className="text-sm text-muted">শুরুর মূল্যায়নে</p>
+          <p className="font-display text-[32px] font-bold leading-none tabular">{bnNum(start, 0)}%</p>
+        </div>
+        <div>
+          <p className="text-sm text-muted">এখন ({mts.length ? `শেষ ${bn(mts.length)}টি Model Test` : `শেষ ${bn(recent.length)}টি মূল্যায়ন-পরীক্ষা`})</p>
+          <p className="font-display text-[32px] font-bold leading-none tabular">{now == null ? "—" : `${bnNum(now, 0)}%`}</p>
+        </div>
+        <div>
+          <p className="text-sm text-muted">পার্থক্য</p>
+          <p className={`font-display text-[32px] font-bold leading-none tabular ${now != null && now < start ? "text-danger" : "text-green"}`}>
+            {now == null ? "—" : `${now >= start ? "+" : "−"}${bnNum(Math.abs(now - start), 0)}`}
+          </p>
+        </div>
+      </div>
+      <p className="mt-3 text-sm text-ink-2">সঠিক উত্তরের হার (%)। {now == null ? "প্রথম Mastery Test দিলেই এখানে তুলনা দেখাবে।" : "মূল্যায়ন-পরীক্ষাগুলো তোমার দুর্বল প্রশ্ন বেশি দেয়, তাই এই হার আসল পরীক্ষার চেয়ে কিছুটা কম দেখাতে পারে।"}</p>
+    </section>
+  );
+}
+
 async function Content() {
   const user = await requireUser("/readiness-report");
   const r = await getReadiness(prisma, user.id);
   if (r.empty)
-    return <p className="mt-6 text-lg text-ink-2">এখনও কোনো Model Test দাওনি। Level ৩-এ টেস্ট দিলে এখানে তোমার পূর্ণ প্রতিবেদন তৈরি হবে।</p>;
+    return (
+      <>
+        <Baseline userId={user.id} />
+        <p className="mt-6 text-lg text-ink-2">এখনও কোনো Model Test দাওনি। Level ৩-এ টেস্ট দিলে এখানে তোমার পূর্ণ প্রতিবেদন তৈরি হবে।</p>
+      </>
+    );
   const final = r.completedTests >= 150;
   const max = Math.max(200 * 0.1, ...r.series.map((s) => s.net));
   const trend = r.early != null && r.late != null ? r.late - r.early : null;
@@ -34,6 +76,8 @@ async function Content() {
       <p className="mt-2 max-w-2xl text-ink-2">
         {final ? "১৫০টি Model Test সম্পন্ন — এটি তোমার চূড়ান্ত প্রতিবেদন।" : `এখন পর্যন্ত ${bn(r.completedTests)}টি টেস্ট সম্পন্ন (মোট চেষ্টা ${bn(r.count)}টি); ১৫০টি শেষে এটিই চূড়ান্ত প্রতিবেদন হবে।`}
       </p>
+
+      <Baseline userId={user.id} />
 
       <section aria-label="সারাংশ" className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-4">
         {[

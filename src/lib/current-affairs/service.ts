@@ -3,6 +3,7 @@
  */
 import type { PriorityGrade, PrismaClient } from "@prisma/client";
 import { withWriteRetry } from "../db-retry";
+import { evaluateCaGate } from "../progress/journey";
 
 /** Leitner-বাক্স অনুযায়ী পরের পুনরাবৃত্তি (দিন): ঠিক হলে বাক্স বাড়ে, ভুল হলে ১-এ ফেরে */
 const BOX_DAYS = [1, 3, 7, 14, 30];
@@ -192,6 +193,7 @@ export async function answerQuestion(db: PrismaClient, userId: string, questionI
     create: { userId, questionId, seen: 1, correct: correct ? 1 : 0, lastCorrect: correct, box, dueAt },
   });
   });
+  await evaluateCaGate(db, userId); // সব প্রশ্নব্যাংক আয়ত্ত হলে Level 3-এর শর্ত পূরণ
   return {
     correct,
     correctIndex: q.correctIndex,

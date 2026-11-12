@@ -17,6 +17,13 @@ export const DEFAULT_RULES: Record<string, { value: RuleValue; noteBn: string }>
   "path.practice_classes": { value: ["J", "S"], noteBn: "শুধু ঐচ্ছিক অনুশীলনে আসবে এমন শ্রেণি" },
 
   // ── Level 1
+  "l0.diagnostic.size": { value: 50, noteBn: "শুরুর মূল্যায়নের প্রশ্নসংখ্যা (মানবণ্টন অনুযায়ী বিষয়ভিত্তিক)" },
+  "l0.diagnostic.minutes": { value: 30, noteBn: "শুরুর মূল্যায়নের সময় (মিনিট)" },
+  "l1.repeat.grades": { value: ["A"], noteBn: "Repeat Mastery-তে যে Priority শ্রেণির পুনরাবৃত্ত প্রশ্ন বাধ্যতামূলক" },
+  "l1.threshold.repeat": { value: 90, noteBn: "Repeat Mastery-তে ন্যূনতম % (পাস করলে Level 1 Final খোলে)" },
+  "ca.gate.min_pct": { value: 70, noteBn: "Level 3 খুলতে সাম্প্রতিক বিষয়াবলির প্রতিটি প্রশ্নব্যাংকে ন্যূনতম % (সর্বশেষ উত্তর সঠিক)" },
+  "journey.final_days": { value: 15, noteBn: "পরীক্ষার কত দিন আগে থেকে Dashboard চূড়ান্ত রিভিশনে যায়" },
+  "journey.exam_date": { value: "", noteBn: "৫২তম BCS প্রিলিমিনারির তারিখ (YYYY-MM-DD); খালি থাকলে চূড়ান্ত রিভিশন চালু হয় না" },
   "l1.threshold.mastery": { value: 80, noteBn: "প্রতিটি BCS-এর Mastery Test-এ ন্যূনতম %" },
   "l1.threshold.cumulative": { value: 80, noteBn: "Cumulative Revision Test-এ ন্যূনতম %" },
   "l1.threshold.final": { value: 80, noteBn: "Level 1 Final Assessment-এ ন্যূনতম %" },

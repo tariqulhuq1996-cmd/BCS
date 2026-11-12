@@ -3,8 +3,9 @@
  * ব্যর্থতা, পুনরায় চেষ্টা, Unlock, এবং নিয়ম ভাঙার চেষ্টা। শেষে সব পরীক্ষার তথ্য মুছে ফেলা হয়।
  *   npm run test:level1
  */
+import { startAtLevel1 } from "./_journey";
 import { PrismaClient } from "@prisma/client";
-import { ensureStarted, manualUnlock } from "../src/lib/progress/engine";
+import { manualUnlock } from "../src/lib/progress/engine";
 import { optionPerm, splitParts } from "../src/lib/exam/select";
 import { ExamError, acknowledgeReview, getAttemptView, getResultView, saveAnswer, startStep, submitAttempt } from "../src/lib/exam/service";
 
@@ -38,8 +39,8 @@ async function main() {
   const other = await db.user.create({ data: { email: `${tag}-o@exam.test`, passwordHash: "x" } });
   const admin = await db.user.create({ data: { email: `${tag}-a@exam.test`, passwordHash: "x", role: "ADMIN" } });
   try {
-    await ensureStarted(db, u.id);
-    await ensureStarted(db, other.id);
+    await startAtLevel1(db, u.id);
+    await startAtLevel1(db, other.id);
 
     // ── তালাবন্ধ ধাপ
     check("তালাবন্ধ ১১তম BCS শুরু করা যায় না", (await code(() => startStep(db, u.id, "L1:EXAM:11"))) === "LOCKED");
