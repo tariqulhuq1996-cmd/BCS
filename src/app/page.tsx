@@ -10,6 +10,9 @@ import { RoadmapPreview } from "@/components/home/roadmap-preview";
 import { Suspense } from "react";
 import { connection } from "next/server";
 import { getCurrentUser } from "@/lib/auth/session";
+import { prisma } from "@/lib/db";
+import { loadRules } from "@/lib/rules";
+import { EXAM50, MarksShift, OLD_MARKS } from "@/components/home/marks-shift";
 
 /**
  * গবেষণার ডেটা ডেটাবেস থেকে আসে, তাই পাতাটি বিল্ডের সময় নয়, প্রথম অনুরোধে তৈরি হয় (তারপর "use cache"-এ কয়েক ঘণ্টা থাকে)।
@@ -29,7 +32,13 @@ async function Deferred() {
 }
 
 async function HomeContent() {
-  const [r, user] = await Promise.all([getResearch(), getCurrentUser()]);
+  const [r, user, rules] = await Promise.all([getResearch(), getCurrentUser(), loadRules(prisma)]);
+  // নতুন মানবণ্টন অ্যাডমিন-নিয়ম থেকে (না থাকলে বিষয়-তালিকার marks200), পুরোনোটি ৩৫তম–৫০তম-এর
+  const newMarks = rules.get<Record<string, number>>("exam.marks_distribution") ?? {};
+  const marksRows = r.subjects
+    .filter((s) => OLD_MARKS[s.code] != null)
+    .map((s) => ({ code: s.code, nameBn: s.nameBn, old: OLD_MARKS[s.code], now: newMarks[s.code] ?? s.marks200 ?? OLD_MARKS[s.code], e50: EXAM50[s.code] }));
+  const marksChanged = marksRows.filter((m) => m.old !== m.now).length;
   const t = r.totals;
   const priorityA = r.subtopics.filter((s) => s.grade === "A");
   const trendUp = r.topics.filter((x) => x.recentPerExam > x.prevPerExam).length;
@@ -75,6 +84,16 @@ async function HomeContent() {
           explanationVerified={r.hero.explanationVerified}
         />
       </section>
+
+      {/* ── নতুন মানবণ্টন */}
+      <Section
+        id="marks"
+        title="৫১তম থেকে নতুন মানবণ্টন: কী বদলেছে"
+        lead={`২০০ নম্বরের প্রিলিমিনারিতে ${bn(marksChanged)}টি বিষয়ের নম্বর বদলেছে, বাকি ${bn(marksRows.length - marksChanged)}টি অপরিবর্তিত। প্রস্তুতির সময় ভাগ করুন নতুন নম্বর অনুযায়ী।`}
+      >
+        <MarksShift rows={marksRows} />
+        <SourceNote>পুরোনো: ৩৫তম–৫০তম BCS-এর মানবণ্টন; নতুন: ৫১তম থেকে প্রযোজ্য (গবেষণার ধাপ ০৯)। ৫০তম-এর সংখ্যা প্রশ্নের বিষয়বস্তু অনুযায়ী। পিএসসির সর্বশেষ বিজ্ঞপ্তির সঙ্গে মিলিয়ে নিন।</SourceNote>
+      </Section>
 
       {/* ── Heatmap */}
       <Section
