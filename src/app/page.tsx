@@ -3,9 +3,6 @@ import { getResearch } from "@/lib/research/data";
 import { bn, bnNum } from "@/lib/bn";
 import { OmrQuestion } from "@/components/home/omr-question";
 import { Section, SourceNote } from "@/components/ui/section";
-import { SubjectShare } from "@/components/charts/subject-share";
-import { SubjectTimeline } from "@/components/charts/subject-timeline";
-import { TopicRanking } from "@/components/charts/topic-ranking";
 import { Heatmap } from "@/components/charts/heatmap";
 import { TrendChange } from "@/components/home/trend-change";
 import { RepeatList } from "@/components/home/repeat-list";
@@ -33,7 +30,6 @@ async function Deferred() {
 async function HomeContent() {
   const r = await getResearch();
   const t = r.totals;
-  const marks200 = Object.fromEntries(r.subjects.map((s) => [s.code, s.marks200]));
   const priorityA = r.subtopics.filter((s) => s.grade === "A");
 
   return (
@@ -70,33 +66,6 @@ async function HomeContent() {
           explanationVerified={r.hero.explanationVerified}
         />
       </section>
-
-      {/* ── বিষয়ভিত্তিক বণ্টন */}
-      <Section
-        id="subjects"
-        title="কোন বিষয় থেকে কত প্রশ্ন আসে"
-        lead={`${bn(t.generalExams)}টি সাধারণ বিসিএস (১০০ ও ২০০ নম্বর) এবং ${bn(t.specialExams)}টি বিশেষ বিসিএস আলাদা করে গোনা হয়েছে, কারণ এদের বিষয়ের ভার আলাদা।`}
-      >
-        <SubjectShare data={r.subjectByType} marks200={marks200} />
-      </Section>
-
-      <Section
-        id="timeline"
-        title="বিসিএস থেকে বিসিএসে একটি বিষয়ের ভার"
-        lead="প্রতিটি সাধারণ বিসিএসে বাছাই করা বিষয়ের প্রশ্ন মোট প্রশ্নের কত শতাংশ। ৩৫তম থেকে পরীক্ষা ২০০ নম্বরের।"
-      >
-        <SubjectTimeline points={r.timeline} subjects={r.subjects} />
-      </Section>
-
-      {/* ── টপিক */}
-      <Section
-        id="topics"
-        title="কোন টপিক সবচেয়ে গুরুত্বপূর্ণ"
-        lead="৫২তম বিসিএসের জন্য টপিক-স্তরের Priority Score (১০০-এর মধ্যে): মোট প্রশ্ন, কতগুলো পরীক্ষায় এসেছে, ২০০ নম্বরের যুগে উপস্থিতি আর সাম্প্রতিক প্রবণতা মিলিয়ে। টপিকে চাপ দিলে বিস্তারিত দেখাবে।"
-      >
-        <TopicRanking topics={r.topics} subjects={r.subjects} />
-        <SourceNote>Score ও A–D শ্রেণি: গবেষণার ধাপ ০৯। প্রশ্নসংখ্যা: ডেটাবেস থেকে সরাসরি গোনা।</SourceNote>
-      </Section>
 
       {/* ── Heatmap */}
       <Section
