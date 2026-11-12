@@ -159,7 +159,7 @@ async function Dashboard() {
       {/* ── সংখ্যায় অগ্রগতি */}
       <section aria-label="সংক্ষেপে অগ্রগতি" className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-5">
         {[
-          { k: "মোট অগ্রগতি", v: `${bnNum(d.overallPct, d.overallPct > 0 && d.overallPct < 1 ? 1 : 0)}%`, s: "তিন Level সমান ভারে" },
+          { k: "মোট অগ্রগতি", v: `${bnNum(d.overallPct, d.overallPct > 0 && d.overallPct < 1 ? 1 : 0)}%`, s: "তিন Level সমান গুরুত্বে" },
           { k: "সম্পন্ন কাজ", v: bnNum(d.completedTasks), s: "ধাপ" },
           { k: "বাকি কাজ", v: bnNum(d.remainingTasks), s: "Level ৩-এর ১৫০ টেস্টসহ" },
           { k: "আজকের Revision", v: bn(d.revision.dueToday), s: `ভুলের ভান্ডারে ${bn(d.revision.wrongBank)}টি` },

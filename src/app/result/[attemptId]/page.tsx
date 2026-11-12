@@ -67,7 +67,7 @@ async function Content({ params }: { params: Promise<{ attemptId: string }> }) {
       ? <form action={startRevisionAction}><button className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">পরের সেট শুরু করুন</button></form>
       : <Link href="/dashboard" className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">Dashboard-এ যান</Link>;
   } else if (r.kind === "MISTAKE_PRACTICE") {
-    headline = "ভুলের অনুশীলন শেষ। যেগুলো এবার ঠিক হয়েছে, সেগুলো ভুলের ভান্ডার থেকে সরে গেছে।";
+    headline = "ভুলের অনুশীলন শেষ। যেগুলো এবার ঠিক হয়েছে, সেগুলো ভুলের ভান্ডার থেকে বাদ দেওয়া হয়েছে।";
     next = <Link href="/mistakes" className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">ভুলের ভান্ডারে ফিরে যান</Link>;
   } else if (r.kind === "PRACTICE") {
     headline = "অনুশীলন শেষ। এটি ধাপের অগ্রগতিতে গোনা হয় না, তবে ভুলগুলো Revision-সারিতে যুক্ত হয়েছে।";

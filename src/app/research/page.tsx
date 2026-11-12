@@ -106,7 +106,7 @@ async function ResearchPageContent({ user }: { user: CurrentUser }) {
       <Section
         id="special"
         title="বিশেষ BCS আলাদা কেন"
-        lead={`${special.examNos.map(bnOrdinal).join(", ")} BCS বিশেষ পরীক্ষা হিসেবে চিহ্নিত। এগুলোতে বিষয়ের ভার সাধারণ পরীক্ষা থেকে আলাদা, তাই প্রবণতার হিসাবে মেশানো হয়নি।`}
+        lead={`${special.examNos.map(bnOrdinal).join(", ")} BCS বিশেষ পরীক্ষা হিসেবে চিহ্নিত। এগুলোতে বিষয়ভিত্তিক প্রশ্নের অনুপাত সাধারণ পরীক্ষা থেকে আলাদা, তাই প্রবণতার হিসাবে মেশানো হয়নি।`}
       >
         <div className="overflow-x-auto rounded-lg border border-line bg-surface">
           <table className="w-full min-w-[34rem] text-left text-[15px] tabular">

@@ -6,7 +6,7 @@ import { bn } from "@/lib/bn";
  * পুরোনো মানবণ্টন ও ৫০তম-এর সংখ্যা গবেষণার ধাপ ০৯ থেকে; নতুন মানবণ্টন অ্যাডমিন-নিয়ম `exam.marks_distribution` থেকে।
  */
 export const OLD_MARKS: Record<string, number> = { BN: 35, EN: 35, BD: 30, IA: 20, GE: 10, SC: 15, IT: 15, MA: 15, MN: 15, ET: 10 };
-/** ৫০তম BCS-এ বিষয়বস্তু অনুযায়ী প্রশ্ন (ধাপ ০৯) — নতুন কাঠামোর সঙ্গে প্রায় মেলে */
+/** ৫০তম BCS-এ বিষয়বস্তু অনুযায়ী প্রশ্ন (গবেষণা থেকে) — নতুন কাঠামোর সঙ্গে প্রায় মেলে */
 export const EXAM50: Record<string, number> = { BN: 31, EN: 30, BD: 24, IA: 19, GE: 13, SC: 17, IT: 16, MA: 22, MN: 11, ET: 17 };
 
 type Row = { code: string; nameBn: string; old: number; now: number; e50?: number };
@@ -29,23 +29,23 @@ export function MarksShift({ rows }: { rows: Row[] }) {
 
   const insights = [
     moved > 0 && {
-      t: "ভারসাম্য বদলেছে",
-      d: `${list(down.map((r) => r.code))} থেকে মোট ${bn(moved)} নম্বর কমিয়ে যোগ করা হয়েছে এই বিষয়গুলোতে: ${list(up.map((r) => r.code))}। ভাষা ও তথ্যনির্ভর অংশ কিছুটা কমেছে, যুক্তি ও বিশ্লেষণনির্ভর অংশ বেড়েছে।`,
+      t: "ভারসাম্যে পরিবর্তন",
+      d: `${list(down.map((r) => r.code))} থেকে ${bn(moved)} নম্বর কমিয়ে ${list(up.map((r) => r.code))} — এই ${["", "এক", "দুই", "তিন", "চার", "পাঁচ"][up.length] ?? bn(up.length)} বিষয়ে যুক্ত হয়েছে। মুখস্থনির্ভর অংশের গুরুত্ব তুলনামূলক কমেছে, যুক্তি ও বিশ্লেষণের গুরুত্ব বেড়েছে।`,
     },
     proof.length > 0 && {
-      t: "৫০তম BCS-এই দেখা গেছে",
-      d: `৫০তম-এ প্রশ্ন এসেছে ${proof.map((r) => `${SHORT[r.code]} থেকে ${bn(r.e50!)}টি`).join(", ")} — নতুন কাঠামোর সঙ্গে প্রায় মেলে। তাই ৫০তম-এর পরিবর্তনকে প্রবণতা নয়, মানবণ্টনের পরিবর্তন হিসেবে দেখুন।`,
+      t: "৫০তম BCS-এ প্রতিফলন",
+      d: `${proof.map((r) => `${SHORT[r.code]} ${bn(r.e50!)}`).join(", ")}টি প্রশ্ন — নতুন কাঠামোর সঙ্গে প্রায় সামঞ্জস্যপূর্ণ। এটি প্রবণতা নয়, মানবণ্টনের পরিবর্তন।`,
     },
     {
-      t: "ভিত্তি এখনো ভাষা",
-      d: `কমার পরও বাংলা ও ইংরেজি মিলে ${bn(lang)} নম্বর — মোটের ${bn(Math.round((lang / 200) * 100))}%। প্রস্তুতির সবচেয়ে বড় অংশ এখানেই রাখুন।`,
+      t: "ভাষাই ভিত্তি",
+      d: `বাংলা ও ইংরেজি মিলে এখনো ${bn(lang)} নম্বর (${bn(Math.round((lang / 200) * 100))}%) — প্রস্তুতির সবচেয়ে বড় অংশ।`,
     },
     ia && ia.now > ia.old && {
-      t: "সাম্প্রতিক বিষয়াবলির গুরুত্ব বেড়েছে",
-      d: `আন্তর্জাতিক বিষয়াবলি এখন ${bn(ia.now)} নম্বর। ভূগোলের সঙ্গে এর প্রশ্ন মেশানো থাকে, তাই দুটি একসঙ্গে পড়ুন; আর সাম্প্রতিক বিষয়াবলি নিয়মিত অনুশীলন করুন।`,
-      link: { href: "/current-affairs", label: "সাম্প্রতিক বিষয়াবলি" },
+      t: "আন্তর্জাতিক বিষয়াবলিতে বাড়তি মনোযোগ",
+      d: `নম্বর এখন ${bn(ia.now)}। ভূগোলের সঙ্গে মিলিয়ে পড়ুন এবং`,
+      link: { href: "/current-affairs", label: "সাম্প্রতিক বিষয়াবলি", after: " নিয়মিত অনুশীলন করুন।" },
     },
-  ].filter(Boolean) as { t: string; d: string; link?: { href: string; label: string } }[];
+  ].filter(Boolean) as { t: string; d: string; link?: { href: string; label: string; after?: string } }[];
 
   return (
     <div className="grid gap-8 lg:grid-cols-[1.25fr_1fr] lg:gap-12">
@@ -99,7 +99,7 @@ export function MarksShift({ rows }: { rows: Row[] }) {
       </div>
 
       <div>
-        <h3 className="text-lg font-bold">সংক্ষেপে যা বোঝায়</h3>
+        <h3 className="text-lg font-bold">এক নজরে</h3>
         <ol className="mt-3 grid gap-3">
           {insights.map((x, i) => (
             <li key={x.t} className="rounded-xl border border-line bg-surface px-4 py-3.5">
@@ -113,13 +113,14 @@ export function MarksShift({ rows }: { rows: Row[] }) {
                   <>
                     {" "}
                     <Link href={x.link.href} className="text-green underline underline-offset-4">{x.link.label}</Link>
+                    {x.link.after}
                   </>
                 )}
               </p>
             </li>
           ))}
         </ol>
-        <p className="mt-4 text-sm text-ink-2">এই প্ল্যাটফর্মের Level ২-এর Final ও Model Test নতুন মানবণ্টন অনুযায়ী সাজানো।</p>
+        <p className="mt-4 text-sm text-ink-2">Level ২-এর Final ও সব Model Test নতুন মানবণ্টন অনুযায়ী সাজানো।</p>
       </div>
     </div>
   );
