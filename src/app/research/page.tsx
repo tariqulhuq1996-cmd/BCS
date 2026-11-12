@@ -90,7 +90,7 @@ async function ResearchPageContent({ user }: { user: CurrentUser }) {
 
       <Section id="priority" title={`৪. ৫২তম BCS ${label("priority")}`} lead="সব উপবিষয়ের Priority Score (১০০-এর মধ্যে) ও A–D শ্রেণি, কারণ ও পড়ার পরামর্শসহ। Level ২ এই ক্রমেই চলে: আগে A, তারপর B, C, D।">
         <SubtopicTable rows={r.subtopics} subjects={r.subjects} />
-        <SourceNote>উৎস: গবেষণার ধাপ ০৯। &ldquo;মোট প্রশ্ন&rdquo; সব সাধারণ BCS-এ (১৯তমসহ)।</SourceNote>
+        <SourceNote>&ldquo;মোট প্রশ্ন&rdquo; সব সাধারণ BCS-এর হিসাব (১৯তমসহ)।</SourceNote>
         <ReadCheck id="priority" label={label("priority")} />
       </Section>
 
