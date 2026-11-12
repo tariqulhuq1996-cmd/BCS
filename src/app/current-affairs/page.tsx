@@ -109,7 +109,7 @@ async function Content() {
                   <span className="bg-omr/50" style={{ width: `${((c.seen - c.mastered) / c.total) * 100}%` }} />
                 </div>
                 <Link href={`/current-affairs/practice?bank=${b.key}&chapter=${c.no}`} className="mt-3 inline-block text-[15px] font-semibold text-green underline underline-offset-4">
-                  {c.seen < c.total ? "অনুশীলন করুন" : "আবার ঝালাই করুন"}
+                  {c.seen < c.total ? "অনুশীলন করুন" : "পুনরায় অনুশীলন করুন"}
                 </Link>
               </li>
             ))}

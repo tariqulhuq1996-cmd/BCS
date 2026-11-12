@@ -52,7 +52,7 @@ async function RepeatedQuestionsPageContent({ user }: { user: CurrentUser }) {
         <div role="status" className="mt-6 rounded-xl border-2 border-omr bg-surface px-5 py-4">
           <p className="font-semibold">আপনার জন্য খোলা {bn(families.length)}টি, বাকি {bn(hidden)}টি ধাপে ধাপে খুলবে</p>
           <p className="mt-1 text-[15px] text-ink-2">
-            Level ১-এ যে BCS-গুলোর প্রশ্নপত্র সমাধান করবেন, সেগুলোর পুনরাবৃত্ত প্রশ্ন এখানে যোগ হবে — যাতে নতুন প্রশ্ন আগে চোখে না পড়ে। সব BCS শেষে Repeat Mastery-তে পুরো তালিকা খুলবে।
+            Level ১-এ যে BCS-গুলোর প্রশ্নপত্র সমাধান করবেন, সেগুলোর পুনরাবৃত্ত প্রশ্ন এখানে যোগ হবে — যাতে অনুশীলনের আগে নতুন প্রশ্নের উত্তর জানা না থাকে। সব BCS শেষে Repeat Mastery-তে পুরো তালিকা খুলবে।
             {access.solvedExams.length > 0 && ` এ পর্যন্ত সমাধান: ${bn(access.solvedExams.length)}টি BCS।`}
           </p>
           <Link href="/level-1" className="mt-3 inline-block font-semibold text-green underline underline-offset-4">Level ১-এ যান</Link>

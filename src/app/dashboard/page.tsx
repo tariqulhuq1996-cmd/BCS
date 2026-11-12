@@ -59,7 +59,7 @@ async function Dashboard() {
       {d.stretch.active && (
         <section aria-labelledby="stretch" className="mt-4 rounded-2xl border-2 border-omr bg-omr-wash p-5 sm:p-6">
           <h2 id="stretch" className="text-xl font-bold">পরীক্ষার আর {bn(d.stretch.daysLeft!)} দিন — চূড়ান্ত রিভিশন</h2>
-          <p className="mt-1 text-ink-2">শেষ {bn(d.stretch.days)} দিন নতুন কিছু নয়, যা পড়েছেন তা পাকা করুন। প্রতিদিন এই চারটি:</p>
+          <p className="mt-1 text-ink-2">শেষ {bn(d.stretch.days)} দিন নতুন বিষয় নয়, পঠিত বিষয়গুলো সুদৃঢ় করুন। প্রতিদিন এই চারটি:</p>
           <ul className="mt-3 grid gap-2 sm:grid-cols-2">
             <li><Link href={d.l3Open ? "/level-3" : "/level-1/final"} className="font-semibold text-omr underline underline-offset-4">{d.l3Open ? "একটি Model Test" : "Final Assessment-এর অনুশীলন"}</Link></li>
             <li><Link href="/repeated-questions" className="font-semibold text-omr underline underline-offset-4">Priority A-র বারবার আসা প্রশ্ন</Link></li>
@@ -108,7 +108,7 @@ async function Dashboard() {
             <h2 id="rev" className="text-sm font-semibold text-omr">আজকের কাজ ২/৩: রিভিশন</h2>
             <p className="mt-1 text-[16px]">
               {d.revision.dueToday > 0 ? (
-                <>আজ <span className="font-bold">{bn(d.revision.dueToday)}টি</span> প্রশ্ন Revision-এর জন্য অপেক্ষা করছে। ভুলগুলো ভুলে যাওয়ার আগেই আরেকবার দেখে নিন।</>
+                <>আজ <span className="font-bold">{bn(d.revision.dueToday)}টি</span> প্রশ্ন Revision-এর জন্য অপেক্ষা করছে। ভুলে যাওয়ার আগেই প্রশ্নগুলো পুনরায় অনুশীলন করুন।</>
               ) : (
                 "আজ Revision বাকি নেই। ভুল করা প্রশ্নগুলো নির্দিষ্ট দিন পরপর নিজে থেকেই এখানে ফিরে আসবে।"
               )}
@@ -228,7 +228,7 @@ async function Dashboard() {
               ))}
             </ul>
           ) : (
-            <p className="mt-4 text-ink-2">এখনও কোনো পরীক্ষা দেননি। ১০ম BCS-এর প্রশ্নপত্র দিয়ে শুরু করুন — ফলাফল এখানে জমা হবে।</p>
+            <p className="mt-4 text-ink-2">এখনও কোনো পরীক্ষা দেননি। শুরুর মূল্যায়ন দিয়ে শুরু করুন — ফলাফল এখানে জমা হবে।</p>
           )}
         </section>
 

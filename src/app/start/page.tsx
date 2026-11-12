@@ -111,7 +111,7 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
           {mark(!!l1 && l1.state !== "LOCKED", "৩")}
           <div>
             <h2 className="text-xl font-bold">Level ১ শুরু</h2>
-            <p className="mt-1 text-ink-2">মূল্যায়ন দিলেই ১০ম BCS-এর প্রশ্নপত্র খুলবে। তারপর প্রতিদিন Dashboard বলে দেবে আজ কী করবেন।</p>
+            <p className="mt-1 text-ink-2">মূল্যায়ন দিলেই ১০ম BCS-এর প্রশ্নপত্র খুলবে। এরপর প্রতিদিনের করণীয় Dashboard-এ পাবেন।</p>
             {l1 && l1.state !== "LOCKED" && <Link href="/dashboard" className={`mt-4 ${btn}`}>Dashboard-এ যান</Link>}
           </div>
         </div>

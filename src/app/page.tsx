@@ -51,7 +51,7 @@ async function HomeContent() {
           </h1>
           <p className="mt-5 max-w-xl text-lg text-ink-2">
             {bn(t.exams)}টি BCS-এর {bnNum(t.questions)}টি প্রশ্ন বিশ্লেষণ করে সাজানো একটি পূর্ণ পথ — বিগত প্রশ্ন, টপিকভিত্তিক অনুশীলন, Revision আর
-            Model Test। কী পড়বেন, কতটা পড়বেন, সাইটই বলে দেবে।
+            Model Test। কী এবং কতটা পড়বেন, তার সুনির্দিষ্ট নির্দেশনা এখানেই পাবেন।
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/register" className="rounded-lg bg-green px-6 py-3 text-lg font-semibold text-white hover:bg-green-strong dark:text-paper">
@@ -80,7 +80,7 @@ async function HomeContent() {
       <Section
         id="heatmap"
         title="যে উপবিষয়গুলো প্রায় প্রতিবার আসে"
-        lead="সবচেয়ে গুরুত্বপূর্ণ ২৫টি উপবিষয়ে প্রতিটি BCS-এ কত প্রশ্ন এসেছে। রং যত গাঢ়, প্রশ্ন তত বেশি — পুরো সারি গাঢ় মানে এই অংশ বাদ দেওয়ার উপায় নেই।"
+        lead="সবচেয়ে গুরুত্বপূর্ণ ২৫টি উপবিষয়ে প্রতিটি BCS-এ কত প্রশ্ন এসেছে। রং যত গাঢ়, প্রশ্ন তত বেশি — পুরো সারি গাঢ় হলে বুঝবেন, অংশটি প্রায় প্রতিটি পরীক্ষায় এসেছে, তাই অবশ্যপাঠ্য।"
         aside={<Link href="/research#heatmap" className="text-sm text-green underline underline-offset-4">সব {bn(t.subtopics)}টি উপবিষয় দেখুন</Link>}
       >
         <Heatmap rows={r.heat.rows.slice(0, 25)} exams={r.heat.exams} canShowAll={!!user} loginHref="/login?next=/%23heatmap" caption="শীর্ষ ২৫টি উপবিষয়ে প্রতিটি সাধারণ BCS-এর প্রশ্নসংখ্যা" />
@@ -144,7 +144,7 @@ async function HomeContent() {
           <div className="min-w-0">
             {/* প্রস্থ অনুযায়ী অক্ষরের মাপ, যাতে শিরোনাম এক লাইনে থাকে (লেখাটি ~১৭.৫em চওড়া) */}
             <h2 className="text-[length:clamp(16px,calc((100vw_-_90px)/18),26px)] font-bold text-balance sm:text-[length:clamp(16px,calc((100vw_-_136px)/18),32px)]" style={{ fontStretch: "110%" }}>
-              আজই প্রথম ধাপ: ১০ম BCS-এর প্রশ্নপত্র
+              আজই প্রথম ধাপ: প্রশ্ন-বিশ্লেষণ
             </h2>
             <p className="mt-2 max-w-xl text-ink-2">অ্যাকাউন্ট খুললেই শুরু। প্রতিটি উত্তর, ভুল আর অগ্রগতি সংরক্ষিত থাকে — যেকোনো দিন, যেকোনো ডিভাইস থেকে ঠিক সেখান থেকে চালিয়ে যান।</p>
           </div>

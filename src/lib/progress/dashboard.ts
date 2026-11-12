@@ -284,7 +284,7 @@ async function describeAction(t: TaskView, tasks: TaskView[], rules: Awaited<Ret
     };
   if (t.kind === "L1_REPEAT")
     return {
-      text: `${congrats}১০ম–৫০তম সব BCS শেষ! Level ১ Final-এর আগে বারবার আসা প্রশ্ন পাকা করুন: Priority ${rules.get<string[]>("l1.repeat.grades").join(", ")}-এর প্রতিটি পুনরাবৃত্ত প্রশ্ন থেকে একটি করে — পাস করতে ${pct("l1.threshold.repeat")}% লাগবে।`,
+      text: `${congrats}১০ম–৫০তম সব BCS শেষ! Level ১ Final-এর আগে বারবার আসা প্রশ্ন আয়ত্ত করুন: Priority ${rules.get<string[]>("l1.repeat.grades").join(", ")}-এর প্রতিটি পুনরাবৃত্ত প্রশ্ন থেকে একটি করে — পাস করতে ${pct("l1.threshold.repeat")}% লাগবে।`,
       button: "Repeat Mastery শুরু করুন", stepLabel: "Repeat Mastery", href: t.href,
     };
   if (t.kind === "L1_FINAL")

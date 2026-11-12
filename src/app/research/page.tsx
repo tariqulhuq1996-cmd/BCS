@@ -64,7 +64,7 @@ async function ResearchPageContent({ user }: { user: CurrentUser }) {
         <OrientBanner items={ORIENT_ITEMS} />
       </section>
 
-      <Section id="heatmap" title={`১. ${label("heatmap")}`} lead={`প্রতিটি উপবিষয়ে ${bn(r.heat.exams.length)}টি সাধারণ BCS-এর প্রতিটিতে কতটি প্রশ্ন এসেছে। পুরো সারি গাঢ় মানে অংশটি প্রায় প্রতিবার আসে — বাদ দেওয়ার উপায় নেই।`}>
+      <Section id="heatmap" title={`১. ${label("heatmap")}`} lead={`প্রতিটি উপবিষয়ে ${bn(r.heat.exams.length)}টি সাধারণ BCS-এর প্রতিটিতে কতটি প্রশ্ন এসেছে। পুরো সারি গাঢ় হলে বুঝবেন, অংশটি প্রায় প্রতিটি পরীক্ষায় এসেছে, তাই অবশ্যপাঠ্য।`}>
         <HeatmapExplorer rows={r.heat.rows} exams={r.heat.exams} subjects={r.subjects} />
         <ReadCheck id="heatmap" label={label("heatmap")} />
       </Section>
@@ -94,7 +94,7 @@ async function ResearchPageContent({ user }: { user: CurrentUser }) {
         <ReadCheck id="priority" label={label("priority")} />
       </Section>
 
-      <Section id="roadmap" title={`৫. ${label("roadmap")}`} lead="প্রতিটি ধাপে নির্ধারিত নম্বর পেলেই পরেরটি খোলে। প্রতিদিন Dashboard বলে দেয় আজ কী করবেন: মূল পথের কাজ, রিভিশন আর সাম্প্রতিক বিষয়াবলি।">
+      <Section id="roadmap" title={`৫. ${label("roadmap")}`} lead="প্রতিটি ধাপে নির্ধারিত নম্বর অর্জন করলেই পরের ধাপ উন্মুক্ত হয়, ফলে প্রস্তুতির কোনো অংশ অসম্পূর্ণ থাকে না। প্রতিদিনের করণীয় — মূল পথের কাজ, রিভিশন ও সাম্প্রতিক বিষয়াবলি — Dashboard-এ নির্দিষ্ট করে দেওয়া থাকে।">
         <RoadmapPreview exams={r.totals.exams} specialExams={r.totals.specialExams} subtopics={r.totals.subtopics} gradeCounts={r.totals.gradeCounts} />
         <ReadCheck id="roadmap" label={label("roadmap")} />
       </Section>
