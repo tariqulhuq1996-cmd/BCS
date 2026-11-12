@@ -4,7 +4,8 @@
  * অস্থায়ী ব্যবহারকারী দিয়ে; শেষে মুছে ফেলা হয়।   npm run test:verify
  */
 import { PrismaClient } from "@prisma/client";
-import { MAX_ATTEMPTS, checkCode, createCode } from "../src/lib/auth/verify";
+import { MAX_ATTEMPTS, checkCode, completeSignup, createCode, newSignupCode, startSignup } from "../src/lib/auth/verify";
+import { randomBytes } from "node:crypto";
 import { CodeSchema } from "../src/lib/auth/schemas";
 
 const db = new PrismaClient();
@@ -55,12 +56,52 @@ async function main() {
     await db.emailCode.update({ where: { userId: e.id }, data: { expiresAt: new Date(Date.now() - 1000) } });
     check("মেয়াদ শেষ হলে: expired", (await checkCode(db, e.id, ec)) === "expired");
 
+    // ── নতুন নিবন্ধন: কোড মিলবার আগে অ্যাকাউন্ট নেই
+    const sid = () => randomBytes(32).toString("hex");
+    const sEmail = `${tag}-signup@verify.test`;
+    const s1 = sid();
+    const sc1 = await startSignup(db, s1, { email: sEmail, name: "নতুন শিক্ষার্থী", passwordHash: "h" });
+    check("নিবন্ধন জমা দিলেও অ্যাকাউন্ট তৈরি হয় না", (await db.user.count({ where: { email: sEmail } })) === 0 && (await db.pendingSignup.count({ where: { email: sEmail } })) === 1);
+    const pend = await db.pendingSignup.findUniqueOrThrow({ where: { id: s1 } });
+    check("অপেক্ষমাণ নিবন্ধনে কোড নিজে নেই (শুধু হ্যাশ)", pend.codeHash.length === 64 && !pend.codeHash.includes(sc1));
+    check("ভুল কোডে অ্যাকাউন্ট তৈরি হয় না", (await completeSignup(db, s1, other(sc1))).result === "wrong" && (await db.user.count({ where: { email: sEmail } })) === 0);
+    // একই ইমেইলে আবার চেষ্টা (অন্য ব্রাউজার/অন্য কেউ) → আগেরটি অচল, ইমেইল আটকে থাকে না
+    const s2 = sid();
+    const sc2 = await startSignup(db, s2, { email: sEmail, name: "দ্বিতীয় চেষ্টা", passwordHash: "h2" });
+    check("একই ইমেইলে নতুন নিবন্ধনে আগেরটি বাতিল", (await completeSignup(db, s1, sc1)).result === "none" && (await db.pendingSignup.count({ where: { email: sEmail } })) === 1);
+    const sc2b = await newSignupCode(db, s2);
+    if (sc2b !== sc2) check("নতুন কোড চাইলে আগের কোড অচল", (await completeSignup(db, s2, sc2)).result === "wrong");
+    const ok = await completeSignup(db, s2, sc2b);
+    const made = await db.user.findUnique({ where: { email: sEmail }, include: { profile: true } });
+    check("সঠিক কোডে তবেই অ্যাকাউন্ট: যাচাইকৃত, নাম ও পাসওয়ার্ডসহ", ok.result === "ok" && !!made && made.id === ok.userId && !!made.emailVerifiedAt && made.profile?.name === "দ্বিতীয় চেষ্টা" && made.passwordHash === "h2", { ok, made });
+    check("অ্যাকাউন্ট খোলার পর অপেক্ষমাণ নিবন্ধন মুছে গেছে", (await db.pendingSignup.count({ where: { email: sEmail } })) === 0);
+    const s3 = sid();
+    const sc3 = await startSignup(db, s3, { email: sEmail, name: "দখল", passwordHash: "h3" });
+    check("যাচাইকৃত অ্যাকাউন্টের ইমেইলে নতুন নিবন্ধন: taken, আগের অ্যাকাউন্ট অক্ষত", (await completeSignup(db, s3, sc3)).result === "taken" && (await db.user.findUniqueOrThrow({ where: { email: sEmail } })).passwordHash === "h2");
+
+    const sl = sid();
+    const slc = await startSignup(db, sl, { email: `${tag}-slock@verify.test`, name: "x", passwordHash: "h" });
+    for (let i = 0; i < MAX_ATTEMPTS; i++) await completeSignup(db, sl, other(slc));
+    check(`নিবন্ধনেও ${MAX_ATTEMPTS} বার ভুলে আটকায়, সঠিক কোডও চলে না`, (await completeSignup(db, sl, slc)).result === "locked" && (await db.user.count({ where: { email: `${tag}-slock@verify.test` } })) === 0);
+    const se = sid();
+    const sec = await startSignup(db, se, { email: `${tag}-sexp@verify.test`, name: "x", passwordHash: "h" });
+    await db.pendingSignup.update({ where: { id: se }, data: { expiresAt: new Date(Date.now() - 1000) } });
+    check("নিবন্ধনের কোডের মেয়াদ শেষ: expired", (await completeSignup(db, se, sec)).result === "expired");
+
+    // পুরোনো যাচাই-বাকি অ্যাকাউন্ট ইমেইলটি আটকে রাখে না
+    const legacy = await mk("legacy", false);
+    const sg = sid();
+    const sgc = await startSignup(db, sg, { email: legacy.email, name: "আসল মালিক", passwordHash: "hl" });
+    const rg = await completeSignup(db, sg, sgc);
+    check("যাচাই-বাকি পুরোনো অ্যাকাউন্টের জায়গায় নতুন যাচাইকৃত অ্যাকাউন্ট", rg.result === "ok" && rg.userId !== legacy.id && (await db.user.count({ where: { email: legacy.email } })) === 1);
+
     const p = (v: string) => CodeSchema.safeParse({ code: v });
     check("বাংলা অঙ্কে লেখা কোড চলে", p("১২৩৪৫৬").success && p("১২৩৪৫৬").data?.code === "123456");
     check("ফাঁকা ঘর/হাইফেনসহ কোড চলে", p("123 456").data?.code === "123456" && p("123-456").data?.code === "123456");
     check("৫ বা ৭ সংখ্যা বা অক্ষর চলে না", !p("12345").success && !p("1234567").success && !p("12a456").success);
   } finally {
     await db.user.deleteMany({ where: { email: { startsWith: tag } } });
+    await db.pendingSignup.deleteMany({ where: { email: { startsWith: tag } } });
     await db.$disconnect();
   }
   console.log(fails ? `\n${fails}টি পরীক্ষা ব্যর্থ` : "\nসব পরীক্ষা সফল");

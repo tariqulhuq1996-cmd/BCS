@@ -89,6 +89,20 @@ async function main() {
       await db.user.delete({ where: { id: pend.id } });
     }
 
+    // নতুন নিবন্ধন: অ্যাকাউন্ট ছাড়াই (শুধু নিবন্ধনের কুকি) যাচাই-পাতা খোলে; কোনো শিক্ষার্থী-পাতা নয়
+    const st = randomBytes(32).toString("base64url");
+    const sEmail = `${tag}-signup@http.test`;
+    await db.pendingSignup.create({ data: { id: hash(st), email: sEmail, name: "নিবন্ধন", passwordHash: "x", codeHash: "x", expiresAt: new Date(Date.now() + 9e5) } });
+    try {
+      const sv = await fetch(BASE + "/verify-email", { redirect: "manual", headers: { cookie: `bcs_signup=${st}` } });
+      const svb = sv.status === 200 ? await sv.text() : "";
+      check("নিবন্ধনের কুকিতে যাচাই-পাতা খোলে, অ্যাকাউন্ট তখনো নেই", sv.status === 200 && svb.includes(`name="code"`) && svb.includes("কোড মিললে তবেই") && (await db.user.count({ where: { email: sEmail } })) === 0, sv.status);
+      const sd = await fetch(BASE + "/dashboard", { redirect: "manual", headers: { cookie: `bcs_signup=${st}` } });
+      check("নিবন্ধনের কুকিতে Dashboard নয় (লগইনে)", (sd.status === 307 || sd.status === 302) && (sd.headers.get("location") ?? "").includes("/login"), sd.status);
+    } finally {
+      await db.pendingSignup.deleteMany({ where: { email: sEmail } });
+    }
+
     // অন্যের পরীক্ষা
     const { startStep } = await import("../src/lib/exam/service");
     await startAtLevel1(db, other.id);

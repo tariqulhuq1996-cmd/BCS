@@ -82,3 +82,34 @@ export async function requireUser(next = "/dashboard"): Promise<CurrentUser> {
   if (!u) redirect(`/login?next=${encodeURIComponent(next)}`);
   return u;
 }
+
+/**
+ * অপেক্ষমাণ নিবন্ধনের কুকি — ফর্ম জমা দেওয়া ব্রাউজারকে চেনায় (অ্যাকাউন্ট তখনো খোলা হয়নি, তাই সেশন নয়)।
+ * কুকিতে র‍্যান্ডম টোকেন, ডেটাবেসে তার হ্যাশ (PendingSignup.id)।
+ */
+export const SIGNUP_COOKIE = "bcs_signup";
+
+export async function setSignupCookie(token: string) {
+  (await cookies()).set(SIGNUP_COOKIE, token, {
+    httpOnly: true,
+    sameSite: "lax",
+    secure: process.env.NODE_ENV === "production",
+    path: "/",
+    maxAge: 24 * 3600,
+  });
+}
+
+export async function clearSignupCookie() {
+  (await cookies()).delete(SIGNUP_COOKIE);
+}
+
+export type PendingSignupInfo = { id: string; email: string; name: string; sentAt: Date };
+
+/** এই ব্রাউজারের অপেক্ষমাণ নিবন্ধন (২৪ ঘণ্টার মধ্যে), না থাকলে null। */
+export const getPendingSignup = cache(async (): Promise<PendingSignupInfo | null> => {
+  const token = (await cookies()).get(SIGNUP_COOKIE)?.value;
+  if (!token) return null;
+  const p = await prisma.pendingSignup.findUnique({ where: { id: hashToken(token) }, select: { id: true, email: true, name: true, sentAt: true, createdAt: true } });
+  if (!p || p.createdAt.getTime() < Date.now() - 24 * 3600e3) return null;
+  return { id: p.id, email: p.email, name: p.name, sentAt: p.sentAt };
+});

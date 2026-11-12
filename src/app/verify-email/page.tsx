@@ -4,8 +4,8 @@ import { redirect } from "next/navigation";
 import { Suspense } from "react";
 import { AuthShell } from "@/components/auth/ui";
 import { ResendForm, VerifyForm } from "@/components/auth/forms";
-import { logout } from "@/lib/auth/actions";
-import { getCurrentUser, getPendingUser } from "@/lib/auth/session";
+import { cancelSignup, logout } from "@/lib/auth/actions";
+import { getCurrentUser, getPendingSignup, getPendingUser } from "@/lib/auth/session";
 
 export const metadata: Metadata = { title: "ইমেইল যাচাই", robots: { index: false } };
 
@@ -22,14 +22,18 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
   const sp = await searchParams;
   const raw = typeof sp.next === "string" ? sp.next : "";
   const next = raw.startsWith("/") && !raw.startsWith("//") ? raw : "/dashboard";
-  const user = await getPendingUser();
-  if (!user) redirect((await getCurrentUser()) ? next : `/login?next=${encodeURIComponent(next)}`);
+  // নতুন নিবন্ধন (অ্যাকাউন্ট এখনো খোলা হয়নি) অথবা পুরোনো যাচাই-বাকি অ্যাকাউন্ট
+  const signup = await getPendingSignup();
+  const user = signup ? null : await getPendingUser();
+  if (!signup && !user) redirect((await getCurrentUser()) ? next : `/register`);
+  const email = signup?.email ?? user!.email;
   return (
     <AuthShell
       title="ইমেইল যাচাই করুন"
       lead={
         <>
-          <span className="font-semibold text-ink">{user.email}</span> ঠিকানায় একটি ৬ সংখ্যার কোড পাঠানো হয়েছে। কোডটি ১৫ মিনিট কাজ করবে।
+          <span className="font-semibold text-ink">{email}</span> ঠিকানায় একটি ৬ সংখ্যার কোড পাঠানো হয়েছে। কোডটি ১৫ মিনিট কাজ করবে।
+          {signup && " কোড মিললে তবেই আপনার অ্যাকাউন্ট খোলা হবে।"}
         </>
       }
     >
@@ -41,10 +45,17 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
       <VerifyForm />
       <div className="mt-6 grid gap-4 border-t border-line pt-5">
         <ResendForm />
-        <form action={logout} className="text-[15px] text-ink-2">
-          ইমেইল ঠিকানা ভুল হয়েছে?{" "}
-          <button type="submit" className="text-ink-2 underline underline-offset-4">লগআউট করে নতুন অ্যাকাউন্ট খুলুন</button>
-        </form>
+        {signup ? (
+          <form action={cancelSignup} className="text-[15px] text-ink-2">
+            ইমেইল ঠিকানা ভুল হয়েছে?{" "}
+            <button type="submit" className="text-ink-2 underline underline-offset-4">আবার শুরু করুন</button>
+          </form>
+        ) : (
+          <form action={logout} className="text-[15px] text-ink-2">
+            ইমেইল ঠিকানা ভুল হয়েছে?{" "}
+            <button type="submit" className="text-ink-2 underline underline-offset-4">লগআউট করে নতুন অ্যাকাউন্ট খুলুন</button>
+          </form>
+        )}
       </div>
     </AuthShell>
   );

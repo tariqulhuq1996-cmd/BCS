@@ -21,7 +21,7 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
   const me = await requireAdmin("/admin/email");
   const sp = await searchParams;
   const s = mailStatus();
-  const pending = await prisma.user.count({ where: { emailVerifiedAt: null, role: "STUDENT" } });
+  const pending = await prisma.pendingSignup.count({ where: { createdAt: { gte: new Date(Date.now() - 24 * 3600e3) } } });
 
   return (
     <>
@@ -53,8 +53,8 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
             </dd>
           </>
         )}
-        <dt className="text-muted">যাচাই-বাকি অ্যাকাউন্ট</dt>
-        <dd>{bn(pending)}টি</dd>
+        <dt className="text-muted">কোডের অপেক্ষায় নিবন্ধন</dt>
+        <dd>{bn(pending)}টি (গত ২৪ ঘণ্টা; কোড না মেলা পর্যন্ত অ্যাকাউন্ট তৈরি হয় না)</dd>
       </dl>
 
       <form action={testEmailAction} className="mt-6 flex flex-wrap items-end gap-2">

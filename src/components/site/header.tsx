@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Suspense } from "react";
-import { getCurrentUser, getPendingUser } from "@/lib/auth/session";
+import { getCurrentUser, getPendingSignup, getPendingUser } from "@/lib/auth/session";
 import { logout } from "@/lib/auth/actions";
 
 const NAV = [
@@ -56,14 +56,15 @@ function Bubbles() {
   );
 }
 
-function AuthLinks() {
+function AuthLinks({ verifying = false }: { verifying?: boolean }) {
   return (
     <>
       <Link href="/login" className="rounded-md px-2 py-1.5 text-[15px] text-ink-2 hover:text-ink sm:px-3">
         লগইন
       </Link>
-      <Link href="/register" className="rounded-md bg-green px-3 py-1.5 text-[15px] font-semibold text-white hover:bg-green-strong sm:px-3.5 dark:text-paper">
-        শুরু করুন
+      {/* নিবন্ধনের কোড বাকি থাকলে "শুরু করুন"-এর জায়গায় যাচাই-পাতা */}
+      <Link href={verifying ? "/verify-email" : "/register"} className="rounded-md bg-green px-3 py-1.5 text-[15px] font-semibold text-white hover:bg-green-strong sm:px-3.5 dark:text-paper">
+        {verifying ? "ইমেইল যাচাই" : "শুরু করুন"}
       </Link>
     </>
   );
@@ -82,7 +83,7 @@ async function UserArea() {
         </form>
       </>
     );
-  if (!user) return <AuthLinks />;
+  if (!user) return <AuthLinks verifying={!!(await getPendingSignup())} />;
   return (
     <>
       {user.role === "ADMIN" && (

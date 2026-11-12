@@ -90,6 +90,22 @@ model EmailCode {
   sentAt    DateTime @default(now())
 }
 
+/// অপেক্ষমাণ নিবন্ধন — ফর্ম জমা হয়েছে, কিন্তু ইমেইলের কোড এখনো মেলেনি। কোড মিললে তবেই User তৈরি হয় এবং এটি মুছে যায়।
+/// id = ব্রাউজারের কুকিতে থাকা টোকেনের SHA-256 হ্যাশ। একই ইমেইলে নতুন চেষ্টা হলে আগেরটি বাতিল। ২৪ ঘণ্টা পরে অচল।
+model PendingSignup {
+  id           String   @id
+  email        String   @unique
+  name         String
+  passwordHash String
+  codeHash     String
+  expiresAt    DateTime
+  attempts     Int      @default(0)
+  sentAt       DateTime @default(now())
+  createdAt    DateTime @default(now())
+
+  @@index([createdAt])
+}
+
 model PasswordResetToken {
   id        String    @id // token hash
   userId    String
