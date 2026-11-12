@@ -133,7 +133,7 @@ async function HomeContent() {
       <Section
         id="roadmap"
         title="শুরু থেকে শেষ: প্রস্তুতি থেকে সাফল্য"
-        lead="প্রশ্ন-বিশ্লেষণ দিয়ে শুরু, তারপর তিনটি Level — প্রতিটি ধাপে নির্ধারিত নম্বর পেলেই পরেরটি খোলে, তাই ফাঁক থেকে যায় না। প্রতিদিন Dashboard বলে দেয় আজ কী করবেন।"
+        lead="প্রশ্ন-বিশ্লেষণ দিয়ে শুরু, তারপর তিনটি Level — প্রতিটি ধাপে নির্ধারিত নম্বর অর্জন করলেই পরের ধাপ উন্মুক্ত হয়, ফলে প্রস্তুতির কোনো অংশ অসম্পূর্ণ থাকে না। প্রতিদিনের করণীয় Dashboard-এ নির্দিষ্ট করে দেওয়া থাকে।"
       >
         <RoadmapPreview exams={t.exams} specialExams={t.specialExams} subtopics={t.subtopics} gradeCounts={t.gradeCounts} />
       </Section>
