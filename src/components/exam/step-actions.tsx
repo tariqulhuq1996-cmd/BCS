@@ -9,11 +9,11 @@ import { bn, bnNum } from "@/lib/bn";
 
 const ERR: Record<string, string> = {
   LOCKED: "এই ধাপটি Unlock করতে আগের ধাপের নির্ধারিত কাজ সম্পন্ন করুন।",
-  NEED_REVIEW: "আগে প্রথম সমাধানের উত্তর পর্যালোচনা শেষ করো।",
+  NEED_REVIEW: "আগে প্রথম সমাধানের উত্তর পর্যালোচনা শেষ করুন।",
   SUBMITTED: "এই ধাপ আগেই সম্পন্ন হয়েছে।",
   NOT_READY: "এই ধাপের প্রশ্ন এখনও প্রস্তুত নয়।",
   EMPTY: "এই ধাপের জন্য এখনও কোনো যাচাইকৃত প্রশ্ন প্রকাশিত হয়নি।",
-  BLOCKED: "নতুন উপবিষয় শুরুর আগে আজকের Revision শেষ করো।",
+  BLOCKED: "নতুন উপবিষয় শুরুর আগে আজকের Revision শেষ করুন।",
 };
 
 function Start({ taskKey, label, mode = "step", primary = true }: { taskKey: string; label: string; mode?: "step" | "practice"; primary?: boolean }) {
@@ -56,33 +56,33 @@ export async function StepActions({ task, userId, error }: { task: TaskView; use
   if (task.state === "COMPLETED") {
     body = (
       <>
-        <p className="text-lg">এই ধাপ সম্পন্ন{task.bestScore != null ? `, সেরা স্কোর ${bnNum(task.bestScore, 0)}%` : ""}। চাইলে আবার অনুশীলন করতে পারো; এতে অগ্রগতি বদলাবে না।</p>
+        <p className="text-lg">এই ধাপ সম্পন্ন{task.bestScore != null ? `, সেরা স্কোর ${bnNum(task.bestScore, 0)}%` : ""}। চাইলে আবার অনুশীলন করতে পারেন; এতে অগ্রগতি বদলাবে না।</p>
         <div className="mt-4 flex flex-wrap gap-3">
-          <Link href="/dashboard" className="rounded-lg bg-green px-6 py-3 text-lg font-semibold text-white dark:text-paper">পরবর্তী কাজে যাও</Link>
-          <Start taskKey={task.key} label="অনুশীলন করো" mode="practice" primary={false} />
+          <Link href="/dashboard" className="rounded-lg bg-green px-6 py-3 text-lg font-semibold text-white dark:text-paper">পরবর্তী কাজে যান</Link>
+          <Start taskKey={task.key} label="অনুশীলন করুন" mode="practice" primary={false} />
         </div>
       </>
     );
   } else if (single) {
     body = (
       <>
-        <p className="text-lg">{failedLast ? `আগের চেষ্টায় ${bnNum(task.lastScore!, 0)}%। পরবর্তী ধাপ Unlock করতে ${bn(thr)}% প্রয়োজন। ` : ""}পাস করতে {bn(thr)}% লাগবে; যতবার দরকার দিতে পারো।</p>
+        <p className="text-lg">{failedLast ? `আগের চেষ্টায় ${bnNum(task.lastScore!, 0)}%। পরবর্তী ধাপ Unlock করতে ${bn(thr)}% প্রয়োজন। ` : ""}পাস করতে {bn(thr)}% লাগবে; যতবার দরকার দিতে পারেন।</p>
         <div className="mt-4 flex flex-wrap gap-3">
-          <Start taskKey={task.key} label={open ? `${single.label} চালিয়ে যাও` : `${single.label} শুরু করো`} />
-          {failedLast && <Start taskKey={task.key} label="ভুলগুলো অনুশীলন করো" mode="practice" primary={false} />}
+          <Start taskKey={task.key} label={open ? `${single.label} চালিয়ে যান` : `${single.label} শুরু করুন`} />
+          {failedLast && <Start taskKey={task.key} label="ভুলগুলো অনুশীলন করুন" mode="practice" primary={false} />}
         </div>
       </>
     );
   } else if (solving && plan && plan.length === 0) {
-    body = <p className="text-lg">এই উপবিষয়ের যাচাইকৃত প্রশ্ন এখনও প্রকাশিত হয়নি। প্রশ্ন যুক্ত হলে এখান থেকেই শুরু করা যাবে; ততক্ষণ এই ধাপের অন্য উপবিষয়গুলো পড়ো।</p>;
+    body = <p className="text-lg">এই উপবিষয়ের যাচাইকৃত প্রশ্ন এখনও প্রকাশিত হয়নি। প্রশ্ন যুক্ত হলে এখান থেকেই শুরু করা যাবে; ততক্ষণ এই ধাপের অন্য উপবিষয়গুলো পড়ুন।</p>;
   } else if (solving && plan) {
     const next = plan.find((p) => !p.doneAttemptId);
     body = (
       <>
         {rev?.blocked && (
           <p className="mb-4 rounded-md border border-omr bg-omr-wash px-3 py-2.5 text-[15px]">
-            আগে আজকের Revision শেষ করো: {bn(rev.remaining)}টি প্রশ্ন বাকি।{" "}
-            <Link href="/revision" className="font-semibold text-omr underline underline-offset-4">Revision-এ যাও</Link>
+            আগে আজকের Revision শেষ করুন: {bn(rev.remaining)}টি প্রশ্ন বাকি।{" "}
+            <Link href="/revision" className="font-semibold text-omr underline underline-offset-4">Revision-এ যান</Link>
           </p>
         )}
         <p className="text-lg">{plan.length > 1 ? `প্রশ্নগুলো ${bn(plan.length)}টি ভাগে। প্রতিটি ভাগ জমা দিলে ফল দেখাবে; সব ভাগ শেষে সম্মিলিত পর্যালোচনা।` : "সব প্রশ্ন একটি ভাগে। জমা দিলেই পর্যালোচনা।"}</p>
@@ -97,30 +97,30 @@ export async function StepActions({ task, userId, error }: { task: TaskView; use
             </li>
           ))}
         </ol>
-        {next && !rev?.blocked && <div className="mt-5"><Start taskKey={task.key} label={next.openAttemptId ? `ভাগ ${bn(next.partNo)} চালিয়ে যাও` : `ভাগ ${bn(next.partNo)} শুরু করো`} /></div>}
+        {next && !rev?.blocked && <div className="mt-5"><Start taskKey={task.key} label={next.openAttemptId ? `ভাগ ${bn(next.partNo)} চালিয়ে যান` : `ভাগ ${bn(next.partNo)} শুরু করুন`} /></div>}
       </>
     );
   } else if (task.step === "REVIEW") {
     body = (
       <>
-        <p className="text-lg">প্রথম সমাধান শেষ। এখন সঠিক ও ভুল উত্তর এবং ব্যাখ্যাগুলো পর্যালোচনা করো।</p>
-        <Link href={`${task.href}/review`} className="mt-4 inline-block rounded-lg bg-green px-6 py-3 text-lg font-semibold text-white dark:text-paper">উত্তর পর্যালোচনা করো</Link>
+        <p className="text-lg">প্রথম সমাধান শেষ। এখন সঠিক ও ভুল উত্তর এবং ব্যাখ্যাগুলো পর্যালোচনা করুন।</p>
+        <Link href={`${task.href}/review`} className="mt-4 inline-block rounded-lg bg-green px-6 py-3 text-lg font-semibold text-white dark:text-paper">উত্তর পর্যালোচনা করুন</Link>
       </>
     );
   } else {
     const label = { REVISION: "Revision Test", MASTERY: "Mastery Test", CUMULATIVE: "Cumulative Test" }[task.step as "REVISION" | "MASTERY" | "CUMULATIVE"];
     const msg =
       task.step === "REVISION"
-        ? "তোমার ভুল ও অনিশ্চিত প্রশ্ন নিয়ে Revision Test। এটি শেষ করলেই Mastery Test খুলবে।"
+        ? "আপনার ভুল ও অনিশ্চিত প্রশ্ন নিয়ে Revision Test। এটি শেষ করলেই Mastery Test খুলবে।"
         : failedLast
-          ? `তোমার শেষ স্কোর ${bnNum(task.lastScore!, 0)}%। পরবর্তী ধাপ Unlock করতে ${bn(thr)}% প্রয়োজন। আবার অনুশীলন করো।`
-          : `পাস করতে ${bn(thr)}% লাগবে। যতবার দরকার দিতে পারো।`;
+          ? `আপনার শেষ স্কোর ${bnNum(task.lastScore!, 0)}%। পরবর্তী ধাপ Unlock করতে ${bn(thr)}% প্রয়োজন। আবার অনুশীলন করুন।`
+          : `পাস করতে ${bn(thr)}% লাগবে। যতবার দরকার দিতে পারেন।`;
     body = (
       <>
         <p className="text-lg">{msg}</p>
         <div className="mt-4 flex flex-wrap gap-3">
-          <Start taskKey={task.key} label={open ? `${label} চালিয়ে যাও` : `${label} শুরু করো`} />
-          {task.step !== "REVISION" && <Start taskKey={task.key} label="ভুলগুলো অনুশীলন করো" mode="practice" primary={false} />}
+          <Start taskKey={task.key} label={open ? `${label} চালিয়ে যান` : `${label} শুরু করুন`} />
+          {task.step !== "REVISION" && <Start taskKey={task.key} label="ভুলগুলো অনুশীলন করুন" mode="practice" primary={false} />}
         </div>
       </>
     );
@@ -131,7 +131,7 @@ export async function StepActions({ task, userId, error }: { task: TaskView; use
       <section aria-label="এখনকার কাজ" className="mt-10 rounded-xl border-2 border-green bg-surface p-5 sm:p-6">
         {error && ERR[error] && (
           <p role="alert" className="mb-4 rounded-md border border-danger bg-danger-wash px-3 py-2 text-[15px]">
-            {ERR[error]} {error === "BLOCKED" && <Link href="/revision" className="font-semibold underline">Revision-এ যাও</Link>}
+            {ERR[error]} {error === "BLOCKED" && <Link href="/revision" className="font-semibold underline">Revision-এ যান</Link>}
           </p>
         )}
         {body}

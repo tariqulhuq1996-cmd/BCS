@@ -59,7 +59,7 @@ async function Content() {
         <p className="mt-6 rounded-lg border border-dashed border-line-strong px-4 py-3 text-ink-2">Level ৩ তালাবন্ধ। {LOCKED_MESSAGE} Level ১ ও Level ২ সম্পন্ন হলে খুলবে।</p>
       )}
       {done > 0 && (
-        <p className="mt-6"><Link href="/readiness-report" className="font-semibold text-green underline underline-offset-4">তোমার প্রস্তুতির প্রতিবেদন দেখো</Link></p>
+        <p className="mt-6"><Link href="/readiness-report" className="font-semibold text-green underline underline-offset-4">আপনার প্রস্তুতির প্রতিবেদন দেখুন</Link></p>
       )}
 
       {TIER.map((t) => {
@@ -89,7 +89,7 @@ async function Content() {
                 {gate.state === "COMPLETED" ? (
                   <span className="font-semibold text-green">শর্ত পূরণ হয়েছে।</span>
                 ) : gate.avg != null ? (
-                  <span>এখন শেষ {bn(gate.count)}টির গড় <span className="font-semibold text-ink">{bnNum(gate.avg, 1)}</span>।{gate.state === "AVAILABLE" && " আগের টেস্টগুলো আবার দিয়ে গড় বাড়াতে পারো।"}</span>
+                  <span>এখন শেষ {bn(gate.count)}টির গড় <span className="font-semibold text-ink">{bnNum(gate.avg, 1)}</span>।{gate.state === "AVAILABLE" && " আগের টেস্টগুলো আবার দিয়ে গড় বাড়াতে পারেন।"}</span>
                 ) : null}
               </p>
             )}

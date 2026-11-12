@@ -64,42 +64,42 @@ async function Content({ params }: { params: Promise<{ attemptId: string }> }) {
       ? `এই সেট শেষ। আজ আরও ${bn(st.remaining)}টি প্রশ্ন Revision বাকি।`
       : "আজকের Revision শেষ। ঠিক উত্তর দেওয়া প্রশ্ন পরের বার আসবে আরও দেরিতে; ভুলগুলো আগামীকাল আবার।";
     next = st.remaining > 0
-      ? <form action={startRevisionAction}><button className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">পরের সেট শুরু করো</button></form>
-      : <Link href="/dashboard" className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">Dashboard-এ যাও</Link>;
+      ? <form action={startRevisionAction}><button className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">পরের সেট শুরু করুন</button></form>
+      : <Link href="/dashboard" className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">Dashboard-এ যান</Link>;
   } else if (r.kind === "MISTAKE_PRACTICE") {
     headline = "ভুলের অনুশীলন শেষ। যেগুলো এবার ঠিক হয়েছে, সেগুলো ভুলের ভান্ডার থেকে সরে গেছে।";
-    next = <Link href="/mistakes" className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">ভুলের ভান্ডারে ফিরে যাও</Link>;
+    next = <Link href="/mistakes" className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">ভুলের ভান্ডারে ফিরে যান</Link>;
   } else if (r.kind === "PRACTICE") {
     headline = "অনুশীলন শেষ। এটি ধাপের অগ্রগতিতে গোনা হয় না, তবে ভুলগুলো Revision-সারিতে যুক্ত হয়েছে।";
-    next = <Link href={href} className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">ধাপে ফিরে যাও</Link>;
+    next = <Link href={href} className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">ধাপে ফিরে যান</Link>;
   } else if (progress?.state === "COMPLETED" && (r.kind === "MASTERY" || r.kind === "CUMULATIVE" || r.kind === "LEVEL_FINAL" || r.kind === "CHECKPOINT") && r.passed) {
     const opened = await prisma.taskPrerequisite.findMany({ where: { requiresId: task!.id }, include: { task: { select: { titleBn: true } } }, take: 3 });
-    headline = `অভিনন্দন! তুমি ${r.taskTitle} সম্পন্ন করেছ।${opened.length ? ` ${opened.map((o) => o.task.titleBn).join(", ")}${opened.length >= 3 ? " ইত্যাদি" : ""} এখন খোলা।` : ""}`;
-    next = <Link href="/dashboard" className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">পরবর্তী কাজে যাও</Link>;
+    headline = `অভিনন্দন! আপনি ${r.taskTitle} সম্পন্ন করেছেন।${opened.length ? ` ${opened.map((o) => o.task.titleBn).join(", ")}${opened.length >= 3 ? " ইত্যাদি" : ""} এখন খোলা।` : ""}`;
+    next = <Link href="/dashboard" className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">পরবর্তী কাজে যান</Link>;
   } else if (r.kind === "SOLVE") {
     if (progress?.step === "SOLVE") {
-      headline = "এই ভাগ জমা হয়েছে। পরের ভাগ সমাধান করো; সব ভাগ শেষ হলে সম্মিলিত পর্যালোচনা।";
-      next = <StartButton taskKey={taskKey} label="পরের ভাগ শুরু করো" />;
+      headline = "এই ভাগ জমা হয়েছে। পরের ভাগ সমাধান করুন; সব ভাগ শেষ হলে সম্মিলিত পর্যালোচনা।";
+      next = <StartButton taskKey={taskKey} label="পরের ভাগ শুরু করুন" />;
     } else {
-      headline = `অভিনন্দন! তুমি ${r.taskTitle}-এর প্রথম সমাধান শেষ করেছ। এখন সব ভাগের উত্তর ও ব্যাখ্যা একসঙ্গে পর্যালোচনা করো।`;
-      next = <Link href={`${href}/review`} className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">সম্মিলিত পর্যালোচনায় যাও</Link>;
+      headline = `অভিনন্দন! আপনি ${r.taskTitle}-এর প্রথম সমাধান শেষ করেছেন। এখন সব ভাগের উত্তর ও ব্যাখ্যা একসঙ্গে পর্যালোচনা করুন।`;
+      next = <Link href={`${href}/review`} className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">সম্মিলিত পর্যালোচনায় যান</Link>;
     }
   } else if (r.kind === "REVISION") {
-    headline = "Revision Test শেষ। এখন Mastery Test দাও।";
-    next = <StartButton taskKey={taskKey} label="Mastery Test শুরু করো" />;
+    headline = "Revision Test শেষ। এখন Mastery Test দিন।";
+    next = <StartButton taskKey={taskKey} label="Mastery Test শুরু করুন" />;
   } else if (r.passed === false) {
-    headline = `তোমার ${KIND_BN[r.kind]} স্কোর ${bnNum(r.scorePct, 0)}%। পরবর্তী ধাপ Unlock করতে ${bn(thr ?? 80)}% প্রয়োজন। আবার অনুশীলন করো।`;
+    headline = `আপনার ${KIND_BN[r.kind]} স্কোর ${bnNum(r.scorePct, 0)}%। পরবর্তী ধাপ Unlock করতে ${bn(thr ?? 80)}% প্রয়োজন। আবার অনুশীলন করুন।`;
     next = (
       <div className="flex flex-wrap gap-3">
-        <StartButton taskKey={taskKey} label="ভুলগুলো অনুশীলন করো" mode="practice" primary={false} />
-        <StartButton taskKey={taskKey} label={`আবার ${KIND_BN[r.kind]} দাও`} />
+        <StartButton taskKey={taskKey} label="ভুলগুলো অনুশীলন করুন" mode="practice" primary={false} />
+        <StartButton taskKey={taskKey} label={`আবার ${KIND_BN[r.kind]} দিন`} />
       </div>
     );
   } else if (r.kind === "MASTERY" && progress?.step === "CUMULATIVE") {
     headline = `Mastery অর্জিত (${bnNum(r.scorePct, 0)}%)! শেষ ধাপ: ১০ম থেকে ${r.bcsNo ? bn(r.bcsNo) + "তম" : ""} পর্যন্ত Cumulative Revision Test।`;
-    next = <StartButton taskKey={taskKey} label="Cumulative Test শুরু করো" />;
+    next = <StartButton taskKey={taskKey} label="Cumulative Test শুরু করুন" />;
   } else {
-    next = <Link href="/dashboard" className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">Dashboard-এ যাও</Link>;
+    next = <Link href="/dashboard" className="rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">Dashboard-এ যান</Link>;
   }
 
   return (

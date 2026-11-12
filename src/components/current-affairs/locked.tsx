@@ -5,7 +5,7 @@ import type { TaskView } from "@/lib/progress/dashboard";
 export function CaLocked({ current }: { current: TaskView | null }) {
   return (
     <div className="mt-8 rounded-xl border-2 border-dashed border-line-strong px-6 py-8 text-center">
-      <p className="text-lg font-semibold">সাম্প্রতিক বিষয়াবলি খুলবে প্রশ্ন-বিশ্লেষণ পড়া শেষ হলে</p>
+      <p className="text-lg font-semibold">সাম্প্রতিক বিষয়াবলি: প্রশ্ন-বিশ্লেষণ পড়া শেষ হলেই খুলবে, চলবে পরীক্ষার দিন পর্যন্ত</p>
       <p className="mx-auto mt-2 max-w-lg text-ink-2">
         যাত্রার প্রথম ধাপ প্রশ্ন-বিশ্লেষণ। এর পাঁচটি অংশে &ldquo;পড়েছি&rdquo; চিহ্ন দিলেই সাম্প্রতিক বিষয়াবলি খুলে যাবে, আর তা চলবে মূল পথের পাশাপাশি প্রতিদিন।
       </p>

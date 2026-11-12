@@ -70,7 +70,7 @@ export function QuestionReview({ items }: { items: Item[] }) {
                       {LETTERS[k]}
                     </span>
                     <span>{o}</span>
-                    {isMine && <span className="ml-auto text-xs text-ink-2">তোমার উত্তর</span>}
+                    {isMine && <span className="ml-auto text-xs text-ink-2">আপনার উত্তর</span>}
                   </li>
                 );
               })}

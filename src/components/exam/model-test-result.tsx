@@ -31,13 +31,13 @@ export async function ModelTestResult({ attemptId, userId, r }: { attemptId: str
         {an.reviewed ? (
           <>
             <p className="text-lg">পর্যালোচনা সম্পন্ন।{nextTask ? ` ${nextTask.task.titleBn} এখন খোলা।` : ""}</p>
-            <div className="mt-4"><Link href="/dashboard" className="inline-block rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">পরবর্তী কাজে যাও</Link></div>
+            <div className="mt-4"><Link href="/dashboard" className="inline-block rounded-lg bg-green px-5 py-3 font-semibold text-white dark:text-paper">পরবর্তী কাজে যান</Link></div>
           </>
         ) : (
           <form action={acknowledgeModelTestAction}>
             <input type="hidden" name="attemptId" value={attemptId} />
-            <p className="text-lg">নিচে প্রতিটি ভুল ও অনুত্তরিত প্রশ্নের সঠিক উত্তর ও ব্যাখ্যা দেখো। পর্যালোচনা শেষ হলে পরের টেস্ট খুলবে।</p>
-            <button className="mt-4 rounded-lg bg-green px-5 py-3 font-semibold text-white hover:bg-green-strong dark:text-paper">ভুলগুলো দেখেছি, পরের টেস্ট খোলো</button>
+            <p className="text-lg">নিচে প্রতিটি ভুল ও অনুত্তরিত প্রশ্নের সঠিক উত্তর ও ব্যাখ্যা দেখুন। পর্যালোচনা শেষ হলে পরের টেস্ট খুলবে।</p>
+            <button className="mt-4 rounded-lg bg-green px-5 py-3 font-semibold text-white hover:bg-green-strong dark:text-paper">ভুলগুলো দেখেছি, পরের টেস্ট খুলুন</button>
           </form>
         )}
       </section>
@@ -106,7 +106,7 @@ export async function ModelTestResult({ attemptId, userId, r }: { attemptId: str
         <section aria-labelledby="time">
           <h2 id="time" className="text-xl font-bold">সময়ের ব্যবহার</h2>
           <p className="mt-3 text-[15px] text-ink-2">
-            মোট {bnNum(usedMin, 0)} মিনিট ব্যবহার করেছ{an.avgSecPerAnswered ? `; উত্তর দেওয়া প্রতিটি প্রশ্নে গড়ে ${bnNum(an.avgSecPerAnswered, 0)} সেকেন্ড` : ""}।
+            মোট {bnNum(usedMin, 0)} মিনিট ব্যবহার করেছেন{an.avgSecPerAnswered ? `; উত্তর দেওয়া প্রতিটি প্রশ্নে গড়ে ${bnNum(an.avgSecPerAnswered, 0)} সেকেন্ড` : ""}।
             ১২০ মিনিটে ২০০ প্রশ্ন মানে প্রশ্নপ্রতি গড়ে ৩৬ সেকেন্ড।
           </p>
           {an.slow.length > 0 && (

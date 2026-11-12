@@ -108,7 +108,7 @@ export function journeyStages(tasks: TaskView[], current: TaskView | null): Jour
   const groups: { key: string; label: string; href: string; match: (t: TaskView) => boolean }[] = [
     { key: "L0", label: "ধাপ ০: প্রশ্ন-বিশ্লেষণ", href: "/start", match: (t) => t.levelNo === 0 && t.kind !== "CA_GATE" },
     { key: "L1", label: "Level ১: বিগত BCS", href: "/level-1", match: (t) => t.kind === "L1_EXAM" },
-    { key: "REPEAT", label: "Repeat Mastery ও Final", href: "/level-1/repeat", match: (t) => t.kind === "L1_REPEAT" || t.kind === "L1_FINAL" },
+    { key: "REPEAT", label: "বারবার আসা প্রশ্ন ও Final", href: "/level-1/repeat", match: (t) => t.kind === "L1_REPEAT" || t.kind === "L1_FINAL" },
     { key: "L2", label: "Level ২: টপিকভিত্তিক", href: "/level-2", match: (t) => t.levelNo === 2 },
     { key: "L3", label: "Level ৩: Model Test", href: "/level-3", match: (t) => t.levelNo === 3 },
   ];
@@ -246,73 +246,73 @@ export async function getDashboard(userId: string) {
   };
 }
 
-/** "আজ তোমার করণীয়" — বর্তমান কাজ ও ধাপ থেকে তৈরি নির্দেশনা। */
+/** "আজ আপনার করণীয়" — বর্তমান কাজ ও ধাপ থেকে তৈরি নির্দেশনা। */
 async function describeAction(t: TaskView, tasks: TaskView[], rules: Awaited<ReturnType<typeof loadRules>>) {
   const pct = (k: string) => bn(rules.get<number>(k));
   const prevDone = [...tasks].filter((x) => x.state === "COMPLETED").sort((a, b) => b.levelNo - a.levelNo || b.order - a.order)[0];
-  const congrats = prevDone && t.step === "SOLVE" && t.state === "AVAILABLE" ? `অভিনন্দন! তুমি ${prevDone.title} সম্পন্ন করেছ। ` : "";
+  const congrats = prevDone && t.step === "SOLVE" && t.state === "AVAILABLE" ? `অভিনন্দন! আপনি ${prevDone.title} সম্পন্ন করেছেন। ` : "";
 
   if (t.kind === "L1_EXAM") {
     const eligible = rules.get<string[]>("path.eligible_classes");
     const n = await prisma.question.count({ where: { exam: { bcsNo: t.bcsNo }, status: "PUBLISHED", verifyClass: { in: eligible } } });
     const parts = Math.ceil(n / rules.get<number>("l1.solve.part_size"));
-    const where = `তুমি বর্তমানে Level ১-এর ${bnOrdinal(t.bcsNo!)} BCS পর্যায়ে আছো।`;
+    const where = `আপনি বর্তমানে Level ১-এর ${bnOrdinal(t.bcsNo!)} BCS পর্যায়ে আছেন।`;
     const thr = pct("l1.threshold.mastery");
     const byStep: Record<StepKey, string> = {
-      SOLVE: `${congrats}${where} প্রথমে নির্ধারিত ${bn(n)}টি প্রশ্ন সমাধান করো${parts > 1 ? ` (${bn(parts)}টি ভাগে)` : ""}। এরপর উত্তর পর্যালোচনা ও Revision Test।`,
-      REVIEW: `${where} প্রথম সমাধান শেষ। এখন সঠিক ও ভুল উত্তর এবং ব্যাখ্যাগুলো পর্যালোচনা করো।`,
-      REVISION: `${where} এখন তোমার ভুল প্রশ্নগুলোর Revision Test দাও।`,
+      SOLVE: `${congrats}${where} প্রথমে নির্ধারিত ${bn(n)}টি প্রশ্ন সমাধান করুন${parts > 1 ? ` (${bn(parts)}টি ভাগে)` : ""}। এরপর উত্তর পর্যালোচনা ও Revision Test।`,
+      REVIEW: `${where} প্রথম সমাধান শেষ। এখন সঠিক ও ভুল উত্তর এবং ব্যাখ্যাগুলো পর্যালোচনা করুন।`,
+      REVISION: `${where} এখন আপনার ভুল প্রশ্নগুলোর Revision Test দিন।`,
       MASTERY:
         t.lastScore != null && t.lastScore < rules.get<number>("l1.threshold.mastery")
-          ? `তোমার Mastery Score ${bn(Math.round(t.lastScore))}%। পরবর্তী ধাপ Unlock করতে ${thr}% প্রয়োজন। আবার অনুশীলন করো।`
-          : `${where} এখন Mastery Test দাও; পরের ধাপে যেতে ${thr}% লাগবে।`,
-      CUMULATIVE: `${where} এখন ১০ম থেকে ${bnOrdinal(t.bcsNo!)} পর্যন্ত Cumulative Revision Test দাও; ${pct("l1.threshold.cumulative")}% লাগবে।`,
+          ? `আপনার Mastery Score ${bn(Math.round(t.lastScore))}%। পরবর্তী ধাপ Unlock করতে ${thr}% প্রয়োজন। আবার অনুশীলন করুন।`
+          : `${where} এখন Mastery Test দিন; পরের ধাপে যেতে ${thr}% লাগবে।`,
+      CUMULATIVE: `${where} এখন ১০ম থেকে ${bnOrdinal(t.bcsNo!)} পর্যন্ত Cumulative Revision Test দিন; ${pct("l1.threshold.cumulative")}% লাগবে।`,
       DONE: `${t.title} সম্পন্ন।`,
     };
     const stepLabel = L1_STEPS.find((s) => s.key === t.step)?.label ?? "";
-    return { text: byStep[t.step], button: t.step === "SOLVE" && t.state === "AVAILABLE" ? "পরবর্তী কাজ শুরু করো" : "কাজ চালিয়ে যাও", stepLabel, href: t.href };
+    return { text: byStep[t.step], button: t.step === "SOLVE" && t.state === "AVAILABLE" ? "পরবর্তী কাজ শুরু করুন" : "কাজ চালিয়ে যান", stepLabel, href: t.href };
   }
   if (t.kind === "L0_ORIENTATION")
     return {
-      text: `স্বাগতম! যাত্রার প্রথম ধাপ প্রশ্ন-বিশ্লেষণ: কোন উপবিষয় প্রায় প্রতিবার আসে, সাম্প্রতিক ধারা, বারবার আসা প্রশ্ন, Priority List আর পুরো পথ। পাঁচটি অংশ পড়ে প্রতিটির শেষে "পড়েছি" চিহ্ন দাও — তারপর শুরুর মূল্যায়ন।`,
-      button: "প্রশ্ন-বিশ্লেষণ পড়ো", stepLabel: "প্রশ্ন-বিশ্লেষণ", href: "/research",
+      text: `স্বাগতম! যাত্রার প্রথম ধাপ প্রশ্ন-বিশ্লেষণ: কোন উপবিষয় প্রায় প্রতিবার আসে, সাম্প্রতিক ধারা, বারবার আসা প্রশ্ন, Priority List আর পুরো পথ। পাঁচটি অংশ পড়ে প্রতিটির শেষে "পড়েছি" চিহ্ন দিন — তারপর শুরুর মূল্যায়ন।`,
+      button: "প্রশ্ন-বিশ্লেষণ পড়ুন", stepLabel: "প্রশ্ন-বিশ্লেষণ", href: "/research",
     };
   if (t.kind === "L0_DIAGNOSTIC")
     return {
-      text: `${congrats}এবার শুরুর মূল্যায়ন: ${bn(rules.get<number>("l0.diagnostic.size"))}টি প্রশ্ন, ${bn(rules.get<number>("l0.diagnostic.minutes"))} মিনিট। পাস-ফেল নেই — জমা দিলেই Level ১ খুলবে, আর শেষে দেখবে শুরু থেকে কতটা এগোলে।`,
-      button: t.state === "IN_PROGRESS" ? "মূল্যায়ন চালিয়ে যাও" : "শুরুর মূল্যায়ন দাও", stepLabel: "শুরুর মূল্যায়ন", href: "/start",
+      text: `${congrats}এবার শুরুর মূল্যায়ন: ${bn(rules.get<number>("l0.diagnostic.size"))}টি প্রশ্ন, ${bn(rules.get<number>("l0.diagnostic.minutes"))} মিনিট। পাস-ফেল নেই — জমা দিলেই Level ১ খুলবে, আর শেষে দেখবেন শুরু থেকে কতটা এগোলেন।`,
+      button: t.state === "IN_PROGRESS" ? "মূল্যায়ন চালিয়ে যান" : "শুরুর মূল্যায়ন দিন", stepLabel: "শুরুর মূল্যায়ন", href: "/start",
     };
   if (t.kind === "L1_REPEAT")
     return {
-      text: `${congrats}১০ম–৫০তম সব BCS শেষ! Level ১ Final-এর আগে বারবার আসা প্রশ্ন পাকা করো: Priority ${rules.get<string[]>("l1.repeat.grades").join(", ")}-এর প্রতিটি পুনরাবৃত্ত প্রশ্ন থেকে একটি করে — পাস করতে ${pct("l1.threshold.repeat")}% লাগবে।`,
-      button: "Repeat Mastery শুরু করো", stepLabel: "Repeat Mastery", href: t.href,
+      text: `${congrats}১০ম–৫০তম সব BCS শেষ! Level ১ Final-এর আগে বারবার আসা প্রশ্ন পাকা করুন: Priority ${rules.get<string[]>("l1.repeat.grades").join(", ")}-এর প্রতিটি পুনরাবৃত্ত প্রশ্ন থেকে একটি করে — পাস করতে ${pct("l1.threshold.repeat")}% লাগবে।`,
+      button: "Repeat Mastery শুরু করুন", stepLabel: "Repeat Mastery", href: t.href,
     };
   if (t.kind === "L1_FINAL")
     return {
-      text: `${congrats}১০ম–৫০তম সব BCS-এর Learning Cycle শেষ। এখন সব পরীক্ষা থেকে ${bn(rules.get<number>("l1.final.size"))}টি প্রশ্নের Level ১ Final Assessment দাও; পাস করতে ${pct("l1.threshold.final")}% লাগবে।`,
-      button: "Final Assessment শুরু করো", stepLabel: "Final Assessment", href: t.href,
+      text: `${congrats}১০ম–৫০তম সব BCS-এর Learning Cycle শেষ। এখন সব পরীক্ষা থেকে ${bn(rules.get<number>("l1.final.size"))}টি প্রশ্নের Level ১ Final Assessment দিন; পাস করতে ${pct("l1.threshold.final")}% লাগবে।`,
+      button: "Final Assessment শুরু করুন", stepLabel: "Final Assessment", href: t.href,
     };
   if (t.kind === "L2_SUBTOPIC") {
     const open = tasks.filter((x) => x.kind === "L2_SUBTOPIC" && x.phase === t.phase);
     const done = open.filter((x) => x.state === "COMPLETED").length;
     const stepLabel = L2_STEPS.find((s) => s.key === t.step)?.label ?? "";
     return {
-      text: `${congrats}তুমি Level ২-এর Priority ${t.grade ?? ""} ধাপে আছো (${bn(done)}/${bn(open.length)} উপবিষয় সম্পন্ন)। পরের উপবিষয়: ${t.title} (${t.subjectBn})। পরিচিতি পড়ে প্রশ্ন সমাধান শুরু করো।`,
-      button: "পরবর্তী কাজ শুরু করো", stepLabel, href: t.href,
+      text: `${congrats}আপনি Level ২-এর Priority ${t.grade ?? ""} ধাপে আছেন (${bn(done)}/${bn(open.length)} উপবিষয় সম্পন্ন)। পরের উপবিষয়: ${t.title} (${t.subjectBn})। পরিচিতি পড়ে প্রশ্ন সমাধান শুরু করুন।`,
+      button: "পরবর্তী কাজ শুরু করুন", stepLabel, href: t.href,
     };
   }
   if (t.kind === "L3_MODEL_TEST") {
     const no = Number(t.key.split(":")[2]);
     return {
-      text: `${congrats}তুমি Level ৩-এর স্তর ${bn(t.phase ?? 1)}-এ আছো। এখন ${t.title} দাও: ২০০টি প্রশ্ন, ${bn(rules.get<number>("l3.duration_min"))} মিনিট, প্রতিটি ভুলে ${bn(rules.get<number>("l3.negative_mark"))} নম্বর কাটা। জমা দেওয়ার পর ভুলগুলো পর্যালোচনা করলে পরের টেস্ট খুলবে।`,
-      button: t.state === "IN_PROGRESS" ? "টেস্ট চালিয়ে যাও" : "পরবর্তী কাজ শুরু করো",
+      text: `${congrats}আপনি Level ৩-এর স্তর ${bn(t.phase ?? 1)}-এ আছেন। এখন ${t.title} দিন: ২০০টি প্রশ্ন, ${bn(rules.get<number>("l3.duration_min"))} মিনিট, প্রতিটি ভুলে ${bn(rules.get<number>("l3.negative_mark"))} নম্বর কাটা। জমা দেওয়ার পর ভুলগুলো পর্যালোচনা করলে পরের টেস্ট খুলবে।`,
+      button: t.state === "IN_PROGRESS" ? "টেস্ট চালিয়ে যান" : "পরবর্তী কাজ শুরু করুন",
       stepLabel: `Model Test ${bn(no)}/১৫০`,
       href: t.href,
     };
   }
   if (t.kind === "L3_TIER_GATE")
-    return { text: `স্তর ${bn(t.phase ?? 1)}-এর সব টেস্ট শেষ। পরের স্তর খুলতে শেষ ${bn(rules.get<number>("l3.gate.window"))}টি টেস্টের গড় নেট নম্বর লাগবে; আগের টেস্টগুলো আবার দিয়ে গড় বাড়াতে পারো।`, button: "অবস্থা দেখো", stepLabel: t.title, href: "/level-3" };
+    return { text: `স্তর ${bn(t.phase ?? 1)}-এর সব টেস্ট শেষ। পরের স্তর খুলতে শেষ ${bn(rules.get<number>("l3.gate.window"))}টি টেস্টের গড় নেট নম্বর লাগবে; আগের টেস্টগুলো আবার দিয়ে গড় বাড়াতে পারেন।`, button: "অবস্থা দেখুন", stepLabel: t.title, href: "/level-3" };
   if (t.kind === "L2_CHECKPOINT")
-    return { text: `${congrats}এই Priority ধাপের সব উপবিষয় শেষ। এখন ${t.title} দাও; ${pct("l2.threshold.checkpoint")}% পেলে পরের ধাপ খুলবে।`, button: "Checkpoint শুরু করো", stepLabel: "Checkpoint", href: t.href };
-  return { text: `${congrats}${t.title} দাও।`, button: "শুরু করো", stepLabel: "", href: t.href };
+    return { text: `${congrats}এই Priority ধাপের সব উপবিষয় শেষ। এখন ${t.title} দিন; ${pct("l2.threshold.checkpoint")}% পেলে পরের ধাপ খুলবে।`, button: "Checkpoint শুরু করুন", stepLabel: "Checkpoint", href: t.href };
+  return { text: `${congrats}${t.title} দিন।`, button: "শুরু করুন", stepLabel: "", href: t.href };
 }

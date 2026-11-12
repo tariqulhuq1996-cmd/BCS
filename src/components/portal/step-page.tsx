@@ -17,7 +17,7 @@ export function LockedNotice({ title, current }: { title: string; current: TaskV
       <p className="mt-3 text-lg text-ink-2">{LOCKED_MESSAGE}</p>
       {current && (
         <Link href={current.href} className="mt-8 inline-block rounded-lg bg-green px-6 py-3 font-semibold text-white hover:bg-green-strong dark:text-paper">
-          বর্তমান কাজে যাও: {current.title}
+          বর্তমান কাজে যান: {current.title}
         </Link>
       )}
     </section>
@@ -86,7 +86,7 @@ export function StepPage({
 export function EngineComingNotice() {
   return (
     <p className="mt-10 rounded-lg border border-line bg-surface px-4 py-3 text-[15px] text-ink-2">
-      প্রশ্ন সমাধানের পরীক্ষা-পর্দা পরের ধাপে (Phase 05) যুক্ত হচ্ছে। তখন এখান থেকেই প্রশ্ন সমাধান শুরু করা যাবে, আর তোমার অগ্রগতি স্বয়ংক্রিয়ভাবে সংরক্ষিত হবে।
+      প্রশ্ন সমাধানের পরীক্ষা-পর্দা পরের ধাপে (Phase 05) যুক্ত হচ্ছে। তখন এখান থেকেই প্রশ্ন সমাধান শুরু করা যাবে, আর আপনার অগ্রগতি স্বয়ংক্রিয়ভাবে সংরক্ষিত হবে।
     </p>
   );
 }

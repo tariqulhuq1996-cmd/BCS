@@ -58,7 +58,7 @@ export function CaPractice({ questions, title, backHref }: { questions: CaPublic
     return (
       <div className="mt-8 rounded-xl border border-line bg-surface p-6">
         <p className="text-lg">এই অংশে এখন অনুশীলনের মতো কোনো প্রশ্ন নেই।</p>
-        <Link href={backHref} className="mt-3 inline-block font-semibold text-green underline underline-offset-4">Current Affairs-এ ফিরে যাও</Link>
+        <Link href={backHref} className="mt-3 inline-block font-semibold text-green underline underline-offset-4">Current Affairs-এ ফিরে যান</Link>
       </div>
     );
 
@@ -117,7 +117,7 @@ export function CaPractice({ questions, title, backHref }: { questions: CaPublic
         {q.stemTail && <p className="mt-2 font-medium">{q.stemTail}</p>}
 
         <fieldset className="mt-4" disabled={done || pending}>
-          <legend className="sr-only">উত্তর বাছাই করো (কিবোর্ডে ১–৪)</legend>
+          <legend className="sr-only">উত্তর বাছাই করুন (কিবোর্ডে ১–৪)</legend>
           <ul className="grid gap-2">
             {q.order.map((orig, pos) => {
               const isCorrect = done && orig === fb.correctIndex;
@@ -144,7 +144,7 @@ export function CaPractice({ questions, title, backHref }: { questions: CaPublic
                     </span>
                     <span className="text-[15px]">{q.options[orig]}</span>
                     {isCorrect && <span className="ml-auto text-sm font-semibold text-green">সঠিক</span>}
-                    {isWrongPick && <span className="ml-auto text-sm font-semibold text-danger">তোমার উত্তর</span>}
+                    {isWrongPick && <span className="ml-auto text-sm font-semibold text-danger">আপনার উত্তর</span>}
                   </button>
                 </li>
               );
@@ -154,7 +154,7 @@ export function CaPractice({ questions, title, backHref }: { questions: CaPublic
 
         <div aria-live="polite">
           {pending && <p className="mt-3 text-sm text-muted">যাচাই হচ্ছে…</p>}
-          {error && <p role="alert" className="mt-3 text-sm text-danger">উত্তর জমা হয়নি — ইন্টারনেট সংযোগ দেখে আবার চেষ্টা করো।</p>}
+          {error && <p role="alert" className="mt-3 text-sm text-danger">উত্তর জমা হয়নি — ইন্টারনেট সংযোগ দেখে আবার চেষ্টা করুন।</p>}
           {fb && (
             <div className="mt-4 grid gap-2 border-t border-line pt-4 text-[15px] text-ink-2">
               <p className={`font-semibold ${fb.correct ? "text-green" : "text-danger"}`}>
@@ -162,7 +162,7 @@ export function CaPractice({ questions, title, backHref }: { questions: CaPublic
               </p>
               {fb.explanation && <p><b className="text-ink">ব্যাখ্যা:</b> {fb.explanation}</p>}
               {fb.remember && <p className="rounded-md bg-green-wash px-3 py-2"><b className="text-ink">মনে রাখুন:</b> {fb.remember}</p>}
-              {fb.volatileReason && <p className="rounded-md bg-danger-wash px-3 py-2"><b>⚠ পরিবর্তনশীল:</b> {fb.volatileReason} — পরীক্ষার আগে আবার যাচাই করো।</p>}
+              {fb.volatileReason && <p className="rounded-md bg-danger-wash px-3 py-2"><b>⚠ পরিবর্তনশীল:</b> {fb.volatileReason} — পরীক্ষার আগে আবার যাচাই করুন।</p>}
               {(fb.sourceText || fb.eventDate || fb.verifiedBn) && (
                 <p className="text-sm text-muted">
                   {fb.sourceText && <>উৎস: {fb.sourceText}</>}
@@ -172,7 +172,7 @@ export function CaPractice({ questions, title, backHref }: { questions: CaPublic
               )}
               <p className="text-sm text-muted">{fb.correct ? `আবার আসবে ${bn(fb.nextInDays)} দিন পরে।` : "এটি পরের স্মার্ট সেটে আগে আসবে।"}</p>
               <button ref={nextRef} type="button" onClick={next} className="mt-2 justify-self-start rounded-lg bg-green px-5 py-2.5 font-semibold text-white hover:bg-green-strong dark:text-paper">
-                {i + 1 < questions.length ? "পরের প্রশ্ন →" : "ফলাফল দেখো"}
+                {i + 1 < questions.length ? "পরের প্রশ্ন →" : "ফলাফল দেখুন"}
               </button>
             </div>
           )}

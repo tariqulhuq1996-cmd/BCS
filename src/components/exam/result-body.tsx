@@ -59,7 +59,7 @@ export function ResultBody({ r }: { r: R }) {
                   </li>
                 ))}
               </ol>
-              <p className="mt-3 text-sm text-muted">এই প্রশ্নগুলো তোমার Revision-সারিতে যুক্ত হয়েছে এবং পরের Revision ও Mastery Test-এ আগে আসবে।</p>
+              <p className="mt-3 text-sm text-muted">এই প্রশ্নগুলো আপনার Revision-সারিতে যুক্ত হয়েছে এবং পরের Revision ও Mastery Test-এ আগে আসবে।</p>
             </>
           ) : (
             <p className="mt-3 text-ink-2">কোনো ভুল নেই। চমৎকার!</p>

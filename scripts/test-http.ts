@@ -60,7 +60,7 @@ async function main() {
     const dash = await get("/dashboard", ck);
     check("শিক্ষার্থী নিজের Dashboard দেখে", dash.status === 200 && dash.body.includes("এইচটিটিপি পরীক্ষার্থী"));
     const locked = await get("/level-1/11", ck);
-    check("তালাবন্ধ ধাপে শুধু বার্তা, কোনো প্রশ্ন নয়", locked.body.includes("Unlock করতে আগের ধাপের") && !locked.body.includes("ভাগ ১ শুরু করো"));
+    check("তালাবন্ধ ধাপে শুধু বার্তা, কোনো প্রশ্ন নয়", locked.body.includes("Unlock করতে আগের ধাপের") && !locked.body.includes("ভাগ ১ শুরু করুন"));
     const adm = await get("/admin", ck);
     check("শিক্ষার্থী অ্যাডমিন অংশে কিছু পায় না", !adm.body.includes("যাচাইয়ের অপেক্ষায়") && !adm.body.includes("অ্যাডমিন প্যানেল</p>"));
     const exp = await get("/admin/export/backup.json", ck);
@@ -84,7 +84,7 @@ async function main() {
     const d2 = await get("/dashboard", ex);
     check("মেয়াদোত্তীর্ণ সেশনে Dashboard-এর তথ্য নেই", !d2.body.includes("এইচটিটিপি পরীক্ষার্থী"));
     const fake = await get("/dashboard", "not-a-real-token");
-    check("জাল সেশন-টোকেনে কিছু নেই", !fake.body.includes("আজ তোমার করণীয়"));
+    check("জাল সেশন-টোকেনে কিছু নেই", !fake.body.includes("আজ আপনার করণীয়"));
 
     // ── বন্ধ অ্যাকাউন্ট
     await db.user.update({ where: { id: stu.id }, data: { disabled: true } });

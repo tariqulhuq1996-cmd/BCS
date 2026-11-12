@@ -58,7 +58,7 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
           ))}
         </nav>
       )}
-      <p className="mt-3 text-sm text-muted">{bank.name} · সব তথ্য যাচাই: {bank.verifiedBn ?? "—"}। সাম্প্রতিক তথ্য দ্রুত বদলায় — পরীক্ষার আগে আবার মিলিয়ে নাও।</p>
+      <p className="mt-3 text-sm text-muted">{bank.name} · সব তথ্য যাচাই: {bank.verifiedBn ?? "—"}। সাম্প্রতিক তথ্য দ্রুত বদলায় — পরীক্ষার আগে আবার মিলিয়ে নিন।</p>
 
       <section id="facts" aria-labelledby="facts-h" className="mt-8 scroll-mt-24">
         <h2 id="facts-h" className="text-xl font-bold">এক নজরে গুরুত্বপূর্ণ তথ্য</h2>
@@ -87,8 +87,8 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
       </section>
 
       <section id="volatile" aria-labelledby="vol-h" className="mt-12 scroll-mt-24">
-        <h2 id="vol-h" className="text-xl font-bold">⚠ পরীক্ষার আগে আবার যাচাই করো ({bn(volatile.length)}টি)</h2>
-        <p className="mt-1 text-ink-2">এই প্রশ্নগুলোর তথ্য পরীক্ষার আগে বদলে যেতে পারে — পরীক্ষার ২–৩ সপ্তাহ আগে সংশ্লিষ্ট উৎসে মিলিয়ে নাও।</p>
+        <h2 id="vol-h" className="text-xl font-bold">⚠ পরীক্ষার আগে আবার যাচাই করুন ({bn(volatile.length)}টি)</h2>
+        <p className="mt-1 text-ink-2">এই প্রশ্নগুলোর তথ্য পরীক্ষার আগে বদলে যেতে পারে — পরীক্ষার ২–৩ সপ্তাহ আগে সংশ্লিষ্ট উৎসে মিলিয়ে নিন।</p>
         <ul className="mt-3 divide-y divide-line border-y border-line text-[15px]">
           {volatile.map((v) => (
             <li key={v.no} className="py-2.5">

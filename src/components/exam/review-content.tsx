@@ -13,7 +13,7 @@ export async function ReviewContent({ taskKey, path }: { taskKey: string; path: 
   if (locked) return <LockedNotice title={task.title} current={current} />;
   const user = await requireUser();
   const solved = await prisma.testAttempt.findMany({ where: { userId: user.id, taskId: task.id, kind: "SOLVE", submittedAt: { not: null } }, orderBy: { partNo: "asc" } });
-  if (!solved.length) return <p className="text-ink-2">এখনও প্রথম সমাধান হয়নি। আগে প্রশ্নগুলো সমাধান করো।</p>;
+  if (!solved.length) return <p className="text-ink-2">এখনও প্রথম সমাধান হয়নি। আগে প্রশ্নগুলো সমাধান করুন।</p>;
   const r = await getResultView(prisma, user.id, solved.map((s) => s.id));
   return (
     <>
@@ -23,8 +23,8 @@ export async function ReviewContent({ taskKey, path }: { taskKey: string; path: 
       {task.step === "REVIEW" && task.state !== "COMPLETED" && (
         <form action={acknowledgeReviewAction} className="mt-6 rounded-xl border-2 border-green bg-surface p-5 sm:p-6">
           <input type="hidden" name="taskKey" value={taskKey} />
-          <p className="text-lg">নিচে প্রতিটি ভুল প্রশ্নের সঠিক উত্তর ও ব্যাখ্যা পড়ো। পড়া শেষ হলে Revision Test-এ যাও; সেখানে এই ভুলগুলোই আগে আসবে।</p>
-          <button className="mt-4 rounded-lg bg-green px-5 py-3 font-semibold text-white hover:bg-green-strong dark:text-paper">পর্যালোচনা শেষ, Revision-এ যাও</button>
+          <p className="text-lg">নিচে প্রতিটি ভুল প্রশ্নের সঠিক উত্তর ও ব্যাখ্যা পড়ুন। পড়া শেষ হলে Revision Test-এ যান; সেখানে এই ভুলগুলোই আগে আসবে।</p>
+          <button className="mt-4 rounded-lg bg-green px-5 py-3 font-semibold text-white hover:bg-green-strong dark:text-paper">পর্যালোচনা শেষ, Revision-এ যান</button>
         </form>
       )}
       <ResultBody r={r} />

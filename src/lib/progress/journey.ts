@@ -17,7 +17,7 @@ export const ORIENT_ITEMS = [
   { id: "trend", label: "সাম্প্রতিক BCS-এ প্রশ্নের ধারা" },
   { id: "repeats", label: "বারবার আসা প্রশ্ন" },
   { id: "priority", label: "Priority List" },
-  { id: "roadmap", label: "পুরো যাত্রার পথ" },
+  { id: "roadmap", label: "প্রস্তুতি থেকে সাফল্য: পুরো পথ" },
 ] as const;
 export type OrientItem = (typeof ORIENT_ITEMS)[number]["id"];
 const ITEM_KEY = (id: string) => `orient:${id}`;

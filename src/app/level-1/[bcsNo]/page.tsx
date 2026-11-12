@@ -46,11 +46,11 @@ async function Content({ params, searchParams }: { params: Promise<{ bcsNo: stri
           { k: "প্রশ্ন", v: `${bn(n)}টি` },
           { k: "পাস করতে", v: `${bn(rules.get<number>("l1.threshold.repeat"))}%` },
           { k: "পাস করলে", v: "Level ১ Final খুলবে" },
-          ...(task.bestScore != null ? [{ k: "তোমার সেরা স্কোর", v: `${bn(Math.round(task.bestScore))}%` }] : []),
+          ...(task.bestScore != null ? [{ k: "আপনার সেরা স্কোর", v: `${bn(Math.round(task.bestScore))}%` }] : []),
         ]}
       >
         <p className="mt-6 text-ink-2">
-          প্রস্তুতির জন্য <Link href="/repeated-questions" className="text-green underline underline-offset-4">বারবার আসা প্রশ্নের পুরো তালিকা</Link> (উত্তরসহ) পড়ে নাও; &ldquo;ভুলগুলো অনুশীলন করো&rdquo; দিলে সব শ্রেণির পুনরাবৃত্ত প্রশ্ন থেকে দুর্বলগুলো আগে আসবে।
+          প্রস্তুতির জন্য <Link href="/repeated-questions" className="text-green underline underline-offset-4">বারবার আসা প্রশ্নের পুরো তালিকা</Link> (উত্তরসহ) পড়ে নিন; &ldquo;ভুলগুলো অনুশীলন করুন&rdquo; দিলে সব শ্রেণির পুনরাবৃত্ত প্রশ্ন থেকে দুর্বলগুলো আগে আসবে।
         </p>
         <L1StepActions task={task} userId={user.id} error={error} />
       </StepPage>
@@ -86,7 +86,7 @@ async function Content({ params, searchParams }: { params: Promise<{ bcsNo: stri
         { k: "বাধ্যতামূলক প্রশ্ন", v: `${bn(n)}টি (যাচাইকৃত)` },
         { k: "Mastery-তে লাগবে", v: `${bn(rules.get<number>("l1.threshold.mastery"))}%` },
         ...(no > 10 ? [{ k: "Cumulative-এ লাগবে", v: `${bn(rules.get<number>("l1.threshold.cumulative"))}%` }] : []),
-        ...(task.bestScore != null ? [{ k: "তোমার সেরা স্কোর", v: `${bn(Math.round(task.bestScore))}%` }] : []),
+        ...(task.bestScore != null ? [{ k: "আপনার সেরা স্কোর", v: `${bn(Math.round(task.bestScore))}%` }] : []),
       ]}
     >
       {exam?.notesBn && <p className="mt-6 text-sm text-danger">{bnOrdinal(no)} BCS: {exam.notesBn}</p>}

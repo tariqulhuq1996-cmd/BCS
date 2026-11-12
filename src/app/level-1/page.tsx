@@ -52,7 +52,7 @@ async function Content() {
                 {t.bestScore != null && `, সেরা ${bn(Math.round(t.bestScore))}%`}
               </span>
               {t.state !== "LOCKED" && (
-                <Link href={t.href} className="text-green underline underline-offset-4">{t.state === "COMPLETED" ? "দেখো" : "খোলো"}</Link>
+                <Link href={t.href} className="text-green underline underline-offset-4">{t.state === "COMPLETED" ? "দেখুন" : "খুলুন"}</Link>
               )}
             </span>
           </li>

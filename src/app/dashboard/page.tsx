@@ -13,7 +13,7 @@ export const metadata: Metadata = { title: "আমার Dashboard" };
 export default function DashboardPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 pt-8 sm:px-6">
-      <Suspense fallback={<p className="pt-8 text-ink-2">তোমার অগ্রগতি লোড হচ্ছে…</p>}>
+      <Suspense fallback={<p className="pt-8 text-ink-2">আপনার অগ্রগতি লোড হচ্ছে…</p>}>
         <Dashboard />
       </Suspense>
     </div>
@@ -34,7 +34,7 @@ async function Dashboard() {
       <p className="text-ink-2">স্বাগতম, {user.name}</p>
 
       {/* ── যাত্রার ধাপ-রেখা */}
-      <nav aria-label="তোমার যাত্রা" className="relative mt-3 overflow-x-auto pb-1">
+      <nav aria-label="আপনার যাত্রা" className="relative mt-3 overflow-x-auto pb-1">
         <ol className="flex min-w-max items-center gap-1.5 text-sm">
           {d.stages.map((st, i) => (
             <li key={st.key} className="flex items-center gap-1.5">
@@ -59,7 +59,7 @@ async function Dashboard() {
       {d.stretch.active && (
         <section aria-labelledby="stretch" className="mt-4 rounded-2xl border-2 border-omr bg-omr-wash p-5 sm:p-6">
           <h2 id="stretch" className="text-xl font-bold">পরীক্ষার আর {bn(d.stretch.daysLeft!)} দিন — চূড়ান্ত রিভিশন</h2>
-          <p className="mt-1 text-ink-2">শেষ {bn(d.stretch.days)} দিন নতুন কিছু নয়, যা পড়েছ তা পাকা করো। প্রতিদিন এই চারটি:</p>
+          <p className="mt-1 text-ink-2">শেষ {bn(d.stretch.days)} দিন নতুন কিছু নয়, যা পড়েছেন তা পাকা করুন। প্রতিদিন এই চারটি:</p>
           <ul className="mt-3 grid gap-2 sm:grid-cols-2">
             <li><Link href={d.l3Open ? "/level-3" : "/level-1/final"} className="font-semibold text-omr underline underline-offset-4">{d.l3Open ? "একটি Model Test" : "Final Assessment-এর অনুশীলন"}</Link></li>
             <li><Link href="/repeated-questions" className="font-semibold text-omr underline underline-offset-4">Priority A-র বারবার আসা প্রশ্ন</Link></li>
@@ -69,12 +69,12 @@ async function Dashboard() {
         </section>
       )}
 
-      {/* ── আজ তোমার করণীয় */}
+      {/* ── আজ আপনার করণীয় */}
       <section aria-labelledby="today" className="mt-3 grid gap-6 rounded-2xl border-2 border-green bg-surface p-6 sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
         <div>
           <p className="text-sm font-semibold text-green">আজকের কাজ ১/৩: মূল পথ</p>
           <h1 id="today" className="text-[30px] font-extrabold sm:text-[36px]" style={{ fontStretch: "110%" }}>
-            আজ তোমার করণীয়
+            আজ আপনার করণীয়
           </h1>
           {d.action ? (
             <>
@@ -108,14 +108,14 @@ async function Dashboard() {
             <h2 id="rev" className="text-sm font-semibold text-omr">আজকের কাজ ২/৩: রিভিশন</h2>
             <p className="mt-1 text-[16px]">
               {d.revision.dueToday > 0 ? (
-                <>আজ <span className="font-bold">{bn(d.revision.dueToday)}টি</span> প্রশ্ন Revision-এর জন্য অপেক্ষা করছে। ভুলগুলো ভুলে যাওয়ার আগেই আরেকবার দেখে নাও।</>
+                <>আজ <span className="font-bold">{bn(d.revision.dueToday)}টি</span> প্রশ্ন Revision-এর জন্য অপেক্ষা করছে। ভুলগুলো ভুলে যাওয়ার আগেই আরেকবার দেখে নিন।</>
               ) : (
                 "আজ Revision বাকি নেই। ভুল করা প্রশ্নগুলো নির্দিষ্ট দিন পরপর নিজে থেকেই এখানে ফিরে আসবে।"
               )}
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-3">
-            {d.revision.dueToday > 0 && <Link href="/revision" className="rounded-lg border-2 border-omr bg-surface px-4 py-2 font-semibold text-omr hover:bg-omr hover:text-white">Revision শুরু করো</Link>}
+            {d.revision.dueToday > 0 && <Link href="/revision" className="rounded-lg border-2 border-omr bg-surface px-4 py-2 font-semibold text-omr hover:bg-omr hover:text-white">Revision শুরু করুন</Link>}
             <Link href="/mistakes" className="py-2 text-[15px] text-omr underline underline-offset-4">ভুলের ভান্ডার ({bn(d.revision.wrongBank)})</Link>
           </div>
         </section>
@@ -124,7 +124,7 @@ async function Dashboard() {
           <div>
             <h2 id="ca" className="text-sm font-semibold text-green">আজকের কাজ ৩/৩: সাম্প্রতিক বিষয়াবলি</h2>
             {caLocked ? (
-              <p className="mt-1 text-[15px] text-ink-2">প্রশ্ন-বিশ্লেষণ পড়া শেষ হলেই খুলবে; তারপর প্রতিদিন ২০টি প্রশ্ন, মূল পথের পাশাপাশি।</p>
+              <p className="mt-1 text-[15px] text-ink-2">প্রশ্ন-বিশ্লেষণ পড়া শেষ হলেই খুলবে, চলবে পরীক্ষার দিন পর্যন্ত — প্রতিদিন ২০টি প্রশ্ন, মূল পথের পাশাপাশি।</p>
             ) : (
               <>
                 <p className="mt-1 text-[15px] text-ink-2">
@@ -181,7 +181,7 @@ async function Dashboard() {
 
       {/* ── তিন Level */}
       <section aria-labelledby="levels" className="mt-12">
-        <h2 id="levels" className="text-2xl font-bold">তোমার Roadmap</h2>
+        <h2 id="levels" className="text-2xl font-bold">আপনার Roadmap</h2>
         <ol className="mt-5 grid gap-5">
           {d.levels.map((l) => {
             const status = l.completed === l.total && l.total > 0 ? "সম্পন্ন" : l.open > 0 ? "চলছে" : !l.built ? "তালাবন্ধ (প্রস্তুত হচ্ছে)" : "তালাবন্ধ";
@@ -202,7 +202,7 @@ async function Dashboard() {
         <div className="mt-8 rounded-xl border border-line bg-surface p-5">
           <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
             <h3 className="font-semibold">Level ১: ১০ম থেকে ৫০তম BCS</h3>
-            <Link href="/level-1" className="text-sm text-green underline underline-offset-4">বিস্তারিত দেখো</Link>
+            <Link href="/level-1" className="text-sm text-green underline underline-offset-4">বিস্তারিত দেখুন</Link>
           </div>
           <ExamBubbles
             items={d.l1.map((t) => ({ key: t.key, bcsNo: t.bcsNo, title: t.title, state: t.state, href: t.href, special: t.special, partial: t.partial, bestScore: t.bestScore }))}
@@ -228,7 +228,7 @@ async function Dashboard() {
               ))}
             </ul>
           ) : (
-            <p className="mt-4 text-ink-2">এখনও কোনো পরীক্ষা দাওনি। ১০ম BCS-এর প্রশ্নপত্র দিয়ে শুরু করো — ফলাফল এখানে জমা হবে।</p>
+            <p className="mt-4 text-ink-2">এখনও কোনো পরীক্ষা দেননি। ১০ম BCS-এর প্রশ্নপত্র দিয়ে শুরু করুন — ফলাফল এখানে জমা হবে।</p>
           )}
         </section>
 
@@ -254,7 +254,7 @@ async function Dashboard() {
               )}
             </>
           ) : (
-            <p className="mt-4 text-ink-2">কোন বিষয়ে ও টপিকে তোমার ভুল বেশি, তা এখানে দেখাবে — প্রথম পরীক্ষার পর থেকেই।</p>
+            <p className="mt-4 text-ink-2">কোন বিষয়ে ও টপিকে আপনার ভুল বেশি, তা এখানে দেখাবে — প্রথম পরীক্ষার পর থেকেই।</p>
           )}
         </section>
       </div>

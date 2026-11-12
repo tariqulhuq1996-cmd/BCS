@@ -13,7 +13,7 @@ export default function MistakesPage({ searchParams }: PageProps<"/mistakes">) {
   return (
     <section className="mx-auto max-w-5xl px-4 pt-10 sm:px-6">
       <h1 className="text-[32px] font-extrabold sm:text-[40px]" style={{ fontStretch: "110%" }}>ভুলের ভান্ডার</h1>
-      <p className="mt-2 max-w-2xl text-ink-2">শেষবার যেসব প্রশ্নে ভুল করেছ বা উত্তর দাওনি, সেগুলো এখানে জমা থাকে। ঠিক উত্তর দিলে তালিকা থেকে সরে যায়।</p>
+      <p className="mt-2 max-w-2xl text-ink-2">শেষবার যেসব প্রশ্নে ভুল করেছেন বা উত্তর দেননি, সেগুলো এখানে জমা থাকে। ঠিক উত্তর দিলে তালিকা থেকে সরে যায়।</p>
       <Suspense fallback={<p className="mt-8 text-ink-2">লোড হচ্ছে…</p>}>
         <Content searchParams={searchParams} />
       </Suspense>
@@ -49,14 +49,14 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
   ]);
   const total = bySubject.reduce((a, s) => a + s.n, 0);
   if (!total)
-    return <p className="mt-8 text-lg text-ink-2">ভুলের ভান্ডার খালি। পরীক্ষায় ভুল করা প্রশ্ন এখানে জমা হবে, যাতে আলাদা করে অনুশীলন করতে পারো।</p>;
+    return <p className="mt-8 text-lg text-ink-2">ভুলের ভান্ডার খালি। পরীক্ষায় ভুল করা প্রশ্ন এখানে জমা হবে, যাতে আলাদা করে অনুশীলন করতে পারেন।</p>;
 
   return (
     <>
       {sp.e === "EMPTY" && <p role="alert" className="mt-6 rounded-md border border-danger bg-danger-wash px-3 py-2 text-[15px]">এই বিষয়ে এখন কোনো ভুল প্রশ্ন নেই।</p>}
       <div className="mt-8 flex flex-wrap items-center gap-5 rounded-2xl border-2 border-green bg-surface p-6">
         <p className="text-lg">মোট <span className="font-bold">{bn(total)}টি</span> প্রশ্ন। প্রতিবার সবচেয়ে বেশি ভুল করা ২০টি দিয়ে অনুশীলন।</p>
-        <PracticeButton label="সব বিষয় থেকে অনুশীলন করো" primary />
+        <PracticeButton label="সব বিষয় থেকে অনুশীলন করুন" primary />
       </div>
       <section aria-labelledby="bysub" className="mt-10">
         <h2 id="bysub" className="text-xl font-bold">বিষয় অনুযায়ী</h2>

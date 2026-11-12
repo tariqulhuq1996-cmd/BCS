@@ -18,7 +18,7 @@ export default function Level2Page() {
     <section className="mx-auto max-w-5xl px-4 pt-10 sm:px-6">
       <h1 className="text-[32px] font-extrabold sm:text-[40px]" style={{ fontStretch: "110%" }}>Level ২: টপিকভিত্তিক প্রশ্ন আয়ত্ত</h1>
       <p className="mt-2 max-w-2xl text-ink-2">
-        ৫২তম Priority List-এর ক্রমে চারটি ধাপ: A → B → C → D। একটি ধাপের সব উপবিষয় একসঙ্গে খোলে; যেকোনো ক্রমে পড়তে পারো। সব শেষ হলে Checkpoint, তারপর পরের ধাপ।
+        ৫২তম Priority List-এর ক্রমে চারটি ধাপ: A → B → C → D। একটি ধাপের সব উপবিষয় একসঙ্গে খোলে; যেকোনো ক্রমে পড়তে পারেন। সব শেষ হলে Checkpoint, তারপর পরের ধাপ।
       </p>
       <Suspense fallback={<p className="mt-8 text-ink-2">লোড হচ্ছে…</p>}>
         <Content />
@@ -51,7 +51,7 @@ async function Content() {
       </div>
       {levelLocked && (
         <p className="mt-6 rounded-lg border border-dashed border-line-strong px-4 py-3 text-ink-2">
-          Level ২ তালাবন্ধ। {LOCKED_MESSAGE} Level ১-এর Final Assessment পাস করলে Priority A-র উপবিষয়গুলো খুলবে। নিচে কী কী আছে দেখে রাখতে পারো।
+          Level ২ তালাবন্ধ। {LOCKED_MESSAGE} Level ১-এর Final Assessment পাস করলে Priority A-র উপবিষয়গুলো খুলবে। নিচে কী কী আছে দেখে রাখতে পারেন।
         </p>
       )}
       {GRADES.map((g, i) => {
@@ -83,7 +83,7 @@ async function Content() {
             </ul>
             {cp && (
               <p className="border-t border-line px-5 py-3 text-sm text-ink-2">
-                শেষে: {cp.title} {cp.state === "LOCKED" ? "(সব উপবিষয় শেষ হলে খুলবে)" : <Link href={cp.href} className="text-green underline">খোলো</Link>}
+                শেষে: {cp.title} {cp.state === "LOCKED" ? "(সব উপবিষয় শেষ হলে খুলবে)" : <Link href={cp.href} className="text-green underline">খুলুন</Link>}
               </p>
             )}
           </details>

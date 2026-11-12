@@ -25,7 +25,7 @@ async function perSubject(db: Db, attemptIds: string[]) {
 /** একটি Model Test-এর বিশ্লেষণ: নেট নম্বর, নেগেটিভ, বিষয়ভিত্তিক, দুর্বল টপিক, সময়, আগের টেস্টের সঙ্গে তুলনা। */
 export async function getModelTestAnalysis(db: Db, userId: string, attemptId: string) {
   const a = await db.testAttempt.findUnique({ where: { id: attemptId }, include: { task: { include: { modelTest: true } } } });
-  if (!a || a.userId !== userId) throw new ExamError("FORBIDDEN", "এই ফলাফল তোমার নয়।");
+  if (!a || a.userId !== userId) throw new ExamError("FORBIDDEN", "এই ফলাফল আপনার নয়।");
   if (a.kind !== "MODEL_TEST" || !a.submittedAt) throw new ExamError("NOT_READY", "জমা দেওয়া Model Test নয়।");
   const prev = await db.testAttempt.findFirst({
     where: { userId, kind: "MODEL_TEST", submittedAt: { not: null, lt: a.submittedAt } },

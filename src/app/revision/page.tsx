@@ -56,12 +56,12 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
           ) : (
             <p className="text-lg">আজ Revision-এর কোনো প্রশ্ন নেই। পরীক্ষায় ভুল করা প্রশ্নগুলো এখানে নিয়মিত ফিরে আসবে।</p>
           )}
-          <p className="mt-2 text-sm text-muted">আজ শেষ করেছ {bn(st.doneToday)}টি; প্রতিটি সেটে {bn(rules.get<number>("srs.session_size"))}টি প্রশ্ন।</p>
+          <p className="mt-2 text-sm text-muted">আজ শেষ করেছেন {bn(st.doneToday)}টি; প্রতিটি সেটে {bn(rules.get<number>("srs.session_size"))}টি প্রশ্ন।</p>
         </div>
         {(st.remaining > 0 || open) && (
           <form action={startRevisionAction}>
             <button className="rounded-lg bg-green px-7 py-3.5 text-lg font-semibold text-white hover:bg-green-strong dark:text-paper">
-              {open ? "Revision চালিয়ে যাও" : "Revision শুরু করো"}
+              {open ? "Revision চালিয়ে যান" : "Revision শুরু করুন"}
             </button>
           </form>
         )}
@@ -102,10 +102,10 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
         </section>
         <section aria-labelledby="streak">
           <h2 id="streak" className="text-xl font-bold">ধারাবাহিকতা</h2>
-          <p className="mt-4 text-[15px]">গত ৭ দিনের {bn(streakDays.length)} দিন Revision দিয়েছ।{streakDays.length >= 7 && " টানা ৭ দিন: অর্জন পেয়েছ!"}</p>
+          <p className="mt-4 text-[15px]">গত ৭ দিনের {bn(streakDays.length)} দিন Revision দিয়েছেন।{streakDays.length >= 7 && " টানা ৭ দিন: অর্জন পেয়েছেন!"}</p>
           <p className="mt-4 text-[15px]">
             ভুলের ভান্ডারে এখন {bn(st.wrongBank)}টি প্রশ্ন।{" "}
-            <Link href="/mistakes" className="text-green underline underline-offset-4">ভুলগুলো অনুশীলন করো</Link>
+            <Link href="/mistakes" className="text-green underline underline-offset-4">ভুলগুলো অনুশীলন করুন</Link>
           </p>
         </section>
       </div>

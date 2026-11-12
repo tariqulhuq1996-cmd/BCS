@@ -51,7 +51,7 @@ async function Content() {
       </p>
       {o.stale && (
         <p role="note" className="mt-3 rounded-md border border-danger bg-danger-wash px-3 py-2 text-[15px]">
-          {o.banks.filter((b) => b.stale).map((b) => b.name).join(", ")} — তথ্য যাচাই করা হয়েছে {bn(STALE_DAYS)} দিনেরও আগে। সাম্প্রতিক তথ্য দ্রুত বদলায় — ⚠ চিহ্নিত প্রশ্নগুলো পত্রিকা/সরকারি উৎসে মিলিয়ে নাও।
+          {o.banks.filter((b) => b.stale).map((b) => b.name).join(", ")} — তথ্য যাচাই করা হয়েছে {bn(STALE_DAYS)} দিনেরও আগে। সাম্প্রতিক তথ্য দ্রুত বদলায় — ⚠ চিহ্নিত প্রশ্নগুলো পত্রিকা/সরকারি উৎসে মিলিয়ে নিন।
         </p>
       )}
 
@@ -60,7 +60,7 @@ async function Content() {
           <h2 className="text-xl font-bold">আজকের স্মার্ট সেট</h2>
           <p className="mt-1 text-ink-2">{bn(SET_SIZE)}টি প্রশ্ন — {smartParts.length ? smartParts.join(", ") + " থেকে অগ্রাধিকার অনুযায়ী" : "সব প্রশ্ন আয়ত্তে; সবচেয়ে আগে যেগুলোর পুনরাবৃত্তি আসবে"}।</p>
         </div>
-        <Link href="/current-affairs/practice" className={btn}>শুরু করো</Link>
+        <Link href="/current-affairs/practice" className={btn}>শুরু করুন</Link>
       </div>
 
       <dl className="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-4">
@@ -109,7 +109,7 @@ async function Content() {
                   <span className="bg-omr/50" style={{ width: `${((c.seen - c.mastered) / c.total) * 100}%` }} />
                 </div>
                 <Link href={`/current-affairs/practice?bank=${b.key}&chapter=${c.no}`} className="mt-3 inline-block text-[15px] font-semibold text-green underline underline-offset-4">
-                  {c.seen < c.total ? "অনুশীলন করো" : "আবার ঝালাই করো"}
+                  {c.seen < c.total ? "অনুশীলন করুন" : "আবার ঝালাই করুন"}
                 </Link>
               </li>
             ))}
@@ -120,11 +120,11 @@ async function Content() {
 
       {(
         <section className="mt-10">
-          <h2 className="text-xl font-bold">কীভাবে ব্যবহার করবে</h2>
+          <h2 className="text-xl font-bold">কীভাবে ব্যবহার করবেন</h2>
           <ul className="mt-2 list-disc space-y-1 pl-5 text-ink-2">
             <li>প্রতিদিন একটি স্মার্ট সেট — ভুল আর পুরোনো প্রশ্ন নিজে থেকেই ফিরে আসবে।</li>
             <li>সময় কম থাকলে আগে Priority A, তারপর B ও C।</li>
-            <li>পরীক্ষার আগের সপ্তাহে Quick Revision বারবার পড়ো; ⚠ চিহ্নিত তথ্য নতুন করে যাচাই করো।</li>
+            <li>পরীক্ষার আগের সপ্তাহে Quick Revision বারবার পড়ুন; ⚠ চিহ্নিত তথ্য নতুন করে যাচাই করুন।</li>
           </ul>
         </section>
       )}

@@ -215,7 +215,7 @@ export async function startStep(db: Db, userId: string, taskKey: string, mode: "
   if (task.kind === "L1_REPEAT") {
     const open = await db.testAttempt.findFirst({ where: { userId, taskId: task.id, kind: mode === "practice" ? "PRACTICE" : "REPEAT", submittedAt: null }, orderBy: { startedAt: "desc" } });
     if (open) return open.id;
-    if (mode !== "practice" && progress.state === "COMPLETED") throw new ExamError("SUBMITTED", "এই ধাপ আগেই সম্পন্ন। চাইলে অনুশীলন করতে পারো।");
+    if (mode !== "practice" && progress.state === "COMPLETED") throw new ExamError("SUBMITTED", "এই ধাপ আগেই সম্পন্ন। চাইলে অনুশীলন করতে পারেন।");
     // অনুশীলনে সব শ্রেণির পুনরাবৃত্ত প্রশ্ন, দুর্বলগুলো আগে; ধাপের পরীক্ষায় নির্ধারিত শ্রেণির সবগুলো
     const grades = mode === "practice" ? ["A", "B", "C", "D"] : rules.get<string[]>("l1.repeat.grades");
     const pool = await poolRepeat(db, grades);
@@ -226,12 +226,12 @@ export async function startStep(db: Db, userId: string, taskKey: string, mode: "
 
   let kind: AttemptKind;
   if (mode === "practice") kind = "PRACTICE";
-  else if (progress.state === "COMPLETED") throw new ExamError("SUBMITTED", "এই ধাপ আগেই সম্পন্ন। চাইলে অনুশীলন করতে পারো।");
+  else if (progress.state === "COMPLETED") throw new ExamError("SUBMITTED", "এই ধাপ আগেই সম্পন্ন। চাইলে অনুশীলন করতে পারেন।");
   else if (task.kind === "L1_FINAL" || task.kind === "L2_FINAL") kind = "LEVEL_FINAL";
   else if (task.kind === "L2_CHECKPOINT") kind = "CHECKPOINT";
   else {
     const step = progress.step;
-    if (step === "REVIEW") throw new ExamError("NEED_REVIEW", "আগে প্রথম সমাধানের উত্তর পর্যালোচনা শেষ করো।");
+    if (step === "REVIEW") throw new ExamError("NEED_REVIEW", "আগে প্রথম সমাধানের উত্তর পর্যালোচনা শেষ করুন।");
     kind = step === "SOLVE" ? "SOLVE" : step === "REVISION" ? "REVISION" : step === "MASTERY" ? "MASTERY" : "CUMULATIVE";
   }
 
@@ -245,12 +245,12 @@ export async function startStep(db: Db, userId: string, taskKey: string, mode: "
     const plan = await solvePlan(db, userId, task, rules);
     if (!plan.length) throw new ExamError("EMPTY", "এই উপবিষয়ের প্রশ্ন এখনও প্রকাশিত হয়নি। প্রশ্ন যুক্ত হলে এখান থেকেই শুরু করা যাবে।");
     const next = plan.find((p) => !p.doneAttemptId);
-    if (!next) throw new ExamError("NEED_REVIEW", "সব ভাগ সমাধান হয়েছে। এখন পর্যালোচনা করো।");
+    if (!next) throw new ExamError("NEED_REVIEW", "সব ভাগ সমাধান হয়েছে। এখন পর্যালোচনা করুন।");
     if (next.openAttemptId) return next.openAttemptId;
     // Level 2: আজকের Revision বাকি থাকলে নতুন উপবিষয় শুরু নয়
     if (isL2 && next.partNo === 1) {
       const rs = await revisionStatus(db, userId, now);
-      if (rs.blocked) throw new ExamError("BLOCKED", `নতুন উপবিষয় শুরুর আগে আজকের Revision শেষ করো (${bnD(rs.remaining)}টি প্রশ্ন বাকি)।`);
+      if (rs.blocked) throw new ExamError("BLOCKED", `নতুন উপবিষয় শুরুর আগে আজকের Revision শেষ করুন (${bnD(rs.remaining)}টি প্রশ্ন বাকি)।`);
     }
     return createAttempt(db, userId, task.id, "SOLVE", next.questionIds, { partNo: next.partNo, keepOrder: !isL2, rules });
   }
@@ -343,9 +343,9 @@ async function startModelTest(db: Db, userId: string, task: Task, state: string,
     if (open.deadlineAt && Date.now() > open.deadlineAt.getTime() + GRACE_MS) await submitAttempt(db, userId, open.id); // সময় পেরোনো → স্বয়ংক্রিয় জমা
     else return open.id;
   }
-  if (state === "COMPLETED" && mode !== "practice") throw new ExamError("SUBMITTED", "এই Model Test আগেই সম্পন্ন। চাইলে আবার দিতে পারো।");
+  if (state === "COMPLETED" && mode !== "practice") throw new ExamError("SUBMITTED", "এই Model Test আগেই সম্পন্ন। চাইলে আবার দিতে পারেন।");
   const unreviewed = await db.testAttempt.findFirst({ where: { userId, taskId: task.id, kind: "MODEL_TEST", submittedAt: { not: null }, reviewedAt: null } });
-  if (unreviewed && rules.get<boolean>("l3.require_review") && state !== "COMPLETED") throw new ExamError("NEED_REVIEW", "আগের চেষ্টার ভুলগুলো পর্যালোচনা শেষ করো।");
+  if (unreviewed && rules.get<boolean>("l3.require_review") && state !== "COMPLETED") throw new ExamError("NEED_REVIEW", "আগের চেষ্টার ভুলগুলো পর্যালোচনা শেষ করুন।");
   const mt = task.modelTestId ? await db.modelTest.findUnique({ where: { id: task.modelTestId }, include: { questions: { orderBy: { position: "asc" } } } }) : null;
   if (!mt || mt.status !== "PUBLISHED") throw new ExamError("EMPTY", "এই Model Test এখনও প্রকাশিত হয়নি।");
   const id = await createAttempt(db, userId, task.id, "MODEL_TEST", mt.questions.map((q) => q.questionId), { rules });
@@ -426,7 +426,7 @@ export async function startMistakePractice(db: Db, userId: string, subjectCode?:
 async function ownAttempt(db: Db, userId: string, attemptId: string) {
   const a = await db.testAttempt.findUnique({ where: { id: attemptId }, include: { task: { include: { exam: true } } } });
   if (!a) throw new ExamError("NOT_FOUND", "পরীক্ষাটি পাওয়া যায়নি।");
-  if (a.userId !== userId) throw new ExamError("FORBIDDEN", "এই পরীক্ষাটি তোমার নয়।");
+  if (a.userId !== userId) throw new ExamError("FORBIDDEN", "এই পরীক্ষাটি আপনার নয়।");
   return a;
 }
 
@@ -664,7 +664,7 @@ export async function acknowledgeReview(db: Db, userId: string, taskKey: string)
 
 export async function getResultView(db: Db, userId: string, attemptIds: string[]) {
   const attempts = await db.testAttempt.findMany({ where: { id: { in: attemptIds } }, include: { task: { include: { exam: true } } } });
-  if (!attempts.length || attempts.some((a) => a.userId !== userId)) throw new ExamError("FORBIDDEN", "এই ফলাফল তোমার নয়।");
+  if (!attempts.length || attempts.some((a) => a.userId !== userId)) throw new ExamError("FORBIDDEN", "এই ফলাফল আপনার নয়।");
   if (attempts.some((a) => !a.submittedAt)) throw new ExamError("NOT_READY", "পরীক্ষাটি এখনও জমা হয়নি।");
   const qids = attempts.flatMap((a) => a.questionIds);
   const [qs, answers] = await Promise.all([

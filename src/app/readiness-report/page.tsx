@@ -35,7 +35,7 @@ async function Baseline({ userId }: { userId: string }) {
   const now = recent.length ? recent.reduce((a, x) => a + (x.scorePct ?? 0), 0) / recent.length : null;
   return (
     <section aria-labelledby="baseline" className="mt-8 rounded-xl border-2 border-green bg-green-wash p-5 sm:p-6">
-      <h2 id="baseline" className="text-xl font-bold">শুরু থেকে কতটা এগোলে</h2>
+      <h2 id="baseline" className="text-xl font-bold">শুরু থেকে কতটা এগোলেন</h2>
       <div className="mt-4 grid gap-4 sm:grid-cols-3">
         <div>
           <p className="text-sm text-muted">শুরুর মূল্যায়নে</p>
@@ -52,7 +52,7 @@ async function Baseline({ userId }: { userId: string }) {
           </p>
         </div>
       </div>
-      <p className="mt-3 text-sm text-ink-2">সঠিক উত্তরের হার (%)। {now == null ? "প্রথম Mastery Test দিলেই এখানে তুলনা দেখাবে।" : "মূল্যায়ন-পরীক্ষাগুলো তোমার দুর্বল প্রশ্ন বেশি দেয়, তাই এই হার আসল পরীক্ষার চেয়ে কিছুটা কম দেখাতে পারে।"}</p>
+      <p className="mt-3 text-sm text-ink-2">সঠিক উত্তরের হার (%)। {now == null ? "প্রথম Mastery Test দিলেই এখানে তুলনা দেখাবে।" : "মূল্যায়ন-পরীক্ষাগুলো আপনার দুর্বল প্রশ্ন বেশি দেয়, তাই এই হার আসল পরীক্ষার চেয়ে কিছুটা কম দেখাতে পারে।"}</p>
     </section>
   );
 }
@@ -64,7 +64,7 @@ async function Content() {
     return (
       <>
         <Baseline userId={user.id} />
-        <p className="mt-6 text-lg text-ink-2">এখনও কোনো Model Test দাওনি। Level ৩-এ টেস্ট দিলে এখানে তোমার পূর্ণ প্রতিবেদন তৈরি হবে।</p>
+        <p className="mt-6 text-lg text-ink-2">এখনও কোনো Model Test দেননি। Level ৩-এ টেস্ট দিলে এখানে আপনার পূর্ণ প্রতিবেদন তৈরি হবে।</p>
       </>
     );
   const final = r.completedTests >= 150;
@@ -74,7 +74,7 @@ async function Content() {
   return (
     <>
       <p className="mt-2 max-w-2xl text-ink-2">
-        {final ? "১৫০টি Model Test সম্পন্ন — এটি তোমার চূড়ান্ত প্রতিবেদন।" : `এখন পর্যন্ত ${bn(r.completedTests)}টি টেস্ট সম্পন্ন (মোট চেষ্টা ${bn(r.count)}টি); ১৫০টি শেষে এটিই চূড়ান্ত প্রতিবেদন হবে।`}
+        {final ? "১৫০টি Model Test সম্পন্ন — এটি আপনার চূড়ান্ত প্রতিবেদন।" : `এখন পর্যন্ত ${bn(r.completedTests)}টি টেস্ট সম্পন্ন (মোট চেষ্টা ${bn(r.count)}টি); ১৫০টি শেষে এটিই চূড়ান্ত প্রতিবেদন হবে।`}
       </p>
 
       <Baseline userId={user.id} />
@@ -130,15 +130,15 @@ async function Content() {
           <h2 id="weak" className="text-xl font-bold">যেখানে আরও Revision দরকার</h2>
           <ul className="mt-3 list-disc pl-5 text-[15px]">{r.weak.map((s) => <li key={s.code}>{s.name} ({bnNum(s.accuracy, 0)}%)</li>)}</ul>
           <p className="mt-3 text-[15px] text-ink-2">
-            পরামর্শ: এই বিষয়গুলোর <Link href="/mistakes" className="text-green underline underline-offset-4">ভুলের ভান্ডার</Link> থেকে নিয়মিত অনুশীলন করো, প্রতিদিনের{" "}
-            <Link href="/revision" className="text-green underline underline-offset-4">Revision</Link> বাদ দিয়ো না, এবং বেশি ভুল হচ্ছে এমন প্রশ্নে নিশ্চিত না হলে উত্তর না দেওয়ার কৌশল বিবেচনা করো (প্রতিটি ভুলে ০.৫ কাটা যায়)।
+            পরামর্শ: এই বিষয়গুলোর <Link href="/mistakes" className="text-green underline underline-offset-4">ভুলের ভান্ডার</Link> থেকে নিয়মিত অনুশীলন করুন, প্রতিদিনের{" "}
+            <Link href="/revision" className="text-green underline underline-offset-4">Revision</Link> বাদ দেবেন না, এবং বেশি ভুল হচ্ছে এমন প্রশ্নে নিশ্চিত না হলে উত্তর না দেওয়ার কৌশল বিবেচনা করুন (প্রতিটি ভুলে ০.৫ কাটা যায়)।
           </p>
         </section>
       </div>
       )}
 
       <p className="mt-12 rounded-lg border border-line bg-surface px-4 py-3 text-sm text-muted">
-        এই প্রতিবেদন শুধু তোমার নিজের Model Test-এর ফল থেকে তৈরি। কোনো নম্বরই BCS Preliminary-তে পাশের নিশ্চয়তা নয়; প্রকৃত পরীক্ষার কাট-মার্ক প্রতি বছর বদলায়।
+        এই প্রতিবেদন শুধু আপনার নিজের Model Test-এর ফল থেকে তৈরি। কোনো নম্বরই BCS Preliminary-তে পাশের নিশ্চয়তা নয়; প্রকৃত পরীক্ষার কাট-মার্ক প্রতি বছর বদলায়।
       </p>
     </>
   );
