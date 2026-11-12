@@ -5,6 +5,7 @@ import { bn } from "@/lib/bn";
 import { RepeatList } from "@/components/home/repeat-list";
 import { Suspense } from "react";
 import { connection } from "next/server";
+import { requireUser } from "@/lib/auth/session";
 
 export const metadata: Metadata = { title: "পুনরাবৃত্ত প্রশ্ন" };
 
@@ -22,6 +23,8 @@ export default function RepeatedQuestionsPage() {
 
 async function Deferred() {
   await connection();
+  // পূর্ণ তালিকা শুধু লগইন করা ব্যবহারকারীর জন্য (হোমপেজে নমুনা খোলা থাকে)
+  await requireUser("/repeated-questions");
   return <RepeatedQuestionsPageContent />;
 }
 

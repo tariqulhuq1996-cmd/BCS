@@ -7,6 +7,7 @@ import { SubtopicTable } from "@/components/research/subtopic-table";
 import { HeatmapExplorer } from "@/components/research/heatmap-explorer";
 import { Suspense } from "react";
 import { connection } from "next/server";
+import { requireUser } from "@/lib/auth/session";
 
 export const metadata: Metadata = { title: "গবেষণা: ১০ম–৫০তম বিসিএস" };
 
@@ -26,6 +27,8 @@ export default function ResearchPage() {
 
 async function Deferred() {
   await connection();
+  // পূর্ণ তালিকা শুধু লগইন করা ব্যবহারকারীর জন্য (হোমপেজে নমুনা খোলা থাকে)
+  await requireUser("/research");
   return <ResearchPageContent />;
 }
 

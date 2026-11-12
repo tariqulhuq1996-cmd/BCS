@@ -9,6 +9,7 @@ import { RepeatList } from "@/components/home/repeat-list";
 import { RoadmapPreview } from "@/components/home/roadmap-preview";
 import { Suspense } from "react";
 import { connection } from "next/server";
+import { getCurrentUser } from "@/lib/auth/session";
 
 /**
  * গবেষণার ডেটা ডেটাবেস থেকে আসে, তাই পাতাটি বিল্ডের সময় নয়, প্রথম অনুরোধে তৈরি হয় (তারপর "use cache"-এ কয়েক ঘণ্টা থাকে)।
@@ -28,7 +29,7 @@ async function Deferred() {
 }
 
 async function HomeContent() {
-  const r = await getResearch();
+  const [r, user] = await Promise.all([getResearch(), getCurrentUser()]);
   const t = r.totals;
   const priorityA = r.subtopics.filter((s) => s.grade === "A");
 
@@ -74,7 +75,7 @@ async function HomeContent() {
         lead={`Priority Score অনুযায়ী শীর্ষ ২৫টি উপবিষয়, প্রতিটি সাধারণ বিসিএসে কতটি প্রশ্ন এসেছে। গাঢ় ঘর মানে বেশি প্রশ্ন; টানা গাঢ় সারি মানে ধারাবাহিকভাবে গুরুত্বপূর্ণ।`}
         aside={<Link href="/research#heatmap" className="text-sm text-green underline underline-offset-4">সব {bn(t.subtopics)}টি উপবিষয় দেখুন</Link>}
       >
-        <Heatmap rows={r.heat.rows.slice(0, 25)} exams={r.heat.exams} caption="শীর্ষ ২৫টি উপবিষয়ে প্রতিটি সাধারণ বিসিএসের প্রশ্নসংখ্যা" />
+        <Heatmap rows={r.heat.rows.slice(0, 25)} exams={r.heat.exams} canShowAll={!!user} loginHref="/login?next=/%23heatmap" caption="শীর্ষ ২৫টি উপবিষয়ে প্রতিটি সাধারণ বিসিএসের প্রশ্নসংখ্যা" />
       </Section>
 
       {/* ── সাম্প্রতিক প্রবণতা */}

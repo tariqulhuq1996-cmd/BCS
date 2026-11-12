@@ -32,11 +32,11 @@ async function main() {
   const other = await db.user.create({ data: { email: `${tag}-o@http.test`, passwordHash: "x" } });
   try {
     // ── অপরিচিত
-    for (const p of ["/", "/research", "/repeated-questions", "/login", "/register"]) {
+    for (const p of ["/", "/login", "/register"]) {
       const r = await get(p);
       check(`সবার জন্য খোলা: ${p}`, r.status === 200, r.status);
     }
-    for (const p of ["/dashboard", "/level-1/10", "/test/x", "/result/x", "/admin", "/revision", "/profile", "/current-affairs"]) {
+    for (const p of ["/dashboard", "/level-1/10", "/test/x", "/result/x", "/admin", "/revision", "/profile", "/current-affairs", "/research", "/repeated-questions"]) {
       const r = await get(p);
       check(`লগইন ছাড়া ${p} → লগইন পাতায়`, (r.status === 307 || r.status === 302) && r.location.includes("/login"), { s: r.status, l: r.location });
     }
@@ -51,7 +51,7 @@ async function main() {
     const robots = await (await fetch(BASE + "/robots.txt")).text();
     check("robots.txt: অ্যাডমিন ও শিক্ষার্থী-অংশ সার্চ ইঞ্জিনে নয়", /Disallow: \/admin/.test(robots) && /Disallow: \/dashboard/.test(robots) && /Sitemap:/.test(robots));
     const sitemap = await (await fetch(BASE + "/sitemap.xml")).text();
-    check("sitemap.xml-এ শুধু জনসাধারণের পাতা", sitemap.includes("/research") && !sitemap.includes("/admin") && !sitemap.includes("/dashboard"));
+    check("sitemap.xml-এ শুধু জনসাধারণের পাতা", sitemap.includes("/register") && !sitemap.includes("/research") && !sitemap.includes("/admin") && !sitemap.includes("/dashboard"));
 
     // ── শিক্ষার্থী
     const { ensureStarted } = await import("../src/lib/progress/engine");
