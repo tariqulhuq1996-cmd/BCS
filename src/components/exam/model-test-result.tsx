@@ -5,6 +5,7 @@ import type { getResultView } from "@/lib/exam/service";
 import { acknowledgeModelTestAction } from "@/lib/exam/actions";
 import { bn, bnNum } from "@/lib/bn";
 import { QuestionReview } from "./question-review";
+import { modelTestRank } from "@/lib/progress/peers";
 
 type R = Awaited<ReturnType<typeof getResultView>>;
 
@@ -14,6 +15,8 @@ const signed = (v: number, d = 1) => `${v > 0 ? "+" : v < 0 ? "−" : ""}${bnNum
 export async function ModelTestResult({ attemptId, userId, r }: { attemptId: string; userId: string; r: R }) {
   const an = await getModelTestAnalysis(prisma, userId, attemptId);
   const usedMin = Math.min(an.usedMs, an.durationMin * 60e3) / 60e3;
+  const att = await prisma.testAttempt.findUnique({ where: { id: attemptId }, select: { taskId: true } });
+  const rank = att?.taskId ? await modelTestRank(prisma, userId, att.taskId) : null;
   const nextTask = an.reviewed && an.taskKey ? await prisma.taskPrerequisite.findFirst({ where: { requires: { key: an.taskKey }, task: { kind: "L3_MODEL_TEST" } }, include: { task: { select: { key: true, titleBn: true } } } }) : null;
 
   return (
@@ -26,6 +29,11 @@ export async function ModelTestResult({ attemptId, userId, r }: { attemptId: str
           {an.prev && <span className={`ml-2 font-semibold ${an.net >= an.prev.net ? "text-green" : "text-danger"}`}>(আগের টেস্টের তুলনায় {signed(an.net - an.prev.net)})</span>}
         </p>
       </div>
+      {rank && (
+        <p className="mt-2 text-[15px] text-ink-2">
+          এই টেস্টে যারা দিয়েছেন ({bn(rank.peers)} জন, প্রত্যেকের প্রথম চেষ্টা), তাদের মধ্যে আপনি <span className="font-semibold text-ink">শীর্ষ {bn(rank.top)}%</span>-এ। কারো নাম দেখানো হয় না।
+        </p>
+      )}
 
       <section aria-label="এখনকার কাজ" className="mt-6 rounded-xl border-2 border-green bg-surface p-5 sm:p-6">
         {an.reviewed ? (

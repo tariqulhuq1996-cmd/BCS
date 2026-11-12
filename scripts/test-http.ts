@@ -37,7 +37,7 @@ async function main() {
       const r = await get(p);
       check(`সবার জন্য খোলা: ${p}`, r.status === 200, r.status);
     }
-    for (const p of ["/dashboard", "/level-1/10", "/test/x", "/result/x", "/admin", "/revision", "/profile", "/current-affairs", "/research", "/repeated-questions"]) {
+    for (const p of ["/dashboard", "/level-1/10", "/test/x", "/result/x", "/admin", "/revision", "/profile", "/current-affairs", "/research", "/repeated-questions", "/saved", "/search"]) {
       const r = await get(p);
       check(`লগইন ছাড়া ${p} → লগইন পাতায়`, (r.status === 307 || r.status === 302) && r.location.includes("/login"), { s: r.status, l: r.location });
     }
@@ -54,6 +54,12 @@ async function main() {
     const sitemap = await (await fetch(BASE + "/sitemap.xml")).text();
     check("sitemap.xml-এ শুধু জনসাধারণের পাতা", sitemap.includes("/register") && !sitemap.includes("/research") && !sitemap.includes("/admin") && !sitemap.includes("/dashboard"));
 
+    const man = await fetch(BASE + "/manifest.webmanifest");
+    const mj = await man.json().catch(() => ({}));
+    check("ফোনে অ্যাপের মতো ইনস্টল: manifest ও আইকন", man.status === 200 && mj.display === "standalone" && mj.icons?.some((i: { sizes: string }) => i.sizes === "512x512"), mj);
+    const sw = await fetch(BASE + "/sw.js");
+    check("service worker ফাইল আছে, কিছু cache করে না", sw.status === 200 && !(await sw.text()).includes("cache.put"));
+
     // ── শিক্ষার্থী
     await startAtLevel1(db, stu.id);
     const ck = await session(stu.id);
@@ -65,6 +71,14 @@ async function main() {
     check("শিক্ষার্থী অ্যাডমিন অংশে কিছু পায় না", !adm.body.includes("যাচাইয়ের অপেক্ষায়") && !adm.body.includes("অ্যাডমিন প্যানেল</p>"));
     const exp = await get("/admin/export/backup.json", ck);
     check("শিক্ষার্থী Backup ডাউনলোড পায় না (৪০৪)", exp.status === 404);
+
+    check("Dashboard-এ পরীক্ষার দিন গণনা, টানা পড়া ও আজকের লক্ষ্য", dash.body.includes("পরীক্ষার বাকি") && dash.body.includes("টানা পড়া") && dash.body.includes("আজকের লক্ষ্য"));
+    const sv = await get("/saved", ck);
+    check("সংরক্ষিত প্রশ্নের পাতা খোলে", sv.status === 200 && sv.body.includes("সংরক্ষিত প্রশ্ন"));
+    const anyQ = await db.question.findFirstOrThrow({ where: { status: "PUBLISHED", answers: { none: { attempt: { userId: stu.id } } } }, select: { text: true, explanation: true } });
+    const needle = anyQ.text.replace(/\s+/g, " ").trim().slice(0, 14);
+    const sr = await get(`/search?q=${encodeURIComponent(needle)}`, ck);
+    check("খোঁজায় প্রশ্ন পাওয়া যায়, কিন্তু না-সমাধান করা প্রশ্নের উত্তর/ব্যাখ্যা নয়", sr.status === 200 && sr.body.includes("এখনো সমাধান করেননি") && (!anyQ.explanation || !sr.body.includes(anyQ.explanation.slice(0, 30))), { s: sr.status, needle });
 
     // লগইন থাকলে "অ্যাকাউন্ট খুলুন"/"লগইন করুন" কোথাও নয়
     const homeIn = await get("/", ck);

@@ -11,6 +11,7 @@ const NAV = [
   { href: "/admin/roadmap", label: "Roadmap" },
   { href: "/admin/model-tests", label: "Model Test" },
   { href: "/admin/students", label: "শিক্ষার্থী" },
+  { href: "/admin/question-reports", label: "প্রশ্নে অভিযোগ" },
   { href: "/admin/reports", label: "রিপোর্ট" },
   { href: "/admin/backup", label: "Backup ও Export" },
   { href: "/admin/email", label: "ইমেইল-সেবা" },

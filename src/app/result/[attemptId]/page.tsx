@@ -10,6 +10,7 @@ import { taskHref } from "@/lib/progress/dashboard";
 import { bn, bnNum } from "@/lib/bn";
 import { ResultBody } from "@/components/exam/result-body";
 import { ModelTestResult } from "@/components/exam/model-test-result";
+import { LevelComplete } from "@/components/exam/level-complete";
 
 export const metadata: Metadata = { title: "ফলাফল", robots: { index: false } };
 
@@ -54,6 +55,9 @@ async function Content({ params }: { params: Promise<{ attemptId: string }> }) {
   const progress = task ? await prisma.studentTaskProgress.findUnique({ where: { userId_taskId: { userId: user.id, taskId: task.id } } }) : null;
   const href = task ? taskHref({ kind: task.kind, key: task.key, bcsNo: task.exam?.bcsNo, subtopicCode: task.subtopic?.code }) : "/dashboard";
   const thr = r.threshold;
+
+  // Level-এর Final পাস করে Level শেষ হলে অভিনন্দন-অংশ
+  const levelDone = r.kind === "LEVEL_FINAL" && !!r.passed && progress?.state === "COMPLETED" && !!task;
 
   // ── পরের করণীয়
   let headline = "";
@@ -118,6 +122,7 @@ async function Content({ params }: { params: Promise<{ attemptId: string }> }) {
           )}
         </p>
       </div>
+      {levelDone && <LevelComplete userId={user.id} levelId={task!.levelId} />}
       <div className="mt-6 rounded-xl border-2 border-green bg-surface p-5 sm:p-6">
         <p className="text-lg leading-relaxed">{headline}</p>
         <div className="mt-4">{next}</div>

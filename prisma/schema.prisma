@@ -23,40 +23,43 @@ enum Role {
 }
 
 model User {
-  id           String    @id @default(cuid())
-  email        String    @unique
-  passwordHash String
-  role         Role      @default(STUDENT)
-  disabled     Boolean   @default(false)
-  createdAt    DateTime  @default(now())
-  lastLoginAt  DateTime?
+  id              String    @id @default(cuid())
+  email           String    @unique
+  passwordHash    String
+  role            Role      @default(STUDENT)
+  disabled        Boolean   @default(false)
+  createdAt       DateTime  @default(now())
+  lastLoginAt     DateTime?
   /// ইমেইল যাচাইয়ের সময়। নতুন রেজিস্ট্রেশনে null থাকে (কোড দিয়ে যাচাইয়ের পর বসে); পুরোনো, অ্যাডমিন ও seed-এর অ্যাকাউন্ট আগে থেকেই যাচাইকৃত।
   emailVerifiedAt DateTime? @default(now())
 
-  profile        StudentProfile?
-  sessions       Session[]
-  resetTokens    PasswordResetToken[]
-  emailCode      EmailCode?
-  progress       StudentTaskProgress[]
-  checklist      StudentChecklist[]
-  attempts       TestAttempt[]
-  questionStats  QuestionStat[]
-  masteryRecords MasteryRecord[]
-  revisionDays   RevisionSession[]
-  bookmarks      Bookmark[]
-  caAnswers      CaAnswer[]
-  achievements   UserAchievement[]
+  profile         StudentProfile?
+  sessions        Session[]
+  resetTokens     PasswordResetToken[]
+  emailCode       EmailCode?
+  progress        StudentTaskProgress[]
+  checklist       StudentChecklist[]
+  attempts        TestAttempt[]
+  questionStats   QuestionStat[]
+  masteryRecords  MasteryRecord[]
+  revisionDays    RevisionSession[]
+  bookmarks       Bookmark[]
+  caAnswers       CaAnswer[]
+  achievements    UserAchievement[]
+  questionReports QuestionReport[]      @relation("ReportBy")
 }
 
 model StudentProfile {
-  userId       String   @id
-  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId       String    @id
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   name         String
   phone        String?
-  targetBcs    Int      @default(52)
-  dailyGoalMin Int      @default(120)
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  targetBcs    Int       @default(52)
+  dailyGoalMin Int       @default(120)
+  /// প্রথমবার Dashboard-এর পরিচিতি দেখা/বন্ধ করার সময়; null = এখনো দেখানো হয়নি
+  tourSeenAt   DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
 }
 
 /// সার্ভার-সাইড সেশন; কুকিতে শুধু র‍্যান্ডম টোকেন, ডেটাবেসে তার SHA-256 হ্যাশ।
@@ -258,6 +261,7 @@ model Question {
   stats         QuestionStat[]
   bookmarks     Bookmark[]
   modelTestUses ModelTestQuestion[]
+  reports       QuestionReport[]
 
   @@index([examId])
   @@index([subtopicId, status])
@@ -719,4 +723,30 @@ model CaSource {
   no      Int
   name    String  @db.Text
   url     String? @db.Text
+}
+
+enum ReportStatus {
+  OPEN
+  FIXED // প্রশ্ন/উত্তর/ব্যাখ্যা ঠিক করা হয়েছে
+  DISMISSED // ভুল পাওয়া যায়নি
+}
+
+/// শিক্ষার্থীর জানানো "এই প্রশ্নে ভুল আছে" — অ্যাডমিন দেখে ঠিক করেন বা বাতিল করেন।
+model QuestionReport {
+  id         String       @id @default(cuid())
+  userId     String
+  user       User         @relation("ReportBy", fields: [userId], references: [id], onDelete: Cascade)
+  questionId String
+  question   Question     @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  reason     String // WRONG_ANSWER | WRONG_QUESTION | WRONG_EXPLANATION | TYPO | OTHER
+  note       String?      @db.Text
+  status     ReportStatus @default(OPEN)
+  createdAt  DateTime     @default(now())
+  resolvedAt DateTime?
+  resolvedBy String?
+  adminNote  String?      @db.Text
+
+  @@index([status, createdAt])
+  @@index([questionId])
+  @@index([userId, createdAt])
 }

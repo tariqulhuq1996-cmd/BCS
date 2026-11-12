@@ -323,3 +323,19 @@ export async function testEmailAction(fd: FormData) {
   if (r.ok) back("/admin/email", `পরীক্ষামূলক ইমেইল ${to} ঠিকানায় পাঠানো হয়েছে। Inbox-এ না পেলে Spam ফোল্ডার দেখুন।`);
   else back("/admin/email", `পাঠানো যায়নি — SMTP-র বার্তা: “${r.error.slice(0, 300)}”। ${explainMailError(r.error)}`, "err");
 }
+
+// ─────────────────────────────────────────── শিক্ষার্থীর জানানো প্রশ্নের ভুল
+
+export async function resolveReportAction(fd: FormData) {
+  const a = await admin();
+  const id = String(fd.get("id") ?? "");
+  const status = fd.get("status") === "FIXED" ? "FIXED" : "DISMISSED";
+  const adminNote = String(fd.get("adminNote") ?? "").trim().slice(0, 1000) || null;
+  const r = await prisma.questionReport.findUnique({ where: { id }, select: { questionId: true } });
+  if (!r) back("/admin/question-reports", "অভিযোগটি পাওয়া যায়নি।", "err");
+  // "ঠিক করা হয়েছে" হলে একই প্রশ্নের সব খোলা অভিযোগ একসঙ্গে বন্ধ
+  const where = status === "FIXED" ? { questionId: r!.questionId, status: "OPEN" as const } : { id };
+  const n = (await prisma.questionReport.updateMany({ where, data: { status, adminNote, resolvedAt: new Date(), resolvedBy: a.id } })).count;
+  await audit(a.id, status === "FIXED" ? "report_fixed" : "report_dismissed", "Question", r!.questionId, { reports: n });
+  back("/admin/question-reports", status === "FIXED" ? `ঠিক করা হয়েছে হিসেবে চিহ্নিত (${n}টি অভিযোগ)।` : "অভিযোগটি বাতিল করা হয়েছে।");
+}

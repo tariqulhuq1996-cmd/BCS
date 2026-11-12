@@ -7,6 +7,10 @@ import { ATTEMPT_KIND_BN } from "@/lib/progress/cycle";
 import { bn, bnNum } from "@/lib/bn";
 import { ExamBubbles } from "@/components/portal/exam-bubbles";
 import { ProgressBar } from "@/components/portal/progress-bar";
+import { prisma } from "@/lib/db";
+import { getStudyStats } from "@/lib/progress/streak";
+import { progressRank } from "@/lib/progress/peers";
+import { DashboardTour } from "@/components/portal/tour";
 
 export const metadata: Metadata = { title: "আমার Dashboard" };
 
@@ -20,11 +24,22 @@ export default function DashboardPage() {
   );
 }
 
+const MONTHS = ["জানুয়ারি", "ফেব্রুয়ারি", "মার্চ", "এপ্রিল", "মে", "জুন", "জুলাই", "আগস্ট", "সেপ্টেম্বর", "অক্টোবর", "নভেম্বর", "ডিসেম্বর"];
+const bnDate = (iso: string) => {
+  const [y, m, day] = iso.split("-").map(Number);
+  return `${bn(day)} ${MONTHS[m - 1]} ${bn(y)}`;
+};
+
 const LEVEL_NAME = ["", "বিগত BCS-এর প্রশ্ন", "টপিকভিত্তিক প্রশ্ন", "পূর্ণাঙ্গ Model Test"];
 
 async function Dashboard() {
   const user = await requireUser("/dashboard");
-  const d = await getDashboard(user.id);
+  const [d, st, rank, profile] = await Promise.all([
+    getDashboard(user.id),
+    getStudyStats(prisma, user.id),
+    progressRank(prisma, user.id),
+    prisma.studentProfile.findUnique({ where: { userId: user.id }, select: { tourSeenAt: true } }),
+  ]);
   const curLevel = d.current?.levelNo ?? 1;
   const caPct = d.ca.total ? (d.ca.answered / d.ca.total) * 100 : 0;
   const caLocked = d.ca.state === "LOCKED";
@@ -54,6 +69,49 @@ async function Dashboard() {
           ))}
         </ol>
       </nav>
+
+      {/* ── পরীক্ষার দিন গণনা, টানা পড়া, আজকের লক্ষ্য */}
+      <section aria-label="আপনার ধারাবাহিকতা" className="mt-4 grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-3">
+        <div className="bg-surface px-4 py-3">
+          <p className="text-sm text-muted">পরীক্ষার বাকি</p>
+          {d.stretch.daysLeft != null && d.stretch.daysLeft >= 0 ? (
+            <>
+              <p className="mt-0.5 text-2xl font-bold tabular">{d.stretch.daysLeft === 0 ? "আজ পরীক্ষা" : `${bn(d.stretch.daysLeft)} দিন`}</p>
+              <p className="text-sm text-ink-2">{bnDate(d.stretch.examDate!)}</p>
+            </>
+          ) : (
+            <p className="mt-0.5 text-[15px] text-ink-2">তারিখ ঘোষণা হলে এখানে দিন গোনা শুরু হবে।</p>
+          )}
+        </div>
+        <div className="bg-surface px-4 py-3">
+          <p className="text-sm text-muted">টানা পড়া</p>
+          <p className="mt-0.5 text-2xl font-bold tabular">
+            {bn(st.current)} দিন{st.current >= 3 && <span aria-hidden="true"> 🔥</span>}
+          </p>
+          <p className="text-sm text-ink-2">
+            {st.studiedToday ? "আজকের পড়া হয়েছে ✓" : st.current > 0 ? "আজ একটি পরীক্ষা দিলে ধারা চলবে" : "আজ একটি পরীক্ষা দিয়ে শুরু করুন"}
+            {st.best > st.current && `, সর্বোচ্চ ${bn(st.best)} দিন`}
+          </p>
+        </div>
+        <div className="bg-surface px-4 py-3">
+          <div className="flex items-baseline justify-between gap-2">
+            <p className="text-sm text-muted">আজকের লক্ষ্য</p>
+            <Link href="/profile" className="text-xs text-ink-2 underline underline-offset-2">বদলান</Link>
+          </div>
+          <p className="mt-0.5 text-2xl font-bold tabular">
+            {bn(st.minutesToday)}<span className="text-base font-normal text-ink-2">/{bn(st.goal)} মিনিট</span>
+          </p>
+          <div className="mt-1.5">
+            <ProgressBar pct={st.goalPct} label="আজকের লক্ষ্যের অগ্রগতি" />
+          </div>
+        </div>
+      </section>
+      {rank && (
+        <p className="mt-2 text-sm text-ink-2">
+          মূল পথের অগ্রগতিতে আপনি <span className="font-semibold text-ink">শীর্ষ {bn(rank.top)}%</span>-এ আছেন ({bn(rank.peers)} জন শিক্ষার্থীর মধ্যে; কারো নাম দেখানো হয় না)।
+        </p>
+      )}
+      {!profile?.tourSeenAt && <DashboardTour />}
 
       {/* ── শেষ দিনগুলো: চূড়ান্ত রিভিশন */}
       {d.stretch.active && (

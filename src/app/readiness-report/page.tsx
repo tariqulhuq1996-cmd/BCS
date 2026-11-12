@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { prisma } from "@/lib/db";
 import { requireUser } from "@/lib/auth/session";
-import { getReadiness } from "@/lib/exam/analysis";
+import { getReadiness, getTimeAnalysis, RUSH_MS } from "@/lib/exam/analysis";
 import { bn, bnNum } from "@/lib/bn";
 import { ProgressBar } from "@/components/portal/progress-bar";
 
@@ -57,6 +57,58 @@ async function Baseline({ userId }: { userId: string }) {
   );
 }
 
+/** সময়ের বিশ্লেষণ: কোন বিষয়ে প্রতি প্রশ্নে বেশি সময় যায়, আর কোথায় তাড়াহুড়োয় ভুল হয়। */
+async function TimeAnalysis({ userId }: { userId: string }) {
+  const t = await getTimeAnalysis(prisma, userId);
+  if (t.answered < 20) return null;
+  const rushSec = RUSH_MS / 1000;
+  const slowest = [...t.subjects].filter((s) => s.answered >= 10).sort((a, b) => b.avgSec - a.avgSec)[0];
+  const rushiest = [...t.subjects].filter((s) => s.wrong >= 5).sort((a, b) => b.rush / b.wrong - a.rush / a.wrong)[0];
+  return (
+    <section aria-labelledby="timing" className="mt-8">
+      <h2 id="timing" className="text-xl font-bold">সময়ের বিশ্লেষণ</h2>
+      <p className="mt-1 max-w-2xl text-[15px] text-ink-2">
+        এ পর্যন্ত {bn(t.answered)}টি উত্তরে গড়ে প্রতি প্রশ্নে {bnNum(t.avgSec, 0)} সেকেন্ড। আসল পরীক্ষায় ২০০ প্রশ্নে ১২০ মিনিট, অর্থাৎ প্রতি প্রশ্নে গড়ে ৩৬ সেকেন্ড।
+        {t.rush > 0 && ` ভুলগুলোর মধ্যে ${bn(t.rush)}টি ${bn(rushSec)} সেকেন্ডের কম সময়ে দেওয়া; এগুলো সম্ভবত তাড়াহুড়োর ভুল।`}
+      </p>
+      {(slowest || rushiest) && (
+        <ul className="mt-3 grid gap-1.5 text-[15px]">
+          {slowest && slowest.avgSec > 36 && (
+            <li>⏱ <span className="font-semibold">{slowest.name}</span>-এ সবচেয়ে বেশি সময় যাচ্ছে (প্রতি প্রশ্নে {bnNum(slowest.avgSec, 0)} সেকেন্ড)। এই বিষয়ের সূত্র ও তথ্য আরও ঝালাই করুন।</li>
+          )}
+          {rushiest && rushiest.rush / rushiest.wrong >= 0.3 && (
+            <li>⚡ <span className="font-semibold">{rushiest.name}</span>-এর ভুলের {bnNum((rushiest.rush / rushiest.wrong) * 100, 0)}% তাড়াহুড়োয়। প্রশ্ন পুরোটা পড়ে তারপর উত্তর দিন।</li>
+          )}
+        </ul>
+      )}
+      <div className="mt-4 overflow-x-auto">
+        <table className="w-full min-w-[34rem] text-left text-[15px]">
+          <thead className="border-b border-line text-sm text-muted">
+            <tr>
+              <th className="py-2 pr-3 font-medium">বিষয়</th>
+              <th className="py-2 pr-3 text-right font-medium">উত্তর</th>
+              <th className="py-2 pr-3 text-right font-medium">প্রশ্নপ্রতি সময়</th>
+              <th className="py-2 pr-3 text-right font-medium">সঠিকের হার</th>
+              <th className="py-2 text-right font-medium">তাড়াহুড়োর ভুল</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-line">
+            {t.subjects.map((s) => (
+              <tr key={s.code}>
+                <td className="py-2 pr-3">{s.name}</td>
+                <td className="py-2 pr-3 text-right tabular">{bn(s.answered)}</td>
+                <td className={`py-2 pr-3 text-right tabular ${s.avgSec > 36 ? "font-semibold text-omr" : ""}`}>{bnNum(s.avgSec, 0)} সে.</td>
+                <td className="py-2 pr-3 text-right tabular">{bnNum(s.accuracy, 0)}%</td>
+                <td className="py-2 text-right tabular">{s.wrong ? `${bn(s.rush)}/${bn(s.wrong)}` : "—"}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
 async function Content() {
   const user = await requireUser("/readiness-report");
   const r = await getReadiness(prisma, user.id);
@@ -64,6 +116,8 @@ async function Content() {
     return (
       <>
         <Baseline userId={user.id} />
+      <TimeAnalysis userId={user.id} />
+        <TimeAnalysis userId={user.id} />
         <p className="mt-6 text-lg text-ink-2">এখনও কোনো Model Test দেননি। Level ৩-এ টেস্ট দিলে এখানে আপনার পূর্ণ প্রতিবেদন তৈরি হবে।</p>
       </>
     );

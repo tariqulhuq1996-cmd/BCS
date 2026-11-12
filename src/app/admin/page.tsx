@@ -21,7 +21,7 @@ export default function AdminHome() {
 async function Content() {
   await requireAdmin("/admin");
   const weekAgo = daysAgo(7);
-  const [students, active, byStatus, explNone, explDraft, mts, imports, attempts7, target, dbSize] = await Promise.all([
+  const [students, active, byStatus, explNone, explDraft, mts, imports, attempts7, target, dbSize, openReports] = await Promise.all([
     prisma.user.count({ where: { role: "STUDENT" } }),
     prisma.user.count({ where: { role: "STUDENT", lastLoginAt: { gte: weekAgo } } }),
     prisma.question.groupBy({ by: ["kind", "status"], _count: true }),
@@ -35,6 +35,7 @@ async function Content() {
     prisma.$queryRaw<{ bytes: number | null }[]>`select sum(data_length + index_length) as bytes from information_schema.tables where table_schema = database()`
       .then((r) => numify(r)[0]?.bytes ?? 0)
       .catch(() => null),
+    prisma.questionReport.count({ where: { status: "OPEN" } }),
   ]);
   const dbMb = dbSize == null ? null : dbSize / 1048576;
   const n = (kind: string, status: string) => byStatus.find((b) => b.kind === kind && b.status === status)?._count ?? 0;
@@ -72,6 +73,7 @@ async function Content() {
             { k: "খসড়া Level ২ প্রশ্ন (যাচাই করে প্রকাশ করুন)", v: n("TOPIC", "DRAFT") + n("TOPIC", "VERIFIED"), href: "/admin/questions?kind=TOPIC&status=DRAFT" },
             { k: "ব্যাখ্যা যাচাই বাকি (খসড়া ব্যাখ্যা)", v: explDraft, href: "/admin/questions?expl=DRAFT" },
             { k: "বিগত প্রশ্নে ব্যাখ্যা নেই", v: explNone, href: "/admin/questions?kind=HISTORICAL&expl=NONE" },
+            { k: "শিক্ষার্থীর জানানো প্রশ্নের ভুল", v: openReports, href: "/admin/question-reports" },
             { k: "খসড়া Model Test (দেখে অনুমোদন করুন)", v: mts.find((m) => m.status === "DRAFT")?._count ?? 0, href: "/admin/model-tests" },
           ].map((x) => (
             <li key={x.k} className="flex items-baseline justify-between gap-4 py-2.5">

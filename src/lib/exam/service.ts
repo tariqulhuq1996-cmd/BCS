@@ -667,7 +667,7 @@ export async function getResultView(db: Db, userId: string, attemptIds: string[]
   if (!attempts.length || attempts.some((a) => a.userId !== userId)) throw new ExamError("FORBIDDEN", "এই ফলাফল আপনার নয়।");
   if (attempts.some((a) => !a.submittedAt)) throw new ExamError("NOT_READY", "পরীক্ষাটি এখনও জমা হয়নি।");
   const qids = attempts.flatMap((a) => a.questionIds);
-  const [qs, answers] = await Promise.all([
+  const [qs, answers, marks] = await Promise.all([
     db.question.findMany({
       where: { id: { in: qids } },
       select: {
@@ -677,7 +677,9 @@ export async function getResultView(db: Db, userId: string, attemptIds: string[]
       },
     }),
     db.attemptAnswer.findMany({ where: { attemptId: { in: attemptIds } } }),
+    db.bookmark.findMany({ where: { userId, questionId: { in: qids } }, select: { questionId: true, note: true } }),
   ]);
+  const markBy = new Map(marks.map((m) => [m.questionId, m.note ?? ""]));
   const qBy = new Map(qs.map((q) => [q.id, q]));
   const aBy = new Map(answers.map((x) => [`${x.attemptId}|${x.questionId}`, x]));
   const items = attempts
@@ -699,6 +701,8 @@ export async function getResultView(db: Db, userId: string, attemptIds: string[]
           unsure: ans?.confidence === "UNSURE",
           explanation: q.explanation,
           explanationVerified: q.explanationStatus === "VERIFIED",
+          saved: markBy.has(qid),
+          note: markBy.get(qid) ?? "",
           source: q.exam ? `${q.exam.bcsNo === 10 ? "১০ম" : `${q.exam.bcsNo}তম`} BCS, প্রশ্ন ${q.examQNo}` : q.source,
           subject: q.subtopic.topic.subject.nameBn,
           subjectOrder: q.subtopic.topic.subject.order,

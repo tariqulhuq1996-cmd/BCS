@@ -127,3 +127,44 @@ export async function getReadiness(db: Db, userId: string) {
     weak: ranked.slice(-3).reverse(),
   } as const;
 }
+
+/** "তাড়াহুড়োর ভুল": এর চেয়ে কম সময়ে দেওয়া ভুল উত্তর। */
+export const RUSH_MS = 12_000;
+
+/**
+ * সময়ের বিশ্লেষণ — সব জমা দেওয়া পরীক্ষা মিলিয়ে, বিষয়ভিত্তিক:
+ * প্রতি প্রশ্নে গড় সময়, সঠিকের হার, আর তাড়াহুড়োয় (১২ সেকেন্ডের কম) কতগুলো ভুল।
+ * সময় মাপা হয়েছে এমন উত্তরই (timeMs > 0) ধরা হয়।
+ */
+export async function getTimeAnalysis(db: Db, userId: string) {
+  const rows = numify(
+    await db.$queryRaw<{ code: string; name: string; ord: number; n: number; ms: number; correct: number; wrong: number; rush: number }[]>`
+      select sj.code, sj.nameBn as name, sj.order as ord,
+        count(*) as n,
+        sum(aa.timeMs) as ms,
+        sum(case when aa.isCorrect then 1 else 0 end) as correct,
+        sum(case when aa.selected is not null and not aa.isCorrect then 1 else 0 end) as wrong,
+        sum(case when aa.selected is not null and not aa.isCorrect and aa.timeMs < ${RUSH_MS} then 1 else 0 end) as rush
+      from AttemptAnswer aa
+      join TestAttempt ta on ta.id = aa.attemptId
+      join Question q on q.id = aa.questionId
+      join Subtopic st on st.id = q.subtopicId join Topic tp on tp.id = st.topicId join Subject sj on sj.id = tp.subjectId
+      where ta.userId = ${userId} and ta.submittedAt is not null and aa.timeMs > 0 and aa.selected is not null
+      group by sj.code, sj.nameBn, sj.order
+      order by sj.order`,
+  );
+  const total = rows.reduce((a, r) => a + r.n, 0);
+  const subjects = rows.map((r) => ({
+    code: r.code,
+    name: r.name,
+    answered: r.n,
+    avgSec: r.ms / r.n / 1000,
+    accuracy: (r.correct / r.n) * 100,
+    wrong: r.wrong,
+    rush: r.rush,
+  }));
+  const all = total ? rows.reduce((a, r) => a + r.ms, 0) / total / 1000 : 0;
+  const rush = rows.reduce((a, r) => a + r.rush, 0);
+  const wrong = rows.reduce((a, r) => a + r.wrong, 0);
+  return { answered: total, avgSec: all, rush, wrong, subjects };
+}

@@ -87,11 +87,12 @@ async function TopBar() {
     { href: "/profile#password", label: "পাসওয়ার্ড পরিবর্তন", icon: "key", tone: "green" },
     { href: "/dashboard", label: "Dashboard", icon: "dashboard", tone: "plain" },
     { href: "/mistakes", label: "ভুলের তালিকা", icon: "mistakes", tone: "omr" },
-    { href: "/revision", label: "Revision", icon: "revision", tone: "plain" },
+    { href: "/saved", label: "সংরক্ষিত প্রশ্ন", icon: "star", tone: "green" },
   ];
   const right: MenuItem[] = [
     ...(user.role === "ADMIN" ? [{ href: "/admin", label: "অ্যাডমিন প্যানেল", icon: "admin", tone: "omr" } satisfies MenuItem] : []),
     { href: "/readiness-report", label: "প্রস্তুতি রিপোর্ট", icon: "report", tone: "green" },
+    { href: "/revision", label: "Revision", icon: "revision", tone: "plain" },
     { href: "/#roadmap", label: "Roadmap", icon: "roadmap", tone: "plain" },
   ];
 
@@ -102,7 +103,10 @@ async function TopBar() {
         <NavLink href="/revision" label="Revision" icon="revision" />
         <ExploreMenu items={EXPLORE} />
       </nav>
-      <div className="ml-auto flex items-center">
+      <div className="ml-auto flex items-center gap-1">
+        <Link href="/search" aria-label="প্রশ্ন খুঁজুন" title="প্রশ্ন খুঁজুন" className="hidden size-10 place-items-center rounded-full text-ink-2 hover:bg-paper hover:text-ink md:grid">
+          <Icon name="search" />
+        </Link>
         <UserMenu
           name={user.name}
           email={user.email}
@@ -131,6 +135,8 @@ async function MobileBar() {
     ? [
         { href: "/dashboard", label: "Dashboard", icon: "dashboard" },
         { href: "/revision", label: "Revision", icon: "revision" },
+        { href: "/search", label: "খুঁজুন", icon: "search" },
+        { href: "/saved", label: "সংরক্ষিত", icon: "star" },
         { href: "/mistakes", label: "ভুলের তালিকা", icon: "mistakes" },
         ...EXPLORE,
       ]

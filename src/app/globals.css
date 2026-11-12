@@ -1,5 +1,25 @@
 @import "tailwindcss";
 
+/* dark: ধরন — ডিভাইসের সেটিং অনুযায়ী, তবে শিক্ষার্থী নিজে হালকা/গাঢ় বেছে নিলে সেটিই (html[data-theme]) */
+@custom-variant dark {
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme="light"]), :root:not([data-theme="light"]) *) {
+      @slot;
+    }
+  }
+  &:where([data-theme="dark"], [data-theme="dark"] *) {
+    @slot;
+  }
+}
+
+/* লেখার আকার (শিক্ষার্থীর পছন্দ; html[data-text]) — পুরো পাতা সমানুপাতে বড় হয় */
+html[data-text="lg"] body {
+  zoom: 1.1;
+}
+html[data-text="xl"] body {
+  zoom: 1.22;
+}
+
 /* Tailwind v4-এ বোতামে হাত-কার্সর থাকে না — লিংকের মতো সব বোতামেও হাত-কার্সর; নিষ্ক্রিয় বোতামে নয় */
 @layer base {
   button:not(:disabled),

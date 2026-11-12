@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Suspense } from "react";
 import { getCurrentUser, getPendingUser } from "@/lib/auth/session";
+import { DisplaySettings } from "./display-settings";
 
 /** লগইন থাকলে Dashboard, না থাকলে লগইন। */
 async function AccountLink() {
@@ -23,6 +24,9 @@ export function SiteFooter() {
             <AccountLink />
           </Suspense>
         </nav>
+        <div className="sm:col-span-2 border-t border-line pt-5">
+          <DisplaySettings />
+        </div>
       </div>
     </footer>
   );

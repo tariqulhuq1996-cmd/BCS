@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState, type ReactNode } from "react";
 import { Icon, type IconName } from "./icons";
+import { DisplaySettings } from "./display-settings";
 
 export type MenuItem = { href: string; label: string; icon: IconName; tone?: "green" | "omr" | "plain"; note?: string };
 
@@ -16,7 +17,8 @@ const TONE = {
 /** এই লিংকের পাতাতেই আছেন কি না (Dashboard-এর নিচের পাতাও Dashboard ধরা হয়)। */
 function useActive(href: string) {
   const path = usePathname();
-  const base = href.split("#")[0];
+  const [base, hash] = href.split("#");
+  if (hash) return false; // পাতার ভেতরের অংশের লিংক (যেমন /#roadmap) কখনো "এখানে আছেন" নয়
   return base === "/" ? path === "/" : path === base || path.startsWith(base + "/");
 }
 
@@ -110,7 +112,7 @@ export function ExploreMenu({ items }: { items: MenuItem[] }) {
         এক্সপ্লোর
         <Icon name="chevron" width={16} height={16} className={`transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
-      <div id={id} hidden={!open} className="absolute left-0 top-full z-50 mt-2 w-80 rounded-xl border border-line bg-surface p-2 shadow-lg">
+      <div id={id} hidden={!open} className="absolute left-0 top-full z-50 mt-2 max-h-[calc(100dvh-5.5rem)] w-80 overflow-y-auto overscroll-contain rounded-xl border border-line bg-surface p-2 shadow-lg">
         <ul className="grid gap-0.5">
           {items.map((i) => (
             <li key={i.href}>
@@ -147,7 +149,7 @@ export function UserMenu({ name, email, left, right, logout }: { name: string; e
       <div
         id={id}
         hidden={!open}
-        className="absolute right-0 top-full z-50 mt-2 w-[min(34rem,calc(100vw-2rem))] rounded-xl border border-line bg-surface shadow-lg"
+        className="absolute right-0 top-full z-50 mt-2 max-h-[calc(100dvh-5.5rem)] w-[min(34rem,calc(100vw-2rem))] overflow-y-auto overscroll-contain rounded-xl border border-line bg-surface shadow-lg"
       >
         <div className="flex items-center gap-3 border-b border-line px-4 py-3">
           <span className="grid size-10 shrink-0 place-items-center rounded-full bg-green text-lg font-semibold text-white dark:text-paper">{initial}</span>
@@ -172,7 +174,10 @@ export function UserMenu({ name, email, left, right, logout }: { name: string; e
                 </li>
               ))}
             </ul>
-            <div className="mt-auto border-t border-line pt-1.5 sm:mt-4">{logout}</div>
+            <div className="mt-auto border-t border-line px-2.5 py-2.5 sm:mt-4">
+              <DisplaySettings compact />
+            </div>
+            <div className="border-t border-line pt-1.5">{logout}</div>
           </div>
         </div>
       </div>

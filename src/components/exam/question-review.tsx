@@ -2,12 +2,13 @@
 
 import { useState } from "react";
 import { bn } from "@/lib/bn";
+import { QuestionTools } from "./question-tools";
 
 const LETTERS = ["ক", "খ", "গ", "ঘ"];
 type Item = {
   qid: string; text: string; options: string[]; selected: number | null; correct: number | null;
   status: "correct" | "wrong" | "unanswered"; unsure: boolean; explanation: string | null; explanationVerified: boolean;
-  source: string | null; subject: string; subtopic: string;
+  source: string | null; subject: string; subtopic: string; saved?: boolean; note?: string;
 };
 const FILTERS = [
   { k: "wrong", label: "ভুল" },
@@ -87,6 +88,7 @@ export function QuestionReview({ items }: { items: Item[] }) {
               )}
               {it.source && <p className="mt-1 text-xs text-muted">উৎস: {bn(it.source)}</p>}
             </div>
+            <QuestionTools qid={it.qid} saved={!!it.saved} note={it.note ?? ""} />
           </li>
         ))}
       </ol>

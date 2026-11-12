@@ -5,6 +5,7 @@ import { requireAdmin } from "@/lib/auth/session";
 import { mailStatus, verificationRequired } from "@/lib/auth/mailer";
 import { testEmailAction } from "@/lib/admin/actions";
 import { bn } from "@/lib/bn";
+import { daysAgo } from "@/lib/time";
 import { AdminTitle, Notice, btn, input } from "@/components/admin/ui";
 
 export const metadata: Metadata = { title: "ইমেইল-সেবা — অ্যাডমিন", robots: { index: false } };
@@ -21,7 +22,7 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
   const me = await requireAdmin("/admin/email");
   const sp = await searchParams;
   const s = mailStatus();
-  const pending = await prisma.pendingSignup.count({ where: { createdAt: { gte: new Date(Date.now() - 24 * 3600e3) } } });
+  const pending = await prisma.pendingSignup.count({ where: { createdAt: { gte: daysAgo(1) } } });
 
   return (
     <>

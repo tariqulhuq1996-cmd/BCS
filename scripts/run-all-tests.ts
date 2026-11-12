@@ -12,6 +12,7 @@ const SUITES = [
   ["Unlock-ইঞ্জিন", "test-progress.ts"],
   ["যাত্রা (ধাপ ০, Repeat, CA-শর্ত)", "test-journey.ts"],
   ["ইমেইল যাচাই (৬ সংখ্যার কোড)", "test-verify.ts"],
+  ["শিক্ষার্থীর সুবিধা (ধারা, তুলনা, সংরক্ষণ)", "test-features.ts"],
   ["Level ১", "test-level1.ts"],
   ["Level ২ ও Revision", "test-level2.ts"],
   ["Level ৩", "test-level3.ts"],
