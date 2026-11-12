@@ -3,14 +3,16 @@
 import bcrypt from "bcryptjs";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
+import { revalidatePath } from "next/cache";
 import * as z from "zod";
 import { prisma } from "@/lib/db";
-import { createSession, destroySession, hashToken, newToken } from "./session";
+import { createSession, destroySession, getPendingUser, hashToken, newToken } from "./session";
+import { checkCode, createCode, RESEND_SECONDS } from "./verify";
 import { clearHits, rateLimited, recordHit } from "./rate-limit";
-import { sendPasswordResetLink } from "./mailer";
+import { sendPasswordResetLink, sendVerificationCode, verificationRequired } from "./mailer";
 import { appUrl } from "@/lib/env";
 import { ensureStarted } from "@/lib/progress/engine";
-import { LoginSchema, RegisterSchema, ResetRequestSchema, ResetSchema, type FormState } from "./schemas";
+import { CodeSchema, LoginSchema, RegisterSchema, ResetRequestSchema, ResetSchema, type FormState } from "./schemas";
 
 const BCRYPT_COST = 12;
 // ব্যবহারকারী না থাকলেও একই সময় লাগুক — ইমেইল আছে কি না সময় দেখে বোঝা না যায়
@@ -44,12 +46,16 @@ export async function register(_: FormState, fd: FormData): Promise<FormState> {
   if (await prisma.user.findUnique({ where: { email } }))
     return { errors: { email: ["এই ইমেইলে আগে থেকেই অ্যাকাউন্ট আছে। লগইন করুন অথবা পাসওয়ার্ড রিসেট করুন।"] }, values };
 
+  const verify = verificationRequired();
   const user = await prisma.user.create({
-    data: { email, passwordHash: await bcrypt.hash(password, BCRYPT_COST), profile: { create: { name } } },
+    data: { email, passwordHash: await bcrypt.hash(password, BCRYPT_COST), emailVerifiedAt: verify ? null : new Date(), profile: { create: { name } } },
   });
-  await ensureStarted(prisma, user.id); // Level 1-এর প্রথম ধাপ (১০ম BCS) খোলা
+  await ensureStarted(prisma, user.id); // যাত্রার প্রথম ধাপ খোলা
   await createSession(user.id, (await headers()).get("user-agent"));
-  redirect(safeNext(fd.get("next")));
+  const next = safeNext(fd.get("next"));
+  if (!verify) redirect(next);
+  await sendVerificationCode(email, await createCode(prisma, user.id));
+  redirect(`/verify-email?next=${encodeURIComponent(next)}`);
 }
 
 export async function login(_: FormState, fd: FormData): Promise<FormState> {
@@ -73,7 +79,9 @@ export async function login(_: FormState, fd: FormData): Promise<FormState> {
   }
   await clearHits(key);
   await createSession(user.id, (await headers()).get("user-agent"));
-  redirect(safeNext(fd.get("next")));
+  const next = safeNext(fd.get("next"));
+  if (!user.emailVerifiedAt && user.role !== "ADMIN") redirect(`/verify-email?next=${encodeURIComponent(next)}`);
+  redirect(next);
 }
 
 export async function logout() {
@@ -109,10 +117,45 @@ export async function resetPassword(_: FormState, fd: FormData): Promise<FormSta
     return { message: "লিংকটির মেয়াদ শেষ বা আগেই ব্যবহার হয়েছে। নতুন রিসেট লিংক চান।" };
 
   await prisma.$transaction([
-    prisma.user.update({ where: { id: rec.userId }, data: { passwordHash: await bcrypt.hash(password, BCRYPT_COST) } }),
+    // রিসেট লিংক ইমেইলে গিয়েছিল — তাই ইমেইলও যাচাইকৃত ধরা হয়
+    prisma.user.update({ where: { id: rec.userId }, data: { passwordHash: await bcrypt.hash(password, BCRYPT_COST), emailVerifiedAt: (await prisma.user.findUnique({ where: { id: rec.userId }, select: { emailVerifiedAt: true } }))?.emailVerifiedAt ?? new Date() } }),
+    prisma.emailCode.deleteMany({ where: { userId: rec.userId } }),
     prisma.passwordResetToken.update({ where: { id: rec.id }, data: { usedAt: new Date() } }),
     prisma.session.deleteMany({ where: { userId: rec.userId } }), // সব ডিভাইস থেকে লগআউট
   ]);
   await createSession(rec.userId, (await headers()).get("user-agent"));
   redirect("/dashboard");
+}
+
+export async function verifyEmail(_: FormState, fd: FormData): Promise<FormState> {
+  const user = await getPendingUser();
+  const next = safeNext(fd.get("next"));
+  if (!user) redirect(next); // আগেই যাচাই হয়ে গেছে বা লগইন নেই — সুরক্ষিত পাতা নিজেই লগইনে পাঠাবে
+  const parsed = CodeSchema.safeParse({ code: String(fd.get("code") ?? "") });
+  if (!parsed.success) return { errors: fieldErrors(parsed.error) };
+  const res = await checkCode(prisma, user.id, parsed.data.code);
+  if (res === "ok") {
+    revalidatePath("/", "layout"); // হেডারের "ইমেইল যাচাই" বোতাম সঙ্গে সঙ্গে Dashboard-এ বদলায়
+    redirect(next);
+  }
+  const msg = {
+    wrong: "কোডটি মেলেনি। ইমেইলে পাঠানো ৬ সংখ্যার কোডটি আবার দেখে লিখুন।",
+    expired: "কোডটির মেয়াদ শেষ। নিচের বোতাম থেকে নতুন কোড চান।",
+    locked: "অনেকবার ভুল কোড দেওয়া হয়েছে। নিচের বোতাম থেকে নতুন কোড চান।",
+    none: "কোনো সক্রিয় কোড নেই। নিচের বোতাম থেকে নতুন কোড চান।",
+  }[res];
+  return res === "wrong" ? { errors: { code: [msg] } } : { message: msg };
+}
+
+export async function resendCode(_: FormState): Promise<FormState> {
+  const user = await getPendingUser();
+  if (!user) redirect("/dashboard");
+  const last = await prisma.emailCode.findUnique({ where: { userId: user.id }, select: { sentAt: true } });
+  const wait = last ? Math.ceil(RESEND_SECONDS - (Date.now() - last.sentAt.getTime()) / 1000) : 0;
+  if (wait > 0) return { message: `নতুন কোড চাইতে আরও ${wait} সেকেন্ড অপেক্ষা করুন।` };
+  if (await rateLimited(`verify-send:${user.id}`, 5, 60 * 60e3))
+    return { message: "এক ঘণ্টায় অনেকবার কোড চাওয়া হয়েছে। কিছুক্ষণ পরে আবার চেষ্টা করুন।" };
+  await recordHit(`verify-send:${user.id}`);
+  const sent = await sendVerificationCode(user.email, await createCode(prisma, user.id));
+  return sent ? { ok: true, message: `নতুন কোড ${user.email} ঠিকানায় পাঠানো হয়েছে।` } : { message: "এই মুহূর্তে ইমেইল পাঠানো যাচ্ছে না। কিছুক্ষণ পরে আবার চেষ্টা করুন।" };
 }

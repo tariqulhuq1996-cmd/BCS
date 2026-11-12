@@ -28,6 +28,13 @@ export const ResetSchema = z
   .object({ token: z.string().min(20), password, confirm: z.string() })
   .refine((d) => d.password === d.confirm, { error: "দুটি পাসওয়ার্ড মেলেনি।", path: ["confirm"] });
 
+export const CodeSchema = z.object({
+  code: z
+    .string()
+    .transform((v) => v.replace(/[০-৯]/g, (d) => String("০১২৩৪৫৬৭৮৯".indexOf(d))).replace(/\s|-/g, ""))
+    .pipe(z.string().regex(/^\d{6}$/, { error: "ইমেইলে পাঠানো ৬ সংখ্যার কোডটি লিখুন।" })),
+});
+
 export type FormState = {
   errors?: Record<string, string[] | undefined>;
   message?: string;

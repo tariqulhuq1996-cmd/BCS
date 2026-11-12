@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Suspense } from "react";
-import { getCurrentUser } from "@/lib/auth/session";
+import { getCurrentUser, getPendingUser } from "@/lib/auth/session";
 import { logout } from "@/lib/auth/actions";
 
 const NAV = [
@@ -70,6 +70,17 @@ function AuthLinks() {
 
 async function UserArea() {
   const user = await getCurrentUser();
+  if (!user && (await getPendingUser()))
+    return (
+      <>
+        <Link href="/verify-email" className="rounded-md bg-green px-3 py-1.5 text-[15px] font-semibold text-white hover:bg-green-strong sm:px-3.5 dark:text-paper">
+          ইমেইল যাচাই
+        </Link>
+        <form action={logout}>
+          <button className="rounded-md px-2 py-1.5 text-[15px] text-ink-2 hover:text-ink sm:px-3">লগআউট</button>
+        </form>
+      </>
+    );
   if (!user) return <AuthLinks />;
   return (
     <>

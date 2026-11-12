@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { use, useActionState } from "react";
 import { useSearchParams } from "next/navigation";
-import { login, register, requestPasswordReset, resetPassword } from "@/lib/auth/actions";
+import { login, register, requestPasswordReset, resendCode, resetPassword, verifyEmail } from "@/lib/auth/actions";
 import { FormMessage, SubmitButton } from "./ui";
 import { Field, RequiredNote, useErrorFocus } from "./field";
 
@@ -87,6 +87,32 @@ export function ResetForm({ params }: { params: Promise<{ token: string }> }) {
       <Field name="confirm" label="নতুন পাসওয়ার্ড আবার লিখুন" type="password" autoComplete="new-password" errors={state?.errors?.confirm} />
       <SubmitButton pending={pending} pendingText="সংরক্ষণ হচ্ছে…">নতুন পাসওয়ার্ড সংরক্ষণ করুন</SubmitButton>
       {state?.message && <Link href="/reset-password" className="text-[15px] text-green underline underline-offset-4">নতুন রিসেট লিংক চান</Link>}
+    </form>
+  );
+}
+
+export function VerifyForm() {
+  const next = useNext();
+  const [state, action, pending] = useActionState(verifyEmail, undefined);
+  const formRef = useErrorFocus(state);
+  return (
+    <form ref={formRef} action={action} className="grid gap-5" noValidate>
+      <input type="hidden" name="next" value={next} />
+      <FormMessage text={state?.message} />
+      <Field name="code" label="৬ সংখ্যার কোড" autoComplete="one-time-code" inputMode="numeric" errors={state?.errors?.code} hint="ইমেইল না পেলে Spam বা Promotions ফোল্ডারও দেখুন।" />
+      <SubmitButton pending={pending} pendingText="যাচাই হচ্ছে…">যাচাই করুন</SubmitButton>
+    </form>
+  );
+}
+
+export function ResendForm() {
+  const [state, action, pending] = useActionState(resendCode, undefined);
+  return (
+    <form action={action} className="grid gap-3">
+      <FormMessage text={state?.message} ok={state?.ok} />
+      <button type="submit" disabled={pending} className="justify-self-start text-[15px] text-green underline underline-offset-4 disabled:opacity-60">
+        {pending ? "পাঠানো হচ্ছে…" : "নতুন কোড পাঠান"}
+      </button>
     </form>
   );
 }

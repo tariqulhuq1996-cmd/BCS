@@ -39,8 +39,8 @@ export async function destroySession() {
 
 export type CurrentUser = { id: string; name: string; email: string; role: "STUDENT" | "ADMIN" };
 
-/** বর্তমান ব্যবহারকারী, না থাকলে null। একই রিকোয়েস্টে একবারই ডেটাবেসে যায়। */
-export const getCurrentUser = cache(async (): Promise<CurrentUser | null> => {
+/** সেশনের ব্যবহারকারী (ইমেইল যাচাই হোক বা না হোক)। একই রিকোয়েস্টে একবারই ডেটাবেসে যায়। */
+const sessionUser = cache(async (): Promise<(CurrentUser & { verified: boolean }) | null> => {
   const token = (await cookies()).get(SESSION_COOKIE)?.value;
   if (!token) return null;
   const s = await prisma.session.findUnique({
@@ -48,8 +48,24 @@ export const getCurrentUser = cache(async (): Promise<CurrentUser | null> => {
     include: { user: { include: { profile: true } } },
   });
   if (!s || s.expiresAt < new Date() || s.user.disabled) return null;
-  return { id: s.user.id, name: s.user.profile?.name ?? s.user.email, email: s.user.email, role: s.user.role };
+  return { id: s.user.id, name: s.user.profile?.name ?? s.user.email, email: s.user.email, role: s.user.role, verified: !!s.user.emailVerifiedAt || s.user.role === "ADMIN" };
 });
+
+/**
+ * বর্তমান ব্যবহারকারী, না থাকলে null। ইমেইল যাচাই না হওয়া অ্যাকাউন্টও null —
+ * তাই কোনো পাতা বা Server Action যাচাইয়ের আগে শিক্ষার্থীর কাজ করতে দেয় না।
+ */
+export const getCurrentUser = cache(async (): Promise<CurrentUser | null> => {
+  const u = await sessionUser();
+  if (!u || !u.verified) return null;
+  return { id: u.id, name: u.name, email: u.email, role: u.role };
+});
+
+/** লগইন আছে কিন্তু ইমেইল যাচাই বাকি — যাচাই-পাতার জন্য। */
+export async function getPendingUser(): Promise<CurrentUser | null> {
+  const u = await sessionUser();
+  return u && !u.verified ? { id: u.id, name: u.name, email: u.email, role: u.role } : null;
+}
 
 /** অ্যাডমিন-পাতা ও অ্যাডমিন-কাজের জন্য: লগইন না থাকলে লগইনে, অ্যাডমিন না হলে ৪০৪ (অ্যাডমিন অংশের অস্তিত্বও প্রকাশ নয়)। */
 export async function requireAdmin(next = "/admin"): Promise<CurrentUser> {
@@ -62,6 +78,7 @@ export async function requireAdmin(next = "/admin"): Promise<CurrentUser> {
 /** লগইন বাধ্যতামূলক এমন পাতার জন্য। */
 export async function requireUser(next = "/dashboard"): Promise<CurrentUser> {
   const u = await getCurrentUser();
+  if (!u && (await getPendingUser())) redirect(`/verify-email?next=${encodeURIComponent(next)}`);
   if (!u) redirect(`/login?next=${encodeURIComponent(next)}`);
   return u;
 }

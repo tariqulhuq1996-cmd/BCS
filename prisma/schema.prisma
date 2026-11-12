@@ -30,10 +30,13 @@ model User {
   disabled     Boolean   @default(false)
   createdAt    DateTime  @default(now())
   lastLoginAt  DateTime?
+  /// ইমেইল যাচাইয়ের সময়। নতুন রেজিস্ট্রেশনে null থাকে (কোড দিয়ে যাচাইয়ের পর বসে); পুরোনো, অ্যাডমিন ও seed-এর অ্যাকাউন্ট আগে থেকেই যাচাইকৃত।
+  emailVerifiedAt DateTime? @default(now())
 
   profile        StudentProfile?
   sessions       Session[]
   resetTokens    PasswordResetToken[]
+  emailCode      EmailCode?
   progress       StudentTaskProgress[]
   checklist      StudentChecklist[]
   attempts       TestAttempt[]
@@ -75,6 +78,16 @@ model RateHit {
   at  DateTime @default(now())
 
   @@index([key, at])
+}
+
+/// ইমেইল যাচাইয়ের ৬ সংখ্যার কোড — ব্যবহারকারীপ্রতি একটি; কোডের SHA-256 হ্যাশ রাখা হয়, কোড নিজে নয়।
+model EmailCode {
+  userId    String   @id
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  codeHash  String
+  expiresAt DateTime
+  attempts  Int      @default(0)
+  sentAt    DateTime @default(now())
 }
 
 model PasswordResetToken {

@@ -48,3 +48,45 @@ export async function sendPasswordResetLink(email: string, link: string) {
     console.error("[mailer] পাঠানো যায়নি:", (e as Error).message);
   }
 }
+
+/** ইমেইল-সেবা (SMTP) কনফিগার করা আছে কি না। */
+export const mailConfigured = () => transport() !== null;
+
+/** নতুন অ্যাকাউন্টে ইমেইল যাচাই লাগবে কি না। প্রোডাকশনে SMTP না থাকলে লাগে না — নইলে কেউই অ্যাকাউন্ট চালু করতে পারত না। */
+export const verificationRequired = () => process.env.NODE_ENV !== "production" || mailConfigured();
+
+export function verificationEmail(code: string) {
+  const subject = `${code} — আপনার যাচাই কোড (BCS ৫২ প্রস্তুতি)`;
+  const text = [
+    "BCS ৫২ প্রস্তুতিতে অ্যাকাউন্ট খোলার জন্য ধন্যবাদ।",
+    "",
+    `আপনার ইমেইল যাচাইয়ের কোড: ${code}`,
+    "",
+    "কোডটি ১৫ মিনিট কাজ করবে। আপনি অ্যাকাউন্ট না খুলে থাকলে এই ইমেইল উপেক্ষা করুন।",
+  ].join("\n");
+  const html = `<div style="font-family:system-ui,sans-serif;font-size:16px;line-height:1.7;color:#1c2733">
+<p>BCS ৫২ প্রস্তুতিতে অ্যাকাউন্ট খোলার জন্য ধন্যবাদ। আপনার ইমেইল যাচাইয়ের কোড:</p>
+<p style="font-size:32px;font-weight:700;letter-spacing:8px;font-family:ui-monospace,monospace;color:#006a4e;margin:12px 0">${code}</p>
+<p style="color:#4a5662;font-size:14px">কোডটি ১৫ মিনিট কাজ করবে। আপনি অ্যাকাউন্ট না খুলে থাকলে এই ইমেইল উপেক্ষা করুন।</p></div>`;
+  return { subject, text, html };
+}
+
+/** যাচাই কোড পাঠানো; পাঠানো গেলে true। SMTP না থাকলে ডেভেলপমেন্টে কোড টার্মিনালে ছাপা হয়। */
+export async function sendVerificationCode(email: string, code: string): Promise<boolean> {
+  const t = transport();
+  if (!t) {
+    if (process.env.NODE_ENV === "production") {
+      console.error("[mailer] ইমেইল-সেবা কনফিগার করা হয়নি; যাচাই কোড পাঠানো যায়নি।");
+      return false;
+    }
+    console.log(`\n[ইমেইল যাচাই] ${email}\n  কোড: ${code}\n`);
+    return true;
+  }
+  try {
+    await t.sendMail({ from: process.env.MAIL_FROM ?? process.env.SMTP_USER, to: email, ...verificationEmail(code) });
+    return true;
+  } catch (e) {
+    console.error("[mailer] যাচাই কোড পাঠানো যায়নি:", (e as Error).message);
+    return false;
+  }
+}
