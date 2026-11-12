@@ -1,5 +1,22 @@
 @import "tailwindcss";
 
+/* Tailwind v4-এ বোতামে হাত-কার্সর থাকে না — লিংকের মতো সব বোতামেও হাত-কার্সর; নিষ্ক্রিয় বোতামে নয় */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  summary,
+  label[for],
+  select,
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled),
+  input[type="file"]:not(:disabled) {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+}
+
 /*
  * নকশা-ভাষা: BCS Preliminary-র OMR উত্তরপত্র।
  *  - সবুজ (বাংলাদেশের পতাকার সবুজ): প্রধান কাজ, অগ্রগতি, চার্টের একক ধারা

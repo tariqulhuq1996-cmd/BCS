@@ -13,6 +13,7 @@ const NAV = [
   { href: "/admin/students", label: "শিক্ষার্থী" },
   { href: "/admin/reports", label: "রিপোর্ট" },
   { href: "/admin/backup", label: "Backup ও Export" },
+  { href: "/admin/email", label: "ইমেইল-সেবা" },
 ];
 
 /**

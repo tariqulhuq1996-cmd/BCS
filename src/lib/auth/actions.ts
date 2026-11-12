@@ -54,8 +54,8 @@ export async function register(_: FormState, fd: FormData): Promise<FormState> {
   await createSession(user.id, (await headers()).get("user-agent"));
   const next = safeNext(fd.get("next"));
   if (!verify) redirect(next);
-  await sendVerificationCode(email, await createCode(prisma, user.id));
-  redirect(`/verify-email?next=${encodeURIComponent(next)}`);
+  const sent = await sendVerificationCode(email, await createCode(prisma, user.id));
+  redirect(`/verify-email?next=${encodeURIComponent(next)}${sent ? "" : "&sent=0"}`);
 }
 
 export async function login(_: FormState, fd: FormData): Promise<FormState> {

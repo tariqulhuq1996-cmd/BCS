@@ -310,3 +310,16 @@ export async function deleteStudentAction(fd: FormData) {
   await audit(a.id, "delete_user", "User", userId, { email: u!.email, name: u!.profile?.name ?? null, attempts });
   back("/admin/students", `অ্যাকাউন্ট মুছে ফেলা হয়েছে: ${u!.profile?.name ? `${u!.profile.name} (${u!.email})` : u!.email}, সব তথ্যসহ।`);
 }
+
+// ─────────────────────────────────────────── ইমেইল-সেবা
+
+export async function testEmailAction(fd: FormData) {
+  const a = await admin();
+  const to = String(fd.get("to") ?? "").trim().toLowerCase() || a.email;
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(to)) back("/admin/email", "সঠিক ইমেইল ঠিকানা দিন।", "err");
+  const { sendTestEmail, explainMailError } = await import("@/lib/auth/mailer");
+  const r = await sendTestEmail(to);
+  await audit(a.id, "test_email", "Mail", null, { to, ok: r.ok, error: r.ok ? null : r.error.slice(0, 300) });
+  if (r.ok) back("/admin/email", `পরীক্ষামূলক ইমেইল ${to} ঠিকানায় পাঠানো হয়েছে। Inbox-এ না পেলে Spam ফোল্ডার দেখুন।`);
+  else back("/admin/email", `পাঠানো যায়নি — SMTP-র বার্তা: “${r.error.slice(0, 300)}”। ${explainMailError(r.error)}`, "err");
+}

@@ -33,6 +33,11 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
         </>
       }
     >
+      {sp.sent === "0" && (
+        <p role="alert" className="mb-4 rounded-md border border-danger bg-danger-wash px-3 py-2 text-[15px]">
+          এই মুহূর্তে কোড পাঠানো যায়নি। একটু পরে নিচের &quot;নতুন কোড পাঠান&quot; চাপুন; তাতেও না এলে কর্তৃপক্ষকে জানান।
+        </p>
+      )}
       <VerifyForm />
       <div className="mt-6 grid gap-4 border-t border-line pt-5">
         <ResendForm />

@@ -8,13 +8,69 @@ import nodemailer, { type Transporter } from "nodemailer";
  */
 let cached: Transporter | null = null;
 
+/** পরিবেশ-চলকের মান — hPanel-এ ভুল করে দেওয়া দুই পাশের ফাঁকা জায়গা বা উদ্ধৃতিচিহ্ন ("…" / '…') বাদ দিয়ে। */
+export function envValue(name: string): string {
+  let v = (process.env[name] ?? "").trim();
+  if (v.length >= 2 && (v[0] === `"` || v[0] === "'") && v.at(-1) === v[0]) v = v.slice(1, -1).trim();
+  return v;
+}
+
+function smtpConfig() {
+  const host = envValue("SMTP_HOST");
+  const user = envValue("SMTP_USER");
+  const pass = envValue("SMTP_PASS");
+  if (!host || !user || !pass) return null;
+  const port = Number(envValue("SMTP_PORT") || 587);
+  return { host, port, user, pass, from: envValue("MAIL_FROM") || user };
+}
+
 function transport(): Transporter | null {
   if (cached) return cached;
-  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;
-  if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) return null;
-  const port = Number(SMTP_PORT || 587);
-  cached = nodemailer.createTransport({ host: SMTP_HOST, port, secure: port === 465, auth: { user: SMTP_USER, pass: SMTP_PASS } });
+  const c = smtpConfig();
+  if (!c) return null;
+  cached = nodemailer.createTransport({ host: c.host, port: c.port, secure: c.port === 465, auth: { user: c.user, pass: c.pass }, connectionTimeout: 15_000, greetingTimeout: 15_000, socketTimeout: 30_000 });
   return cached;
+}
+
+const fromAddress = () => smtpConfig()?.from ?? "";
+
+/** অ্যাডমিন-পাতার জন্য: কোন মান বসানো আছে (পাসওয়ার্ড ছাড়া)। */
+export function mailStatus() {
+  const c = smtpConfig();
+  const missing = ["SMTP_HOST", "SMTP_USER", "SMTP_PASS"].filter((k) => !envValue(k));
+  if (!c) return { configured: false as const, missing };
+  const fromEmail = (c.from.match(/<([^>]+)>/)?.[1] ?? c.from).trim().toLowerCase();
+  return { configured: true as const, host: c.host, port: c.port, user: c.user, from: c.from, passLength: c.pass.length, fromMatchesUser: fromEmail === c.user.toLowerCase() };
+}
+
+/** SMTP-র ত্রুটিকে সহজ বাংলায় ব্যাখ্যা (আসল বার্তাও সঙ্গে দেখানো হয়)। */
+export function explainMailError(msg: string): string {
+  const m = msg.toLowerCase();
+  if (/535|auth|credentials|username and password/.test(m)) return "লগইন ব্যর্থ: SMTP_USER (পুরো ইমেইল ঠিকানা) বা SMTP_PASS (ঐ মেইলবক্সের পাসওয়ার্ড) ভুল। hPanel → Emails থেকে পাসওয়ার্ড নতুন করে দিয়ে আবার বসান।";
+  if (/enotfound|getaddrinfo/.test(m)) return "SMTP_HOST খুঁজে পাওয়া যায়নি — বানান দেখুন (smtp.hostinger.com)।";
+  if (/timeout|etimedout|econnrefused|econnreset/.test(m)) return "সার্ভারে সংযোগ হয়নি — SMTP_PORT দেখুন (465 অথবা 587)।";
+  if (/wrong version number|ssl|tls/.test(m)) return "পোর্ট আর এনক্রিপশন মেলেনি — SMTP_PORT 465 দিন।";
+  if (/553|550|sender|not owned|relay/.test(m)) return "প্রেরকের ঠিকানা গ্রহণ হয়নি — MAIL_FROM-এর <…> অংশের ঠিকানা SMTP_USER-এর সঙ্গে হুবহু এক হতে হবে।";
+  return "ওপরের আসল বার্তাটি দেখুন।";
+}
+
+/** পরীক্ষামূলক ইমেইল — সফল না হলে SMTP-র আসল ত্রুটি ফেরত দেয়। */
+export async function sendTestEmail(to: string): Promise<{ ok: true } | { ok: false; error: string }> {
+  cached = null; // সর্বশেষ মান দিয়ে নতুন সংযোগ
+  const t = transport();
+  if (!t) return { ok: false, error: "SMTP কনফিগার করা নেই।" };
+  try {
+    await t.verify();
+    await t.sendMail({
+      from: fromAddress(),
+      to,
+      subject: "পরীক্ষামূলক ইমেইল — BCS ৫২ প্রস্তুতি",
+      text: "এই ইমেইল পৌঁছালে ইমেইল-সেবা ঠিকমতো কাজ করছে; শিক্ষার্থীরা যাচাই কোড পাবেন।",
+    });
+    return { ok: true };
+  } catch (e) {
+    return { ok: false, error: (e as Error).message };
+  }
 }
 
 export function resetEmail(link: string) {
@@ -42,7 +98,7 @@ export async function sendPasswordResetLink(email: string, link: string) {
     return;
   }
   try {
-    await t.sendMail({ from: process.env.MAIL_FROM ?? process.env.SMTP_USER, to: email, ...resetEmail(link) });
+    await t.sendMail({ from: fromAddress(), to: email, ...resetEmail(link) });
   } catch (e) {
     // ব্যবহারকারীকে একই উত্তর দেওয়া হয় (ইমেইল আছে কি না প্রকাশ নয়); ত্রুটি শুধু সার্ভার-লগে
     console.error("[mailer] পাঠানো যায়নি:", (e as Error).message);
@@ -83,7 +139,7 @@ export async function sendVerificationCode(email: string, code: string): Promise
     return true;
   }
   try {
-    await t.sendMail({ from: process.env.MAIL_FROM ?? process.env.SMTP_USER, to: email, ...verificationEmail(code) });
+    await t.sendMail({ from: fromAddress(), to: email, ...verificationEmail(code) });
     return true;
   } catch (e) {
     console.error("[mailer] যাচাই কোড পাঠানো যায়নি:", (e as Error).message);
