@@ -7,7 +7,7 @@ import { PrismaClient } from "@prisma/client";
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { bankKeyFromFilename, parseCurrentAffairsDocx, parseBnDate } from "../src/lib/current-affairs/parse";
-import { importCurrentAffairs } from "../src/lib/current-affairs/import";
+import { importCurrentAffairs, renameCaBank } from "../src/lib/current-affairs/import";
 
 const db = new PrismaClient();
 let fails = 0;
@@ -74,6 +74,17 @@ async function main() {
       check("ব্যাংক বেছে অনুশীলন: শুধু সেই ব্যাংকের প্রশ্ন", only.length === 1 && only[0].bank === "পরীক্ষার ব্যাংক");
       const ov2 = await getOverview(db, u.id);
       check("সারসংক্ষেপে প্রতিটি ব্যাংক আলাদা", ov2.banks.some((b) => b.key === tKey && b.total === 1) && ov2.banks.length >= 2);
+
+      // ── নাম বদল: অ্যাডমিনের নাম পরের Import-এও থাকে
+      const rn = await renameCaBank(db, tKey, { name: "  নিরপেক্ষ   নাম ", title: "নিরপেক্ষ শিরোনাম", chapters: { 1: "নতুন অধ্যায়", 99: "নেই" } });
+      check("নাম বদল: ব্যাংক ও অধ্যায় (ফাঁকা জায়গা ছেঁটে), অজানা অধ্যায় উপেক্ষিত", rn.bank === 1 && rn.chapters === 1 && (await db.caBank.findFirst({ where: { bankKey: tKey } }))?.name === "নিরপেক্ষ নাম");
+      await importCurrentAffairs(db, mini, tKey, "test");
+      const latestB = await db.caBank.findFirst({ where: { bankKey: tKey }, orderBy: { importedAt: "desc" } });
+      const ch1 = await db.caChapter.findUnique({ where: { bankKey_no: { bankKey: tKey, no: 1 } } });
+      check("আবার Import করলেও অ্যাডমিনের নাম থাকে (নথির নাম বসে না)", latestB?.name === "নিরপেক্ষ নাম" && latestB.title === "নিরপেক্ষ শিরোনাম" && latestB.nameLocked && ch1?.nameBn === "নতুন অধ্যায়");
+      let bad = false;
+      try { await renameCaBank(db, tKey, { name: "ক" }); } catch { bad = true; }
+      check("খুব ছোট নাম গ্রহণ হয় না", bad);
     } finally {
       await db.caQuestion.deleteMany({ where: { bankKey: tKey } });
       await db.caChapter.deleteMany({ where: { bankKey: tKey } });

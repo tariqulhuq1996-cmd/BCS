@@ -19,7 +19,9 @@ export async function importCurrentAffairs(db: PrismaClient, p: CaParsed, bankKe
     async (tx) => {
       const chapterId: Record<number, number> = {};
       for (const c of p.chapters) {
-        const r = await tx.caChapter.upsert({ where: { bankKey_no: { bankKey, no: c.no } }, update: { nameBn: c.nameBn }, create: { bankKey, ...c } });
+        // অ্যাডমিন যে অধ্যায়ের নাম বদলেছেন (nameLocked), সেটির নাম নথি থেকে আর বসে না
+        const prev = await tx.caChapter.findUnique({ where: { bankKey_no: { bankKey, no: c.no } }, select: { nameLocked: true } });
+        const r = await tx.caChapter.upsert({ where: { bankKey_no: { bankKey, no: c.no } }, update: prev?.nameLocked ? {} : { nameBn: c.nameBn }, create: { bankKey, ...c } });
         chapterId[c.no] = r.id;
       }
       const existing = new Map(
@@ -63,11 +65,40 @@ export async function importCurrentAffairs(db: PrismaClient, p: CaParsed, bankKe
       await tx.caSource.deleteMany({ where: { bankKey } });
       if (p.sources.length) await tx.caSource.createMany({ data: p.sources.map((s) => ({ bankKey, ...s })) });
 
+      // অ্যাডমিন প্রশ্নব্যাংকের নাম বদলে থাকলে নতুন সংস্করণেও সেই নাম থাকে
+      const named = await tx.caBank.findFirst({ where: { bankKey, nameLocked: true }, orderBy: { importedAt: "desc" }, select: { name: true, title: true } });
       await tx.caBank.create({
-        data: { bankKey, name: p.name, title: p.title, version: p.version, verifiedBn: p.verifiedBn, verifiedOn: p.verifiedOn, howToUse: p.howToUse, questions: p.questions.length, importedBy: by ?? null },
+        data: { bankKey, name: named?.name ?? p.name, title: named?.title ?? p.title, nameLocked: !!named, version: p.version, verifiedBn: p.verifiedBn, verifiedOn: p.verifiedOn, howToUse: p.howToUse, questions: p.questions.length, importedBy: by ?? null },
       });
       return { bankKey, added, updated, reset, retired, chapters: p.chapters.length, revision: p.revision.length, sources: p.sources.length };
     },
     { timeout: 120_000 },
   );
+}
+
+/**
+ * প্রশ্নব্যাংক ও অধ্যায়ের নাম বদল (অ্যাডমিন বা deploy-setup থেকে)। একই key-এর সব সংস্করণে বসে এবং "lock" হয় —
+ * পরে নথি আবার Import করলেও এই নাম থাকে। chapters: অধ্যায় নম্বর → নতুন নাম (যেগুলো বদলায় শুধু সেগুলো)।
+ */
+export async function renameCaBank(db: PrismaClient, bankKey: string, names: { name?: string; title?: string; chapters?: Record<number, string> }) {
+  const clean = (v?: string) => v?.replace(/\s+/g, " ").trim();
+  const name = clean(names.name);
+  const title = clean(names.title);
+  if (name !== undefined && (name.length < 2 || name.length > 120)) throw new Error("প্রশ্নব্যাংকের নাম ২–১২০ অক্ষরের মধ্যে দিন।");
+  if (title !== undefined && (title.length < 2 || title.length > 300)) throw new Error("পূর্ণ শিরোনাম ২–৩০০ অক্ষরের মধ্যে দিন।");
+  return db.$transaction(async (tx) => {
+    let bank = 0, chapters = 0;
+    if (name !== undefined || title !== undefined)
+      bank = (await tx.caBank.updateMany({ where: { bankKey }, data: { ...(name !== undefined ? { name } : {}), ...(title !== undefined ? { title } : {}), nameLocked: true } })).count;
+    for (const [no, raw] of Object.entries(names.chapters ?? {})) {
+      const nameBn = clean(raw);
+      if (!nameBn) continue;
+      if (nameBn.length > 160) throw new Error(`অধ্যায় ${no}-এর নাম ১৬০ অক্ষরের বেশি।`);
+      const cur = await tx.caChapter.findUnique({ where: { bankKey_no: { bankKey, no: Number(no) } }, select: { nameBn: true } });
+      if (!cur || cur.nameBn === nameBn) continue;
+      await tx.caChapter.update({ where: { bankKey_no: { bankKey, no: Number(no) } }, data: { nameBn, nameLocked: true } });
+      chapters++;
+    }
+    return { bank, chapters };
+  });
 }

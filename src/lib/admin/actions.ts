@@ -265,3 +265,26 @@ export async function importCurrentAffairsAction(_: CaImportState, fd: FormData)
     return { error: e instanceof Error ? e.message : "ফাইল পড়া যায়নি।" };
   }
 }
+
+/** Current Affairs প্রশ্নব্যাংক ও অধ্যায়ের নাম বদল — পরের Import-এও এই নাম থাকে। */
+export async function renameCaBankAction(fd: FormData) {
+  const a = await admin();
+  const bankKey = String(fd.get("bank") ?? "");
+  const path = "/admin/current-affairs";
+  const chapters: Record<number, string> = {};
+  for (const [k, v] of fd.entries()) {
+    const m = /^ch_(\d{1,3})$/.exec(k);
+    if (m && typeof v === "string") chapters[Number(m[1])] = v;
+  }
+  let res: { bank: number; chapters: number };
+  try {
+    const { renameCaBank } = await import("@/lib/current-affairs/import");
+    if (!(await prisma.caBank.count({ where: { bankKey } }))) throw new Error("প্রশ্নব্যাংকটি পাওয়া যায়নি।");
+    res = await renameCaBank(prisma, bankKey, { name: String(fd.get("name") ?? ""), title: String(fd.get("title") ?? ""), chapters });
+  } catch (e) {
+    back(path, e instanceof Error ? e.message : "নাম বদলানো যায়নি।", "err");
+    return;
+  }
+  await audit(a.id, "rename_ca_bank", "CaBank", bankKey, { name: String(fd.get("name") ?? ""), chapters: res.chapters });
+  back(path, `নাম হালনাগাদ হয়েছে${res.chapters ? ` (অধ্যায় ${res.chapters}টি)` : ""}। পরের Import-এও এই নাম থাকবে।`);
+}

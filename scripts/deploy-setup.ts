@@ -115,6 +115,23 @@ async function main() {
         const r = await importCurrentAffairs(db, await parseCurrentAffairsDocx(readFileSync(path.join(caDir, file))), bankKey, "deploy");
         console.log(`[deploy-setup] Current Affairs "${bankKey}" বসানো হলো: ${r.added}টি প্রশ্ন।`);
       }
+      // নিরপেক্ষ নাম (একবারই): নথির মূল নাম থাকলে বদলায়; অ্যাডমিন নিজে নাম দিয়ে থাকলে (nameLocked) হাত দেয় না
+      const { renameCaBank } = await import("../src/lib/current-affairs/import");
+      const POLITICAL = "bnp-govt-political";
+      if (await db.caBank.count({ where: { bankKey: POLITICAL, nameLocked: false } })) {
+        await renameCaBank(db, POLITICAL, {
+          name: "সরকার ও সমসাময়িক রাজনীতি",
+          title: "৫২তম BCS Preliminary — সরকার ও সমসাময়িক রাজনীতি — বিশেষ প্রশ্নব্যাংক (Political Affairs Question Bank)",
+        });
+        console.log(`[deploy-setup] প্রশ্নব্যাংক "${POLITICAL}"-এর নাম: সরকার ও সমসাময়িক রাজনীতি`);
+      }
+      // অধ্যায়ের নিরপেক্ষ নাম — শুধু যেগুলো অ্যাডমিন নিজে বদলাননি
+      const NEUTRAL: Record<number, string> = { 4: "বর্তমান সরকারের কার্যক্রম", 7: "পূর্ববর্তী শাসনামল", 8: "রাজনৈতিক পরিবার ও নেতৃত্ব", 9: "রাজনৈতিক ইতিহাস ও গুরুত্বপূর্ণ ঘটনা" };
+      const open = await db.caChapter.findMany({ where: { bankKey: POLITICAL, nameLocked: false, no: { in: Object.keys(NEUTRAL).map(Number) } }, select: { no: true } });
+      if (open.length) {
+        const r = await renameCaBank(db, POLITICAL, { chapters: Object.fromEntries(open.map((c) => [c.no, NEUTRAL[c.no]])) });
+        console.log(`[deploy-setup] "${POLITICAL}"-এর ${r.chapters}টি অধ্যায়ের নাম নিরপেক্ষ করা হলো`);
+      }
     }
 
     // অ্যাডমিন: ADMIN_EMAIL ও ADMIN_PASSWORD দেওয়া থাকলে সেই অ্যাকাউন্ট ঠিক ওই পাসওয়ার্ডে অ্যাডমিন করা হয় — প্রতিবার

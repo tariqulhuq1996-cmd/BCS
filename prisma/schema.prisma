@@ -611,16 +611,18 @@ model CaBank {
   questions  Int
   importedAt DateTime  @default(now())
   importedBy String?
+  nameLocked Boolean   @default(false) // অ্যাডমিন নাম বদলালে true — পরের Import-এ নথির নাম বসে না
 
   @@index([bankKey, importedAt])
 }
 
 model CaChapter {
-  id        Int          @id @default(autoincrement())
-  bankKey   String       @default("current-affairs")
-  no        Int
-  nameBn    String       @db.Text
-  questions CaQuestion[]
+  id         Int          @id @default(autoincrement())
+  bankKey    String       @default("current-affairs")
+  no         Int
+  nameBn     String       @db.Text
+  nameLocked Boolean      @default(false) // অ্যাডমিন নাম বদলালে true
+  questions  CaQuestion[]
 
   @@unique([bankKey, no])
 }
