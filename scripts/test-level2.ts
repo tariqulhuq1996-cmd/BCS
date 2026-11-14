@@ -130,7 +130,9 @@ async function main() {
     check("ভুলের অনুশীলনে শুধু শেষবার ভুল প্রশ্ন", mpa.questionIds.length > 0 && mpStats.every((s) => s.lastCorrect === false));
 
     // ── প্রশ্ন নেই এমন উপবিষয়
-    const empty = phaseA.find((t) => ![codeA, codeB].includes(t.subtopic!.code))!;
+    // প্রকাশিত প্রশ্ন নেই এমন উপবিষয় (তৈরি প্রশ্নব্যাংক বসানো উপবিষয়গুলো বাদ)
+    const published = new Set((await db.question.groupBy({ by: ["subtopicId"], where: { kind: "TOPIC", status: "PUBLISHED" } })).map((g) => g.subtopicId));
+    const empty = phaseA.find((t) => ![codeA, codeB].includes(t.subtopic!.code) && !published.has(t.subtopicId!))!;
     await manualUnlock(db, u.id, empty.id, admin.id);
     check("প্রশ্ন প্রকাশিত হয়নি এমন উপবিষয়: পরিষ্কার বার্তা", (await code(() => startStep(db, u.id, empty.key))) === "EMPTY");
 
