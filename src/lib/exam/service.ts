@@ -10,7 +10,7 @@
  */
 import type { AttemptKind, LearningTask, Exam, PrismaClient, Prisma } from "@prisma/client";
 import { loadRules, type Rules } from "@/lib/rules";
-import { OPEN_STATES, completeTask, markStarted } from "@/lib/progress/engine";
+import { OPEN_STATES, completeTask, markStarted, unlockAllForAdmin } from "@/lib/progress/engine";
 import { normalizeOption } from "@/lib/questions/hash";
 import { pickCumulative, pickProportional, rank, optionPerm, revisionSize, shuffleArr, splitParts, type Candidate, type Stat, type Weights } from "./select";
 import { withWriteRetry } from "@/lib/db-retry";
@@ -48,7 +48,10 @@ export function dhakaDayStart(now = new Date(), offsetDays = 0): Date {
 async function loadTask(db: Db, userId: string, taskKey: string) {
   const task = await db.learningTask.findUnique({ where: { key: taskKey }, include: { exam: true } });
   if (!task) throw new ExamError("NOT_FOUND", "কাজটি পাওয়া যায়নি।");
-  const progress = await db.studentTaskProgress.findUnique({ where: { userId_taskId: { userId, taskId: task.id } } });
+  let progress = await db.studentTaskProgress.findUnique({ where: { userId_taskId: { userId, taskId: task.id } } });
+  // অ্যাডমিনের জন্য কোনো ধাপ তালাবন্ধ নয় (সরাসরি শুরু করলেও)
+  if ((!progress || !OPEN_STATES.includes(progress.state)) && (await unlockAllForAdmin(db, userId)))
+    progress = await db.studentTaskProgress.findUnique({ where: { userId_taskId: { userId, taskId: task.id } } });
   if (!progress || !OPEN_STATES.includes(progress.state)) throw new ExamError("LOCKED", "এই ধাপটি Unlock করতে আগের ধাপের নির্ধারিত কাজ সম্পন্ন করুন।");
   return { task, progress };
 }

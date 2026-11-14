@@ -3,7 +3,7 @@ import type { TaskKind, TaskState } from "@prisma/client";
 import { prisma } from "@/lib/db";
 import { loadRules } from "@/lib/rules";
 import { bn, bnOrdinal } from "@/lib/bn";
-import { ensureStarted } from "./engine";
+import { ensureStarted, unlockAllForAdmin } from "./engine";
 import { L1_STEPS, L2_STEPS, type StepKey } from "./cycle";
 import { numify } from "@/lib/sql";
 import { caGateStatus, evaluateCaGate, finalStretch, orientationStatus, ORIENT_ITEMS } from "./journey";
@@ -51,6 +51,7 @@ export function taskHref(t: { kind: TaskKind; key: string; bcsNo?: number; subto
 /** একজন শিক্ষার্থীর সব কাজ, অবস্থাসহ (Level ও ক্রম অনুযায়ী)। */
 export async function getStudentTasks(userId: string): Promise<TaskView[]> {
   await ensureStarted(prisma, userId);
+  await unlockAllForAdmin(prisma, userId); // অ্যাডমিনের জন্য সব ধাপ খোলা
   const [tasks, rows] = await Promise.all([
     prisma.learningTask.findMany({
       where: { active: true },

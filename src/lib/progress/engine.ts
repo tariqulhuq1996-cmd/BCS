@@ -125,6 +125,25 @@ export async function reconcileDeactivated(db: PrismaClient, taskId: number): Pr
   return n;
 }
 
+/**
+ * অ্যাডমিন হিসেবে লগইন করলে কোনো ধাপ তালাবন্ধ থাকে না: সব সক্রিয় কাজ (পরে যোগ হওয়া কাজসহ) AVAILABLE।
+ * সম্পন্ন/চলমান কাজের অবস্থা বদলায় না। অ্যাডমিন না হলে কিছু করে না। ফেরত: অ্যাডমিন কি না।
+ */
+export async function unlockAllForAdmin(db: Db, userId: string): Promise<boolean> {
+  const user = await db.user.findUnique({ where: { id: userId }, select: { role: true } });
+  if (user?.role !== "ADMIN") return false;
+  const [tasks, rows] = await Promise.all([
+    db.learningTask.findMany({ where: { active: true }, select: { id: true } }),
+    db.studentTaskProgress.findMany({ where: { userId }, select: { taskId: true, state: true } }),
+  ]);
+  const has = new Set(rows.map((r) => r.taskId));
+  const now = new Date();
+  const missing = tasks.filter((t) => !has.has(t.id));
+  if (missing.length) await db.studentTaskProgress.createMany({ data: missing.map((t) => ({ userId, taskId: t.id, state: "AVAILABLE" as const, unlockedAt: now })), skipDuplicates: true });
+  if (rows.some((r) => r.state === "LOCKED")) await db.studentTaskProgress.updateMany({ where: { userId, state: "LOCKED" }, data: { state: "AVAILABLE", unlockedAt: now } });
+  return true;
+}
+
 /** অ্যাডমিনের হাতে Unlock (বিশেষ পরিস্থিতি) — Audit Log-সহ। */
 export async function manualUnlock(db: PrismaClient, userId: string, taskId: number, adminId: string) {
   await db.$transaction([
