@@ -11,6 +11,7 @@ import { prisma } from "@/lib/db";
 import { getStudyStats } from "@/lib/progress/streak";
 import { progressRank } from "@/lib/progress/peers";
 import { DashboardTour } from "@/components/portal/tour";
+import { ResetProgress } from "@/components/portal/reset-progress";
 
 export const metadata: Metadata = { title: "আমার Dashboard" };
 
@@ -328,6 +329,13 @@ async function Dashboard() {
             </li>
           ))}
         </ul>
+      </section>
+
+      {/* ── নতুন করে শুরু */}
+      <section aria-labelledby="reset" className="mt-12 border-t border-line pt-8">
+        <h2 id="reset" className="text-xl font-bold">নতুন করে শুরু করতে চান?</h2>
+        <p className="mt-1 max-w-2xl text-[15px] text-ink-2">Dashboard রিসেট করলে প্রস্তুতি আবার ধাপ ০ থেকে শুরু হবে।</p>
+        <ResetProgress />
       </section>
     </>
   );

@@ -144,6 +144,28 @@ export async function unlockAllForAdmin(db: Db, userId: string): Promise<boolean
   return true;
 }
 
+/**
+ * নিজের অগ্রগতি রিসেট — Dashboard আবার শুরু থেকে: ধাপের অবস্থা, সব পরীক্ষা ও উত্তর, ভুলের ভান্ডার/Revision,
+ * Mastery, ধাপ ০-এর "পড়েছি", অর্জন ও সাম্প্রতিক বিষয়াবলির অনুশীলন মুছে যায়।
+ * থাকে: অ্যাকাউন্ট ও প্রোফাইল, সংরক্ষিত প্রশ্ন ও নোট, জানানো ভুলের অভিযোগ। পরের লোডে ensureStarted আবার ধাপ ০ খোলে।
+ */
+export async function resetProgress(db: PrismaClient, userId: string) {
+  const w = { where: { userId } };
+  const [tasks, attempts, stats, mastery, revision, checklist, achievements, ca] = await db.$transaction([
+    db.studentTaskProgress.deleteMany(w),
+    db.testAttempt.deleteMany(w), // উত্তরগুলো (AttemptAnswer) Cascade-এ মোছে
+    db.questionStat.deleteMany(w),
+    db.masteryRecord.deleteMany(w),
+    db.revisionSession.deleteMany(w),
+    db.studentChecklist.deleteMany(w),
+    db.userAchievement.deleteMany(w),
+    db.caAnswer.deleteMany(w),
+  ]);
+  const counts = { tasks: tasks.count, attempts: attempts.count, stats: stats.count, mastery: mastery.count, revision: revision.count, checklist: checklist.count, achievements: achievements.count, ca: ca.count };
+  await db.auditLog.create({ data: { actorId: userId, action: "reset_progress", entity: "User", entityId: userId, data: counts } });
+  return counts;
+}
+
 /** অ্যাডমিনের হাতে Unlock (বিশেষ পরিস্থিতি) — Audit Log-সহ। */
 export async function manualUnlock(db: PrismaClient, userId: string, taskId: number, adminId: string) {
   await db.$transaction([

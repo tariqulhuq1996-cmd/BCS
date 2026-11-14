@@ -6,6 +6,7 @@ import { prisma } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth/session";
 import { rateLimited, recordHit } from "@/lib/auth/rate-limit";
 import { answeredBy } from "./access";
+import { resetProgress } from "@/lib/progress/engine";
 import { REPORT_REASONS, type ReportReason } from "./reasons";
 
 /** পরিচিতি একবার দেখানো হলো (শেষ বা বন্ধ)। */
@@ -70,4 +71,17 @@ export async function reportQuestion(_: ReportState, fd: FormData): Promise<Repo
   await recordHit(`report:${u.id}`);
   await prisma.questionReport.create({ data: { userId: u.id, questionId, reason, note: note || null } });
   return { ok: true, message: "ধন্যবাদ! অভিযোগটি জমা হয়েছে; যাচাই করে ঠিক করা হবে।" };
+}
+
+export type ResetState = { ok?: boolean; message?: string } | undefined;
+const RESET_WORD = "রিসেট";
+
+/** নিজের Dashboard/অগ্রগতি রিসেট — নিশ্চিত করতে "রিসেট" লিখতে হয়। বিস্তারিত: resetProgress (lib/progress/engine)। */
+export async function resetMyProgress(_: ResetState, fd: FormData): Promise<ResetState> {
+  const u = await getCurrentUser();
+  if (!u) return { message: "আবার লগইন করুন।" };
+  if (String(fd.get("confirm") ?? "").trim() !== RESET_WORD) return { message: `নিশ্চিত করতে ঘরে "${RESET_WORD}" লিখুন।` };
+  await resetProgress(prisma, u.id);
+  revalidatePath("/", "layout");
+  return { ok: true, message: "আপনার অগ্রগতি রিসেট হয়েছে। এখন শুরু থেকে প্রস্তুতি নিতে পারবেন।" };
 }
