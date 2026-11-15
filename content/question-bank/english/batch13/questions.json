@@ -1,0 +1,1473 @@
+{
+  "batch": "Batch 13",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 01, 07, 19 (Vocabulary — Synonyms & Antonyms)",
+  "subtopics": {
+    "EN.VO.ANT": {},
+    "EN.VO.SYN": {}
+  },
+  "questions": [
+    {
+      "st": "EN.VO.ANT",
+      "d": "Easy",
+      "q": "The antonym of 'abundant' is—",
+      "o": [
+        "scarce",
+        "precise",
+        "bold",
+        "augment"
+      ],
+      "a": 0,
+      "e": "abundant ↔ scarce: প্রচুর ↔ দুষ্প্রাপ্য।",
+      "t": "abundant ↔ scarce।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "Choose the word opposite in meaning to 'adversity'.",
+      "o": [
+        "bold",
+        "prosperity",
+        "augment",
+        "permit"
+      ],
+      "a": 1,
+      "e": "adversity ↔ prosperity: দুর্দশা ↔ সমৃদ্ধি।",
+      "t": "adversity ↔ prosperity।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "Which word is most nearly opposite to 'affirm'?",
+      "o": [
+        "profane",
+        "opaque",
+        "deny",
+        "surplus"
+      ],
+      "a": 2,
+      "e": "affirm ↔ deny: নিশ্চিত করা ↔ অস্বীকার করা।",
+      "t": "affirm ↔ deny।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "The antonym of 'amateur' is—",
+      "o": [
+        "modern",
+        "cheerful",
+        "sudden",
+        "professional"
+      ],
+      "a": 3,
+      "e": "amateur ↔ professional: শখের ↔ পেশাদার।",
+      "t": "amateur ↔ professional।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Hard",
+      "q": "Choose the word opposite in meaning to 'ancient'.",
+      "o": [
+        "modern",
+        "lengthy",
+        "cheerful",
+        "sudden"
+      ],
+      "a": 0,
+      "e": "ancient ↔ modern: প্রাচীন ↔ আধুনিক।",
+      "t": "ancient ↔ modern।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Easy",
+      "q": "Which word is most nearly opposite to 'benign'?",
+      "o": [
+        "flexible",
+        "malignant",
+        "careful",
+        "hostile"
+      ],
+      "a": 1,
+      "e": "benign ↔ malignant: নিরীহ/নিরাময়যোগ্য ↔ মারাত্মক।",
+      "t": "benign ↔ malignant।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "The antonym of 'compulsory' is—",
+      "o": [
+        "influx",
+        "rural",
+        "optional",
+        "flexible"
+      ],
+      "a": 2,
+      "e": "compulsory ↔ optional: বাধ্যতামূলক ↔ ঐচ্ছিক।",
+      "t": "compulsory ↔ optional।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "Choose the word opposite in meaning to 'conceal'.",
+      "o": [
+        "cheerful",
+        "boastful",
+        "lengthy",
+        "reveal"
+      ],
+      "a": 3,
+      "e": "conceal ↔ reveal: লুকানো ↔ প্রকাশ করা।",
+      "t": "conceal ↔ reveal।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Hard",
+      "q": "Which word is most nearly opposite to 'concise'?",
+      "o": [
+        "lengthy",
+        "implausible",
+        "pessimist",
+        "export"
+      ],
+      "a": 0,
+      "e": "concise ↔ lengthy: সংক্ষিপ্ত ↔ দীর্ঘ।",
+      "t": "concise ↔ lengthy।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "The antonym of 'cordial' is—",
+      "o": [
+        "professional",
+        "hostile",
+        "spurious",
+        "nadir"
+      ],
+      "a": 1,
+      "e": "cordial ↔ hostile: আন্তরিক ↔ বৈরী।",
+      "t": "cordial ↔ hostile।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Easy",
+      "q": "Choose the word opposite in meaning to 'credible'.",
+      "o": [
+        "pessimist",
+        "hostile",
+        "implausible",
+        "export"
+      ],
+      "a": 2,
+      "e": "credible ↔ implausible: বিশ্বাসযোগ্য ↔ অবিশ্বাস্য।",
+      "t": "credible ↔ implausible।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "Which word is most nearly opposite to 'deficit'?",
+      "o": [
+        "heterodox",
+        "profane",
+        "implausible",
+        "surplus"
+      ],
+      "a": 3,
+      "e": "deficit ↔ surplus: ঘাটতি ↔ উদ্বৃত্ত।",
+      "t": "deficit ↔ surplus।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Hard",
+      "q": "The antonym of 'diminish' is—",
+      "o": [
+        "augment",
+        "treacherous",
+        "optional",
+        "strict"
+      ],
+      "a": 0,
+      "e": "diminish ↔ augment: কমা ↔ বাড়ানো।",
+      "t": "diminish ↔ augment।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "Choose the word opposite in meaning to 'exodus'.",
+      "o": [
+        "strict",
+        "influx",
+        "giant",
+        "deny"
+      ],
+      "a": 1,
+      "e": "exodus ↔ influx: দলে দলে প্রস্থান ↔ আগমন।",
+      "t": "exodus ↔ influx।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "Which word is most nearly opposite to 'expand'?",
+      "o": [
+        "lengthy",
+        "careful",
+        "contract",
+        "immortal"
+      ],
+      "a": 2,
+      "e": "expand ↔ contract: প্রসারিত হওয়া ↔ সংকুচিত হওয়া।",
+      "t": "expand ↔ contract।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Easy",
+      "q": "The antonym of 'extravagant' is—",
+      "o": [
+        "surplus",
+        "precise",
+        "bold",
+        "thrifty"
+      ],
+      "a": 3,
+      "e": "extravagant ↔ thrifty: অমিতব্যয়ী ↔ মিতব্যয়ী।",
+      "t": "extravagant ↔ thrifty।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Hard",
+      "q": "Choose the word opposite in meaning to 'fragile'.",
+      "o": [
+        "sturdy",
+        "rural",
+        "augment",
+        "flexible"
+      ],
+      "a": 0,
+      "e": "fragile ↔ sturdy: ভঙ্গুর ↔ মজবুত।",
+      "t": "fragile ↔ sturdy।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "Which word is most nearly opposite to 'genuine'?",
+      "o": [
+        "sturdy",
+        "spurious",
+        "nadir",
+        "rural"
+      ],
+      "a": 1,
+      "e": "genuine ↔ spurious: খাঁটি ↔ নকল।",
+      "t": "genuine ↔ spurious।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "The antonym of 'humility' is—",
+      "o": [
+        "careful",
+        "flexible",
+        "arrogance",
+        "lengthy"
+      ],
+      "a": 2,
+      "e": "humility ↔ arrogance: বিনয় ↔ ঔদ্ধত্য।",
+      "t": "humility ↔ arrogance।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "Choose the word opposite in meaning to 'inferior'.",
+      "o": [
+        "precise",
+        "deny",
+        "thrifty",
+        "superior"
+      ],
+      "a": 3,
+      "e": "inferior ↔ superior: নিকৃষ্ট ↔ উৎকৃষ্ট।",
+      "t": "inferior ↔ superior।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Easy",
+      "q": "Which word is most nearly opposite to 'lenient'?",
+      "o": [
+        "strict",
+        "cheerful",
+        "sudden",
+        "professional"
+      ],
+      "a": 0,
+      "e": "lenient ↔ strict: নরম ↔ কঠোর।",
+      "t": "lenient ↔ strict।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "The antonym of 'melancholy' is—",
+      "o": [
+        "treacherous",
+        "cheerful",
+        "optional",
+        "superior"
+      ],
+      "a": 1,
+      "e": "melancholy ↔ cheerful: বিষণ্ণ ↔ প্রফুল্ল।",
+      "t": "melancholy ↔ cheerful।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "Choose the word opposite in meaning to 'mortal'.",
+      "o": [
+        "heterodox",
+        "implausible",
+        "immortal",
+        "treacherous"
+      ],
+      "a": 2,
+      "e": "mortal ↔ immortal: নশ্বর ↔ অমর।",
+      "t": "mortal ↔ immortal।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "Which word is most nearly opposite to 'optimist'?",
+      "o": [
+        "augment",
+        "nadir",
+        "rural",
+        "pessimist"
+      ],
+      "a": 3,
+      "e": "optimist ↔ pessimist: আশাবাদী ↔ নৈরাশ্যবাদী।",
+      "t": "optimist ↔ pessimist।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Hard",
+      "q": "The antonym of 'orthodox' is—",
+      "o": [
+        "heterodox",
+        "opaque",
+        "profane",
+        "implausible"
+      ],
+      "a": 0,
+      "e": "orthodox ↔ heterodox: গোঁড়া/প্রচলিত মতাবলম্বী ↔ ভিন্নমতাবলম্বী।",
+      "t": "orthodox ↔ heterodox।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Easy",
+      "q": "Choose the word opposite in meaning to 'prohibit'.",
+      "o": [
+        "malignant",
+        "permit",
+        "arrogance",
+        "fertile"
+      ],
+      "a": 1,
+      "e": "prohibit ↔ permit: নিষেধ করা ↔ অনুমতি দেওয়া।",
+      "t": "prohibit ↔ permit।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "Which word is most nearly opposite to 'rigid'?",
+      "o": [
+        "heterodox",
+        "surplus",
+        "flexible",
+        "boastful"
+      ],
+      "a": 2,
+      "e": "rigid ↔ flexible: অনমনীয় ↔ নমনীয়।",
+      "t": "rigid ↔ flexible।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "The antonym of 'shallow' is—",
+      "o": [
+        "contract",
+        "fertile",
+        "prosperity",
+        "deep"
+      ],
+      "a": 3,
+      "e": "shallow ↔ deep: অগভীর ↔ গভীর।",
+      "t": "shallow ↔ deep।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Hard",
+      "q": "Choose the word opposite in meaning to 'transparent'.",
+      "o": [
+        "opaque",
+        "bold",
+        "surplus",
+        "heterodox"
+      ],
+      "a": 0,
+      "e": "transparent ↔ opaque: স্বচ্ছ ↔ অস্বচ্ছ।",
+      "t": "transparent ↔ opaque।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "Which word is most nearly opposite to 'vague'?",
+      "o": [
+        "strict",
+        "precise",
+        "sudden",
+        "professional"
+      ],
+      "a": 1,
+      "e": "vague ↔ precise: অস্পষ্ট ↔ সুনির্দিষ্ট।",
+      "t": "vague ↔ precise।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Easy",
+      "q": "The antonym of 'zenith' is—",
+      "o": [
+        "flexible",
+        "influx",
+        "nadir",
+        "irrational"
+      ],
+      "a": 2,
+      "e": "zenith ↔ nadir: শীর্ষবিন্দু ↔ সর্বনিম্ন বিন্দু।",
+      "t": "zenith ↔ nadir।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "Choose the word opposite in meaning to 'artificial'.",
+      "o": [
+        "rural",
+        "sturdy",
+        "precise",
+        "natural"
+      ],
+      "a": 3,
+      "e": "artificial ↔ natural: কৃত্রিম ↔ প্রাকৃতিক।",
+      "t": "artificial ↔ natural।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Hard",
+      "q": "Which word is most nearly opposite to 'barren'?",
+      "o": [
+        "fertile",
+        "giant",
+        "deny",
+        "thrifty"
+      ],
+      "a": 0,
+      "e": "barren ↔ fertile: বন্ধ্যা/অনুর্বর ↔ উর্বর।",
+      "t": "barren ↔ fertile।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "The antonym of 'dwarf' is—",
+      "o": [
+        "sturdy",
+        "giant",
+        "precise",
+        "rural"
+      ],
+      "a": 1,
+      "e": "dwarf ↔ giant: বামন ↔ দৈত্য।",
+      "t": "dwarf ↔ giant।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "Choose the word opposite in meaning to 'gradual'.",
+      "o": [
+        "arrogance",
+        "malignant",
+        "sudden",
+        "natural"
+      ],
+      "a": 2,
+      "e": "gradual ↔ sudden: ধীর/ক্রমিক ↔ আকস্মিক।",
+      "t": "gradual ↔ sudden।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Easy",
+      "q": "Which word is most nearly opposite to 'hasty'?",
+      "o": [
+        "strict",
+        "boastful",
+        "reveal",
+        "deliberate"
+      ],
+      "a": 3,
+      "e": "hasty ↔ deliberate: তাড়াহুড়ো ↔ ভেবেচিন্তে।",
+      "t": "hasty ↔ deliberate।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Hard",
+      "q": "The antonym of 'import' is—",
+      "o": [
+        "export",
+        "immortal",
+        "deliberate",
+        "malignant"
+      ],
+      "a": 0,
+      "e": "import ↔ export: আমদানি ↔ রপ্তানি।",
+      "t": "import ↔ export।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "Choose the word opposite in meaning to 'loyal'.",
+      "o": [
+        "precise",
+        "treacherous",
+        "rural",
+        "augment"
+      ],
+      "a": 1,
+      "e": "loyal ↔ treacherous: বিশ্বস্ত ↔ বিশ্বাসঘাতক।",
+      "t": "loyal ↔ treacherous।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "Which word is most nearly opposite to 'modest'?",
+      "o": [
+        "strict",
+        "reveal",
+        "boastful",
+        "giant"
+      ],
+      "a": 2,
+      "e": "modest ↔ boastful: বিনয়ী ↔ দাম্ভিক।",
+      "t": "modest ↔ boastful।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "The antonym of 'negligent' is—",
+      "o": [
+        "treacherous",
+        "surplus",
+        "heterodox",
+        "careful"
+      ],
+      "a": 3,
+      "e": "negligent ↔ careful: অবহেলাকারী ↔ যত্নশীল।",
+      "t": "negligent ↔ careful।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Easy",
+      "q": "Choose the word opposite in meaning to 'rational'.",
+      "o": [
+        "irrational",
+        "bold",
+        "surplus",
+        "heterodox"
+      ],
+      "a": 0,
+      "e": "rational ↔ irrational: যুক্তিসংগত ↔ অযৌক্তিক।",
+      "t": "rational ↔ irrational।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "Which word is most nearly opposite to 'sacred'?",
+      "o": [
+        "heterodox",
+        "profane",
+        "treacherous",
+        "reveal"
+      ],
+      "a": 1,
+      "e": "sacred ↔ profane: পবিত্র ↔ অপবিত্র।",
+      "t": "sacred ↔ profane।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "The antonym of 'timid' is—",
+      "o": [
+        "fertile",
+        "superior",
+        "bold",
+        "deny"
+      ],
+      "a": 2,
+      "e": "timid ↔ bold: ভীরু ↔ সাহসী।",
+      "t": "timid ↔ bold।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANT",
+      "d": "Medium",
+      "q": "Choose the word opposite in meaning to 'urban'.",
+      "o": [
+        "professional",
+        "strict",
+        "giant",
+        "rural"
+      ],
+      "a": 3,
+      "e": "urban ↔ rural: শহুরে ↔ গ্রামীণ।",
+      "t": "urban ↔ rural।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Easy",
+      "q": "The synonym of 'abandon' is—",
+      "o": [
+        "forsake",
+        "spite",
+        "anger",
+        "blameworthy"
+      ],
+      "a": 0,
+      "e": "abandon = forsake (পরিত্যাগ করা)।",
+      "t": "abandon = forsake।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "Choose the word closest in meaning to 'abhor'.",
+      "o": [
+        "productive",
+        "detest",
+        "daring",
+        "weak"
+      ],
+      "a": 1,
+      "e": "abhor = detest (ঘৃণা করা)।",
+      "t": "abhor = detest।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "Which word means the same as 'adroit'?",
+      "o": [
+        "forsake",
+        "ordinary",
+        "skilful",
+        "obedient"
+      ],
+      "a": 2,
+      "e": "adroit = skilful (দক্ষ)।",
+      "t": "adroit = skilful।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "The synonym of 'alleviate' is—",
+      "o": [
+        "refill",
+        "insensitive",
+        "hinder",
+        "relieve"
+      ],
+      "a": 3,
+      "e": "alleviate = relieve (লাঘব করা)।",
+      "t": "alleviate = relieve।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Hard",
+      "q": "Choose the word closest in meaning to 'astute'.",
+      "o": [
+        "shrewd",
+        "conciseness",
+        "useless",
+        "productive"
+      ],
+      "a": 0,
+      "e": "astute = shrewd (চতুর, বিচক্ষণ)।",
+      "t": "astute = shrewd।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Easy",
+      "q": "Which word means the same as 'audacious'?",
+      "o": [
+        "excessive",
+        "daring",
+        "ordinary",
+        "forsake"
+      ],
+      "a": 1,
+      "e": "audacious = daring (দুঃসাহসী)।",
+      "t": "audacious = daring।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "The synonym of 'austere' is—",
+      "o": [
+        "peaceful",
+        "danger",
+        "severe",
+        "insensitive"
+      ],
+      "a": 2,
+      "e": "austere = severe (কঠোর, আড়ম্বরহীন)।",
+      "t": "austere = severe।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "Choose the word closest in meaning to 'brevity'.",
+      "o": [
+        "please",
+        "examine",
+        "coax",
+        "conciseness"
+      ],
+      "a": 3,
+      "e": "brevity = conciseness (সংক্ষিপ্ততা)।",
+      "t": "brevity = conciseness।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Hard",
+      "q": "Which word means the same as 'cajole'?",
+      "o": [
+        "coax",
+        "conciseness",
+        "please",
+        "correct"
+      ],
+      "a": 0,
+      "e": "cajole = coax (তোষামোদ করে রাজি করানো)।",
+      "t": "cajole = coax।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "The synonym of 'callous' is—",
+      "o": [
+        "weak",
+        "insensitive",
+        "headstrong",
+        "skilful"
+      ],
+      "a": 1,
+      "e": "callous = insensitive (নির্মম, অনুভূতিহীন)।",
+      "t": "callous = insensitive।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Easy",
+      "q": "Choose the word closest in meaning to 'conspicuous'.",
+      "o": [
+        "examine",
+        "unbiased",
+        "noticeable",
+        "conciseness"
+      ],
+      "a": 2,
+      "e": "conspicuous = noticeable (সুস্পষ্ট, চোখে পড়ার মতো)।",
+      "t": "conspicuous = noticeable।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "Which word means the same as 'copious'?",
+      "o": [
+        "weak",
+        "productive",
+        "shrewd",
+        "plentiful"
+      ],
+      "a": 3,
+      "e": "copious = plentiful (প্রচুর)।",
+      "t": "copious = plentiful।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Hard",
+      "q": "The synonym of 'culpable' is—",
+      "o": [
+        "blameworthy",
+        "please",
+        "correct",
+        "daring"
+      ],
+      "a": 0,
+      "e": "culpable = blameworthy (দোষী, নিন্দনীয়)।",
+      "t": "culpable = blameworthy।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "Choose the word closest in meaning to 'deter'.",
+      "o": [
+        "enthusiasm",
+        "discourage",
+        "blameworthy",
+        "profitable"
+      ],
+      "a": 1,
+      "e": "deter = discourage (নিরুৎসাহিত করা, বিরত রাখা)।",
+      "t": "deter = discourage।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "Which word means the same as 'docile'?",
+      "o": [
+        "unbiased",
+        "insensitive",
+        "obedient",
+        "examine"
+      ],
+      "a": 2,
+      "e": "docile = obedient (বাধ্য, শান্ত)।",
+      "t": "docile = obedient।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Easy",
+      "q": "The synonym of 'eradicate' is—",
+      "o": [
+        "discourage",
+        "ordinary",
+        "forsake",
+        "eliminate"
+      ],
+      "a": 3,
+      "e": "eradicate = eliminate (নির্মূল করা)।",
+      "t": "eradicate = eliminate।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Hard",
+      "q": "Choose the word closest in meaning to 'exorbitant'.",
+      "o": [
+        "excessive",
+        "unbiased",
+        "examine",
+        "conciseness"
+      ],
+      "a": 0,
+      "e": "exorbitant = excessive (অত্যধিক (দাম))।",
+      "t": "exorbitant = excessive।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "Which word means the same as 'fallacy'?",
+      "o": [
+        "examine",
+        "misconception",
+        "conciseness",
+        "please"
+      ],
+      "a": 1,
+      "e": "fallacy = misconception (ভ্রান্ত ধারণা)।",
+      "t": "fallacy = misconception।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "The synonym of 'feeble' is—",
+      "o": [
+        "insensitive",
+        "watchful",
+        "weak",
+        "unbiased"
+      ],
+      "a": 2,
+      "e": "feeble = weak (দুর্বল)।",
+      "t": "feeble = weak।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "Choose the word closest in meaning to 'fervent'.",
+      "o": [
+        "insensitive",
+        "praiseworthy",
+        "watchful",
+        "passionate"
+      ],
+      "a": 3,
+      "e": "fervent = passionate (আবেগপূর্ণ)।",
+      "t": "fervent = passionate।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Easy",
+      "q": "Which word means the same as 'futile'?",
+      "o": [
+        "useless",
+        "refill",
+        "severe",
+        "passionate"
+      ],
+      "a": 0,
+      "e": "futile = useless (নিষ্ফল)।",
+      "t": "futile = useless।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "The synonym of 'gratify' is—",
+      "o": [
+        "useless",
+        "please",
+        "correct",
+        "daring"
+      ],
+      "a": 1,
+      "e": "gratify = please (সন্তুষ্ট করা)।",
+      "t": "gratify = please।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "Choose the word closest in meaning to 'hamper'.",
+      "o": [
+        "examine",
+        "unbiased",
+        "hinder",
+        "conciseness"
+      ],
+      "a": 2,
+      "e": "hamper = hinder (বাধা দেওয়া)।",
+      "t": "hamper = hinder।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "Which word means the same as 'impartial'?",
+      "o": [
+        "daring",
+        "useless",
+        "correct",
+        "unbiased"
+      ],
+      "a": 3,
+      "e": "impartial = unbiased (নিরপেক্ষ)।",
+      "t": "impartial = unbiased।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Hard",
+      "q": "The synonym of 'jeopardy' is—",
+      "o": [
+        "danger",
+        "detest",
+        "obedient",
+        "lessen"
+      ],
+      "a": 0,
+      "e": "jeopardy = danger (বিপদ, ঝুঁকি)।",
+      "t": "jeopardy = danger।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Easy",
+      "q": "Choose the word closest in meaning to 'laudable'.",
+      "o": [
+        "severe",
+        "praiseworthy",
+        "passionate",
+        "productive"
+      ],
+      "a": 1,
+      "e": "laudable = praiseworthy (প্রশংসনীয়)।",
+      "t": "laudable = praiseworthy।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "Which word means the same as 'lucrative'?",
+      "o": [
+        "shrewd",
+        "productive",
+        "profitable",
+        "misconception"
+      ],
+      "a": 2,
+      "e": "lucrative = profitable (লাভজনক)।",
+      "t": "lucrative = profitable।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "The synonym of 'malice' is—",
+      "o": [
+        "headstrong",
+        "shrewd",
+        "misconception",
+        "spite"
+      ],
+      "a": 3,
+      "e": "malice = spite (বিদ্বেষ)।",
+      "t": "malice = spite।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Hard",
+      "q": "Choose the word closest in meaning to 'mitigate'.",
+      "o": [
+        "lessen",
+        "productive",
+        "shrewd",
+        "misconception"
+      ],
+      "a": 0,
+      "e": "mitigate = lessen (প্রশমিত করা)।",
+      "t": "mitigate = lessen।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "Which word means the same as 'mundane'?",
+      "o": [
+        "severe",
+        "ordinary",
+        "passionate",
+        "productive"
+      ],
+      "a": 1,
+      "e": "mundane = ordinary (জাগতিক, সাধারণ)।",
+      "t": "mundane = ordinary।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Easy",
+      "q": "The synonym of 'notorious' is—",
+      "o": [
+        "anger",
+        "profitable",
+        "infamous",
+        "plentiful"
+      ],
+      "a": 2,
+      "e": "notorious = infamous (কুখ্যাত)।",
+      "t": "notorious = infamous।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "Choose the word closest in meaning to 'obstinate'.",
+      "o": [
+        "plentiful",
+        "profitable",
+        "anger",
+        "headstrong"
+      ],
+      "a": 3,
+      "e": "obstinate = headstrong (একগুঁয়ে)।",
+      "t": "obstinate = headstrong।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Hard",
+      "q": "Which word means the same as 'placid'?",
+      "o": [
+        "calm",
+        "severe",
+        "passionate",
+        "productive"
+      ],
+      "a": 0,
+      "e": "placid = calm (শান্ত, স্থির)।",
+      "t": "placid = calm।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "The synonym of 'prolific' is—",
+      "o": [
+        "peaceful",
+        "productive",
+        "coax",
+        "please"
+      ],
+      "a": 1,
+      "e": "prolific = productive (প্রচুর উৎপাদনশীল (লেখক ইত্যাদি))।",
+      "t": "prolific = productive।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "Choose the word closest in meaning to 'rectify'.",
+      "o": [
+        "productive",
+        "useless",
+        "correct",
+        "daring"
+      ],
+      "a": 2,
+      "e": "rectify = correct (সংশোধন করা)।",
+      "t": "rectify = correct।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Easy",
+      "q": "Which word means the same as 'replenish'?",
+      "o": [
+        "blameworthy",
+        "spite",
+        "enthusiasm",
+        "refill"
+      ],
+      "a": 3,
+      "e": "replenish = refill (পুনরায় পূর্ণ করা)।",
+      "t": "replenish = refill।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Hard",
+      "q": "The synonym of 'scrutinize' is—",
+      "o": [
+        "examine",
+        "decline",
+        "noticeable",
+        "unbiased"
+      ],
+      "a": 0,
+      "e": "scrutinize = examine (খুঁটিয়ে দেখা)।",
+      "t": "scrutinize = examine।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "Choose the word closest in meaning to 'tranquil'.",
+      "o": [
+        "passionate",
+        "peaceful",
+        "calm",
+        "shrewd"
+      ],
+      "a": 1,
+      "e": "tranquil = peaceful (প্রশান্ত)।",
+      "t": "tranquil = peaceful।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "Which word means the same as 'vigilant'?",
+      "o": [
+        "obedient",
+        "detest",
+        "watchful",
+        "spite"
+      ],
+      "a": 2,
+      "e": "vigilant = watchful (সতর্ক)।",
+      "t": "vigilant = watchful।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "The synonym of 'wane' is—",
+      "o": [
+        "skilful",
+        "misconception",
+        "infamous",
+        "decline"
+      ],
+      "a": 3,
+      "e": "wane = decline (ক্ষয় হওয়া, কমে আসা)।",
+      "t": "wane = decline।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Easy",
+      "q": "Choose the word closest in meaning to 'wrath'.",
+      "o": [
+        "anger",
+        "misconception",
+        "infamous",
+        "skilful"
+      ],
+      "a": 0,
+      "e": "wrath = anger (ক্রোধ)।",
+      "t": "wrath = anger।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.SYN",
+      "d": "Medium",
+      "q": "Which word means the same as 'zest'?",
+      "o": [
+        "relieve",
+        "enthusiasm",
+        "excessive",
+        "ordinary"
+      ],
+      "a": 1,
+      "e": "zest = enthusiasm (উদ্দীপনা)।",
+      "t": "zest = enthusiasm।",
+      "src": "Lecture 19 ও Standard English Dictionary (Oxford Learner's / Merriam-Webster Thesaurus)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

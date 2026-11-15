@@ -1,0 +1,742 @@
+{
+  "batch": "Batch 12",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 04 — Voice (Active & Passive)",
+  "subtopics": {
+    "EN.GR.VOI": {}
+  },
+  "questions": [
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'They have finished the project.' is—",
+      "o": [
+        "The project has been finished by them.",
+        "The project has finished by them.",
+        "The project had been finished by them.",
+        "The project is finished by them."
+      ],
+      "a": 0,
+      "e": "present perfect → has/have + been + pp।",
+      "t": "have + pp → have been + pp।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Easy",
+      "q": "The passive form of 'She will write a novel.' is—",
+      "o": [
+        "A novel would be written by her.",
+        "A novel will be written by her.",
+        "A novel will written by her.",
+        "A novel will have written by her."
+      ],
+      "a": 1,
+      "e": "future simple → will be + pp।",
+      "t": "will → will be + pp।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'He had completed the work before noon.' is—",
+      "o": [
+        "The work was completed by him before noon.",
+        "The work has been completed by him before noon.",
+        "The work had been completed by him before noon.",
+        "The work had completed by him before noon."
+      ],
+      "a": 2,
+      "e": "past perfect → had been + pp।",
+      "t": "had + pp → had been + pp।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Hard",
+      "q": "The passive form of 'They will have built the bridge by June.' is—",
+      "o": [
+        "The bridge would have been built by them by June.",
+        "The bridge will be built by them by June.",
+        "The bridge will have built by them by June.",
+        "The bridge will have been built by them by June."
+      ],
+      "a": 3,
+      "e": "future perfect → will have been + pp।",
+      "t": "will have + pp → will have been + pp।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'The workers are repairing the road.' is—",
+      "o": [
+        "The road is being repaired by the workers.",
+        "The road is repaired by the workers.",
+        "The road has been repaired by the workers.",
+        "The road was being repaired by the workers."
+      ],
+      "a": 0,
+      "e": "present continuous → am/is/are + being + pp।",
+      "t": "is + V-ing → is being + pp।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'The manager offered him a job.' is—",
+      "o": [
+        "He offered a job by the manager.",
+        "He was offered a job by the manager.",
+        "A job offered him by the manager.",
+        "He has been offered a job to the manager."
+      ],
+      "a": 1,
+      "e": "দুটি object থাকলে সাধারণত ব্যক্তিবাচক object (him) subject হয়: He was offered a job।",
+      "t": "ব্যক্তি object → subject।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'They elected him captain.' is—",
+      "o": [
+        "He elected captain by them.",
+        "Captain was elected him by them.",
+        "He was elected captain by them.",
+        "He was elected as captain to them."
+      ],
+      "a": 2,
+      "e": "Factitive verb (elect, make, call)-এর complement (captain) passive-এ verb-এর পরেই থাকে।",
+      "t": "complement অপরিবর্তিত।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'Smoke filled the room.' is—",
+      "o": [
+        "The room is filled of smoke.",
+        "The room was filled by smoke.",
+        "The room filled with smoke.",
+        "The room was filled with smoke."
+      ],
+      "a": 3,
+      "e": "fill-এর passive-এ by-এর বদলে with।",
+      "t": "filled WITH।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'His behaviour surprised me.' is—",
+      "o": [
+        "I was surprised at his behaviour.",
+        "I was surprised by his behaviour only.",
+        "I surprised at his behaviour.",
+        "I was surprised with his behaviour."
+      ],
+      "a": 0,
+      "e": "surprise, shock, astonish-এর passive-এ সাধারণত at বসে।",
+      "t": "surprised AT।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'The book interests me.' is—",
+      "o": [
+        "I am interested by the book.",
+        "I am interested in the book.",
+        "I interested in the book.",
+        "I am interest in the book."
+      ],
+      "a": 1,
+      "e": "interest-এর passive-এ in বসে।",
+      "t": "interested IN।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'Water contains hydrogen.' is—",
+      "o": [
+        "Hydrogen contained in water.",
+        "Hydrogen is contained by water.",
+        "Hydrogen is contained in water.",
+        "Hydrogen has contained in water."
+      ],
+      "a": 2,
+      "e": "contain-এর passive-এ in বসে।",
+      "t": "contained IN।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'The result pleased him.' is—",
+      "o": [
+        "He was pleased at the result's.",
+        "He was pleased by the result only.",
+        "He pleased with the result.",
+        "He was pleased with the result."
+      ],
+      "a": 3,
+      "e": "please-এর passive-এ with বসে।",
+      "t": "pleased WITH।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'Please help me.' is—",
+      "o": [
+        "You are requested to help me.",
+        "Let me be helped.",
+        "I am helped please.",
+        "Help is requested by me."
+      ],
+      "a": 0,
+      "e": "অনুরোধসূচক imperative (Please/Kindly) → You are requested to …।",
+      "t": "Please → You are requested to।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'You ought to obey your parents.' is—",
+      "o": [
+        "Your parents ought to obeyed by you.",
+        "Your parents ought to be obeyed by you.",
+        "Your parents are ought to be obeyed by you.",
+        "Your parents ought obeyed by you."
+      ],
+      "a": 1,
+      "e": "modal (ought to) + be + pp।",
+      "t": "modal + be + pp।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'What did she buy?' is—",
+      "o": [
+        "What was she bought?",
+        "What did she bought?",
+        "What was bought by her?",
+        "By whom was it bought?"
+      ],
+      "a": 2,
+      "e": "wh-word object হলে সেটি subject হয়: What was bought by her?",
+      "t": "What … → What was + pp।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'Why did he beat the dog?' is—",
+      "o": [
+        "Why was the dog beat by him?",
+        "Why the dog was beaten by him?",
+        "Why did the dog beaten by him?",
+        "Why was the dog beaten by him?"
+      ],
+      "a": 3,
+      "e": "Why/How/When ইত্যাদি প্রশ্নে wh-word আগে, তারপর be + subject + pp।",
+      "t": "Why + was + obj + pp।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Hard",
+      "q": "The passive form of 'Whom did you invite?' is—",
+      "o": [
+        "Who was invited by you?",
+        "Whom was invited by you?",
+        "By whom was invited you?",
+        "Who did you invited?"
+      ],
+      "a": 0,
+      "e": "Whom (object) passive-এ subject হয়ে Who হয়।",
+      "t": "Whom → Who।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Hard",
+      "q": "The passive form of 'I had the barber cut my hair.' is—",
+      "o": [
+        "I had my hair to be cut by the barber.",
+        "I had my hair cut by the barber.",
+        "My hair was had cut by the barber.",
+        "I had cut my hair by the barber."
+      ],
+      "a": 1,
+      "e": "causative have: have + object + pp (passive causative)।",
+      "t": "have + obj + pp।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Hard",
+      "q": "The passive form of 'I remember them taking me to the zoo.' is—",
+      "o": [
+        "I remember taken to the zoo by them.",
+        "I remember to be taken to the zoo by them.",
+        "I remember being taken to the zoo by them.",
+        "I am remembered taking to the zoo."
+      ],
+      "a": 2,
+      "e": "gerund-এর passive: being + pp।",
+      "t": "V-ing → being + pp।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Hard",
+      "q": "The passive form of 'It is time to close the shop.' is—",
+      "o": [
+        "The shop is time to be closed.",
+        "It is time to be closed the shop.",
+        "It is time the shop to close.",
+        "It is time for the shop to be closed."
+      ],
+      "a": 3,
+      "e": "infinitive-এর passive: to be + pp।",
+      "t": "to V → to be + pp।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'The doctor advised the patient to take rest.' is—",
+      "o": [
+        "The patient was advised by the doctor to take rest.",
+        "The patient was advised to took rest by the doctor.",
+        "The patient advised by the doctor to take rest.",
+        "Rest was advised to take by the patient."
+      ],
+      "a": 0,
+      "e": "advise + object + to-infinitive: object subject হয়, infinitive থেকে যায়।",
+      "t": "obj → subject, to-V থাকে।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'Someone has stolen my bag.' is—",
+      "o": [
+        "My bag has been stolen by someone else.",
+        "My bag has been stolen.",
+        "My bag is stolen by anyone.",
+        "My bag has stolen."
+      ],
+      "a": 1,
+      "e": "অনির্দিষ্ট কর্তা (someone, people, they) passive-এ সাধারণত বাদ যায়।",
+      "t": "someone → agent বাদ।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Hard",
+      "q": "The passive form of 'One should keep one's promises.' is—",
+      "o": [
+        "Promises should kept by one.",
+        "Promises should be keep.",
+        "Promises should be kept.",
+        "One's promises should keeping."
+      ],
+      "a": 2,
+      "e": "one (অনির্দিষ্ট কর্তা) বাদ দিয়ে modal + be + pp।",
+      "t": "one → বাদ।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'I have to submit the report.' is—",
+      "o": [
+        "The report had to submit by me.",
+        "The report have to be submitted by me.",
+        "The report has to submitted by me.",
+        "The report has to be submitted by me."
+      ],
+      "a": 3,
+      "e": "have to + V → has/have to be + pp।",
+      "t": "has to be + pp।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Easy",
+      "q": "The passive form of 'The cat killed the rat.' is—",
+      "o": [
+        "The rat was killed by the cat.",
+        "The rat is killed by the cat.",
+        "The rat killed by the cat.",
+        "The rat was kill by the cat."
+      ],
+      "a": 0,
+      "e": "past simple → was/were + pp।",
+      "t": "past → was + pp।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Hard",
+      "q": "The passive form of 'They are to complete the work by Friday.' is—",
+      "o": [
+        "The work are to complete by Friday.",
+        "The work is to be completed by Friday.",
+        "The work is to completed by Friday.",
+        "The work was to be complete by Friday."
+      ],
+      "a": 1,
+      "e": "be to + V → be to be + pp।",
+      "t": "is to be + pp।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The active form of 'The thief was caught by the police.' is—",
+      "o": [
+        "The thief caught the police.",
+        "The police has caught the thief.",
+        "The police caught the thief.",
+        "The police were caught the thief."
+      ],
+      "a": 2,
+      "e": "passive → active: by-এর পরের agent subject হয়।",
+      "t": "agent → subject।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The active form of 'The answer is not known to me.' is—",
+      "o": [
+        "I am not knowing the answer.",
+        "I did not know the answer.",
+        "The answer does not know me.",
+        "I do not know the answer."
+      ],
+      "a": 3,
+      "e": "is known to me → I know (present)।",
+      "t": "known to me → I know।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The active form of 'The letter had been posted before I arrived.' is—",
+      "o": [
+        "Someone had posted the letter before I arrived.",
+        "Someone has posted the letter before I arrived.",
+        "The letter had posted before I arrived.",
+        "Someone posted the letter before I had arrived."
+      ],
+      "a": 0,
+      "e": "agent উল্লেখ না থাকলে active-এ someone/they বসে; tense অপরিবর্তিত (past perfect)।",
+      "t": "agent নেই → someone।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The active form of 'Is the work being done by them?' is—",
+      "o": [
+        "Do they do the work?",
+        "Are they doing the work?",
+        "Were they doing the work?",
+        "Is they doing the work?"
+      ],
+      "a": 1,
+      "e": "is being + pp → am/is/are + V-ing (present continuous)।",
+      "t": "being done → doing।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "Which sentence cannot be changed into the passive voice?",
+      "o": [
+        "They built a house.",
+        "She sings a song.",
+        "The sun rises in the east.",
+        "He wrote a letter."
+      ],
+      "a": 2,
+      "e": "rise intransitive (object নেই) — passive হয় না।",
+      "t": "intransitive = passive নেই।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "Which of the following sentences is in the passive voice?",
+      "o": [
+        "It rained heavily.",
+        "The rain stopped the match.",
+        "They cancelled the match.",
+        "The match was cancelled due to rain."
+      ],
+      "a": 3,
+      "e": "be + pp (was cancelled) — passive।",
+      "t": "be + pp = passive।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "In the passive voice, the subject of the active sentence usually becomes—",
+      "o": [
+        "the agent after 'by'",
+        "the main verb",
+        "an adjective",
+        "the indirect object"
+      ],
+      "a": 0,
+      "e": "active-এর subject passive-এ by-এর পরে agent হয়।",
+      "t": "subject → by + agent।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "A passive verb is formed with—",
+      "o": [
+        "have + present participle",
+        "be + past participle",
+        "do + base form",
+        "be + base form"
+      ],
+      "a": 1,
+      "e": "passive = be-এর উপযুক্ত রূপ + past participle।",
+      "t": "be + pp।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "Only which kind of verb can normally be used in the passive voice?",
+      "o": [
+        "Linking verb",
+        "Intransitive verb",
+        "Transitive verb",
+        "Auxiliary verb"
+      ],
+      "a": 2,
+      "e": "object থাকলেই passive সম্ভব — transitive verb।",
+      "t": "transitive = passive সম্ভব।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Hard",
+      "q": "The passive form of 'Snow covered the hills.' is—",
+      "o": [
+        "The hills had covered with snow.",
+        "The hills were covered by the snow only.",
+        "The hills covered with snow.",
+        "The hills were covered with snow."
+      ],
+      "a": 3,
+      "e": "cover-এর passive-এ with বসে।",
+      "t": "covered WITH।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'The committee will discuss the matter tomorrow.' is—",
+      "o": [
+        "The matter will be discussed by the committee tomorrow.",
+        "The matter would be discussed by the committee tomorrow.",
+        "The matter will discuss by the committee tomorrow.",
+        "The matter will be discuss by the committee tomorrow."
+      ],
+      "a": 0,
+      "e": "will + V1 → will be + pp।",
+      "t": "will be + pp।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'Somebody is following us.' is—",
+      "o": [
+        "We are followed by somebody.",
+        "We are being followed.",
+        "Us are being followed.",
+        "We were being followed."
+      ],
+      "a": 1,
+      "e": "present continuous passive; অনির্দিষ্ট agent বাদ।",
+      "t": "is following → are being followed।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Hard",
+      "q": "The passive form of 'They made him work hard.' is—",
+      "o": [
+        "He made to work hard.",
+        "He was made work hard.",
+        "He was made to work hard.",
+        "He was made working hard."
+      ],
+      "a": 2,
+      "e": "make + object + bare infinitive → passive-এ to-infinitive ফিরে আসে: was made to work।",
+      "t": "made to + V।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "Semantic Duplicate — ৪৭-১২৫ (I heard her sing → She was heard to sing): একই নিয়ম — passive-এ bare infinitive to-infinitive হয়",
+      "v": "যাচাইকৃত",
+      "reject": "Semantic Duplicate"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Hard",
+      "q": "The passive form of 'People speak English all over the world.' is—",
+      "o": [
+        "English speaks all over the world.",
+        "English is spoke all over the world.",
+        "English was spoken all over the world.",
+        "English is spoken all over the world."
+      ],
+      "a": 3,
+      "e": "অনির্দিষ্ট কর্তা (people) বাদ, present simple → is + pp।",
+      "t": "people → বাদ।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'My mother is cooking dinner.' is—",
+      "o": [
+        "Dinner is being cooked by my mother.",
+        "Dinner was being cooked by my mother.",
+        "Dinner is cooked by my mother.",
+        "Dinner is being cook by my mother."
+      ],
+      "a": 0,
+      "e": "is + V-ing → is being + pp।",
+      "t": "is being + pp।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Hard",
+      "q": "The active form of 'English is taught to us by Mr. Haque.' is—",
+      "o": [
+        "Mr. Haque taught us English.",
+        "Mr. Haque teaches us English.",
+        "We teach English to Mr. Haque.",
+        "Mr. Haque is teaching us English."
+      ],
+      "a": 1,
+      "e": "is taught (present simple passive) → teaches।",
+      "t": "is taught → teaches।",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VOI",
+      "d": "Medium",
+      "q": "The passive form of 'Must I do it?' is—",
+      "o": [
+        "Must it be did by me?",
+        "Must it done by me?",
+        "Must it be done by me?",
+        "Is it must be done by me?"
+      ],
+      "a": 2,
+      "e": "modal-যুক্ত প্রশ্ন: Modal + object(subject) + be + pp?",
+      "t": "Must + S + be + pp?",
+      "src": "Lecture 04 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

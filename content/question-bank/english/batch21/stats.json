@@ -1,0 +1,26 @@
+{
+  "target": 1500,
+  "priorityTarget": {
+    "A": 408,
+    "B": 588,
+    "C": 230,
+    "D": 274
+  },
+  "historicalReference": 988,
+  "coverage": "EN.VO.ANL: বিগত 23টি (২০০-নম্বর যুগে); EN.VO.PRV: বিগত 6টি (২০০-নম্বর যুগে); EN.VO.FOR: বিগত 6টি (২০০-নম্বর যুগে); EN.VO.WFM: বিগত 1টি (২০০-নম্বর যুগে); EN.VO.TRN: বিগত 3টি (২০০-নম্বর যুগে)",
+  "generated": 71,
+  "exact": 0,
+  "semantic": 0,
+  "near": 0,
+  "verify": 0,
+  "qc": 0,
+  "accepted": 71,
+  "cumulative": 1500,
+  "remaining": 0,
+  "cumByPriority": {
+    "A": 408,
+    "B": 588,
+    "C": 230,
+    "D": 274
+  }
+}

@@ -1,0 +1,1118 @@
+{
+  "batch": "Batch 17",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 01 (Spelling Rules & Important Spellings), Lecture 06–07 (Adjective, Adverb, Degree & Determiner)",
+  "subtopics": {
+    "EN.GR.SPL": {},
+    "EN.GR.ADJ": {}
+  },
+  "questions": [
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Which word is correctly spelt?",
+      "o": [
+        "accommodate",
+        "accomodate",
+        "acommodate",
+        "accommadate"
+      ],
+      "a": 0,
+      "e": "accommodate — দুটি c, দুটি m।",
+      "t": "accommodate।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Choose the correct spelling.",
+      "o": [
+        "embarass",
+        "embarrass",
+        "embaras",
+        "embbarrass"
+      ],
+      "a": 1,
+      "e": "embarrass — দুটি r, দুটি s।",
+      "t": "embarrass।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Easy",
+      "q": "Identify the correctly spelt word.",
+      "o": [
+        "necessery",
+        "neccessary",
+        "necessary",
+        "necesary"
+      ],
+      "a": 2,
+      "e": "necessary — একটি c, দুটি s।",
+      "t": "necessary।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Easy",
+      "q": "Which word is correctly spelt?",
+      "o": [
+        "seprate",
+        "seperate",
+        "separete",
+        "separate"
+      ],
+      "a": 3,
+      "e": "separate — মাঝে a (sep-a-rate)।",
+      "t": "separate।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Choose the correct spelling.",
+      "o": [
+        "definitely",
+        "definately",
+        "definitly",
+        "defenitely"
+      ],
+      "a": 0,
+      "e": "definitely — finite + ly।",
+      "t": "definitely।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Identify the correctly spelt word.",
+      "o": [
+        "occurence",
+        "occurrence",
+        "ocurrence",
+        "occurrance"
+      ],
+      "a": 1,
+      "e": "occurrence — দুটি c, দুটি r, শেষে -ence।",
+      "t": "occurrence।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Easy",
+      "q": "Which word is correctly spelt?",
+      "o": [
+        "receeve",
+        "recieve",
+        "receive",
+        "receve"
+      ],
+      "a": 2,
+      "e": "i before e except after c — receive।",
+      "t": "receive।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Easy",
+      "q": "Choose the correct spelling.",
+      "o": [
+        "acheeve",
+        "acheive",
+        "achive",
+        "achieve"
+      ],
+      "a": 3,
+      "e": "achieve — c-এর পরে নয়, তাই ie।",
+      "t": "achieve।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Identify the correctly spelt word.",
+      "o": [
+        "guarantee",
+        "garantee",
+        "guarentee",
+        "guaranty-e"
+      ],
+      "a": 0,
+      "e": "guarantee — gu + arantee।",
+      "t": "guarantee।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Which word is correctly spelt?",
+      "o": [
+        "harrass",
+        "harass",
+        "harras",
+        "haress"
+      ],
+      "a": 1,
+      "e": "harass — একটি r, দুটি s।",
+      "t": "harass।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Choose the correct spelling.",
+      "o": [
+        "recomend",
+        "reccommend",
+        "recommend",
+        "reccomend"
+      ],
+      "a": 2,
+      "e": "recommend — একটি c, দুটি m।",
+      "t": "recommend।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Hard",
+      "q": "Identify the correctly spelt word.",
+      "o": [
+        "rhytm",
+        "rythm",
+        "rhythem",
+        "rhythm"
+      ],
+      "a": 3,
+      "e": "rhythm — rh + y + thm।",
+      "t": "rhythm।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Hard",
+      "q": "Which word is correctly spelt?",
+      "o": [
+        "entrepreneur",
+        "entrepeneur",
+        "enterpreneur",
+        "entreprenuer"
+      ],
+      "a": 0,
+      "e": "entrepreneur — entre + pre + neur।",
+      "t": "entrepreneur।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Choose the correct spelling.",
+      "o": [
+        "maintainance",
+        "maintenance",
+        "maintenence",
+        "maintanance"
+      ],
+      "a": 1,
+      "e": "maintain থেকে হলেও বানান maintenance।",
+      "t": "maintenance।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "Near Duplicate — ৪০-৪১-এর বিকল্পে ‘maintenance’ শুদ্ধ বানানে এসেছে; একই বানানজ্ঞান",
+      "v": "যাচাইকৃত",
+      "reject": "Near Duplicate"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Hard",
+      "q": "Identify the correctly spelt word.",
+      "o": [
+        "liasion",
+        "liason",
+        "liaison",
+        "laison"
+      ],
+      "a": 2,
+      "e": "liaison — li + ai + son।",
+      "t": "liaison।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Which word is correctly spelt?",
+      "o": [
+        "plawright",
+        "playwrite",
+        "playright",
+        "playwright"
+      ],
+      "a": 3,
+      "e": "নাট্যকার playwright (wright = নির্মাতা)।",
+      "t": "playwright।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Choose the correct spelling.",
+      "o": [
+        "pronunciation",
+        "pronounciation",
+        "pronunsiation",
+        "pronuncation"
+      ],
+      "a": 0,
+      "e": "pronounce থেকে হলেও pronunciation (o নেই)।",
+      "t": "pronunciation।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Identify the correctly spelt word.",
+      "o": [
+        "posession",
+        "possession",
+        "possesion",
+        "posesion"
+      ],
+      "a": 1,
+      "e": "possession — চারটি s (ss … ss)।",
+      "t": "possession।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Which word is correctly spelt?",
+      "o": [
+        "acquaintence",
+        "aquaintance",
+        "acquaintance",
+        "acquintance"
+      ],
+      "a": 2,
+      "e": "acquaintance — ac + quaint + ance।",
+      "t": "acquaintance।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Choose the correct spelling.",
+      "o": [
+        "callendar",
+        "calender",
+        "calandar",
+        "calendar"
+      ],
+      "a": 3,
+      "e": "calendar — শেষে -ar।",
+      "t": "calendar।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Identify the correctly spelt word.",
+      "o": [
+        "colleague",
+        "collegue",
+        "colleage",
+        "coleague"
+      ],
+      "a": 0,
+      "e": "colleague — ll + eague।",
+      "t": "colleague।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Hard",
+      "q": "Which word is correctly spelt?",
+      "o": [
+        "deterent",
+        "deterrent",
+        "deterrant",
+        "detterrent"
+      ],
+      "a": 1,
+      "e": "deterrent — দুটি r, শেষে -ent।",
+      "t": "deterrent।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Choose the correct spelling.",
+      "o": [
+        "exxagerate",
+        "exagerate",
+        "exaggerate",
+        "exaggarate"
+      ],
+      "a": 2,
+      "e": "exaggerate — দুটি g।",
+      "t": "exaggerate।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Hard",
+      "q": "Identify the correctly spelt word.",
+      "o": [
+        "hierarchi",
+        "heirarchy",
+        "hierarcy",
+        "hierarchy"
+      ],
+      "a": 3,
+      "e": "hierarchy — hier + archy।",
+      "t": "hierarchy।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Hard",
+      "q": "Which word is correctly spelt?",
+      "o": [
+        "indispensable",
+        "indispensible",
+        "indespensable",
+        "indispensabel"
+      ],
+      "a": 0,
+      "e": "indispensable — শেষে -able।",
+      "t": "indispensable।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Hard",
+      "q": "Choose the correct spelling.",
+      "o": [
+        "miniture",
+        "miniature",
+        "minature",
+        "miniatur"
+      ],
+      "a": 1,
+      "e": "miniature — mini + a + ture।",
+      "t": "miniature।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Identify the correctly spelt word.",
+      "o": [
+        "noticeble",
+        "noticable",
+        "noticeable",
+        "notiseable"
+      ],
+      "a": 2,
+      "e": "c-এর নরম উচ্চারণ রাখতে e থাকে — noticeable।",
+      "t": "noticeable।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Which word is correctly spelt?",
+      "o": [
+        "parallell",
+        "paralel",
+        "parralel",
+        "parallel"
+      ],
+      "a": 3,
+      "e": "parallel — মাঝে ll, শেষে একটি l।",
+      "t": "parallel।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Hard",
+      "q": "Choose the correct spelling.",
+      "o": [
+        "perseverance",
+        "perseverence",
+        "perserverance",
+        "persevereance"
+      ],
+      "a": 0,
+      "e": "perseverance — persever + ance।",
+      "t": "perseverance।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "Near Duplicate — ৪০-৪১-এর বিকল্পে ‘perseverance’ শুদ্ধ বানানে এসেছে; একই বানানজ্ঞান",
+      "v": "যাচাইকৃত",
+      "reject": "Near Duplicate"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Identify the correctly spelt word.",
+      "o": [
+        "quarentine",
+        "quarantine",
+        "quarantin",
+        "qurantine"
+      ],
+      "a": 1,
+      "e": "quarantine — quar + an + tine।",
+      "t": "quarantine।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Hard",
+      "q": "Which word is correctly spelt?",
+      "o": [
+        "sergant",
+        "sargeant",
+        "sergeant",
+        "sargent"
+      ],
+      "a": 2,
+      "e": "sergeant — উচ্চারণ সার্জেন্ট হলেও বানান ser-geant।",
+      "t": "sergeant।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Choose the correct spelling.",
+      "o": [
+        "thresold",
+        "threshhold",
+        "treshold",
+        "threshold"
+      ],
+      "a": 3,
+      "e": "threshold — একটি h মাঝে।",
+      "t": "threshold।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Identify the correctly spelt word.",
+      "o": [
+        "vacuum",
+        "vaccum",
+        "vacum",
+        "vaccuum"
+      ],
+      "a": 0,
+      "e": "vacuum — একটি c, দুটি u।",
+      "t": "vacuum।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Which word is correctly spelt?",
+      "o": [
+        "withold",
+        "withhold",
+        "witthold",
+        "withholde"
+      ],
+      "a": 1,
+      "e": "with + hold — দুটি h।",
+      "t": "withhold।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "'Rahim is taller than any other boy in the class.' — The superlative form is—",
+      "o": [
+        "No boy is taller than Rahim.",
+        "Rahim is the taller boy in the class.",
+        "Rahim is the tallest boy in the class.",
+        "Rahim is as tall as any boy in the class."
+      ],
+      "a": 2,
+      "e": "taller than any other → the tallest (superlative)।",
+      "t": "than any other → the -est।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Hard",
+      "q": "'This is one of the best books on the subject.' — The comparative form is—",
+      "o": [
+        "Very few books are better than this.",
+        "This is better than any other book on the subject.",
+        "No other book is as good as this.",
+        "This is better than most other books on the subject."
+      ],
+      "a": 3,
+      "e": "one of the best → better than most other (any other নয়)।",
+      "t": "one of the best → better than most other।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Easy",
+      "q": "The superlative form of 'bad' is—",
+      "o": [
+        "worst",
+        "baddest",
+        "worse",
+        "most bad"
+      ],
+      "a": 0,
+      "e": "bad–worse–worst।",
+      "t": "bad–worse–worst।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Easy",
+      "q": "The comparative form of 'little' (amount) is—",
+      "o": [
+        "littler",
+        "less",
+        "lesser",
+        "least"
+      ],
+      "a": 1,
+      "e": "little–less–least।",
+      "t": "little–less–least।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "He walked ___ than I did.",
+      "o": [
+        "farer",
+        "further on",
+        "farther",
+        "furthermore"
+      ],
+      "a": 2,
+      "e": "দূরত্ব বোঝাতে farther (further-ও চলে); further = অতিরিক্ত।",
+      "t": "দূরত্ব = farther।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "Of the two proposals, the ___ is more practical.",
+      "o": [
+        "latest",
+        "later",
+        "last",
+        "latter"
+      ],
+      "a": 3,
+      "e": "দুটির মধ্যে দ্বিতীয়টি = the latter; প্রথমটি = the former।",
+      "t": "the former/the latter।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "Please contact the office for ___ information.",
+      "o": [
+        "further",
+        "farther",
+        "furthest",
+        "far"
+      ],
+      "a": 0,
+      "e": "অতিরিক্ত অর্থে further।",
+      "t": "অতিরিক্ত = further।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Hard",
+      "q": "Choose the correct order of adjectives.",
+      "o": [
+        "a wooden old beautiful table",
+        "a beautiful old wooden table",
+        "an old beautiful wooden table",
+        "a beautiful wooden old table"
+      ],
+      "a": 1,
+      "e": "ক্রম: opinion → size → age → shape → colour → origin → material।",
+      "t": "opinion-age-material।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "She looks ___ today.",
+      "o": [
+        "sadness",
+        "sadly",
+        "sad",
+        "saddened by"
+      ],
+      "a": 2,
+      "e": "look, seem, appear (linking verb)-এর পরে adjective।",
+      "t": "linking verb + adjective।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "The flowers smell ___.",
+      "o": [
+        "sweeten",
+        "sweetly",
+        "sweetness",
+        "sweet"
+      ],
+      "a": 3,
+      "e": "smell/taste/feel (linking অর্থে) + adjective।",
+      "t": "smell + adjective।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "I haven't seen him ___.",
+      "o": [
+        "lately",
+        "late",
+        "later",
+        "latest"
+      ],
+      "a": 0,
+      "e": "lately = সম্প্রতি; late = দেরিতে।",
+      "t": "lately = recently।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "How ___ sugar do you need?",
+      "o": [
+        "many",
+        "much",
+        "few",
+        "a few"
+      ],
+      "a": 1,
+      "e": "uncountable noun (sugar)-এ much; countable-এ many।",
+      "t": "uncountable = much।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "Never he has been to Sylhet.",
+        "He has been never to Sylhet.",
+        "He has never been to Sylhet.",
+        "He never has been never to Sylhet."
+      ],
+      "a": 2,
+      "e": "frequency adverb সাধারণত auxiliary-র পরে বসে।",
+      "t": "aux + never + pp।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "He is late always for class always.",
+        "He always is late for class.",
+        "Always he late is for class.",
+        "He is always late for class."
+      ],
+      "a": 3,
+      "e": "be verb-এর পরে frequency adverb।",
+      "t": "be + always।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "It was ___ a hot day that we stayed indoors.",
+      "o": [
+        "such",
+        "so",
+        "very",
+        "too"
+      ],
+      "a": 0,
+      "e": "such + a + adjective + noun … that; so + adjective … that।",
+      "t": "such a … that।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "My ___ brother is a doctor.",
+      "o": [
+        "older than",
+        "elder",
+        "eldest of",
+        "oldest than"
+      ],
+      "a": 1,
+      "e": "পরিবারের সদস্যের ক্ষেত্রে noun-এর আগে elder।",
+      "t": "elder + noun।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "He is taller than ___.",
+      "o": [
+        "myself",
+        "me am",
+        "I",
+        "mine"
+      ],
+      "a": 2,
+      "e": "formal ইংরেজিতে than-এর পরে subject form (than I am)।",
+      "t": "than I (am)।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "The more you read, the ___ you learn.",
+      "o": [
+        "many more",
+        "most",
+        "much",
+        "more"
+      ],
+      "a": 3,
+      "e": "the + comparative …, the + comparative।",
+      "t": "the more … the more।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "The film was so ___ that I fell asleep.",
+      "o": [
+        "boring",
+        "bored",
+        "bore",
+        "boredom"
+      ],
+      "a": 0,
+      "e": "-ing adjective = যা অনুভূতি তৈরি করে; -ed = যে অনুভব করে।",
+      "t": "film boring, I bored।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "I was ___ by the long lecture.",
+      "o": [
+        "boring",
+        "bored",
+        "bore",
+        "boredly"
+      ],
+      "a": 1,
+      "e": "অনুভবকারী ব্যক্তির ক্ষেত্রে -ed adjective।",
+      "t": "I am bored।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "Have you read his ___ novel?",
+      "o": [
+        "latter",
+        "last",
+        "latest",
+        "lately"
+      ],
+      "a": 2,
+      "e": "latest = সর্বশেষ (নতুনতম); last = শেষ (আর আসবে না)।",
+      "t": "latest = নতুনতম।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Easy",
+      "q": "This is the ___ book I have ever read.",
+      "o": [
+        "most good",
+        "better",
+        "good",
+        "best"
+      ],
+      "a": 3,
+      "e": "good–better–best; ever-যুক্ত তুলনায় superlative।",
+      "t": "the best … ever।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Easy",
+      "q": "He runs ___ than me.",
+      "o": [
+        "faster",
+        "more fast",
+        "fastest",
+        "more faster"
+      ],
+      "a": 0,
+      "e": "এক অক্ষরের শব্দে -er: fast–faster।",
+      "t": "fast–faster।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Easy",
+      "q": "She is ___ than her sister.",
+      "o": [
+        "beautifuller",
+        "more beautiful",
+        "most beautiful",
+        "more beautifuller"
+      ],
+      "a": 1,
+      "e": "দীর্ঘ শব্দে more/most।",
+      "t": "more + long adjective।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "He is the ___ member of the club.",
+      "o": [
+        "older",
+        "eldest",
+        "oldest",
+        "elder"
+      ],
+      "a": 2,
+      "e": "সাধারণ তুলনায় oldest; eldest শুধু পরিবারের সদস্যদের মধ্যে।",
+      "t": "club = oldest।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Hard",
+      "q": "Rabindranath was the ___ poet of his age.",
+      "o": [
+        "fore",
+        "formost",
+        "former",
+        "foremost"
+      ],
+      "a": 3,
+      "e": "fore–former–foremost; foremost = প্রধান, শীর্ষস্থানীয়।",
+      "t": "foremost = প্রধান।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "This plan is ___ better than the old one.",
+      "o": [
+        "much",
+        "very",
+        "too",
+        "so"
+      ],
+      "a": 0,
+      "e": "comparative-এর আগে very নয়; much/far বসে।",
+      "t": "much + comparative।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Hard",
+      "q": "Which adjective is normally used only after a verb (predicatively)?",
+      "o": [
+        "sleepy",
+        "asleep",
+        "tired",
+        "sleeping"
+      ],
+      "a": 1,
+      "e": "asleep, alive, afraid প্রভৃতি a-যুক্ত adjective noun-এর আগে বসে না (the child is asleep)।",
+      "t": "a- adjective = predicative।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Easy",
+      "q": "Of all the students, she is the ___.",
+      "o": [
+        "intelligentest",
+        "more intelligent",
+        "most intelligent",
+        "most intelligentest"
+      ],
+      "a": 2,
+      "e": "দুইয়ের বেশির মধ্যে superlative: most + long adjective।",
+      "t": "of all … the most।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Which word is correctly spelt?",
+      "o": [
+        "Februery",
+        "Febuary",
+        "Feburary",
+        "February"
+      ],
+      "a": 3,
+      "e": "February — r দুটি (Feb-ru-ary)।",
+      "t": "February।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SPL",
+      "d": "Medium",
+      "q": "Choose the correct spelling (the flash in the sky during a storm).",
+      "o": [
+        "lightning",
+        "lightening",
+        "lightnning",
+        "litening"
+      ],
+      "a": 0,
+      "e": "বজ্রের ঝলক = lightning; lightening = হালকা করা।",
+      "t": "lightning ≠ lightening।",
+      "src": "Lecture 01, 06–07 ও Standard English Dictionary (Oxford Learner's) ও Grammar Reference (Swan)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

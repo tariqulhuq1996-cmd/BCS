@@ -1,0 +1,302 @@
+[
+ {
+  "code": "MA.BI.SMK",
+  "topic": "বীজগণিত",
+  "area": "Algebra",
+  "name": "সমীকরণ ও অসমতা",
+  "g": "A",
+  "base": 82,
+  "hist200": 37,
+  "target": 82
+ },
+ {
+  "code": "MA.BI.SUT",
+  "topic": "বীজগণিত",
+  "area": "Algebra",
+  "name": "বীজগাণিতিক সূত্র ও রাশির মান",
+  "g": "A",
+  "base": 56,
+  "hist200": 35,
+  "target": 56
+ },
+ {
+  "code": "MA.BI.SUC",
+  "topic": "বীজগণিত",
+  "area": "Algebra",
+  "name": "সূচক, করণী ও লগারিদম",
+  "g": "A",
+  "base": 82,
+  "hist200": 37,
+  "target": 82
+ },
+ {
+  "code": "MA.BI.DHR",
+  "topic": "বীজগণিত",
+  "area": "Algebra",
+  "name": "অনুক্রম ও ধারা",
+  "g": "A",
+  "base": 69,
+  "hist200": 24,
+  "target": 69
+ },
+ {
+  "code": "MA.JY.TRB",
+  "topic": "জ্যামিতি, পরিমিতি ও ত্রিকোণমিতি",
+  "area": "Geometry",
+  "name": "ত্রিভুজ",
+  "g": "B",
+  "base": 50,
+  "hist200": 29,
+  "target": 50
+ },
+ {
+  "code": "MA.BI.SET",
+  "topic": "বীজগণিত",
+  "area": "Algebra",
+  "name": "সেট ও ফাংশন",
+  "g": "B",
+  "base": 49,
+  "hist200": 19,
+  "target": 49
+ },
+ {
+  "code": "MA.AR.SAT",
+  "topic": "পাটিগণিত",
+  "area": "Arithmetic",
+  "name": "শতকরা",
+  "g": "B",
+  "base": 56,
+  "hist200": 30,
+  "target": 56
+ },
+ {
+  "code": "MA.AR.BHG",
+  "topic": "পাটিগণিত",
+  "area": "Arithmetic",
+  "name": "ভগ্নাংশ, দশমিক ও সরলীকরণ",
+  "g": "B",
+  "base": 43,
+  "hist200": 27,
+  "target": 43
+ },
+ {
+  "code": "MA.PS.BSS",
+  "topic": "পরিসংখ্যান, বিন্যাস-সমাবেশ ও সম্ভাবনা",
+  "area": "Statistics & Probability",
+  "name": "বিন্যাস ও সমাবেশ",
+  "g": "C",
+  "base": 54,
+  "hist200": 14,
+  "target": 54
+ },
+ {
+  "code": "MA.JY.BRT",
+  "topic": "জ্যামিতি, পরিমিতি ও ত্রিকোণমিতি",
+  "area": "Geometry",
+  "name": "বৃত্ত",
+  "g": "C",
+  "base": 40,
+  "hist200": 16,
+  "target": 40
+ },
+ {
+  "code": "MA.AR.ANU",
+  "topic": "পাটিগণিত",
+  "area": "Arithmetic",
+  "name": "অনুপাত, সমানুপাত ও অংশীদারি",
+  "g": "C",
+  "base": 36,
+  "hist200": 20,
+  "target": 36
+ },
+ {
+  "code": "MA.AR.SUD",
+  "topic": "পাটিগণিত",
+  "area": "Arithmetic",
+  "name": "সরল ও চক্রবৃদ্ধি মুনাফা",
+  "g": "C",
+  "base": 33,
+  "hist200": 13,
+  "target": 33
+ },
+ {
+  "code": "MA.PS.SMB",
+  "topic": "পরিসংখ্যান, বিন্যাস-সমাবেশ ও সম্ভাবনা",
+  "area": "Statistics & Probability",
+  "name": "সম্ভাবনা",
+  "g": "C",
+  "base": 43,
+  "hist200": 10,
+  "target": 43
+ },
+ {
+  "code": "MA.AR.SNG",
+  "topic": "পাটিগণিত",
+  "area": "Arithmetic",
+  "name": "সংখ্যা, বিভাজ্যতা ও মৌলিক সংখ্যা",
+  "g": "C",
+  "base": 23,
+  "hist200": 21,
+  "target": 23
+ },
+ {
+  "code": "MA.JY.CHT",
+  "topic": "জ্যামিতি, পরিমিতি ও ত্রিকোণমিতি",
+  "area": "Geometry",
+  "name": "চতুর্ভুজ ও বহুভুজ",
+  "g": "C",
+  "base": 23,
+  "hist200": 19,
+  "target": 23
+ },
+ {
+  "code": "MA.AR.LSG",
+  "topic": "পাটিগণিত",
+  "area": "Arithmetic",
+  "name": "ল.সা.গু ও গ.সা.গু",
+  "g": "C",
+  "base": 30,
+  "hist200": 12,
+  "target": 30
+ },
+ {
+  "code": "MA.BI.UTP",
+  "topic": "বীজগণিত",
+  "area": "Algebra",
+  "name": "উৎপাদকে বিশ্লেষণ",
+  "g": "D",
+  "base": 23,
+  "hist200": 12,
+  "target": 23
+ },
+ {
+  "code": "MA.AR.LAV",
+  "topic": "পাটিগণিত",
+  "area": "Arithmetic",
+  "name": "লাভ-ক্ষতি",
+  "g": "D",
+  "base": 23,
+  "hist200": 10,
+  "target": 23
+ },
+ {
+  "code": "MA.AR.KAJ",
+  "topic": "পাটিগণিত",
+  "area": "Arithmetic",
+  "name": "সময় ও কাজ, নল-চৌবাচ্চা",
+  "g": "D",
+  "base": 20,
+  "hist200": 11,
+  "target": 20
+ },
+ {
+  "code": "MA.JY.SNK",
+  "topic": "জ্যামিতি, পরিমিতি ও ত্রিকোণমিতি",
+  "area": "Geometry",
+  "name": "স্থানাঙ্ক জ্যামিতি",
+  "g": "D",
+  "base": 20,
+  "hist200": 9,
+  "target": 20
+ },
+ {
+  "code": "MA.BI.OTH",
+  "topic": "বীজগণিত",
+  "area": "Algebra",
+  "name": "বীজগণিত: অন্যান্য (জটিল সংখ্যা, ম্যাট্রিক্স)",
+  "g": "D",
+  "base": 20,
+  "hist200": 3,
+  "target": 20
+ },
+ {
+  "code": "MA.JY.REK",
+  "topic": "জ্যামিতি, পরিমিতি ও ত্রিকোণমিতি",
+  "area": "Geometry",
+  "name": "রেখা ও কোণ",
+  "g": "D",
+  "base": 23,
+  "hist200": 6,
+  "target": 23
+ },
+ {
+  "code": "MA.AR.GAD",
+  "topic": "পাটিগণিত",
+  "area": "Arithmetic",
+  "name": "গড়",
+  "g": "D",
+  "base": 16,
+  "hist200": 9,
+  "target": 16
+ },
+ {
+  "code": "MA.JY.TRK",
+  "topic": "জ্যামিতি, পরিমিতি ও ত্রিকোণমিতি",
+  "area": "Geometry",
+  "name": "ত্রিকোণমিতি ও উচ্চতা-দূরত্ব",
+  "g": "D",
+  "base": 17,
+  "hist200": 5,
+  "target": 17
+ },
+ {
+  "code": "MA.AR.GTI",
+  "topic": "পাটিগণিত",
+  "area": "Arithmetic",
+  "name": "সময়, দূরত্ব ও গতিবেগ",
+  "g": "D",
+  "base": 13,
+  "hist200": 9,
+  "target": 13
+ },
+ {
+  "code": "MA.JY.GHN",
+  "topic": "জ্যামিতি, পরিমিতি ও ত্রিকোণমিতি",
+  "area": "Mensuration",
+  "name": "ঘনবস্তু ও পরিমিতি",
+  "g": "D",
+  "base": 13,
+  "hist200": 3,
+  "target": 13
+ },
+ {
+  "code": "MA.AR.BOY",
+  "topic": "পাটিগণিত",
+  "area": "Arithmetic",
+  "name": "বয়স",
+  "g": "D",
+  "base": 10,
+  "hist200": 3,
+  "target": 10
+ },
+ {
+  "code": "MA.AR.MIS",
+  "topic": "পাটিগণিত",
+  "area": "Arithmetic",
+  "name": "মিশ্রণ",
+  "g": "D",
+  "base": 10,
+  "hist200": 3,
+  "target": 10
+ },
+ {
+  "code": "MA.PS.PRS",
+  "topic": "পরিসংখ্যান, বিন্যাস-সমাবেশ ও সম্ভাবনা",
+  "area": "Statistics & Probability",
+  "name": "পরিসংখ্যান",
+  "g": "D",
+  "base": 13,
+  "hist200": 1,
+  "target": 13
+ },
+ {
+  "code": "MA.AR.OTH",
+  "topic": "পাটিগণিত",
+  "area": "Arithmetic",
+  "name": "পাটিগণিত: অন্যান্য (একক রূপান্তর, ঐকিক নিয়ম)",
+  "g": "D",
+  "base": 10,
+  "hist200": 2,
+  "target": 10
+ }
+]

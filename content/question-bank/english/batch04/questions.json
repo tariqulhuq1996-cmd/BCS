@@ -1,0 +1,1374 @@
+{
+  "batch": "Batch 04",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 07, 18, 19 (Vocabulary, Gaps with Words, Word Meaning)",
+  "subtopics": {
+    "EN.VO.MNG": {}
+  },
+  "questions": [
+    {
+      "st": "EN.VO.MNG",
+      "d": "Easy",
+      "q": "The word 'ambiguous' means—",
+      "o": [
+        "having more than one possible meaning",
+        "an official ban on trade",
+        "involving two parties or countries",
+        "an expert judge of matters of taste"
+      ],
+      "a": 0,
+      "e": "ambiguous = দ্ব্যর্থক, অস্পষ্ট (having more than one possible meaning)।",
+      "t": "ambiguous → দ্ব্যর্থক, অস্পষ্ট।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "What is the meaning of 'benevolent'?",
+      "o": [
+        "a public declaration of policy",
+        "kind and generous",
+        "having more than one possible meaning",
+        "careful in spending; thrifty"
+      ],
+      "a": 1,
+      "e": "benevolent = দয়ালু, পরোপকারী (kind and generous)।",
+      "t": "benevolent → দয়ালু, পরোপকারী।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'candid' most nearly means—",
+      "o": [
+        "careful in spending; thrifty",
+        "having more than one possible meaning",
+        "frank and honest",
+        "no longer in use"
+      ],
+      "a": 2,
+      "e": "candid = অকপট, স্পষ্টভাষী (frank and honest)।",
+      "t": "candid → অকপট, স্পষ্টভাষী।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "The word 'clandestine' means—",
+      "o": [
+        "kind and generous",
+        "a general rise in prices",
+        "an official pardon",
+        "done secretly"
+      ],
+      "a": 3,
+      "e": "clandestine = গোপন, গুপ্ত (done secretly)।",
+      "t": "clandestine → গোপন, গুপ্ত।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Easy",
+      "q": "What is the meaning of 'cynical'?",
+      "o": [
+        "distrustful of people's motives",
+        "a general rise in prices",
+        "an official pardon",
+        "kind and generous"
+      ],
+      "a": 0,
+      "e": "cynical = মানুষের সদিচ্ছায় অবিশ্বাসী (distrustful of people's motives)।",
+      "t": "cynical → মানুষের সদিচ্ছায় অবিশ্বাসী।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "Semantic Duplicate — ৩২-২৪ (Antonym of 'Cynical'): একই শব্দজ্ঞান যাচাই করে",
+      "v": "যাচাইকৃত",
+      "reject": "Semantic Duplicate"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'diligent' most nearly means—",
+      "o": [
+        "frank and honest",
+        "hardworking and careful",
+        "a person who pretends to have virtues",
+        "too concerned with minor rules and book learning"
+      ],
+      "a": 1,
+      "e": "diligent = পরিশ্রমী, অধ্যবসায়ী (hardworking and careful)।",
+      "t": "diligent → পরিশ্রমী, অধ্যবসায়ী।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "The word 'eloquent' means—",
+      "o": [
+        "a group trying to influence lawmakers",
+        "general agreement",
+        "fluent and persuasive in speech",
+        "a person with long experience"
+      ],
+      "a": 2,
+      "e": "eloquent = বাগ্মী (fluent and persuasive in speech)।",
+      "t": "eloquent → বাগ্মী।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "What is the meaning of 'ephemeral'?",
+      "o": [
+        "a person who flatters to gain advantage",
+        "careful in spending; thrifty",
+        "no longer in use",
+        "lasting a very short time"
+      ],
+      "a": 3,
+      "e": "ephemeral = ক্ষণস্থায়ী (lasting a very short time)।",
+      "t": "ephemeral → ক্ষণস্থায়ী।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Easy",
+      "q": "'frugal' most nearly means—",
+      "o": [
+        "careful in spending; thrifty",
+        "official control of what may be published",
+        "a sudden illegal seizure of power",
+        "self-government"
+      ],
+      "a": 0,
+      "e": "frugal = মিতব্যয়ী (careful in spending; thrifty)।",
+      "t": "frugal → মিতব্যয়ী।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "Semantic Duplicate — ৩৮-৪৬ (Antonym of 'frugal')",
+      "v": "যাচাইকৃত",
+      "reject": "Semantic Duplicate"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "The word 'gregarious' means—",
+      "o": [
+        "an expert judge of matters of taste",
+        "fond of company; sociable",
+        "fluent and persuasive in speech",
+        "sentimental longing for the past"
+      ],
+      "a": 1,
+      "e": "gregarious = সঙ্গপ্রিয়, মিশুক (fond of company; sociable)।",
+      "t": "gregarious → সঙ্গপ্রিয়, মিশুক।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "What is the meaning of 'hypocrite'?",
+      "o": [
+        "done secretly",
+        "the current holder of an office",
+        "a person who pretends to have virtues",
+        "certain to happen"
+      ],
+      "a": 2,
+      "e": "hypocrite = ভণ্ড (a person who pretends to have virtues)।",
+      "t": "hypocrite → ভণ্ড।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'inevitable' most nearly means—",
+      "o": [
+        "involving two parties or countries",
+        "to clear someone of blame",
+        "an official ban on trade",
+        "certain to happen"
+      ],
+      "a": 3,
+      "e": "inevitable = অনিবার্য (certain to happen)।",
+      "t": "inevitable → অনিবার্য।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Easy",
+      "q": "The word 'lethargic' means—",
+      "o": [
+        "sluggish and lacking energy",
+        "lasting a very short time",
+        "no longer in use",
+        "a person who flatters to gain advantage"
+      ],
+      "a": 0,
+      "e": "lethargic = অলস, নিস্তেজ (sluggish and lacking energy)।",
+      "t": "lethargic → অলস, নিস্তেজ।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "What is the meaning of 'meticulous'?",
+      "o": [
+        "to delay doing something",
+        "very careful about details",
+        "using more words than needed",
+        "general agreement"
+      ],
+      "a": 1,
+      "e": "meticulous = খুঁতখুঁতে, অতি যত্নশীল (very careful about details)।",
+      "t": "meticulous → খুঁতখুঁতে, অতি যত্নশীল।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'nostalgia' most nearly means—",
+      "o": [
+        "government by officials and fixed procedures",
+        "holding firmly to a purpose",
+        "sentimental longing for the past",
+        "protection given to a refugee"
+      ],
+      "a": 2,
+      "e": "nostalgia = অতীতের জন্য স্মৃতিকাতরতা (sentimental longing for the past)।",
+      "t": "nostalgia → অতীতের জন্য স্মৃতিকাতরতা।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "The word 'obsolete' means—",
+      "o": [
+        "government by officials and fixed procedures",
+        "suggesting that something bad will happen",
+        "holding firmly to a purpose",
+        "no longer in use"
+      ],
+      "a": 3,
+      "e": "obsolete = অপ্রচলিত, সেকেলে (no longer in use)।",
+      "t": "obsolete → অপ্রচলিত, সেকেলে।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Easy",
+      "q": "What is the meaning of 'ominous'?",
+      "o": [
+        "suggesting that something bad will happen",
+        "dislike or fear of foreigners",
+        "handing over an accused person to another country",
+        "a public declaration of policy"
+      ],
+      "a": 0,
+      "e": "ominous = অশুভ (suggesting that something bad will happen)।",
+      "t": "ominous → অশুভ।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'pedantic' most nearly means—",
+      "o": [
+        "an official pardon",
+        "too concerned with minor rules and book learning",
+        "kind and generous",
+        "careful in spending; thrifty"
+      ],
+      "a": 1,
+      "e": "pedantic = পাণ্ডিত্যের ভান করা, খুঁটিনাটি নিয়মে আচ্ছন্ন (too concerned with minor rules and book learning)।",
+      "t": "pedantic → পাণ্ডিত্যের ভান করা, খুঁটিনাটি নিয়মে আচ্ছন্ন।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "The word 'procrastinate' means—",
+      "o": [
+        "distrustful of people's motives",
+        "self-government",
+        "to delay doing something",
+        "certain to happen"
+      ],
+      "a": 2,
+      "e": "procrastinate = গড়িমসি করা (to delay doing something)।",
+      "t": "procrastinate → গড়িমসি করা।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "What is the meaning of 'prudent'?",
+      "o": [
+        "an official ban on trade",
+        "to delay doing something",
+        "to clear someone of blame",
+        "acting with care and good judgement"
+      ],
+      "a": 3,
+      "e": "prudent = বিচক্ষণ (acting with care and good judgement)।",
+      "t": "prudent → বিচক্ষণ।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Easy",
+      "q": "'redundant' most nearly means—",
+      "o": [
+        "no longer needed; superfluous",
+        "to clear someone of blame",
+        "an official ban on trade",
+        "involving two parties or countries"
+      ],
+      "a": 0,
+      "e": "redundant = অপ্রয়োজনীয়, বাহুল্য (no longer needed; superfluous)।",
+      "t": "redundant → অপ্রয়োজনীয়, বাহুল্য।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "The word 'resilient' means—",
+      "o": [
+        "the right to reject a decision",
+        "able to recover quickly from difficulty",
+        "the minimum number of members needed for a meeting",
+        "frank and honest"
+      ],
+      "a": 1,
+      "e": "resilient = দ্রুত সামলে ওঠার ক্ষমতাসম্পন্ন (able to recover quickly from difficulty)।",
+      "t": "resilient → দ্রুত সামলে ওঠার ক্ষমতাসম্পন্ন।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "What is the meaning of 'sycophant'?",
+      "o": [
+        "hardworking and careful",
+        "a person with long experience",
+        "a person who flatters to gain advantage",
+        "sluggish and lacking energy"
+      ],
+      "a": 2,
+      "e": "sycophant = চাটুকার, তোষামোদকারী (a person who flatters to gain advantage)।",
+      "t": "sycophant → চাটুকার, তোষামোদকারী।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'tenacious' most nearly means—",
+      "o": [
+        "a person with long experience",
+        "general agreement",
+        "a group trying to influence lawmakers",
+        "holding firmly to a purpose"
+      ],
+      "a": 3,
+      "e": "tenacious = নাছোড়বান্দা, দৃঢ়প্রতিজ্ঞ (holding firmly to a purpose)।",
+      "t": "tenacious → নাছোড়বান্দা, দৃঢ়প্রতিজ্ঞ।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Easy",
+      "q": "The word 'ubiquitous' means—",
+      "o": [
+        "present everywhere",
+        "handing over an accused person to another country",
+        "a public declaration of policy",
+        "having more than one possible meaning"
+      ],
+      "a": 0,
+      "e": "ubiquitous = সর্বব্যাপী (present everywhere)।",
+      "t": "ubiquitous → সর্বব্যাপী।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "Semantic Duplicate — ৪৬-৬৪ ('Ubiquitous'-এর সমার্থক)",
+      "v": "যাচাইকৃত",
+      "reject": "Semantic Duplicate"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "What is the meaning of 'verbose'?",
+      "o": [
+        "fluent and persuasive in speech",
+        "using more words than needed",
+        "very careful about details",
+        "no longer needed; superfluous"
+      ],
+      "a": 1,
+      "e": "verbose = বাগাড়ম্বরপূর্ণ (using more words than needed)।",
+      "t": "verbose → বাগাড়ম্বরপূর্ণ।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "Semantic Duplicate — ১৪-৯৬, ৩৮-৬১, ৪৩-৪৭ (A speech full of too many words = verbose)",
+      "v": "যাচাইকৃত",
+      "reject": "Semantic Duplicate"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'vindicate' most nearly means—",
+      "o": [
+        "to delay doing something",
+        "certain to happen",
+        "to clear someone of blame",
+        "using more words than needed"
+      ],
+      "a": 2,
+      "e": "vindicate = নির্দোষ প্রমাণ করা (to clear someone of blame)।",
+      "t": "vindicate → নির্দোষ প্রমাণ করা।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "The word 'xenophobia' means—",
+      "o": [
+        "frank and honest",
+        "the right to reject a decision",
+        "the minimum number of members needed for a meeting",
+        "dislike or fear of foreigners"
+      ],
+      "a": 3,
+      "e": "xenophobia = বিদেশিভীতি/বিদেশিবিদ্বেষ (dislike or fear of foreigners)।",
+      "t": "xenophobia → বিদেশিভীতি/বিদেশিবিদ্বেষ।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Easy",
+      "q": "What is the meaning of 'zealous'?",
+      "o": [
+        "full of eager enthusiasm",
+        "acting with care and good judgement",
+        "to clear someone of blame",
+        "handing over an accused person to another country"
+      ],
+      "a": 0,
+      "e": "zealous = উৎসাহী, উদ্যমী (full of eager enthusiasm)।",
+      "t": "zealous → উৎসাহী, উদ্যমী।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'anonymous' most nearly means—",
+      "o": [
+        "sentimental longing for the past",
+        "of unknown name or authorship",
+        "able to recover quickly from difficulty",
+        "full of eager enthusiasm"
+      ],
+      "a": 1,
+      "e": "anonymous = নামহীন, বেনামি (of unknown name or authorship)।",
+      "t": "anonymous → নামহীন, বেনামি।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "The word 'bureaucracy' means—",
+      "o": [
+        "fluent and persuasive in speech",
+        "an expert judge of matters of taste",
+        "government by officials and fixed procedures",
+        "very careful about details"
+      ],
+      "a": 2,
+      "e": "bureaucracy = আমলাতন্ত্র (government by officials and fixed procedures)।",
+      "t": "bureaucracy → আমলাতন্ত্র।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "What is the meaning of 'censorship'?",
+      "o": [
+        "acting with care and good judgement",
+        "hardworking and careful",
+        "sluggish and lacking energy",
+        "official control of what may be published"
+      ],
+      "a": 3,
+      "e": "censorship = নিবারণ/সেন্সর ব্যবস্থা (official control of what may be published)।",
+      "t": "censorship → নিবারণ/সেন্সর ব্যবস্থা।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Easy",
+      "q": "'consensus' most nearly means—",
+      "o": [
+        "general agreement",
+        "fluent and persuasive in speech",
+        "very careful about details",
+        "no longer needed; superfluous"
+      ],
+      "a": 0,
+      "e": "consensus = সর্বসম্মতি/মতৈক্য (general agreement)।",
+      "t": "consensus → সর্বসম্মতি/মতৈক্য।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "The word 'embargo' means—",
+      "o": [
+        "full of eager enthusiasm",
+        "an official ban on trade",
+        "the right to reject a decision",
+        "the minimum number of members needed for a meeting"
+      ],
+      "a": 1,
+      "e": "embargo = বাণিজ্য নিষেধাজ্ঞা (an official ban on trade)।",
+      "t": "embargo → বাণিজ্য নিষেধাজ্ঞা।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "What is the meaning of 'extradition'?",
+      "o": [
+        "dislike or fear of foreigners",
+        "no longer needed; superfluous",
+        "handing over an accused person to another country",
+        "a general rise in prices"
+      ],
+      "a": 2,
+      "e": "extradition = বন্দি প্রত্যর্পণ (handing over an accused person to another country)।",
+      "t": "extradition → বন্দি প্রত্যর্পণ।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'inflation' most nearly means—",
+      "o": [
+        "a group trying to influence lawmakers",
+        "present everywhere",
+        "official control of what may be published",
+        "a general rise in prices"
+      ],
+      "a": 3,
+      "e": "inflation = মুদ্রাস্ফীতি (a general rise in prices)।",
+      "t": "inflation → মুদ্রাস্ফীতি।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Easy",
+      "q": "The word 'veto' means—",
+      "o": [
+        "the right to reject a decision",
+        "holding firmly to a purpose",
+        "government by officials and fixed procedures",
+        "a sudden illegal seizure of power"
+      ],
+      "a": 0,
+      "e": "veto = নাকচ করার ক্ষমতা (the right to reject a decision)।",
+      "t": "veto → নাকচ করার ক্ষমতা।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "What is the meaning of 'asylum'?",
+      "o": [
+        "fond of company; sociable",
+        "protection given to a refugee",
+        "suggesting that something bad will happen",
+        "holding firmly to a purpose"
+      ],
+      "a": 1,
+      "e": "asylum = রাজনৈতিক আশ্রয় (protection given to a refugee)।",
+      "t": "asylum → রাজনৈতিক আশ্রয়।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'coup' most nearly means—",
+      "o": [
+        "holding firmly to a purpose",
+        "suggesting that something bad will happen",
+        "a sudden illegal seizure of power",
+        "government by officials and fixed procedures"
+      ],
+      "a": 2,
+      "e": "coup = অভ্যুত্থান (a sudden illegal seizure of power)।",
+      "t": "coup → অভ্যুত্থান।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "The word 'lobby' means—",
+      "o": [
+        "an official ban on trade",
+        "acting with care and good judgement",
+        "to clear someone of blame",
+        "a group trying to influence lawmakers"
+      ],
+      "a": 3,
+      "e": "lobby = প্রভাব খাটানো গোষ্ঠী (a group trying to influence lawmakers)।",
+      "t": "lobby → প্রভাব খাটানো গোষ্ঠী।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Easy",
+      "q": "What is the meaning of 'bilateral'?",
+      "o": [
+        "involving two parties or countries",
+        "distrustful of people's motives",
+        "certain to happen",
+        "to delay doing something"
+      ],
+      "a": 0,
+      "e": "bilateral = দ্বিপাক্ষিক (involving two parties or countries)।",
+      "t": "bilateral → দ্বিপাক্ষিক।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'manifesto' most nearly means—",
+      "o": [
+        "to clear someone of blame",
+        "a public declaration of policy",
+        "an official ban on trade",
+        "involving two parties or countries"
+      ],
+      "a": 1,
+      "e": "manifesto = ইশতেহার (a public declaration of policy)।",
+      "t": "manifesto → ইশতেহার।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "The word 'amnesty' means—",
+      "o": [
+        "present everywhere",
+        "too concerned with minor rules and book learning",
+        "an official pardon",
+        "official control of what may be published"
+      ],
+      "a": 2,
+      "e": "amnesty = সাধারণ ক্ষমা (an official pardon)।",
+      "t": "amnesty → সাধারণ ক্ষমা।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "What is the meaning of 'quorum'?",
+      "o": [
+        "protection given to a refugee",
+        "holding firmly to a purpose",
+        "government by officials and fixed procedures",
+        "the minimum number of members needed for a meeting"
+      ],
+      "a": 3,
+      "e": "quorum = কোরাম, ন্যূনতম উপস্থিতি (the minimum number of members needed for a meeting)।",
+      "t": "quorum → কোরাম, ন্যূনতম উপস্থিতি।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Easy",
+      "q": "'incumbent' most nearly means—",
+      "o": [
+        "the current holder of an office",
+        "using more words than needed",
+        "general agreement",
+        "a group trying to influence lawmakers"
+      ],
+      "a": 0,
+      "e": "incumbent = পদে আসীন ব্যক্তি (the current holder of an office)।",
+      "t": "incumbent → পদে আসীন ব্যক্তি।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "The word 'autonomy' means—",
+      "o": [
+        "an expert judge of matters of taste",
+        "self-government",
+        "fluent and persuasive in speech",
+        "very careful about details"
+      ],
+      "a": 1,
+      "e": "autonomy = স্বায়ত্তশাসন (self-government)।",
+      "t": "autonomy → স্বায়ত্তশাসন।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "What is the meaning of 'veteran'?",
+      "o": [
+        "sluggish and lacking energy",
+        "hardworking and careful",
+        "a person with long experience",
+        "acting with care and good judgement"
+      ],
+      "a": 2,
+      "e": "veteran = অভিজ্ঞ, প্রবীণ (a person with long experience)।",
+      "t": "veteran → অভিজ্ঞ, প্রবীণ।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'connoisseur' most nearly means—",
+      "o": [
+        "having more than one possible meaning",
+        "an official ban on trade",
+        "involving two parties or countries",
+        "an expert judge of matters of taste"
+      ],
+      "a": 3,
+      "e": "connoisseur = রসজ্ঞ, সমঝদার (an expert judge of matters of taste)।",
+      "t": "connoisseur → রসজ্ঞ, সমঝদার।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "'The minister's speech was full of rhetoric.' — Here 'rhetoric' means—",
+      "o": [
+        "language meant to persuade, often insincere",
+        "exact statistics",
+        "rude remarks",
+        "historical facts"
+      ],
+      "a": 0,
+      "e": "rhetoric = বক্তৃতার কলাকৌশল, প্রায়ই ফাঁপা অলংকৃত ভাষা।",
+      "t": "rhetoric → বক্তৃতার কলাকৌশল, প্রায়ই ফাঁপা অলংকৃত ভাষা।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'The teacher gave a lucid explanation of the theory.' — Here 'lucid' means—",
+      "o": [
+        "long and boring",
+        "clear and easy to understand",
+        "confusing",
+        "brief but wrong"
+      ],
+      "a": 1,
+      "e": "lucid = স্পষ্ট, সহজবোধ্য।",
+      "t": "lucid → স্পষ্ট, সহজবোধ্য।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'The meeting was adjourned till Monday.' — Here 'adjourned' means—",
+      "o": [
+        "concluded",
+        "cancelled forever",
+        "postponed",
+        "started"
+      ],
+      "a": 2,
+      "e": "adjourn = মুলতবি করা।",
+      "t": "adjourned → মুলতবি করা।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "'The committee's decision was unanimous.' — Here 'unanimous' means—",
+      "o": [
+        "made in haste",
+        "opposed by all",
+        "taken in secret",
+        "agreed by everyone"
+      ],
+      "a": 3,
+      "e": "unanimous = সর্বসম্মত।",
+      "t": "unanimous → সর্বসম্মত।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'His sarcastic comment hurt her feelings.' — Here 'sarcastic' means—",
+      "o": [
+        "mocking",
+        "polite",
+        "encouraging",
+        "careless"
+      ],
+      "a": 0,
+      "e": "sarcastic = বিদ্রূপাত্মক।",
+      "t": "sarcastic → বিদ্রূপাত্মক।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'The new evidence is conclusive.' — Here 'conclusive' means—",
+      "o": [
+        "doubtful",
+        "decisive and convincing",
+        "partial",
+        "irrelevant"
+      ],
+      "a": 1,
+      "e": "conclusive = চূড়ান্ত, নিষ্পত্তিমূলক।",
+      "t": "conclusive → চূড়ান্ত, নিষ্পত্তিমূলক।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "'He comes from an affluent family.' — Here 'affluent' means—",
+      "o": [
+        "educated",
+        "large",
+        "wealthy",
+        "religious"
+      ],
+      "a": 2,
+      "e": "affluent = সচ্ছল, ধনী।",
+      "t": "affluent → সচ্ছল, ধনী।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'The incessant rain flooded the streets.' — Here 'incessant' means—",
+      "o": [
+        "seasonal",
+        "light",
+        "unexpected",
+        "continuing without stopping"
+      ],
+      "a": 3,
+      "e": "incessant = অবিরাম।",
+      "t": "incessant → অবিরাম।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'The engineers found the plan feasible.' — Here 'feasible' means—",
+      "o": [
+        "possible to carry out",
+        "expensive",
+        "dangerous",
+        "outdated"
+      ],
+      "a": 0,
+      "e": "feasible = বাস্তবায়নযোগ্য।",
+      "t": "feasible → বাস্তবায়নযোগ্য।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "'His erratic behaviour worried his friends.' — Here 'erratic' means—",
+      "o": [
+        "gentle",
+        "unpredictable",
+        "consistent",
+        "cheerful"
+      ],
+      "a": 1,
+      "e": "erratic = খামখেয়ালি, অনিয়মিত।",
+      "t": "erratic → খামখেয়ালি, অনিয়মিত।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'Climbing the hill was an arduous task.' — Here 'arduous' means—",
+      "o": [
+        "pleasant",
+        "easy",
+        "very difficult and tiring",
+        "quick"
+      ],
+      "a": 2,
+      "e": "arduous = কষ্টসাধ্য।",
+      "t": "arduous → কষ্টসাধ্য।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'They threw a lavish party for the guests.' — Here 'lavish' means—",
+      "o": [
+        "boring",
+        "small and simple",
+        "secret",
+        "extravagant and generous"
+      ],
+      "a": 3,
+      "e": "lavish = জাঁকজমকপূর্ণ, অমিতব্যয়ী।",
+      "t": "lavish → জাঁকজমকপূর্ণ, অমিতব্যয়ী।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "'We have only a tentative plan for the trip.' — Here 'tentative' means—",
+      "o": [
+        "not yet final",
+        "detailed",
+        "approved",
+        "cancelled"
+      ],
+      "a": 0,
+      "e": "tentative = অস্থায়ী, প্রাথমিক।",
+      "t": "tentative → অস্থায়ী, প্রাথমিক।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'The war left the people with a bleak future.' — Here 'bleak' means—",
+      "o": [
+        "bright",
+        "hopeless",
+        "wealthy",
+        "peaceful"
+      ],
+      "a": 1,
+      "e": "bleak = আশাহীন, অন্ধকারাচ্ছন্ন।",
+      "t": "bleak → আশাহীন, অন্ধকারাচ্ছন্ন।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'The rumour turned out to be unfounded.' — Here 'unfounded' means—",
+      "o": [
+        "widely known",
+        "true",
+        "without any basis",
+        "amusing"
+      ],
+      "a": 2,
+      "e": "unfounded = ভিত্তিহীন।",
+      "t": "unfounded → ভিত্তিহীন।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "'She was reluctant to speak in public.' — Here 'reluctant' means—",
+      "o": [
+        "afraid to listen",
+        "eager",
+        "trained",
+        "unwilling"
+      ],
+      "a": 3,
+      "e": "reluctant = অনিচ্ছুক।",
+      "t": "reluctant → অনিচ্ছুক।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'Don't waste time on such trivial matters.' — Here 'trivial' means—",
+      "o": [
+        "unimportant",
+        "serious",
+        "urgent",
+        "legal"
+      ],
+      "a": 0,
+      "e": "trivial = তুচ্ছ।",
+      "t": "trivial → তুচ্ছ।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'The government repealed the old law.' — Here 'repealed' means—",
+      "o": [
+        "passed",
+        "cancelled officially",
+        "amended slightly",
+        "translated"
+      ],
+      "a": 1,
+      "e": "repeal = (আইন) রদ করা।",
+      "t": "repealed → (আইন) রদ করা।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "'The court acquitted the accused.' — Here 'acquitted' means—",
+      "o": [
+        "arrested",
+        "sentenced",
+        "declared not guilty",
+        "fined"
+      ],
+      "a": 2,
+      "e": "acquit = খালাস দেওয়া।",
+      "t": "acquitted → খালাস দেওয়া।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "'Food prices soared after the flood.' — Here 'soared' means—",
+      "o": [
+        "were fixed",
+        "fell",
+        "stayed the same",
+        "rose sharply"
+      ],
+      "a": 3,
+      "e": "soar = হু হু করে বাড়া।",
+      "t": "soared → হু হু করে বাড়া।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "Choose the appropriate word: 'The doctor ___ a cough syrup for the child.'",
+      "o": [
+        "prescribed",
+        "proscribed",
+        "described",
+        "subscribed"
+      ],
+      "a": 0,
+      "e": "prescribe = (ওষুধ) ব্যবস্থাপত্রে লেখা; proscribe = নিষিদ্ধ করা।",
+      "t": "prescribed — prescribe = (ওষুধ) ব্যবস্থাপত্রে লেখা",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "Choose the appropriate word: 'The new tax will ___ every citizen.'",
+      "o": [
+        "effect",
+        "affect",
+        "afflict",
+        "infect"
+      ],
+      "a": 1,
+      "e": "affect (verb) = প্রভাবিত করা; effect সাধারণত noun (ফল)।",
+      "t": "affect — affect (verb) = প্রভাবিত করা",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "Choose the appropriate word: 'The medicine had an immediate ___ on the patient.'",
+      "o": [
+        "affection",
+        "affect",
+        "effect",
+        "efficacy of"
+      ],
+      "a": 2,
+      "e": "effect (noun) = ফল, প্রভাব।",
+      "t": "effect — effect (noun) = ফল, প্রভাব।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "Choose the appropriate word: 'The thief ___ the police for three days.'",
+      "o": [
+        "illuded",
+        "alluded",
+        "deluded",
+        "eluded"
+      ],
+      "a": 3,
+      "e": "elude = এড়িয়ে যাওয়া; allude = ইঙ্গিত করা।",
+      "t": "eluded — elude = এড়িয়ে যাওয়া",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "Choose the appropriate word: 'In his speech he ___ to the events of 1971.'",
+      "o": [
+        "alluded",
+        "eluded",
+        "elided",
+        "deluded"
+      ],
+      "a": 0,
+      "e": "allude to = ইঙ্গিত/উল্লেখ করা।",
+      "t": "alluded — allude to = ইঙ্গিত/উল্লেখ করা।",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "Choose the appropriate word: 'The country is facing ___ danger of flood.'",
+      "o": [
+        "eminent",
+        "imminent",
+        "immanent",
+        "emanant"
+      ],
+      "a": 1,
+      "e": "imminent = আসন্ন; eminent = বিশিষ্ট।",
+      "t": "imminent — imminent = আসন্ন",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "Choose the appropriate word: 'The bus remained ___ at the traffic signal.'",
+      "o": [
+        "stational",
+        "stationery",
+        "stationary",
+        "stationed"
+      ],
+      "a": 2,
+      "e": "stationary = স্থির; stationery = লেখার সামগ্রী।",
+      "t": "stationary — stationary = স্থির",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "Choose the appropriate word: 'He is a man of strong ___.'",
+      "o": [
+        "princes",
+        "principals",
+        "principalities",
+        "principles"
+      ],
+      "a": 3,
+      "e": "principle = নীতি; principal = প্রধান/অধ্যক্ষ।",
+      "t": "principles — principle = নীতি",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "Choose the appropriate word: 'He sought legal ___ before signing the contract.'",
+      "o": [
+        "counsel",
+        "council",
+        "consul",
+        "cancel"
+      ],
+      "a": 0,
+      "e": "counsel = পরামর্শ; council = পরিষদ।",
+      "t": "counsel — counsel = পরামর্শ",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "Choose the appropriate word: 'All ___ must wear their ID cards in the office.'",
+      "o": [
+        "personal",
+        "personnel",
+        "persona",
+        "personals"
+      ],
+      "a": 1,
+      "e": "personnel = কর্মীবৃন্দ; personal = ব্যক্তিগত।",
+      "t": "personnel — personnel = কর্মীবৃন্দ",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Hard",
+      "q": "Choose the appropriate word: 'The engineer made an ___ device to save water.'",
+      "o": [
+        "indigenous",
+        "ingenuous",
+        "ingenious",
+        "ingenuine"
+      ],
+      "a": 2,
+      "e": "ingenious = উদ্ভাবনী; ingenuous = সরল।",
+      "t": "ingenious — ingenious = উদ্ভাবনী",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.MNG",
+      "d": "Medium",
+      "q": "Choose the appropriate word: 'His handwriting is so bad that it is almost ___.'",
+      "o": [
+        "eligible",
+        "ineligible",
+        "illegal",
+        "illegible"
+      ],
+      "a": 3,
+      "e": "illegible = পড়া যায় না এমন; ineligible = অযোগ্য।",
+      "t": "illegible — illegible = পড়া যায় না এমন",
+      "src": "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

@@ -1,0 +1,830 @@
+{
+  "batch": "Batch 14",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 02 (Tense & Right Form of Verbs), Lecture 03 (Subject-Verb Agreement)",
+  "subtopics": {
+    "EN.GR.VRB": {}
+  },
+  "questions": [
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'The number of students ___ increasing every year.'",
+      "o": [
+        "is",
+        "are",
+        "were",
+        "have been"
+      ],
+      "a": 0,
+      "e": "the number of + plural noun → singular verb (সংখ্যাটি একটি)।",
+      "t": "The number of = singular।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'A number of students ___ absent today.'",
+      "o": [
+        "is",
+        "are",
+        "was",
+        "has been"
+      ],
+      "a": 1,
+      "e": "a number of (অনেক) + plural noun → plural verb।",
+      "t": "A number of = plural।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'Bread and butter ___ my favourite breakfast.'",
+      "o": [
+        "were",
+        "are",
+        "is",
+        "have been"
+      ],
+      "a": 2,
+      "e": "and যুক্ত দুটি noun একটি ধারণা বোঝালে singular verb।",
+      "t": "একক ধারণা = singular।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'Each of the boys ___ a prize.'",
+      "o": [
+        "were receiving",
+        "have received",
+        "are receiving",
+        "has received"
+      ],
+      "a": 3,
+      "e": "each of + plural noun → singular verb।",
+      "t": "Each of = singular।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "Semantic Duplicate — ১০-২২ (Each of the three boys got a prize): একই নিয়ম ও প্রায় একই বাক্য",
+      "v": "যাচাইকৃত",
+      "reject": "Semantic Duplicate"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'Ten kilometres ___ a long distance to walk.'",
+      "o": [
+        "is",
+        "are",
+        "were",
+        "have been"
+      ],
+      "a": 0,
+      "e": "দূরত্ব/অর্থ/সময়ের পরিমাণ একক হিসেবে ধরলে singular verb।",
+      "t": "পরিমাণ = singular।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "Fill in the blank with the correct verb form: 'The committee ___ divided in their opinions.'",
+      "o": [
+        "is",
+        "are",
+        "was",
+        "has"
+      ],
+      "a": 1,
+      "e": "collective noun-এর সদস্যরা আলাদাভাবে মত দিলে plural verb (their দেখে বোঝা যায়)।",
+      "t": "সদস্য আলাদা = plural।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "Fill in the blank with the correct verb form: 'Many a man ___ lost his life in the flood.'",
+      "o": [
+        "are",
+        "have",
+        "has",
+        "were"
+      ],
+      "a": 2,
+      "e": "many a + singular noun → singular verb।",
+      "t": "Many a = singular।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'Measles ___ a contagious disease.'",
+      "o": [
+        "have been",
+        "are",
+        "were",
+        "is"
+      ],
+      "a": 3,
+      "e": "রোগের নাম (measles, mumps) দেখতে plural হলেও singular।",
+      "t": "রোগের নাম = singular।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'The rich ___ not always happy.'",
+      "o": [
+        "are",
+        "is",
+        "was",
+        "has"
+      ],
+      "a": 0,
+      "e": "the + adjective = শ্রেণিবাচক plural noun → plural verb।",
+      "t": "the rich = plural।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "Near Duplicate — ১১-৩১ (The rich are not always happy): প্রায় অভিন্ন বাক্য ও নিয়ম",
+      "v": "যাচাইকৃত",
+      "reject": "Near Duplicate"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'Neither of the answers ___ correct.'",
+      "o": [
+        "are",
+        "is",
+        "were",
+        "have been"
+      ],
+      "a": 1,
+      "e": "neither of / either of + plural noun → singular verb।",
+      "t": "Neither of = singular।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "Fill in the blank with the correct verb form: 'The poet and philosopher ___ dead.'",
+      "o": [
+        "were",
+        "are",
+        "is",
+        "have been"
+      ],
+      "a": 2,
+      "e": "একটি article (The) থাকায় একই ব্যক্তি — singular verb।",
+      "t": "এক article = এক ব্যক্তি।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "Fill in the blank with the correct verb form: 'He is one of the boys who ___ in the hall.'",
+      "o": [
+        "has been",
+        "is",
+        "was",
+        "are"
+      ],
+      "a": 3,
+      "e": "relative pronoun (who) তার antecedent (boys, plural)-এর সঙ্গে verb মেলায়।",
+      "t": "who → boys → are।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'The jury ___ given its verdict.'",
+      "o": [
+        "has",
+        "have",
+        "are",
+        "were"
+      ],
+      "a": 0,
+      "e": "collective noun এক একক হিসেবে কাজ করলে (its) singular verb।",
+      "t": "একক (its) = singular।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Easy",
+      "q": "Fill in the blank with the correct verb form: 'There ___ many reasons for his failure.'",
+      "o": [
+        "is",
+        "are",
+        "was",
+        "has been"
+      ],
+      "a": 1,
+      "e": "there + be-এর পরের noun (reasons) অনুযায়ী verb।",
+      "t": "There + plural noun = are।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'A lot of money ___ wasted on the project.'",
+      "o": [
+        "have been",
+        "were",
+        "was",
+        "are"
+      ],
+      "a": 2,
+      "e": "a lot of + uncountable noun → singular verb।",
+      "t": "a lot of money = singular।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'The furniture ___ been damaged in the fire.'",
+      "o": [
+        "were",
+        "have",
+        "are",
+        "has"
+      ],
+      "a": 3,
+      "e": "furniture uncountable → singular verb।",
+      "t": "furniture = singular।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'Each and every student ___ to wear the uniform.'",
+      "o": [
+        "has",
+        "have",
+        "are",
+        "were"
+      ],
+      "a": 0,
+      "e": "each and every + singular noun → singular verb।",
+      "t": "each and every = singular।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'The majority of the voters ___ in favour of the proposal.'",
+      "o": [
+        "is",
+        "are",
+        "has been",
+        "was being"
+      ],
+      "a": 1,
+      "e": "majority of + plural noun → সাধারণত plural verb।",
+      "t": "majority of + plural = plural।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'It ___ raining for two hours now.'",
+      "o": [
+        "was",
+        "is",
+        "has been",
+        "had been"
+      ],
+      "a": 2,
+      "e": "কাজ অতীতে শুরু হয়ে এখনো চলছে — present perfect continuous।",
+      "t": "for … now = has been + V-ing।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'By next year she ___ her degree.'",
+      "o": [
+        "completes",
+        "will complete",
+        "has completed",
+        "will have completed"
+      ],
+      "a": 3,
+      "e": "নির্দিষ্ট ভবিষ্যৎ সময়ের আগে কাজ শেষ — future perfect।",
+      "t": "By + future = will have + pp।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'I ___ TV when the light went out.'",
+      "o": [
+        "was watching",
+        "watched",
+        "am watching",
+        "had watched"
+      ],
+      "a": 0,
+      "e": "চলমান অতীত কাজের মধ্যে অন্য ঘটনা — past continuous।",
+      "t": "চলমান কাজ + বাধা = was V-ing।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Easy",
+      "q": "Fill in the blank with the correct verb form: 'He ___ to Chattogram last week.'",
+      "o": [
+        "has gone",
+        "went",
+        "goes",
+        "had gone"
+      ],
+      "a": 1,
+      "e": "নির্দিষ্ট অতীত সময় (last week) — past simple; present perfect নয়।",
+      "t": "last week = past simple।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'The train ___ at 6 p.m. tomorrow.'",
+      "o": [
+        "has left",
+        "left",
+        "leaves",
+        "had left"
+      ],
+      "a": 2,
+      "e": "সময়সূচিনির্ভর ভবিষ্যৎ ঘটনায় present simple।",
+      "t": "timetable = present simple।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Easy",
+      "q": "Fill in the blank with the correct verb form: 'Look! The baby ___.'",
+      "o": [
+        "has cried",
+        "cries",
+        "cried",
+        "is crying"
+      ],
+      "a": 3,
+      "e": "Look!/Listen! — এই মুহূর্তের কাজ: present continuous।",
+      "t": "Look! = is V-ing।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'I ___ my keys; I can't find them anywhere.'",
+      "o": [
+        "have lost",
+        "lost",
+        "had lost",
+        "was losing"
+      ],
+      "a": 0,
+      "e": "অতীতের কাজের ফল বর্তমানে — present perfect।",
+      "t": "ফল এখন = have + pp।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Easy",
+      "q": "Fill in the blank with the correct verb form: 'He usually ___ to school by bus.'",
+      "o": [
+        "went",
+        "goes",
+        "is going",
+        "has gone"
+      ],
+      "a": 1,
+      "e": "অভ্যাস (usually) — present simple।",
+      "t": "usually = present simple।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "Fill in the blank with the correct verb form: 'Hardly had he arrived when it ___ to rain.'",
+      "o": [
+        "had begun",
+        "begins",
+        "began",
+        "has begun"
+      ],
+      "a": 2,
+      "e": "Hardly had + subject + pp … when + past simple।",
+      "t": "Hardly had … when + V2।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Easy",
+      "q": "Fill in the blank with the correct verb form: 'Did you ___ the news?'",
+      "o": [
+        "hears",
+        "heard",
+        "hearing",
+        "hear"
+      ],
+      "a": 3,
+      "e": "did-এর পরে base form।",
+      "t": "did + V1।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "Fill in the blank with the correct verb form: 'She suggested that he ___ a doctor.'",
+      "o": [
+        "see",
+        "sees",
+        "saw",
+        "will see"
+      ],
+      "a": 0,
+      "e": "suggest/recommend/insist that-এর পরে subjunctive base form (should উহ্য)।",
+      "t": "suggest that + V1।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "Fill in the blank with the correct verb form: 'I would rather you ___ now.'",
+      "o": [
+        "leave",
+        "left",
+        "will leave",
+        "had leave"
+      ],
+      "a": 1,
+      "e": "would rather + subject + past form = বর্তমান/ভবিষ্যতের পছন্দ।",
+      "t": "would rather + S + V2।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'When I was young, I ___ swim in the river every day.'",
+      "o": [
+        "was used to",
+        "use to",
+        "used to",
+        "am used to"
+      ],
+      "a": 2,
+      "e": "অতীতের অভ্যাস: used to + V1।",
+      "t": "অতীত অভ্যাস = used to।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'He has ___ a letter to the editor.'",
+      "o": [
+        "writing",
+        "wrote",
+        "writed",
+        "written"
+      ],
+      "a": 3,
+      "e": "write–wrote–written; has-এর পরে past participle।",
+      "t": "has + V3।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'The bell has ___.'",
+      "o": [
+        "rung",
+        "rang",
+        "ringed",
+        "ring"
+      ],
+      "a": 0,
+      "e": "ring–rang–rung।",
+      "t": "rung।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'The sun ___ at six this morning.'",
+      "o": [
+        "raised",
+        "rose",
+        "rised",
+        "risen"
+      ],
+      "a": 1,
+      "e": "rise (intransitive)–rose–risen; raise (transitive)–raised।",
+      "t": "rise–rose–risen।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "Semantic Duplicate — ২৮-২৫ (The prices of rice are rising/raising): rise–raise পার্থক্যের একই নিয়ম",
+      "v": "যাচাইকৃত",
+      "reject": "Semantic Duplicate"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Easy",
+      "q": "Fill in the blank with the correct verb form: 'The old tree has ___ in the storm.'",
+      "o": [
+        "felled",
+        "fell",
+        "fallen",
+        "falled"
+      ],
+      "a": 2,
+      "e": "fall–fell–fallen; fell (কাটা)–felled আলাদা verb।",
+      "t": "fall–fell–fallen।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'The child has ___ across the pool.'",
+      "o": [
+        "swim",
+        "swam",
+        "swimmed",
+        "swum"
+      ],
+      "a": 3,
+      "e": "swim–swam–swum।",
+      "t": "swim–swam–swum।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "Fill in the blank with the correct verb form: 'The murderer was ___ at dawn.'",
+      "o": [
+        "hanged",
+        "hung",
+        "hang",
+        "hunged"
+      ],
+      "a": 0,
+      "e": "ফাঁসি অর্থে hang–hanged–hanged; ঝোলানো অর্থে hang–hung–hung।",
+      "t": "ফাঁসি = hanged।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "Semantic Duplicate — ১১-৩২ (He was hanged for murder), ৪৯-৯০ (hung/hanged): একই নিয়ম",
+      "v": "যাচাইকৃত",
+      "reject": "Semantic Duplicate"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "Fill in the blank with the correct verb form: 'He has ___ many hardships with patience.'",
+      "o": [
+        "born",
+        "borne",
+        "beared",
+        "bore"
+      ],
+      "a": 1,
+      "e": "bear (সহ্য করা)–bore–borne; born = জন্মগ্রহণ (be born)।",
+      "t": "সহ্য = borne।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'The bird has ___ away.'",
+      "o": [
+        "flied",
+        "flew",
+        "flown",
+        "flowed"
+      ],
+      "a": 2,
+      "e": "fly–flew–flown; flow–flowed–flowed।",
+      "t": "fly–flew–flown।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'She ___ the team to victory last season.'",
+      "o": [
+        "lad",
+        "lead",
+        "leaded",
+        "led"
+      ],
+      "a": 3,
+      "e": "lead–led–led।",
+      "t": "lead–led।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'Someone ___ my wallet on the bus yesterday.'",
+      "o": [
+        "stole",
+        "stolen",
+        "stealed",
+        "steals"
+      ],
+      "a": 0,
+      "e": "steal–stole–stolen; yesterday → past simple।",
+      "t": "steal–stole–stolen।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'It is 10 p.m.; he ___ have reached home by now.'",
+      "o": [
+        "need",
+        "must",
+        "ought",
+        "dare"
+      ],
+      "a": 1,
+      "e": "যৌক্তিক অনুমান (নিশ্চয়ই) — must have + pp।",
+      "t": "deduction = must have।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'You ___ to respect your elders.'",
+      "o": [
+        "should",
+        "must",
+        "ought",
+        "need"
+      ],
+      "a": 2,
+      "e": "ought-এর পরে to বসে; must/should-এর পরে নয়।",
+      "t": "ought TO।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'May you ___ long!'",
+      "o": [
+        "to live",
+        "lived",
+        "living",
+        "live"
+      ],
+      "a": 3,
+      "e": "শুভকামনায় May + subject + base form।",
+      "t": "May + S + V1।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'The cattle ___ grazing in the field.'",
+      "o": [
+        "are",
+        "is",
+        "was",
+        "has been"
+      ],
+      "a": 0,
+      "e": "cattle দেখতে singular হলেও সবসময় plural verb নেয়।",
+      "t": "cattle = plural।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'Politics ___ not a career for everyone.'",
+      "o": [
+        "are",
+        "is",
+        "were",
+        "have been"
+      ],
+      "a": 1,
+      "e": "বিষয়/ক্ষেত্র হিসেবে politics singular verb নেয়।",
+      "t": "politics (বিষয়) = singular।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'The ship ___ in the storm last night.'",
+      "o": [
+        "sinked",
+        "sunk",
+        "sank",
+        "sunken"
+      ],
+      "a": 2,
+      "e": "sink–sank–sunk; last night → past simple।",
+      "t": "sink–sank–sunk।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct verb form: 'He has ___ all the milk.'",
+      "o": [
+        "drunken",
+        "drank",
+        "drinked",
+        "drunk"
+      ],
+      "a": 3,
+      "e": "drink–drank–drunk; has-এর পরে past participle।",
+      "t": "drink–drank–drunk।",
+      "src": "Lecture 02–03 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

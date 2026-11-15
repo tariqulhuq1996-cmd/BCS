@@ -1,0 +1,26 @@
+{
+  "target": 1000,
+  "priorityTarget": {
+    "A": 289,
+    "B": 198,
+    "C": 282,
+    "D": 231
+  },
+  "historicalReference": 575,
+  "coverage": "MA.AR.ANU: বিগত 20টি (২০০-নম্বর যুগে)",
+  "generated": 36,
+  "exact": 0,
+  "semantic": 0,
+  "near": 0,
+  "verify": 0,
+  "qc": 0,
+  "accepted": 36,
+  "cumulative": 660,
+  "remaining": 340,
+  "supplementary": 0,
+  "cumByPriority": {
+    "A": 289,
+    "B": 198,
+    "C": 173
+  }
+}

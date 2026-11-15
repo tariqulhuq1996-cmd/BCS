@@ -1,0 +1,1218 @@
+{
+  "batch": "Batch 09",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 12–15 (Victorian Period, Characters, Quotations)",
+  "subtopics": {
+    "EN.LI.VIC": {}
+  },
+  "questions": [
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "The Victorian period is named after Queen Victoria, who reigned from—",
+      "o": [
+        "1558 to 1603",
+        "1798 to 1832",
+        "1837 to 1901",
+        "1901 to 1910"
+      ],
+      "a": 2,
+      "e": "রানি ভিক্টোরিয়ার রাজত্ব ১৮৩৭–১৯০১।",
+      "t": "১৮৩৭–১৯০১।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ১৬-৫৯-এ শতক (১৯শ) জিজ্ঞাসিত; এটি নির্দিষ্ট সময়সীমা (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "Tennyson became Poet Laureate in—",
+      "o": [
+        "1837",
+        "1843",
+        "1850",
+        "1870"
+      ],
+      "a": 2,
+      "e": "Wordsworth-এর মৃত্যুর পর ১৮৫০ সালে Tennyson Poet Laureate হন।",
+      "t": "Tennyson Laureate = ১৮৫০।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'The Lady of Shalott' was written by—",
+      "o": [
+        "Alfred Tennyson",
+        "Thomas Carlyle",
+        "Anne Brontë",
+        "Thomas Hardy"
+      ],
+      "a": 0,
+      "e": "শাপগ্রস্ত নারীকে নিয়ে Tennyson-এর আখ্যানকাব্য।",
+      "t": "The Lady of Shalott — Alfred Tennyson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Idylls of the King' was written by—",
+      "o": [
+        "George Eliot",
+        "Elizabeth Barrett Browning",
+        "Oscar Wilde",
+        "Alfred Tennyson"
+      ],
+      "a": 3,
+      "e": "রাজা আর্থারের কাহিনি নিয়ে Tennyson-এর কাব্যমালা।",
+      "t": "Idylls of the King — Alfred Tennyson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ৪০-৬৯-এ ‘Morte d'Arthur’-এর চরণ জিজ্ঞাসিত; এটি ভিন্ন গ্রন্থ (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Crossing the Bar' was written by—",
+      "o": [
+        "Alfred Tennyson",
+        "W. M. Thackeray",
+        "John Ruskin",
+        "Elizabeth Barrett Browning"
+      ],
+      "a": 0,
+      "e": "মৃত্যুকে সমুদ্রযাত্রার রূপকে দেখা Tennyson-এর কবিতা।",
+      "t": "Crossing the Bar — Alfred Tennyson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Break, Break, Break' was written by—",
+      "o": [
+        "Oscar Wilde",
+        "Alfred Tennyson",
+        "Wilkie Collins",
+        "Charles Dickens"
+      ],
+      "a": 1,
+      "e": "বন্ধু Hallam-এর মৃত্যুশোকে লেখা ছোট কবিতা।",
+      "t": "Break, Break, Break — Alfred Tennyson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Hard",
+      "q": "'The Lotos-Eaters' was written by—",
+      "o": [
+        "Elizabeth Barrett Browning",
+        "John Ruskin",
+        "George Eliot",
+        "Alfred Tennyson"
+      ],
+      "a": 3,
+      "e": "Ulysses-এর নাবিকদের অলস স্বপ্নময় দেশ নিয়ে কবিতা।",
+      "t": "The Lotos-Eaters — Alfred Tennyson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Hard",
+      "q": "'Enoch Arden' was written by—",
+      "o": [
+        "Alfred Tennyson",
+        "Christina Rossetti",
+        "Robert Browning",
+        "Charlotte Brontë"
+      ],
+      "a": 0,
+      "e": "দীর্ঘদিন পর ঘরে ফেরা নাবিকের কাহিনি।",
+      "t": "Enoch Arden — Alfred Tennyson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "''Tis better to have loved and lost / Than never to have loved at all' — These words were written by—",
+      "o": [
+        "Elizabeth Gaskell",
+        "Alfred Tennyson",
+        "Christina Rossetti",
+        "Robert Browning"
+      ],
+      "a": 1,
+      "e": "In Memoriam A.H.H.-এর বিখ্যাত চরণ।",
+      "t": "'Tis better to have loved an… — Alfred Tennyson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Hard",
+      "q": "'Nature, red in tooth and claw' — These words were written by—",
+      "o": [
+        "Anne Brontë",
+        "Thomas Carlyle",
+        "Alfred Tennyson",
+        "Thomas Hardy"
+      ],
+      "a": 2,
+      "e": "In Memoriam-এ প্রকৃতির নির্মমতার চিত্র।",
+      "t": "Nature, red in tooth and cla… — Alfred Tennyson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'My Last Duchess' is a famous example of the—",
+      "o": [
+        "ballad",
+        "sonnet sequence",
+        "elegy",
+        "dramatic monologue"
+      ],
+      "a": 3,
+      "e": "Robert Browning-এর My Last Duchess — dramatic monologue-এর শ্রেষ্ঠ উদাহরণ।",
+      "t": "Browning = dramatic monologue।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Easy",
+      "q": "'The Pied Piper of Hamelin' was written by—",
+      "o": [
+        "Robert Browning",
+        "Thomas Hardy",
+        "R. L. Stevenson",
+        "Lewis Carroll"
+      ],
+      "a": 0,
+      "e": "বাঁশিওয়ালার লোককাহিনি নিয়ে Browning-এর কবিতা।",
+      "t": "The Pied Piper of Hamelin — Robert Browning।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Grow old along with me! / The best is yet to be' — These words were written by—",
+      "o": [
+        "W. M. Thackeray",
+        "Robert Browning",
+        "John Ruskin",
+        "Elizabeth Barrett Browning"
+      ],
+      "a": 1,
+      "e": "Browning-এর ‘Rabbi Ben Ezra’।",
+      "t": "Grow old along with me! / Th… — Robert Browning।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Hard",
+      "q": "'The Ring and the Book' was written by—",
+      "o": [
+        "Oscar Wilde",
+        "George Eliot",
+        "Robert Browning",
+        "Wilkie Collins"
+      ],
+      "a": 2,
+      "e": "রোমের এক হত্যা মামলা নিয়ে Browning-এর দীর্ঘ কাব্য।",
+      "t": "The Ring and the Book — Robert Browning।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'God's in His heaven — All's right with the world!' — These words were written by—",
+      "o": [
+        "Matthew Arnold",
+        "R. L. Stevenson",
+        "Lewis Carroll",
+        "Robert Browning"
+      ],
+      "a": 3,
+      "e": "‘Pippa Passes’-এ Pippa-র গান।",
+      "t": "God's in His heaven — All's … — Robert Browning।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Home-Thoughts, from Abroad' was written by—",
+      "o": [
+        "Robert Browning",
+        "Elizabeth Gaskell",
+        "Christina Rossetti",
+        "Alfred Tennyson"
+      ],
+      "a": 0,
+      "e": "‘Oh, to be in England / Now that April's there’ — Browning।",
+      "t": "Home-Thoughts, from Abroad — Robert Browning।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Sonnets from the Portuguese' was written by—",
+      "o": [
+        "George Eliot",
+        "Elizabeth Barrett Browning",
+        "Oscar Wilde",
+        "Wilkie Collins"
+      ],
+      "a": 1,
+      "e": "স্বামী Robert Browning-এর প্রতি প্রেমের সনেটমালা।",
+      "t": "Sonnets from the Portuguese — Elizabeth Barrett Browning।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'How do I love thee? Let me count the ways.' — These words were written by—",
+      "o": [
+        "George Eliot",
+        "Alfred Tennyson",
+        "Elizabeth Barrett Browning",
+        "Oscar Wilde"
+      ],
+      "a": 2,
+      "e": "Sonnets from the Portuguese-এর Sonnet 43।",
+      "t": "How do I love thee? Let me c… — Elizabeth Barrett Browning।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'The Scholar-Gipsy' was written by—",
+      "o": [
+        "Robert Browning",
+        "R. L. Stevenson",
+        "Lewis Carroll",
+        "Matthew Arnold"
+      ],
+      "a": 3,
+      "e": "অক্সফোর্ডের কিংবদন্তি নিয়ে Arnold-এর কবিতা।",
+      "t": "The Scholar-Gipsy — Matthew Arnold।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ৪৭-৯৯, ৫০-৫৩-এ Arnold-এর Thyrsis ও Dover Beach জিজ্ঞাসিত; এটি ভিন্ন কবিতা (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Culture and Anarchy' was written by—",
+      "o": [
+        "Matthew Arnold",
+        "Charles Dickens",
+        "Elizabeth Gaskell",
+        "Christina Rossetti"
+      ],
+      "a": 0,
+      "e": "সমাজ-সংস্কৃতি নিয়ে Arnold-এর গদ্যগ্রন্থ (১৮৬৯)।",
+      "t": "Culture and Anarchy — Matthew Arnold।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Hard",
+      "q": "'Sohrab and Rustum' was written by—",
+      "o": [
+        "Charles Dickens",
+        "Matthew Arnold",
+        "Elizabeth Gaskell",
+        "Christina Rossetti"
+      ],
+      "a": 1,
+      "e": "ফেরদৌসীর শাহনামার কাহিনি অবলম্বনে Arnold-এর আখ্যানকাব্য।",
+      "t": "Sohrab and Rustum — Matthew Arnold।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Hard",
+      "q": "'Poetry is at bottom a criticism of life' was said by—",
+      "o": [
+        "Walter Pater",
+        "John Ruskin",
+        "Matthew Arnold",
+        "Thomas Carlyle"
+      ],
+      "a": 2,
+      "e": "Arnold কবিতাকে ‘জীবনের সমালোচনা’ বলেছেন।",
+      "t": "criticism of life — Arnold।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Hard",
+      "q": "The 'touchstone method' in criticism is associated with—",
+      "o": [
+        "S. T. Coleridge",
+        "T. S. Eliot",
+        "Samuel Johnson",
+        "Matthew Arnold"
+      ],
+      "a": 3,
+      "e": "মহান কবিদের নির্বাচিত চরণকে মানদণ্ড ধরে বিচার — Arnold-এর touchstone method।",
+      "t": "touchstone — Arnold।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Goblin Market' was written by—",
+      "o": [
+        "Christina Rossetti",
+        "Charlotte Brontë",
+        "Thomas Carlyle",
+        "Elizabeth Barrett Browning"
+      ],
+      "a": 0,
+      "e": "দুই বোন ও গবলিনদের কাহিনি নিয়ে Christina Rossetti-র কবিতা।",
+      "t": "Goblin Market — Christina Rossetti।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "Dante Gabriel Rossetti was a leading member of the—",
+      "o": [
+        "Lake Poets",
+        "Pre-Raphaelite Brotherhood",
+        "Bloomsbury Group",
+        "Metaphysical school"
+      ],
+      "a": 1,
+      "e": "১৮৪৮ সালে প্রতিষ্ঠিত Pre-Raphaelite Brotherhood-এর প্রধান সদস্য।",
+      "t": "Rossetti = Pre-Raphaelite।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Hard",
+      "q": "'Sprung rhythm' is associated with—",
+      "o": [
+        "Alfred Tennyson",
+        "A. C. Swinburne",
+        "G. M. Hopkins",
+        "Robert Browning"
+      ],
+      "a": 2,
+      "e": "Gerard Manley Hopkins উদ্ভাবিত ছন্দ, যেমন ‘The Windhover’।",
+      "t": "sprung rhythm — Hopkins।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Alice's Adventures in Wonderland' was written by—",
+      "o": [
+        "George Eliot",
+        "John Ruskin",
+        "Alfred Tennyson",
+        "Lewis Carroll"
+      ],
+      "a": 3,
+      "e": "১৮৬৫ সালে প্রকাশিত শিশুসাহিত্যের ক্লাসিক।",
+      "t": "Alice's Adventures in Wonderland — Lewis Carroll।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "Lewis Carroll's real name was—",
+      "o": [
+        "Charles Lutwidge Dodgson",
+        "Charles Kingsley",
+        "Edward Lear",
+        "Mary Ann Evans"
+      ],
+      "a": 0,
+      "e": "Lewis Carroll ছদ্মনাম; আসল নাম Charles Lutwidge Dodgson।",
+      "t": "Carroll = Dodgson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "Dickens's first novel was—",
+      "o": [
+        "Oliver Twist",
+        "The Pickwick Papers",
+        "Bleak House",
+        "Hard Times"
+      ],
+      "a": 1,
+      "e": "১৮৩৬–৩৭ সালে ধারাবাহিক ‘The Pickwick Papers’ দিয়ে Dickens খ্যাতি পান।",
+      "t": "প্রথম — Pickwick Papers।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "Dickens wrote his early sketches under the pen name—",
+      "o": [
+        "Currer Bell",
+        "Elia",
+        "Boz",
+        "Phiz"
+      ],
+      "a": 2,
+      "e": "‘Sketches by Boz’; Phiz ছিলেন তাঁর বইয়ের চিত্রকর।",
+      "t": "Boz = Dickens।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Hard Times' was written by—",
+      "o": [
+        "George Eliot",
+        "John Ruskin",
+        "Elizabeth Barrett Browning",
+        "Charles Dickens"
+      ],
+      "a": 3,
+      "e": "Coketown শিল্পশহরের পটভূমিতে Dickens-এর উপন্যাস।",
+      "t": "Hard Times — Charles Dickens।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Bleak House' was written by—",
+      "o": [
+        "Charles Dickens",
+        "Elizabeth Gaskell",
+        "Christina Rossetti",
+        "Alfred Tennyson"
+      ],
+      "a": 0,
+      "e": "দীর্ঘ মামলা Jarndyce and Jarndyce নিয়ে Dickens-এর উপন্যাস।",
+      "t": "Bleak House — Charles Dickens।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Hard",
+      "q": "Which novel did Dickens leave unfinished at his death?",
+      "o": [
+        "Our Mutual Friend",
+        "The Mystery of Edwin Drood",
+        "Little Dorrit",
+        "Dombey and Son"
+      ],
+      "a": 1,
+      "e": "১৮৭০ সালে মৃত্যুর সময় ‘The Mystery of Edwin Drood’ অসমাপ্ত ছিল।",
+      "t": "অসমাপ্ত — Edwin Drood।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Fagin' is a character in—",
+      "o": [
+        "The Mayor of Casterbridge",
+        "Vanity Fair",
+        "Oliver Twist",
+        "Bleak House"
+      ],
+      "a": 2,
+      "e": "পকেটমার দলের নেতা Fagin — Oliver Twist।",
+      "t": "Fagin → Oliver Twist।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Thomas Gradgrind' is a character in—",
+      "o": [
+        "David Copperfield",
+        "Middlemarch",
+        "A Tale of Two Cities",
+        "Hard Times"
+      ],
+      "a": 3,
+      "e": "শুধু ‘facts’-এ বিশ্বাসী স্কুলকর্তা — Hard Times।",
+      "t": "Thomas Gradgrind → Hard Times।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Miss Havisham' is a character in—",
+      "o": [
+        "Great Expectations",
+        "Oliver Twist",
+        "Jane Eyre",
+        "A Christmas Carol"
+      ],
+      "a": 0,
+      "e": "বিয়ের দিন প্রতারিত হয়ে সময় থামিয়ে রাখা চরিত্র।",
+      "t": "Miss Havisham → Great Expectations।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Ebenezer Scrooge' is a character in—",
+      "o": [
+        "The Mayor of Casterbridge",
+        "A Christmas Carol",
+        "Bleak House",
+        "Middlemarch"
+      ],
+      "a": 1,
+      "e": "কৃপণ Scrooge-এর রূপান্তরের কাহিনি।",
+      "t": "Ebenezer Scrooge → A Christmas Carol।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Uriah Heep' is a character in—",
+      "o": [
+        "Jane Eyre",
+        "Oliver Twist",
+        "David Copperfield",
+        "A Christmas Carol"
+      ],
+      "a": 2,
+      "e": "ভণ্ড বিনয়ী খলচরিত্র — ‘ever so humble’।",
+      "t": "Uriah Heep → David Copperfield।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Hard",
+      "q": "'Sydney Carton' is a character in—",
+      "o": [
+        "Jane Eyre",
+        "Tess of the d'Urbervilles",
+        "Hard Times",
+        "A Tale of Two Cities"
+      ],
+      "a": 3,
+      "e": "‘It is a far, far better thing that I do…’ — আত্মত্যাগী Carton।",
+      "t": "Sydney Carton → A Tale of Two Cities।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Becky Sharp' is a character in—",
+      "o": [
+        "Vanity Fair",
+        "The Mayor of Casterbridge",
+        "Hard Times",
+        "Middlemarch"
+      ],
+      "a": 0,
+      "e": "উচ্চাভিলাষী নায়িকা Becky Sharp — Thackeray-র Vanity Fair।",
+      "t": "Becky Sharp → Vanity Fair।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Mr. Rochester' is a character in—",
+      "o": [
+        "Great Expectations",
+        "Jane Eyre",
+        "Tess of the d'Urbervilles",
+        "Oliver Twist"
+      ],
+      "a": 1,
+      "e": "Thornfield Hall-এর মালিক Edward Rochester।",
+      "t": "Mr. Rochester → Jane Eyre।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Maggie Tulliver' is a character in—",
+      "o": [
+        "The Mayor of Casterbridge",
+        "David Copperfield",
+        "The Mill on the Floss",
+        "Hard Times"
+      ],
+      "a": 2,
+      "e": "George Eliot-এর নায়িকা।",
+      "t": "Maggie Tulliver → The Mill on the Floss।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Michael Henchard' is a character in—",
+      "o": [
+        "Tess of the d'Urbervilles",
+        "Silas Marner",
+        "David Copperfield",
+        "The Mayor of Casterbridge"
+      ],
+      "a": 3,
+      "e": "স্ত্রী-কন্যাকে বিক্রি করে দেওয়া Henchard — Hardy।",
+      "t": "Michael Henchard → The Mayor of Casterbridge।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Dorothea Brooke' is a character in—",
+      "o": [
+        "Middlemarch",
+        "Tess of the d'Urbervilles",
+        "Oliver Twist",
+        "Vanity Fair"
+      ],
+      "a": 0,
+      "e": "George Eliot-এর Middlemarch-এর নায়িকা।",
+      "t": "Dorothea Brooke → Middlemarch।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "Charlotte Brontë first published under the pen name—",
+      "o": [
+        "Ellis Bell",
+        "Currer Bell",
+        "Acton Bell",
+        "George Eliot"
+      ],
+      "a": 1,
+      "e": "Charlotte = Currer, Emily = Ellis, Anne = Acton Bell।",
+      "t": "Currer = Charlotte।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ৪৯-৭০-এ Emily-র ছদ্মনাম (Ellis Bell) জিজ্ঞাসিত; এটি Charlotte-এর (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Agnes Grey' was written by—",
+      "o": [
+        "Charles Dickens",
+        "Wilkie Collins",
+        "Anne Brontë",
+        "Elizabeth Gaskell"
+      ],
+      "a": 2,
+      "e": "গভর্নেসের জীবন নিয়ে Anne Brontë-র উপন্যাস।",
+      "t": "Agnes Grey — Anne Brontë।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Hard",
+      "q": "'The Tenant of Wildfell Hall' was written by—",
+      "o": [
+        "Lewis Carroll",
+        "Thomas Hardy",
+        "R. L. Stevenson",
+        "Anne Brontë"
+      ],
+      "a": 3,
+      "e": "Anne Brontë-র দ্বিতীয় উপন্যাস (১৮৪৮)।",
+      "t": "The Tenant of Wildfell Hall — Anne Brontë।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "George Eliot's real name was—",
+      "o": [
+        "Mary Ann Evans",
+        "Elizabeth Gaskell",
+        "Charlotte Brontë",
+        "Christina Rossetti"
+      ],
+      "a": 0,
+      "e": "George Eliot পুরুষ ছদ্মনাম; আসল নাম Mary Ann (Marian) Evans।",
+      "t": "George Eliot = Mary Ann Evans।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ৩৫-৬৯-এ odd-man-out হিসেবে George Eliot এসেছিলেন; এটি তাঁর আসল নাম (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Middlemarch' was written by—",
+      "o": [
+        "Oscar Wilde",
+        "George Eliot",
+        "Wilkie Collins",
+        "Matthew Arnold"
+      ],
+      "a": 1,
+      "e": "‘A Study of Provincial Life’ — George Eliot-এর শ্রেষ্ঠ উপন্যাস।",
+      "t": "Middlemarch — George Eliot।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Silas Marner' was written by—",
+      "o": [
+        "Matthew Arnold",
+        "Wilkie Collins",
+        "George Eliot",
+        "Elizabeth Gaskell"
+      ],
+      "a": 2,
+      "e": "তাঁতি Silas Marner-এর কাহিনি।",
+      "t": "Silas Marner — George Eliot।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Adam Bede' was written by—",
+      "o": [
+        "Elizabeth Barrett Browning",
+        "W. M. Thackeray",
+        "John Ruskin",
+        "George Eliot"
+      ],
+      "a": 3,
+      "e": "George Eliot-এর প্রথম পূর্ণাঙ্গ উপন্যাস (১৮৫৯)।",
+      "t": "Adam Bede — George Eliot।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Tess of the d'Urbervilles' was written by—",
+      "o": [
+        "Thomas Hardy",
+        "Charlotte Brontë",
+        "Thomas Carlyle",
+        "Anne Brontë"
+      ],
+      "a": 0,
+      "e": "‘A Pure Woman’ উপশিরোনামে Hardy-র ট্র্যাজিক উপন্যাস।",
+      "t": "Tess of the d'Urbervilles — Thomas Hardy।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ৩৬-৪৪, ৪৫-৫৬-এ Hardy-র The Return of the Native জিজ্ঞাসিত; এটি ভিন্ন উপন্যাস (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Far from the Madding Crowd' was written by—",
+      "o": [
+        "W. M. Thackeray",
+        "Thomas Hardy",
+        "John Ruskin",
+        "Elizabeth Barrett Browning"
+      ],
+      "a": 1,
+      "e": "Bathsheba Everdene-কে নিয়ে Hardy-র উপন্যাস।",
+      "t": "Far from the Madding Crowd — Thomas Hardy।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Jude the Obscure' was written by—",
+      "o": [
+        "Oscar Wilde",
+        "George Eliot",
+        "Thomas Hardy",
+        "Wilkie Collins"
+      ],
+      "a": 2,
+      "e": "Hardy-র শেষ উপন্যাস (১৮৯৫), প্রকাশের পর তীব্র সমালোচিত।",
+      "t": "Jude the Obscure — Thomas Hardy।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "Hardy set most of his novels in an imaginary region called—",
+      "o": [
+        "Lilliput",
+        "Middlemarch",
+        "Barsetshire",
+        "Wessex"
+      ],
+      "a": 3,
+      "e": "দক্ষিণ-পশ্চিম ইংল্যান্ডভিত্তিক কাল্পনিক অঞ্চল Wessex; Barsetshire Trollope-এর।",
+      "t": "Wessex = Hardy।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Mary Barton' was written by—",
+      "o": [
+        "Elizabeth Gaskell",
+        "Robert Browning",
+        "Charlotte Brontë",
+        "John Ruskin"
+      ],
+      "a": 0,
+      "e": "ম্যানচেস্টারের শ্রমিকজীবন নিয়ে Gaskell-এর উপন্যাস।",
+      "t": "Mary Barton — Elizabeth Gaskell।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Cranford' was written by—",
+      "o": [
+        "Elizabeth Barrett Browning",
+        "Elizabeth Gaskell",
+        "Thomas Hardy",
+        "Oscar Wilde"
+      ],
+      "a": 1,
+      "e": "ছোট শহরের নারীসমাজ নিয়ে Gaskell-এর রচনা।",
+      "t": "Cranford — Elizabeth Gaskell।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'The Moonstone' was written by—",
+      "o": [
+        "Christina Rossetti",
+        "Elizabeth Gaskell",
+        "Wilkie Collins",
+        "Robert Browning"
+      ],
+      "a": 2,
+      "e": "ইংরেজিতে প্রথম দিকের পূর্ণাঙ্গ গোয়েন্দা উপন্যাস (১৮৬৮)।",
+      "t": "The Moonstone — Wilkie Collins।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'The Woman in White' was written by—",
+      "o": [
+        "George Eliot",
+        "John Ruskin",
+        "Alfred Tennyson",
+        "Wilkie Collins"
+      ],
+      "a": 3,
+      "e": "Collins-এর রহস্য উপন্যাস (১৮৬০)।",
+      "t": "The Woman in White — Wilkie Collins।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Easy",
+      "q": "'Treasure Island' was written by—",
+      "o": [
+        "R. L. Stevenson",
+        "Elizabeth Barrett Browning",
+        "Thomas Hardy",
+        "Oscar Wilde"
+      ],
+      "a": 0,
+      "e": "জলদস্যু Long John Silver-এর অভিযান।",
+      "t": "Treasure Island — R. L. Stevenson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Strange Case of Dr Jekyll and Mr Hyde' was written by—",
+      "o": [
+        "Thomas Hardy",
+        "R. L. Stevenson",
+        "Oscar Wilde",
+        "Wilkie Collins"
+      ],
+      "a": 1,
+      "e": "মানুষের দ্বৈত সত্তা নিয়ে Stevenson-এর উপন্যাসিকা।",
+      "t": "Strange Case of Dr Jekyll and Mr Hyde — R. L. Stevenson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'The Picture of Dorian Gray' was written by—",
+      "o": [
+        "Christina Rossetti",
+        "W. M. Thackeray",
+        "Oscar Wilde",
+        "Alfred Tennyson"
+      ],
+      "a": 2,
+      "e": "Oscar Wilde-এর একমাত্র উপন্যাস (১৮৯০)।",
+      "t": "The Picture of Dorian Gray — Oscar Wilde।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'The Importance of Being Earnest' was written by—",
+      "o": [
+        "Elizabeth Barrett Browning",
+        "Charlotte Brontë",
+        "John Ruskin",
+        "Oscar Wilde"
+      ],
+      "a": 3,
+      "e": "Wilde-এর বিখ্যাত কমেডি নাটক (১৮৯৫)।",
+      "t": "The Importance of Being Earnest — Oscar Wilde।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Sartor Resartus' was written by—",
+      "o": [
+        "Thomas Carlyle",
+        "John Ruskin",
+        "Elizabeth Barrett Browning",
+        "Thomas Hardy"
+      ],
+      "a": 0,
+      "e": "Carlyle-এর দার্শনিক-ব্যঙ্গাত্মক গ্রন্থ।",
+      "t": "Sartor Resartus — Thomas Carlyle।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Hard",
+      "q": "'On Heroes, Hero-Worship, and the Heroic in History' was written by—",
+      "o": [
+        "Alfred Tennyson",
+        "Thomas Carlyle",
+        "George Eliot",
+        "Oscar Wilde"
+      ],
+      "a": 1,
+      "e": "মহাপুরুষদের ভূমিকা নিয়ে Carlyle-এর বক্তৃতামালা।",
+      "t": "On Heroes, Hero-Worship, and the Heroic in History — Thomas Carlyle।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Hard",
+      "q": "'Unto This Last' was written by—",
+      "o": [
+        "Thomas Carlyle",
+        "Charlotte Brontë",
+        "John Ruskin",
+        "Elizabeth Barrett Browning"
+      ],
+      "a": 2,
+      "e": "অর্থনীতি ও নৈতিকতা নিয়ে Ruskin-এর প্রবন্ধ (গান্ধীকে প্রভাবিত করে)।",
+      "t": "Unto This Last — John Ruskin।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Modern Painters' was written by—",
+      "o": [
+        "Wilkie Collins",
+        "Thomas Hardy",
+        "R. L. Stevenson",
+        "John Ruskin"
+      ],
+      "a": 3,
+      "e": "শিল্পসমালোচনামূলক Ruskin-এর বহুখণ্ডের গ্রন্থ।",
+      "t": "Modern Painters — John Ruskin।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "Darwin's 'On the Origin of Species', which deeply influenced Victorian thought, appeared in—",
+      "o": [
+        "1837",
+        "1859",
+        "1871",
+        "1901"
+      ],
+      "a": 1,
+      "e": "১৮৫৯ সালে প্রকাশিত; বিশ্বাস ও বিজ্ঞানের দ্বন্দ্ব ভিক্টোরীয় সাহিত্যে প্রতিফলিত।",
+      "t": "Origin of Species = ১৮৫৯।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'Dracula' (1897) was written by—",
+      "o": [
+        "Bram Stoker",
+        "Mary Shelley",
+        "Wilkie Collins",
+        "R. L. Stevenson"
+      ],
+      "a": 0,
+      "e": "Irish লেখক Bram Stoker-এর Gothic উপন্যাস।",
+      "t": "Dracula — Bram Stoker।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "The phrase 'art for art's sake' is associated with the movement called—",
+      "o": [
+        "Realism",
+        "Aestheticism",
+        "Naturalism",
+        "Romanticism"
+      ],
+      "a": 1,
+      "e": "Walter Pater, Oscar Wilde প্রমুখের Aesthetic Movement।",
+      "t": "art for art's sake = Aestheticism।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.VIC",
+      "d": "Medium",
+      "q": "'On Liberty' (1859) was written by—",
+      "o": [
+        "John Ruskin",
+        "Thomas Carlyle",
+        "John Stuart Mill",
+        "Matthew Arnold"
+      ],
+      "a": 2,
+      "e": "ব্যক্তিস্বাধীনতা নিয়ে J. S. Mill-এর বিখ্যাত প্রবন্ধ।",
+      "t": "On Liberty — Mill।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

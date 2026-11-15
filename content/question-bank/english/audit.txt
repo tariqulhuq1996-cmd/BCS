@@ -1,0 +1,33 @@
+accepted 1500 flags 32
+INT 0.71 batch07#40 'Puck' is a character in Shakespeare's— => A Midsummer Night's Dream | batch07#46: 'Oberon' is a character in Shakespeare's—
+INT 0.65 batch07#41 'Malvolio' is a character in Shakespeare's— => Twelfth Night | batch07#47: 'Viola' is a character in Shakespeare's—
+INT 0.5 batch01#13 Fill in the blank with the appropriate preposition: 'She is  => of | batch01#25: Fill in the blank with the appropriate preposition: 'She is envious ___ her co
+INT 0.5 batch22#58 Fill in the blank with the correct article: 'What ___ beauti => a | batch22#61: Fill in the blank with the correct article: 'We meet twice ___ week.'
+INT 0.49 batch01#29 Fill in the blank with the appropriate preposition: 'He is i => to | batch01#41: Fill in the blank with the appropriate preposition: 'Her answer is similar ___
+INT 0.48 batch01#15 Which preposition best completes the sentence? 'The team is  => of | batch01#19: Which preposition best completes the sentence? 'The doctor cured him ___ his c
+INT 0.48 batch01#17 Fill in the blank with the appropriate preposition: 'Water c => of | batch01#25: Fill in the blank with the appropriate preposition: 'She is envious ___ her co
+INT 0.48 batch22#53 Fill in the blank with the correct article: '___ Bible is a  => The | batch22#59: Fill in the blank with the correct article: 'She is ___ best student in the cl
+PAST 0.47 batch01#29 Fill in the blank with the appropriate preposition: 'He is i => to | 47-118: Fill in the blank with the appropriate preposition: 'She was married --- a rich ma
+PAST 0.47 batch01#41 Fill in the blank with the appropriate preposition: 'Her ans => to | 47-118: Fill in the blank with the appropriate preposition: 'She was married --- a rich ma
+INT 0.47 batch01#13 Fill in the blank with the appropriate preposition: 'She is  => of | batch01#17: Fill in the blank with the appropriate preposition: 'Water consists ___ hydrog
+INT 0.47 batch22#52 Fill in the blank with the correct article: '___ Mount Evere => No article | batch22#60: Fill in the blank with the correct article: '___ gold is a precious metal.'
+INT 0.47 batch22#56 Fill in the blank with the correct article: 'She plays ___ g => the | batch22#59: Fill in the blank with the correct article: 'She is ___ best student in the cl
+INT 0.46 batch01#3 Which preposition best completes the sentence? 'I am not acq => with | batch01#23: Which preposition best completes the sentence? 'The voters are disgusted ___ t
+INT 0.46 batch01#25 Fill in the blank with the appropriate preposition: 'She is  => of | batch01#45: Fill in the blank with the appropriate preposition: 'The police were suspiciou
+INT 0.45 batch01#19 Which preposition best completes the sentence? 'The doctor c => of | batch01#47: Which preposition best completes the sentence? 'I am tired ___ his endless exc
+INT 0.45 batch01#29 Fill in the blank with the appropriate preposition: 'He is i => to | batch01#33: Fill in the blank with the appropriate preposition: 'A soldier must be obedien
+INT 0.45 batch14#13 Fill in the blank with the correct verb form: 'The jury ___  => has | batch14#16: Fill in the blank with the correct verb form: 'The furniture ___ been damaged 
+PAST 0.43 batch01#33 Fill in the blank with the appropriate preposition: 'A soldi => to | 47-118: Fill in the blank with the appropriate preposition: 'She was married --- a rich ma
+PAST 0.43 batch01#69 Fill in the blank with the appropriate preposition: 'The boy => into | 47-118: Fill in the blank with the appropriate preposition: 'She was married --- a rich ma
+PAST 0.39 batch01#69 Fill in the blank with the appropriate preposition: 'The boy => into | 27-32: Fill in the blank with appropriate preposition. 'Hurry up! we have to go --- five m
+PAST 0.38 batch01#49 Fill in the blank with the appropriate preposition: 'The doc => against | 27-32: Fill in the blank with appropriate preposition. 'Hurry up! we have to go --- five m
+PAST 0.38 batch01#61 Fill in the blank with the appropriate preposition: 'Who is  => in | 27-32: Fill in the blank with appropriate preposition. 'Hurry up! we have to go --- five m
+PAST 0.37 batch01#53 Fill in the blank with the appropriate preposition: 'We usua => in | 27-32: Fill in the blank with appropriate preposition. 'Hurry up! we have to go --- five m
+PAST 0.37 batch07#18 'Iago' is a character in Shakespeare's— => Othello | 45-68: Desdemona is a character in the following Shakespearean play: => Othello
+PAST 0.35 batch01#66 Choose the correct preposition: 'All our efforts were ___ va => in | 26-43: Choose the correct preposition. My brother has no interest --- music. => in
+PAST 0.34 batch07#32 'Ariel' is a character in Shakespeare's— => The Tempest | 44-76: Caliban is a important character from Shakespeare's-- => The Tempest
+PAST 0.33 batch15#5 Which of the following sentences is correct? => He is taller than his brother. | 33-27: Pick the correct part to fill in the gap of the following sentence: Each of the son
+PAST 0.33 batch15#36 Which of the following sentences is correct? => Rahim is older than his sister. | 33-27: Pick the correct part to fill in the gap of the following sentence: Each of the son
+PAST 0.32 batch10#43 'Burmese Days' was written by— => George Orwell | 28-37: 'Animal Farm' was written by– => George Orwell
+PAST 0.31 batch06#21 Choose the correct form: 'I heard her ___ a beautiful song.' => sing | 47-125: Identify the correct passive form: 'I heard her sing'. => She was heard to sing by
+PAST 0.3 batch01#25 Fill in the blank with the appropriate preposition: 'She is  => of | 26-47: Fill in the blank with correct preposition. He is devoid ---Commonsense. => of

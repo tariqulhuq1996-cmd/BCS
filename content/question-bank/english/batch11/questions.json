@@ -1,0 +1,860 @@
+{
+  "batch": "Batch 11",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 08 (Noun, Pronoun & Relative Pronoun) — Number, Gender, Kinds of Noun",
+  "subtopics": {
+    "EN.GR.NOU": {}
+  },
+  "questions": [
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "The plural form of 'criterion' is—",
+      "o": [
+        "criteria",
+        "criterions",
+        "criterias",
+        "criterion"
+      ],
+      "a": 0,
+      "e": "গ্রিক উৎসের -on > -a: criterion → criteria।",
+      "t": "criterion → criteria।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "The plural form of 'phenomenon' is—",
+      "o": [
+        "phenomenons",
+        "phenomena",
+        "phenomenas",
+        "phenomenoes"
+      ],
+      "a": 1,
+      "e": "phenomenon → phenomena।",
+      "t": "phenomenon → phenomena।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "The plural form of 'analysis' is—",
+      "o": [
+        "analysis",
+        "analysises",
+        "analyses",
+        "analysi"
+      ],
+      "a": 2,
+      "e": "-is > -es: analysis → analyses।",
+      "t": "analysis → analyses।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "The plural form of 'crisis' is—",
+      "o": [
+        "crisi",
+        "crisises",
+        "crisis",
+        "crises"
+      ],
+      "a": 3,
+      "e": "crisis → crises।",
+      "t": "crisis → crises।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Hard",
+      "q": "The plural form of 'datum' is—",
+      "o": [
+        "data",
+        "datums",
+        "datas",
+        "dati"
+      ],
+      "a": 0,
+      "e": "ল্যাটিন -um > -a: datum → data।",
+      "t": "datum → data।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Easy",
+      "q": "The plural form of 'tooth' is—",
+      "o": [
+        "tooths",
+        "teeth",
+        "teeths",
+        "toothes"
+      ],
+      "a": 1,
+      "e": "স্বরবর্ণ পরিবর্তন: tooth → teeth।",
+      "t": "tooth → teeth।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "The plural form of 'passer-by' is—",
+      "o": [
+        "passers-bys",
+        "passer-bys",
+        "passers-by",
+        "passerbies"
+      ],
+      "a": 2,
+      "e": "যৌগিক noun-এর মূল শব্দ বহুবচন হয়: passers-by।",
+      "t": "passer-by → passers-by।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "The plural form of 'mother-in-law' is—",
+      "o": [
+        "mother-ins-law",
+        "mother-in-laws",
+        "mothers-in-laws",
+        "mothers-in-law"
+      ],
+      "a": 3,
+      "e": "মূল শব্দ mother বহুবচন: mothers-in-law।",
+      "t": "mother-in-law → mothers-in-law।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Hard",
+      "q": "The plural form of 'man-servant' is—",
+      "o": [
+        "men-servants",
+        "man-servants",
+        "men-servant",
+        "mans-servants"
+      ],
+      "a": 0,
+      "e": "দুই অংশই বহুবচন হয়: men-servants।",
+      "t": "man-servant → men-servants।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Hard",
+      "q": "The plural form of 'spoonful' is—",
+      "o": [
+        "spoonsful",
+        "spoonfuls",
+        "spoonfulls",
+        "spoonfull"
+      ],
+      "a": 1,
+      "e": "-ful যুক্ত noun-এ শেষে s: spoonfuls।",
+      "t": "spoonful → spoonfuls।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "The plural form of 'cactus' is—",
+      "o": [
+        "cactis",
+        "cactuses only",
+        "cacti",
+        "cactuss"
+      ],
+      "a": 2,
+      "e": "ল্যাটিন -us > -i: cactus → cacti (cactuses-ও চলে)।",
+      "t": "cactus → cacti।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Hard",
+      "q": "The plural form of 'stimulus' is—",
+      "o": [
+        "stimula",
+        "stimuluses",
+        "stimulae",
+        "stimuli"
+      ],
+      "a": 3,
+      "e": "stimulus → stimuli।",
+      "t": "stimulus → stimuli।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Hard",
+      "q": "The plural form of 'alumnus' is—",
+      "o": [
+        "alumni",
+        "alumnuses",
+        "alumnae only",
+        "alumnis"
+      ],
+      "a": 0,
+      "e": "alumnus (পুং) → alumni; alumna (স্ত্রী) → alumnae।",
+      "t": "alumnus → alumni।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Hard",
+      "q": "The plural form of 'bureau' is—",
+      "o": [
+        "bureaus only",
+        "bureaux",
+        "bureauxs",
+        "bureaues"
+      ],
+      "a": 1,
+      "e": "ফরাসি শব্দ: bureau → bureaux (bureaus-ও প্রচলিত)।",
+      "t": "bureau → bureaux।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "The news were very good.",
+        "The news are very good.",
+        "The news is very good.",
+        "The newses are very good."
+      ],
+      "a": 2,
+      "e": "news দেখতে বহুবচন হলেও singular — is বসে।",
+      "t": "news = singular।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "A mathematics is my favourite subject.",
+        "Mathematics are my favourite subject.",
+        "Mathematics were my favourite subjects.",
+        "Mathematics is my favourite subject."
+      ],
+      "a": 3,
+      "e": "বিষয়ের নাম (mathematics, physics, economics) singular।",
+      "t": "বিষয়ের নাম = singular।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "The scissors are on the table.",
+        "The scissors is on the table.",
+        "A scissors is on the table.",
+        "The scissor are on the table."
+      ],
+      "a": 0,
+      "e": "দুই অংশবিশিষ্ট জিনিস (scissors, trousers, spectacles) সবসময় plural; একক বোঝাতে a pair of।",
+      "t": "scissors = plural।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "Which of the following nouns is uncountable?",
+      "o": [
+        "chair",
+        "furniture",
+        "table",
+        "bed"
+      ],
+      "a": 1,
+      "e": "furniture uncountable — a piece of furniture; furnitures হয় না।",
+      "t": "furniture = uncountable।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "He gave me advices.",
+        "He gave me an advice.",
+        "He gave me a piece of advice.",
+        "He gave me a advices."
+      ],
+      "a": 2,
+      "e": "advice uncountable; advise হলো verb।",
+      "t": "a piece of advice।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "The polices have arrested the thief.",
+        "The police has arrested the thief.",
+        "A police has arrested the thief.",
+        "The police have arrested the thief."
+      ],
+      "a": 3,
+      "e": "police সবসময় plural verb নেয়।",
+      "t": "police = plural।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "Which noun is always used in the plural?",
+      "o": [
+        "trousers",
+        "information",
+        "luggage",
+        "poetry"
+      ],
+      "a": 0,
+      "e": "trousers সবসময় plural; information, luggage, poetry uncountable singular।",
+      "t": "trousers = সর্বদা plural।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Hard",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "I need an information about the course.",
+        "I need some information about the course.",
+        "I need informations about the course.",
+        "I need many information about the course."
+      ],
+      "a": 1,
+      "e": "information uncountable — some/much/a piece of information।",
+      "t": "information-এ s নেই।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "The feminine form of 'fox' is—",
+      "o": [
+        "foxine",
+        "foxess",
+        "vixen",
+        "she-foxe"
+      ],
+      "a": 2,
+      "e": "fox (পুং) — vixen (স্ত্রী)।",
+      "t": "fox → vixen।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Hard",
+      "q": "The feminine form of 'gander' is—",
+      "o": [
+        "hen",
+        "gandress",
+        "duck",
+        "goose"
+      ],
+      "a": 3,
+      "e": "gander — goose (রাজহাঁস)।",
+      "t": "gander → goose।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Hard",
+      "q": "The feminine form of 'drake' is—",
+      "o": [
+        "duck",
+        "drakess",
+        "goose",
+        "pen"
+      ],
+      "a": 0,
+      "e": "drake (পুং হাঁস) — duck।",
+      "t": "drake → duck।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "The feminine form of 'bachelor' is—",
+      "o": [
+        "bacheloress",
+        "spinster",
+        "widow",
+        "matron"
+      ],
+      "a": 1,
+      "e": "bachelor — spinster (maid)।",
+      "t": "bachelor → spinster।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "The feminine form of 'wizard' is—",
+      "o": [
+        "sorceress only",
+        "wizardess",
+        "witch",
+        "fairy"
+      ],
+      "a": 2,
+      "e": "wizard — witch।",
+      "t": "wizard → witch।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "The feminine form of 'monk' is—",
+      "o": [
+        "sister",
+        "monkess",
+        "abbess",
+        "nun"
+      ],
+      "a": 3,
+      "e": "monk — nun; abbot — abbess।",
+      "t": "monk → nun।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "The feminine form of 'peacock' is—",
+      "o": [
+        "peahen",
+        "peacockess",
+        "peafowl",
+        "hen"
+      ],
+      "a": 0,
+      "e": "peacock — peahen।",
+      "t": "peacock → peahen।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Hard",
+      "q": "The feminine form of 'testator' is—",
+      "o": [
+        "testatress",
+        "testatrix",
+        "testatoress",
+        "testatory"
+      ],
+      "a": 1,
+      "e": "testator (উইলকারী) — testatrix।",
+      "t": "testator → testatrix।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "Which of the following is a neuter gender noun?",
+      "o": [
+        "child",
+        "teacher",
+        "table",
+        "cousin"
+      ],
+      "a": 2,
+      "e": "জড়বস্তু = neuter gender; teacher, child, cousin common gender।",
+      "t": "জড়বস্তু = neuter।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "'Honesty is the best policy.' — Here 'Honesty' is a/an—",
+      "o": [
+        "Collective noun",
+        "Material noun",
+        "Proper noun",
+        "Abstract noun"
+      ],
+      "a": 3,
+      "e": "গুণ বা অবস্থার নাম — abstract noun।",
+      "t": "Honesty = Abstract noun।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "'This ring is made of gold.' — Here 'gold' is a/an—",
+      "o": [
+        "Material noun",
+        "Abstract noun",
+        "Proper noun",
+        "Collective noun"
+      ],
+      "a": 0,
+      "e": "উপাদানবাচক বস্তু — material noun।",
+      "t": "gold = Material noun।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Easy",
+      "q": "'Dhaka is a crowded city.' — Here 'Dhaka' is a/an—",
+      "o": [
+        "Abstract noun",
+        "Proper noun",
+        "Material noun",
+        "Collective noun"
+      ],
+      "a": 1,
+      "e": "নির্দিষ্ট স্থানের নাম — proper noun।",
+      "t": "Dhaka = Proper noun।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "'The army marched to the border.' — Here 'army' is a/an—",
+      "o": [
+        "Material noun",
+        "Abstract noun",
+        "Collective noun",
+        "Proper noun"
+      ],
+      "a": 2,
+      "e": "অনেক সৈন্যের সমষ্টি — collective noun।",
+      "t": "army = Collective noun।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "'The jury gave its verdict.' — Here 'jury' is a/an—",
+      "o": [
+        "Proper noun",
+        "Abstract noun",
+        "Material noun",
+        "Collective noun"
+      ],
+      "a": 3,
+      "e": "জুরিদের সমষ্টি — collective noun।",
+      "t": "jury = Collective noun।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "'He spent his childhood in a village.' — Here 'childhood' is a/an—",
+      "o": [
+        "Abstract noun",
+        "Material noun",
+        "Proper noun",
+        "Collective noun"
+      ],
+      "a": 0,
+      "e": "অবস্থার নাম — abstract noun।",
+      "t": "childhood = Abstract noun।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Hard",
+      "q": "'Kalidas is the Shakespeare of India.' — Here 'Shakespeare' is used as a/an—",
+      "o": [
+        "Proper noun",
+        "Common noun",
+        "Abstract noun",
+        "Collective noun"
+      ],
+      "a": 1,
+      "e": "Proper noun যখন একটি শ্রেণি বা গুণ বোঝায় (মহান নাট্যকার), তখন common noun-এর কাজ করে।",
+      "t": "the Shakespeare of … = common noun।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "Choose the correct collective noun: 'a ___ of wolves'",
+      "o": [
+        "swarm",
+        "herd",
+        "pack",
+        "school"
+      ],
+      "a": 2,
+      "e": "a pack of wolves/hounds।",
+      "t": "a pack of wolves।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "Choose the correct collective noun: 'a ___ of bees'",
+      "o": [
+        "pride",
+        "pack",
+        "flock",
+        "swarm"
+      ],
+      "a": 3,
+      "e": "a swarm of bees/locusts।",
+      "t": "a swarm of bees।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Easy",
+      "q": "Choose the correct collective noun: 'a ___ of keys'",
+      "o": [
+        "bunch",
+        "herd",
+        "pride",
+        "fleet"
+      ],
+      "a": 0,
+      "e": "a bunch of keys/grapes।",
+      "t": "a bunch of keys।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "Choose the correct collective noun: 'a ___ of ships'",
+      "o": [
+        "school",
+        "fleet",
+        "pack",
+        "bunch"
+      ],
+      "a": 1,
+      "e": "a fleet of ships।",
+      "t": "a fleet of ships।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Hard",
+      "q": "Choose the correct collective noun: 'a ___ of fish'",
+      "o": [
+        "flock",
+        "pride",
+        "school",
+        "pack"
+      ],
+      "a": 2,
+      "e": "a school/shoal of fish।",
+      "t": "a school of fish।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "Choose the correct collective noun: 'a ___ of lions'",
+      "o": [
+        "fleet",
+        "pack",
+        "swarm",
+        "pride"
+      ],
+      "a": 3,
+      "e": "a pride of lions।",
+      "t": "a pride of lions।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "Choose the correct collective noun: 'a ___ of musicians'",
+      "o": [
+        "band",
+        "bunch",
+        "pride",
+        "flock"
+      ],
+      "a": 0,
+      "e": "a band of musicians।",
+      "t": "a band of musicians।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "Choose the correct possessive form.",
+      "o": [
+        "the boys's hostel",
+        "the boys' hostel",
+        "the boy's' hostel",
+        "the boyses hostel"
+      ],
+      "a": 1,
+      "e": "s-যুক্ত বহুবচনে শুধু apostrophe: boys'।",
+      "t": "plural -s + ' ।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "Choose the correct possessive form.",
+      "o": [
+        "the childrens park",
+        "the childrens' park",
+        "the children's park",
+        "the children' park"
+      ],
+      "a": 2,
+      "e": "s ছাড়া বহুবচনে 's: children's।",
+      "t": "children's।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Hard",
+      "q": "Choose the correct expression.",
+      "o": [
+        "for goodness sake's",
+        "for goodness's sake",
+        "for goodnesses sake",
+        "for goodness' sake"
+      ],
+      "a": 3,
+      "e": "sake-এর আগে s-ধ্বনিযুক্ত শব্দে শুধু apostrophe: for goodness' sake।",
+      "t": "for goodness' sake।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "It is a two hours' journey.",
+        "It is a two hour's journey.",
+        "It is a two hours journey's.",
+        "It is a two hours's journey."
+      ],
+      "a": 0,
+      "e": "সময়/দূরত্ব বোঝাতে possessive: two hours' journey (অথবা a two-hour journey)।",
+      "t": "two hours'।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NOU",
+      "d": "Medium",
+      "q": "The singular form of 'media' is—",
+      "o": [
+        "medias",
+        "medium",
+        "mediam",
+        "medius"
+      ],
+      "a": 1,
+      "e": "medium → media (ল্যাটিন -um > -a)।",
+      "t": "media ← medium।",
+      "src": "Lecture 08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

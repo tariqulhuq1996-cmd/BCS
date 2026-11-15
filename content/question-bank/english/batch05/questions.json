@@ -1,0 +1,860 @@
+{
+  "batch": "Batch 05",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 01 (Idioms & Phrases, Part-1) ও Vocabulary অংশ",
+  "subtopics": {
+    "EN.VO.IDM": {}
+  },
+  "questions": [
+    {
+      "st": "EN.VO.IDM",
+      "d": "Easy",
+      "q": "The idiom 'a bed of roses' means—",
+      "o": [
+        "an easy and comfortable situation",
+        "to have just enough to avoid hunger",
+        "at the last moment",
+        "to run away"
+      ],
+      "a": 0,
+      "e": "a bed of roses = আরামদায়ক অবস্থা (Life is not a bed of roses)।",
+      "t": "a bed of roses → আরামদায়ক অবস্থা (Life is not a bed of roses)।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "What is the meaning of 'a fish out of water'?",
+      "o": [
+        "ill feeling between people",
+        "a person uncomfortable in unfamiliar surroundings",
+        "in trouble",
+        "great fuss over a small matter"
+      ],
+      "a": 1,
+      "e": "a fish out of water = অপরিচিত পরিবেশে অস্বস্তিতে থাকা ব্যক্তি।",
+      "t": "a fish out of water → অপরিচিত পরিবেশে অস্বস্তিতে থাকা ব্যক্তি।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "'a red-letter day' means—",
+      "o": [
+        "to speak plainly and frankly",
+        "facing two equally unpleasant choices",
+        "a memorable and important day",
+        "a little-known competitor who unexpectedly wins"
+      ],
+      "a": 2,
+      "e": "a red-letter day = স্মরণীয় দিন।",
+      "t": "a red-letter day → স্মরণীয় দিন।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "The idiom 'a wild goose chase' means—",
+      "o": [
+        "a memorable and important day",
+        "excessive official formality causing delay",
+        "to live within one's income",
+        "a useless search"
+      ],
+      "a": 3,
+      "e": "a wild goose chase = বৃথা অনুসন্ধান।",
+      "t": "a wild goose chase → বৃথা অনুসন্ধান।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Hard",
+      "q": "What is the meaning of 'an apple of discord'?",
+      "o": [
+        "a cause of quarrel",
+        "under suspicion",
+        "ill feeling between people",
+        "in trouble"
+      ],
+      "a": 0,
+      "e": "an apple of discord = বিবাদের কারণ।",
+      "t": "an apple of discord → বিবাদের কারণ।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Easy",
+      "q": "'the apple of one's eye' means—",
+      "o": [
+        "false show of sorrow",
+        "a person who is very dear",
+        "finally and for the last time",
+        "to make a poor impression"
+      ],
+      "a": 1,
+      "e": "the apple of one's eye = নয়নের মণি।",
+      "t": "the apple of one's eye → নয়নের মণি।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "The idiom 'at sixes and sevens' means—",
+      "o": [
+        "a useless search",
+        "to take a less important role",
+        "in disorder and confusion",
+        "to accept the unpleasant consequences"
+      ],
+      "a": 2,
+      "e": "at sixes and sevens = বিশৃঙ্খল অবস্থায়।",
+      "t": "at sixes and sevens → বিশৃঙ্খল অবস্থায়।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "What is the meaning of 'at one's wit's end'?",
+      "o": [
+        "a memorable and important day",
+        "excessive official formality causing delay",
+        "to live within one's income",
+        "completely puzzled"
+      ],
+      "a": 3,
+      "e": "at one's wit's end = কিংকর্তব্যবিমূঢ়।",
+      "t": "at one's wit's end → কিংকর্তব্যবিমূঢ়।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Hard",
+      "q": "'bad blood' means—",
+      "o": [
+        "ill feeling between people",
+        "the ordinary members of a group",
+        "to take a less important role",
+        "a useless search"
+      ],
+      "a": 0,
+      "e": "bad blood = শত্রুতা, বিদ্বেষ।",
+      "t": "bad blood → শত্রুতা, বিদ্বেষ।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "The idiom 'to beat about the bush' means—",
+      "o": [
+        "to live within one's income",
+        "to avoid coming to the main point",
+        "a memorable and important day",
+        "false show of sorrow"
+      ],
+      "a": 1,
+      "e": "to beat about the bush = আসল কথা এড়িয়ে যাওয়া।",
+      "t": "to beat about the bush → আসল কথা এড়িয়ে যাওয়া।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Easy",
+      "q": "What is the meaning of 'to break the ice'?",
+      "o": [
+        "a person who is very dear",
+        "to tease someone playfully",
+        "to start a conversation and remove shyness",
+        "to say exactly the right thing"
+      ],
+      "a": 2,
+      "e": "to break the ice = জড়তা ভাঙা।",
+      "t": "to break the ice → জড়তা ভাঙা।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "'to burn the midnight oil' means—",
+      "o": [
+        "false show of sorrow",
+        "to live within one's income",
+        "a memorable and important day",
+        "to work or study late into the night"
+      ],
+      "a": 3,
+      "e": "to burn the midnight oil = গভীর রাত পর্যন্ত পরিশ্রম করা।",
+      "t": "to burn the midnight oil → গভীর রাত পর্যন্ত পরিশ্রম করা।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Hard",
+      "q": "The idiom 'by leaps and bounds' means—",
+      "o": [
+        "very rapidly",
+        "a person used as a tool by another",
+        "facing two equally unpleasant choices",
+        "to speak plainly and frankly"
+      ],
+      "a": 0,
+      "e": "by leaps and bounds = দ্রুতগতিতে।",
+      "t": "by leaps and bounds → দ্রুতগতিতে।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "What is the meaning of 'a cat's paw'?",
+      "o": [
+        "to make a poor impression",
+        "a person used as a tool by another",
+        "an easy and comfortable situation",
+        "to work or study late into the night"
+      ],
+      "a": 1,
+      "e": "a cat's paw = অন্যের হাতের ক্রীড়নক।",
+      "t": "a cat's paw → অন্যের হাতের ক্রীড়নক।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "'crocodile tears' means—",
+      "o": [
+        "to say exactly the right thing",
+        "a person who is very dear",
+        "false show of sorrow",
+        "the ordinary members of a group"
+      ],
+      "a": 2,
+      "e": "crocodile tears = মায়াকান্না।",
+      "t": "crocodile tears → মায়াকান্না।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Easy",
+      "q": "The idiom 'to face the music' means—",
+      "o": [
+        "an easy and comfortable situation",
+        "finally and for the last time",
+        "to make a poor impression",
+        "to accept the unpleasant consequences"
+      ],
+      "a": 3,
+      "e": "to face the music = নিজের কাজের ফল ভোগ করা।",
+      "t": "to face the music → নিজের কাজের ফল ভোগ করা।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Hard",
+      "q": "What is the meaning of 'a feather in one's cap'?",
+      "o": [
+        "an achievement to be proud of",
+        "the ordinary members of a group",
+        "to take a less important role",
+        "a useless search"
+      ],
+      "a": 0,
+      "e": "a feather in one's cap = গৌরবজনক কৃতিত্ব।",
+      "t": "a feather in one's cap → গৌরবজনক কৃতিত্ব।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "'to hit the nail on the head' means—",
+      "o": [
+        "to live within one's income",
+        "to say exactly the right thing",
+        "a memorable and important day",
+        "a person used as a tool by another"
+      ],
+      "a": 1,
+      "e": "to hit the nail on the head = ঠিক জায়গায় আঘাত করা/ঠিক কথা বলা।",
+      "t": "to hit the nail on the head → ঠিক জায়গায় আঘাত করা/ঠিক কথা বলা।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "The idiom 'in a nutshell' means—",
+      "o": [
+        "finally and for the last time",
+        "a person used as a tool by another",
+        "in a few words; briefly",
+        "to make a poor impression"
+      ],
+      "a": 2,
+      "e": "in a nutshell = সংক্ষেপে।",
+      "t": "in a nutshell → সংক্ষেপে।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "What is the meaning of 'in hot water'?",
+      "o": [
+        "great fuss over a small matter",
+        "completely puzzled",
+        "in a few words; briefly",
+        "in trouble"
+      ],
+      "a": 3,
+      "e": "in hot water = বিপদে।",
+      "t": "in hot water → বিপদে।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Easy",
+      "q": "'to keep the wolf from the door' means—",
+      "o": [
+        "to have just enough to avoid hunger",
+        "to speak plainly and frankly",
+        "a little-known competitor who unexpectedly wins",
+        "to start a conversation and remove shyness"
+      ],
+      "a": 0,
+      "e": "to keep the wolf from the door = কোনোরকমে অনাহার ঠেকানো।",
+      "t": "to keep the wolf from the door → কোনোরকমে অনাহার ঠেকানো।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "The idiom 'to leave no stone unturned' means—",
+      "o": [
+        "to avoid coming to the main point",
+        "to try every possible means",
+        "to have just enough to avoid hunger",
+        "to undertake a risky task"
+      ],
+      "a": 1,
+      "e": "to leave no stone unturned = সাধ্যমতো সব চেষ্টা করা।",
+      "t": "to leave no stone unturned → সাধ্যমতো সব চেষ্টা করা।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "What is the meaning of 'the lion's share'?",
+      "o": [
+        "of the expected standard",
+        "to boast about oneself",
+        "the largest part",
+        "ill feeling between people"
+      ],
+      "a": 2,
+      "e": "the lion's share = সিংহভাগ।",
+      "t": "the lion's share → সিংহভাগ।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "'a man of letters' means—",
+      "o": [
+        "of the expected standard",
+        "to try every possible means",
+        "to boast about oneself",
+        "a scholar or literary person"
+      ],
+      "a": 3,
+      "e": "a man of letters = পণ্ডিত/সাহিত্যিক ব্যক্তি।",
+      "t": "a man of letters → পণ্ডিত/সাহিত্যিক ব্যক্তি।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Hard",
+      "q": "The idiom 'on the horns of a dilemma' means—",
+      "o": [
+        "facing two equally unpleasant choices",
+        "to run away",
+        "in disorder and confusion",
+        "to say exactly the right thing"
+      ],
+      "a": 0,
+      "e": "on the horns of a dilemma = উভয়সংকটে।",
+      "t": "on the horns of a dilemma → উভয়সংকটে।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Easy",
+      "q": "What is the meaning of 'once and for all'?",
+      "o": [
+        "to take a less important role",
+        "finally and for the last time",
+        "a useless search",
+        "false show of sorrow"
+      ],
+      "a": 1,
+      "e": "once and for all = চিরদিনের জন্য, চূড়ান্তভাবে।",
+      "t": "once and for all → চিরদিনের জন্য, চূড়ান্তভাবে।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "'pros and cons' means—",
+      "o": [
+        "the ordinary members of a group",
+        "an achievement to be proud of",
+        "advantages and disadvantages",
+        "to take a less important role"
+      ],
+      "a": 2,
+      "e": "pros and cons = পক্ষে-বিপক্ষে যুক্তি।",
+      "t": "pros and cons → পক্ষে-বিপক্ষে যুক্তি।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "The idiom 'red tape' means—",
+      "o": [
+        "a person used as a tool by another",
+        "to live within one's income",
+        "a memorable and important day",
+        "excessive official formality causing delay"
+      ],
+      "a": 3,
+      "e": "red tape = লাল ফিতার দৌরাত্ম্য, দাপ্তরিক দীর্ঘসূত্রতা।",
+      "t": "red tape → লাল ফিতার দৌরাত্ম্য, দাপ্তরিক দীর্ঘসূত্রতা।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Hard",
+      "q": "What is the meaning of 'rank and file'?",
+      "o": [
+        "the ordinary members of a group",
+        "in trouble",
+        "at the last moment",
+        "to run away"
+      ],
+      "a": 0,
+      "e": "rank and file = সাধারণ সদস্যবৃন্দ।",
+      "t": "rank and file → সাধারণ সদস্যবৃন্দ।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "'to see eye to eye' means—",
+      "o": [
+        "excessive official formality causing delay",
+        "to agree fully",
+        "to take a less important role",
+        "a useless search"
+      ],
+      "a": 1,
+      "e": "to see eye to eye = সম্পূর্ণ একমত হওয়া।",
+      "t": "to see eye to eye → সম্পূর্ণ একমত হওয়া।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Easy",
+      "q": "The idiom 'a storm in a teacup' means—",
+      "o": [
+        "completely puzzled",
+        "under suspicion",
+        "great fuss over a small matter",
+        "in a few words; briefly"
+      ],
+      "a": 2,
+      "e": "a storm in a teacup = তুচ্ছ বিষয়ে হইচই।",
+      "t": "a storm in a teacup → তুচ্ছ বিষয়ে হইচই।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "What is the meaning of 'at the eleventh hour'?",
+      "o": [
+        "finally and for the last time",
+        "a useless search",
+        "false show of sorrow",
+        "at the last moment"
+      ],
+      "a": 3,
+      "e": "at the eleventh hour = শেষ মুহূর্তে।",
+      "t": "at the eleventh hour → শেষ মুহূর্তে।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Hard",
+      "q": "'to bell the cat' means—",
+      "o": [
+        "to undertake a risky task",
+        "to live within one's income",
+        "a memorable and important day",
+        "a person used as a tool by another"
+      ],
+      "a": 0,
+      "e": "to bell the cat = ঝুঁকিপূর্ণ দায়িত্ব নেওয়া।",
+      "t": "to bell the cat → ঝুঁকিপূর্ণ দায়িত্ব নেওয়া।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "The idiom 'to blow one's own trumpet' means—",
+      "o": [
+        "an easy and comfortable situation",
+        "to boast about oneself",
+        "to work or study late into the night",
+        "the largest part"
+      ],
+      "a": 1,
+      "e": "to blow one's own trumpet = নিজের ঢাক নিজে পেটানো।",
+      "t": "to blow one's own trumpet → নিজের ঢাক নিজে পেটানো।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "What is the meaning of 'to bury the hatchet'?",
+      "o": [
+        "a memorable and important day",
+        "to live within one's income",
+        "to make peace",
+        "a person used as a tool by another"
+      ],
+      "a": 2,
+      "e": "to bury the hatchet = বিবাদ মিটিয়ে ফেলা।",
+      "t": "to bury the hatchet → বিবাদ মিটিয়ে ফেলা।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Easy",
+      "q": "'to call a spade a spade' means—",
+      "o": [
+        "to run away",
+        "in trouble",
+        "great fuss over a small matter",
+        "to speak plainly and frankly"
+      ],
+      "a": 3,
+      "e": "to call a spade a spade = স্পষ্ট কথা বলা।",
+      "t": "to call a spade a spade → স্পষ্ট কথা বলা।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Hard",
+      "q": "The idiom 'to cut a sorry figure' means—",
+      "o": [
+        "to make a poor impression",
+        "a scholar or literary person",
+        "to make peace",
+        "a little-known competitor who unexpectedly wins"
+      ],
+      "a": 0,
+      "e": "to cut a sorry figure = হাস্যকর/শোচনীয় অবস্থায় পড়া।",
+      "t": "to cut a sorry figure → হাস্যকর/শোচনীয় অবস্থায় পড়া।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "What is the meaning of 'to hang by a thread'?",
+      "o": [
+        "to accept the unpleasant consequences",
+        "to be in a very uncertain situation",
+        "advantages and disadvantages",
+        "to live within one's income"
+      ],
+      "a": 1,
+      "e": "to hang by a thread = সুতোয় ঝোলা, অনিশ্চিত অবস্থায় থাকা।",
+      "t": "to hang by a thread → সুতোয় ঝোলা, অনিশ্চিত অবস্থায় থাকা।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "'to make both ends meet' means—",
+      "o": [
+        "to take a less important role",
+        "excessive official formality causing delay",
+        "to live within one's income",
+        "a useless search"
+      ],
+      "a": 2,
+      "e": "to make both ends meet = আয়-ব্যয় মেলানো।",
+      "t": "to make both ends meet → আয়-ব্যয় মেলানো।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "The idiom 'to play second fiddle' means—",
+      "o": [
+        "to work or study late into the night",
+        "to speak plainly and frankly",
+        "an easy and comfortable situation",
+        "to take a less important role"
+      ],
+      "a": 3,
+      "e": "to play second fiddle = অধস্তন ভূমিকা পালন করা।",
+      "t": "to play second fiddle → অধস্তন ভূমিকা পালন করা।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Easy",
+      "q": "What is the meaning of 'to pay through the nose'?",
+      "o": [
+        "to pay too much",
+        "a cause of quarrel",
+        "to accept the unpleasant consequences",
+        "advantages and disadvantages"
+      ],
+      "a": 0,
+      "e": "to pay through the nose = অতিরিক্ত দাম দেওয়া।",
+      "t": "to pay through the nose → অতিরিক্ত দাম দেওয়া।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "'to pull someone's leg' means—",
+      "o": [
+        "false show of sorrow",
+        "to tease someone playfully",
+        "finally and for the last time",
+        "to make a poor impression"
+      ],
+      "a": 1,
+      "e": "to pull someone's leg = কাউকে নিয়ে মজা করা।",
+      "t": "to pull someone's leg → কাউকে নিয়ে মজা করা।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "The idiom 'to take to one's heels' means—",
+      "o": [
+        "to tease someone playfully",
+        "great fuss over a small matter",
+        "to run away",
+        "in disorder and confusion"
+      ],
+      "a": 2,
+      "e": "to take to one's heels = চম্পট দেওয়া।",
+      "t": "to take to one's heels → চম্পট দেওয়া।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "What is the meaning of 'under a cloud'?",
+      "o": [
+        "in a few words; briefly",
+        "to run away",
+        "completely puzzled",
+        "under suspicion"
+      ],
+      "a": 3,
+      "e": "under a cloud = সন্দেহের মধ্যে।",
+      "t": "under a cloud → সন্দেহের মধ্যে।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Hard",
+      "q": "'up to the mark' means—",
+      "o": [
+        "of the expected standard",
+        "very rapidly",
+        "a scholar or literary person",
+        "to make peace"
+      ],
+      "a": 0,
+      "e": "up to the mark = প্রত্যাশিত মানসম্পন্ন।",
+      "t": "up to the mark → প্রত্যাশিত মানসম্পন্ন।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Easy",
+      "q": "The idiom 'a Herculean task' means—",
+      "o": [
+        "under suspicion",
+        "an extremely difficult task",
+        "ill feeling between people",
+        "in trouble"
+      ],
+      "a": 1,
+      "e": "a Herculean task = অত্যন্ত কঠিন কাজ।",
+      "t": "a Herculean task → অত্যন্ত কঠিন কাজ।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "What is the meaning of 'a dark horse'?",
+      "o": [
+        "at the last moment",
+        "to have just enough to avoid hunger",
+        "a little-known competitor who unexpectedly wins",
+        "to run away"
+      ],
+      "a": 2,
+      "e": "a dark horse = অপ্রত্যাশিত বিজয়ী।",
+      "t": "a dark horse → অপ্রত্যাশিত বিজয়ী।",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "Complete the idiom: 'It is no use crying over ___ milk.'",
+      "o": [
+        "spilled over",
+        "spoiled",
+        "sour",
+        "spilt"
+      ],
+      "a": 3,
+      "e": "cry over spilt milk = অপূরণীয় ক্ষতির জন্য অনুশোচনা করা।",
+      "t": "cry over spilt milk",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "Complete the idiom: 'The thief was caught red-___ by the guards.'",
+      "o": [
+        "handed",
+        "faced",
+        "headed",
+        "eyed"
+      ],
+      "a": 0,
+      "e": "caught red-handed = হাতেনাতে ধরা পড়া।",
+      "t": "caught red-handed",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.IDM",
+      "d": "Medium",
+      "q": "Complete the idiom: 'The two brothers are as different as chalk and ___.'",
+      "o": [
+        "butter",
+        "cheese",
+        "milk",
+        "bread"
+      ],
+      "a": 1,
+      "e": "as different as chalk and cheese = সম্পূর্ণ ভিন্ন।",
+      "t": "as different as chalk and cheese",
+      "src": "Lecture 01, 07, 18 ও Standard Reference (Oxford Dictionary of Idioms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

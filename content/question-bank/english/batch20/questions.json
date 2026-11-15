@@ -1,0 +1,1236 @@
+{
+  "batch": "Batch 20",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 12–15 (Renaissance/Elizabethan Age; Literary Terms, Figures of Speech)",
+  "subtopics": {
+    "EN.LI.REN": {},
+    "EN.LI.TRM": {}
+  },
+  "questions": [
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "'The Faerie Queene' was written by—",
+      "o": [
+        "Earl of Surrey",
+        "Christopher Marlowe",
+        "Edmund Spenser",
+        "Francis Bacon"
+      ],
+      "a": 2,
+      "e": "রানি এলিজাবেথকে (Gloriana) উৎসর্গ করা রূপক মহাকাব্য।",
+      "t": "The Faerie Queene — Edmund Spenser।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "Who is called the 'Poet's Poet'?",
+      "o": [
+        "Philip Sidney",
+        "Geoffrey Chaucer",
+        "John Milton",
+        "Edmund Spenser"
+      ],
+      "a": 3,
+      "e": "Charles Lamb Spenser-কে ‘Poet's Poet’ বলেন।",
+      "t": "Poet's Poet — Spenser।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Hard",
+      "q": "The Spenserian stanza has—",
+      "o": [
+        "nine lines, the last an alexandrine",
+        "fourteen lines",
+        "eight lines in ottava rima",
+        "three lines in terza rima"
+      ],
+      "a": 0,
+      "e": "আট চরণ iambic pentameter + শেষ চরণ alexandrine (৬ ফুট)।",
+      "t": "Spenserian = ৯ চরণ।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "'The Shepheardes Calender' was written by—",
+      "o": [
+        "John Lyly",
+        "Walter Raleigh",
+        "Edmund Spenser",
+        "Robert Greene"
+      ],
+      "a": 2,
+      "e": "বারো মাসের বারোটি pastoral eclogue (১৫৭৯)।",
+      "t": "The Shepheardes Calender — Edmund Spenser।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Hard",
+      "q": "'Epithalamion' was written by—",
+      "o": [
+        "Thomas More",
+        "Philip Sidney",
+        "Thomas Wyatt",
+        "Edmund Spenser"
+      ],
+      "a": 3,
+      "e": "নিজের বিয়ে উপলক্ষে লেখা বিবাহগীতি।",
+      "t": "Epithalamion — Edmund Spenser।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "'Astrophel and Stella' was written by—",
+      "o": [
+        "Philip Sidney",
+        "Thomas Nashe",
+        "Christopher Marlowe",
+        "Earl of Surrey"
+      ],
+      "a": 0,
+      "e": "এলিজাবেথীয় যুগের বিখ্যাত সনেটমালা।",
+      "t": "Astrophel and Stella — Philip Sidney।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "'An Apology for Poetry' was written by—",
+      "o": [
+        "Thomas More",
+        "Philip Sidney",
+        "George Peele",
+        "Walter Raleigh"
+      ],
+      "a": 1,
+      "e": "‘The Defence of Poesy’ নামেও পরিচিত — ইংরেজি সাহিত্যসমালোচনার প্রথম দিকের নিদর্শন।",
+      "t": "An Apology for Poetry — Philip Sidney।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "'Arcadia' was written by—",
+      "o": [
+        "John Lyly",
+        "Walter Raleigh",
+        "Philip Sidney",
+        "Robert Greene"
+      ],
+      "a": 2,
+      "e": "Sidney-র গদ্য রোমান্স।",
+      "t": "Arcadia — Philip Sidney।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "'Tamburlaine the Great' was written by—",
+      "o": [
+        "Thomas More",
+        "Edmund Spenser",
+        "Thomas Wyatt",
+        "Christopher Marlowe"
+      ],
+      "a": 3,
+      "e": "Marlowe-এর প্রথম দিকের সফল নাটক — blank verse-এর জোরালো ব্যবহার।",
+      "t": "Tamburlaine the Great — Christopher Marlowe।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস — ৩৫-৫৮, ৪০-৬০, ৪১-১৮৯, ৪৮-২১-এ Marlowe ও Doctor Faustus জিজ্ঞাসিত; এটি ভিন্ন নাটক (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "'The Jew of Malta' was written by—",
+      "o": [
+        "Christopher Marlowe",
+        "Philip Sidney",
+        "Earl of Surrey",
+        "Francis Bacon"
+      ],
+      "a": 0,
+      "e": "Barabas-কে নিয়ে Marlowe-এর নাটক।",
+      "t": "The Jew of Malta — Christopher Marlowe।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "'Edward II' was written by—",
+      "o": [
+        "Thomas Wyatt",
+        "Christopher Marlowe",
+        "Thomas More",
+        "George Peele"
+      ],
+      "a": 1,
+      "e": "Marlowe-এর ইতিহাসনাটক।",
+      "t": "Edward II — Christopher Marlowe।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Hard",
+      "q": "Ben Jonson praised Marlowe's blank verse as his—",
+      "o": [
+        "sweet tongue",
+        "golden pen",
+        "mighty line",
+        "silver music"
+      ],
+      "a": 2,
+      "e": "Ben Jonson Marlowe-এর blank verse-কে ‘Marlowe's mighty line’ বলেন।",
+      "t": "mighty line — Marlowe।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "'Come live with me and be my love' opens—",
+      "o": [
+        "Epithalamion",
+        "The Nymph's Reply to the Shepherd",
+        "Astrophel and Stella",
+        "The Passionate Shepherd to His Love"
+      ],
+      "a": 3,
+      "e": "Marlowe-এর pastoral প্রেমের কবিতা; জবাবে Raleigh লেখেন ‘The Nymph's Reply’।",
+      "t": "Passionate Shepherd — Marlowe।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "The 'University Wits' were—",
+      "o": [
+        "a group of Elizabethan playwrights educated at Oxford or Cambridge",
+        "Romantic poets of the Lake District",
+        "Victorian novelists",
+        "Restoration comedy writers"
+      ],
+      "a": 0,
+      "e": "Lyly, Greene, Peele, Nashe, Lodge, Marlowe, Kyd — বিশ্ববিদ্যালয়-শিক্ষিত নাট্যকার।",
+      "t": "University Wits = Elizabethan নাট্যকার।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "'Euphues' was written by—",
+      "o": [
+        "Robert Greene",
+        "John Lyly",
+        "Thomas Nashe",
+        "Philip Sidney"
+      ],
+      "a": 1,
+      "e": "অলংকৃত গদ্যরীতি ‘euphuism’-এর উৎস।",
+      "t": "Euphues — John Lyly।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "An artificial, highly ornate prose style is called—",
+      "o": [
+        "bombast",
+        "euphemism",
+        "euphuism",
+        "realism"
+      ],
+      "a": 2,
+      "e": "John Lyly-র Euphues থেকে নাম; euphemism ভিন্ন জিনিস (নরম প্রকাশ)।",
+      "t": "Lyly → euphuism।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "'Utopia' was written by—",
+      "o": [
+        "Christopher Marlowe",
+        "George Peele",
+        "Walter Raleigh",
+        "Thomas More"
+      ],
+      "a": 3,
+      "e": "আদর্শ রাষ্ট্রের কল্পনা — ১৫১৬ সালে ল্যাটিনে রচিত।",
+      "t": "Utopia — Thomas More।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "Francis Bacon's essay 'Of Studies' contains the line—",
+      "o": [
+        "Reading maketh a full man",
+        "Knowledge is power, and power corrupts",
+        "To err is human",
+        "A little learning is a dangerous thing"
+      ],
+      "a": 0,
+      "e": "‘Reading maketh a full man; conference a ready man; and writing an exact man.’",
+      "t": "Of Studies — Bacon।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস — ৪৪-৫৭-এ Bacon প্রবন্ধকার—এ তথ্য জিজ্ঞাসিত; এটি তাঁর প্রবন্ধের চরণ (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Hard",
+      "q": "'Novum Organum' was written by—",
+      "o": [
+        "Thomas Wyatt",
+        "Francis Bacon",
+        "John Lyly",
+        "George Peele"
+      ],
+      "a": 1,
+      "e": "বৈজ্ঞানিক পদ্ধতি নিয়ে Bacon-এর ল্যাটিন গ্রন্থ।",
+      "t": "Novum Organum — Francis Bacon।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Hard",
+      "q": "'New Atlantis' was written by—",
+      "o": [
+        "John Lyly",
+        "Thomas Wyatt",
+        "Francis Bacon",
+        "George Peele"
+      ],
+      "a": 2,
+      "e": "বিজ্ঞাননির্ভর আদর্শ সমাজের কল্পকাহিনি।",
+      "t": "New Atlantis — Francis Bacon।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "The sonnet was introduced into English by—",
+      "o": [
+        "William Shakespeare",
+        "Philip Sidney",
+        "Edmund Spenser",
+        "Thomas Wyatt"
+      ],
+      "a": 3,
+      "e": "Wyatt (ও Surrey) Petrarch-এর অনুকরণে প্রথম ইংরেজি সনেট রচনা করেন।",
+      "t": "প্রথম ইংরেজি সনেট — Wyatt।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Hard",
+      "q": "Blank verse was first used in English by—",
+      "o": [
+        "the Earl of Surrey",
+        "Christopher Marlowe",
+        "John Milton",
+        "Thomas Wyatt"
+      ],
+      "a": 0,
+      "e": "Surrey Virgil-এর Aeneid অনুবাদে প্রথম blank verse ব্যবহার করেন।",
+      "t": "প্রথম blank verse — Surrey।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "The Italian poet who popularised the sonnet form was—",
+      "o": [
+        "Dante",
+        "Petrarch",
+        "Boccaccio",
+        "Ariosto"
+      ],
+      "a": 1,
+      "e": "Petrarch-এর সনেট (abbaabba + sestet) ইউরোপজুড়ে অনুকৃত হয়।",
+      "t": "sonnet — Petrarch।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "The Elizabethan Age is usually dated—",
+      "o": [
+        "1485–1509",
+        "1558–1603",
+        "1603–1625",
+        "1660–1700"
+      ],
+      "a": 1,
+      "e": "রানি প্রথম এলিজাবেথের রাজত্বকাল।",
+      "t": "Elizabethan = ১৫৫৮–১৬০৩।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস — ৩৮-৪২-এ Jacobean যুগের সময়কাল জিজ্ঞাসিত; এটি Elizabethan যুগের (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Hard",
+      "q": "'The Unfortunate Traveller' was written by—",
+      "o": [
+        "Robert Greene",
+        "Christopher Marlowe",
+        "Thomas Nashe",
+        "Francis Bacon"
+      ],
+      "a": 2,
+      "e": "প্রথম দিকের ইংরেজি picaresque কাহিনি (১৫৯৪)।",
+      "t": "The Unfortunate Traveller — Thomas Nashe।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "'The Nymph's Reply to the Shepherd' was written by—",
+      "o": [
+        "Edmund Spenser",
+        "Christopher Marlowe",
+        "Philip Sidney",
+        "Walter Raleigh"
+      ],
+      "a": 3,
+      "e": "Marlowe-এর Passionate Shepherd-এর জবাবে Raleigh-র কবিতা।",
+      "t": "Nymph's Reply — Raleigh।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "The Authorized (King James) Version of the Bible was published in—",
+      "o": [
+        "1557",
+        "1611",
+        "1623",
+        "1660"
+      ],
+      "a": 1,
+      "e": "রাজা প্রথম জেমসের পৃষ্ঠপোষকতায় ১৬১১ সালে প্রকাশিত।",
+      "t": "King James Bible = ১৬১১।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Hard",
+      "q": "'Tottel's Miscellany' (1557) is important because it—",
+      "o": [
+        "first printed the poems of Wyatt and Surrey",
+        "contained Shakespeare's sonnets",
+        "was the first English novel",
+        "introduced blank verse drama"
+      ],
+      "a": 0,
+      "e": "এই সংকলনে Wyatt ও Surrey-র কবিতা প্রথম মুদ্রিত হয়।",
+      "t": "Tottel = Wyatt + Surrey।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "The European Renaissance first began in—",
+      "o": [
+        "England",
+        "Italy",
+        "France",
+        "Germany"
+      ],
+      "a": 1,
+      "e": "চতুর্দশ শতকে ইতালিতে শুরু; ইংল্যান্ডে মূলত ষোড়শ শতকে।",
+      "t": "Renaissance — Italy।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "Thomas Kyd is credited with popularising the—",
+      "o": [
+        "masque",
+        "comedy of manners",
+        "revenge tragedy",
+        "problem play"
+      ],
+      "a": 2,
+      "e": "Senecan আদলের প্রতিশোধ-ট্র্যাজেডির জনপ্রিয় রূপদাতা Kyd।",
+      "t": "Kyd — revenge tragedy।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস — ৩৮-৬৪-এ The Spanish Tragedy-র লেখক জিজ্ঞাসিত; এটি নাট্যধারা (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "'Amoretti', a sonnet sequence, was written by—",
+      "o": [
+        "Edmund Spenser",
+        "Philip Sidney",
+        "Thomas Wyatt",
+        "Michael Drayton"
+      ],
+      "a": 0,
+      "e": "Spenser-এর সনেটমালা (১৫৯৫)।",
+      "t": "Amoretti — Spenser।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Hard",
+      "q": "Robert Greene's 'Friar Bacon and Friar Bungay' is a—",
+      "o": [
+        "history play",
+        "tragedy",
+        "masque",
+        "comedy"
+      ],
+      "a": 3,
+      "e": "University Wit Robert Greene-এর রোমান্টিক কমেডি।",
+      "t": "Friar Bacon — Greene।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Medium",
+      "q": "Sir Philip Sidney died in 1586 at the battle of—",
+      "o": [
+        "Zutphen",
+        "Agincourt",
+        "Bosworth",
+        "Hastings"
+      ],
+      "a": 0,
+      "e": "নেদারল্যান্ডসের Zutphen যুদ্ধে আহত হয়ে মারা যান।",
+      "t": "Sidney — Zutphen।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Easy",
+      "q": "In literature, 'personification' means—",
+      "o": [
+        "the purging of pity and fear through tragedy",
+        "giving human qualities to non-human things",
+        "a metrical foot of an unstressed followed by a stressed syllable",
+        "the quality that arouses pity or sorrow"
+      ],
+      "a": 1,
+      "e": "personification = মানবীকরণ — যেমন ‘The wind whispered’।",
+      "t": "personification — giving human qualities to non-human things।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "The literary term 'hyperbole' refers to—",
+      "o": [
+        "a novel about the growth of a young person",
+        "the character who opposes the hero",
+        "deliberate exaggeration for effect",
+        "a harsh, discordant mixture of sounds"
+      ],
+      "a": 2,
+      "e": "hyperbole = অতিশয়োক্তি — ‘I have told you a million times’।",
+      "t": "hyperbole — deliberate exaggeration for effect।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "What is 'oxymoron'?",
+      "o": [
+        "saying the opposite of what is meant",
+        "a short, witty and pointed saying",
+        "a comedy based on exaggerated and improbable situations",
+        "two contradictory words placed together"
+      ],
+      "a": 3,
+      "e": "oxymoron = বিরোধী শব্দের পাশাপাশি অবস্থান — ‘sweet sorrow’, ‘cruel kindness’।",
+      "t": "oxymoron — two contradictory words placed together।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "In literature, 'paradox' means—",
+      "o": [
+        "a statement that seems contradictory but may be true",
+        "saying the opposite of what is meant",
+        "a narrative poem or folk song in short stanzas",
+        "the final unravelling of the plot"
+      ],
+      "a": 0,
+      "e": "paradox = আপাতবিরোধী সত্য — ‘The more you learn, the less you know’।",
+      "t": "paradox — a statement that seems contradictory but may be true।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "The literary term 'irony' refers to—",
+      "o": [
+        "the final unravelling of the plot",
+        "saying the opposite of what is meant",
+        "a play on words with similar sounds or several meanings",
+        "a concluding section added at the end of a work"
+      ],
+      "a": 1,
+      "e": "irony = বক্রোক্তি/শ্লেষ — বলা ও বোঝানোর বৈপরীত্য।",
+      "t": "irony — saying the opposite of what is meant।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Easy",
+      "q": "What is 'onomatopoeia'?",
+      "o": [
+        "a part used to represent the whole",
+        "a sensational drama with exaggerated emotions",
+        "a word that imitates a sound",
+        "a speech in which a character speaks thoughts aloud alone on stage"
+      ],
+      "a": 2,
+      "e": "onomatopoeia = ধ্বন্যাত্মক শব্দ — buzz, hiss, splash।",
+      "t": "onomatopoeia — a word that imitates a sound।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "In literature, 'apostrophe' means—",
+      "o": [
+        "poetry without regular metre or rhyme",
+        "a word that imitates a sound",
+        "ridicule used to criticise vice or folly",
+        "addressing an absent person or a thing directly"
+      ],
+      "a": 3,
+      "e": "apostrophe = অনুপস্থিত ব্যক্তি বা বস্তুকে সম্বোধন — ‘O Death, where is thy sting?’।",
+      "t": "apostrophe — addressing an absent person or a thing directly।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "The literary term 'synecdoche' refers to—",
+      "o": [
+        "a part used to represent the whole",
+        "naming a thing by something closely associated with it",
+        "a remark to the audience that other characters do not hear",
+        "a stanza of four lines"
+      ],
+      "a": 0,
+      "e": "synecdoche = অংশ দিয়ে সমগ্র বোঝানো — ‘All hands on deck’।",
+      "t": "synecdoche — a part used to represent the whole।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "What is 'metonymy'?",
+      "o": [
+        "a remark to the audience that other characters do not hear",
+        "naming a thing by something closely associated with it",
+        "a stanza of four lines",
+        "repetition of vowel sounds in nearby words"
+      ],
+      "a": 1,
+      "e": "metonymy = সংশ্লিষ্ট বস্তুর নামে নির্দেশ — ‘the Crown’ = রাজশক্তি।",
+      "t": "metonymy — naming a thing by something closely associated with it।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "In literature, 'elegy' means—",
+      "o": [
+        "a concluding section added at the end of a work",
+        "a play on words with similar sounds or several meanings",
+        "a poem of mourning for the dead",
+        "saying the opposite of what is meant"
+      ],
+      "a": 2,
+      "e": "elegy = শোকগাথা।",
+      "t": "elegy — a poem of mourning for the dead।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Easy",
+      "q": "The literary term 'ode' refers to—",
+      "o": [
+        "two successive rhyming lines",
+        "addressing an absent person or a thing directly",
+        "a speech in which a character speaks thoughts aloud alone on stage",
+        "a lyric poem of praise addressed to a person or thing"
+      ],
+      "a": 3,
+      "e": "ode = স্তোত্রধর্মী গীতিকবিতা।",
+      "t": "ode — a lyric poem of praise addressed to a person or thing।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "What is 'ballad'?",
+      "o": [
+        "a narrative poem or folk song in short stanzas",
+        "a comedy based on exaggerated and improbable situations",
+        "a statement that seems contradictory but may be true",
+        "a lyric poem of praise addressed to a person or thing"
+      ],
+      "a": 0,
+      "e": "ballad = লোকগাথা।",
+      "t": "ballad — a narrative poem or folk song in short stanzas।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "In literature, 'epic' means—",
+      "o": [
+        "a poem of mourning for the dead",
+        "a long narrative poem about heroic deeds",
+        "the tragic flaw or error of a hero",
+        "a short, witty and pointed saying"
+      ],
+      "a": 1,
+      "e": "epic = মহাকাব্য।",
+      "t": "epic — a long narrative poem about heroic deeds।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "The literary term 'satire' refers to—",
+      "o": [
+        "a poem of mourning for the dead",
+        "two contradictory words placed together",
+        "ridicule used to criticise vice or folly",
+        "the tragic flaw or error of a hero"
+      ],
+      "a": 2,
+      "e": "satire = ব্যঙ্গরচনা।",
+      "t": "satire — ridicule used to criticise vice or folly।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "What is 'soliloquy'?",
+      "o": [
+        "a statement that seems contradictory but may be true",
+        "a short, witty and pointed saying",
+        "a comedy based on exaggerated and improbable situations",
+        "a speech in which a character speaks thoughts aloud alone on stage"
+      ],
+      "a": 3,
+      "e": "soliloquy = স্বগতোক্তি।",
+      "t": "soliloquy — a speech in which a character speaks thoughts aloud alone on stage।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Easy",
+      "q": "In literature, 'aside' means—",
+      "o": [
+        "a remark to the audience that other characters do not hear",
+        "naming a thing by something closely associated with it",
+        "the purging of pity and fear through tragedy",
+        "a metrical foot of an unstressed followed by a stressed syllable"
+      ],
+      "a": 0,
+      "e": "aside = জনান্তিক।",
+      "t": "aside — a remark to the audience that other characters do not hear।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "The literary term 'catharsis' refers to—",
+      "o": [
+        "a lyric poem of praise addressed to a person or thing",
+        "the purging of pity and fear through tragedy",
+        "the final unravelling of the plot",
+        "a play on words with similar sounds or several meanings"
+      ],
+      "a": 1,
+      "e": "catharsis = Aristotle-এর মতে ট্র্যাজেডির মাধ্যমে আবেগের পরিশুদ্ধি।",
+      "t": "catharsis — the purging of pity and fear through tragedy।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "What is 'hamartia'?",
+      "o": [
+        "a comedy based on exaggerated and improbable situations",
+        "a short, witty and pointed saying",
+        "the tragic flaw or error of a hero",
+        "a statement that seems contradictory but may be true"
+      ],
+      "a": 2,
+      "e": "hamartia = নায়কের ট্র্যাজিক ত্রুটি।",
+      "t": "hamartia — the tragic flaw or error of a hero।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "In literature, 'denouement' means—",
+      "o": [
+        "two contradictory words placed together",
+        "a metrical foot of an unstressed followed by a stressed syllable",
+        "the quality that arouses pity or sorrow",
+        "the final unravelling of the plot"
+      ],
+      "a": 3,
+      "e": "denouement = কাহিনির চূড়ান্ত গ্রন্থিমোচন।",
+      "t": "denouement — the final unravelling of the plot।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "The literary term 'antagonist' refers to—",
+      "o": [
+        "the character who opposes the hero",
+        "an unexpected device that suddenly resolves the plot",
+        "a sensational drama with exaggerated emotions",
+        "addressing an absent person or a thing directly"
+      ],
+      "a": 0,
+      "e": "antagonist = প্রতিনায়ক।",
+      "t": "antagonist — the character who opposes the hero।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Easy",
+      "q": "What is 'free verse'?",
+      "o": [
+        "ridicule used to criticise vice or folly",
+        "poetry without regular metre or rhyme",
+        "two successive rhyming lines",
+        "when the audience knows something a character does not"
+      ],
+      "a": 1,
+      "e": "free verse = মুক্তছন্দ।",
+      "t": "free verse — poetry without regular metre or rhyme।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "In literature, 'couplet' means—",
+      "o": [
+        "a short, witty and pointed saying",
+        "the purging of pity and fear through tragedy",
+        "two successive rhyming lines",
+        "a comedy based on exaggerated and improbable situations"
+      ],
+      "a": 2,
+      "e": "couplet = দুই চরণের মিত্রাক্ষর জোড়া।",
+      "t": "couplet — two successive rhyming lines।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "The literary term 'quatrain' refers to—",
+      "o": [
+        "a sensational drama with exaggerated emotions",
+        "the character who opposes the hero",
+        "an unexpected device that suddenly resolves the plot",
+        "a stanza of four lines"
+      ],
+      "a": 3,
+      "e": "quatrain = চার চরণের স্তবক।",
+      "t": "quatrain — a stanza of four lines।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "What is 'iamb'?",
+      "o": [
+        "a metrical foot of an unstressed followed by a stressed syllable",
+        "deliberate exaggeration for effect",
+        "naming a thing by something closely associated with it",
+        "a remark to the audience that other characters do not hear"
+      ],
+      "a": 0,
+      "e": "iamb = একটি অ-ঝোঁক + একটি ঝোঁকযুক্ত অক্ষর।",
+      "t": "iamb — a metrical foot of an unstressed followed by a stressed syllable।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "In literature, 'epigram' means—",
+      "o": [
+        "when the audience knows something a character does not",
+        "a short, witty and pointed saying",
+        "giving human qualities to non-human things",
+        "a part used to represent the whole"
+      ],
+      "a": 1,
+      "e": "epigram = সংক্ষিপ্ত তীক্ষ্ণ উক্তি।",
+      "t": "epigram — a short, witty and pointed saying।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Easy",
+      "q": "The literary term 'pun' refers to—",
+      "o": [
+        "addressing an absent person or a thing directly",
+        "a sensational drama with exaggerated emotions",
+        "a play on words with similar sounds or several meanings",
+        "ridicule used to criticise vice or folly"
+      ],
+      "a": 2,
+      "e": "pun = শ্লেষ/শব্দক্রীড়া।",
+      "t": "pun — a play on words with similar sounds or several meanings।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "What is 'bildungsroman'?",
+      "o": [
+        "the tragic flaw or error of a hero",
+        "a statement that seems contradictory but may be true",
+        "a lyric poem of praise addressed to a person or thing",
+        "a novel about the growth of a young person"
+      ],
+      "a": 3,
+      "e": "bildungsroman = বেড়ে ওঠার উপন্যাস।",
+      "t": "bildungsroman — a novel about the growth of a young person।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "In literature, 'deus ex machina' means—",
+      "o": [
+        "an unexpected device that suddenly resolves the plot",
+        "a narrative poem or folk song in short stanzas",
+        "the final unravelling of the plot",
+        "a play on words with similar sounds or several meanings"
+      ],
+      "a": 0,
+      "e": "deus ex machina = আকস্মিক কৃত্রিম সমাধান।",
+      "t": "deus ex machina — an unexpected device that suddenly resolves the plot।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "The literary term 'dramatic irony' refers to—",
+      "o": [
+        "two contradictory words placed together",
+        "when the audience knows something a character does not",
+        "a poem of mourning for the dead",
+        "the purging of pity and fear through tragedy"
+      ],
+      "a": 1,
+      "e": "dramatic irony = নাটকীয় শ্লেষ — দর্শক জানে, চরিত্র জানে না।",
+      "t": "dramatic irony — when the audience knows something a character does not।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "What is 'assonance'?",
+      "o": [
+        "a lyric poem of praise addressed to a person or thing",
+        "a statement that seems contradictory but may be true",
+        "repetition of vowel sounds in nearby words",
+        "the tragic flaw or error of a hero"
+      ],
+      "a": 2,
+      "e": "assonance = স্বরধ্বনির পুনরাবৃত্তি।",
+      "t": "assonance — repetition of vowel sounds in nearby words।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Easy",
+      "q": "In literature, 'pathos' means—",
+      "o": [
+        "a metrical foot of an unstressed followed by a stressed syllable",
+        "a poem of mourning for the dead",
+        "the purging of pity and fear through tragedy",
+        "the quality that arouses pity or sorrow"
+      ],
+      "a": 3,
+      "e": "pathos = করুণরস।",
+      "t": "pathos — the quality that arouses pity or sorrow।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "The literary term 'farce' refers to—",
+      "o": [
+        "a comedy based on exaggerated and improbable situations",
+        "a statement that seems contradictory but may be true",
+        "a lyric poem of praise addressed to a person or thing",
+        "the tragic flaw or error of a hero"
+      ],
+      "a": 0,
+      "e": "farce = প্রহসন।",
+      "t": "farce — a comedy based on exaggerated and improbable situations।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "What is 'epilogue'?",
+      "o": [
+        "naming a thing by something closely associated with it",
+        "a concluding section added at the end of a work",
+        "a remark to the audience that other characters do not hear",
+        "a stanza of four lines"
+      ],
+      "a": 1,
+      "e": "epilogue = উপসংহার/শেষকথা।",
+      "t": "epilogue — a concluding section added at the end of a work।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "In literature, 'cacophony' means—",
+      "o": [
+        "the character who opposes the hero",
+        "a long narrative poem about heroic deeds",
+        "a harsh, discordant mixture of sounds",
+        "a novel about the growth of a young person"
+      ],
+      "a": 2,
+      "e": "cacophony = শ্রুতিকটু ধ্বনি।",
+      "t": "cacophony — a harsh, discordant mixture of sounds।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "The literary term 'melodrama' refers to—",
+      "o": [
+        "naming a thing by something closely associated with it",
+        "when the audience knows something a character does not",
+        "deliberate exaggeration for effect",
+        "a sensational drama with exaggerated emotions"
+      ],
+      "a": 3,
+      "e": "melodrama = অতিনাটক।",
+      "t": "melodrama — a sensational drama with exaggerated emotions।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "The 'Poetics', which defines tragedy, was written by—",
+      "o": [
+        "Aristotle",
+        "Plato",
+        "Horace",
+        "Longinus"
+      ],
+      "a": 0,
+      "e": "Aristotle-এর Poetics-এ ট্র্যাজেডির সংজ্ঞা ও উপাদান আলোচিত।",
+      "t": "Poetics — Aristotle।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "'Life is a dream' is an example of—",
+      "o": [
+        "simile",
+        "metaphor",
+        "onomatopoeia",
+        "alliteration"
+      ],
+      "a": 1,
+      "e": "like/as ছাড়া সরাসরি তুলনা — metaphor।",
+      "t": "like/as নেই = metaphor।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "Semantic Duplicate — ১৮-১২ (metaphorical = implied comparison) ও ৩৭-১২৪ (simile বনাম metaphor): একই ধারণা",
+      "v": "যাচাইকৃত",
+      "reject": "Semantic Duplicate"
+    },
+    {
+      "st": "EN.LI.REN",
+      "d": "Hard",
+      "q": "Marlowe's unfinished poem 'Hero and Leander' was completed by—",
+      "o": [
+        "Philip Sidney",
+        "Ben Jonson",
+        "George Chapman",
+        "Thomas Nashe"
+      ],
+      "a": 2,
+      "e": "Marlowe-এর মৃত্যুর পর George Chapman কাব্যটি সম্পূর্ণ করেন (১৫৯৮)।",
+      "t": "Hero and Leander — Marlowe + Chapman।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.TRM",
+      "d": "Medium",
+      "q": "In poetry, 'enjambment' means—",
+      "o": [
+        "a rhyme at the end of every line",
+        "a pause in the middle of a line",
+        "the repetition of a refrain",
+        "the running on of a sentence beyond the end of a line"
+      ],
+      "a": 3,
+      "e": "এক চরণের বাক্য বিরতি ছাড়াই পরের চরণে গড়িয়ে যাওয়া — enjambment; চরণের মাঝের বিরতি = caesura।",
+      "t": "run-on line = enjambment।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion; M. H. Abrams — A Glossary of Literary Terms)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

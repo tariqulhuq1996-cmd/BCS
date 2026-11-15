@@ -1,0 +1,26 @@
+{
+  "target": 1500,
+  "priorityTarget": {
+    "A": 408,
+    "B": 588,
+    "C": 230,
+    "D": 274
+  },
+  "historicalReference": 988,
+  "coverage": "EN.GR.VOI: বিগত 20টি (২০০-নম্বর যুগে)",
+  "generated": 43,
+  "exact": 0,
+  "semantic": 1,
+  "near": 0,
+  "verify": 0,
+  "qc": 0,
+  "accepted": 42,
+  "cumulative": 1500,
+  "remaining": 0,
+  "cumByPriority": {
+    "A": 408,
+    "B": 588,
+    "C": 230,
+    "D": 274
+  }
+}

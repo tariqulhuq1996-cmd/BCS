@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // প্রশ্নব্যাংক ও কার্ডের নির্মাণ-স্ক্রিপ্ট (সাইটের অংশ নয়)
+    "content/**",
   ]),
 ]);
 

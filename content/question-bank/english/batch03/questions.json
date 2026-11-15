@@ -1,0 +1,1287 @@
+{
+  "batch": "Batch 03",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 01 (Clause, Sentence — Simple/Complex/Compound, Transformation) ও Conditional",
+  "subtopics": {
+    "EN.GR.SEN": {}
+  },
+  "questions": [
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "Unless you hurry, you ___ the last bus.",
+      "o": [
+        "will miss",
+        "would miss",
+        "missed",
+        "would have missed"
+      ],
+      "a": 0,
+      "e": "Unless = If … not; first conditional-এ main clause-এ will + base verb।",
+      "t": "Unless + present → will + V1।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "I will lend you the book provided you ___ it within a week.",
+      "o": [
+        "will return",
+        "return",
+        "returned",
+        "would return"
+      ],
+      "a": 1,
+      "e": "provided (that) conditional clause-এ future অর্থেও present simple বসে।",
+      "t": "provided + present simple।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "Take an umbrella in case it ___.",
+      "o": [
+        "would rain",
+        "will rain",
+        "rains",
+        "rained"
+      ],
+      "a": 2,
+      "e": "in case (যদি হয় এই আশঙ্কায়)-এর পরে present simple।",
+      "t": "in case + present।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Hard",
+      "q": "But for your timely help, I ___ in the business.",
+      "o": [
+        "would fail now",
+        "will fail",
+        "had failed",
+        "would have failed"
+      ],
+      "a": 3,
+      "e": "But for (না থাকলে) + অতীত প্রসঙ্গ → would have + pp (অতীতে যা ঘটেনি)।",
+      "t": "But for = If it had not been for।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Hard",
+      "q": "___ I rich, I would build a hospital for the poor.",
+      "o": [
+        "Were",
+        "Was",
+        "Am",
+        "Had"
+      ],
+      "a": 0,
+      "e": "Inversion: If I were rich = Were I rich (if উহ্য রেখে were আগে)।",
+      "t": "If উহ্য → Were + subject।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Hard",
+      "q": "___ you need any help, please call me.",
+      "o": [
+        "Would",
+        "Should",
+        "Could",
+        "Had"
+      ],
+      "a": 1,
+      "e": "Inversion: If you should need = Should you need (ভবিষ্যতের সম্ভাবনা)।",
+      "t": "If you should = Should you।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "I wish I ___ a bird.",
+      "o": [
+        "will be",
+        "am",
+        "were",
+        "have been"
+      ],
+      "a": 2,
+      "e": "বর্তমানের অবাস্তব ইচ্ছা: wish + subject + were/past।",
+      "t": "wish + were (বর্তমান অবাস্তব)।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Hard",
+      "q": "She wishes she ___ harder for the last exam.",
+      "o": [
+        "would study",
+        "studied",
+        "has studied",
+        "had studied"
+      ],
+      "a": 3,
+      "e": "অতীতের আক্ষেপ: wish + past perfect।",
+      "t": "wish + had + pp (অতীত আক্ষেপ)।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "If only I ___ his phone number now!",
+      "o": [
+        "knew",
+        "know",
+        "had known",
+        "will know"
+      ],
+      "a": 0,
+      "e": "If only (আহা যদি) বর্তমানের অবাস্তব ইচ্ছায় past simple।",
+      "t": "If only + past = বর্তমান।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Hard",
+      "q": "If he had taken the medicine yesterday, he ___ better now.",
+      "o": [
+        "would have felt",
+        "would feel",
+        "will feel",
+        "felt"
+      ],
+      "a": 1,
+      "e": "Mixed conditional: অতীত শর্ত (had taken), বর্তমান ফল (now) → would + V1।",
+      "t": "অতীত কারণ + now = would + V1।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "Suppose you ___ a lottery, what would you do?",
+      "o": [
+        "had won",
+        "win",
+        "won",
+        "will win"
+      ],
+      "a": 2,
+      "e": "Suppose/Supposing + অবাস্তব কল্পনা → past simple, main clause-এ would।",
+      "t": "Suppose + past → would।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "You can stay here as long as you ___ quiet.",
+      "o": [
+        "would keep",
+        "will keep",
+        "kept",
+        "keep"
+      ],
+      "a": 3,
+      "e": "as long as (যতক্ষণ) শর্তে present simple।",
+      "t": "as long as + present।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Hard",
+      "q": "Walk carefully lest you ___ fall.",
+      "o": [
+        "should",
+        "will",
+        "would",
+        "may not"
+      ],
+      "a": 0,
+      "e": "lest (পাছে)-এর পরে should + V1; lest নিজেই নেতিবাচক, তাই not বসে না।",
+      "t": "lest … should (not ছাড়া)।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "Semantic Duplicate — ২৬-৪৮ (He ran fast lest he --- miss the train = should): একই নিয়ম",
+      "v": "যাচাইকৃত",
+      "reject": "Semantic Duplicate"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "Hurry up, otherwise you ___ late.",
+      "o": [
+        "would be",
+        "will be",
+        "are",
+        "were"
+      ],
+      "a": 1,
+      "e": "otherwise (নইলে) + ভবিষ্যৎ ফল → will।",
+      "t": "otherwise + will।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Easy",
+      "q": "'What a lovely view it is!' — This is an—",
+      "o": [
+        "Imperative sentence",
+        "Assertive sentence",
+        "Exclamatory sentence",
+        "Optative sentence"
+      ],
+      "a": 2,
+      "e": "আবেগ/বিস্ময় প্রকাশ — exclamatory।",
+      "t": "What a …! = exclamatory।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'Who does not love his motherland?' — The assertive form is—",
+      "o": [
+        "Love your motherland.",
+        "Nobody loves his motherland.",
+        "Does everybody love his motherland?",
+        "Everybody loves his motherland."
+      ],
+      "a": 3,
+      "e": "Negative rhetorical question → positive assertive (Everybody …)।",
+      "t": "Who does not = Everybody।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'Never tell a lie.' — The assertive form is—",
+      "o": [
+        "You should never tell a lie.",
+        "You never tell a lie.",
+        "Never was a lie told.",
+        "A lie is never told by you."
+      ],
+      "a": 0,
+      "e": "Imperative-এর উপদেশমূলক assertive রূপে should বসে।",
+      "t": "Imperative → You should …",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'How beautiful the flower is!' — The assertive form is—",
+      "o": [
+        "The flower is not beautiful.",
+        "The flower is very beautiful.",
+        "Is the flower beautiful?",
+        "What a flower!"
+      ],
+      "a": 1,
+      "e": "How + adjective … ! → very + adjective (assertive)।",
+      "t": "How … ! → very …",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "Which of the following is an interrogative sentence?",
+      "o": [
+        "What a nice pen!",
+        "Lend me your pen.",
+        "Can you lend me your pen?",
+        "I need a pen."
+      ],
+      "a": 2,
+      "e": "প্রশ্ন করা হলে interrogative।",
+      "t": "? = interrogative।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'Is there anyone who can solve it?' — The assertive form is—",
+      "o": [
+        "It cannot be solved by someone.",
+        "Everyone can solve it.",
+        "Someone can solve it.",
+        "There is no one who can solve it."
+      ],
+      "a": 3,
+      "e": "Positive rhetorical question → negative assertive।",
+      "t": "Is there anyone…? = There is no one…",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'Please help me.' — This sentence expresses—",
+      "o": [
+        "a request",
+        "a wish",
+        "an exclamation",
+        "a statement"
+      ],
+      "a": 0,
+      "e": "Please-যুক্ত imperative অনুরোধ বোঝায়।",
+      "t": "Please = request।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'I know what he wants.' — This is a—",
+      "o": [
+        "Simple sentence",
+        "Complex sentence",
+        "Compound sentence",
+        "Optative sentence"
+      ],
+      "a": 1,
+      "e": "what he wants একটি noun clause, সঙ্গে principal clause I know — complex।",
+      "t": "noun clause থাকলে complex।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'The man who came yesterday is my uncle.' — This is a—",
+      "o": [
+        "Compound sentence",
+        "Simple sentence",
+        "Complex sentence",
+        "Optative sentence"
+      ],
+      "a": 2,
+      "e": "who came yesterday — adjective clause; complex।",
+      "t": "who-clause = complex।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'He tried hard but failed.' — This is a—",
+      "o": [
+        "Optative sentence",
+        "Simple sentence",
+        "Complex sentence",
+        "Compound sentence"
+      ],
+      "a": 3,
+      "e": "but দিয়ে দুটি স্বাধীন অংশ যুক্ত — compound।",
+      "t": "but = compound।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'Having finished the work, he went home.' — This is a—",
+      "o": [
+        "Simple sentence",
+        "Complex sentence",
+        "Compound sentence",
+        "Optative sentence"
+      ],
+      "a": 0,
+      "e": "একটিমাত্র finite verb (went); Having finished = participle phrase।",
+      "t": "একটি finite verb = simple।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'Despite his illness, he attended the meeting.' — This is a—",
+      "o": [
+        "Complex sentence",
+        "Simple sentence",
+        "Compound sentence",
+        "Optative sentence"
+      ],
+      "a": 1,
+      "e": "Despite + noun phrase; finite verb একটিই — simple।",
+      "t": "despite + noun = simple।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'He is not only a singer but also a dancer.' — This is a—",
+      "o": [
+        "Complex sentence",
+        "Simple sentence",
+        "Compound sentence",
+        "Optative sentence"
+      ],
+      "a": 2,
+      "e": "not only … but also — coordinating correlative; compound।",
+      "t": "not only … but also = compound।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Hard",
+      "q": "'Hardly had he reached the station when the train left.' — This is a—",
+      "o": [
+        "Optative sentence",
+        "Simple sentence",
+        "Compound sentence",
+        "Complex sentence"
+      ],
+      "a": 3,
+      "e": "Hardly … when কালবাচক adverb clause-যুক্ত — complex।",
+      "t": "Hardly … when = complex।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'Being ill, she could not attend the class.' — This is a—",
+      "o": [
+        "Simple sentence",
+        "Complex sentence",
+        "Compound sentence",
+        "Optative sentence"
+      ],
+      "a": 0,
+      "e": "Being ill = participle phrase; একটি finite verb — simple।",
+      "t": "Being … = simple।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'As soon as he saw the police, he ran away.' — The simple form is—",
+      "o": [
+        "He saw the police and he ran away.",
+        "On seeing the police, he ran away.",
+        "When he saw the police, he ran away.",
+        "He ran away as he saw the police."
+      ],
+      "a": 1,
+      "e": "As soon as … → On/Upon + V-ing (simple)।",
+      "t": "As soon as → On + V-ing।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'He is too weak to walk.' — The complex form is—",
+      "o": [
+        "He is very weak to walk.",
+        "He is weak and cannot walk.",
+        "He is so weak that he cannot walk.",
+        "Being weak, he cannot walk."
+      ],
+      "a": 2,
+      "e": "too … to → so … that + subject + cannot/could not।",
+      "t": "too … to → so … that … not।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'Work hard or you will fail.' — The complex form is—",
+      "o": [
+        "Unless you work hard, you will not fail.",
+        "Work hard and you will fail.",
+        "Working hard, you will fail.",
+        "If you do not work hard, you will fail."
+      ],
+      "a": 3,
+      "e": "Imperative + or → If you do not … (complex)।",
+      "t": "… or → If … not।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'He confessed his guilt.' — The complex form is—",
+      "o": [
+        "He confessed that he was guilty.",
+        "He confessed and he was guilty.",
+        "He was guilty so he confessed.",
+        "Confessing, he was guilty."
+      ],
+      "a": 0,
+      "e": "noun phrase (his guilt) → noun clause (that he was guilty)।",
+      "t": "noun → that-clause।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'In spite of being rich, he is unhappy.' — The compound form is—",
+      "o": [
+        "Though he is rich, he is unhappy.",
+        "He is rich but he is unhappy.",
+        "Being rich, he is unhappy.",
+        "He is rich so he is unhappy."
+      ],
+      "a": 1,
+      "e": "In spite of → but (compound); Though → complex।",
+      "t": "In spite of → but।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'The boy who is industrious will prosper.' — The simple form is—",
+      "o": [
+        "If the boy is industrious, he will prosper.",
+        "The boy is industrious and will prosper.",
+        "The industrious boy will prosper.",
+        "Being industrious boy will prosper."
+      ],
+      "a": 2,
+      "e": "adjective clause → adjective (simple)।",
+      "t": "who is + adj → adj + noun।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'Besides being a poet, he is a painter.' — The compound form is—",
+      "o": [
+        "He is a poet who is a painter.",
+        "Though he is a poet, he is a painter.",
+        "Being a poet, he is a painter.",
+        "He is not only a poet but also a painter."
+      ],
+      "a": 3,
+      "e": "Besides + V-ing → not only … but also (compound)।",
+      "t": "Besides → not only … but also।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'She was so tired that she could not walk.' — The simple form is—",
+      "o": [
+        "She was too tired to walk.",
+        "She was tired and could not walk.",
+        "Being tired, she walked.",
+        "She was very tired to walk."
+      ],
+      "a": 0,
+      "e": "so … that … not → too … to (simple)।",
+      "t": "so … that … not → too … to।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'He admitted that he was wrong.' — The simple form is—",
+      "o": [
+        "He admitted and he was wrong.",
+        "He admitted his mistake.",
+        "He was wrong so he admitted.",
+        "Admitting, he was wrong."
+      ],
+      "a": 1,
+      "e": "noun clause → noun phrase।",
+      "t": "that-clause → noun।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'Without hard work, nobody can succeed.' — The complex form is—",
+      "o": [
+        "Nobody works hard and succeeds.",
+        "Work hard and succeed.",
+        "Nobody can succeed if he does not work hard.",
+        "Hard work is success."
+      ],
+      "a": 2,
+      "e": "Without + noun → If … not (complex)।",
+      "t": "Without → If … not।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Hard",
+      "q": "'No sooner had the bell rung than the students left.' — The simple form is—",
+      "o": [
+        "As soon as the bell rang, the students left.",
+        "The bell rang and the students left.",
+        "When the bell rang, the students left.",
+        "On the ringing of the bell, the students left."
+      ],
+      "a": 3,
+      "e": "No sooner … than → On + noun/V-ing (simple)।",
+      "t": "No sooner → On + …",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'He was poor; still he was honest.' — The complex form is—",
+      "o": [
+        "Though he was poor, he was honest.",
+        "In spite of being poor, he was honest.",
+        "He was poor and honest.",
+        "Being poor, he was honest."
+      ],
+      "a": 0,
+      "e": "still/yet-যুক্ত বৈপরীত্য → Though/Although (complex)।",
+      "t": "still → Though।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'I saw a bird with a broken wing.' — The complex form is—",
+      "o": [
+        "I saw a bird and its wing was broken.",
+        "I saw a bird whose wing was broken.",
+        "Seeing a bird, its wing was broken.",
+        "The bird had a broken wing that I saw."
+      ],
+      "a": 1,
+      "e": "with + adjective phrase → whose-clause (adjective clause)।",
+      "t": "with … → whose …",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'Tell me your address.' — The complex form is—",
+      "o": [
+        "Telling me, you live.",
+        "Tell me and you live.",
+        "Tell me where you live.",
+        "You live; tell me."
+      ],
+      "a": 2,
+      "e": "noun (address) → noun clause (where you live)।",
+      "t": "address → where you live।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'Whatever he says is true.' — The clause 'Whatever he says' is a/an—",
+      "o": [
+        "Principal clause",
+        "Adjective clause",
+        "Adverb clause",
+        "Noun clause"
+      ],
+      "a": 3,
+      "e": "বাক্যের subject হিসেবে কাজ করছে — noun clause।",
+      "t": "subject-এর জায়গায় clause = noun clause।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'I wonder whether he will come.' — The clause 'whether he will come' is a/an—",
+      "o": [
+        "Noun clause",
+        "Adjective clause",
+        "Adverb clause",
+        "Principal clause"
+      ],
+      "a": 0,
+      "e": "wonder-এর object — noun clause।",
+      "t": "verb-এর object = noun clause।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'This is the house where I was born.' — The clause 'where I was born' is a/an—",
+      "o": [
+        "Noun clause",
+        "Adjective clause",
+        "Adverb clause",
+        "Principal clause"
+      ],
+      "a": 1,
+      "e": "house (noun)-কে বিশেষিত করছে — adjective clause।",
+      "t": "noun-এর পরে where-clause = adjective clause।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'He came when I was sleeping.' — The clause 'when I was sleeping' is a/an—",
+      "o": [
+        "Adjective clause",
+        "Noun clause",
+        "Adverb clause",
+        "Principal clause"
+      ],
+      "a": 2,
+      "e": "কখন এসেছিল তা বোঝাচ্ছে — adverb clause of time।",
+      "t": "কখন? = adverb clause।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'He worked hard so that he might pass.' — The clause 'so that he might pass' is a/an—",
+      "o": [
+        "Principal clause",
+        "Noun clause",
+        "Adjective clause",
+        "Adverb clause"
+      ],
+      "a": 3,
+      "e": "উদ্দেশ্য বোঝায় — adverb clause of purpose।",
+      "t": "so that = উদ্দেশ্য (adverb clause)।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'Though he tried hard, he failed.' — The clause 'Though he tried hard' is a/an—",
+      "o": [
+        "Adverb clause",
+        "Noun clause",
+        "Adjective clause",
+        "Principal clause"
+      ],
+      "a": 0,
+      "e": "বৈপরীত্য/স্বীকার বোঝায় — adverb clause of concession।",
+      "t": "Though = adverb clause।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Hard",
+      "q": "'The fact that he lied surprised us.' — The clause 'that he lied' is a/an—",
+      "o": [
+        "Adjective clause",
+        "Noun clause",
+        "Adverb clause",
+        "Principal clause"
+      ],
+      "a": 1,
+      "e": "the fact-এর সমার্থক ব্যাখ্যা (apposition) — noun clause।",
+      "t": "the fact that … = noun clause।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Hard",
+      "q": "'Give me the reason why you are late.' — The clause 'why you are late' is a/an—",
+      "o": [
+        "Adverb clause",
+        "Noun clause",
+        "Adjective clause",
+        "Principal clause"
+      ],
+      "a": 2,
+      "e": "reason (noun)-কে বিশেষিত করছে — adjective clause।",
+      "t": "the reason why … = adjective clause।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Hard",
+      "q": "'He is as tall as his brother is.' — The clause 'as his brother is' is a/an—",
+      "o": [
+        "Principal clause",
+        "Noun clause",
+        "Adjective clause",
+        "Adverb clause"
+      ],
+      "a": 3,
+      "e": "তুলনা বোঝায় — adverb clause of comparison।",
+      "t": "as … as = adverb clause।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'The pen which you gave me is lost.' — The clause 'which you gave me' is a/an—",
+      "o": [
+        "Adjective clause",
+        "Noun clause",
+        "Adverb clause",
+        "Principal clause"
+      ],
+      "a": 0,
+      "e": "pen-কে বিশেষিত করছে।",
+      "t": "which-clause = adjective clause।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'If you study, you will pass.' — The clause 'you will pass' is a/an—",
+      "o": [
+        "Noun clause",
+        "Principal clause",
+        "Adjective clause",
+        "Adverb clause"
+      ],
+      "a": 1,
+      "e": "নিজে স্বাধীনভাবে অর্থ প্রকাশ করে — principal clause; If-অংশ adverb clause।",
+      "t": "স্বাধীন অংশ = principal clause।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Hard",
+      "q": "'Where there is a will, there is a way.' — The clause 'Where there is a will' is a/an—",
+      "o": [
+        "Adjective clause",
+        "Noun clause",
+        "Adverb clause",
+        "Principal clause"
+      ],
+      "a": 2,
+      "e": "স্থান/শর্ত বোঝায় — adverb clause।",
+      "t": "Where … (স্থান) = adverb clause।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'That he will come is certain.' — The clause 'That he will come' is a/an—",
+      "o": [
+        "Principal clause",
+        "Adjective clause",
+        "Adverb clause",
+        "Noun clause"
+      ],
+      "a": 3,
+      "e": "বাক্যের subject — noun clause।",
+      "t": "That-clause subject = noun clause।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'The man in the black coat is my uncle.' — The phrase 'in the black coat' is a/an—",
+      "o": [
+        "Adjective phrase",
+        "Adverb phrase",
+        "Noun phrase",
+        "Verb phrase"
+      ],
+      "a": 0,
+      "e": "man (noun)-কে বিশেষিত করছে — adjective phrase।",
+      "t": "noun বিশেষিত = adjective phrase।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'She sat under the old banyan tree.' — The phrase 'under the old banyan tree' is a/an—",
+      "o": [
+        "Adjective phrase",
+        "Adverb phrase",
+        "Noun phrase",
+        "Verb phrase"
+      ],
+      "a": 1,
+      "e": "কোথায় বসেছিল — verb (sat)-কে বিশেষিত করছে, adverb phrase।",
+      "t": "কোথায়? = adverb phrase।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'I love reading detective novels.' — The phrase 'reading detective novels' is a/an—",
+      "o": [
+        "Adverb phrase",
+        "Adjective phrase",
+        "Noun phrase",
+        "Prepositional phrase"
+      ],
+      "a": 2,
+      "e": "love-এর object — noun phrase (gerund phrase)।",
+      "t": "object = noun phrase।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'He has been working since morning.' — 'has been working' is a/an—",
+      "o": [
+        "Adjective phrase",
+        "Noun phrase",
+        "Adverb phrase",
+        "Verb phrase"
+      ],
+      "a": 3,
+      "e": "auxiliary + main verb মিলে verb phrase।",
+      "t": "aux + verb = verb phrase।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Hard",
+      "q": "'A man of wisdom is respected everywhere.' — The phrase 'of wisdom' is a/an—",
+      "o": [
+        "Adjective phrase",
+        "Adverb phrase",
+        "Noun phrase",
+        "Interjectional phrase"
+      ],
+      "a": 0,
+      "e": "man-কে বিশেষিত করছে (a wise man) — adjective phrase।",
+      "t": "of + abstract noun = adjective।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'Alas, what a pity!' — 'what a pity' is a/an—",
+      "o": [
+        "Noun phrase",
+        "Interjectional phrase",
+        "Adverb phrase",
+        "Verb phrase"
+      ],
+      "a": 1,
+      "e": "আবেগ প্রকাশক শব্দগুচ্ছ — interjectional phrase।",
+      "t": "আবেগ = interjectional phrase।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'In spite of the storm, the ship sailed.' — 'In spite of' is a/an—",
+      "o": [
+        "Adverb phrase",
+        "Conjunctional phrase",
+        "Prepositional phrase",
+        "Noun phrase"
+      ],
+      "a": 2,
+      "e": "কয়েকটি শব্দ মিলে preposition-এর কাজ — prepositional phrase (phrase preposition)।",
+      "t": "in spite of = phrase preposition।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'He will come as soon as possible.' — 'as soon as' commonly works as a/an—",
+      "o": [
+        "Adjective phrase",
+        "Prepositional phrase",
+        "Noun phrase",
+        "Conjunctional phrase"
+      ],
+      "a": 3,
+      "e": "as soon as clause যুক্ত করে — conjunctional phrase (phrase conjunction)।",
+      "t": "as soon as = conjunction।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Easy",
+      "q": "A group of words containing a subject and a finite verb is called a—",
+      "o": [
+        "Clause",
+        "Phrase",
+        "Paragraph",
+        "Idiom"
+      ],
+      "a": 0,
+      "e": "subject + finite verb = clause; finite verb ছাড়া = phrase।",
+      "t": "finite verb থাকলে clause।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Easy",
+      "q": "A group of words that makes sense but has no finite verb is called a—",
+      "o": [
+        "Clause",
+        "Phrase",
+        "Sentence",
+        "Paragraph"
+      ],
+      "a": 1,
+      "e": "finite verb নেই = phrase।",
+      "t": "finite verb নেই = phrase।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "A complex sentence contains one principal clause and—",
+      "o": [
+        "no clause",
+        "two or more principal clauses",
+        "one or more subordinate clauses",
+        "only phrases"
+      ],
+      "a": 2,
+      "e": "complex = ১টি principal + ১ বা একাধিক subordinate clause।",
+      "t": "complex = principal + subordinate।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "A compound sentence contains—",
+      "o": [
+        "no finite verb",
+        "one independent and one dependent clause",
+        "only one clause",
+        "two or more independent clauses"
+      ],
+      "a": 3,
+      "e": "compound = দুই বা ততোধিক independent clause।",
+      "t": "compound = independent + independent।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "Which conjunction introduces a compound sentence?",
+      "o": [
+        "and",
+        "because",
+        "although",
+        "unless"
+      ],
+      "a": 0,
+      "e": "and, but, or, so, yet, for (FANBOYS) coordinating conjunction — compound।",
+      "t": "FANBOYS = compound।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "Which word introduces a complex sentence?",
+      "o": [
+        "and",
+        "because",
+        "but",
+        "or"
+      ],
+      "a": 1,
+      "e": "because subordinating conjunction — complex।",
+      "t": "because = complex।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "The number of clauses in a sentence usually equals the number of its—",
+      "o": [
+        "adjectives",
+        "nouns",
+        "finite verbs",
+        "prepositions"
+      ],
+      "a": 2,
+      "e": "প্রতিটি clause-এ একটি finite verb থাকে।",
+      "t": "clause = finite verb সংখ্যা।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "Choose the sentence that is grammatically complete.",
+      "o": [
+        "Although we went out.",
+        "When the rain stopped.",
+        "Because of the rain.",
+        "When the rain stopped, we went out."
+      ],
+      "a": 3,
+      "e": "শুধু subordinate clause বা phrase পূর্ণ বাক্য নয়; principal clause লাগে।",
+      "t": "principal clause লাগবেই।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Hard",
+      "q": "Identify the correct conditional sentence.",
+      "o": [
+        "If it rains, the match will be postponed.",
+        "If it will rain, the match will be postponed.",
+        "If it rained, the match will be postponed.",
+        "If it rains, the match would have been postponed."
+      ],
+      "a": 0,
+      "e": "first conditional: if + present, main clause will + V1; if-clause-এ will বসে না।",
+      "t": "if-clause-এ will নয়।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Hard",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "Had I informed earlier, I could helped.",
+        "Had I been informed earlier, I could have helped.",
+        "If I had been informed earlier, I can help.",
+        "Have I been informed earlier, I could help."
+      ],
+      "a": 1,
+      "e": "Inversion-সহ third conditional: Had + subject + pp → could/would have + pp।",
+      "t": "Had + S + pp → could have + pp।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস — ১০-১৯, ২৩-৮১, ৩৯-২৬-এ third conditional-এর main clause জিজ্ঞাসিত; এখানে inversion-যুক্ত পূর্ণ বাক্য শনাক্তকরণ (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.SEN",
+      "d": "Medium",
+      "q": "'He said that he was ill.' — The clause 'that he was ill' is a/an—",
+      "o": [
+        "Adverb clause",
+        "Adjective clause",
+        "Noun clause",
+        "Principal clause"
+      ],
+      "a": 2,
+      "e": "said-এর object হিসেবে কাজ করছে — noun clause।",
+      "t": "verb-এর object = noun clause।",
+      "src": "Lecture 01 ও Standard Grammar Reference (Wren & Martin; Swan — Practical English Usage)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

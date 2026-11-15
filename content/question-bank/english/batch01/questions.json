@@ -1,0 +1,1217 @@
+{
+  "batch": "Batch 01",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 09 — Preposition (Time, Place & Movement) ও Appropriate Preposition তালিকা",
+  "subtopics": {
+    "EN.GR.PRP": {}
+  },
+  "questions": [
+    {
+      "st": "EN.GR.PRP",
+      "d": "Easy",
+      "q": "Fill in the blank with the appropriate preposition: 'Every citizen must abide ___ the law of the land.'",
+      "o": [
+        "by",
+        "with",
+        "to",
+        "for"
+      ],
+      "a": 0,
+      "e": "abide by = মেনে চলা (নিয়ম, সিদ্ধান্ত, আইন)।",
+      "t": "abide BY the rules.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Choose the correct preposition: 'The clerk was accused ___ taking a bribe.'",
+      "o": [
+        "for",
+        "of",
+        "with",
+        "about"
+      ],
+      "a": 1,
+      "e": "accuse someone of something = কাউকে কোনো অপরাধে অভিযুক্ত করা; charge-এর সঙ্গে with।",
+      "t": "accuse OF, charge WITH.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Which preposition best completes the sentence? 'I am not acquainted ___ the new manager.'",
+      "o": [
+        "of",
+        "to",
+        "with",
+        "by"
+      ],
+      "a": 2,
+      "e": "be acquainted with = পরিচিত থাকা।",
+      "t": "acquainted WITH.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Easy",
+      "q": "Select the right word for the gap: 'Many young people are addicted ___ social media.'",
+      "o": [
+        "on",
+        "with",
+        "of",
+        "to"
+      ],
+      "a": 3,
+      "e": "addicted to = আসক্ত।",
+      "t": "addicted TO.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Fill in the blank with the appropriate preposition: 'The new policy aims ___ reducing poverty.'",
+      "o": [
+        "at",
+        "for",
+        "to",
+        "on"
+      ],
+      "a": 0,
+      "e": "aim at = লক্ষ্য করা।",
+      "t": "aim AT.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Hard",
+      "q": "Choose the correct preposition: 'Such cruelty is alien ___ his nature.'",
+      "o": [
+        "from",
+        "to",
+        "with",
+        "of"
+      ],
+      "a": 1,
+      "e": "alien to = স্বভাববিরুদ্ধ, অপরিচিত।",
+      "t": "alien TO.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Which preposition best completes the sentence? 'We were amazed ___ his presence of mind.'",
+      "o": [
+        "with",
+        "of",
+        "at",
+        "for"
+      ],
+      "a": 2,
+      "e": "amazed at = বিস্মিত।",
+      "t": "amazed AT.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Select the right word for the gap: 'The airline apologized ___ the long delay.'",
+      "o": [
+        "about",
+        "of",
+        "on",
+        "for"
+      ],
+      "a": 3,
+      "e": "apologize to someone for something = কারও কাছে কোনো কিছুর জন্য ক্ষমা চাওয়া।",
+      "t": "apologize TO person FOR thing.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Easy",
+      "q": "Fill in the blank with the appropriate preposition: 'He felt ashamed ___ his rude behaviour.'",
+      "o": [
+        "of",
+        "for",
+        "with",
+        "at"
+      ],
+      "a": 0,
+      "e": "ashamed of = লজ্জিত।",
+      "t": "ashamed OF.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Easy",
+      "q": "Choose the correct preposition: 'Are you aware ___ the risks involved?'",
+      "o": [
+        "about",
+        "of",
+        "with",
+        "on"
+      ],
+      "a": 1,
+      "e": "aware of = সচেতন।",
+      "t": "aware OF.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Hard",
+      "q": "Which preposition best completes the sentence? 'A loving mother is often blind ___ her child's faults.'",
+      "o": [
+        "in",
+        "of",
+        "to",
+        "with"
+      ],
+      "a": 2,
+      "e": "blind to = (দোষ ইত্যাদি) দেখতে না পাওয়া; blind in one eye = এক চোখে অন্ধ।",
+      "t": "blind TO faults, blind IN one eye.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Select the right word for the gap: 'He always boasts ___ his wealth.'",
+      "o": [
+        "on",
+        "for",
+        "with",
+        "of"
+      ],
+      "a": 3,
+      "e": "boast of/about = বড়াই করা।",
+      "t": "boast OF.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Easy",
+      "q": "Fill in the blank with the appropriate preposition: 'She is capable ___ handling the crisis.'",
+      "o": [
+        "of",
+        "for",
+        "to",
+        "in"
+      ],
+      "a": 0,
+      "e": "capable of = সক্ষম; able to + verb।",
+      "t": "capable OF + V-ing.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Choose the correct preposition: 'All factories must comply ___ the safety regulations.'",
+      "o": [
+        "to",
+        "with",
+        "by",
+        "for"
+      ],
+      "a": 1,
+      "e": "comply with = মেনে চলা।",
+      "t": "comply WITH.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Which preposition best completes the sentence? 'The team is confident ___ victory.'",
+      "o": [
+        "in",
+        "on",
+        "of",
+        "for"
+      ],
+      "a": 2,
+      "e": "confident of = নিশ্চিত; confident in someone = কারও ওপর আস্থাশীল।",
+      "t": "confident OF success.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Select the right word for the gap: 'I congratulated her ___ her brilliant result.'",
+      "o": [
+        "with",
+        "for",
+        "at",
+        "on"
+      ],
+      "a": 3,
+      "e": "congratulate someone on something = কাউকে কোনো সাফল্যে অভিনন্দন জানানো।",
+      "t": "congratulate ON.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Easy",
+      "q": "Fill in the blank with the appropriate preposition: 'Water consists ___ hydrogen and oxygen.'",
+      "o": [
+        "of",
+        "in",
+        "with",
+        "from"
+      ],
+      "a": 0,
+      "e": "consist of = গঠিত হওয়া; consist in = নিহিত থাকা।",
+      "t": "consist OF (উপাদান)।",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Choose the correct preposition: 'The judge was convinced ___ his innocence.'",
+      "o": [
+        "about",
+        "of",
+        "on",
+        "with"
+      ],
+      "a": 1,
+      "e": "convinced of = নিশ্চিত/বিশ্বাসী।",
+      "t": "convinced OF.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Hard",
+      "q": "Which preposition best completes the sentence? 'The doctor cured him ___ his chronic cough.'",
+      "o": [
+        "with",
+        "from",
+        "of",
+        "for"
+      ],
+      "a": 2,
+      "e": "cure someone of a disease = রোগ সারানো।",
+      "t": "cure OF.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Hard",
+      "q": "Select the right word for the gap: 'That shop deals ___ electronic goods.'",
+      "o": [
+        "at",
+        "with",
+        "on",
+        "in"
+      ],
+      "a": 3,
+      "e": "deal in = ব্যবসা করা; deal with = মোকাবিলা/আচরণ করা।",
+      "t": "deal IN goods, deal WITH problems.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Fill in the blank with the appropriate preposition: 'The refugees were deprived ___ their basic rights.'",
+      "o": [
+        "of",
+        "from",
+        "off",
+        "for"
+      ],
+      "a": 0,
+      "e": "deprive someone of something = বঞ্চিত করা।",
+      "t": "deprived OF.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Hard",
+      "q": "Choose the correct preposition: 'I differ ___ you on this point.'",
+      "o": [
+        "from",
+        "with",
+        "to",
+        "against"
+      ],
+      "a": 1,
+      "e": "মতের অমিল বোঝাতে differ with (person); দুই বস্তুর পার্থক্যে differ from।",
+      "t": "differ WITH person (opinion), FROM thing.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Which preposition best completes the sentence? 'The voters are disgusted ___ the corruption.'",
+      "o": [
+        "at",
+        "of",
+        "with",
+        "for"
+      ],
+      "a": 2,
+      "e": "disgusted with/at = বিরক্ত, ঘৃণাবোধ করা।",
+      "t": "disgusted WITH.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Select the right word for the gap: 'Only graduates are eligible ___ this post.'",
+      "o": [
+        "in",
+        "to",
+        "of",
+        "for"
+      ],
+      "a": 3,
+      "e": "eligible for = যোগ্য।",
+      "t": "eligible FOR.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Fill in the blank with the appropriate preposition: 'She is envious ___ her cousin's success.'",
+      "o": [
+        "of",
+        "with",
+        "at",
+        "on"
+      ],
+      "a": 0,
+      "e": "envious of = ঈর্ষান্বিত।",
+      "t": "envious OF.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Choose the correct preposition: 'Small farmers are exempt ___ this tax.'",
+      "o": [
+        "of",
+        "from",
+        "off",
+        "by"
+      ],
+      "a": 1,
+      "e": "exempt from = অব্যাহতিপ্রাপ্ত।",
+      "t": "exempt FROM.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Easy",
+      "q": "Which preposition best completes the sentence? 'Sylhet is famous ___ its tea gardens.'",
+      "o": [
+        "with",
+        "of",
+        "for",
+        "in"
+      ],
+      "a": 2,
+      "e": "famous for = বিখ্যাত (কোনো কিছুর জন্য)।",
+      "t": "famous FOR.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Select the right word for the gap: 'The court found him guilty ___ fraud.'",
+      "o": [
+        "with",
+        "for",
+        "in",
+        "of"
+      ],
+      "a": 3,
+      "e": "guilty of = দোষী।",
+      "t": "guilty OF.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Fill in the blank with the appropriate preposition: 'He is indifferent ___ politics.'",
+      "o": [
+        "to",
+        "about",
+        "of",
+        "for"
+      ],
+      "a": 0,
+      "e": "indifferent to = উদাসীন।",
+      "t": "indifferent TO.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Choose the correct preposition: 'This cloth is inferior ___ that one.'",
+      "o": [
+        "than",
+        "to",
+        "from",
+        "of"
+      ],
+      "a": 1,
+      "e": "Latin comparative (inferior, superior, senior, junior, prior)-এর পরে than নয়, to বসে।",
+      "t": "-ior adjective + TO.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Which preposition best completes the sentence? 'Rafiq is two years junior ___ me.'",
+      "o": [
+        "from",
+        "than",
+        "to",
+        "of"
+      ],
+      "a": 2,
+      "e": "junior/senior-এর পরে to।",
+      "t": "junior TO.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Hard",
+      "q": "Select the right word for the gap: 'The new recruit is lacking ___ confidence.'",
+      "o": [
+        "with",
+        "of",
+        "for",
+        "in"
+      ],
+      "a": 3,
+      "e": "be lacking in = কিছুর ঘাটতি থাকা; lack (verb) সরাসরি object নেয়।",
+      "t": "lacking IN.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Fill in the blank with the appropriate preposition: 'A soldier must be obedient ___ his commander.'",
+      "o": [
+        "to",
+        "with",
+        "for",
+        "of"
+      ],
+      "a": 0,
+      "e": "obedient to = বাধ্য।",
+      "t": "obedient TO.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Choose the correct preposition: 'The residents objected ___ the new factory.'",
+      "o": [
+        "against",
+        "to",
+        "on",
+        "for"
+      ],
+      "a": 1,
+      "e": "object to = আপত্তি করা।",
+      "t": "object TO.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Which preposition best completes the sentence? 'A brilliant idea suddenly occurred ___ me.'",
+      "o": [
+        "in",
+        "with",
+        "to",
+        "for"
+      ],
+      "a": 2,
+      "e": "occur to someone = মনে আসা।",
+      "t": "occur TO.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Select the right word for the gap: 'Heavy rain prevented us ___ going out.'",
+      "o": [
+        "for",
+        "of",
+        "to",
+        "from"
+      ],
+      "a": 3,
+      "e": "prevent someone from doing = বিরত রাখা।",
+      "t": "prevent FROM + V-ing.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Easy",
+      "q": "Fill in the blank with the appropriate preposition: 'Parents are proud ___ their children's achievements.'",
+      "o": [
+        "of",
+        "for",
+        "with",
+        "on"
+      ],
+      "a": 0,
+      "e": "proud of = গর্বিত।",
+      "t": "proud OF.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Choose the correct preposition: 'She is well qualified ___ the job.'",
+      "o": [
+        "to",
+        "for",
+        "in",
+        "of"
+      ],
+      "a": 1,
+      "e": "qualified for = উপযুক্ত।",
+      "t": "qualified FOR.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Easy",
+      "q": "Which preposition best completes the sentence? 'He has fully recovered ___ his illness.'",
+      "o": [
+        "off",
+        "of",
+        "from",
+        "after"
+      ],
+      "a": 2,
+      "e": "recover from = সেরে ওঠা।",
+      "t": "recover FROM.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Easy",
+      "q": "Select the right word for the gap: 'You can rely ___ him for help.'",
+      "o": [
+        "at",
+        "to",
+        "with",
+        "on"
+      ],
+      "a": 3,
+      "e": "rely on/upon = নির্ভর করা।",
+      "t": "rely ON.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Fill in the blank with the appropriate preposition: 'Her answer is similar ___ mine.'",
+      "o": [
+        "to",
+        "with",
+        "as",
+        "than"
+      ],
+      "a": 0,
+      "e": "similar to = অনুরূপ।",
+      "t": "similar TO.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Choose the correct preposition: 'All prices are subject ___ change.'",
+      "o": [
+        "for",
+        "to",
+        "of",
+        "with"
+      ],
+      "a": 1,
+      "e": "subject to = অধীন/সাপেক্ষে।",
+      "t": "subject TO.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Easy",
+      "q": "Which preposition best completes the sentence? 'She succeeded ___ passing the exam.'",
+      "o": [
+        "at",
+        "to",
+        "in",
+        "on"
+      ],
+      "a": 2,
+      "e": "succeed in = সফল হওয়া; succeed to = উত্তরাধিকারী হওয়া।",
+      "t": "succeed IN + V-ing.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Easy",
+      "q": "Select the right word for the gap: 'I am sure ___ his honesty.'",
+      "o": [
+        "for",
+        "about",
+        "on",
+        "of"
+      ],
+      "a": 3,
+      "e": "sure of = নিশ্চিত।",
+      "t": "sure OF.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Fill in the blank with the appropriate preposition: 'The police were suspicious ___ his movements.'",
+      "o": [
+        "of",
+        "about",
+        "with",
+        "on"
+      ],
+      "a": 0,
+      "e": "suspicious of = সন্দিহান।",
+      "t": "suspicious OF.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Choose the correct preposition: 'I am thankful ___ you for your kindness.'",
+      "o": [
+        "for",
+        "to",
+        "with",
+        "of"
+      ],
+      "a": 1,
+      "e": "thankful/grateful to (person) for (thing)।",
+      "t": "thankful TO person FOR thing.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Which preposition best completes the sentence? 'I am tired ___ his endless excuses.'",
+      "o": [
+        "with",
+        "from",
+        "of",
+        "at"
+      ],
+      "a": 2,
+      "e": "tired of = বিরক্ত; tired from = (পরিশ্রমে) ক্লান্ত।",
+      "t": "tired OF (বিরক্ত)।",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Select the right word for the gap: 'She is not used ___ getting up early.'",
+      "o": [
+        "in",
+        "for",
+        "with",
+        "to"
+      ],
+      "a": 3,
+      "e": "be used to + V-ing = অভ্যস্ত হওয়া।",
+      "t": "used TO + V-ing.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Fill in the blank with the appropriate preposition: 'The doctor warned him ___ smoking.'",
+      "o": [
+        "against",
+        "of",
+        "from",
+        "about"
+      ],
+      "a": 0,
+      "e": "warn someone against doing = করতে নিষেধ করা।",
+      "t": "warn AGAINST doing.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Choose the correct preposition: 'His sacrifice is worthy ___ praise.'",
+      "o": [
+        "for",
+        "of",
+        "to",
+        "in"
+      ],
+      "a": 1,
+      "e": "worthy of = যোগ্য।",
+      "t": "worthy OF.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Easy",
+      "q": "Which preposition best completes the sentence? 'Bangabandhu was born ___ 17 March 1920.'",
+      "o": [
+        "at",
+        "in",
+        "on",
+        "by"
+      ],
+      "a": 2,
+      "e": "নির্দিষ্ট তারিখ বা দিনের আগে on।",
+      "t": "তারিখ/দিন = ON.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Easy",
+      "q": "Select the right word for the gap: 'The train will leave ___ midnight.'",
+      "o": [
+        "by",
+        "in",
+        "on",
+        "at"
+      ],
+      "a": 3,
+      "e": "ঘড়ির সময়, midnight, noon-এর আগে at।",
+      "t": "সময়বিন্দু = AT.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Easy",
+      "q": "Fill in the blank with the appropriate preposition: 'We usually go for a walk ___ the evening.'",
+      "o": [
+        "in",
+        "at",
+        "on",
+        "by"
+      ],
+      "a": 0,
+      "e": "in the morning/afternoon/evening; কিন্তু at night।",
+      "t": "in the evening, at night.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Choose the correct preposition: 'Please submit the report ___ the end of this month.'",
+      "o": [
+        "until",
+        "by",
+        "since",
+        "for"
+      ],
+      "a": 1,
+      "e": "by = নির্দিষ্ট সময়ের মধ্যে (deadline); until = ওই সময় পর্যন্ত চলমান।",
+      "t": "deadline = BY.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Which preposition best completes the sentence? 'The results will be published ___ a week.'",
+      "o": [
+        "for",
+        "since",
+        "within",
+        "by"
+      ],
+      "a": 2,
+      "e": "within = নির্দিষ্ট সময়সীমার ভেতরে।",
+      "t": "within = ভেতরে।",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Select the right word for the gap: '___ English, he can speak French and Arabic.'",
+      "o": [
+        "Without",
+        "Beside",
+        "Except",
+        "Besides"
+      ],
+      "a": 3,
+      "e": "besides = এছাড়াও (in addition to); beside = পাশে।",
+      "t": "besideS = আরও।",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Fill in the blank with the appropriate preposition: 'Let this remain a secret ___ you and me.'",
+      "o": [
+        "between",
+        "among",
+        "with",
+        "amid"
+      ],
+      "a": 0,
+      "e": "দুজনের মধ্যে between; সঙ্গে objective case (you and me)।",
+      "t": "between you and ME.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Choose the correct preposition: 'He signed the contract ___ behalf of the company.'",
+      "o": [
+        "in",
+        "on",
+        "for",
+        "by"
+      ],
+      "a": 1,
+      "e": "on behalf of = কারও পক্ষে।",
+      "t": "ON behalf of.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Which preposition best completes the sentence? '___ to the forecast, it will rain tomorrow.'",
+      "o": [
+        "Due",
+        "Owing",
+        "According",
+        "Regarding"
+      ],
+      "a": 2,
+      "e": "according to = অনুযায়ী।",
+      "t": "according TO.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Hard",
+      "q": "Select the right word for the gap: 'He came to Dhaka with a view ___ getting a job.'",
+      "o": [
+        "in",
+        "for",
+        "of",
+        "to"
+      ],
+      "a": 3,
+      "e": "with a view to + V-ing = উদ্দেশ্যে।",
+      "t": "with a view TO + V-ing.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Fill in the blank with the appropriate preposition: 'Who is ___ charge of this office?'",
+      "o": [
+        "in",
+        "on",
+        "at",
+        "under"
+      ],
+      "a": 0,
+      "e": "in charge of = দায়িত্বে থাকা।",
+      "t": "IN charge of.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Choose the correct preposition: 'The rare bird is ___ the verge of extinction.'",
+      "o": [
+        "in",
+        "on",
+        "at",
+        "at the"
+      ],
+      "a": 1,
+      "e": "on the verge of = দ্বারপ্রান্তে।",
+      "t": "ON the verge of.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Easy",
+      "q": "Which preposition best completes the sentence? 'I took your umbrella ___ mistake.'",
+      "o": [
+        "for",
+        "in",
+        "by",
+        "with"
+      ],
+      "a": 2,
+      "e": "by mistake = ভুলবশত।",
+      "t": "BY mistake.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Easy",
+      "q": "Select the right word for the gap: 'The students learnt the poem ___ heart.'",
+      "o": [
+        "with",
+        "in",
+        "at",
+        "by"
+      ],
+      "a": 3,
+      "e": "learn by heart = মুখস্থ করা।",
+      "t": "BY heart.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Fill in the blank with the appropriate preposition: 'The winners were chosen ___ random.'",
+      "o": [
+        "at",
+        "in",
+        "by",
+        "on"
+      ],
+      "a": 0,
+      "e": "at random = এলোমেলোভাবে।",
+      "t": "AT random.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Choose the correct preposition: 'All our efforts were ___ vain.'",
+      "o": [
+        "on",
+        "in",
+        "at",
+        "by"
+      ],
+      "a": 1,
+      "e": "in vain = বৃথা।",
+      "t": "IN vain.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Easy",
+      "q": "Which preposition best completes the sentence? 'The lift is ___ order, so take the stairs.'",
+      "o": [
+        "under",
+        "off",
+        "out of",
+        "beyond"
+      ],
+      "a": 2,
+      "e": "out of order = বিকল।",
+      "t": "OUT OF order.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Select the right word for the gap: 'The proposal is ___ consideration.'",
+      "o": [
+        "at",
+        "in",
+        "on",
+        "under"
+      ],
+      "a": 3,
+      "e": "under consideration = বিবেচনাধীন।",
+      "t": "UNDER consideration.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Fill in the blank with the appropriate preposition: 'The boy jumped ___ the river to save the child.'",
+      "o": [
+        "into",
+        "in",
+        "on",
+        "at"
+      ],
+      "a": 0,
+      "e": "গতির মাধ্যমে ভেতরে প্রবেশে into; অবস্থানে in।",
+      "t": "গতি → INTO, অবস্থান → IN.",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Choose the correct preposition: 'We walked ___ the bank of the river.'",
+      "o": [
+        "across",
+        "along",
+        "through",
+        "over"
+      ],
+      "a": 1,
+      "e": "along = দৈর্ঘ্য বরাবর; across = এপার থেকে ওপার।",
+      "t": "ALONG = বরাবর।",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRP",
+      "d": "Medium",
+      "q": "Which preposition best completes the sentence? 'The plane flew ___ the city.'",
+      "o": [
+        "on",
+        "above of",
+        "over",
+        "upon"
+      ],
+      "a": 2,
+      "e": "over = ওপর দিয়ে (গতি)।",
+      "t": "OVER = ওপর দিয়ে।",
+      "src": "Lecture 09 (Preposition) ও Standard Grammar Reference (Oxford Learner's Dictionary — collocation)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

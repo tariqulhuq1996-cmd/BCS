@@ -1,0 +1,1373 @@
+{
+  "batch": "Batch 07",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 12–15 (English Literature: Renaissance, Characters, Quotations)",
+  "subtopics": {
+    "EN.LI.SHK": {}
+  },
+  "questions": [
+    {
+      "st": "EN.LI.SHK",
+      "d": "Easy",
+      "q": "William Shakespeare was born at—",
+      "o": [
+        "Stratford-upon-Avon",
+        "London",
+        "Canterbury",
+        "Oxford"
+      ],
+      "a": 0,
+      "e": "শেক্সপিয়রের জন্ম ওয়ারউইকশায়ারের Stratford-upon-Avon-এ।",
+      "t": "Bard of Avon — Stratford।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস — ৪০-৫৮-এ জন্মসাল জিজ্ঞাসিত; এটি জন্মস্থান (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Shakespeare died in the year—",
+      "o": [
+        "1564",
+        "1599",
+        "1616",
+        "1623"
+      ],
+      "a": 2,
+      "e": "১৬১৬ সালে মৃত্যু; ১৫৬৪ জন্ম, ১৬২৩ First Folio।",
+      "t": "১৫৬৪–১৬১৬।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Shakespeare's wife was—",
+      "o": [
+        "Elizabeth Hall",
+        "Anne Hathaway",
+        "Mary Arden",
+        "Judith Quiney"
+      ],
+      "a": 1,
+      "e": "১৫৮২ সালে Anne Hathaway-কে বিয়ে; Mary Arden তাঁর মা।",
+      "t": "স্ত্রী Anne Hathaway, মা Mary Arden।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Most of Shakespeare's plays were staged at the—",
+      "o": [
+        "Globe Theatre",
+        "Drury Lane Theatre",
+        "Abbey Theatre",
+        "Old Vic"
+      ],
+      "a": 0,
+      "e": "১৫৯৯ সালে নির্মিত Globe Theatre-এ তাঁর দলের নাটক মঞ্চস্থ হতো; Abbey Theatre আয়ারল্যান্ডে।",
+      "t": "Globe — শেক্সপিয়র।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Hard",
+      "q": "Shakespeare's acting company under King James I was called the—",
+      "o": [
+        "Admiral's Men",
+        "King's Men",
+        "Queen's Men",
+        "Children of the Chapel"
+      ],
+      "a": 1,
+      "e": "প্রথমে Lord Chamberlain's Men, ১৬০৩-এর পর King's Men।",
+      "t": "Chamberlain's → King's Men।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Easy",
+      "q": "How many sonnets did Shakespeare write?",
+      "o": [
+        "108",
+        "144",
+        "154",
+        "164"
+      ],
+      "a": 2,
+      "e": "১৬০৯ সালে প্রকাশিত Shakespeare's Sonnets-এ ১৫৪টি সনেট।",
+      "t": "সনেট = ১৫৪।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "The First Folio of Shakespeare's plays was published in—",
+      "o": [
+        "1600",
+        "1609",
+        "1616",
+        "1623"
+      ],
+      "a": 3,
+      "e": "মৃত্যুর সাত বছর পর ১৬২৩ সালে সহ-অভিনেতা Heminges ও Condell ‘First Folio’ প্রকাশ করেন।",
+      "t": "First Folio = ১৬২৩।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Shakespeare is popularly called the—",
+      "o": [
+        "Poet's Poet",
+        "Father of English Poetry",
+        "Morning Star of the Reformation",
+        "Bard of Avon"
+      ],
+      "a": 3,
+      "e": "Avon নদীতীরের Stratford-এর কবি বলে ‘Bard of Avon’; Chaucer = Father of English Poetry, Spenser = Poet's Poet।",
+      "t": "Bard of Avon = Shakespeare।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Which narrative poem was written by Shakespeare?",
+      "o": [
+        "Venus and Adonis",
+        "The Faerie Queene",
+        "Hero and Leander",
+        "Paradise Lost"
+      ],
+      "a": 0,
+      "e": "১৫৯৩ সালে প্রকাশিত ‘Venus and Adonis’ ও ‘The Rape of Lucrece’ তাঁর আখ্যানকাব্য।",
+      "t": "Venus and Adonis — শেক্সপিয়র।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Hard",
+      "q": "Shakespeare's sonnets were dedicated to—",
+      "o": [
+        "Queen Elizabeth",
+        "Mr. W. H.",
+        "the Earl of Essex",
+        "Ben Jonson"
+      ],
+      "a": 1,
+      "e": "১৬০৯-এর সংস্করণ ‘Mr. W. H.’-এর প্রতি উৎসর্গিত — তাঁর পরিচয় নিয়ে বিতর্ক আছে।",
+      "t": "Mr. W. H.।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Hard",
+      "q": "Many of Shakespeare's later sonnets are addressed to the—",
+      "o": [
+        "Lady of Shalott",
+        "Faerie Queene",
+        "Dark Lady",
+        "Lucy"
+      ],
+      "a": 2,
+      "e": "প্রথম দিকের সনেট ‘Fair Youth’, পরের দিকের অনেকগুলো ‘Dark Lady’-কে উদ্দেশ করে।",
+      "t": "Fair Youth ও Dark Lady।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "The rhyme scheme of a Shakespearean sonnet is—",
+      "o": [
+        "abab bcbc cdcd ee",
+        "abba abba cde cde",
+        "aabb ccdd eeff gg",
+        "abab cdcd efef gg"
+      ],
+      "a": 3,
+      "e": "তিনটি quatrain ও শেষে একটি couplet; Petrarchan sonnet = abbaabba + sestet।",
+      "t": "৪+৪+৪+২।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Easy",
+      "q": "Which of the following is NOT one of Shakespeare's four great tragedies?",
+      "o": [
+        "Romeo and Juliet",
+        "Hamlet",
+        "Othello",
+        "Macbeth"
+      ],
+      "a": 0,
+      "e": "চারটি মহান ট্র্যাজেডি: Hamlet, Othello, King Lear, Macbeth।",
+      "t": "H-O-L-M।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Which is one of Shakespeare's Roman plays?",
+      "o": [
+        "Twelfth Night",
+        "Coriolanus",
+        "Henry V",
+        "The Winter's Tale"
+      ],
+      "a": 1,
+      "e": "Roman plays: Julius Caesar, Antony and Cleopatra, Coriolanus, Titus Andronicus।",
+      "t": "Coriolanus = Roman play।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস — ৪৩-৬৪-এ ‘Julius Caesar’-এর ধরন জিজ্ঞাসিত; এটি ভিন্ন নাটক (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'The Winter's Tale' is generally classed as one of Shakespeare's—",
+      "o": [
+        "early comedies",
+        "history plays",
+        "romances (late plays)",
+        "Roman tragedies"
+      ],
+      "a": 2,
+      "e": "শেষ পর্যায়ের নাটক—Pericles, Cymbeline, The Winter's Tale, The Tempest—romance বা tragicomedy।",
+      "t": "শেষের নাটক = romance।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Which of the following is a comedy by Shakespeare?",
+      "o": [
+        "Timon of Athens",
+        "Coriolanus",
+        "Richard III",
+        "Much Ado About Nothing"
+      ],
+      "a": 3,
+      "e": "Much Ado About Nothing — রোমান্টিক কমেডি।",
+      "t": "Much Ado = comedy।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Hard",
+      "q": "'All's Well That Ends Well' is usually grouped with Shakespeare's—",
+      "o": [
+        "problem plays",
+        "Roman plays",
+        "history plays",
+        "great tragedies"
+      ],
+      "a": 0,
+      "e": "All's Well That Ends Well, Measure for Measure ও Troilus and Cressida — problem plays।",
+      "t": "problem plays।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস — ৩৬-৪০-এ Measure for Measure-এর ধরন জিজ্ঞাসিত; এটি ভিন্ন নাটক (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Easy",
+      "q": "'Iago' is a character in Shakespeare's—",
+      "o": [
+        "The Merchant of Venice",
+        "Othello",
+        "Hamlet",
+        "Much Ado About Nothing"
+      ],
+      "a": 1,
+      "e": "Iago — Othello-র খলনায়ক, তার চক্রান্তেই Othello Desdemona-কে সন্দেহ করে।",
+      "t": "Iago → Othello।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Easy",
+      "q": "'Ophelia' is a character in Shakespeare's—",
+      "o": [
+        "Henry IV",
+        "King Lear",
+        "Hamlet",
+        "Twelfth Night"
+      ],
+      "a": 2,
+      "e": "Ophelia — Polonius-এর কন্যা, Hamlet-এর প্রেমিকা।",
+      "t": "Ophelia → Hamlet।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "In 'Hamlet', Claudius is Hamlet's—",
+      "o": [
+        "father",
+        "brother",
+        "friend",
+        "uncle"
+      ],
+      "a": 3,
+      "e": "Claudius Hamlet-এর চাচা; বাবাকে হত্যা করে সিংহাসন ও Hamlet-এর মা Gertrude-কে গ্রহণ করে।",
+      "t": "Claudius = uncle।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "In 'Hamlet', Gertrude is the—",
+      "o": [
+        "mother of Hamlet",
+        "sister of Ophelia",
+        "wife of Polonius",
+        "queen of Norway"
+      ],
+      "a": 0,
+      "e": "Gertrude — ডেনমার্কের রানি, Hamlet-এর মা।",
+      "t": "Gertrude = মা।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Hamlet's loyal friend is—",
+      "o": [
+        "Fortinbras",
+        "Horatio",
+        "Rosencrantz",
+        "Laertes"
+      ],
+      "a": 1,
+      "e": "Horatio Hamlet-এর বিশ্বস্ত বন্ধু; Laertes Ophelia-র ভাই।",
+      "t": "Horatio = বন্ধু।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Hard",
+      "q": "Whose skull does Hamlet hold in the graveyard scene?",
+      "o": [
+        "Osric",
+        "Polonius",
+        "Yorick",
+        "Laertes"
+      ],
+      "a": 2,
+      "e": "‘Alas, poor Yorick!’ — রাজার প্রয়াত ভাঁড় Yorick-এর খুলি।",
+      "t": "Alas, poor Yorick।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Easy",
+      "q": "'Banquo' is a character in Shakespeare's—",
+      "o": [
+        "The Tempest",
+        "Hamlet",
+        "The Winter's Tale",
+        "Macbeth"
+      ],
+      "a": 3,
+      "e": "Banquo Macbeth-এর সহযোদ্ধা, পরে Macbeth-এর নির্দেশে নিহত।",
+      "t": "Banquo → Macbeth।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "In 'Macbeth', the king murdered by Macbeth is—",
+      "o": [
+        "Duncan",
+        "Malcolm",
+        "Lear",
+        "Claudius"
+      ],
+      "a": 0,
+      "e": "স্কটল্যান্ডের রাজা Duncan-কে হত্যা করে Macbeth রাজা হয়।",
+      "t": "Duncan = নিহত রাজা।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Who kills Macbeth at the end of the play?",
+      "o": [
+        "Fleance",
+        "Macduff",
+        "Malcolm",
+        "Banquo"
+      ],
+      "a": 1,
+      "e": "Macduff (মাতৃগর্ভ থেকে অকালে জন্ম) Macbeth-কে হত্যা করে।",
+      "t": "Macduff।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "In 'King Lear', the youngest and most loyal daughter is—",
+      "o": [
+        "Regan",
+        "Goneril",
+        "Cordelia",
+        "Portia"
+      ],
+      "a": 2,
+      "e": "Goneril ও Regan তোষামোদ করে, Cordelia সত্য বলে বঞ্চিত হয়।",
+      "t": "Cordelia = সত্যবাদী কন্যা।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Portia' is a character in Shakespeare's—",
+      "o": [
+        "The Taming of the Shrew",
+        "A Midsummer Night's Dream",
+        "Romeo and Juliet",
+        "The Merchant of Venice"
+      ],
+      "a": 3,
+      "e": "Portia আইনজীবীর ছদ্মবেশে Antonio-কে রক্ষা করে।",
+      "t": "Portia → The Merchant of Venice।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "The 'merchant' in 'The Merchant of Venice' is—",
+      "o": [
+        "Antonio",
+        "Shylock",
+        "Bassanio",
+        "Lorenzo"
+      ],
+      "a": 0,
+      "e": "শিরোনামের merchant Antonio; Shylock মহাজন।",
+      "t": "merchant = Antonio।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস — ৩৬-৪৯, ৪১-১৭৬-এ Shylock ও নাটকের বিষয় জিজ্ঞাসিত; এটি শিরোনামের চরিত্র (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "In 'The Merchant of Venice', the bond demands—",
+      "o": [
+        "a ship",
+        "a pound of flesh",
+        "a ring",
+        "a bag of gold"
+      ],
+      "a": 1,
+      "e": "Antonio ঋণ শোধ করতে না পারলে Shylock এক পাউন্ড মাংস নেবে।",
+      "t": "pound of flesh।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "In 'The Tempest', Prospero's daughter is—",
+      "o": [
+        "Juliet",
+        "Ariel",
+        "Miranda",
+        "Viola"
+      ],
+      "a": 2,
+      "e": "Miranda Prospero-র কন্যা; Ariel আত্মা-সেবক।",
+      "t": "Miranda = কন্যা।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস — ৪৪-৭৬-এ Caliban-এর নাটক জিজ্ঞাসিত; এটি ভিন্ন চরিত্র (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Ariel' is a character in Shakespeare's—",
+      "o": [
+        "Richard III",
+        "Twelfth Night",
+        "Othello",
+        "The Tempest"
+      ],
+      "a": 3,
+      "e": "Ariel — Prospero-র আজ্ঞাবহ বায়বীয় আত্মা।",
+      "t": "Ariel → The Tempest।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Brutus' is a character in Shakespeare's—",
+      "o": [
+        "Julius Caesar",
+        "The Merchant of Venice",
+        "Much Ado About Nothing",
+        "The Taming of the Shrew"
+      ],
+      "a": 0,
+      "e": "Brutus Caesar-হত্যার ষড়যন্ত্রকারীদের অন্যতম।",
+      "t": "Brutus → Julius Caesar।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Et tu, Brute?' is spoken by—",
+      "o": [
+        "Cassius",
+        "Julius Caesar",
+        "Mark Antony",
+        "Brutus"
+      ],
+      "a": 1,
+      "e": "ছুরিকাহত Caesar বন্ধু Brutus-কেও ষড়যন্ত্রে দেখে বলে ‘Et tu, Brute?’ (তুমিও, ব্রুটাস?)।",
+      "t": "Et tu = Caesar।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Friends, Romans, countrymen, lend me your ears' is spoken by—",
+      "o": [
+        "Julius Caesar",
+        "Brutus",
+        "Mark Antony",
+        "Octavius"
+      ],
+      "a": 2,
+      "e": "Caesar-এর শবযাত্রায় Mark Antony-র বিখ্যাত বক্তৃতা।",
+      "t": "Friends, Romans — Antony।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "In 'Romeo and Juliet', the two feuding families are the—",
+      "o": [
+        "Yorks and Lancasters",
+        "Montagues and Stuarts",
+        "Capulets and Tudors",
+        "Montagues and Capulets"
+      ],
+      "a": 3,
+      "e": "Romeo Montague পরিবারের, Juliet Capulet পরিবারের।",
+      "t": "Montague–Capulet।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Romeo and Juliet' is set in—",
+      "o": [
+        "Verona",
+        "Venice",
+        "Padua",
+        "Rome"
+      ],
+      "a": 0,
+      "e": "ইতালির Verona শহরে কাহিনি।",
+      "t": "Verona।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Mercutio' is a character in Shakespeare's—",
+      "o": [
+        "Othello",
+        "Romeo and Juliet",
+        "Richard III",
+        "As You Like It"
+      ],
+      "a": 1,
+      "e": "Mercutio Romeo-র বন্ধু; Tybalt-এর হাতে নিহত।",
+      "t": "Mercutio → Romeo and Juliet।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Falstaff' is a character in Shakespeare's—",
+      "o": [
+        "The Winter's Tale",
+        "The Tempest",
+        "Henry IV",
+        "Macbeth"
+      ],
+      "a": 2,
+      "e": "স্থূলকায় রসিক নাইট Falstaff Henry IV (দুই খণ্ড) ও The Merry Wives of Windsor-এ আছে।",
+      "t": "Falstaff → Henry IV।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Puck' is a character in Shakespeare's—",
+      "o": [
+        "King Lear",
+        "Richard III",
+        "Twelfth Night",
+        "A Midsummer Night's Dream"
+      ],
+      "a": 3,
+      "e": "Puck (Robin Goodfellow) — দুষ্টু পরী।",
+      "t": "Puck → A Midsummer Night's Dream।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Malvolio' is a character in Shakespeare's—",
+      "o": [
+        "Twelfth Night",
+        "King Lear",
+        "As You Like It",
+        "Richard III"
+      ],
+      "a": 0,
+      "e": "Malvolio — Olivia-র অহংকারী গৃহাধ্যক্ষ।",
+      "t": "Malvolio → Twelfth Night।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Beatrice' is a character in Shakespeare's—",
+      "o": [
+        "As You Like It",
+        "Much Ado About Nothing",
+        "Romeo and Juliet",
+        "The Taming of the Shrew"
+      ],
+      "a": 1,
+      "e": "Beatrice ও Benedick-এর বাগ্‌যুদ্ধ নাটকের আকর্ষণ।",
+      "t": "Beatrice → Much Ado About Nothing।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Rosalind' is a character in Shakespeare's—",
+      "o": [
+        "Macbeth",
+        "Henry IV",
+        "As You Like It",
+        "The Merchant of Venice"
+      ],
+      "a": 2,
+      "e": "Rosalind ছদ্মবেশে Ganymede হয়ে Arden বনে যায়।",
+      "t": "Rosalind → As You Like It।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Petruchio' is a character in Shakespeare's—",
+      "o": [
+        "King Lear",
+        "Henry IV",
+        "Twelfth Night",
+        "The Taming of the Shrew"
+      ],
+      "a": 3,
+      "e": "Petruchio জেদি Katherina-কে বিয়ে করে ‘বশ’ মানায়।",
+      "t": "Petruchio → The Taming of the Shrew।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Hard",
+      "q": "'Perdita' is a character in Shakespeare's—",
+      "o": [
+        "The Winter's Tale",
+        "As You Like It",
+        "Antony and Cleopatra",
+        "King Lear"
+      ],
+      "a": 0,
+      "e": "Perdita (হারানো মেয়ে) — Leontes ও Hermione-র কন্যা।",
+      "t": "Perdita → The Winter's Tale।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Oberon' is a character in Shakespeare's—",
+      "o": [
+        "The Taming of the Shrew",
+        "A Midsummer Night's Dream",
+        "Much Ado About Nothing",
+        "Julius Caesar"
+      ],
+      "a": 1,
+      "e": "Oberon পরীদের রাজা, Titania রানি।",
+      "t": "Oberon → A Midsummer Night's Dream।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Viola' is a character in Shakespeare's—",
+      "o": [
+        "Hamlet",
+        "The Winter's Tale",
+        "Twelfth Night",
+        "Julius Caesar"
+      ],
+      "a": 2,
+      "e": "Viola ছদ্মবেশে Cesario নামে Duke Orsino-র সেবা করে।",
+      "t": "Viola → Twelfth Night।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Brevity is the soul of wit.' — This line is from Shakespeare's—",
+      "o": [
+        "Henry IV",
+        "The Tempest",
+        "Othello",
+        "Hamlet"
+      ],
+      "a": 3,
+      "e": "Polonius-এর উক্তি — Hamlet।",
+      "t": "Brevity is the soul of wit.… → Hamlet।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'The course of true love never did run smooth.' — This line is from Shakespeare's—",
+      "o": [
+        "A Midsummer Night's Dream",
+        "The Winter's Tale",
+        "Hamlet",
+        "Julius Caesar"
+      ],
+      "a": 0,
+      "e": "Lysander-এর উক্তি।",
+      "t": "The course of true love never … → A Midsummer Night's Dream।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Some are born great, some achieve greatness, and some have greatness thrust upon them.' — This line is from Shakespeare's—",
+      "o": [
+        "The Merchant of Venice",
+        "Twelfth Night",
+        "Macbeth",
+        "Henry IV"
+      ],
+      "a": 1,
+      "e": "Malvolio-কে ধোঁকা দিতে লেখা চিঠির লাইন।",
+      "t": "Some are born great, some achi… → Twelfth Night।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'All that glisters is not gold.' — This line is from Shakespeare's—",
+      "o": [
+        "Richard III",
+        "As You Like It",
+        "The Merchant of Venice",
+        "Othello"
+      ],
+      "a": 2,
+      "e": "সোনার বাক্সের ভেতরের লেখা — ঝকঝক করলেই সোনা হয় না।",
+      "t": "All that glisters is not gold.… → The Merchant of Venice।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Uneasy lies the head that wears a crown.' — This line is from Shakespeare's—",
+      "o": [
+        "Hamlet",
+        "A Midsummer Night's Dream",
+        "Julius Caesar",
+        "Henry IV"
+      ],
+      "a": 3,
+      "e": "Henry IV, Part 2-এ রাজার উক্তি।",
+      "t": "Uneasy lies the head that wear… → Henry IV।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Fair is foul, and foul is fair.' — This line is from Shakespeare's—",
+      "o": [
+        "Macbeth",
+        "The Merchant of Venice",
+        "Much Ado About Nothing",
+        "The Taming of the Shrew"
+      ],
+      "a": 0,
+      "e": "তিন ডাইনির উক্তি।",
+      "t": "Fair is foul, and foul is fair… → Macbeth।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'If music be the food of love, play on.' — This line is from Shakespeare's—",
+      "o": [
+        "Othello",
+        "Twelfth Night",
+        "Richard III",
+        "As You Like It"
+      ],
+      "a": 1,
+      "e": "নাটকের শুরুতে Duke Orsino-র উক্তি।",
+      "t": "If music be the food of love, … → Twelfth Night।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Something is rotten in the state of Denmark.' — This line is from Shakespeare's—",
+      "o": [
+        "A Midsummer Night's Dream",
+        "Julius Caesar",
+        "Hamlet",
+        "Antony and Cleopatra"
+      ],
+      "a": 2,
+      "e": "Marcellus-এর উক্তি।",
+      "t": "Something is rotten in the sta… → Hamlet।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'The quality of mercy is not strained.' — This line is from Shakespeare's—",
+      "o": [
+        "Romeo and Juliet",
+        "Antony and Cleopatra",
+        "A Midsummer Night's Dream",
+        "The Merchant of Venice"
+      ],
+      "a": 3,
+      "e": "আদালতে Portia-র বিখ্যাত বক্তৃতা।",
+      "t": "The quality of mercy is not st… → The Merchant of Venice।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Hard",
+      "q": "'We are such stuff as dreams are made on.' — This line is from Shakespeare's—",
+      "o": [
+        "The Tempest",
+        "A Midsummer Night's Dream",
+        "Antony and Cleopatra",
+        "King Lear"
+      ],
+      "a": 0,
+      "e": "Prospero-র উক্তি।",
+      "t": "We are such stuff as dreams ar… → The Tempest।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Parting is such sweet sorrow.' — This line is from Shakespeare's—",
+      "o": [
+        "Hamlet",
+        "Romeo and Juliet",
+        "The Winter's Tale",
+        "The Tempest"
+      ],
+      "a": 1,
+      "e": "বারান্দার দৃশ্যে Juliet-এর উক্তি।",
+      "t": "Parting is such sweet sorrow.… → Romeo and Juliet।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'A horse! a horse! my kingdom for a horse!' — This line is from Shakespeare's—",
+      "o": [
+        "Romeo and Juliet",
+        "The Taming of the Shrew",
+        "Richard III",
+        "As You Like It"
+      ],
+      "a": 2,
+      "e": "যুদ্ধক্ষেত্রে Richard III-এর উক্তি।",
+      "t": "A horse! a horse! my kingdom f… → Richard III।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Hard",
+      "q": "'Love looks not with the eyes, but with the mind.' — This line is from Shakespeare's—",
+      "o": [
+        "Henry IV",
+        "The Merchant of Venice",
+        "Macbeth",
+        "A Midsummer Night's Dream"
+      ],
+      "a": 3,
+      "e": "Helena-র উক্তি।",
+      "t": "Love looks not with the eyes, … → A Midsummer Night's Dream।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Hard",
+      "q": "'The lady doth protest too much, methinks.' — This line is from Shakespeare's—",
+      "o": [
+        "Hamlet",
+        "Twelfth Night",
+        "Henry IV",
+        "Othello"
+      ],
+      "a": 0,
+      "e": "নাটকের ভেতরে নাটক দেখার সময় Gertrude-এর উক্তি।",
+      "t": "The lady doth protest too much… → Hamlet।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Shall I compare thee to a summer's day?' is the opening line of Shakespeare's—",
+      "o": [
+        "Sonnet 116",
+        "Sonnet 18",
+        "Sonnet 130",
+        "Sonnet 73"
+      ],
+      "a": 1,
+      "e": "Sonnet 18 — প্রিয়জনের সৌন্দর্য কবিতায় অমর হয়ে থাকবে।",
+      "t": "summer's day = Sonnet 18।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস — ৫০-৬০-এ Sonnet 116-এর চরণের রচয়িতা জিজ্ঞাসিত; এটি ভিন্ন সনেট (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Jealousy is called 'the green-eyed monster' in—",
+      "o": [
+        "King Lear",
+        "Hamlet",
+        "Othello",
+        "Macbeth"
+      ],
+      "a": 2,
+      "e": "Iago Othello-কে সাবধান করে ‘O, beware, my lord, of jealousy; It is the green-eyed monster’।",
+      "t": "green-eyed monster — Othello।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Hamlet's tragic flaw is usually considered to be his—",
+      "o": [
+        "pride in his daughters",
+        "ambition",
+        "jealousy",
+        "indecision"
+      ],
+      "a": 3,
+      "e": "প্রতিশোধ নিতে দেরি ও দ্বিধা — Hamlet-এর মূল দুর্বলতা।",
+      "t": "Hamlet = দ্বিধা।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Macbeth's tragic flaw is his—",
+      "o": [
+        "ambition",
+        "indecision",
+        "jealousy",
+        "credulity"
+      ],
+      "a": 0,
+      "e": "‘Vaulting ambition’ Macbeth-এর পতনের কারণ।",
+      "t": "Macbeth = উচ্চাকাঙ্ক্ষা।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Othello's downfall is caused mainly by his—",
+      "o": [
+        "indecision",
+        "jealousy",
+        "ambition",
+        "greed"
+      ],
+      "a": 1,
+      "e": "Iago-র প্ররোচনায় সন্দেহ ও ঈর্ষা Othello-কে ধ্বংস করে।",
+      "t": "Othello = ঈর্ষা।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Hard",
+      "q": "Shakespeare's English history plays are based mainly on—",
+      "o": [
+        "Boccaccio's Decameron",
+        "Plutarch's Lives",
+        "Holinshed's Chronicles",
+        "Ovid's Metamorphoses"
+      ],
+      "a": 2,
+      "e": "Raphael Holinshed-এর Chronicles of England, Scotland and Ireland ইতিহাস-নাটকের প্রধান উৎস।",
+      "t": "History plays — Holinshed।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Hard",
+      "q": "Shakespeare's Roman plays draw mainly on—",
+      "o": [
+        "Homer's Iliad",
+        "Holinshed's Chronicles",
+        "Virgil's Aeneid",
+        "Plutarch's Lives"
+      ],
+      "a": 3,
+      "e": "Thomas North অনূদিত Plutarch's Lives রোমান নাটকের উৎস।",
+      "t": "Roman plays — Plutarch।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Hard",
+      "q": "Who said that Shakespeare 'was not of an age, but for all time'?",
+      "o": [
+        "Ben Jonson",
+        "John Dryden",
+        "Samuel Johnson",
+        "Christopher Marlowe"
+      ],
+      "a": 0,
+      "e": "First Folio-র প্রশংসাসূচক কবিতায় Ben Jonson এ কথা লেখেন।",
+      "t": "for all time — Ben Jonson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Hard",
+      "q": "Which contemporary called Shakespeare an 'upstart crow'?",
+      "o": [
+        "Thomas Kyd",
+        "Robert Greene",
+        "Ben Jonson",
+        "Christopher Marlowe"
+      ],
+      "a": 1,
+      "e": "১৫৯২ সালে Robert Greene ব্যঙ্গ করে তাঁকে ‘upstart crow’ বলেন।",
+      "t": "upstart crow — Greene।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Shakespeare's career belongs mainly to the—",
+      "o": [
+        "Anglo-Saxon period",
+        "Victorian period",
+        "Elizabethan and Jacobean periods",
+        "Romantic period"
+      ],
+      "a": 2,
+      "e": "রানি এলিজাবেথ (মৃত্যু ১৬০৩) ও রাজা প্রথম জেমসের আমলে তাঁর সাহিত্যজীবন।",
+      "t": "Elizabethan + Jacobean।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Which play features the three Witches (the 'weird sisters')?",
+      "o": [
+        "King Lear",
+        "Hamlet",
+        "The Tempest",
+        "Macbeth"
+      ],
+      "a": 3,
+      "e": "তিন ডাইনির ভবিষ্যদ্বাণী Macbeth-কে উচ্চাকাঙ্ক্ষী করে তোলে।",
+      "t": "weird sisters = Macbeth।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "'Othello' is set mainly in—",
+      "o": [
+        "Venice and Cyprus",
+        "Verona and Mantua",
+        "Denmark and England",
+        "Scotland and England"
+      ],
+      "a": 0,
+      "e": "নাটকের শুরু Venice-এ, বাকি অংশ Cyprus-এ।",
+      "t": "Othello — Venice ও Cyprus।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Which Shakespearean play has Cleopatra as its heroine?",
+      "o": [
+        "Coriolanus",
+        "Antony and Cleopatra",
+        "Julius Caesar",
+        "Titus Andronicus"
+      ],
+      "a": 1,
+      "e": "মিশরের রানি Cleopatra ও রোমান সেনাপতি Mark Antony-র প্রেম ও পতন।",
+      "t": "Cleopatra — Antony and Cleopatra।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Katherina is the heroine of—",
+      "o": [
+        "As You Like It",
+        "Much Ado About Nothing",
+        "The Taming of the Shrew",
+        "Twelfth Night"
+      ],
+      "a": 2,
+      "e": "জেদি মেয়ে Katherina (Kate) — The Taming of the Shrew।",
+      "t": "Kate the shrew।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Prince Hal, who later becomes Henry V, appears in—",
+      "o": [
+        "King Lear",
+        "Richard III",
+        "Macbeth",
+        "Henry IV"
+      ],
+      "a": 3,
+      "e": "Henry IV-এর দুই খণ্ডে রাজপুত্র Hal ও Falstaff-এর কাহিনি।",
+      "t": "Prince Hal — Henry IV।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Hard",
+      "q": "Which of Shakespeare's plays is the longest?",
+      "o": [
+        "Hamlet",
+        "Macbeth",
+        "The Comedy of Errors",
+        "The Tempest"
+      ],
+      "a": 0,
+      "e": "Hamlet শেক্সপিয়রের দীর্ঘতম নাটক; Macbeth ও The Comedy of Errors তুলনামূলক ছোট।",
+      "t": "দীর্ঘতম = Hamlet।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাই প্রয়োজন: সংস্করণভেদে লাইনসংখ্যা ভিন্ন"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Shylock's daughter, who elopes with Lorenzo, is—",
+      "o": [
+        "Portia",
+        "Jessica",
+        "Nerissa",
+        "Miranda"
+      ],
+      "a": 1,
+      "e": "Jessica Lorenzo-র সঙ্গে পালিয়ে যায়; Nerissa Portia-র সহচরী।",
+      "t": "Jessica = Shylock-এর মেয়ে।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Hard",
+      "q": "In 'King Lear', the Earl of Gloucester's illegitimate son is—",
+      "o": [
+        "Albany",
+        "Edgar",
+        "Edmund",
+        "Kent"
+      ],
+      "a": 2,
+      "e": "Edmund জারজ পুত্র, Edgar বৈধ পুত্র।",
+      "t": "Edmund = খল জারজ পুত্র।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.SHK",
+      "d": "Medium",
+      "q": "Shakespeare's only son, who died young, was named—",
+      "o": [
+        "Edmund",
+        "Hamlet",
+        "Henry",
+        "Hamnet"
+      ],
+      "a": 3,
+      "e": "শেক্সপিয়রের একমাত্র পুত্র Hamnet ১১ বছর বয়সে (১৫৯৬) মারা যায়; Hamlet নাটকের নামের সঙ্গে মিল লক্ষণীয়।",
+      "t": "পুত্র Hamnet (Hamlet নয়)।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (The Oxford Companion to Shakespeare; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    }
+  ]
+}

@@ -1,0 +1,1151 @@
+{
+  "batch": "Batch 19",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 12–15 (Old ও Middle English, American ও World Literature, Characters)",
+  "subtopics": {
+    "EN.LI.AME": {},
+    "EN.LI.WRL": {},
+    "EN.LI.OLD": {}
+  },
+  "questions": [
+    {
+      "st": "EN.LI.AME",
+      "d": "Easy",
+      "q": "'The Old Man and the Sea' was written by—",
+      "o": [
+        "F. Scott Fitzgerald",
+        "Toni Morrison",
+        "Sylvia Plath",
+        "Ernest Hemingway"
+      ],
+      "a": 3,
+      "e": "বৃদ্ধ জেলে Santiago-র সংগ্রাম; ১৯৫৩ সালের Pulitzer।",
+      "t": "The Old Man and the Sea — Ernest Hemingway।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস — ১০-২৯, ১১-২৩, ৩৭-১২৬, ৪৬-৩২-এ Hemingway-র অন্য উপন্যাস জিজ্ঞাসিত; এটি ভিন্ন গ্রন্থ (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "Ernest Hemingway won the Nobel Prize in Literature in—",
+      "o": [
+        "1930",
+        "1949",
+        "1954",
+        "1962"
+      ],
+      "a": 2,
+      "e": "১৯৫৪ সালে Hemingway নোবেল পান।",
+      "t": "Hemingway = ১৯৫৪।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "Mark Twain's real name was—",
+      "o": [
+        "Samuel Langhorne Clemens",
+        "William Sydney Porter",
+        "Eric Arthur Blair",
+        "Charles Dodgson"
+      ],
+      "a": 0,
+      "e": "Mark Twain ছদ্মনাম; William Sydney Porter হলেন O. Henry।",
+      "t": "Twain = Clemens।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'Adventures of Huckleberry Finn' was written by—",
+      "o": [
+        "John Steinbeck",
+        "Mark Twain",
+        "Henry David Thoreau",
+        "Walt Whitman"
+      ],
+      "a": 1,
+      "e": "Mississippi নদীতে Huck ও Jim-এর অভিযান।",
+      "t": "Adventures of Huckleberry Finn — Mark Twain।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'Leaves of Grass' was written by—",
+      "o": [
+        "Sylvia Plath",
+        "Toni Morrison",
+        "Walt Whitman",
+        "F. Scott Fitzgerald"
+      ],
+      "a": 2,
+      "e": "Whitman-এর কাব্যসংকলন — মুক্তছন্দের পথিকৃৎ।",
+      "t": "Leaves of Grass — Walt Whitman।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "Whitman's 'O Captain! My Captain!' is an elegy on—",
+      "o": [
+        "Thomas Jefferson",
+        "George Washington",
+        "John F. Kennedy",
+        "Abraham Lincoln"
+      ],
+      "a": 3,
+      "e": "Lincoln-এর হত্যার পর লেখা Whitman-এর শোককবিতা।",
+      "t": "O Captain — Lincoln।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'Because I could not stop for Death' was written by—",
+      "o": [
+        "Emily Dickinson",
+        "Sylvia Plath",
+        "Walt Whitman",
+        "Robert Frost"
+      ],
+      "a": 0,
+      "e": "Emily Dickinson-এর মৃত্যুবিষয়ক বিখ্যাত কবিতা।",
+      "t": "Dickinson — Death।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'The Raven' was written by—",
+      "o": [
+        "Harper Lee",
+        "Edgar Allan Poe",
+        "Ernest Hemingway",
+        "Arthur Miller"
+      ],
+      "a": 1,
+      "e": "‘Quoth the Raven, Nevermore’ — Poe।",
+      "t": "The Raven — Edgar Allan Poe।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "Who is regarded as the father of the modern detective story?",
+      "o": [
+        "Agatha Christie",
+        "Arthur Conan Doyle",
+        "Edgar Allan Poe",
+        "Mark Twain"
+      ],
+      "a": 2,
+      "e": "‘The Murders in the Rue Morgue’ (১৮৪১) — Poe।",
+      "t": "detective story — Poe।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'The Scarlet Letter' was written by—",
+      "o": [
+        "Harriet Beecher Stowe",
+        "Edgar Allan Poe",
+        "J. D. Salinger",
+        "Nathaniel Hawthorne"
+      ],
+      "a": 3,
+      "e": "Hester Prynne-এর কাহিনি — Puritan সমাজের পটভূমি।",
+      "t": "The Scarlet Letter — Nathaniel Hawthorne।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'Uncle Tom's Cabin' was written by—",
+      "o": [
+        "Harriet Beecher Stowe",
+        "Mark Twain",
+        "Arthur Miller",
+        "Henry James"
+      ],
+      "a": 0,
+      "e": "দাসপ্রথাবিরোধী উপন্যাস (১৮৫২)।",
+      "t": "Uncle Tom's Cabin — Harriet Beecher Stowe।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'The Great Gatsby' was written by—",
+      "o": [
+        "Arthur Miller",
+        "F. Scott Fitzgerald",
+        "Henry James",
+        "Walt Whitman"
+      ],
+      "a": 1,
+      "e": "Jazz Age-এর উপন্যাস (১৯২৫)।",
+      "t": "The Great Gatsby — F. Scott Fitzgerald।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'The Grapes of Wrath' was written by—",
+      "o": [
+        "Edgar Allan Poe",
+        "Herman Melville",
+        "John Steinbeck",
+        "J. D. Salinger"
+      ],
+      "a": 2,
+      "e": "মহামন্দাকালের Joad পরিবারের কাহিনি।",
+      "t": "The Grapes of Wrath — John Steinbeck।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'Of Mice and Men' was written by—",
+      "o": [
+        "Henry James",
+        "Ernest Hemingway",
+        "Arthur Miller",
+        "John Steinbeck"
+      ],
+      "a": 3,
+      "e": "George ও Lennie-র কাহিনি — Steinbeck।",
+      "t": "Of Mice and Men — John Steinbeck।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'Death of a Salesman' was written by—",
+      "o": [
+        "Arthur Miller",
+        "Walt Whitman",
+        "Robert Frost",
+        "Herman Melville"
+      ],
+      "a": 0,
+      "e": "সেলসম্যান Willy Loman-এর ট্র্যাজেডি।",
+      "t": "Death of a Salesman — Arthur Miller।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'The Crucible' was written by—",
+      "o": [
+        "Robert Frost",
+        "Arthur Miller",
+        "Herman Melville",
+        "Edgar Allan Poe"
+      ],
+      "a": 1,
+      "e": "Salem witch trials-এর পটভূমিতে Miller-এর নাটক।",
+      "t": "The Crucible — Arthur Miller।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'A Streetcar Named Desire' was written by—",
+      "o": [
+        "Henry David Thoreau",
+        "F. Scott Fitzgerald",
+        "Tennessee Williams",
+        "Mark Twain"
+      ],
+      "a": 2,
+      "e": "Blanche DuBois-এর কাহিনি — Williams।",
+      "t": "A Streetcar Named Desire — Tennessee Williams।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Hard",
+      "q": "The only American playwright to win the Nobel Prize in Literature (1936) is—",
+      "o": [
+        "Edward Albee",
+        "Arthur Miller",
+        "Tennessee Williams",
+        "Eugene O'Neill"
+      ],
+      "a": 3,
+      "e": "Eugene O'Neill ১৯৩৬ সালে নোবেল পান।",
+      "t": "নাট্যকার নোবেল — O'Neill।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'And miles to go before I sleep' is from Robert Frost's—",
+      "o": [
+        "Stopping by Woods on a Snowy Evening",
+        "The Road Not Taken",
+        "Mending Wall",
+        "Birches"
+      ],
+      "a": 0,
+      "e": "Frost-এর বিখ্যাত কবিতার শেষ চরণ।",
+      "t": "miles to go — Stopping by Woods।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস — ৪৭-১০৩-এ Frost-এর Mending Wall-এর চরণ জিজ্ঞাসিত; এটি ভিন্ন কবিতা (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'The Road Not Taken' was written by—",
+      "o": [
+        "Walt Whitman",
+        "Robert Frost",
+        "Tennessee Williams",
+        "Herman Melville"
+      ],
+      "a": 1,
+      "e": "‘Two roads diverged in a yellow wood’ — Frost।",
+      "t": "The Road Not Taken — Robert Frost।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'Beloved' was written by—",
+      "o": [
+        "Tennessee Williams",
+        "Walt Whitman",
+        "Toni Morrison",
+        "Herman Melville"
+      ],
+      "a": 2,
+      "e": "দাসপ্রথার স্মৃতি নিয়ে উপন্যাস; Morrison ১৯৯৩ সালে নোবেল পান।",
+      "t": "Beloved — Toni Morrison।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'The Catcher in the Rye' was written by—",
+      "o": [
+        "Harper Lee",
+        "Sylvia Plath",
+        "Nathaniel Hawthorne",
+        "J. D. Salinger"
+      ],
+      "a": 3,
+      "e": "কিশোর Holden Caulfield-এর কাহিনি।",
+      "t": "The Catcher in the Rye — J. D. Salinger।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'To Kill a Mockingbird' was written by—",
+      "o": [
+        "Harper Lee",
+        "Henry David Thoreau",
+        "Mark Twain",
+        "Arthur Miller"
+      ],
+      "a": 0,
+      "e": "বর্ণবৈষম্য নিয়ে উপন্যাস; আইনজীবী Atticus Finch।",
+      "t": "To Kill a Mockingbird — Harper Lee।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'Walden' was written by—",
+      "o": [
+        "Henry James",
+        "Henry David Thoreau",
+        "Walt Whitman",
+        "Tennessee Williams"
+      ],
+      "a": 1,
+      "e": "Walden Pond-এর পাশে সরল জীবনযাপনের অভিজ্ঞতা।",
+      "t": "Walden — Henry David Thoreau।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "The American literary movement led by Emerson and Thoreau is called—",
+      "o": [
+        "Naturalism",
+        "Imagism",
+        "Transcendentalism",
+        "Modernism"
+      ],
+      "a": 2,
+      "e": "অন্তর্জ্ঞান ও প্রকৃতিকে প্রাধান্য দেওয়া উনিশ শতকের আন্দোলন।",
+      "t": "Emerson–Thoreau = Transcendentalism।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'The Portrait of a Lady' was written by—",
+      "o": [
+        "J. D. Salinger",
+        "Sylvia Plath",
+        "Nathaniel Hawthorne",
+        "Henry James"
+      ],
+      "a": 3,
+      "e": "Isabel Archer-এর কাহিনি — Henry James।",
+      "t": "The Portrait of a Lady — Henry James।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'The Bell Jar' was written by—",
+      "o": [
+        "Sylvia Plath",
+        "Henry David Thoreau",
+        "Walt Whitman",
+        "Tennessee Williams"
+      ],
+      "a": 0,
+      "e": "Plath-এর একমাত্র উপন্যাস (১৯৬৩)।",
+      "t": "The Bell Jar — Sylvia Plath।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'Rip Van Winkle' was written by—",
+      "o": [
+        "Mark Twain",
+        "Washington Irving",
+        "Edgar Allan Poe",
+        "O. Henry"
+      ],
+      "a": 1,
+      "e": "Irving-এর গল্প — বিশ বছর ঘুমিয়ে থাকা Rip।",
+      "t": "Rip Van Winkle — Irving।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'The Song of Hiawatha' was written by—",
+      "o": [
+        "Robert Frost",
+        "Walt Whitman",
+        "Henry Wadsworth Longfellow",
+        "Ralph Waldo Emerson"
+      ],
+      "a": 2,
+      "e": "আদিবাসী নায়ক Hiawatha-কে নিয়ে Longfellow-এর কাব্য।",
+      "t": "Hiawatha — Longfellow।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "The American singer-songwriter who won the 2016 Nobel Prize in Literature is—",
+      "o": [
+        "Bruce Springsteen",
+        "Leonard Cohen",
+        "Paul Simon",
+        "Bob Dylan"
+      ],
+      "a": 3,
+      "e": "Bob Dylan ২০১৬ সালে সাহিত্যে নোবেল পান।",
+      "t": "২০১৬ — Bob Dylan।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.AME",
+      "d": "Medium",
+      "q": "'Howl' (1956) is a famous poem by—",
+      "o": [
+        "Allen Ginsberg",
+        "Jack Kerouac",
+        "Sylvia Plath",
+        "Robert Lowell"
+      ],
+      "a": 0,
+      "e": "Beat Generation-এর প্রধান কবিতা — Ginsberg।",
+      "t": "Howl — Ginsberg।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস — ৪২-৩৩-এ Ginsberg-এর September on Jessore Road জিজ্ঞাসিত; এটি ভিন্ন কবিতা (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Easy",
+      "q": "'The Iliad' was written by—",
+      "o": [
+        "Victor Hugo",
+        "Homer",
+        "Sophocles",
+        "Dante Alighieri"
+      ],
+      "a": 1,
+      "e": "ট্রয়ের যুদ্ধ নিয়ে গ্রিক মহাকাব্য।",
+      "t": "The Iliad — Homer।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'The Aeneid' was written by—",
+      "o": [
+        "Kalidasa",
+        "Henrik Ibsen",
+        "Virgil",
+        "Fyodor Dostoevsky"
+      ],
+      "a": 2,
+      "e": "Aeneas-এর কাহিনি — ল্যাটিন মহাকাব্য।",
+      "t": "The Aeneid — Virgil।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'The Divine Comedy' was written by—",
+      "o": [
+        "Victor Hugo",
+        "Anton Chekhov",
+        "Plato",
+        "Dante Alighieri"
+      ],
+      "a": 3,
+      "e": "Inferno, Purgatorio, Paradiso — তিন খণ্ডের ইতালীয় মহাকাব্য।",
+      "t": "The Divine Comedy — Dante Alighieri।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'Don Quixote' was written by—",
+      "o": [
+        "Miguel de Cervantes",
+        "Franz Kafka",
+        "Ferdowsi",
+        "J. W. von Goethe"
+      ],
+      "a": 0,
+      "e": "স্প্যানিশ উপন্যাস (১৬০৫–১৫), প্রথম আধুনিক উপন্যাস বলে গণ্য।",
+      "t": "Don Quixote — Miguel de Cervantes।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'Faust' was written by—",
+      "o": [
+        "Dante Alighieri",
+        "J. W. von Goethe",
+        "Albert Camus",
+        "Jalaluddin Rumi"
+      ],
+      "a": 1,
+      "e": "শয়তানের কাছে আত্মা বিক্রির কাহিনি — জার্মান নাট্যকাব্য।",
+      "t": "Faust — J. W. von Goethe।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'War and Peace' was written by—",
+      "o": [
+        "Giovanni Boccaccio",
+        "Gustave Flaubert",
+        "Leo Tolstoy",
+        "Dante Alighieri"
+      ],
+      "a": 2,
+      "e": "নেপোলিয়নের রুশ আক্রমণের পটভূমিতে উপন্যাস।",
+      "t": "War and Peace — Leo Tolstoy।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'Anna Karenina' was written by—",
+      "o": [
+        "Dante Alighieri",
+        "Gustave Flaubert",
+        "Giovanni Boccaccio",
+        "Leo Tolstoy"
+      ],
+      "a": 3,
+      "e": "‘Happy families are all alike…’ দিয়ে শুরু Tolstoy-এর উপন্যাস।",
+      "t": "Anna Karenina — Leo Tolstoy।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'Crime and Punishment' was written by—",
+      "o": [
+        "Fyodor Dostoevsky",
+        "Ferdowsi",
+        "Miguel de Cervantes",
+        "Henrik Ibsen"
+      ],
+      "a": 0,
+      "e": "Raskolnikov-এর অপরাধ ও অনুশোচনা।",
+      "t": "Crime and Punishment — Fyodor Dostoevsky।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'Les Misérables' was written by—",
+      "o": [
+        "Leo Tolstoy",
+        "Victor Hugo",
+        "Chinua Achebe",
+        "Homer"
+      ],
+      "a": 1,
+      "e": "Jean Valjean-এর কাহিনি — Hugo।",
+      "t": "Les Misérables — Victor Hugo।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'Madame Bovary' was written by—",
+      "o": [
+        "Chinua Achebe",
+        "Leo Tolstoy",
+        "Gustave Flaubert",
+        "Homer"
+      ],
+      "a": 2,
+      "e": "Emma Bovary-র কাহিনি — Flaubert।",
+      "t": "Madame Bovary — Gustave Flaubert।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'The Metamorphosis' was written by—",
+      "o": [
+        "Chinua Achebe",
+        "Kalidasa",
+        "Leo Tolstoy",
+        "Franz Kafka"
+      ],
+      "a": 3,
+      "e": "Gregor Samsa পোকায় রূপান্তরিত হয় — Kafka।",
+      "t": "The Metamorphosis — Franz Kafka।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'The Outsider (L'Étranger)' was written by—",
+      "o": [
+        "Albert Camus",
+        "Ferdowsi",
+        "Miguel de Cervantes",
+        "Henrik Ibsen"
+      ],
+      "a": 0,
+      "e": "Meursault-এর কাহিনি — absurdist উপন্যাস।",
+      "t": "The Outsider (L'Étranger) — Albert Camus।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'A Doll's House' was written by—",
+      "o": [
+        "Jalaluddin Rumi",
+        "Henrik Ibsen",
+        "J. W. von Goethe",
+        "Anton Chekhov"
+      ],
+      "a": 1,
+      "e": "Nora-র ঘর ছেড়ে যাওয়া — নরওয়েজীয় নাটক।",
+      "t": "A Doll's House — Henrik Ibsen।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'The Cherry Orchard' was written by—",
+      "o": [
+        "Jalaluddin Rumi",
+        "Franz Kafka",
+        "Anton Chekhov",
+        "J. W. von Goethe"
+      ],
+      "a": 2,
+      "e": "রুশ অভিজাত পরিবারের পতন — Chekhov-এর নাটক।",
+      "t": "The Cherry Orchard — Anton Chekhov।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'Things Fall Apart' was written by—",
+      "o": [
+        "Franz Kafka",
+        "Giovanni Boccaccio",
+        "Dante Alighieri",
+        "Chinua Achebe"
+      ],
+      "a": 3,
+      "e": "নাইজেরিয়ার Okonkwo-র কাহিনি (১৯৫৮)।",
+      "t": "Things Fall Apart — Chinua Achebe।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'Oedipus Rex' was written by—",
+      "o": [
+        "Sophocles",
+        "Homer",
+        "Victor Hugo",
+        "Giovanni Boccaccio"
+      ],
+      "a": 0,
+      "e": "গ্রিক ট্র্যাজেডি — নিয়তির হাতে বন্দি Oedipus।",
+      "t": "Oedipus Rex — Sophocles।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'The Decameron' was written by—",
+      "o": [
+        "Ferdowsi",
+        "Giovanni Boccaccio",
+        "Miguel de Cervantes",
+        "Albert Camus"
+      ],
+      "a": 1,
+      "e": "প্লেগের সময়ের ১০০ গল্প — ইতালীয়।",
+      "t": "The Decameron — Giovanni Boccaccio।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'Shahnameh' was written by—",
+      "o": [
+        "J. W. von Goethe",
+        "Jalaluddin Rumi",
+        "Ferdowsi",
+        "Henrik Ibsen"
+      ],
+      "a": 2,
+      "e": "পারস্যের জাতীয় মহাকাব্য।",
+      "t": "Shahnameh — Ferdowsi।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'Masnavi' was written by—",
+      "o": [
+        "Henrik Ibsen",
+        "Ferdowsi",
+        "J. W. von Goethe",
+        "Jalaluddin Rumi"
+      ],
+      "a": 3,
+      "e": "ফারসি সুফি কাব্য — Rumi।",
+      "t": "Masnavi — Jalaluddin Rumi।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'Abhijnanashakuntalam (Shakuntala)' was written by—",
+      "o": [
+        "Kalidasa",
+        "Victor Hugo",
+        "Sophocles",
+        "Dante Alighieri"
+      ],
+      "a": 0,
+      "e": "সংস্কৃত নাটক — Kalidasa।",
+      "t": "Abhijnanashakuntalam (Shakuntala) — Kalidasa।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'The Republic' was written by—",
+      "o": [
+        "Miguel de Cervantes",
+        "Plato",
+        "Albert Camus",
+        "Jalaluddin Rumi"
+      ],
+      "a": 1,
+      "e": "আদর্শ রাষ্ট্র নিয়ে Plato-র সংলাপ।",
+      "t": "The Republic — Plato।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস — ৩৬-৬১-এ Aristotle-এর উক্তি জিজ্ঞাসিত; এটি ভিন্ন দার্শনিক ও গ্রন্থ (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "Rabindranath Tagore won the Nobel Prize in Literature in—",
+      "o": [
+        "1905",
+        "1913",
+        "1921",
+        "1930"
+      ],
+      "a": 1,
+      "e": "১৯১৩ সালে Gitanjali (Song Offerings)-এর জন্য — প্রথম এশীয় নোবেলজয়ী।",
+      "t": "Tagore = ১৯১৩।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস — ৩৬-৬৫-এ Gitanjali-র অনুবাদক জিজ্ঞাসিত; এটি নোবেলপ্রাপ্তির সাল (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'Untouchable' (1935) was written by—",
+      "o": [
+        "Raja Rao",
+        "R. K. Narayan",
+        "Mulk Raj Anand",
+        "Khushwant Singh"
+      ],
+      "a": 2,
+      "e": "ভারতীয় ইংরেজি সাহিত্যের পথিকৃৎ Mulk Raj Anand-এর উপন্যাস।",
+      "t": "Untouchable — Mulk Raj Anand।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Hard",
+      "q": "'Love in the Time of Cholera' was written by—",
+      "o": [
+        "Mario Vargas Llosa",
+        "Jorge Luis Borges",
+        "Pablo Neruda",
+        "Gabriel García Márquez"
+      ],
+      "a": 3,
+      "e": "কলম্বিয়ার নোবেলজয়ী লেখক Márquez-এর উপন্যাস।",
+      "t": "Love in the Time of Cholera — Márquez।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "'The Little Prince' was written by—",
+      "o": [
+        "Antoine de Saint-Exupéry",
+        "Albert Camus",
+        "Victor Hugo",
+        "Jules Verne"
+      ],
+      "a": 0,
+      "e": "ফরাসি বৈমানিক-লেখক Saint-Exupéry-র রূপকধর্মী কাহিনি (১৯৪৩)।",
+      "t": "Little Prince — Saint-Exupéry।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.WRL",
+      "d": "Medium",
+      "q": "Which Chilean poet won the Nobel Prize in Literature in 1971?",
+      "o": [
+        "Gabriela Mistral",
+        "Pablo Neruda",
+        "Octavio Paz",
+        "Jorge Luis Borges"
+      ],
+      "a": 1,
+      "e": "Pablo Neruda ১৯৭১ সালে নোবেল পান; Mistral ১৯৪৫।",
+      "t": "১৯৭১ — Neruda।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.OLD",
+      "d": "Medium",
+      "q": "The Old English period of literature is usually dated—",
+      "o": [
+        "450–1066",
+        "1066–1500",
+        "1350–1400",
+        "1500–1660"
+      ],
+      "a": 0,
+      "e": "Anglo-Saxon আগমন (৪৫০) থেকে Norman Conquest (১০৬৬) পর্যন্ত।",
+      "t": "Old English = ৪৫০–১০৬৬।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.OLD",
+      "d": "Medium",
+      "q": "The hero of the Old English epic 'Beowulf' kills the monster—",
+      "o": [
+        "Hydra",
+        "Cyclops",
+        "Grendel",
+        "Minotaur"
+      ],
+      "a": 2,
+      "e": "Beowulf দানব Grendel, তার মা ও শেষে এক ড্রাগনের সঙ্গে লড়েন।",
+      "t": "Beowulf ↔ Grendel।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.OLD",
+      "d": "Medium",
+      "q": "Bede, the 'Father of English History', wrote his 'Ecclesiastical History' in—",
+      "o": [
+        "Greek",
+        "Old English",
+        "French",
+        "Latin"
+      ],
+      "a": 3,
+      "e": "Bede (৬৭৩–৭৩৫) তাঁর ইতিহাসগ্রন্থ ল্যাটিনে লেখেন; পরে King Alfred-এর আমলে Old English-এ অনূদিত হয়।",
+      "t": "Bede — Latin।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.OLD",
+      "d": "Hard",
+      "q": "The 'Anglo-Saxon Chronicle' was begun under—",
+      "o": [
+        "King Alfred",
+        "William the Conqueror",
+        "Henry VIII",
+        "Edward III"
+      ],
+      "a": 0,
+      "e": "King Alfred-এর আমলে শুরু; তাঁকে ‘Father of English Prose’ বলা হয়।",
+      "t": "Anglo-Saxon Chronicle — Alfred।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.OLD",
+      "d": "Medium",
+      "q": "Langland's 'Piers Plowman' is best described as an—",
+      "o": [
+        "epic of war",
+        "allegorical dream-vision poem",
+        "sonnet sequence",
+        "Restoration comedy"
+      ],
+      "a": 1,
+      "e": "স্বপ্নদর্শনের আকারে রূপককাব্য — মধ্যযুগীয় সমাজ ও ধর্মের সমালোচনা।",
+      "t": "Piers Plowman = allegory।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.OLD",
+      "d": "Medium",
+      "q": "'Confessio Amantis' was written by—",
+      "o": [
+        "Geoffrey Chaucer",
+        "Caedmon",
+        "John Gower",
+        "William Langland"
+      ],
+      "a": 2,
+      "e": "Chaucer-এর বন্ধু Gower-এর শ্রেষ্ঠ রচনা।",
+      "t": "Confessio Amantis — John Gower।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.OLD",
+      "d": "Medium",
+      "q": "Who first translated the Bible into English and is called the 'Morning Star of the Reformation'?",
+      "o": [
+        "John Gower",
+        "William Tyndale",
+        "Thomas More",
+        "John Wycliffe"
+      ],
+      "a": 3,
+      "e": "চতুর্দশ শতকে Wycliffe ও তাঁর অনুসারীরা বাইবেল ইংরেজিতে অনুবাদ করেন।",
+      "t": "Morning Star — Wycliffe।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.OLD",
+      "d": "Medium",
+      "q": "'Le Morte d'Arthur' was written by—",
+      "o": [
+        "Thomas Malory",
+        "John Wycliffe",
+        "Bede",
+        "King Alfred"
+      ],
+      "a": 0,
+      "e": "রাজা আর্থার ও Round Table-এর কাহিনি; ১৪৮৫ সালে Caxton মুদ্রণ করেন।",
+      "t": "Le Morte d'Arthur — Thomas Malory।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.OLD",
+      "d": "Medium",
+      "q": "The first printing press in England was set up in 1476 by—",
+      "o": [
+        "John Gutenberg",
+        "William Caxton",
+        "Thomas Malory",
+        "William Tyndale"
+      ],
+      "a": 1,
+      "e": "Caxton ওয়েস্টমিনস্টারে প্রথম ছাপাখানা স্থাপন করেন।",
+      "t": "প্রথম ছাপাখানা — Caxton।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.OLD",
+      "d": "Medium",
+      "q": "Chaucer's pilgrims in 'The Canterbury Tales' travel to the shrine of—",
+      "o": [
+        "Saint Patrick",
+        "King Arthur",
+        "Thomas Becket",
+        "Thomas More"
+      ],
+      "a": 2,
+      "e": "Canterbury-তে শহিদ Thomas Becket-এর সমাধিতে তীর্থযাত্রা।",
+      "t": "Canterbury — Becket।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Britannica; NobelPrize.org; Pulitzer records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

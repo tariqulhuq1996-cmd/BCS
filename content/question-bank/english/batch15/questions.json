@@ -1,0 +1,678 @@
+{
+  "batch": "Batch 15",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 03 (Correction on Subject-Verb Agreement), Lecture 17 (Correction on Miscellaneous Common Mistakes)",
+  "subtopics": {
+    "EN.GR.COR": {}
+  },
+  "questions": [
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "I have been waiting here for two hours.",
+        "I have been waiting here since two hours.",
+        "I am waiting here since two hours.",
+        "I was waiting here since two hours."
+      ],
+      "a": 0,
+      "e": "সময়ের পরিমাণে for; শুরুর বিন্দুতে since।",
+      "t": "পরিমাণ = for, বিন্দু = since।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Easy",
+      "q": "Which of the following sentences is correct?",
+      "o": [
+        "He returned back home late at night.",
+        "He returned home late at night.",
+        "He returned back to home late at night.",
+        "He returned to back home late at night."
+      ],
+      "a": 1,
+      "e": "return মানেই ফিরে আসা — back অপ্রয়োজনীয় (redundancy)।",
+      "t": "return back ভুল।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Identify the grammatically correct sentence.",
+      "o": [
+        "The reason for his absence is due to he is ill.",
+        "The reason for his absence is because he is ill.",
+        "The reason for his absence is that he is ill.",
+        "The reason for his absence because he is ill."
+      ],
+      "a": 2,
+      "e": "the reason is that …; because-এর সঙ্গে reason দ্বিরুক্তি।",
+      "t": "reason … that।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "Despite of rain, they went out.",
+        "Despite of the rain, they went out.",
+        "In spite the rain, they went out.",
+        "Despite the rain, they went out."
+      ],
+      "a": 3,
+      "e": "despite (of ছাড়া) = in spite of।",
+      "t": "despite / in spite of।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Easy",
+      "q": "Which of the following sentences is correct?",
+      "o": [
+        "He is taller than his brother.",
+        "He is more taller than his brother.",
+        "He is most taller than his brother.",
+        "He is more tall than his brother."
+      ],
+      "a": 0,
+      "e": "double comparative (more taller) ভুল।",
+      "t": "more + -er নয়।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Identify the grammatically correct sentence.",
+      "o": [
+        "I am knowing him very well.",
+        "I know him very well.",
+        "I am knowing him very good.",
+        "I have knowing him very well."
+      ],
+      "a": 1,
+      "e": "know, like, believe প্রভৃতি stative verb সাধারণত continuous-এ বসে না।",
+      "t": "stative verb-এ -ing নয়।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "Unless you will work hard, you will fail.",
+        "Unless you do not work hard, you will fail.",
+        "Unless you work hard, you will fail.",
+        "Unless you don't work hard, you will not fail."
+      ],
+      "a": 2,
+      "e": "unless নিজেই নেতিবাচক — সঙ্গে not বসে না।",
+      "t": "unless + not নয়।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Hard",
+      "q": "Which of the following sentences is correct?",
+      "o": [
+        "Scarcely had he left then the guests arrived.",
+        "Scarcely had he left than the guests arrived.",
+        "Scarcely he had left when the guests arrived.",
+        "Scarcely had he left when the guests arrived."
+      ],
+      "a": 3,
+      "e": "Scarcely/Hardly … when; No sooner … than।",
+      "t": "Scarcely … when।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Hard",
+      "q": "Identify the grammatically correct sentence.",
+      "o": [
+        "No sooner did he see me than he ran away.",
+        "No sooner did he see me when he ran away.",
+        "No sooner he saw me than he ran away.",
+        "No sooner did he saw me than he ran away."
+      ],
+      "a": 0,
+      "e": "No sooner + inversion … than।",
+      "t": "No sooner … than।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "He is enough strong to lift the box.",
+        "He is strong enough to lift the box.",
+        "He is strong enough for lift the box.",
+        "He is enough strong for lifting the box."
+      ],
+      "a": 1,
+      "e": "adjective + enough (enough adjective-এর পরে বসে)।",
+      "t": "strong enough।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "Semantic Duplicate — ১৮-১৭ (old enough / enough old): একই নিয়ম",
+      "v": "যাচাইকৃত",
+      "reject": "Semantic Duplicate"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Which of the following sentences is correct?",
+      "o": [
+        "I prefer tea from coffee.",
+        "I prefer tea than coffee.",
+        "I prefer tea to coffee.",
+        "I prefer tea over than coffee."
+      ],
+      "a": 2,
+      "e": "prefer A to B।",
+      "t": "prefer … to।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "Semantic Duplicate — ২৮-৩০ (prefer donating money to distributing clothes): prefer … to নিয়ম",
+      "v": "যাচাইকৃত",
+      "reject": "Semantic Duplicate"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Easy",
+      "q": "Identify the grammatically correct sentence.",
+      "o": [
+        "Let him to go.",
+        "Let he go.",
+        "Let his go.",
+        "Let him go."
+      ],
+      "a": 3,
+      "e": "let-এর পরে objective case + bare infinitive।",
+      "t": "let + him।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "Semantic Duplicate — ১২-২৩ (Let you and him be witnesses): let-এর পরে objective case",
+      "v": "যাচাইকৃত",
+      "reject": "Semantic Duplicate"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "Supposing he comes, what will you do?",
+        "Supposing if he comes, what will you do?",
+        "Supposing he will come, what you will do?",
+        "Supposing if he come, what will you do?"
+      ],
+      "a": 0,
+      "e": "supposing নিজেই শর্ত বোঝায় — if অপ্রয়োজনীয়।",
+      "t": "supposing + if নয়।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Which of the following sentences is correct?",
+      "o": [
+        "Although he is poor, but he is honest.",
+        "Although he is poor, he is honest.",
+        "Although he is poor, yet but he is honest.",
+        "Though he is poor, but he is honest."
+      ],
+      "a": 1,
+      "e": "although/though-এর সঙ্গে but বসে না (yet বসতে পারে)।",
+      "t": "although + but নয়।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Identify the grammatically correct sentence.",
+      "o": [
+        "He fluently speaks English language very.",
+        "He speaks fluently English.",
+        "He speaks English fluently.",
+        "He speaks English fluent."
+      ],
+      "a": 2,
+      "e": "verb ও object-এর মাঝে adverb বসে না।",
+      "t": "verb + object + adverb।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "He avoided meet me.",
+        "He avoided to meet me.",
+        "He avoided to meeting me.",
+        "He avoided meeting me."
+      ],
+      "a": 3,
+      "e": "avoid-এর পরে gerund।",
+      "t": "avoid + V-ing।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Which of the following sentences is correct?",
+      "o": [
+        "My hair is turning grey.",
+        "My hairs are turning grey.",
+        "My hairs is turning grey.",
+        "My hair are turning grey."
+      ],
+      "a": 0,
+      "e": "মাথার চুল সমষ্টিগতভাবে hair (uncountable) — singular verb।",
+      "t": "hair = singular।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Hard",
+      "q": "Identify the grammatically correct sentence.",
+      "o": [
+        "One must do his duty.",
+        "One must do one's duty.",
+        "One must do their duty.",
+        "One must do your duty."
+      ],
+      "a": 1,
+      "e": "one-এর possessive one's।",
+      "t": "one … one's।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "Semantic Duplicate — ২৩-৯১ (One should be careful about one's duty): একই নিয়ম",
+      "v": "যাচাইকৃত",
+      "reject": "Semantic Duplicate"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "He said me that he would come.",
+        "He told that he would come.",
+        "He said that he would come.",
+        "He told to me that he would come."
+      ],
+      "a": 2,
+      "e": "tell-এর পরে ব্যক্তিবাচক object লাগে; object ছাড়া said that।",
+      "t": "said that / told me that।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Which of the following sentences is correct?",
+      "o": [
+        "She explained me about the problem.",
+        "She explained me the problem.",
+        "She explained to me about the problem.",
+        "She explained the problem to me."
+      ],
+      "a": 3,
+      "e": "explain something to someone।",
+      "t": "explain … to me।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Easy",
+      "q": "Identify the grammatically correct sentence.",
+      "o": [
+        "We reached the station at noon.",
+        "We reached at the station at noon.",
+        "We reached to the station at noon.",
+        "We reached on the station at noon."
+      ],
+      "a": 0,
+      "e": "reach-এর পরে preposition বসে না।",
+      "t": "reach (no preposition)।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "The cost of these books are high.",
+        "The cost of these books is high.",
+        "The cost of these book are high.",
+        "The costs of these books is high."
+      ],
+      "a": 1,
+      "e": "মূল subject cost (singular) — verb is।",
+      "t": "মূল subject দেখো।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Which of the following sentences is correct?",
+      "o": [
+        "The poor man was dead last night.",
+        "The poor man was died last night.",
+        "The poor man died last night.",
+        "The poor man has died last night."
+      ],
+      "a": 2,
+      "e": "die intransitive — was died হয় না; last night → past simple।",
+      "t": "was died ভুল।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Hard",
+      "q": "Identify the grammatically correct sentence.",
+      "o": [
+        "This is the girl whom I think she is honest.",
+        "This is the girl whom I think is honest.",
+        "This is the girl which I think is honest.",
+        "This is the girl who I think is honest."
+      ],
+      "a": 3,
+      "e": "I think মধ্যবর্তী বাক্যাংশ; who হলো is-এর subject — whom নয়।",
+      "t": "who … is (subject)।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "I have a lot of work to do.",
+        "I have a lot of works to do.",
+        "I have many works to do.",
+        "I have a lot of work to doing."
+      ],
+      "a": 0,
+      "e": "কাজ অর্থে work uncountable; works = সাহিত্যকর্ম/কারখানা।",
+      "t": "work (কাজ) = uncountable।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Which of the following sentences is correct?",
+      "o": [
+        "He bought two dozens eggs.",
+        "He bought two dozen eggs.",
+        "He bought two dozens of egg.",
+        "He bought two dozen egg."
+      ],
+      "a": 1,
+      "e": "সংখ্যার পরে dozen, hundred ইত্যাদিতে s বসে না।",
+      "t": "two dozen।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Identify the grammatically correct sentence.",
+      "o": [
+        "He is a five-years old boy.",
+        "He is a five-years-old boy.",
+        "He is a five-year-old boy.",
+        "He is a five year olds boy."
+      ],
+      "a": 2,
+      "e": "compound adjective-এ noun singular থাকে।",
+      "t": "five-year-old।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "The two brothers quarrelled with themselves.",
+        "The two brothers quarrelled with one another.",
+        "The two brothers quarrelled each other.",
+        "The two brothers quarrelled with each other."
+      ],
+      "a": 3,
+      "e": "দুজনের মধ্যে each other; দুইয়ের বেশি হলে one another।",
+      "t": "দুজন = each other।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Which of the following sentences is correct?",
+      "o": [
+        "The book has been lying on the table since morning.",
+        "The book is lying on the table since morning.",
+        "The book lies on the table since morning.",
+        "The book was lying on the table since morning."
+      ],
+      "a": 0,
+      "e": "since-যুক্ত চলমান কাজ — present perfect continuous।",
+      "t": "since … has been V-ing।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Identify the grammatically correct sentence.",
+      "o": [
+        "Of the two sisters, Rina is the best singer.",
+        "Of the two sisters, Rina is the better singer.",
+        "Of the two sisters, Rina is best singer.",
+        "Of the two sisters, Rina is a most good singer."
+      ],
+      "a": 1,
+      "e": "দুজনের তুলনায় comparative (better)।",
+      "t": "দুইয়ের মধ্যে = comparative।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "He hardly works hard to support his family.",
+        "He works hardly to support his family.",
+        "He works hard to support his family.",
+        "He works hardly for support his family."
+      ],
+      "a": 2,
+      "e": "hard = কঠোরভাবে; hardly = কদাচিৎ।",
+      "t": "hard ≠ hardly।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Which of the following sentences is correct?",
+      "o": [
+        "She sings beautifulness.",
+        "She sings beautiful.",
+        "She beautiful sings.",
+        "She sings beautifully."
+      ],
+      "a": 3,
+      "e": "verb-কে বিশেষিত করতে adverb (beautifully)।",
+      "t": "verb + adverb।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Identify the incorrect part of the sentence: 'He has (A) returned (B) the book (C) yesterday (D).'",
+      "o": [
+        "(A) has",
+        "(B) returned",
+        "(C) the book",
+        "(D) yesterday"
+      ],
+      "a": 0,
+      "e": "yesterday (নির্দিষ্ট অতীত) থাকলে present perfect নয় — returned।",
+      "t": "yesterday + has নয়।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "Semantic Duplicate — ৩৬-৬৩ (Yesterday, he went home): yesterday-র সঙ্গে past simple",
+      "v": "যাচাইকৃত",
+      "reject": "Semantic Duplicate"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "He is a man of little words.",
+        "He is a man of few words.",
+        "He is a man of less words.",
+        "He is a man of a little words."
+      ],
+      "a": 1,
+      "e": "গণনাযোগ্য noun (words)-এর সঙ্গে few; little অগণনীয় noun-এর সঙ্গে।",
+      "t": "few + countable।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "He is my cousin-brother of mine.",
+        "He is my cousin brother.",
+        "He is my cousin.",
+        "He is cousin brother to me."
+      ],
+      "a": 2,
+      "e": "ইংরেজিতে cousin-ই যথেষ্ট; cousin brother/sister বাংলার আক্ষরিক অনুবাদজনিত ভুল।",
+      "t": "cousin brother ভুল।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Which of the following sentences is correct?",
+      "o": [
+        "Rahim is elder to his sister.",
+        "Rahim is elder than his sister.",
+        "Rahim is more elder than his sister.",
+        "Rahim is older than his sister."
+      ],
+      "a": 3,
+      "e": "elder শুধু attributive (my elder brother); than-এর সঙ্গে older।",
+      "t": "than-এর সঙ্গে older।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Identify the grammatically correct sentence.",
+      "o": [
+        "There are fewer students in the class today.",
+        "There are less students in the class today.",
+        "There is fewer students in the class today.",
+        "There are lesser students in the class today."
+      ],
+      "a": 0,
+      "e": "গণনাযোগ্য (students) noun-এ fewer; অগণনীয় noun-এ less।",
+      "t": "countable = fewer।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "He is both a singer as well as a dancer.",
+        "He is both a singer and a dancer.",
+        "He is both a singer or a dancer.",
+        "He is both a singer but a dancer."
+      ],
+      "a": 1,
+      "e": "both-এর জোড়া and; as well as নয়।",
+      "t": "both … and।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.COR",
+      "d": "Medium",
+      "q": "Which of the following sentences is correct?",
+      "o": [
+        "We must learn to cope up difficulties.",
+        "We must learn to cope up with difficulties.",
+        "We must learn to cope with difficulties.",
+        "We must learn to cope to difficulties."
+      ],
+      "a": 2,
+      "e": "cope with (up নয়)।",
+      "t": "cope with।",
+      "src": "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

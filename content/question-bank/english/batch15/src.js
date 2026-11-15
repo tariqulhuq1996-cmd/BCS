@@ -1,0 +1,47 @@
+// Batch 15 — EN.GR.COR Correct Sentence ও Error Detection (Priority B, লক্ষ্য ৩৪)
+let n = 0;
+const STEM = ["Choose the correct sentence.", "Which of the following sentences is correct?", "Identify the grammatically correct sentence."];
+const C = (d, a, o, e, t) => [d, STEM[n++ % 3], [a, ...o], 0, e, t];
+const E = (d, s, err, o, e, t) => [d, `Identify the incorrect part of the sentence: '${s}'`, [err, ...o], 0, e, t];
+module.exports = {
+  batch: "Batch 15",
+  basis: "BCS_English_Final: Lecture 03 (Correction on Subject-Verb Agreement), Lecture 17 (Correction on Miscellaneous Common Mistakes)",
+  subtopics: { "EN.GR.COR": {} },
+  st: "EN.GR.COR",
+  src: "Lecture 03, 17 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+  items: [
+    C("M", "I have been waiting here for two hours.", ["I have been waiting here since two hours.", "I am waiting here since two hours.", "I was waiting here since two hours."], "সময়ের পরিমাণে for; শুরুর বিন্দুতে since।", "পরিমাণ = for, বিন্দু = since।"),
+    C("E", "He returned home late at night.", ["He returned back home late at night.", "He returned back to home late at night.", "He returned to back home late at night."], "return মানেই ফিরে আসা — back অপ্রয়োজনীয় (redundancy)।", "return back ভুল।"),
+    C("M", "The reason for his absence is that he is ill.", ["The reason for his absence is because he is ill.", "The reason for his absence is due to he is ill.", "The reason for his absence because he is ill."], "the reason is that …; because-এর সঙ্গে reason দ্বিরুক্তি।", "reason … that।"),
+    C("M", "Despite the rain, they went out.", ["Despite of the rain, they went out.", "In spite the rain, they went out.", "Despite of rain, they went out."], "despite (of ছাড়া) = in spite of।", "despite / in spite of।"),
+    C("E", "He is taller than his brother.", ["He is more taller than his brother.", "He is most taller than his brother.", "He is more tall than his brother."], "double comparative (more taller) ভুল।", "more + -er নয়।"),
+    C("M", "I know him very well.", ["I am knowing him very well.", "I am knowing him very good.", "I have knowing him very well."], "know, like, believe প্রভৃতি stative verb সাধারণত continuous-এ বসে না।", "stative verb-এ -ing নয়।"),
+    C("M", "Unless you work hard, you will fail.", ["Unless you do not work hard, you will fail.", "Unless you will work hard, you will fail.", "Unless you don't work hard, you will not fail."], "unless নিজেই নেতিবাচক — সঙ্গে not বসে না।", "unless + not নয়।"),
+    C("H", "Scarcely had he left when the guests arrived.", ["Scarcely had he left than the guests arrived.", "Scarcely he had left when the guests arrived.", "Scarcely had he left then the guests arrived."], "Scarcely/Hardly … when; No sooner … than।", "Scarcely … when।"),
+    C("H", "No sooner did he see me than he ran away.", ["No sooner did he see me when he ran away.", "No sooner he saw me than he ran away.", "No sooner did he saw me than he ran away."], "No sooner + inversion … than।", "No sooner … than।"),
+    C("M", "He is strong enough to lift the box.", ["He is enough strong to lift the box.", "He is strong enough for lift the box.", "He is enough strong for lifting the box."], "adjective + enough (enough adjective-এর পরে বসে)।", "strong enough।"),
+    C("M", "I prefer tea to coffee.", ["I prefer tea than coffee.", "I prefer tea from coffee.", "I prefer tea over than coffee."], "prefer A to B।", "prefer … to।"),
+    C("E", "Let him go.", ["Let he go.", "Let his go.", "Let him to go."], "let-এর পরে objective case + bare infinitive।", "let + him।"),
+    C("M", "Supposing he comes, what will you do?", ["Supposing if he comes, what will you do?", "Supposing he will come, what you will do?", "Supposing if he come, what will you do?"], "supposing নিজেই শর্ত বোঝায় — if অপ্রয়োজনীয়।", "supposing + if নয়।"),
+    C("M", "Although he is poor, he is honest.", ["Although he is poor, but he is honest.", "Although he is poor, yet but he is honest.", "Though he is poor, but he is honest."], "although/though-এর সঙ্গে but বসে না (yet বসতে পারে)।", "although + but নয়।"),
+    C("M", "He speaks English fluently.", ["He speaks fluently English.", "He fluently speaks English language very.", "He speaks English fluent."], "verb ও object-এর মাঝে adverb বসে না।", "verb + object + adverb।"),
+    C("M", "He avoided meeting me.", ["He avoided to meet me.", "He avoided to meeting me.", "He avoided meet me."], "avoid-এর পরে gerund।", "avoid + V-ing।"),
+    C("M", "My hair is turning grey.", ["My hairs are turning grey.", "My hairs is turning grey.", "My hair are turning grey."], "মাথার চুল সমষ্টিগতভাবে hair (uncountable) — singular verb।", "hair = singular।"),
+    C("H", "One must do one's duty.", ["One must do his duty.", "One must do their duty.", "One must do your duty."], "one-এর possessive one's।", "one … one's।"),
+    C("M", "He said that he would come.", ["He told that he would come.", "He said me that he would come.", "He told to me that he would come."], "tell-এর পরে ব্যক্তিবাচক object লাগে; object ছাড়া said that।", "said that / told me that।"),
+    C("M", "She explained the problem to me.", ["She explained me the problem.", "She explained to me about the problem.", "She explained me about the problem."], "explain something to someone।", "explain … to me।"),
+    C("E", "We reached the station at noon.", ["We reached at the station at noon.", "We reached to the station at noon.", "We reached on the station at noon."], "reach-এর পরে preposition বসে না।", "reach (no preposition)।"),
+    C("M", "The cost of these books is high.", ["The cost of these books are high.", "The cost of these book are high.", "The costs of these books is high."], "মূল subject cost (singular) — verb is।", "মূল subject দেখো।"),
+    C("M", "The poor man died last night.", ["The poor man was died last night.", "The poor man was dead last night.", "The poor man has died last night."], "die intransitive — was died হয় না; last night → past simple।", "was died ভুল।"),
+    C("H", "This is the girl who I think is honest.", ["This is the girl whom I think is honest.", "This is the girl which I think is honest.", "This is the girl whom I think she is honest."], "I think মধ্যবর্তী বাক্যাংশ; who হলো is-এর subject — whom নয়।", "who … is (subject)।"),
+    C("M", "I have a lot of work to do.", ["I have a lot of works to do.", "I have many works to do.", "I have a lot of work to doing."], "কাজ অর্থে work uncountable; works = সাহিত্যকর্ম/কারখানা।", "work (কাজ) = uncountable।"),
+    C("M", "He bought two dozen eggs.", ["He bought two dozens eggs.", "He bought two dozens of egg.", "He bought two dozen egg."], "সংখ্যার পরে dozen, hundred ইত্যাদিতে s বসে না।", "two dozen।"),
+    C("M", "He is a five-year-old boy.", ["He is a five-years-old boy.", "He is a five-years old boy.", "He is a five year olds boy."], "compound adjective-এ noun singular থাকে।", "five-year-old।"),
+    C("M", "The two brothers quarrelled with each other.", ["The two brothers quarrelled with one another.", "The two brothers quarrelled each other.", "The two brothers quarrelled with themselves."], "দুজনের মধ্যে each other; দুইয়ের বেশি হলে one another।", "দুজন = each other।"),
+    C("M", "The book has been lying on the table since morning.", ["The book is lying on the table since morning.", "The book lies on the table since morning.", "The book was lying on the table since morning."], "since-যুক্ত চলমান কাজ — present perfect continuous।", "since … has been V-ing।"),
+    C("M", "Of the two sisters, Rina is the better singer.", ["Of the two sisters, Rina is the best singer.", "Of the two sisters, Rina is best singer.", "Of the two sisters, Rina is a most good singer."], "দুজনের তুলনায় comparative (better)।", "দুইয়ের মধ্যে = comparative।"),
+    C("M", "He works hard to support his family.", ["He works hardly to support his family.", "He hardly works hard to support his family.", "He works hardly for support his family."], "hard = কঠোরভাবে; hardly = কদাচিৎ।", "hard ≠ hardly।"),
+    C("M", "She sings beautifully.", ["She sings beautiful.", "She beautiful sings.", "She sings beautifulness."], "verb-কে বিশেষিত করতে adverb (beautifully)।", "verb + adverb।"),
+    E("M", "He has (A) returned (B) the book (C) yesterday (D).", "(A) has", ["(B) returned", "(C) the book", "(D) yesterday"], "yesterday (নির্দিষ্ট অতীত) থাকলে present perfect নয় — returned।", "yesterday + has নয়।"),
+  ],
+};

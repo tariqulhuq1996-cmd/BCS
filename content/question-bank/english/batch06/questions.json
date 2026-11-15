@@ -1,0 +1,812 @@
+{
+  "batch": "Batch 06",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 05 (Verbs — Finite, Non-finite, Causative & Linking)",
+  "subtopics": {
+    "EN.GR.NFV": {}
+  },
+  "questions": [
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'Would you mind ___ the window?'",
+      "o": [
+        "opening",
+        "to open",
+        "open",
+        "opened"
+      ],
+      "a": 0,
+      "e": "mind (আপত্তি করা)-এর পরে gerund।",
+      "t": "mind + V-ing।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Easy",
+      "q": "Choose the correct form: 'She enjoys ___ detective novels.'",
+      "o": [
+        "read",
+        "reading",
+        "to read",
+        "to reading"
+      ],
+      "a": 1,
+      "e": "enjoy-এর পরে gerund।",
+      "t": "enjoy + V-ing।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'He has just finished ___ the report.'",
+      "o": [
+        "written",
+        "to write",
+        "writing",
+        "write"
+      ],
+      "a": 2,
+      "e": "finish-এর পরে gerund।",
+      "t": "finish + V-ing।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'I could not help ___ at his joke.'",
+      "o": [
+        "to laugh",
+        "laughed",
+        "laugh",
+        "laughing"
+      ],
+      "a": 3,
+      "e": "can't help (না করে পারা যায় না)-এর পরে gerund।",
+      "t": "can't help + V-ing।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'The committee postponed ___ the meeting.'",
+      "o": [
+        "holding",
+        "to hold",
+        "hold",
+        "held"
+      ],
+      "a": 0,
+      "e": "postpone-এর পরে gerund।",
+      "t": "postpone + V-ing।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'The accused denied ___ the money.'",
+      "o": [
+        "taken",
+        "taking",
+        "take",
+        "to take"
+      ],
+      "a": 1,
+      "e": "deny-এর পরে gerund।",
+      "t": "deny + V-ing।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'She is busy ___ her assignment.'",
+      "o": [
+        "to prepare",
+        "prepare",
+        "preparing",
+        "prepared"
+      ],
+      "a": 2,
+      "e": "busy-এর পরে V-ing।",
+      "t": "busy + V-ing।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'This museum is worth ___.'",
+      "o": [
+        "visit",
+        "to visit",
+        "visited",
+        "visiting"
+      ],
+      "a": 3,
+      "e": "worth-এর পরে gerund।",
+      "t": "worth + V-ing।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'He is averse ___ hard.'",
+      "o": [
+        "to working",
+        "to work",
+        "from working",
+        "working"
+      ],
+      "a": 0,
+      "e": "averse to-এর to preposition, তাই gerund।",
+      "t": "averse to + V-ing।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Easy",
+      "q": "Choose the correct form: 'She refused ___ the bribe.'",
+      "o": [
+        "accepting",
+        "to accept",
+        "accept",
+        "accepted"
+      ],
+      "a": 1,
+      "e": "refuse-এর পরে to-infinitive।",
+      "t": "refuse + to V।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Easy",
+      "q": "Choose the correct form: 'We decided ___ early in the morning.'",
+      "o": [
+        "starting",
+        "start",
+        "to start",
+        "started"
+      ],
+      "a": 2,
+      "e": "decide-এর পরে to-infinitive।",
+      "t": "decide + to V।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'The boy pretended ___ asleep.'",
+      "o": [
+        "be",
+        "being",
+        "been",
+        "to be"
+      ],
+      "a": 3,
+      "e": "pretend-এর পরে to-infinitive।",
+      "t": "pretend + to V।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'The climbers managed ___ the summit before dark.'",
+      "o": [
+        "to reach",
+        "reaching",
+        "reach",
+        "reached"
+      ],
+      "a": 0,
+      "e": "manage-এর পরে to-infinitive।",
+      "t": "manage + to V।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'We cannot afford ___ a new car this year.'",
+      "o": [
+        "buying",
+        "to buy",
+        "buy",
+        "bought"
+      ],
+      "a": 1,
+      "e": "afford-এর পরে to-infinitive।",
+      "t": "afford + to V।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'The students stopped ___ when the teacher entered.'",
+      "o": [
+        "to talk",
+        "talk",
+        "talking",
+        "talked"
+      ],
+      "a": 2,
+      "e": "stop + V-ing = কাজটি থামানো; stop + to V = অন্য কাজের জন্য থামা।",
+      "t": "stop + V-ing = থামা।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Hard",
+      "q": "Choose the correct form: 'On his way home he stopped ___ some bread.'",
+      "o": [
+        "buy",
+        "buying",
+        "bought",
+        "to buy"
+      ],
+      "a": 3,
+      "e": "stop + to V = কোনো উদ্দেশ্যে থামা (রুটি কেনার জন্য)।",
+      "t": "stop + to V = উদ্দেশ্যে থামা।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'I remember ___ him at the book fair last year.'",
+      "o": [
+        "meeting",
+        "to meet",
+        "meet",
+        "met"
+      ],
+      "a": 0,
+      "e": "remember + V-ing = অতীতের ঘটনা মনে পড়া।",
+      "t": "remember + V-ing = অতীত।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'Remember ___ the door before you leave.'",
+      "o": [
+        "locking",
+        "to lock",
+        "lock",
+        "locked"
+      ],
+      "a": 1,
+      "e": "remember + to V = ভবিষ্যতে করণীয় মনে রাখা।",
+      "t": "remember + to V = করণীয়।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'I will never forget ___ the sea for the first time.'",
+      "o": [
+        "to see",
+        "see",
+        "seeing",
+        "seen"
+      ],
+      "a": 2,
+      "e": "forget + V-ing = অতীতের অভিজ্ঞতা ভোলা।",
+      "t": "forget + V-ing = অভিজ্ঞতা।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Hard",
+      "q": "Choose the correct form: 'We regret ___ you that your application has been rejected.'",
+      "o": [
+        "inform",
+        "informing",
+        "informed",
+        "to inform"
+      ],
+      "a": 3,
+      "e": "regret + to V = (দুঃখের সঙ্গে) জানাচ্ছি; regret + V-ing = অতীত কাজের জন্য অনুশোচনা।",
+      "t": "regret to inform।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'I heard her ___ a beautiful song.'",
+      "o": [
+        "sing",
+        "to sing",
+        "sang",
+        "sung"
+      ],
+      "a": 0,
+      "e": "hear/see/feel (perception verb) + object + bare infinitive।",
+      "t": "hear + obj + V1।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'You had better ___ a doctor at once.'",
+      "o": [
+        "to consult",
+        "consult",
+        "consulting",
+        "consulted"
+      ],
+      "a": 1,
+      "e": "had better-এর পরে bare infinitive।",
+      "t": "had better + V1।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Hard",
+      "q": "Choose the correct form: 'I cannot but ___ his courage.'",
+      "o": [
+        "to admire",
+        "admiring",
+        "admire",
+        "admired"
+      ],
+      "a": 2,
+      "e": "cannot but (না করে পারি না)-এর পরে bare infinitive।",
+      "t": "cannot but + V1।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'You need not ___ there now.'",
+      "o": [
+        "going",
+        "to go",
+        "gone",
+        "go"
+      ],
+      "a": 3,
+      "e": "need যখন modal (need not), তখন bare infinitive।",
+      "t": "need not + V1।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Hard",
+      "q": "Choose the correct form: 'He bade me ___ at once.'",
+      "o": [
+        "go",
+        "to go",
+        "going",
+        "gone"
+      ],
+      "a": 0,
+      "e": "bid + object + bare infinitive।",
+      "t": "bid + obj + V1।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'The water is clean enough ___.'",
+      "o": [
+        "drinking",
+        "to drink",
+        "drink",
+        "for drink"
+      ],
+      "a": 1,
+      "e": "adjective + enough + to-infinitive।",
+      "t": "enough + to V।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Hard",
+      "q": "Choose the correct form: 'He has a habit of ___ late at night.'",
+      "o": [
+        "to eat",
+        "eat",
+        "eating",
+        "ate"
+      ],
+      "a": 2,
+      "e": "preposition (of)-এর পরে gerund।",
+      "t": "preposition + V-ing।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "'Smoking is injurious to health.' — Here 'Smoking' is a/an—",
+      "o": [
+        "Infinitive",
+        "Participle",
+        "Finite verb",
+        "Gerund"
+      ],
+      "a": 3,
+      "e": "subject হিসেবে noun-এর কাজ করছে — gerund।",
+      "t": "subject-এ V-ing = gerund।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Hard",
+      "q": "In which phrase is the '-ing' word a gerund?",
+      "o": [
+        "a swimming pool",
+        "a swimming boy",
+        "a running train",
+        "a crying baby"
+      ],
+      "a": 0,
+      "e": "swimming pool = সাঁতারের জন্য পুল (উদ্দেশ্য বোঝায়) — gerund; swimming boy = যে সাঁতার কাটছে — participle।",
+      "t": "উদ্দেশ্য = gerund, কর্তা নিজে করছে = participle।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Hard",
+      "q": "In which phrase is the '-ing' word a participle?",
+      "o": [
+        "a sleeping bag",
+        "a sleeping child",
+        "a walking stick",
+        "a dining table"
+      ],
+      "a": 1,
+      "e": "sleeping child = যে শিশু ঘুমাচ্ছে — participle; sleeping bag = ঘুমানোর ব্যাগ — gerund।",
+      "t": "কাজটি নিজে করছে = participle।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "'Having completed the survey, the team returned.' — Here 'Having completed' is a/an—",
+      "o": [
+        "Finite verb",
+        "Gerund",
+        "Participle",
+        "Infinitive"
+      ],
+      "a": 2,
+      "e": "Having + pp = perfect participle; একটি কাজ শেষ করে আরেকটি।",
+      "t": "Having + pp = perfect participle।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "'Do not sit on the broken chair.' — Here 'broken' is a/an—",
+      "o": [
+        "Finite verb",
+        "Gerund",
+        "Infinitive",
+        "Participle"
+      ],
+      "a": 3,
+      "e": "broken = past participle, chair-কে বিশেষিত করছে।",
+      "t": "pp + noun = participle।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "'To err is human.' — Here 'To err' is a/an—",
+      "o": [
+        "Infinitive",
+        "Gerund",
+        "Participle",
+        "Finite verb"
+      ],
+      "a": 0,
+      "e": "to + V1, subject হিসেবে noun-এর কাজ।",
+      "t": "to + V1 = infinitive।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Hard",
+      "q": "'I saw him crossing the road.' — Here 'crossing' is a/an—",
+      "o": [
+        "Infinitive",
+        "Participle",
+        "Gerund",
+        "Finite verb"
+      ],
+      "a": 1,
+      "e": "object (him)-এর অবস্থা বোঝাচ্ছে — participle।",
+      "t": "obj + V-ing (অবস্থা) = participle।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Hard",
+      "q": "'He has no house to live in.' — Here 'to live in' is a/an—",
+      "o": [
+        "Finite verb",
+        "Gerund",
+        "Infinitive",
+        "Participle"
+      ],
+      "a": 2,
+      "e": "house-কে বিশেষিত করছে — adjectival (qualifying) infinitive।",
+      "t": "noun + to V = infinitive।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Hard",
+      "q": "'Weather permitting, we shall go out.' — 'Weather permitting' is a/an—",
+      "o": [
+        "Noun clause",
+        "Gerund phrase",
+        "Infinitive phrase",
+        "Absolute phrase (nominative absolute)"
+      ],
+      "a": 3,
+      "e": "নিজস্ব subject (Weather) ও participle (permitting) নিয়ে মূল বাক্য থেকে স্বতন্ত্র — nominative absolute।",
+      "t": "নিজের subject + participle = absolute।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "'Seeing is believing.' — Both 'seeing' and 'believing' are—",
+      "o": [
+        "gerunds",
+        "participles",
+        "infinitives",
+        "finite verbs"
+      ],
+      "a": 0,
+      "e": "উভয়ই noun-এর কাজ করছে (subject ও complement) — gerund।",
+      "t": "noun-এর কাজ = gerund।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Hard",
+      "q": "Which sentence is correct?",
+      "o": [
+        "Walking along the road, a snake was bitten by him.",
+        "While he was walking along the road, a snake bit him.",
+        "Walking along the road, a snake bit him.",
+        "While walking along the road, a snake bit him."
+      ],
+      "a": 1,
+      "e": "Dangling participle: participle-এর কর্তা ও মূল clause-এর subject এক হতে হবে; নইলে মনে হয় সাপ হাঁটছিল।",
+      "t": "participle-এর কর্তা = মূল subject।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Hard",
+      "q": "Which sentence is correct?",
+      "o": [
+        "Having eat our lunch, we resumed the work.",
+        "Having eaten our lunch, the work was resumed.",
+        "Having eaten our lunch, we resumed the work.",
+        "Having eaten our lunch, the work resumed."
+      ],
+      "a": 2,
+      "e": "perfect participle-এর কর্তা (we) মূল clause-এর subject হতে হবে; Having + pp।",
+      "t": "Having + pp, same subject।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Easy",
+      "q": "The infinitive form of a verb is generally—",
+      "o": [
+        "be + past participle",
+        "base form + ing",
+        "past participle",
+        "to + base form"
+      ],
+      "a": 3,
+      "e": "infinitive = to + V1 (to go, to read); কখনো to ছাড়া (bare infinitive)।",
+      "t": "to + V1।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Easy",
+      "q": "A verb ending in '-ing' that works as a noun is called a—",
+      "o": [
+        "Gerund",
+        "Participle",
+        "Infinitive",
+        "Finite verb"
+      ],
+      "a": 0,
+      "e": "V-ing noun-এর কাজ করলে gerund (verbal noun)।",
+      "t": "verbal noun = gerund।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Easy",
+      "q": "A verbal adjective is called a—",
+      "o": [
+        "Infinitive",
+        "Participle",
+        "Gerund",
+        "Modal"
+      ],
+      "a": 1,
+      "e": "participle verb ও adjective উভয়ের কাজ করে।",
+      "t": "verbal adjective = participle।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Which of the following is a bare infinitive?",
+      "o": [
+        "'going' in 'Going is easy.'",
+        "'to go' in 'I want to go.'",
+        "'go' in 'Let him go.'",
+        "'gone' in 'He has gone.'"
+      ],
+      "a": 2,
+      "e": "to ছাড়া infinitive = bare infinitive; let/make/see/hear-এর পরে।",
+      "t": "to ছাড়া = bare infinitive।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস — ৪১-১৮৪-এ ‘I will not let you go’-এ go কী তা জিজ্ঞাসিত; এখানে bare infinitive-এর ধারণা (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'It was difficult for us ___ the river in the storm.'",
+      "o": [
+        "crossed",
+        "crossing",
+        "cross",
+        "to cross"
+      ],
+      "a": 3,
+      "e": "It + adjective + for + object + to-infinitive।",
+      "t": "It … for sb to V।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'He came here ___ a job.'",
+      "o": [
+        "to look for",
+        "looking for",
+        "look for",
+        "for looking"
+      ],
+      "a": 0,
+      "e": "উদ্দেশ্য বোঝাতে to-infinitive (infinitive of purpose)।",
+      "t": "উদ্দেশ্য = to V।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Hard",
+      "q": "Choose the correct form: 'I object ___ in this manner.'",
+      "o": [
+        "to speak",
+        "to being spoken to",
+        "to be speak",
+        "speaking to"
+      ],
+      "a": 1,
+      "e": "object to + gerund; passive gerund = being + pp।",
+      "t": "object to + being + pp।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস — ৪৬-১৪, ৪৬-১৫-এ avoid/in fear of-এর পরে passive gerund জিজ্ঞাসিত; এখানে object to-এর পরে (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NFV",
+      "d": "Medium",
+      "q": "Choose the correct form: 'There is no point in ___ about it now.'",
+      "o": [
+        "argue",
+        "to argue",
+        "arguing",
+        "argued"
+      ],
+      "a": 2,
+      "e": "There is no point in + gerund।",
+      "t": "no point in + V-ing।",
+      "src": "Lecture 05 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

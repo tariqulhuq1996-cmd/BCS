@@ -1,0 +1,1356 @@
+{
+  "batch": "Batch 16",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 12–15 (Jacobean, Puritan, Restoration ও Neoclassical/Augustan Age)",
+  "subtopics": {
+    "EN.LI.17C": {},
+    "EN.LI.18C": {}
+  },
+  "questions": [
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'Paradise Regained' was written by—",
+      "o": [
+        "John Milton",
+        "Ben Jonson",
+        "Richard Lovelace",
+        "Thomas Hobbes"
+      ],
+      "a": 0,
+      "e": "Paradise Lost-এর পরবর্তী মহাকাব্য (১৬৭১) — খ্রিষ্টের প্রলোভন জয়।",
+      "t": "Paradise Regained — John Milton।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ৩৮-৫৬, ৪৮-২৬-এ Paradise Lost জিজ্ঞাসিত; এটি ভিন্ন গ্রন্থ (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "Milton's 'Lycidas' is a pastoral elegy on the death of—",
+      "o": [
+        "Philip Sidney",
+        "Arthur Hallam",
+        "John Keats",
+        "Edward King"
+      ],
+      "a": 3,
+      "e": "কেমব্রিজের সহপাঠী Edward King-এর জলে ডুবে মৃত্যুতে লেখা।",
+      "t": "Lycidas — Edward King।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'Comus' was written by—",
+      "o": [
+        "John Milton",
+        "John Dryden",
+        "Robert Herrick",
+        "Aphra Behn"
+      ],
+      "a": 0,
+      "e": "Milton-এর masque (১৬৩৪)।",
+      "t": "Comus — John Milton।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'They also serve who only stand and wait' — Who wrote this?",
+      "o": [
+        "John Bunyan",
+        "Thomas Hobbes",
+        "John Milton",
+        "John Webster"
+      ],
+      "a": 2,
+      "e": "অন্ধত্ব নিয়ে Milton-এর সনেট ‘On His Blindness’।",
+      "t": "They also serve who only s… — John Milton।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'L'Allegro' was written by—",
+      "o": [
+        "Henry Vaughan",
+        "John Locke",
+        "George Herbert",
+        "John Milton"
+      ],
+      "a": 3,
+      "e": "আনন্দময় মানুষের দিনযাপন — সঙ্গী কবিতা Il Penseroso।",
+      "t": "L'Allegro — John Milton।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "Paradise Lost was first published in—",
+      "o": [
+        "1660",
+        "1667",
+        "1674",
+        "1688"
+      ],
+      "a": 1,
+      "e": "প্রথম সংস্করণ ১৬৬৭ (১০ খণ্ড); ১৬৭৪ সালে ১২ খণ্ডে পুনর্বিন্যস্ত।",
+      "t": "Paradise Lost = ১৬৬৭।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'Paradise Lost' is written in—",
+      "o": [
+        "blank verse",
+        "heroic couplets",
+        "terza rima",
+        "ballad stanza"
+      ],
+      "a": 0,
+      "e": "অন্ত্যমিলহীন iambic pentameter — blank verse।",
+      "t": "Milton = blank verse।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "John Donne is regarded as the leading poet of the—",
+      "o": [
+        "Cavalier school",
+        "Metaphysical school",
+        "Lake school",
+        "Pre-Raphaelite school"
+      ],
+      "a": 1,
+      "e": "বুদ্ধিদীপ্ত conceit ও যুক্তিনির্ভর কবিতার Metaphysical ধারার প্রধান কবি।",
+      "t": "Donne = Metaphysical।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ৩৮-৫১, ৪০-৭০, ৪৭-৯৬-এ Donne-এর কবিতা জিজ্ঞাসিত; এটি তাঁর কাব্যধারা (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'Death, be not proud' — Who wrote this?",
+      "o": [
+        "John Locke",
+        "John Webster",
+        "John Donne",
+        "George Herbert"
+      ],
+      "a": 2,
+      "e": "Holy Sonnets-এর বিখ্যাত সনেট।",
+      "t": "Death, be not proud… — John Donne।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'No man is an island' — Who wrote this?",
+      "o": [
+        "Aphra Behn",
+        "John Dryden",
+        "Robert Herrick",
+        "John Donne"
+      ],
+      "a": 3,
+      "e": "Devotions upon Emergent Occasions-এর গদ্যাংশ।",
+      "t": "No man is an island… — John Donne।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Hard",
+      "q": "'Busy old fool, unruly sun' — Who wrote this?",
+      "o": [
+        "John Donne",
+        "Andrew Marvell",
+        "William Wycherley",
+        "John Dryden"
+      ],
+      "a": 0,
+      "e": "‘The Sun Rising’ কবিতার প্রথম চরণ।",
+      "t": "Busy old fool, unruly sun… — John Donne।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Hard",
+      "q": "The famous compass image appears in Donne's—",
+      "o": [
+        "The Flea",
+        "A Valediction: Forbidding Mourning",
+        "The Canonization",
+        "The Sun Rising"
+      ],
+      "a": 1,
+      "e": "বিচ্ছেদে প্রেমিক-প্রেমিকাকে কম্পাসের দুই কাঁটার সঙ্গে তুলনা।",
+      "t": "compass — Valediction।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Hard",
+      "q": "The term 'metaphysical poets' was popularised by—",
+      "o": [
+        "John Dryden",
+        "T. S. Eliot",
+        "Samuel Johnson",
+        "Matthew Arnold"
+      ],
+      "a": 2,
+      "e": "Johnson তাঁর ‘Life of Cowley’-তে এ নাম জনপ্রিয় করেন (Dryden আগে ইঙ্গিত দেন)।",
+      "t": "Metaphysical (term) — Johnson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'The Temple' was written by—",
+      "o": [
+        "John Webster",
+        "Thomas Hobbes",
+        "Ben Jonson",
+        "George Herbert"
+      ],
+      "a": 3,
+      "e": "‘The Collar’, ‘Easter Wings’ সংবলিত Herbert-এর ধর্মীয় কাব্যগ্রন্থ।",
+      "t": "The Temple — George Herbert।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Hard",
+      "q": "'The Retreat' was written by—",
+      "o": [
+        "Henry Vaughan",
+        "Thomas Hobbes",
+        "Ben Jonson",
+        "Richard Lovelace"
+      ],
+      "a": 0,
+      "e": "শৈশবের দেবসুলভ পবিত্রতায় ফেরার আকাঙ্ক্ষা — Vaughan।",
+      "t": "The Retreat — Henry Vaughan।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'The Garden' was written by—",
+      "o": [
+        "John Bunyan",
+        "Andrew Marvell",
+        "Henry Vaughan",
+        "John Milton"
+      ],
+      "a": 1,
+      "e": "‘a green thought in a green shade’ — Marvell।",
+      "t": "The Garden — Andrew Marvell।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ৪৫-৪৬-এ Marvell-এর To His Coy Mistress জিজ্ঞাসিত; এটি ভিন্ন কবিতা (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'Gather ye rosebuds while ye may' — Who wrote this?",
+      "o": [
+        "Richard Lovelace",
+        "John Dryden",
+        "Robert Herrick",
+        "Thomas Hobbes"
+      ],
+      "a": 2,
+      "e": "‘To the Virgins, to Make Much of Time’ — Cavalier কবি Herrick।",
+      "t": "Gather ye rosebuds while y… — Robert Herrick।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'Stone walls do not a prison make' — Who wrote this?",
+      "o": [
+        "John Milton",
+        "John Bunyan",
+        "Henry Vaughan",
+        "Richard Lovelace"
+      ],
+      "a": 3,
+      "e": "‘To Althea, from Prison’ — Lovelace।",
+      "t": "Stone walls do not a priso… — Richard Lovelace।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "Herrick, Lovelace and Suckling are known as the—",
+      "o": [
+        "Cavalier poets",
+        "Metaphysical poets",
+        "Lake poets",
+        "University Wits"
+      ],
+      "a": 0,
+      "e": "রাজা প্রথম চার্লসের সমর্থক, হালকা প্রেমের কবিতা — Cavalier poets।",
+      "t": "Cavalier = Herrick, Lovelace, Suckling।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'Volpone' was written by—",
+      "o": [
+        "Aphra Behn",
+        "Ben Jonson",
+        "John Dryden",
+        "Richard Lovelace"
+      ],
+      "a": 1,
+      "e": "লোভ নিয়ে Jonson-এর ব্যঙ্গাত্মক কমেডি।",
+      "t": "Volpone — Ben Jonson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "Exact Duplicate — ৩৭-১১৫ (Who has written the play 'Volpone'?)",
+      "v": "যাচাইকৃত",
+      "reject": "Exact Duplicate"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'The Alchemist' was written by—",
+      "o": [
+        "John Dryden",
+        "Aphra Behn",
+        "Ben Jonson",
+        "Richard Lovelace"
+      ],
+      "a": 2,
+      "e": "প্রতারক অ্যালকেমিস্টদের নিয়ে Jonson-এর কমেডি।",
+      "t": "The Alchemist — Ben Jonson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Hard",
+      "q": "Ben Jonson is associated with the 'comedy of—'",
+      "o": [
+        "errors",
+        "manners",
+        "menace",
+        "humours"
+      ],
+      "a": 3,
+      "e": "মানুষের একটি প্রবল প্রবৃত্তি (humour) নিয়ে চরিত্রায়ণ — Every Man in His Humour।",
+      "t": "Jonson = comedy of humours।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "Semantic Duplicate — ১৫-৬৩ (চিকিৎসাতত্ত্বনির্ভর সাহিত্যধারা = Comedy of Humours)",
+      "v": "যাচাইকৃত",
+      "reject": "Semantic Duplicate"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'Drink to me only with thine eyes' — Who wrote this?",
+      "o": [
+        "Ben Jonson",
+        "Andrew Marvell",
+        "William Wycherley",
+        "John Donne"
+      ],
+      "a": 0,
+      "e": "‘Song: To Celia’ — Ben Jonson।",
+      "t": "Drink to me only with thin… — Ben Jonson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'The Duchess of Malfi' was written by—",
+      "o": [
+        "John Milton",
+        "John Webster",
+        "George Herbert",
+        "William Wycherley"
+      ],
+      "a": 1,
+      "e": "Jacobean প্রতিশোধ-ট্র্যাজেডি।",
+      "t": "The Duchess of Malfi — John Webster।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'The Pilgrim's Progress' was written by—",
+      "o": [
+        "Ben Jonson",
+        "Thomas Hobbes",
+        "John Bunyan",
+        "John Webster"
+      ],
+      "a": 2,
+      "e": "Christian-এর আধ্যাত্মিক যাত্রা নিয়ে রূপক উপন্যাস (১৬৭৮)।",
+      "t": "The Pilgrim's Progress — John Bunyan।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'The Pilgrim's Progress' is best described as an—",
+      "o": [
+        "epistolary novel",
+        "epic",
+        "elegy",
+        "allegory"
+      ],
+      "a": 3,
+      "e": "চরিত্র ও স্থান (Christian, Vanity Fair, Slough of Despond) প্রতীকী — allegory।",
+      "t": "Pilgrim's Progress = allegory।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'Absalom and Achitophel' was written by—",
+      "o": [
+        "John Dryden",
+        "John Locke",
+        "George Herbert",
+        "Henry Vaughan"
+      ],
+      "a": 0,
+      "e": "বাইবেলের কাহিনির আড়ালে রাজনৈতিক ব্যঙ্গকাব্য (১৬৮১)।",
+      "t": "Absalom and Achitophel — John Dryden।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ৪৪-৭৪-এ Dryden-এর All for Love জিজ্ঞাসিত; এটি ভিন্ন গ্রন্থ (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'Mac Flecknoe' was written by—",
+      "o": [
+        "Robert Herrick",
+        "John Dryden",
+        "Aphra Behn",
+        "Ben Jonson"
+      ],
+      "a": 1,
+      "e": "কবি Shadwell-কে ব্যঙ্গ করে Dryden-এর mock-heroic কাব্য।",
+      "t": "Mac Flecknoe — John Dryden।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Hard",
+      "q": "'An Essay of Dramatic Poesy' was written by—",
+      "o": [
+        "Andrew Marvell",
+        "John Milton",
+        "John Dryden",
+        "William Wycherley"
+      ],
+      "a": 2,
+      "e": "সংলাপের আকারে নাটক নিয়ে Dryden-এর সমালোচনা।",
+      "t": "An Essay of Dramatic Poesy — John Dryden।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "Who is often called the 'Father of English Criticism'?",
+      "o": [
+        "Matthew Arnold",
+        "Samuel Johnson",
+        "Philip Sidney",
+        "John Dryden"
+      ],
+      "a": 3,
+      "e": "Samuel Johnson Dryden-কে এ উপাধি দেন।",
+      "t": "Father of Criticism — Dryden।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "Who was the first official Poet Laureate of England (1668)?",
+      "o": [
+        "John Dryden",
+        "Ben Jonson",
+        "John Milton",
+        "Alexander Pope"
+      ],
+      "a": 0,
+      "e": "১৬৬৮ সালে Dryden প্রথম আনুষ্ঠানিক Poet Laureate।",
+      "t": "প্রথম Laureate — Dryden।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'The Country Wife' was written by—",
+      "o": [
+        "Andrew Marvell",
+        "William Wycherley",
+        "Aphra Behn",
+        "John Dryden"
+      ],
+      "a": 1,
+      "e": "Restoration comedy of manners (১৬৭৫)।",
+      "t": "The Country Wife — William Wycherley।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "Restoration comedy is typically a—",
+      "o": [
+        "romantic comedy",
+        "comedy of humours",
+        "comedy of manners",
+        "comedy of menace"
+      ],
+      "a": 2,
+      "e": "উচ্চবিত্ত সমাজের আচার-আচরণ ও বুদ্ধিদীপ্ত সংলাপ — comedy of manners।",
+      "t": "Restoration = comedy of manners।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ৪৩-৪২-এ Congreve-এর The Way of the World-এর লেখক জিজ্ঞাসিত; এটি ধারার বৈশিষ্ট্য (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'Oroonoko' was written by—",
+      "o": [
+        "Henry Vaughan",
+        "John Milton",
+        "George Herbert",
+        "Aphra Behn"
+      ],
+      "a": 3,
+      "e": "আফ্রিকান রাজপুত্রের দাসত্বের কাহিনি; Behn প্রথম পেশাদার নারী লেখক।",
+      "t": "Oroonoko — Aphra Behn।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'Leviathan' was written by—",
+      "o": [
+        "Thomas Hobbes",
+        "John Milton",
+        "George Herbert",
+        "Henry Vaughan"
+      ],
+      "a": 0,
+      "e": "রাষ্ট্র ও সামাজিক চুক্তি নিয়ে Hobbes-এর গ্রন্থ (১৬৫১)।",
+      "t": "Leviathan — Thomas Hobbes।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Hard",
+      "q": "'An Essay Concerning Human Understanding' was written by—",
+      "o": [
+        "William Wycherley",
+        "John Locke",
+        "John Dryden",
+        "Robert Herrick"
+      ],
+      "a": 1,
+      "e": "জ্ঞানের উৎস নিয়ে Locke-এর দর্শন (tabula rasa)।",
+      "t": "An Essay Concerning Human Understanding — John Locke।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "The famous 'Diary' of Restoration London was written by—",
+      "o": [
+        "Izaak Walton",
+        "John Evelyn",
+        "Samuel Pepys",
+        "Thomas Browne"
+      ],
+      "a": 2,
+      "e": "Samuel Pepys-এর দিনলিপিতে Great Plague ও Great Fire-এর বিবরণ।",
+      "t": "Diary — Pepys।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'The Compleat Angler' was written by—",
+      "o": [
+        "John Evelyn",
+        "Thomas Browne",
+        "Samuel Pepys",
+        "Izaak Walton"
+      ],
+      "a": 3,
+      "e": "মাছ ধরার শিল্প নিয়ে Walton-এর গ্রন্থ (১৬৫৩)।",
+      "t": "Compleat Angler — Walton।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "English theatres were closed by the Puritans in—",
+      "o": [
+        "1603",
+        "1642",
+        "1660",
+        "1688"
+      ],
+      "a": 1,
+      "e": "গৃহযুদ্ধের শুরুতে ১৬৪২ সালে থিয়েটার বন্ধ; ১৬৬০-এ Restoration-এর পর খোলে।",
+      "t": "থিয়েটার বন্ধ = ১৬৪২।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Hard",
+      "q": "Dryden's poem 'Annus Mirabilis' deals with events of—",
+      "o": [
+        "1588, the Spanish Armada",
+        "1649, the execution of Charles I",
+        "1666, including the Great Fire of London",
+        "1688, the Glorious Revolution"
+      ],
+      "a": 2,
+      "e": "১৬৬৬ — ডাচ যুদ্ধ ও লন্ডনের মহা অগ্নিকাণ্ড।",
+      "t": "Annus Mirabilis = ১৬৬৬।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Hard",
+      "q": "'Religio Medici' was written by—",
+      "o": [
+        "Thomas Browne",
+        "Thomas Hobbes",
+        "John Locke",
+        "Izaak Walton"
+      ],
+      "a": 0,
+      "e": "চিকিৎসক Thomas Browne-এর ধর্মবিশ্বাসবিষয়ক গদ্যগ্রন্থ (১৬৪৩)।",
+      "t": "Religio Medici — Browne।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'A Modest Proposal' was written by—",
+      "o": [
+        "Samuel Johnson",
+        "Jonathan Swift",
+        "Tobias Smollett",
+        "R. B. Sheridan"
+      ],
+      "a": 1,
+      "e": "দারিদ্র্য সমস্যার ‘সমাধান’ হিসেবে শিশু খাওয়ার প্রস্তাব — তীব্র ব্যঙ্গ।",
+      "t": "A Modest Proposal — Jonathan Swift।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ১২-৩২, ৩৮-৩৭, ৪৬-৩৩-এ Swift-কে শ্রেষ্ঠ ব্যঙ্গকার বলা হয়েছে; এটি তাঁর রচনা (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'A Tale of a Tub' was written by—",
+      "o": [
+        "Tobias Smollett",
+        "Samuel Johnson",
+        "Jonathan Swift",
+        "R. B. Sheridan"
+      ],
+      "a": 2,
+      "e": "ধর্মীয় বিভাজন নিয়ে Swift-এর ব্যঙ্গরচনা।",
+      "t": "A Tale of a Tub — Jonathan Swift।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "In 'Gulliver's Travels', the land of giants is—",
+      "o": [
+        "the land of the Houyhnhnms",
+        "Lilliput",
+        "Laputa",
+        "Brobdingnag"
+      ],
+      "a": 3,
+      "e": "Lilliput বামনদের দেশ, Brobdingnag দৈত্যদের দেশ।",
+      "t": "দৈত্য = Brobdingnag।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ৫০-৩২-এ Lilliput-এর চিত্রায়ণ জিজ্ঞাসিত; এটি ভিন্ন দেশ (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "In 'Gulliver's Travels', the rational horses are called the—",
+      "o": [
+        "Houyhnhnms",
+        "Yahoos",
+        "Lilliputians",
+        "Laputans"
+      ],
+      "a": 0,
+      "e": "বিবেকবান ঘোড়া Houyhnhnms; পশুসুলভ মানুষ Yahoos।",
+      "t": "Houyhnhnms = ঘোড়া।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'The Dunciad' was written by—",
+      "o": [
+        "Edmund Burke",
+        "Alexander Pope",
+        "Laurence Sterne",
+        "Edward Gibbon"
+      ],
+      "a": 1,
+      "e": "নির্বোধ লেখকদের নিয়ে Pope-এর mock-epic।",
+      "t": "The Dunciad — Alexander Pope।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ৪০-৫৬, ৪৪-৬৪-এ Pope-এর অন্য রচনা জিজ্ঞাসিত; এটি ভিন্ন গ্রন্থ (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'A little learning is a dangerous thing' — Who wrote this?",
+      "o": [
+        "Laurence Sterne",
+        "Edmund Burke",
+        "Alexander Pope",
+        "Edward Gibbon"
+      ],
+      "a": 2,
+      "e": "‘An Essay on Criticism’ (১৭১১)।",
+      "t": "A little learning is a dan… — Alexander Pope।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'To err is human, to forgive divine' — Who wrote this?",
+      "o": [
+        "Daniel Defoe",
+        "Samuel Richardson",
+        "Richard Steele",
+        "Alexander Pope"
+      ],
+      "a": 3,
+      "e": "‘An Essay on Criticism’-এর আরেকটি বিখ্যাত চরণ।",
+      "t": "To err is human, to forgiv… — Alexander Pope।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "Alexander Pope is best known for his mastery of the—",
+      "o": [
+        "heroic couplet",
+        "blank verse",
+        "free verse",
+        "Spenserian stanza"
+      ],
+      "a": 0,
+      "e": "Pope heroic couplet-এর শ্রেষ্ঠ শিল্পী।",
+      "t": "Pope = heroic couplet।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Easy",
+      "q": "'Robinson Crusoe' was written by—",
+      "o": [
+        "Tobias Smollett",
+        "Daniel Defoe",
+        "R. B. Sheridan",
+        "James Boswell"
+      ],
+      "a": 1,
+      "e": "নির্জন দ্বীপে আটকে পড়া Crusoe-র কাহিনি (১৭১৯)।",
+      "t": "Robinson Crusoe — Daniel Defoe।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'Moll Flanders' was written by—",
+      "o": [
+        "James Boswell",
+        "R. B. Sheridan",
+        "Daniel Defoe",
+        "Oliver Goldsmith"
+      ],
+      "a": 2,
+      "e": "Defoe-র উপন্যাস (১৭২২)।",
+      "t": "Moll Flanders — Daniel Defoe।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'Pamela' was written by—",
+      "o": [
+        "R. B. Sheridan",
+        "Samuel Johnson",
+        "Tobias Smollett",
+        "Samuel Richardson"
+      ],
+      "a": 3,
+      "e": "চিঠির আকারে লেখা (epistolary) উপন্যাস (১৭৪০)।",
+      "t": "Pamela — Samuel Richardson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "A novel written in the form of letters is called—",
+      "o": [
+        "an epistolary novel",
+        "a picaresque novel",
+        "a Gothic novel",
+        "a bildungsroman"
+      ],
+      "a": 0,
+      "e": "চিঠির মাধ্যমে কাহিনি — epistolary novel; যেমন Pamela, Clarissa।",
+      "t": "চিঠি = epistolary।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'Joseph Andrews' was written by—",
+      "o": [
+        "Joseph Addison",
+        "Henry Fielding",
+        "Jonathan Swift",
+        "Samuel Johnson"
+      ],
+      "a": 1,
+      "e": "Pamela-র প্যারোডি হিসেবে শুরু হওয়া Fielding-এর উপন্যাস।",
+      "t": "Joseph Andrews — Henry Fielding।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ১৩-২৮, ৪৪-৮১-এ Fielding-এর Tom Jones জিজ্ঞাসিত; এটি ভিন্ন উপন্যাস (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "Who is often called the 'Father of the English Novel'?",
+      "o": [
+        "Walter Scott",
+        "Daniel Defoe",
+        "Henry Fielding",
+        "Charles Dickens"
+      ],
+      "a": 2,
+      "e": "Walter Scott Fielding-কে এ অভিধা দেন (কেউ কেউ Defoe বা Richardson-কেও বলেন)।",
+      "t": "Father of English Novel — Fielding।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাই প্রয়োজন: ‘Father of the English Novel’ অভিধা নিয়ে সূত্রভেদ আছে"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'Tristram Shandy' was written by—",
+      "o": [
+        "Jonathan Swift",
+        "Alexander Pope",
+        "Joseph Addison",
+        "Laurence Sterne"
+      ],
+      "a": 3,
+      "e": "প্রথাভাঙা, পরীক্ষামূলক উপন্যাস (১৭৫৯–৬৭)।",
+      "t": "Tristram Shandy — Laurence Sterne।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Hard",
+      "q": "'Roderick Random' was written by—",
+      "o": [
+        "Tobias Smollett",
+        "Laurence Sterne",
+        "Edward Gibbon",
+        "Henry Fielding"
+      ],
+      "a": 0,
+      "e": "Smollett-এর picaresque উপন্যাস (১৭৪৮)।",
+      "t": "Roderick Random — Tobias Smollett।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'The Vicar of Wakefield' was written by—",
+      "o": [
+        "Edmund Burke",
+        "Oliver Goldsmith",
+        "Henry Fielding",
+        "Edward Gibbon"
+      ],
+      "a": 1,
+      "e": "পল্লি যাজক Dr Primrose-এর কাহিনি।",
+      "t": "The Vicar of Wakefield — Oliver Goldsmith।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'She Stoops to Conquer' was written by—",
+      "o": [
+        "Henry Fielding",
+        "Edmund Burke",
+        "Oliver Goldsmith",
+        "Edward Gibbon"
+      ],
+      "a": 2,
+      "e": "Goldsmith-এর বিখ্যাত কমেডি (১৭৭৩)।",
+      "t": "She Stoops to Conquer — Oliver Goldsmith।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'The Deserted Village' was written by—",
+      "o": [
+        "Alexander Pope",
+        "Daniel Defoe",
+        "Richard Steele",
+        "Oliver Goldsmith"
+      ],
+      "a": 3,
+      "e": "পরিত্যক্ত গ্রাম Auburn নিয়ে Goldsmith-এর কবিতা।",
+      "t": "The Deserted Village — Oliver Goldsmith।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'The School for Scandal' was written by—",
+      "o": [
+        "R. B. Sheridan",
+        "Edmund Burke",
+        "Henry Fielding",
+        "Edward Gibbon"
+      ],
+      "a": 0,
+      "e": "কেলেঙ্কারিপ্রিয় সমাজের ব্যঙ্গচিত্র — Sheridan।",
+      "t": "The School for Scandal — R. B. Sheridan।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "The word 'malapropism' comes from Mrs Malaprop, a character in—",
+      "o": [
+        "She Stoops to Conquer",
+        "The Rivals",
+        "The School for Scandal",
+        "The Way of the World"
+      ],
+      "a": 1,
+      "e": "Sheridan-এর The Rivals-এর Mrs Malaprop ভুল শব্দ ব্যবহার করেন।",
+      "t": "Malaprop — The Rivals।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'Rasselas' was written by—",
+      "o": [
+        "Edmund Burke",
+        "Laurence Sterne",
+        "Samuel Johnson",
+        "Henry Fielding"
+      ],
+      "a": 2,
+      "e": "আবিসিনিয়ার রাজপুত্রের সুখের সন্ধান — Johnson।",
+      "t": "Rasselas — Samuel Johnson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ১৫-১২, ২৮-৩৪, ৪৬-২৮-এ Johnson-এর অভিধান জিজ্ঞাসিত; এটি ভিন্ন গ্রন্থ (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'Lives of the Poets' was written by—",
+      "o": [
+        "Daniel Defoe",
+        "Samuel Richardson",
+        "Horace Walpole",
+        "Samuel Johnson"
+      ],
+      "a": 3,
+      "e": "ইংরেজ কবিদের জীবনী ও সমালোচনা।",
+      "t": "Lives of the Poets — Samuel Johnson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'The Life of Samuel Johnson' was written by—",
+      "o": [
+        "James Boswell",
+        "Oliver Goldsmith",
+        "Joseph Addison",
+        "Edmund Burke"
+      ],
+      "a": 0,
+      "e": "১৭৯১ সালে প্রকাশিত Boswell-এর জীবনী — ইংরেজির শ্রেষ্ঠ জীবনীগ্রন্থ বলে গণ্য।",
+      "t": "Life of Johnson — Boswell।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'The Spectator' (1711) was a periodical founded by—",
+      "o": [
+        "Swift and Pope",
+        "Joseph Addison and Richard Steele",
+        "Johnson and Boswell",
+        "Defoe and Richardson"
+      ],
+      "a": 1,
+      "e": "Addison ও Steele-এর দৈনিক প্রবন্ধপত্রিকা।",
+      "t": "Spectator — Addison & Steele।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Hard",
+      "q": "Sir Roger de Coverley is a character created in—",
+      "o": [
+        "The Rambler",
+        "Tom Jones",
+        "The Spectator",
+        "The Vicar of Wakefield"
+      ],
+      "a": 2,
+      "e": "Addison ও Steele-এর The Spectator-এর গ্রামীণ ভদ্রলোক চরিত্র।",
+      "t": "Sir Roger — Spectator।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'The Castle of Otranto' was written by—",
+      "o": [
+        "Joseph Addison",
+        "Richard Steele",
+        "Daniel Defoe",
+        "Horace Walpole"
+      ],
+      "a": 3,
+      "e": "প্রথম Gothic উপন্যাস হিসেবে স্বীকৃত (১৭৬৪)।",
+      "t": "The Castle of Otranto — Horace Walpole।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'The History of the Decline and Fall of the Roman Empire' was written by—",
+      "o": [
+        "Edward Gibbon",
+        "Edmund Burke",
+        "Henry Fielding",
+        "Horace Walpole"
+      ],
+      "a": 0,
+      "e": "রোম সাম্রাজ্যের পতনের ইতিহাস (১৭৭৬–৮৯)।",
+      "t": "The History of the Decline and Fall of the Roman Empire — Edward Gibbon।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'Reflections on the Revolution in France' was written by—",
+      "o": [
+        "Daniel Defoe",
+        "Edmund Burke",
+        "Joseph Addison",
+        "Alexander Pope"
+      ],
+      "a": 1,
+      "e": "ফরাসি বিপ্লবের সমালোচনা (১৭৯০)।",
+      "t": "Reflections on the Revolution in France — Edmund Burke।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "The early eighteenth century in English literature is often called the—",
+      "o": [
+        "Victorian Age",
+        "Elizabethan Age",
+        "Augustan Age",
+        "Romantic Age"
+      ],
+      "a": 2,
+      "e": "রোমান সম্রাট Augustus-এর যুগের সাহিত্যের অনুকরণে — Augustan বা Neoclassical Age।",
+      "t": "১৮শ শতকের শুরু = Augustan।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'The Seasons' was written by—",
+      "o": [
+        "Edward Young",
+        "Thomas Gray",
+        "William Collins",
+        "James Thomson"
+      ],
+      "a": 3,
+      "e": "ঋতুচক্র নিয়ে Thomson-এর কাব্য।",
+      "t": "The Seasons — Thomson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "Pope translated which epic into English?",
+      "o": [
+        "Homer's Iliad",
+        "Virgil's Aeneid",
+        "Dante's Divine Comedy",
+        "Milton's Paradise Lost"
+      ],
+      "a": 0,
+      "e": "Pope-এর Iliad (১৭১৫–২০) ও Odyssey অনুবাদ তাঁকে আর্থিক সাফল্য দেয়।",
+      "t": "Pope — Iliad অনুবাদ।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'Clarissa' is a novel by—",
+      "o": [
+        "Henry Fielding",
+        "Samuel Richardson",
+        "Laurence Sterne",
+        "Daniel Defoe"
+      ],
+      "a": 1,
+      "e": "Richardson-এর দীর্ঘ epistolary উপন্যাস।",
+      "t": "Clarissa — Richardson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "Richard Steele founded the periodical—",
+      "o": [
+        "The Idler",
+        "The Rambler",
+        "The Tatler",
+        "The Examiner"
+      ],
+      "a": 2,
+      "e": "১৭০৯ সালে Steele ‘The Tatler’ প্রতিষ্ঠা করেন; The Rambler — Johnson।",
+      "t": "Tatler — Steele।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'The White Devil' was written by—",
+      "o": [
+        "Thomas Middleton",
+        "Ben Jonson",
+        "John Ford",
+        "John Webster"
+      ],
+      "a": 3,
+      "e": "Vittoria Corombona-কে নিয়ে Webster-এর Jacobean ট্র্যাজেডি (১৬১২)।",
+      "t": "White Devil — Webster।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Hard",
+      "q": "'Hudibras', a mock-heroic satire on the Puritans, was written by—",
+      "o": [
+        "Samuel Butler",
+        "John Dryden",
+        "Andrew Marvell",
+        "John Bunyan"
+      ],
+      "a": 0,
+      "e": "Restoration যুগে Samuel Butler (১৬১৩–৮০)-এর ব্যঙ্গকাব্য।",
+      "t": "Hudibras — Samuel Butler।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.17C",
+      "d": "Medium",
+      "q": "'Love for Love' is a Restoration comedy by—",
+      "o": [
+        "William Wycherley",
+        "William Congreve",
+        "George Etherege",
+        "Aphra Behn"
+      ],
+      "a": 1,
+      "e": "Congreve-এর কমেডি (১৬৯৫)।",
+      "t": "Love for Love — Congreve।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.18C",
+      "d": "Medium",
+      "q": "'The Rambler' (1750–52) was a periodical written mainly by—",
+      "o": [
+        "Richard Steele",
+        "Joseph Addison",
+        "Samuel Johnson",
+        "Jonathan Swift"
+      ],
+      "a": 2,
+      "e": "Samuel Johnson প্রায় এককভাবে The Rambler-এর প্রবন্ধ লেখেন।",
+      "t": "Rambler — Johnson।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

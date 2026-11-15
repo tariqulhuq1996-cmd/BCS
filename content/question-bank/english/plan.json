@@ -1,0 +1,392 @@
+[
+ {
+  "code": "EN.GR.SEN",
+  "topic": "ব্যাকরণ ও প্রয়োগ (Grammar & Usage)",
+  "area": "Grammar",
+  "name": "Sentence, Clause, Phrase ও Conditional",
+  "g": "A",
+  "base": 74,
+  "hist200": 39,
+  "target": 74
+ },
+ {
+  "code": "EN.GR.POS",
+  "topic": "ব্যাকরণ ও প্রয়োগ (Grammar & Usage)",
+  "area": "Grammar",
+  "name": "Parts of Speech ও শব্দরূপ পরিবর্তন",
+  "g": "A",
+  "base": 90,
+  "hist200": 35,
+  "target": 90
+ },
+ {
+  "code": "EN.GR.PRP",
+  "topic": "ব্যাকরণ ও প্রয়োগ (Grammar & Usage)",
+  "area": "Grammar",
+  "name": "Preposition",
+  "g": "A",
+  "base": 71,
+  "hist200": 58,
+  "target": 71
+ },
+ {
+  "code": "EN.VO.MNG",
+  "topic": "শব্দভান্ডার (Vocabulary)",
+  "area": "Vocabulary",
+  "name": "Word Meaning ও Usage",
+  "g": "A",
+  "base": 76,
+  "hist200": 101,
+  "target": 76
+ },
+ {
+  "code": "EN.VO.IDM",
+  "topic": "শব্দভান্ডার (Vocabulary)",
+  "area": "Vocabulary",
+  "name": "Idioms ও Phrases",
+  "g": "A",
+  "base": 50,
+  "hist200": 51,
+  "target": 50
+ },
+ {
+  "code": "EN.GR.NFV",
+  "topic": "ব্যাকরণ ও প্রয়োগ (Grammar & Usage)",
+  "area": "Grammar",
+  "name": "Infinitive, Gerund ও Participle",
+  "g": "A",
+  "base": 47,
+  "hist200": 21,
+  "target": 47
+ },
+ {
+  "code": "EN.LI.MOD",
+  "topic": "ইংরেজি ও বিশ্বসাহিত্য (Literature)",
+  "area": "Literature",
+  "name": "Modern ও Contemporary",
+  "g": "B",
+  "base": 100,
+  "hist200": 39,
+  "target": 100
+ },
+ {
+  "code": "EN.GR.VOI",
+  "topic": "ব্যাকরণ ও প্রয়োগ (Grammar & Usage)",
+  "area": "Grammar",
+  "name": "Voice",
+  "g": "B",
+  "base": 42,
+  "hist200": 20,
+  "target": 42
+ },
+ {
+  "code": "EN.LI.ROM",
+  "topic": "ইংরেজি ও বিশ্বসাহিত্য (Literature)",
+  "area": "Literature",
+  "name": "Romantic Period",
+  "g": "B",
+  "base": 82,
+  "hist200": 31,
+  "target": 82
+ },
+ {
+  "code": "EN.VO.ANT",
+  "topic": "শব্দভান্ডার (Vocabulary)",
+  "area": "Vocabulary",
+  "name": "Antonym",
+  "g": "B",
+  "base": 44,
+  "hist200": 27,
+  "target": 44
+ },
+ {
+  "code": "EN.VO.SYN",
+  "topic": "শব্দভান্ডার (Vocabulary)",
+  "area": "Vocabulary",
+  "name": "Synonym",
+  "g": "B",
+  "base": 42,
+  "hist200": 29,
+  "target": 42
+ },
+ {
+  "code": "EN.LI.VIC",
+  "topic": "ইংরেজি ও বিশ্বসাহিত্য (Literature)",
+  "area": "Literature",
+  "name": "Victorian Period",
+  "g": "B",
+  "base": 71,
+  "hist200": 28,
+  "target": 71
+ },
+ {
+  "code": "EN.GR.VRB",
+  "topic": "ব্যাকরণ ও প্রয়োগ (Grammar & Usage)",
+  "area": "Grammar",
+  "name": "Verb, Tense ও Subject-Verb Agreement",
+  "g": "B",
+  "base": 44,
+  "hist200": 34,
+  "target": 44
+ },
+ {
+  "code": "EN.GR.NOU",
+  "topic": "ব্যাকরণ ও প্রয়োগ (Grammar & Usage)",
+  "area": "Grammar",
+  "name": "Noun, Number ও Gender",
+  "g": "B",
+  "base": 50,
+  "hist200": 19,
+  "target": 50
+ },
+ {
+  "code": "EN.GR.COR",
+  "topic": "ব্যাকরণ ও প্রয়োগ (Grammar & Usage)",
+  "area": "Grammar",
+  "name": "Correct Sentence ও Error Detection",
+  "g": "B",
+  "base": 34,
+  "hist200": 29,
+  "target": 34
+ },
+ {
+  "code": "EN.LI.SHK",
+  "topic": "ইংরেজি ও বিশ্বসাহিত্য (Literature)",
+  "area": "Literature",
+  "name": "Shakespeare",
+  "g": "B",
+  "base": 79,
+  "hist200": 29,
+  "target": 79
+ },
+ {
+  "code": "EN.GR.SPL",
+  "topic": "ব্যাকরণ ও প্রয়োগ (Grammar & Usage)",
+  "area": "Grammar",
+  "name": "Spelling",
+  "g": "C",
+  "base": 34,
+  "hist200": 15,
+  "target": 34
+ },
+ {
+  "code": "EN.VO.OWS",
+  "topic": "শব্দভান্ডার (Vocabulary)",
+  "area": "Vocabulary",
+  "name": "One-word Substitution",
+  "g": "C",
+  "base": 31,
+  "hist200": 17,
+  "target": 31
+ },
+ {
+  "code": "EN.VO.GVB",
+  "topic": "শব্দভান্ডার (Vocabulary)",
+  "area": "Vocabulary",
+  "name": "Group Verb ও Phrasal Verb",
+  "g": "C",
+  "base": 29,
+  "hist200": 17,
+  "target": 29
+ },
+ {
+  "code": "EN.LI.17C",
+  "topic": "ইংরেজি ও বিশ্বসাহিত্য (Literature)",
+  "area": "Literature",
+  "name": "Seventeenth Century ও Restoration",
+  "g": "C",
+  "base": 42,
+  "hist200": 13,
+  "target": 42
+ },
+ {
+  "code": "EN.GR.ADJ",
+  "topic": "ব্যাকরণ ও প্রয়োগ (Grammar & Usage)",
+  "area": "Grammar",
+  "name": "Adjective, Adverb ও Degree",
+  "g": "C",
+  "base": 29,
+  "hist200": 13,
+  "target": 29
+ },
+ {
+  "code": "EN.LI.AME",
+  "topic": "ইংরেজি ও বিশ্বসাহিত্য (Literature)",
+  "area": "Literature",
+  "name": "American Literature",
+  "g": "C",
+  "base": 31,
+  "hist200": 13,
+  "target": 31
+ },
+ {
+  "code": "EN.LI.18C",
+  "topic": "ইংরেজি ও বিশ্বসাহিত্য (Literature)",
+  "area": "Literature",
+  "name": "Eighteenth Century",
+  "g": "C",
+  "base": 34,
+  "hist200": 12,
+  "target": 34
+ },
+ {
+  "code": "EN.LI.REN",
+  "topic": "ইংরেজি ও বিশ্বসাহিত্য (Literature)",
+  "area": "Literature",
+  "name": "Renaissance (Shakespeare ছাড়া)",
+  "g": "D",
+  "base": 34,
+  "hist200": 9,
+  "target": 34
+ },
+ {
+  "code": "EN.LI.TRM",
+  "topic": "ইংরেজি ও বিশ্বসাহিত্য (Literature)",
+  "area": "Literature",
+  "name": "Literary Terms ও Genres",
+  "g": "D",
+  "base": 37,
+  "hist200": 15,
+  "target": 37
+ },
+ {
+  "code": "EN.VO.ANL",
+  "topic": "শব্দভান্ডার (Vocabulary)",
+  "area": "Vocabulary",
+  "name": "Analogy",
+  "g": "D",
+  "base": 15,
+  "hist200": 23,
+  "target": 15
+ },
+ {
+  "code": "EN.LI.WRL",
+  "topic": "ইংরেজি ও বিশ্বসাহিত্য (Literature)",
+  "area": "Literature",
+  "name": "World Literature",
+  "g": "D",
+  "base": 26,
+  "hist200": 7,
+  "target": 26
+ },
+ {
+  "code": "EN.GR.OTH",
+  "topic": "ব্যাকরণ ও প্রয়োগ (Grammar & Usage)",
+  "area": "Grammar",
+  "name": "Grammar: অন্যান্য",
+  "g": "D",
+  "base": 18,
+  "hist200": 5,
+  "target": 18
+ },
+ {
+  "code": "EN.VO.PRV",
+  "topic": "শব্দভান্ডার (Vocabulary)",
+  "area": "Vocabulary",
+  "name": "Proverb",
+  "g": "D",
+  "base": 18,
+  "hist200": 6,
+  "target": 18
+ },
+ {
+  "code": "EN.GR.PRO",
+  "topic": "ব্যাকরণ ও প্রয়োগ (Grammar & Usage)",
+  "area": "Grammar",
+  "name": "Pronoun",
+  "g": "D",
+  "base": 15,
+  "hist200": 8,
+  "target": 15
+ },
+ {
+  "code": "EN.GR.NAR",
+  "topic": "ব্যাকরণ ও প্রয়োগ (Grammar & Usage)",
+  "area": "Grammar",
+  "name": "Narration",
+  "g": "D",
+  "base": 15,
+  "hist200": 7,
+  "target": 15
+ },
+ {
+  "code": "EN.GR.ART",
+  "topic": "ব্যাকরণ ও প্রয়োগ (Grammar & Usage)",
+  "area": "Grammar",
+  "name": "Article",
+  "g": "D",
+  "base": 15,
+  "hist200": 6,
+  "target": 15
+ },
+ {
+  "code": "EN.VO.FOR",
+  "topic": "শব্দভান্ডার (Vocabulary)",
+  "area": "Vocabulary",
+  "name": "Foreign Words ও Phrases",
+  "g": "D",
+  "base": 15,
+  "hist200": 6,
+  "target": 15
+ },
+ {
+  "code": "EN.GR.RDC",
+  "topic": "ব্যাকরণ ও প্রয়োগ (Grammar & Usage)",
+  "area": "Grammar",
+  "name": "Reading Comprehension ও বাক্যার্থ",
+  "g": "D",
+  "base": 10,
+  "hist200": 15,
+  "target": 10
+ },
+ {
+  "code": "EN.VO.WFM",
+  "topic": "শব্দভান্ডার (Vocabulary)",
+  "area": "Vocabulary",
+  "name": "Word Formation (Prefix, Suffix)",
+  "g": "D",
+  "base": 13,
+  "hist200": 1,
+  "target": 13
+ },
+ {
+  "code": "EN.GR.CNJ",
+  "topic": "ব্যাকরণ ও প্রয়োগ (Grammar & Usage)",
+  "area": "Grammar",
+  "name": "Conjunction",
+  "g": "D",
+  "base": 13,
+  "hist200": 4,
+  "target": 13
+ },
+ {
+  "code": "EN.GR.PUN",
+  "topic": "ব্যাকরণ ও প্রয়োগ (Grammar & Usage)",
+  "area": "Grammar",
+  "name": "Punctuation ও Capitalization",
+  "g": "D",
+  "base": 10,
+  "hist200": 1,
+  "target": 10
+ },
+ {
+  "code": "EN.VO.TRN",
+  "topic": "শব্দভান্ডার (Vocabulary)",
+  "area": "Vocabulary",
+  "name": "Translation",
+  "g": "D",
+  "base": 10,
+  "hist200": 3,
+  "target": 10
+ },
+ {
+  "code": "EN.LI.OLD",
+  "topic": "ইংরেজি ও বিশ্বসাহিত্য (Literature)",
+  "area": "Literature",
+  "name": "Old ও Middle English",
+  "g": "D",
+  "base": 10,
+  "hist200": 0,
+  "target": 10
+ }
+]

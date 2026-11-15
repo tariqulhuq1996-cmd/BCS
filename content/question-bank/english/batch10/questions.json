@@ -1,0 +1,1741 @@
+{
+  "batch": "Batch 10",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 12–15 (Modern ও Postmodern Period, Characters, Quotations)",
+  "subtopics": {
+    "EN.LI.MOD": {}
+  },
+  "questions": [
+    {
+      "st": "EN.LI.MOD",
+      "d": "Easy",
+      "q": "'The Waste Land' was written by—",
+      "o": [
+        "T. S. Eliot",
+        "John Osborne",
+        "Rudyard Kipling",
+        "Doris Lessing"
+      ],
+      "a": 0,
+      "e": "১৯২২ সালে প্রকাশিত আধুনিক কবিতার মাইলফলক।",
+      "t": "The Waste Land — T. S. Eliot।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'April is the cruellest month' — Who wrote this?",
+      "o": [
+        "John Osborne",
+        "E. M. Forster",
+        "Rudyard Kipling",
+        "T. S. Eliot"
+      ],
+      "a": 3,
+      "e": "The Waste Land-এর প্রথম চরণ।",
+      "t": "April is the cruellest month… — T. S. Eliot।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Four Quartets' was written by—",
+      "o": [
+        "T. S. Eliot",
+        "Rupert Brooke",
+        "Joseph Conrad",
+        "Wilfred Owen"
+      ],
+      "a": 0,
+      "e": "চারটি দীর্ঘ কবিতার সংকলন (১৯৪৩) — Eliot।",
+      "t": "Four Quartets — T. S. Eliot।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস — ৩৭-১১২, ৪১-১৯১-এ Eliot-এর Gerontion ও Prufrock জিজ্ঞাসিত; এটি ভিন্ন গ্রন্থ (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'This is the way the world ends / Not with a bang but a whimper' — Who wrote this?",
+      "o": [
+        "Aldous Huxley",
+        "Evelyn Waugh",
+        "W. H. Auden",
+        "T. S. Eliot"
+      ],
+      "a": 3,
+      "e": "‘The Hollow Men’ (১৯২৫)-এর শেষ চরণ।",
+      "t": "This is the way the world en… — T. S. Eliot।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "T. S. Eliot won the Nobel Prize in Literature in—",
+      "o": [
+        "1944",
+        "1948",
+        "1951",
+        "1955"
+      ],
+      "a": 1,
+      "e": "১৯৪৮ সালে T. S. Eliot সাহিত্যে নোবেল পান।",
+      "t": "T. S. Eliot — Nobel 1948।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Hard",
+      "q": "The critical term 'objective correlative' was introduced by—",
+      "o": [
+        "T. S. Eliot",
+        "I. A. Richards",
+        "F. R. Leavis",
+        "Matthew Arnold"
+      ],
+      "a": 0,
+      "e": "Eliot-এর ‘Hamlet and His Problems’ প্রবন্ধে প্রথম ব্যবহৃত।",
+      "t": "objective correlative — Eliot।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস — ৪৭-১০০-এ Eliot-এর ‘Tradition and the Individual Talent’ জিজ্ঞাসিত; এটি ভিন্ন ধারণা (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Hard",
+      "q": "'The Cocktail Party' was written by—",
+      "o": [
+        "W. B. Yeats",
+        "Ted Hughes",
+        "Kazuo Ishiguro",
+        "T. S. Eliot"
+      ],
+      "a": 3,
+      "e": "Eliot-এর কাব্যনাটক (১৯৪৯)।",
+      "t": "The Cocktail Party — T. S. Eliot।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Old Possum's Book of Practical Cats' was written by—",
+      "o": [
+        "T. S. Eliot",
+        "D. H. Lawrence",
+        "Harold Pinter",
+        "Seamus Heaney"
+      ],
+      "a": 0,
+      "e": "বিড়ালদের নিয়ে Eliot-এর হালকা কবিতা — ‘Cats’ মিউজিক্যালের উৎস।",
+      "t": "Old Possum's Book of Practical Cats — T. S. Eliot।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "W. B. Yeats won the Nobel Prize in Literature in—",
+      "o": [
+        "1919",
+        "1923",
+        "1926",
+        "1930"
+      ],
+      "a": 1,
+      "e": "আইরিশ কবি Yeats ১৯২৩ সালে নোবেল পান।",
+      "t": "W. B. Yeats — Nobel 1923।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Things fall apart; the centre cannot hold' — Who wrote this?",
+      "o": [
+        "Dylan Thomas",
+        "George Orwell",
+        "Graham Greene",
+        "W. B. Yeats"
+      ],
+      "a": 3,
+      "e": "‘The Second Coming’ (১৯২০)-এর চরণ।",
+      "t": "Things fall apart; the centr… — W. B. Yeats।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Sailing to Byzantium' was written by—",
+      "o": [
+        "W. B. Yeats",
+        "John Osborne",
+        "Rudyard Kipling",
+        "Doris Lessing"
+      ],
+      "a": 0,
+      "e": "বার্ধক্য ও শিল্পের অমরত্ব নিয়ে Yeats-এর কবিতা।",
+      "t": "Sailing to Byzantium — W. B. Yeats।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস — ৩৫-৫২, ৪৩-৫৩, ৪৪-৭১-এ Yeats-এর অন্য কবিতা জিজ্ঞাসিত; এটি ভিন্ন কবিতা (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'The Wild Swans at Coole' was written by—",
+      "o": [
+        "Joseph Conrad",
+        "Wilfred Owen",
+        "W. B. Yeats",
+        "John Galsworthy"
+      ],
+      "a": 2,
+      "e": "Coole Park-এর রাজহাঁস নিয়ে Yeats-এর কবিতা।",
+      "t": "The Wild Swans at Coole — W. B. Yeats।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Hard",
+      "q": "'Leda and the Swan' was written by—",
+      "o": [
+        "Doris Lessing",
+        "Rudyard Kipling",
+        "James Joyce",
+        "W. B. Yeats"
+      ],
+      "a": 3,
+      "e": "গ্রিক পুরাণভিত্তিক Yeats-এর সনেট।",
+      "t": "Leda and the Swan — W. B. Yeats।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "Yeats co-founded which famous theatre in Dublin?",
+      "o": [
+        "The Abbey Theatre",
+        "The Globe Theatre",
+        "The Old Vic",
+        "The Royal Court"
+      ],
+      "a": 0,
+      "e": "১৯০৪ সালে Lady Gregory-র সঙ্গে Abbey Theatre প্রতিষ্ঠা।",
+      "t": "Abbey — Yeats।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Hard",
+      "q": "The woman who inspired much of Yeats's love poetry was—",
+      "o": [
+        "Lady Gregory",
+        "Georgie Hyde-Lees",
+        "Maud Gonne",
+        "Virginia Woolf"
+      ],
+      "a": 2,
+      "e": "আইরিশ জাতীয়তাবাদী Maud Gonne Yeats-এর বহু কবিতার প্রেরণা।",
+      "t": "Maud Gonne।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "G. B. Shaw won the Nobel Prize in Literature in—",
+      "o": [
+        "1921",
+        "1925",
+        "1928",
+        "1932"
+      ],
+      "a": 1,
+      "e": "Bernard Shaw ১৯২৫ সালে নোবেল পান।",
+      "t": "G. B. Shaw — Nobel 1925।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Saint Joan' was written by—",
+      "o": [
+        "John Osborne",
+        "E. M. Forster",
+        "Rudyard Kipling",
+        "G. B. Shaw"
+      ],
+      "a": 3,
+      "e": "Joan of Arc-কে নিয়ে Shaw-এর নাটক (১৯২৩)।",
+      "t": "Saint Joan — G. B. Shaw।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস — ১২-২৯, ৩৫-৪৫, ৩৬-৫১, ৩৮-৩৬, ৪১-১৯০-এ Shaw-এর অন্য নাটক জিজ্ঞাসিত; এটি ভিন্ন নাটক (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Major Barbara' was written by—",
+      "o": [
+        "G. B. Shaw",
+        "Harold Pinter",
+        "Seamus Heaney",
+        "Salman Rushdie"
+      ],
+      "a": 0,
+      "e": "অস্ত্রব্যবসায়ী ও Salvation Army নিয়ে Shaw-এর নাটক।",
+      "t": "Major Barbara — G. B. Shaw।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Mrs Warren's Profession' was written by—",
+      "o": [
+        "Samuel Beckett",
+        "Ted Hughes",
+        "G. B. Shaw",
+        "Kazuo Ishiguro"
+      ],
+      "a": 2,
+      "e": "সমাজের ভণ্ডামি নিয়ে Shaw-এর বিতর্কিত নাটক।",
+      "t": "Mrs Warren's Profession — G. B. Shaw।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Hard",
+      "q": "'Heartbreak House' was written by—",
+      "o": [
+        "Evelyn Waugh",
+        "W. H. Auden",
+        "Sean O'Casey",
+        "G. B. Shaw"
+      ],
+      "a": 3,
+      "e": "প্রথম বিশ্বযুদ্ধকালীন সমাজ নিয়ে Shaw-এর নাটক।",
+      "t": "Heartbreak House — G. B. Shaw।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Hard",
+      "q": "G. B. Shaw was an active member of the socialist—",
+      "o": [
+        "Fabian Society",
+        "Bloomsbury Group",
+        "Pre-Raphaelite Brotherhood",
+        "Inklings"
+      ],
+      "a": 0,
+      "e": "Shaw Fabian Society-র অন্যতম প্রধান সদস্য ছিলেন।",
+      "t": "Shaw — Fabian।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Dubliners' was written by—",
+      "o": [
+        "Joseph Conrad",
+        "Wilfred Owen",
+        "James Joyce",
+        "John Galsworthy"
+      ],
+      "a": 2,
+      "e": "ডাবলিনের জীবন নিয়ে Joyce-এর গল্পসংকলন (১৯১৪)।",
+      "t": "Dubliners — James Joyce।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'A Portrait of the Artist as a Young Man' was written by—",
+      "o": [
+        "J. M. Synge",
+        "Graham Greene",
+        "D. H. Lawrence",
+        "James Joyce"
+      ],
+      "a": 3,
+      "e": "Stephen Dedalus-এর বেড়ে ওঠার আত্মজৈবনিক উপন্যাস।",
+      "t": "A Portrait of the Artist as a Young Man — James Joyce।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Hard",
+      "q": "'Finnegans Wake' was written by—",
+      "o": [
+        "James Joyce",
+        "John Osborne",
+        "Rudyard Kipling",
+        "Doris Lessing"
+      ],
+      "a": 0,
+      "e": "Joyce-এর শেষ ও দুর্বোধ্যতম উপন্যাস (১৯৩৯)।",
+      "t": "Finnegans Wake — James Joyce।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "The central character of Joyce's 'Ulysses' is—",
+      "o": [
+        "Stephen Hero",
+        "Paul Morel",
+        "Leopold Bloom",
+        "Clarissa Dalloway"
+      ],
+      "a": 2,
+      "e": "Leopold Bloom-এর ডাবলিনে একদিনের ঘোরাফেরা Ulysses-এর কাহিনি।",
+      "t": "Ulysses — Leopold Bloom।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস — ৪০-৬৪-এ Ulysses-এর লেখক জিজ্ঞাসিত; এটি কেন্দ্রীয় চরিত্র (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Hard",
+      "q": "Joyce's 'Ulysses' takes place on a single day—",
+      "o": [
+        "1 January 1900",
+        "11 November 1918",
+        "16 June 1904",
+        "25 December 1914"
+      ],
+      "a": 2,
+      "e": "১৬ জুন ১৯০৪ — ‘Bloomsday’ নামে উদযাপিত।",
+      "t": "Bloomsday = ১৬ জুন।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "The narrative technique that presents a character's flow of thoughts is called—",
+      "o": [
+        "epistolary method",
+        "omniscient narration",
+        "dramatic irony",
+        "stream of consciousness"
+      ],
+      "a": 3,
+      "e": "Joyce, Woolf প্রমুখ ব্যবহৃত কৌশল; পরিভাষাটি William James-এর।",
+      "t": "চিন্তাপ্রবাহ = stream of consciousness।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Mrs Dalloway' was written by—",
+      "o": [
+        "Virginia Woolf",
+        "John Galsworthy",
+        "V. S. Naipaul",
+        "James Joyce"
+      ],
+      "a": 0,
+      "e": "লন্ডনের এক দিনের ঘটনায় Clarissa Dalloway-এর জীবন।",
+      "t": "Mrs Dalloway — Virginia Woolf।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'To the Lighthouse' was written by—",
+      "o": [
+        "John Galsworthy",
+        "V. S. Naipaul",
+        "Virginia Woolf",
+        "James Joyce"
+      ],
+      "a": 2,
+      "e": "Ramsay পরিবার নিয়ে Woolf-এর উপন্যাস (১৯২৭)।",
+      "t": "To the Lighthouse — Virginia Woolf।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'A Room of One's Own' was written by—",
+      "o": [
+        "J. M. Synge",
+        "Graham Greene",
+        "D. H. Lawrence",
+        "Virginia Woolf"
+      ],
+      "a": 3,
+      "e": "নারী ও সাহিত্যচর্চা নিয়ে Woolf-এর বিখ্যাত প্রবন্ধ (১৯২৯)।",
+      "t": "A Room of One's Own — Virginia Woolf।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Hard",
+      "q": "'Orlando' was written by—",
+      "o": [
+        "Virginia Woolf",
+        "Joseph Conrad",
+        "Wilfred Owen",
+        "John Galsworthy"
+      ],
+      "a": 0,
+      "e": "শতাব্দী ধরে লিঙ্গ বদলানো নায়ককে নিয়ে Woolf-এর উপন্যাস।",
+      "t": "Orlando — Virginia Woolf।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "Virginia Woolf and E. M. Forster belonged to the—",
+      "o": [
+        "Fabian Society",
+        "Movement poets",
+        "Bloomsbury Group",
+        "Angry Young Men"
+      ],
+      "a": 2,
+      "e": "লন্ডনের Bloomsbury-কেন্দ্রিক বুদ্ধিজীবী গোষ্ঠী।",
+      "t": "Woolf, Forster — Bloomsbury।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Sons and Lovers' was written by—",
+      "o": [
+        "Joseph Conrad",
+        "Rupert Brooke",
+        "Wilfred Owen",
+        "D. H. Lawrence"
+      ],
+      "a": 3,
+      "e": "Paul Morel-এর কাহিনি — Lawrence-এর আত্মজৈবনিক উপন্যাস।",
+      "t": "Sons and Lovers — D. H. Lawrence।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস — ১৩-২৭, ৪১-১৭৯-এ Lawrence-এর The Rainbow ও Lady Chatterley's Lover জিজ্ঞাসিত; এটি ভিন্ন উপন্যাস (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Howards End' was written by—",
+      "o": [
+        "E. M. Forster",
+        "Philip Larkin",
+        "Somerset Maugham",
+        "Rupert Brooke"
+      ],
+      "a": 0,
+      "e": "‘Only connect…’ — Forster-এর উপন্যাস (১৯১০)।",
+      "t": "Howards End — E. M. Forster।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'A Room with a View' was written by—",
+      "o": [
+        "Aldous Huxley",
+        "E. M. Forster",
+        "W. H. Auden",
+        "Evelyn Waugh"
+      ],
+      "a": 1,
+      "e": "ফ্লোরেন্সে Lucy Honeychurch-এর কাহিনি।",
+      "t": "A Room with a View — E. M. Forster।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Hard",
+      "q": "The terms 'flat' and 'round' characters were introduced in—",
+      "o": [
+        "The Sacred Wood",
+        "The Common Reader",
+        "Aspects of the Novel",
+        "Principles of Literary Criticism"
+      ],
+      "a": 2,
+      "e": "E. M. Forster-এর ‘Aspects of the Novel’ (১৯২৭)।",
+      "t": "flat/round — Forster।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Lord Jim' was written by—",
+      "o": [
+        "Evelyn Waugh",
+        "Aldous Huxley",
+        "W. H. Auden",
+        "Joseph Conrad"
+      ],
+      "a": 3,
+      "e": "কর্তব্যচ্যুত নাবিক Jim-এর কাহিনি।",
+      "t": "Lord Jim — Joseph Conrad।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস — ৪৭-১০৯-এ Conrad-এর Heart of Darkness জিজ্ঞাসিত; এটি ভিন্ন উপন্যাস (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Hard",
+      "q": "'Nostromo' was written by—",
+      "o": [
+        "Joseph Conrad",
+        "J. M. Synge",
+        "Virginia Woolf",
+        "Harold Pinter"
+      ],
+      "a": 0,
+      "e": "কাল্পনিক দক্ষিণ আমেরিকান দেশের পটভূমিতে Conrad-এর উপন্যাস।",
+      "t": "Nostromo — Joseph Conrad।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "Joseph Conrad was born in—",
+      "o": [
+        "Scotland",
+        "Poland (then under Russian rule)",
+        "Ireland",
+        "South Africa"
+      ],
+      "a": 1,
+      "e": "Conrad পোলিশ বংশোদ্ভূত; ইংরেজি তাঁর তৃতীয় ভাষা।",
+      "t": "Conrad — Poland।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "George Orwell's real name was—",
+      "o": [
+        "Arthur Conan Doyle",
+        "Aldous Huxley",
+        "Eric Arthur Blair",
+        "Hector Hugh Munro"
+      ],
+      "a": 2,
+      "e": "George Orwell ছদ্মনাম; আসল নাম Eric Arthur Blair।",
+      "t": "Orwell = Eric Blair।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "George Orwell was born in—",
+      "o": [
+        "London, England",
+        "Dublin, Ireland",
+        "Rangoon, Burma",
+        "Motihari, India"
+      ],
+      "a": 3,
+      "e": "১৯০৩ সালে বিহারের Motihari-তে জন্ম।",
+      "t": "Orwell — Motihari।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Homage to Catalonia' was written by—",
+      "o": [
+        "George Orwell",
+        "Salman Rushdie",
+        "W. B. Yeats",
+        "Aldous Huxley"
+      ],
+      "a": 0,
+      "e": "স্পেনের গৃহযুদ্ধের অভিজ্ঞতা নিয়ে Orwell-এর রচনা।",
+      "t": "Homage to Catalonia — George Orwell।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস — ১০-৩০, ২৮-৩৭, ৪৫-৪২, ৪৭-১১০-এ Orwell-এর অন্য রচনা জিজ্ঞাসিত; এটি ভিন্ন গ্রন্থ (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Burmese Days' was written by—",
+      "o": [
+        "Somerset Maugham",
+        "George Orwell",
+        "Philip Larkin",
+        "H. G. Wells"
+      ],
+      "a": 1,
+      "e": "বার্মায় ব্রিটিশ শাসন নিয়ে Orwell-এর প্রথম উপন্যাস।",
+      "t": "Burmese Days — George Orwell।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Big Brother is watching you' is a slogan from—",
+      "o": [
+        "Brave New World",
+        "Animal Farm",
+        "Nineteen Eighty-Four",
+        "The Time Machine"
+      ],
+      "a": 2,
+      "e": "Orwell-এর Nineteen Eighty-Four-এর সর্বগ্রাসী রাষ্ট্রের স্লোগান।",
+      "t": "Big Brother — 1984।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'The War of the Worlds' was written by—",
+      "o": [
+        "T. S. Eliot",
+        "Kazuo Ishiguro",
+        "Joseph Conrad",
+        "H. G. Wells"
+      ],
+      "a": 3,
+      "e": "মঙ্গলগ্রহবাসীদের আক্রমণ নিয়ে Wells-এর বিজ্ঞান-কল্পকাহিনি।",
+      "t": "The War of the Worlds — H. G. Wells।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস — ৪১-১৯২-এ Wells-এর The Time Machine জিজ্ঞাসিত; এটি ভিন্ন উপন্যাস (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "Samuel Beckett won the Nobel Prize in Literature in—",
+      "o": [
+        "1965",
+        "1969",
+        "1972",
+        "1976"
+      ],
+      "a": 1,
+      "e": "আইরিশ নাট্যকার Beckett ১৯৬৯ সালে নোবেল পান।",
+      "t": "Samuel Beckett — Nobel 1969।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Endgame' was written by—",
+      "o": [
+        "Samuel Beckett",
+        "Joseph Conrad",
+        "Dylan Thomas",
+        "Graham Greene"
+      ],
+      "a": 0,
+      "e": "Beckett-এর absurd নাটক (১৯৫৭)।",
+      "t": "Endgame — Samuel Beckett।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস — ৪৭-১০৭, ৫০-৬১-এ Waiting for Godot জিজ্ঞাসিত; এটি ভিন্ন নাটক (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Hard",
+      "q": "The term 'Theatre of the Absurd' was coined by—",
+      "o": [
+        "Samuel Beckett",
+        "Martin Esslin",
+        "Albert Camus",
+        "Harold Pinter"
+      ],
+      "a": 1,
+      "e": "Martin Esslin-এর ১৯৬১ সালের গ্রন্থ ‘The Theatre of the Absurd’।",
+      "t": "Absurd (term) — Esslin।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "Harold Pinter won the Nobel Prize in Literature in—",
+      "o": [
+        "2001",
+        "2005",
+        "2008",
+        "2012"
+      ],
+      "a": 1,
+      "e": "Harold Pinter ২০০৫ সালে নোবেল পান।",
+      "t": "Harold Pinter — Nobel 2005।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'The Caretaker' was written by—",
+      "o": [
+        "G. B. Shaw",
+        "Doris Lessing",
+        "Harold Pinter",
+        "Aldous Huxley"
+      ],
+      "a": 2,
+      "e": "Pinter-এর নাটক (১৯৬০)।",
+      "t": "The Caretaker — Harold Pinter।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস — ৪১-১৮৬-এ Pinter-এর The Birthday Party জিজ্ঞাসিত; এটি ভিন্ন নাটক (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Hard",
+      "q": "Harold Pinter's early plays are often described as—",
+      "o": [
+        "chronicle plays",
+        "comedies of manners",
+        "problem plays",
+        "comedies of menace"
+      ],
+      "a": 3,
+      "e": "সাধারণ পরিবেশে অজানা হুমকির আবহ — ‘comedy of menace’।",
+      "t": "Pinter = comedy of menace।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Look Back in Anger' was written by—",
+      "o": [
+        "John Osborne",
+        "J. M. Synge",
+        "Virginia Woolf",
+        "Samuel Beckett"
+      ],
+      "a": 0,
+      "e": "১৯৫৬ সালের নাটক, ‘Angry Young Men’ ধারার সূচনা।",
+      "t": "Look Back in Anger — John Osborne।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "Jimmy Porter is the protagonist of—",
+      "o": [
+        "The Caretaker",
+        "Look Back in Anger",
+        "Endgame",
+        "Juno and the Paycock"
+      ],
+      "a": 1,
+      "e": "ক্ষুব্ধ যুবক Jimmy Porter — Osborne-এর Look Back in Anger।",
+      "t": "Jimmy Porter — Osborne।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'The Playboy of the Western World' was written by—",
+      "o": [
+        "Wilfred Owen",
+        "Joseph Conrad",
+        "J. M. Synge",
+        "John Galsworthy"
+      ],
+      "a": 2,
+      "e": "আয়ারল্যান্ডের গ্রামীণ পটভূমিতে Synge-এর কমেডি (১৯০৭)।",
+      "t": "The Playboy of the Western World — J. M. Synge।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস — ৩৫-৫৩, ৪৭-৯৭-এ Synge-এর Riders to the Sea জিজ্ঞাসিত; এটি ভিন্ন নাটক (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Juno and the Paycock' was written by—",
+      "o": [
+        "Virginia Woolf",
+        "John Galsworthy",
+        "V. S. Naipaul",
+        "Sean O'Casey"
+      ],
+      "a": 3,
+      "e": "আইরিশ গৃহযুদ্ধকালের ডাবলিন নিয়ে O'Casey-র নাটক।",
+      "t": "Juno and the Paycock — Sean O'Casey।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Dulce et Decorum Est' was written by—",
+      "o": [
+        "Wilfred Owen",
+        "V. S. Naipaul",
+        "James Joyce",
+        "H. G. Wells"
+      ],
+      "a": 0,
+      "e": "প্রথম বিশ্বযুদ্ধের বিভীষিকা নিয়ে Owen-এর কবিতা।",
+      "t": "Dulce et Decorum Est — Wilfred Owen।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Anthem for Doomed Youth' was written by—",
+      "o": [
+        "Doris Lessing",
+        "Wilfred Owen",
+        "G. B. Shaw",
+        "Aldous Huxley"
+      ],
+      "a": 1,
+      "e": "যুদ্ধে নিহত তরুণদের জন্য Owen-এর সনেট।",
+      "t": "Anthem for Doomed Youth — Wilfred Owen।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'If I should die, think only this of me' — Who wrote this?",
+      "o": [
+        "Evelyn Waugh",
+        "W. H. Auden",
+        "Rupert Brooke",
+        "Sean O'Casey"
+      ],
+      "a": 2,
+      "e": "‘The Soldier’ — Brooke-এর দেশপ্রেমমূলক যুদ্ধকবিতা।",
+      "t": "If I should die, think only … — Rupert Brooke।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Do not go gentle into that good night' — Who wrote this?",
+      "o": [
+        "Virginia Woolf",
+        "Graham Greene",
+        "J. M. Synge",
+        "Dylan Thomas"
+      ],
+      "a": 3,
+      "e": "মৃত্যুপথযাত্রী বাবার উদ্দেশে Dylan Thomas-এর villanelle।",
+      "t": "Do not go gentle into that g… — Dylan Thomas।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Under Milk Wood' was written by—",
+      "o": [
+        "Dylan Thomas",
+        "Philip Larkin",
+        "Somerset Maugham",
+        "Rupert Brooke"
+      ],
+      "a": 0,
+      "e": "ওয়েলসের কাল্পনিক গ্রাম নিয়ে Dylan Thomas-এর ‘play for voices’।",
+      "t": "Under Milk Wood — Dylan Thomas।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস — ৪১-১৮৭-এ Dylan Thomas-এর Fern Hill-এর চরণ জিজ্ঞাসিত; এটি ভিন্ন রচনা (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'The Unknown Citizen' was written by—",
+      "o": [
+        "G. B. Shaw",
+        "W. H. Auden",
+        "Aldous Huxley",
+        "Philip Larkin"
+      ],
+      "a": 1,
+      "e": "রাষ্ট্রের চোখে ‘আদর্শ নাগরিক’-এর ব্যঙ্গচিত্র — Auden।",
+      "t": "The Unknown Citizen — W. H. Auden।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Stop all the clocks, cut off the telephone' — Who wrote this?",
+      "o": [
+        "V. S. Naipaul",
+        "John Galsworthy",
+        "W. H. Auden",
+        "James Joyce"
+      ],
+      "a": 2,
+      "e": "‘Funeral Blues’ — Auden।",
+      "t": "Stop all the clocks, cut off… — W. H. Auden।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'The Whitsun Weddings' was written by—",
+      "o": [
+        "John Galsworthy",
+        "E. M. Forster",
+        "John Osborne",
+        "Philip Larkin"
+      ],
+      "a": 3,
+      "e": "Larkin-এর কাব্যগ্রন্থ (১৯৬৪)।",
+      "t": "The Whitsun Weddings — Philip Larkin।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Hard",
+      "q": "Philip Larkin is associated with the group of 1950s poets called—",
+      "o": [
+        "The Movement",
+        "The Imagists",
+        "The Georgians",
+        "The Apocalyptics"
+      ],
+      "a": 0,
+      "e": "Larkin, Kingsley Amis প্রমুখ ‘The Movement’ কবিগোষ্ঠী।",
+      "t": "Larkin — The Movement।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'The Hawk in the Rain' was written by—",
+      "o": [
+        "E. M. Forster",
+        "Ted Hughes",
+        "John Osborne",
+        "John Galsworthy"
+      ],
+      "a": 1,
+      "e": "Ted Hughes-এর প্রথম কাব্যগ্রন্থ (১৯৫৭)।",
+      "t": "The Hawk in the Rain — Ted Hughes।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "Ted Hughes became Poet Laureate in—",
+      "o": [
+        "1968",
+        "1972",
+        "1984",
+        "1999"
+      ],
+      "a": 2,
+      "e": "John Betjeman-এর পর ১৯৮৪ সালে Ted Hughes Poet Laureate হন।",
+      "t": "Hughes Laureate = ১৯৮৪।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "Seamus Heaney won the Nobel Prize in Literature in—",
+      "o": [
+        "1991",
+        "1995",
+        "1998",
+        "2002"
+      ],
+      "a": 1,
+      "e": "আইরিশ কবি Seamus Heaney ১৯৯৫ সালে নোবেল পান।",
+      "t": "Seamus Heaney — Nobel 1995।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Digging' was written by—",
+      "o": [
+        "Evelyn Waugh",
+        "Dylan Thomas",
+        "Seamus Heaney",
+        "Sean O'Casey"
+      ],
+      "a": 2,
+      "e": "‘Between my finger and my thumb / The squat pen rests’ — Heaney-র প্রথম দিকের কবিতা।",
+      "t": "Digging — Seamus Heaney।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Hard",
+      "q": "Seamus Heaney is also known for his verse translation of—",
+      "o": [
+        "Gitanjali",
+        "The Iliad",
+        "The Divine Comedy",
+        "Beowulf"
+      ],
+      "a": 3,
+      "e": "১৯৯৯ সালে Heaney-র Beowulf অনুবাদ Whitbread পুরস্কার পায়।",
+      "t": "Heaney — Beowulf অনুবাদ।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "Rudyard Kipling won the Nobel Prize in Literature in—",
+      "o": [
+        "1903",
+        "1907",
+        "1910",
+        "1914"
+      ],
+      "a": 1,
+      "e": "১৯০৭ সালে Kipling — ইংরেজি ভাষার প্রথম নোবেলজয়ী সাহিত্যিক।",
+      "t": "Rudyard Kipling — Nobel 1907।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Easy",
+      "q": "'The Jungle Book' was written by—",
+      "o": [
+        "Rudyard Kipling",
+        "J. M. Synge",
+        "Virginia Woolf",
+        "Samuel Beckett"
+      ],
+      "a": 0,
+      "e": "Mowgli-র কাহিনি — Kipling (১৮৯৪)।",
+      "t": "The Jungle Book — Rudyard Kipling।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Kim' was written by—",
+      "o": [
+        "H. G. Wells",
+        "Rudyard Kipling",
+        "Philip Larkin",
+        "Kazuo Ishiguro"
+      ],
+      "a": 1,
+      "e": "ব্রিটিশ ভারতের পটভূমিতে Kipling-এর উপন্যাস (১৯০১)।",
+      "t": "Kim — Rudyard Kipling।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'If you can keep your head when all about you / Are losing theirs' — Who wrote this?",
+      "o": [
+        "Samuel Beckett",
+        "Virginia Woolf",
+        "Rudyard Kipling",
+        "Ted Hughes"
+      ],
+      "a": 2,
+      "e": "Kipling-এর বিখ্যাত কবিতা ‘If—’।",
+      "t": "If you can keep your head wh… — Rudyard Kipling।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "John Galsworthy won the Nobel Prize in Literature in—",
+      "o": [
+        "1928",
+        "1932",
+        "1935",
+        "1939"
+      ],
+      "a": 1,
+      "e": "Galsworthy ১৯৩২ সালে নোবেল পান।",
+      "t": "John Galsworthy — Nobel 1932।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'The Forsyte Saga' was written by—",
+      "o": [
+        "Joseph Conrad",
+        "Kazuo Ishiguro",
+        "T. S. Eliot",
+        "John Galsworthy"
+      ],
+      "a": 3,
+      "e": "Forsyte পরিবারের তিন প্রজন্মের কাহিনি।",
+      "t": "The Forsyte Saga — John Galsworthy।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Of Human Bondage' was written by—",
+      "o": [
+        "Somerset Maugham",
+        "Harold Pinter",
+        "Seamus Heaney",
+        "Doris Lessing"
+      ],
+      "a": 0,
+      "e": "Philip Carey-র আত্মজৈবনিক উপন্যাস (১৯১৫)।",
+      "t": "Of Human Bondage — Somerset Maugham।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস — ৪৪-৮৯-এ Maugham-এর একটি গল্প জিজ্ঞাসিত; এটি তাঁর উপন্যাস (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'The Power and the Glory' was written by—",
+      "o": [
+        "Ted Hughes",
+        "Graham Greene",
+        "Salman Rushdie",
+        "W. B. Yeats"
+      ],
+      "a": 1,
+      "e": "মেক্সিকোর এক যাজকের কাহিনি — Greene।",
+      "t": "The Power and the Glory — Graham Greene।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Brighton Rock' was written by—",
+      "o": [
+        "V. S. Naipaul",
+        "Rudyard Kipling",
+        "Graham Greene",
+        "James Joyce"
+      ],
+      "a": 2,
+      "e": "কিশোর গ্যাংস্টার Pinkie-কে নিয়ে Greene-এর উপন্যাস।",
+      "t": "Brighton Rock — Graham Greene।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "The detective Hercule Poirot was created by—",
+      "o": [
+        "Wilkie Collins",
+        "Arthur Conan Doyle",
+        "Dorothy L. Sayers",
+        "Agatha Christie"
+      ],
+      "a": 3,
+      "e": "বেলজিয়ান গোয়েন্দা Poirot — Agatha Christie।",
+      "t": "Poirot — Christie।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "Sherlock Holmes first appeared in—",
+      "o": [
+        "A Study in Scarlet",
+        "The Hound of the Baskervilles",
+        "The Sign of Four",
+        "The Moonstone"
+      ],
+      "a": 0,
+      "e": "১৮৮৭ সালে Conan Doyle-এর ‘A Study in Scarlet’-এ Holmes-এর আবির্ভাব।",
+      "t": "প্রথম Holmes — A Study in Scarlet।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'The Lord of the Rings' was written by—",
+      "o": [
+        "C. S. Lewis",
+        "J. R. R. Tolkien",
+        "Lewis Carroll",
+        "J. M. Barrie"
+      ],
+      "a": 1,
+      "e": "Tolkien-এর ফ্যান্টাসি মহাকাব্য (১৯৫৪–৫৫)।",
+      "t": "Lord of the Rings — Tolkien।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'The Chronicles of Narnia' was written by—",
+      "o": [
+        "Roald Dahl",
+        "J. R. R. Tolkien",
+        "C. S. Lewis",
+        "Enid Blyton"
+      ],
+      "a": 2,
+      "e": "সাত খণ্ডের শিশুসাহিত্য — C. S. Lewis।",
+      "t": "Narnia — C. S. Lewis।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Peter Pan' was created by—",
+      "o": [
+        "Lewis Carroll",
+        "Kenneth Grahame",
+        "A. A. Milne",
+        "J. M. Barrie"
+      ],
+      "a": 3,
+      "e": "কখনো বড় না হওয়া Peter Pan — J. M. Barrie।",
+      "t": "Peter Pan — Barrie।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "Doris Lessing won the Nobel Prize in Literature in—",
+      "o": [
+        "2003",
+        "2007",
+        "2010",
+        "2014"
+      ],
+      "a": 1,
+      "e": "Doris Lessing ২০০৭ সালে নোবেল পান।",
+      "t": "Doris Lessing — Nobel 2007।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'The Golden Notebook' was written by—",
+      "o": [
+        "Doris Lessing",
+        "Rudyard Kipling",
+        "V. S. Naipaul",
+        "James Joyce"
+      ],
+      "a": 0,
+      "e": "Lessing-এর বিখ্যাত উপন্যাস (১৯৬২)।",
+      "t": "The Golden Notebook — Doris Lessing।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "V. S. Naipaul won the Nobel Prize in Literature in—",
+      "o": [
+        "1997",
+        "2001",
+        "2004",
+        "2008"
+      ],
+      "a": 1,
+      "e": "ত্রিনিদাদ-জাত ব্রিটিশ লেখক Naipaul ২০০১ সালে নোবেল পান।",
+      "t": "V. S. Naipaul — Nobel 2001।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'A House for Mr Biswas' was written by—",
+      "o": [
+        "Dylan Thomas",
+        "V. S. Naipaul",
+        "Graham Greene",
+        "Sean O'Casey"
+      ],
+      "a": 1,
+      "e": "ত্রিনিদাদের ভারতীয় বংশোদ্ভূত পরিবারের কাহিনি।",
+      "t": "A House for Mr Biswas — V. S. Naipaul।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Midnight's Children' was written by—",
+      "o": [
+        "Somerset Maugham",
+        "Philip Larkin",
+        "Salman Rushdie",
+        "T. S. Eliot"
+      ],
+      "a": 2,
+      "e": "১৯৮১ সালে Booker পুরস্কারপ্রাপ্ত উপন্যাস।",
+      "t": "Midnight's Children — Salman Rushdie।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "Kazuo Ishiguro won the Nobel Prize in Literature in—",
+      "o": [
+        "2013",
+        "2017",
+        "2020",
+        "2024"
+      ],
+      "a": 1,
+      "e": "জাপানি বংশোদ্ভূত ব্রিটিশ লেখক Ishiguro ২০১৭ সালে নোবেল পান।",
+      "t": "Kazuo Ishiguro — Nobel 2017।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'The Remains of the Day' was written by—",
+      "o": [
+        "Philip Larkin",
+        "James Joyce",
+        "H. G. Wells",
+        "Kazuo Ishiguro"
+      ],
+      "a": 3,
+      "e": "বাটলার Stevens-এর স্মৃতিকথনে উপন্যাস — ১৯৮৯ সালের Booker।",
+      "t": "The Remains of the Day — Kazuo Ishiguro।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'The God of Small Things', winner of the 1997 Booker Prize, was written by—",
+      "o": [
+        "Arundhati Roy",
+        "Kiran Desai",
+        "Anita Desai",
+        "Jhumpa Lahiri"
+      ],
+      "a": 0,
+      "e": "Arundhati Roy-র প্রথম উপন্যাস।",
+      "t": "God of Small Things — Arundhati Roy।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "Exact Duplicate — ৪৩-৫৫ (‘The God of Small Things’-এর লেখক Arundhati Roy)",
+      "v": "যাচাইকৃত",
+      "reject": "Exact Duplicate"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Atonement' was written by—",
+      "o": [
+        "Julian Barnes",
+        "Ian McEwan",
+        "Martin Amis",
+        "Graham Swift"
+      ],
+      "a": 1,
+      "e": "Ian McEwan-এর উপন্যাস (২০০১)।",
+      "t": "Atonement — McEwan।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "'Wolf Hall', about Thomas Cromwell, was written by—",
+      "o": [
+        "Ali Smith",
+        "Zadie Smith",
+        "Hilary Mantel",
+        "A. S. Byatt"
+      ],
+      "a": 2,
+      "e": "২০০৯ সালের Booker-জয়ী উপন্যাস — Hilary Mantel।",
+      "t": "Wolf Hall — Mantel।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "The Booker Prize was first awarded in—",
+      "o": [
+        "1901",
+        "1945",
+        "1969",
+        "1984"
+      ],
+      "a": 2,
+      "e": "১৯৬৯ সালে প্রথম Booker Prize দেওয়া হয়।",
+      "t": "Booker = ১৯৬৯।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "The Tanzanian-born novelist who won the 2021 Nobel Prize in Literature is—",
+      "o": [
+        "Wole Soyinka",
+        "Chinua Achebe",
+        "Ngũgĩ wa Thiong'o",
+        "Abdulrazak Gurnah"
+      ],
+      "a": 3,
+      "e": "‘Paradise’, ‘Afterlives’-এর লেখক Abdulrazak Gurnah ২০২১ সালে নোবেল পান।",
+      "t": "২০২১ — Gurnah।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "Which British statesman won the Nobel Prize in Literature in 1953?",
+      "o": [
+        "Winston Churchill",
+        "Clement Attlee",
+        "Bertrand Russell",
+        "Anthony Eden"
+      ],
+      "a": 0,
+      "e": "ইতিহাস ও জীবনী রচনা এবং বক্তৃতার জন্য Churchill ১৯৫৩ সালে সাহিত্যে নোবেল পান।",
+      "t": "১৯৫৩ — Churchill।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস — ১২-৩৭-এ দার্শনিক Bertrand Russell-এর নোবেল জিজ্ঞাসিত; এটি ভিন্ন ব্যক্তি (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "The Imagist movement in poetry was led mainly by—",
+      "o": [
+        "W. B. Yeats",
+        "Ezra Pound",
+        "Philip Larkin",
+        "Rupert Brooke"
+      ],
+      "a": 1,
+      "e": "স্পষ্ট চিত্রকল্প ও সংক্ষিপ্ততার আন্দোলন — Ezra Pound-এর নেতৃত্বে।",
+      "t": "Imagism — Pound।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "Which of the following is a war poet of the First World War?",
+      "o": [
+        "Ted Hughes",
+        "Philip Larkin",
+        "Siegfried Sassoon",
+        "Seamus Heaney"
+      ],
+      "a": 2,
+      "e": "Sassoon, Owen, Brooke — প্রথম বিশ্বযুদ্ধের কবি।",
+      "t": "WWI কবি — Sassoon।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "The 'Angry Young Men' were writers of the—",
+      "o": [
+        "1890s",
+        "1920s",
+        "1950s",
+        "1980s"
+      ],
+      "a": 2,
+      "e": "Osborne, Kingsley Amis প্রমুখ — ১৯৫০-এর দশকের প্রতিবাদী লেখক।",
+      "t": "Angry Young Men = ১৯৫০-এর দশক।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "Who created the character Jeeves, the clever valet?",
+      "o": [
+        "Agatha Christie",
+        "Evelyn Waugh",
+        "Somerset Maugham",
+        "P. G. Wodehouse"
+      ],
+      "a": 3,
+      "e": "Bertie Wooster ও তাঁর ভৃত্য Jeeves — P. G. Wodehouse।",
+      "t": "Jeeves — Wodehouse।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.MOD",
+      "d": "Medium",
+      "q": "In Conrad's 'Heart of Darkness', the ivory agent deep in the Congo is—",
+      "o": [
+        "Kurtz",
+        "Marlow",
+        "Jim",
+        "Nostromo"
+      ],
+      "a": 0,
+      "e": "Marlow বর্ণনাকারী; Kurtz রহস্যময় হাতির দাঁত ব্যবসায়ী — ‘The horror! The horror!’।",
+      "t": "Kurtz।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; NobelPrize.org; Booker Prize records)",
+      "dup": "পাস — ৪৭-১০৯-এ এ উপন্যাসের লেখক জিজ্ঞাসিত; এটি চরিত্র (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

@@ -1,0 +1,1405 @@
+{
+  "batch": "Batch 08",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 12–15 (Romantic Period, Characters, Quotations)",
+  "subtopics": {
+    "EN.LI.ROM": {}
+  },
+  "questions": [
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "The Romantic period in English literature is usually dated—",
+      "o": [
+        "1558–1603",
+        "1660–1700",
+        "1798–1832",
+        "1837–1901"
+      ],
+      "a": 2,
+      "e": "১৭৯৮ (Lyrical Ballads) থেকে ১৮৩২ (Reform Bill/Scott-এর মৃত্যু)।",
+      "t": "১৭৯৮–১৮৩২।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Lyrical Ballads' was first published in—",
+      "o": [
+        "1789",
+        "1798",
+        "1800",
+        "1812"
+      ],
+      "a": 1,
+      "e": "Wordsworth ও Coleridge-এর যৌথ ‘Lyrical Ballads’ ১৭৯৮ সালে; দ্বিতীয় সংস্করণে (১৮০০) Preface।",
+      "t": "Lyrical Ballads = ১৭৯৮।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ৩৬-৪২-এ Romantic যুগের সূচনা (Preface to Lyrical Ballads) জিজ্ঞাসিত; এটি প্রথম প্রকাশসাল (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Lyrical Ballads' was a joint work of Wordsworth and—",
+      "o": [
+        "Coleridge",
+        "Southey",
+        "Byron",
+        "Scott"
+      ],
+      "a": 0,
+      "e": "Wordsworth ও Coleridge যৌথভাবে প্রকাশ করেন; Coleridge-এর ‘The Rime of the Ancient Mariner’ এতে ছিল।",
+      "t": "W + C = Lyrical Ballads।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "The 'Lake Poets' were Wordsworth, Coleridge and—",
+      "o": [
+        "Lord Byron",
+        "John Keats",
+        "P. B. Shelley",
+        "Robert Southey"
+      ],
+      "a": 3,
+      "e": "ইংল্যান্ডের Lake District-এ বসবাসকারী তিন কবি — Lake Poets।",
+      "t": "Lake Poets = W, C, Southey।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Wordsworth was born at—",
+      "o": [
+        "Cockermouth",
+        "Ottery St Mary",
+        "London",
+        "Edinburgh"
+      ],
+      "a": 0,
+      "e": "১৭৭০ সালে কাম্বারল্যান্ডের Cockermouth-এ জন্ম; Coleridge-এর জন্ম Ottery St Mary-তে।",
+      "t": "Wordsworth — Cockermouth।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Wordsworth became Poet Laureate in—",
+      "o": [
+        "1798",
+        "1813",
+        "1843",
+        "1850"
+      ],
+      "a": 2,
+      "e": "Southey-র মৃত্যুর পর ১৮৪৩ সালে Wordsworth Poet Laureate হন; ১৮৫০ সালে মারা যান।",
+      "t": "Wordsworth Laureate = ১৮৪৩।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'The Prelude' was written by—",
+      "o": [
+        "Walter Scott",
+        "Robert Burns",
+        "P. B. Shelley",
+        "William Wordsworth"
+      ],
+      "a": 3,
+      "e": "Wordsworth-এর আত্মজৈবনিক দীর্ঘ কবিতা, মৃত্যুর পর ১৮৫০ সালে প্রকাশিত।",
+      "t": "The Prelude — William Wordsworth।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Hard",
+      "q": "'The Prelude' is subtitled—",
+      "o": [
+        "Growth of a Poet's Mind",
+        "A Vision in a Dream",
+        "A Romaunt",
+        "An Autobiography in Verse"
+      ],
+      "a": 0,
+      "e": "পূর্ণ নাম: The Prelude, or Growth of a Poet's Mind।",
+      "t": "Growth of a Poet's Mind।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Lines Composed a Few Miles above Tintern Abbey' was written by—",
+      "o": [
+        "William Blake",
+        "William Wordsworth",
+        "Lord Byron",
+        "Robert Burns"
+      ],
+      "a": 1,
+      "e": "প্রকৃতির নিরাময়ী শক্তি নিয়ে Wordsworth-এর বিখ্যাত কবিতা (Lyrical Ballads-এ)।",
+      "t": "Lines Composed a Few Miles above Tintern Abbey — William Wordsworth।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Michael' was written by—",
+      "o": [
+        "Robert Burns",
+        "Lord Byron",
+        "William Wordsworth",
+        "William Blake"
+      ],
+      "a": 2,
+      "e": "মেষপালক Michael-কে নিয়ে Wordsworth-এর ‘A Pastoral Poem’।",
+      "t": "Michael — William Wordsworth।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Hard",
+      "q": "'Ode: Intimations of Immortality' was written by—",
+      "o": [
+        "S. T. Coleridge",
+        "William Blake",
+        "John Keats",
+        "William Wordsworth"
+      ],
+      "a": 3,
+      "e": "শৈশবস্মৃতিতে অমরত্বের আভাস নিয়ে Wordsworth-এর ode।",
+      "t": "Ode: Intimations of Immortality — William Wordsworth।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ৩৬-৫৯-এ ‘Child is the father of man’-এর কবি জিজ্ঞাসিত; এটি ভিন্ন কবিতা (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'The World Is Too Much with Us' was written by—",
+      "o": [
+        "William Wordsworth",
+        "P. B. Shelley",
+        "Robert Burns",
+        "Lord Byron"
+      ],
+      "a": 0,
+      "e": "বস্তুবাদের সমালোচনামূলক সনেট।",
+      "t": "The World Is Too Much with Us — William Wordsworth।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'She dwelt among the untrodden ways' — Who wrote this line?",
+      "o": [
+        "Robert Burns",
+        "William Wordsworth",
+        "Lord Byron",
+        "William Blake"
+      ],
+      "a": 1,
+      "e": "Wordsworth-এর ‘Lucy poems’-এর একটি।",
+      "t": "She dwelt among the untrodde… — William Wordsworth।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Hard",
+      "q": "'Bliss was it in that dawn to be alive' — Who wrote this line?",
+      "o": [
+        "John Keats",
+        "S. T. Coleridge",
+        "William Wordsworth",
+        "Walter Scott"
+      ],
+      "a": 2,
+      "e": "ফরাসি বিপ্লব প্রসঙ্গে The Prelude-এর চরণ।",
+      "t": "Bliss was it in that dawn to… — William Wordsworth।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Milton! thou shouldst be living at this hour' — Who wrote this line?",
+      "o": [
+        "Walter Scott",
+        "S. T. Coleridge",
+        "John Keats",
+        "William Wordsworth"
+      ],
+      "a": 3,
+      "e": "‘London, 1802’ সনেটের প্রথম চরণ।",
+      "t": "Milton! thou shouldst be liv… — William Wordsworth।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Wordsworth's sister, whose journals inspired some of his poems, was—",
+      "o": [
+        "Dorothy",
+        "Mary",
+        "Sara",
+        "Lucy"
+      ],
+      "a": 0,
+      "e": "Dorothy Wordsworth-এর Grasmere Journal থেকে অনেক কবিতার অনুপ্রেরণা।",
+      "t": "বোন Dorothy।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Wordsworth lived for years at Dove Cottage in—",
+      "o": [
+        "Bath",
+        "Grasmere",
+        "Stratford",
+        "Haworth"
+      ],
+      "a": 1,
+      "e": "Lake District-এর Grasmere-এ Dove Cottage; Haworth ব্রন্টে বোনদের বাড়ি।",
+      "t": "Dove Cottage — Grasmere।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Christabel' was written by—",
+      "o": [
+        "Walter Scott",
+        "John Keats",
+        "S. T. Coleridge",
+        "P. B. Shelley"
+      ],
+      "a": 2,
+      "e": "Coleridge-এর অসমাপ্ত অতিপ্রাকৃত কবিতা।",
+      "t": "Christabel — S. T. Coleridge।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Dejection: An Ode' was written by—",
+      "o": [
+        "P. B. Shelley",
+        "John Keats",
+        "Walter Scott",
+        "S. T. Coleridge"
+      ],
+      "a": 3,
+      "e": "সৃজনশক্তি হারানোর বেদনা নিয়ে Coleridge-এর ode।",
+      "t": "Dejection: An Ode — S. T. Coleridge।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "The phrase 'willing suspension of disbelief' was coined by—",
+      "o": [
+        "S. T. Coleridge",
+        "William Wordsworth",
+        "John Keats",
+        "Matthew Arnold"
+      ],
+      "a": 0,
+      "e": "Coleridge Biographia Literaria-তে কাব্যবিশ্বাস ব্যাখ্যায় এ কথা বলেন।",
+      "t": "suspension of disbelief — Coleridge।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ৩৭-১২০-এ Biographia Literaria-র লেখক জিজ্ঞাসিত; এটি তাঁর বিখ্যাত ধারণা (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Childe Harold's Pilgrimage' was written by—",
+      "o": [
+        "S. T. Coleridge",
+        "Lord Byron",
+        "William Blake",
+        "William Wordsworth"
+      ],
+      "a": 1,
+      "e": "Byron-কে রাতারাতি বিখ্যাত করে তোলা আখ্যানকাব্য।",
+      "t": "Childe Harold's Pilgrimage — Lord Byron।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'The Prisoner of Chillon' was written by—",
+      "o": [
+        "S. T. Coleridge",
+        "Robert Burns",
+        "Lord Byron",
+        "William Blake"
+      ],
+      "a": 2,
+      "e": "সুইজারল্যান্ডের Chillon দুর্গে বন্দির কাহিনি নিয়ে Byron-এর কবিতা।",
+      "t": "The Prisoner of Chillon — Lord Byron।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'She walks in beauty, like the night' — Who wrote this line?",
+      "o": [
+        "S. T. Coleridge",
+        "P. B. Shelley",
+        "Robert Burns",
+        "Lord Byron"
+      ],
+      "a": 3,
+      "e": "Byron-এর বিখ্যাত প্রেমের কবিতার প্রথম চরণ।",
+      "t": "She walks in beauty, like th… — Lord Byron।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Lord Byron died in 1824 at Missolonghi while supporting the independence of—",
+      "o": [
+        "Greece",
+        "Italy",
+        "Poland",
+        "Spain"
+      ],
+      "a": 0,
+      "e": "গ্রিসের স্বাধীনতাযুদ্ধে যোগ দিয়ে Missolonghi-তে জ্বরে মারা যান।",
+      "t": "Byron — গ্রিস।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "A proud, moody, rebellious hero with a mysterious past is called a—",
+      "o": [
+        "Tragic hero",
+        "Byronic hero",
+        "Picaresque hero",
+        "Anti-hero of the Restoration"
+      ],
+      "a": 1,
+      "e": "Byron-এর কাব্যনায়কদের আদলে এ ধরনের নায়ককে Byronic hero বলা হয়।",
+      "t": "Byronic hero।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Prometheus Unbound' was written by—",
+      "o": [
+        "William Wordsworth",
+        "William Blake",
+        "P. B. Shelley",
+        "John Keats"
+      ],
+      "a": 2,
+      "e": "Shelley-র চার অঙ্কের lyrical drama।",
+      "t": "Prometheus Unbound — P. B. Shelley।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'The Cloud' was written by—",
+      "o": [
+        "William Blake",
+        "Robert Burns",
+        "S. T. Coleridge",
+        "P. B. Shelley"
+      ],
+      "a": 3,
+      "e": "মেঘের জবানিতে লেখা Shelley-র কবিতা।",
+      "t": "The Cloud — P. B. Shelley।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Poets are the unacknowledged legislators of the world' occurs in—",
+      "o": [
+        "Shelley's A Defence of Poetry",
+        "Wordsworth's Preface",
+        "Coleridge's Biographia Literaria",
+        "Keats's Letters"
+      ],
+      "a": 0,
+      "e": "Shelley-র প্রবন্ধ ‘A Defence of Poetry’-এর শেষ বাক্য।",
+      "t": "unacknowledged legislators — Shelley।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Shelley was expelled from Oxford for writing—",
+      "o": [
+        "Queen Mab",
+        "The Necessity of Atheism",
+        "Alastor",
+        "The Mask of Anarchy"
+      ],
+      "a": 1,
+      "e": "১৮১১ সালে ‘The Necessity of Atheism’ পুস্তিকার জন্য বহিষ্কৃত।",
+      "t": "Necessity of Atheism।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Shelley died in 1822 by—",
+      "o": [
+        "fever in Greece",
+        "tuberculosis in Rome",
+        "drowning off the Italian coast",
+        "a duel in London"
+      ],
+      "a": 2,
+      "e": "ইতালির উপকূলে (Gulf of Spezia) নৌকাডুবিতে মৃত্যু; Keats যক্ষ্মায় রোমে, Byron গ্রিসে জ্বরে।",
+      "t": "Shelley — ডুবে মৃত্যু।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Frankenstein' was written by—",
+      "o": [
+        "Ann Radcliffe",
+        "Jane Austen",
+        "Emily Brontë",
+        "Mary Shelley"
+      ],
+      "a": 3,
+      "e": "Shelley-র স্ত্রী Mary Shelley ১৮১৮ সালে ‘Frankenstein’ রচনা করেন।",
+      "t": "Frankenstein — Mary Shelley।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Hard",
+      "q": "'The Mask of Anarchy' was written by—",
+      "o": [
+        "P. B. Shelley",
+        "John Keats",
+        "Walter Scott",
+        "Lord Byron"
+      ],
+      "a": 0,
+      "e": "১৮১৯ সালের Peterloo হত্যাকাণ্ডের প্রতিবাদে Shelley-র কবিতা।",
+      "t": "The Mask of Anarchy — P. B. Shelley।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Lamia' was written by—",
+      "o": [
+        "S. T. Coleridge",
+        "John Keats",
+        "William Blake",
+        "William Wordsworth"
+      ],
+      "a": 1,
+      "e": "সাপ-নারী Lamia-কে নিয়ে Keats-এর আখ্যানকাব্য (১৮২০)।",
+      "t": "Lamia — John Keats।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Which poem opens with the line 'A thing of beauty is a joy for ever'?",
+      "o": [
+        "Lamia",
+        "Hyperion",
+        "Endymion",
+        "Isabella"
+      ],
+      "a": 2,
+      "e": "Keats-এর দীর্ঘ কবিতা Endymion (১৮১৮)-এর প্রথম চরণ।",
+      "t": "thing of beauty — Endymion।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Ode to a Nightingale' was written by—",
+      "o": [
+        "Lord Byron",
+        "P. B. Shelley",
+        "Walter Scott",
+        "John Keats"
+      ],
+      "a": 3,
+      "e": "Keats-এর বিখ্যাত ode; ‘My heart aches, and a drowsy numbness pains…’।",
+      "t": "Ode to a Nightingale — John Keats।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'La Belle Dame sans Merci' was written by—",
+      "o": [
+        "John Keats",
+        "William Wordsworth",
+        "P. B. Shelley",
+        "Walter Scott"
+      ],
+      "a": 0,
+      "e": "নির্দয় সুন্দরীকে নিয়ে Keats-এর ballad।",
+      "t": "La Belle Dame sans Merci — John Keats।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'The Eve of St. Agnes' was written by—",
+      "o": [
+        "Robert Burns",
+        "John Keats",
+        "S. T. Coleridge",
+        "William Blake"
+      ],
+      "a": 1,
+      "e": "মধ্যযুগীয় প্রেমের আখ্যান — Keats।",
+      "t": "The Eve of St. Agnes — John Keats।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Hard",
+      "q": "'Hyperion' was written by—",
+      "o": [
+        "Lord Byron",
+        "Walter Scott",
+        "John Keats",
+        "Robert Burns"
+      ],
+      "a": 2,
+      "e": "গ্রিক পুরাণভিত্তিক অসমাপ্ত মহাকাব্য — Keats।",
+      "t": "Hyperion — John Keats।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'On First Looking into Chapman's Homer' was written by—",
+      "o": [
+        "Lord Byron",
+        "P. B. Shelley",
+        "Walter Scott",
+        "John Keats"
+      ],
+      "a": 3,
+      "e": "Chapman-এর হোমার অনুবাদ পড়ে লেখা Keats-এর সনেট।",
+      "t": "On First Looking into Chapman's Homer — John Keats।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "John Keats died in 1821 in—",
+      "o": [
+        "Rome",
+        "London",
+        "Florence",
+        "Venice"
+      ],
+      "a": 0,
+      "e": "যক্ষ্মায় আক্রান্ত হয়ে ২৫ বছর বয়সে রোমে মৃত্যু।",
+      "t": "Keats — রোম।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Hard",
+      "q": "Keats's epitaph reads—",
+      "o": [
+        "Cast a cold eye on life, on death",
+        "Here lies one whose name was writ in water",
+        "Rest in peace, a poet true",
+        "Death, be not proud"
+      ],
+      "a": 1,
+      "e": "Keats নিজেই এই এপিটাফ বেছে নিয়েছিলেন।",
+      "t": "writ in water — Keats।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Hard",
+      "q": "The term 'Negative Capability' is associated with—",
+      "o": [
+        "William Blake",
+        "S. T. Coleridge",
+        "John Keats",
+        "Lord Byron"
+      ],
+      "a": 2,
+      "e": "Keats-এর চিঠিতে — অনিশ্চয়তার মধ্যে থাকতে পারার শিল্পীসুলভ ক্ষমতা।",
+      "t": "Negative Capability — Keats।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Keats's beloved, to whom many of his letters were written, was—",
+      "o": [
+        "Augusta Leigh",
+        "Mary Godwin",
+        "Dorothy",
+        "Fanny Brawne"
+      ],
+      "a": 3,
+      "e": "Fanny Brawne Keats-এর প্রেমিকা।",
+      "t": "Fanny Brawne।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Ode on Melancholy' was written by—",
+      "o": [
+        "John Keats",
+        "Robert Burns",
+        "S. T. Coleridge",
+        "William Blake"
+      ],
+      "a": 0,
+      "e": "Keats-এর ১৮১৯ সালের ode-গুলোর একটি।",
+      "t": "Ode on Melancholy — John Keats।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Songs of Innocence and of Experience' was written by—",
+      "o": [
+        "S. T. Coleridge",
+        "William Blake",
+        "John Keats",
+        "William Wordsworth"
+      ],
+      "a": 1,
+      "e": "শৈশবের সরলতা ও জগতের অভিজ্ঞতার বিপরীত চিত্র — Blake।",
+      "t": "Songs of Innocence and of Experience — William Blake।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ১৫-৬৪, ৪৩-৬৯-এ Blake কবি ও চিত্রশিল্পী—এ তথ্য জিজ্ঞাসিত; এটি তাঁর গ্রন্থ (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Tyger Tyger, burning bright' — Who wrote this line?",
+      "o": [
+        "P. B. Shelley",
+        "William Wordsworth",
+        "William Blake",
+        "Walter Scott"
+      ],
+      "a": 2,
+      "e": "Songs of Experience-এর ‘The Tyger’।",
+      "t": "Tyger Tyger, burning bright… — William Blake।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'The Lamb' was written by—",
+      "o": [
+        "William Wordsworth",
+        "S. T. Coleridge",
+        "John Keats",
+        "William Blake"
+      ],
+      "a": 3,
+      "e": "Songs of Innocence-এর কবিতা, The Tyger-এর বিপরীত।",
+      "t": "The Lamb — William Blake।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Hard",
+      "q": "'The Marriage of Heaven and Hell' was written by—",
+      "o": [
+        "William Blake",
+        "William Wordsworth",
+        "P. B. Shelley",
+        "Walter Scott"
+      ],
+      "a": 0,
+      "e": "Blake-এর গদ্য-পদ্য মিশ্রিত দার্শনিক রচনা।",
+      "t": "The Marriage of Heaven and Hell — William Blake।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Hard",
+      "q": "'To see a World in a Grain of Sand' — Who wrote this line?",
+      "o": [
+        "John Keats",
+        "William Blake",
+        "William Wordsworth",
+        "P. B. Shelley"
+      ],
+      "a": 1,
+      "e": "‘Auguries of Innocence’-এর প্রথম চরণ।",
+      "t": "To see a World in a Grain of… — William Blake।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'A Red, Red Rose' was written by—",
+      "o": [
+        "William Wordsworth",
+        "John Keats",
+        "Robert Burns",
+        "P. B. Shelley"
+      ],
+      "a": 2,
+      "e": "স্কটিশ কবি Burns-এর প্রেমের গান।",
+      "t": "A Red, Red Rose — Robert Burns।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Auld Lang Syne' was written by—",
+      "o": [
+        "S. T. Coleridge",
+        "Lord Byron",
+        "William Blake",
+        "Robert Burns"
+      ],
+      "a": 3,
+      "e": "নববর্ষে গাওয়া জনপ্রিয় স্কটিশ গান — Burns।",
+      "t": "Auld Lang Syne — Robert Burns।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Robert Burns is regarded as the national poet of—",
+      "o": [
+        "Scotland",
+        "Ireland",
+        "Wales",
+        "England"
+      ],
+      "a": 0,
+      "e": "Burns স্কটল্যান্ডের জাতীয় কবি।",
+      "t": "Burns — Scotland।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Ivanhoe' was written by—",
+      "o": [
+        "William Wordsworth",
+        "Walter Scott",
+        "P. B. Shelley",
+        "Robert Burns"
+      ],
+      "a": 1,
+      "e": "মধ্যযুগীয় ইংল্যান্ডের পটভূমিতে Scott-এর ঐতিহাসিক উপন্যাস।",
+      "t": "Ivanhoe — Walter Scott।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Walter Scott's first novel was—",
+      "o": [
+        "Rob Roy",
+        "Ivanhoe",
+        "Waverley",
+        "Kenilworth"
+      ],
+      "a": 2,
+      "e": "১৮১৪ সালে প্রকাশিত ‘Waverley’ দিয়ে Scott-এর উপন্যাস-জীবন শুরু।",
+      "t": "প্রথম উপন্যাস — Waverley।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Walter Scott is often called the father of the—",
+      "o": [
+        "epistolary novel",
+        "detective novel",
+        "Gothic novel",
+        "historical novel"
+      ],
+      "a": 3,
+      "e": "Scott ইতিহাসভিত্তিক উপন্যাসের পথিকৃৎ।",
+      "t": "Scott = historical novel।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Hard",
+      "q": "'The Lady of the Lake' was written by—",
+      "o": [
+        "Walter Scott",
+        "John Keats",
+        "William Wordsworth",
+        "P. B. Shelley"
+      ],
+      "a": 0,
+      "e": "Scott-এর আখ্যানকাব্য (১৮১০)।",
+      "t": "The Lady of the Lake — Walter Scott।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Jane Austen's first published novel was—",
+      "o": [
+        "Pride and Prejudice",
+        "Sense and Sensibility",
+        "Emma",
+        "Persuasion"
+      ],
+      "a": 1,
+      "e": "১৮১১ সালে ‘Sense and Sensibility’; Pride and Prejudice ১৮১৩।",
+      "t": "প্রথম — Sense and Sensibility।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস — ৪৫-৪৮-এ Pride and Prejudice-এর চরিত্র জিজ্ঞাসিত; এটি প্রথম উপন্যাস (নিকট-সম্পর্কিত, পর্যালোচিত)",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "The heroine of Jane Austen's 'Emma' is—",
+      "o": [
+        "Anne Elliot",
+        "Elizabeth Bennet",
+        "Emma Woodhouse",
+        "Fanny Price"
+      ],
+      "a": 2,
+      "e": "Emma Woodhouse; Anne Elliot — Persuasion, Fanny Price — Mansfield Park।",
+      "t": "Emma Woodhouse।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Which novel was written by Jane Austen?",
+      "o": [
+        "Vanity Fair",
+        "Middlemarch",
+        "Jane Eyre",
+        "Persuasion"
+      ],
+      "a": 3,
+      "e": "Persuasion (১৮১৭) Austen-এর শেষ সম্পূর্ণ উপন্যাস।",
+      "t": "Persuasion — Austen।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Essays of Elia' was written by—",
+      "o": [
+        "Charles Lamb",
+        "William Hazlitt",
+        "Thomas De Quincey",
+        "Leigh Hunt"
+      ],
+      "a": 0,
+      "e": "Charles Lamb ‘Elia’ ছদ্মনামে প্রবন্ধ লিখতেন।",
+      "t": "Elia = Charles Lamb।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'The Spirit of the Age' is a work by—",
+      "o": [
+        "Charles Lamb",
+        "William Hazlitt",
+        "Thomas Carlyle",
+        "Matthew Arnold"
+      ],
+      "a": 1,
+      "e": "Hazlitt-এর সমকালীন লেখকদের প্রতিকৃতিমূলক প্রবন্ধসংকলন (১৮২৫)।",
+      "t": "Spirit of the Age — Hazlitt।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Confessions of an English Opium-Eater' was written by—",
+      "o": [
+        "Charles Lamb",
+        "S. T. Coleridge",
+        "Thomas De Quincey",
+        "Lord Byron"
+      ],
+      "a": 2,
+      "e": "De Quincey-র আত্মজৈবনিক রচনা (১৮২১)।",
+      "t": "Opium-Eater — De Quincey।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Byron, Shelley and Keats are known as the—",
+      "o": [
+        "Pre-Raphaelites",
+        "Lake Poets",
+        "Metaphysical poets",
+        "second generation of Romantic poets"
+      ],
+      "a": 3,
+      "e": "Wordsworth-Coleridge প্রথম প্রজন্ম; Byron-Shelley-Keats দ্বিতীয় প্রজন্ম।",
+      "t": "দ্বিতীয় প্রজন্ম = B, S, K।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Which of the following is considered a pre-Romantic poet?",
+      "o": [
+        "William Cowper",
+        "Alexander Pope",
+        "John Dryden",
+        "Alfred Tennyson"
+      ],
+      "a": 0,
+      "e": "Cowper, Gray, Burns প্রমুখ Romantic যুগের পূর্বসূরি; Pope-Dryden Neoclassical।",
+      "t": "pre-Romantic — Cowper।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'The Revolt of Islam' was written by—",
+      "o": [
+        "William Wordsworth",
+        "P. B. Shelley",
+        "John Keats",
+        "Walter Scott"
+      ],
+      "a": 1,
+      "e": "Shelley-র দীর্ঘ আখ্যানকাব্য (১৮১৮)।",
+      "t": "The Revolt of Islam — P. B. Shelley।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Bright star, would I were stedfast as thou art' — Who wrote this line?",
+      "o": [
+        "Lord Byron",
+        "Walter Scott",
+        "John Keats",
+        "Robert Burns"
+      ],
+      "a": 2,
+      "e": "Keats-এর সনেট ‘Bright Star’।",
+      "t": "Bright star, would I were st… — John Keats।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Peter Bell' was written by—",
+      "o": [
+        "P. B. Shelley",
+        "John Keats",
+        "Walter Scott",
+        "William Wordsworth"
+      ],
+      "a": 3,
+      "e": "Wordsworth-এর ১৮১৯ সালে প্রকাশিত কাব্য।",
+      "t": "Peter Bell — William Wordsworth।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Robert Southey became Poet Laureate in—",
+      "o": [
+        "1798",
+        "1813",
+        "1822",
+        "1843"
+      ],
+      "a": 1,
+      "e": "Southey ১৮১৩ থেকে ১৮৪৩ সাল পর্যন্ত Poet Laureate ছিলেন।",
+      "t": "Southey = ১৮১৩।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "The Romantic poets reacted mainly against the—",
+      "o": [
+        "artificial diction of Neoclassical poetry",
+        "simple language of ballads",
+        "influence of nature",
+        "use of imagination"
+      ],
+      "a": 0,
+      "e": "Romantic কবিরা Neoclassical যুগের কৃত্রিম কাব্যভাষা ও নিয়মের বিরুদ্ধে প্রতিক্রিয়া দেখান।",
+      "t": "Romantic ↔ Neoclassical কৃত্রিমতা।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "The 'Gothic novel' tradition of the Romantic era includes—",
+      "o": [
+        "Tom Jones",
+        "The Mysteries of Udolpho",
+        "Middlemarch",
+        "Mrs Dalloway"
+      ],
+      "a": 1,
+      "e": "Ann Radcliffe-র ‘The Mysteries of Udolpho’ (১৭৯৪) বিখ্যাত Gothic উপন্যাস।",
+      "t": "Udolpho — Gothic।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Hard",
+      "q": "'The Mysteries of Udolpho' was written by—",
+      "o": [
+        "Jane Austen",
+        "Mary Shelley",
+        "Ann Radcliffe",
+        "Fanny Burney"
+      ],
+      "a": 2,
+      "e": "Ann Radcliffe — Gothic উপন্যাসের প্রধান লেখিকা।",
+      "t": "Udolpho — Radcliffe।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Jane Austen's 'Northanger Abbey' parodies the—",
+      "o": [
+        "epistolary poem",
+        "historical novel",
+        "picaresque novel",
+        "Gothic novel"
+      ],
+      "a": 3,
+      "e": "Northanger Abbey Gothic উপন্যাসের প্রতি ব্যঙ্গ।",
+      "t": "Northanger Abbey = Gothic parody।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "Who wrote 'Mansfield Park'?",
+      "o": [
+        "Jane Austen",
+        "Walter Scott",
+        "Maria Edgeworth",
+        "Mary Shelley"
+      ],
+      "a": 0,
+      "e": "Mansfield Park (১৮১৪) — Jane Austen; নায়িকা Fanny Price।",
+      "t": "Mansfield Park — Austen।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Kenilworth' and 'Rob Roy' are novels by—",
+      "o": [
+        "Charles Dickens",
+        "Walter Scott",
+        "Jane Austen",
+        "Thomas Hardy"
+      ],
+      "a": 1,
+      "e": "দুটিই Scott-এর ঐতিহাসিক উপন্যাস।",
+      "t": "Rob Roy — Scott।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "William Hazlitt is best known as a/an—",
+      "o": [
+        "dramatist",
+        "novelist",
+        "essayist and critic",
+        "Poet Laureate"
+      ],
+      "a": 2,
+      "e": "Hazlitt রোমান্টিক যুগের প্রবন্ধকার ও সমালোচক (Table Talk)।",
+      "t": "Hazlitt = essayist।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Isabella, or the Pot of Basil' was written by—",
+      "o": [
+        "Lord Byron",
+        "P. B. Shelley",
+        "Walter Scott",
+        "John Keats"
+      ],
+      "a": 3,
+      "e": "Boccaccio-র কাহিনি অবলম্বনে Keats-এর আখ্যানকাব্য।",
+      "t": "Isabella, or the Pot of Basil — John Keats।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Hard",
+      "q": "'Epipsychidion' was written by—",
+      "o": [
+        "P. B. Shelley",
+        "John Keats",
+        "Walter Scott",
+        "Lord Byron"
+      ],
+      "a": 0,
+      "e": "আদর্শ প্রেম নিয়ে Shelley-র দীর্ঘ কবিতা (১৮২১)।",
+      "t": "Epipsychidion — P. B. Shelley।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Manfred' was written by—",
+      "o": [
+        "S. T. Coleridge",
+        "Lord Byron",
+        "William Blake",
+        "William Wordsworth"
+      ],
+      "a": 1,
+      "e": "Byron-এর নাট্যকাব্য (dramatic poem, ১৮১৭)।",
+      "t": "Manfred — Lord Byron।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'Tam o' Shanter' was written by—",
+      "o": [
+        "William Wordsworth",
+        "John Keats",
+        "Robert Burns",
+        "P. B. Shelley"
+      ],
+      "a": 2,
+      "e": "স্কটিশ লোককাহিনিভিত্তিক Burns-এর আখ্যানকাব্য।",
+      "t": "Tam o' Shanter — Robert Burns।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Hard",
+      "q": "'Wee, sleekit, cow'rin, tim'rous beastie' — Who wrote this line?",
+      "o": [
+        "S. T. Coleridge",
+        "Lord Byron",
+        "William Blake",
+        "Robert Burns"
+      ],
+      "a": 3,
+      "e": "Burns-এর ‘To a Mouse’ কবিতার প্রথম চরণ।",
+      "t": "Wee, sleekit, cow'rin, tim'r… — Robert Burns।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Medium",
+      "q": "'The Excursion' was written by—",
+      "o": [
+        "William Wordsworth",
+        "S. T. Coleridge",
+        "John Keats",
+        "Walter Scott"
+      ],
+      "a": 0,
+      "e": "Wordsworth-এর দীর্ঘ দার্শনিক কবিতা (১৮১৪)।",
+      "t": "The Excursion — William Wordsworth।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.LI.ROM",
+      "d": "Hard",
+      "q": "'Frost at Midnight' was written by—",
+      "o": [
+        "Walter Scott",
+        "S. T. Coleridge",
+        "P. B. Shelley",
+        "Robert Burns"
+      ],
+      "a": 1,
+      "e": "শিশুপুত্রকে উদ্দেশ করে Coleridge-এর ‘conversation poem’।",
+      "t": "Frost at Midnight — S. T. Coleridge।",
+      "src": "Lecture 12–15 ও Authoritative Literature Reference (Oxford Companion to English Literature; Britannica)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

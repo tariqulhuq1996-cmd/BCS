@@ -1,0 +1,106 @@
+// Batch 04 — EN.VO.MNG Word Meaning ও Usage (Priority A, লক্ষ্য ৭৬)
+const seed = (s) => [...s].reduce((a, c) => a + c.charCodeAt(0), 0);
+const pickFrom = (pool, ans, key) => { const c = pool.filter((p) => p !== ans); const o = []; let k = seed(key); while (o.length < 3) { const v = c[k % c.length]; if (!o.includes(v)) o.push(v); k += 7; } return o; };
+const WORDS = [
+  ["ambiguous", "having more than one possible meaning", "দ্ব্যর্থক, অস্পষ্ট"],
+  ["benevolent", "kind and generous", "দয়ালু, পরোপকারী"],
+  ["candid", "frank and honest", "অকপট, স্পষ্টভাষী"],
+  ["clandestine", "done secretly", "গোপন, গুপ্ত"],
+  ["cynical", "distrustful of people's motives", "মানুষের সদিচ্ছায় অবিশ্বাসী"],
+  ["diligent", "hardworking and careful", "পরিশ্রমী, অধ্যবসায়ী"],
+  ["eloquent", "fluent and persuasive in speech", "বাগ্মী"],
+  ["ephemeral", "lasting a very short time", "ক্ষণস্থায়ী"],
+  ["frugal", "careful in spending; thrifty", "মিতব্যয়ী"],
+  ["gregarious", "fond of company; sociable", "সঙ্গপ্রিয়, মিশুক"],
+  ["hypocrite", "a person who pretends to have virtues", "ভণ্ড"],
+  ["inevitable", "certain to happen", "অনিবার্য"],
+  ["lethargic", "sluggish and lacking energy", "অলস, নিস্তেজ"],
+  ["meticulous", "very careful about details", "খুঁতখুঁতে, অতি যত্নশীল"],
+  ["nostalgia", "sentimental longing for the past", "অতীতের জন্য স্মৃতিকাতরতা"],
+  ["obsolete", "no longer in use", "অপ্রচলিত, সেকেলে"],
+  ["ominous", "suggesting that something bad will happen", "অশুভ"],
+  ["pedantic", "too concerned with minor rules and book learning", "পাণ্ডিত্যের ভান করা, খুঁটিনাটি নিয়মে আচ্ছন্ন"],
+  ["procrastinate", "to delay doing something", "গড়িমসি করা"],
+  ["prudent", "acting with care and good judgement", "বিচক্ষণ"],
+  ["redundant", "no longer needed; superfluous", "অপ্রয়োজনীয়, বাহুল্য"],
+  ["resilient", "able to recover quickly from difficulty", "দ্রুত সামলে ওঠার ক্ষমতাসম্পন্ন"],
+  ["sycophant", "a person who flatters to gain advantage", "চাটুকার, তোষামোদকারী"],
+  ["tenacious", "holding firmly to a purpose", "নাছোড়বান্দা, দৃঢ়প্রতিজ্ঞ"],
+  ["ubiquitous", "present everywhere", "সর্বব্যাপী"],
+  ["verbose", "using more words than needed", "বাগাড়ম্বরপূর্ণ"],
+  ["vindicate", "to clear someone of blame", "নির্দোষ প্রমাণ করা"],
+  ["xenophobia", "dislike or fear of foreigners", "বিদেশিভীতি/বিদেশিবিদ্বেষ"],
+  ["zealous", "full of eager enthusiasm", "উৎসাহী, উদ্যমী"],
+  ["anonymous", "of unknown name or authorship", "নামহীন, বেনামি"],
+  ["bureaucracy", "government by officials and fixed procedures", "আমলাতন্ত্র"],
+  ["censorship", "official control of what may be published", "নিবারণ/সেন্সর ব্যবস্থা"],
+  ["consensus", "general agreement", "সর্বসম্মতি/মতৈক্য"],
+  ["embargo", "an official ban on trade", "বাণিজ্য নিষেধাজ্ঞা"],
+  ["extradition", "handing over an accused person to another country", "বন্দি প্রত্যর্পণ"],
+  ["inflation", "a general rise in prices", "মুদ্রাস্ফীতি"],
+  ["veto", "the right to reject a decision", "নাকচ করার ক্ষমতা"],
+  ["asylum", "protection given to a refugee", "রাজনৈতিক আশ্রয়"],
+  ["coup", "a sudden illegal seizure of power", "অভ্যুত্থান"],
+  ["lobby", "a group trying to influence lawmakers", "প্রভাব খাটানো গোষ্ঠী"],
+  ["bilateral", "involving two parties or countries", "দ্বিপাক্ষিক"],
+  ["manifesto", "a public declaration of policy", "ইশতেহার"],
+  ["amnesty", "an official pardon", "সাধারণ ক্ষমা"],
+  ["quorum", "the minimum number of members needed for a meeting", "কোরাম, ন্যূনতম উপস্থিতি"],
+  ["incumbent", "the current holder of an office", "পদে আসীন ব্যক্তি"],
+  ["autonomy", "self-government", "স্বায়ত্তশাসন"],
+  ["veteran", "a person with long experience", "অভিজ্ঞ, প্রবীণ"],
+  ["connoisseur", "an expert judge of matters of taste", "রসজ্ঞ, সমঝদার"],
+];
+const MEAN = WORDS.map((w) => w[1]);
+let s = 0;
+const STEM = [(w) => `The word '${w}' means—`, (w) => `What is the meaning of '${w}'?`, (w) => `'${w}' most nearly means—`];
+const wordItems = WORDS.map(([w, m, bn], i) => [i % 4 === 0 ? "E" : i % 3 === 0 ? "H" : "M", STEM[s++ % 3](w), [m, ...pickFrom(MEAN, m, w)], 0, `${w} = ${bn} (${m})।`, `${w} → ${bn}।`]);
+
+const CTX = [
+  ["The minister's speech was full of rhetoric.", "rhetoric", "language meant to persuade, often insincere", ["exact statistics", "rude remarks", "historical facts"], "rhetoric = বক্তৃতার কলাকৌশল, প্রায়ই ফাঁপা অলংকৃত ভাষা।"],
+  ["The teacher gave a lucid explanation of the theory.", "lucid", "clear and easy to understand", ["long and boring", "confusing", "brief but wrong"], "lucid = স্পষ্ট, সহজবোধ্য।"],
+  ["The meeting was adjourned till Monday.", "adjourned", "postponed", ["cancelled forever", "concluded", "started"], "adjourn = মুলতবি করা।"],
+  ["The committee's decision was unanimous.", "unanimous", "agreed by everyone", ["opposed by all", "taken in secret", "made in haste"], "unanimous = সর্বসম্মত।"],
+  ["His sarcastic comment hurt her feelings.", "sarcastic", "mocking", ["polite", "encouraging", "careless"], "sarcastic = বিদ্রূপাত্মক।"],
+  ["The new evidence is conclusive.", "conclusive", "decisive and convincing", ["doubtful", "partial", "irrelevant"], "conclusive = চূড়ান্ত, নিষ্পত্তিমূলক।"],
+  ["He comes from an affluent family.", "affluent", "wealthy", ["large", "educated", "religious"], "affluent = সচ্ছল, ধনী।"],
+  ["The incessant rain flooded the streets.", "incessant", "continuing without stopping", ["light", "unexpected", "seasonal"], "incessant = অবিরাম।"],
+  ["The engineers found the plan feasible.", "feasible", "possible to carry out", ["expensive", "dangerous", "outdated"], "feasible = বাস্তবায়নযোগ্য।"],
+  ["His erratic behaviour worried his friends.", "erratic", "unpredictable", ["gentle", "consistent", "cheerful"], "erratic = খামখেয়ালি, অনিয়মিত।"],
+  ["Climbing the hill was an arduous task.", "arduous", "very difficult and tiring", ["easy", "pleasant", "quick"], "arduous = কষ্টসাধ্য।"],
+  ["They threw a lavish party for the guests.", "lavish", "extravagant and generous", ["small and simple", "secret", "boring"], "lavish = জাঁকজমকপূর্ণ, অমিতব্যয়ী।"],
+  ["We have only a tentative plan for the trip.", "tentative", "not yet final", ["detailed", "approved", "cancelled"], "tentative = অস্থায়ী, প্রাথমিক।"],
+  ["The war left the people with a bleak future.", "bleak", "hopeless", ["bright", "wealthy", "peaceful"], "bleak = আশাহীন, অন্ধকারাচ্ছন্ন।"],
+  ["The rumour turned out to be unfounded.", "unfounded", "without any basis", ["true", "widely known", "amusing"], "unfounded = ভিত্তিহীন।"],
+  ["She was reluctant to speak in public.", "reluctant", "unwilling", ["eager", "trained", "afraid to listen"], "reluctant = অনিচ্ছুক।"],
+  ["Don't waste time on such trivial matters.", "trivial", "unimportant", ["serious", "urgent", "legal"], "trivial = তুচ্ছ।"],
+  ["The government repealed the old law.", "repealed", "cancelled officially", ["passed", "amended slightly", "translated"], "repeal = (আইন) রদ করা।"],
+  ["The court acquitted the accused.", "acquitted", "declared not guilty", ["sentenced", "arrested", "fined"], "acquit = খালাস দেওয়া।"],
+  ["Food prices soared after the flood.", "soared", "rose sharply", ["fell", "stayed the same", "were fixed"], "soar = হু হু করে বাড়া।"],
+];
+const ctxItems = CTX.map(([sen, w, a, o, e], i) => [i % 3 ? "M" : "H", `'${sen}' — Here '${w}' means—`, [a, ...o], 0, e, `${w} → ${e.split("=")[1].trim()}`]);
+
+const USE = [
+  ["The doctor ___ a cough syrup for the child.", "prescribed", ["proscribed", "described", "subscribed"], "prescribe = (ওষুধ) ব্যবস্থাপত্রে লেখা; proscribe = নিষিদ্ধ করা।"],
+  ["The new tax will ___ every citizen.", "affect", ["effect", "afflict", "infect"], "affect (verb) = প্রভাবিত করা; effect সাধারণত noun (ফল)।"],
+  ["The medicine had an immediate ___ on the patient.", "effect", ["affect", "affection", "efficacy of"], "effect (noun) = ফল, প্রভাব।"],
+  ["The thief ___ the police for three days.", "eluded", ["alluded", "deluded", "illuded"], "elude = এড়িয়ে যাওয়া; allude = ইঙ্গিত করা।"],
+  ["In his speech he ___ to the events of 1971.", "alluded", ["eluded", "elided", "deluded"], "allude to = ইঙ্গিত/উল্লেখ করা।"],
+  ["The country is facing ___ danger of flood.", "imminent", ["eminent", "immanent", "emanant"], "imminent = আসন্ন; eminent = বিশিষ্ট।"],
+  ["The bus remained ___ at the traffic signal.", "stationary", ["stationery", "stational", "stationed"], "stationary = স্থির; stationery = লেখার সামগ্রী।"],
+  ["He is a man of strong ___.", "principles", ["principals", "principalities", "princes"], "principle = নীতি; principal = প্রধান/অধ্যক্ষ।"],
+  ["He sought legal ___ before signing the contract.", "counsel", ["council", "consul", "cancel"], "counsel = পরামর্শ; council = পরিষদ।"],
+  ["All ___ must wear their ID cards in the office.", "personnel", ["personal", "persona", "personals"], "personnel = কর্মীবৃন্দ; personal = ব্যক্তিগত।"],
+  ["The engineer made an ___ device to save water.", "ingenious", ["ingenuous", "indigenous", "ingenuine"], "ingenious = উদ্ভাবনী; ingenuous = সরল।"],
+  ["His handwriting is so bad that it is almost ___.", "illegible", ["ineligible", "illegal", "eligible"], "illegible = পড়া যায় না এমন; ineligible = অযোগ্য।"],
+];
+const useItems = USE.map(([sen, a, o, e], i) => [i % 2 ? "M" : "H", `Choose the appropriate word: '${sen}'`, [a, ...o], 0, e, `${a} — ${e.split(";")[0]}`]);
+
+module.exports = {
+  batch: "Batch 04",
+  basis: "BCS_English_Final: Lecture 07, 18, 19 (Vocabulary, Gaps with Words, Word Meaning)",
+  subtopics: { "EN.VO.MNG": {} },
+  st: "EN.VO.MNG",
+  src: "Lecture 18–19 ও Standard English Dictionary (Oxford Learner's / Cambridge)",
+  items: [...wordItems, ...ctxItems, ...useItems],
+};

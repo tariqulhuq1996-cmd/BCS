@@ -1,0 +1,290 @@
+[
+ {
+  "kind": "INT",
+  "s": 0.71,
+  "a": "batch07#40",
+  "st": "EN.LI.SHK",
+  "q": "'Puck' is a character in Shakespeare's—",
+  "ans": "A Midsummer Night's Dream",
+  "other": "batch07#46: 'Oberon' is a character in Shakespeare's—"
+ },
+ {
+  "kind": "INT",
+  "s": 0.65,
+  "a": "batch07#41",
+  "st": "EN.LI.SHK",
+  "q": "'Malvolio' is a character in Shakespeare's—",
+  "ans": "Twelfth Night",
+  "other": "batch07#47: 'Viola' is a character in Shakespeare's—"
+ },
+ {
+  "kind": "INT",
+  "s": 0.5,
+  "a": "batch01#13",
+  "st": "EN.GR.PRP",
+  "q": "Fill in the blank with the appropriate preposition: 'She is capable ___ handling the crisis.'",
+  "ans": "of",
+  "other": "batch01#25: Fill in the blank with the appropriate preposition: 'She is envious ___ her cousin's success.'"
+ },
+ {
+  "kind": "INT",
+  "s": 0.5,
+  "a": "batch22#58",
+  "st": "EN.GR.ART",
+  "q": "Fill in the blank with the correct article: 'What ___ beautiful view!'",
+  "ans": "a",
+  "other": "batch22#61: Fill in the blank with the correct article: 'We meet twice ___ week.'"
+ },
+ {
+  "kind": "INT",
+  "s": 0.49,
+  "a": "batch01#29",
+  "st": "EN.GR.PRP",
+  "q": "Fill in the blank with the appropriate preposition: 'He is indifferent ___ politics.'",
+  "ans": "to",
+  "other": "batch01#41: Fill in the blank with the appropriate preposition: 'Her answer is similar ___ mine.'"
+ },
+ {
+  "kind": "INT",
+  "s": 0.48,
+  "a": "batch01#15",
+  "st": "EN.GR.PRP",
+  "q": "Which preposition best completes the sentence? 'The team is confident ___ victory.'",
+  "ans": "of",
+  "other": "batch01#19: Which preposition best completes the sentence? 'The doctor cured him ___ his chronic cough.'"
+ },
+ {
+  "kind": "INT",
+  "s": 0.48,
+  "a": "batch01#17",
+  "st": "EN.GR.PRP",
+  "q": "Fill in the blank with the appropriate preposition: 'Water consists ___ hydrogen and oxygen.'",
+  "ans": "of",
+  "other": "batch01#25: Fill in the blank with the appropriate preposition: 'She is envious ___ her cousin's success.'"
+ },
+ {
+  "kind": "INT",
+  "s": 0.48,
+  "a": "batch22#53",
+  "st": "EN.GR.ART",
+  "q": "Fill in the blank with the correct article: '___ Bible is a holy book.'",
+  "ans": "The",
+  "other": "batch22#59: Fill in the blank with the correct article: 'She is ___ best student in the class.'"
+ },
+ {
+  "kind": "PAST",
+  "s": 0.47,
+  "a": "batch01#29",
+  "st": "EN.GR.PRP",
+  "q": "Fill in the blank with the appropriate preposition: 'He is indifferent ___ politics.'",
+  "ans": "to",
+  "other": "47-118: Fill in the blank with the appropriate preposition: 'She was married --- a rich man'. => to"
+ },
+ {
+  "kind": "PAST",
+  "s": 0.47,
+  "a": "batch01#41",
+  "st": "EN.GR.PRP",
+  "q": "Fill in the blank with the appropriate preposition: 'Her answer is similar ___ mine.'",
+  "ans": "to",
+  "other": "47-118: Fill in the blank with the appropriate preposition: 'She was married --- a rich man'. => to"
+ },
+ {
+  "kind": "INT",
+  "s": 0.47,
+  "a": "batch01#13",
+  "st": "EN.GR.PRP",
+  "q": "Fill in the blank with the appropriate preposition: 'She is capable ___ handling the crisis.'",
+  "ans": "of",
+  "other": "batch01#17: Fill in the blank with the appropriate preposition: 'Water consists ___ hydrogen and oxygen.'"
+ },
+ {
+  "kind": "INT",
+  "s": 0.47,
+  "a": "batch22#52",
+  "st": "EN.GR.ART",
+  "q": "Fill in the blank with the correct article: '___ Mount Everest is very high.'",
+  "ans": "No article",
+  "other": "batch22#60: Fill in the blank with the correct article: '___ gold is a precious metal.'"
+ },
+ {
+  "kind": "INT",
+  "s": 0.47,
+  "a": "batch22#56",
+  "st": "EN.GR.ART",
+  "q": "Fill in the blank with the correct article: 'She plays ___ guitar beautifully.'",
+  "ans": "the",
+  "other": "batch22#59: Fill in the blank with the correct article: 'She is ___ best student in the class.'"
+ },
+ {
+  "kind": "INT",
+  "s": 0.46,
+  "a": "batch01#3",
+  "st": "EN.GR.PRP",
+  "q": "Which preposition best completes the sentence? 'I am not acquainted ___ the new manager.'",
+  "ans": "with",
+  "other": "batch01#23: Which preposition best completes the sentence? 'The voters are disgusted ___ the corruption.'"
+ },
+ {
+  "kind": "INT",
+  "s": 0.46,
+  "a": "batch01#25",
+  "st": "EN.GR.PRP",
+  "q": "Fill in the blank with the appropriate preposition: 'She is envious ___ her cousin's success.'",
+  "ans": "of",
+  "other": "batch01#45: Fill in the blank with the appropriate preposition: 'The police were suspicious ___ his movements.'"
+ },
+ {
+  "kind": "INT",
+  "s": 0.45,
+  "a": "batch01#19",
+  "st": "EN.GR.PRP",
+  "q": "Which preposition best completes the sentence? 'The doctor cured him ___ his chronic cough.'",
+  "ans": "of",
+  "other": "batch01#47: Which preposition best completes the sentence? 'I am tired ___ his endless excuses.'"
+ },
+ {
+  "kind": "INT",
+  "s": 0.45,
+  "a": "batch01#29",
+  "st": "EN.GR.PRP",
+  "q": "Fill in the blank with the appropriate preposition: 'He is indifferent ___ politics.'",
+  "ans": "to",
+  "other": "batch01#33: Fill in the blank with the appropriate preposition: 'A soldier must be obedient ___ his commander.'"
+ },
+ {
+  "kind": "INT",
+  "s": 0.45,
+  "a": "batch14#13",
+  "st": "EN.GR.VRB",
+  "q": "Fill in the blank with the correct verb form: 'The jury ___ given its verdict.'",
+  "ans": "has",
+  "other": "batch14#16: Fill in the blank with the correct verb form: 'The furniture ___ been damaged in the fire.'"
+ },
+ {
+  "kind": "PAST",
+  "s": 0.43,
+  "a": "batch01#33",
+  "st": "EN.GR.PRP",
+  "q": "Fill in the blank with the appropriate preposition: 'A soldier must be obedient ___ his commander.'",
+  "ans": "to",
+  "other": "47-118: Fill in the blank with the appropriate preposition: 'She was married --- a rich man'. => to"
+ },
+ {
+  "kind": "PAST",
+  "s": 0.43,
+  "a": "batch01#69",
+  "st": "EN.GR.PRP",
+  "q": "Fill in the blank with the appropriate preposition: 'The boy jumped ___ the river to save the child.'",
+  "ans": "into",
+  "other": "47-118: Fill in the blank with the appropriate preposition: 'She was married --- a rich man'. => to"
+ },
+ {
+  "kind": "PAST",
+  "s": 0.39,
+  "a": "batch01#69",
+  "st": "EN.GR.PRP",
+  "q": "Fill in the blank with the appropriate preposition: 'The boy jumped ___ the river to save the child.'",
+  "ans": "into",
+  "other": "27-32: Fill in the blank with appropriate preposition. 'Hurry up! we have to go --- five minutes?' => in"
+ },
+ {
+  "kind": "PAST",
+  "s": 0.38,
+  "a": "batch01#49",
+  "st": "EN.GR.PRP",
+  "q": "Fill in the blank with the appropriate preposition: 'The doctor warned him ___ smoking.'",
+  "ans": "against",
+  "other": "27-32: Fill in the blank with appropriate preposition. 'Hurry up! we have to go --- five minutes?' => in"
+ },
+ {
+  "kind": "PAST",
+  "s": 0.38,
+  "a": "batch01#61",
+  "st": "EN.GR.PRP",
+  "q": "Fill in the blank with the appropriate preposition: 'Who is ___ charge of this office?'",
+  "ans": "in",
+  "other": "27-32: Fill in the blank with appropriate preposition. 'Hurry up! we have to go --- five minutes?' => in"
+ },
+ {
+  "kind": "PAST",
+  "s": 0.37,
+  "a": "batch01#53",
+  "st": "EN.GR.PRP",
+  "q": "Fill in the blank with the appropriate preposition: 'We usually go for a walk ___ the evening.'",
+  "ans": "in",
+  "other": "27-32: Fill in the blank with appropriate preposition. 'Hurry up! we have to go --- five minutes?' => in"
+ },
+ {
+  "kind": "PAST",
+  "s": 0.37,
+  "a": "batch07#18",
+  "st": "EN.LI.SHK",
+  "q": "'Iago' is a character in Shakespeare's—",
+  "ans": "Othello",
+  "other": "45-68: Desdemona is a character in the following Shakespearean play: => Othello"
+ },
+ {
+  "kind": "PAST",
+  "s": 0.35,
+  "a": "batch01#66",
+  "st": "EN.GR.PRP",
+  "q": "Choose the correct preposition: 'All our efforts were ___ vain.'",
+  "ans": "in",
+  "other": "26-43: Choose the correct preposition. My brother has no interest --- music. => in"
+ },
+ {
+  "kind": "PAST",
+  "s": 0.34,
+  "a": "batch07#32",
+  "st": "EN.LI.SHK",
+  "q": "'Ariel' is a character in Shakespeare's—",
+  "ans": "The Tempest",
+  "other": "44-76: Caliban is a important character from Shakespeare's-- => The Tempest"
+ },
+ {
+  "kind": "PAST",
+  "s": 0.33,
+  "a": "batch15#5",
+  "st": "EN.GR.COR",
+  "q": "Which of the following sentences is correct?",
+  "ans": "He is taller than his brother.",
+  "other": "33-27: Pick the correct part to fill in the gap of the following sentence: Each of the sons followed --- father's trade. => his"
+ },
+ {
+  "kind": "PAST",
+  "s": 0.33,
+  "a": "batch15#36",
+  "st": "EN.GR.COR",
+  "q": "Which of the following sentences is correct?",
+  "ans": "Rahim is older than his sister.",
+  "other": "33-27: Pick the correct part to fill in the gap of the following sentence: Each of the sons followed --- father's trade. => his"
+ },
+ {
+  "kind": "PAST",
+  "s": 0.32,
+  "a": "batch10#43",
+  "st": "EN.LI.MOD",
+  "q": "'Burmese Days' was written by—",
+  "ans": "George Orwell",
+  "other": "28-37: 'Animal Farm' was written by– => George Orwell"
+ },
+ {
+  "kind": "PAST",
+  "s": 0.31,
+  "a": "batch06#21",
+  "st": "EN.GR.NFV",
+  "q": "Choose the correct form: 'I heard her ___ a beautiful song.'",
+  "ans": "sing",
+  "other": "47-125: Identify the correct passive form: 'I heard her sing'. => She was heard to sing by me."
+ },
+ {
+  "kind": "PAST",
+  "s": 0.3,
+  "a": "batch01#25",
+  "st": "EN.GR.PRP",
+  "q": "Fill in the blank with the appropriate preposition: 'She is envious ___ her cousin's success.'",
+  "ans": "of",
+  "other": "26-47: Fill in the blank with correct preposition. He is devoid ---Commonsense. => of"
+ }
+]

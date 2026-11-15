@@ -1,0 +1,1545 @@
+{
+  "batch": "Batch 02",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 05–08 (Verb, Adjective, Adverb, Noun, Pronoun) ও Parts of Speech-এর প্রয়োগ",
+  "subtopics": {
+    "EN.GR.POS": {}
+  },
+  "questions": [
+    {
+      "st": "EN.GR.POS",
+      "d": "Easy",
+      "q": "What is the noun form of the word 'brave'?",
+      "o": [
+        "bravery",
+        "braveness",
+        "bravely",
+        "bravado"
+      ],
+      "a": 0,
+      "e": "brave (সাহসী) → bravery (সাহসিকতা); bravado = লোকদেখানো সাহস।",
+      "t": "brave → bravery",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Easy",
+      "q": "The noun form of 'wise' is—",
+      "o": [
+        "wisely",
+        "wisdom",
+        "wiseness",
+        "wizard"
+      ],
+      "a": 1,
+      "e": "wise → wisdom (প্রজ্ঞা)।",
+      "t": "wise → wisdom",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "What is the noun form of the word 'deep'?",
+      "o": [
+        "deeply",
+        "deepness",
+        "depth",
+        "deepen"
+      ],
+      "a": 2,
+      "e": "deep → depth (গভীরতা)।",
+      "t": "deep → depth",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Easy",
+      "q": "The noun form of 'strong' is—",
+      "o": [
+        "strongness",
+        "strongly",
+        "strengthen",
+        "strength"
+      ],
+      "a": 3,
+      "e": "strong → strength (শক্তি)।",
+      "t": "strong → strength",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Easy",
+      "q": "What is the noun form of the word 'high'?",
+      "o": [
+        "height",
+        "highness",
+        "heighten",
+        "highly"
+      ],
+      "a": 0,
+      "e": "high → height (উচ্চতা); Highness = সম্মানসূচক উপাধি।",
+      "t": "high → height",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "The noun form of 'poor' is—",
+      "o": [
+        "impoverish",
+        "poverty",
+        "poorly",
+        "poorness"
+      ],
+      "a": 1,
+      "e": "poor → poverty (দারিদ্র্য)।",
+      "t": "poor → poverty",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "What is the noun form of the word 'humble'?",
+      "o": [
+        "humbleness",
+        "humbly",
+        "humility",
+        "humiliate"
+      ],
+      "a": 2,
+      "e": "humble → humility (বিনয়); humiliate = অপমান করা।",
+      "t": "humble → humility",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "The noun form of 'just' is—",
+      "o": [
+        "justly",
+        "justify",
+        "justness",
+        "justice"
+      ],
+      "a": 3,
+      "e": "just → justice (ন্যায়বিচার)।",
+      "t": "just → justice",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "What is the noun form of the word 'generous'?",
+      "o": [
+        "generosity",
+        "generousness",
+        "generate",
+        "generously"
+      ],
+      "a": 0,
+      "e": "generous → generosity (উদারতা)।",
+      "t": "generous → generosity",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "The noun form of 'curious' is—",
+      "o": [
+        "curiousness",
+        "curiosity",
+        "curiously",
+        "curio"
+      ],
+      "a": 1,
+      "e": "curious → curiosity (কৌতূহল)।",
+      "t": "curious → curiosity",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "What is the noun form of the word 'anxious'?",
+      "o": [
+        "anxiously",
+        "anxiousness",
+        "anxiety",
+        "anxiousy"
+      ],
+      "a": 2,
+      "e": "anxious → anxiety (উদ্বেগ)।",
+      "t": "anxious → anxiety",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Hard",
+      "q": "The noun form of 'vain' is—",
+      "o": [
+        "vanish",
+        "vainness",
+        "vainly",
+        "vanity"
+      ],
+      "a": 3,
+      "e": "vain → vanity (অহংকার/অসারতা)।",
+      "t": "vain → vanity",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Easy",
+      "q": "What is the noun form of the word 'choose'?",
+      "o": [
+        "choice",
+        "chosen",
+        "choosy",
+        "choosing"
+      ],
+      "a": 0,
+      "e": "choose → choice (পছন্দ)।",
+      "t": "choose → choice",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "The noun form of 'fail' is—",
+      "o": [
+        "failed",
+        "failure",
+        "failing",
+        "failness"
+      ],
+      "a": 1,
+      "e": "fail → failure (ব্যর্থতা)।",
+      "t": "fail → failure",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "What is the noun form of the word 'please'?",
+      "o": [
+        "pleasantly",
+        "pleasant",
+        "pleasure",
+        "pleasing"
+      ],
+      "a": 2,
+      "e": "please → pleasure (আনন্দ); pleasant = adjective।",
+      "t": "please → pleasure",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "The noun form of 'deny' is—",
+      "o": [
+        "denier",
+        "denying",
+        "deniable",
+        "denial"
+      ],
+      "a": 3,
+      "e": "deny → denial (অস্বীকার)।",
+      "t": "deny → denial",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "What is the noun form of the word 'obey'?",
+      "o": [
+        "obedience",
+        "obedient",
+        "obediently",
+        "obeyance"
+      ],
+      "a": 0,
+      "e": "obey → obedience (আনুগত্য); obedient = adjective।",
+      "t": "obey → obedience",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "The noun form of 'prove' is—",
+      "o": [
+        "provable",
+        "proof",
+        "proven",
+        "proving"
+      ],
+      "a": 1,
+      "e": "prove → proof (প্রমাণ)।",
+      "t": "prove → proof",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Easy",
+      "q": "What is the noun form of the word 'believe'?",
+      "o": [
+        "believer's",
+        "believable",
+        "belief",
+        "believing"
+      ],
+      "a": 2,
+      "e": "believe → belief (বিশ্বাস)।",
+      "t": "believe → belief",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "The noun form of 'pursue' is—",
+      "o": [
+        "pursuer's",
+        "pursuant",
+        "pursuing",
+        "pursuit"
+      ],
+      "a": 3,
+      "e": "pursue → pursuit (অনুসরণ, সাধনা)।",
+      "t": "pursue → pursuit",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "What is the noun form of the word 'destroy'?",
+      "o": [
+        "destruction",
+        "destructive",
+        "destroyable",
+        "destroyer's"
+      ],
+      "a": 0,
+      "e": "destroy → destruction (ধ্বংস)।",
+      "t": "destroy → destruction",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "The verb form of 'class' is—",
+      "o": [
+        "classical",
+        "classify",
+        "classic",
+        "classification"
+      ],
+      "a": 1,
+      "e": "class → classify (শ্রেণিবিন্যাস করা)।",
+      "t": "class → classify",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "What is the verb form of the word 'danger'?",
+      "o": [
+        "endangered",
+        "dangerous",
+        "endanger",
+        "dangerously"
+      ],
+      "a": 2,
+      "e": "danger → endanger (বিপন্ন করা)।",
+      "t": "danger → endanger",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Easy",
+      "q": "The verb form of 'courage' is—",
+      "o": [
+        "encouragement",
+        "courageous",
+        "courageously",
+        "encourage"
+      ],
+      "a": 3,
+      "e": "courage → encourage (উৎসাহ দেওয়া)।",
+      "t": "courage → encourage",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "What is the verb form of the word 'glory'?",
+      "o": [
+        "glorify",
+        "glorious",
+        "gloriously",
+        "glorification"
+      ],
+      "a": 0,
+      "e": "glory → glorify (মহিমান্বিত করা)।",
+      "t": "glory → glorify",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "The verb form of 'food' is—",
+      "o": [
+        "fed up",
+        "feed",
+        "foodie",
+        "fooding"
+      ],
+      "a": 1,
+      "e": "food → feed (খাওয়ানো)।",
+      "t": "food → feed",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Hard",
+      "q": "What is the verb form of the word 'blood'?",
+      "o": [
+        "bloom",
+        "bloody",
+        "bleed",
+        "bloodless"
+      ],
+      "a": 2,
+      "e": "blood → bleed (রক্তক্ষরণ হওয়া)।",
+      "t": "blood → bleed",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Hard",
+      "q": "The verb form of 'gold' is—",
+      "o": [
+        "gilded",
+        "golden",
+        "goldsmith",
+        "gild"
+      ],
+      "a": 3,
+      "e": "gold → gild (সোনালি প্রলেপ দেওয়া); gilded = অতীত কৃদন্ত।",
+      "t": "gold → gild",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "What is the verb form of the word 'sale'?",
+      "o": [
+        "sell",
+        "salable",
+        "salesman",
+        "sold out"
+      ],
+      "a": 0,
+      "e": "sale (noun) → sell (verb)।",
+      "t": "sale → sell",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "The verb form of 'critic' is—",
+      "o": [
+        "criticism",
+        "criticize",
+        "critical",
+        "critically"
+      ],
+      "a": 1,
+      "e": "critic → criticize (সমালোচনা করা)।",
+      "t": "critic → criticize",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "What is the verb form of the word 'simple'?",
+      "o": [
+        "simplistic",
+        "simplicity",
+        "simplify",
+        "simply"
+      ],
+      "a": 2,
+      "e": "simple → simplify (সরল করা)।",
+      "t": "simple → simplify",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Easy",
+      "q": "The verb form of 'large' is—",
+      "o": [
+        "largesse",
+        "largely",
+        "largeness",
+        "enlarge"
+      ],
+      "a": 3,
+      "e": "large → enlarge (বড় করা)।",
+      "t": "large → enlarge",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Easy",
+      "q": "What is the adjective form of the word 'courage'?",
+      "o": [
+        "courageous",
+        "courageously",
+        "encourage",
+        "courageful"
+      ],
+      "a": 0,
+      "e": "courage → courageous (সাহসী)।",
+      "t": "courage → courageous",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Easy",
+      "q": "The adjective form of 'fool' is—",
+      "o": [
+        "foolery",
+        "foolish",
+        "foolishly",
+        "foolhardy"
+      ],
+      "a": 1,
+      "e": "fool → foolish (বোকা)।",
+      "t": "fool → foolish",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "What is the adjective form of the word 'victory'?",
+      "o": [
+        "victimize",
+        "victoriously",
+        "victorious",
+        "victor"
+      ],
+      "a": 2,
+      "e": "victory → victorious (বিজয়ী)।",
+      "t": "victory → victorious",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "The adjective form of 'mercy' is—",
+      "o": [
+        "merciless",
+        "mercifully",
+        "mercenary",
+        "merciful"
+      ],
+      "a": 3,
+      "e": "mercy → merciful (দয়ালু); merciless বিপরীতার্থক।",
+      "t": "mercy → merciful",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Easy",
+      "q": "What is the adjective form of the word 'wood'?",
+      "o": [
+        "wooden",
+        "woody",
+        "woodland",
+        "woodenly"
+      ],
+      "a": 0,
+      "e": "wood → wooden (কাঠের তৈরি)।",
+      "t": "wood → wooden",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Easy",
+      "q": "The adjective form of 'north' is—",
+      "o": [
+        "northward",
+        "northern",
+        "northerly",
+        "norther"
+      ],
+      "a": 1,
+      "e": "north → northern (উত্তরাঞ্চলীয়)।",
+      "t": "north → northern",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "What is the adjective form of the word 'humour'?",
+      "o": [
+        "humorously",
+        "humoured",
+        "humorous",
+        "humorist"
+      ],
+      "a": 2,
+      "e": "humour → humorous (রসাত্মক)।",
+      "t": "humour → humorous",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Hard",
+      "q": "The adjective form of 'mischief' is—",
+      "o": [
+        "mischievously",
+        "mischievious",
+        "mischiefful",
+        "mischievous"
+      ],
+      "a": 3,
+      "e": "mischief → mischievous (দুষ্টু); ‘mischievious’ প্রচলিত ভুল বানান।",
+      "t": "mischief → mischievous",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "What is the adjective form of the word 'hero'?",
+      "o": [
+        "heroic",
+        "heroism",
+        "heroine",
+        "heroically"
+      ],
+      "a": 0,
+      "e": "hero → heroic (বীরোচিত)।",
+      "t": "hero → heroic",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "The adjective form of 'picture' is—",
+      "o": [
+        "pictured",
+        "picturesque",
+        "pictorial",
+        "picturing"
+      ],
+      "a": 1,
+      "e": "picture → picturesque (মনোরম)।",
+      "t": "picture → picturesque",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "What is the adverb form of the word 'true'?",
+      "o": [
+        "truth",
+        "truely",
+        "truly",
+        "truthful"
+      ],
+      "a": 2,
+      "e": "true → truly (e বাদ যায়)।",
+      "t": "true → truly",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Hard",
+      "q": "The adverb form of 'whole' is—",
+      "o": [
+        "wholesale",
+        "wholely",
+        "wholesome",
+        "wholly"
+      ],
+      "a": 3,
+      "e": "whole → wholly (e বাদ, l দুটি)।",
+      "t": "whole → wholly",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "What is the adverb form of the word 'due'?",
+      "o": [
+        "duly",
+        "duely",
+        "dutiful",
+        "dues"
+      ],
+      "a": 0,
+      "e": "due → duly (e বাদ)।",
+      "t": "due → duly",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'The late Mr. Karim was a famous poet.' — Here the word 'late' is used as a/an—",
+      "o": [
+        "Verb",
+        "Adjective",
+        "Interjection",
+        "Conjunction"
+      ],
+      "a": 1,
+      "e": "এখানে late = প্রয়াত, noun (Mr. Karim)-কে বিশেষিত করছে, তাই adjective; ‘He came late’-এ late adverb।",
+      "t": "noun-এর আগে late = প্রয়াত (adjective)।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'He dug a well behind his house.' — Here the word 'well' is used as a/an—",
+      "o": [
+        "Interjection",
+        "Pronoun",
+        "Noun",
+        "Adverb"
+      ],
+      "a": 2,
+      "e": "a well = কূপ — article-যুক্ত নামবাচক শব্দ, তাই noun।",
+      "t": "a well (কূপ) = noun।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'Still waters run deep.' — Here the word 'Still' is used as a/an—",
+      "o": [
+        "Conjunction",
+        "Interjection",
+        "Verb",
+        "Adjective"
+      ],
+      "a": 3,
+      "e": "Still = স্থির, waters-কে বিশেষিত করছে।",
+      "t": "noun-এর আগে still = adjective।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Hard",
+      "q": "'The earth moves round the sun.' — Here the word 'round' is used as a/an—",
+      "o": [
+        "Preposition",
+        "Noun",
+        "Verb",
+        "Interjection"
+      ],
+      "a": 0,
+      "e": "round এখানে the sun (object)-এর সঙ্গে সম্পর্ক স্থাপন করছে — preposition।",
+      "t": "round + noun = preposition।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'I have known him since 2010.' — Here the word 'since' is used as a/an—",
+      "o": [
+        "Pronoun",
+        "Preposition",
+        "Conjunction",
+        "Adverb"
+      ],
+      "a": 1,
+      "e": "since + সময়বাচক noun → preposition; since + clause → conjunction।",
+      "t": "since + noun = preposition।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'Since you are tired, you may rest.' — Here the word 'Since' is used as a/an—",
+      "o": [
+        "Verb",
+        "Adverb",
+        "Conjunction",
+        "Noun"
+      ],
+      "a": 2,
+      "e": "since এখানে দুটি clause যুক্ত করছে (কারণ অর্থে) — conjunction।",
+      "t": "since + clause = conjunction।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Hard",
+      "q": "'I have seen this film before.' — Here the word 'before' is used as a/an—",
+      "o": [
+        "Interjection",
+        "Noun",
+        "Verb",
+        "Adverb"
+      ],
+      "a": 3,
+      "e": "before-এর পরে কোনো object বা clause নেই — adverb।",
+      "t": "object নেই = adverb।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'He is the only son of his parents.' — Here the word 'only' is used as a/an—",
+      "o": [
+        "Adjective",
+        "Adverb",
+        "Interjection",
+        "Verb"
+      ],
+      "a": 0,
+      "e": "only এখানে son (noun)-কে বিশেষিত করছে।",
+      "t": "the only + noun = adjective।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Hard",
+      "q": "'He is old enough to vote.' — Here the word 'enough' is used as a/an—",
+      "o": [
+        "Interjection",
+        "Adverb",
+        "Verb",
+        "Adjective"
+      ],
+      "a": 1,
+      "e": "enough এখানে adjective (old)-কে বিশেষিত করছে — adverb; ‘enough money’-তে adjective।",
+      "t": "adjective + enough = adverb।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Hard",
+      "q": "'This is the very book I was looking for.' — Here the word 'very' is used as a/an—",
+      "o": [
+        "Pronoun",
+        "Verb",
+        "Adjective",
+        "Conjunction"
+      ],
+      "a": 2,
+      "e": "the very + noun = ঠিক সেই — এখানে very adjective।",
+      "t": "the very book = adjective।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'Please light the candle.' — Here the word 'light' is used as a/an—",
+      "o": [
+        "Noun",
+        "Pronoun",
+        "Preposition",
+        "Verb"
+      ],
+      "a": 3,
+      "e": "light এখানে কাজ (জ্বালানো) বোঝাচ্ছে — verb।",
+      "t": "কাজ বোঝালে verb।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Easy",
+      "q": "'Hurrah! We have won the match.' — Here the word 'Hurrah' is used as a/an—",
+      "o": [
+        "Interjection",
+        "Pronoun",
+        "Adverb",
+        "Noun"
+      ],
+      "a": 0,
+      "e": "আনন্দের আকস্মিক প্রকাশ — interjection।",
+      "t": "আবেগসূচক শব্দ = interjection।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'Swimming is a good exercise.' — Here the word 'Swimming' is used as a/an—",
+      "o": [
+        "Preposition",
+        "Noun",
+        "Adjective",
+        "Pronoun"
+      ],
+      "a": 1,
+      "e": "V-ing এখানে subject হিসেবে noun-এর কাজ করছে (gerund)।",
+      "t": "subject হিসেবে V-ing = noun (gerund)।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'The rich should help the poor.' — Here the word 'rich' is used as a/an—",
+      "o": [
+        "Conjunction",
+        "Interjection",
+        "Noun",
+        "Verb"
+      ],
+      "a": 2,
+      "e": "the + adjective = শ্রেণিবাচক noun (ধনীরা)।",
+      "t": "the + adjective = noun।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Easy",
+      "q": "'She bought a gold necklace.' — Here the word 'gold' is used as a/an—",
+      "o": [
+        "Verb",
+        "Adverb",
+        "Interjection",
+        "Adjective"
+      ],
+      "a": 3,
+      "e": "gold এখানে necklace-কে বিশেষিত করছে (material adjective)।",
+      "t": "noun-এর আগে বস্তুবাচক শব্দ = adjective।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'Both of them passed the exam.' — Here the word 'Both' is used as a/an—",
+      "o": [
+        "Pronoun",
+        "Conjunction",
+        "Adjective",
+        "Preposition"
+      ],
+      "a": 0,
+      "e": "both of them — এখানে both নিজেই noun-এর পরিবর্তে বসেছে — pronoun।",
+      "t": "both of = pronoun।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'Either road leads to the station.' — Here the word 'Either' is used as a/an—",
+      "o": [
+        "Noun",
+        "Adjective",
+        "Preposition",
+        "Adverb"
+      ],
+      "a": 1,
+      "e": "Either এখানে road-কে বিশেষিত করছে।",
+      "t": "either + noun = adjective।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'He is poor, yet he is honest.' — Here the word 'yet' is used as a/an—",
+      "o": [
+        "Verb",
+        "Adverb",
+        "Conjunction",
+        "Noun"
+      ],
+      "a": 2,
+      "e": "yet দুটি clause যুক্ত করছে (বৈপরীত্য) — conjunction।",
+      "t": "clause যোগ করলে conjunction।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Hard",
+      "q": "'He must be ill, for he is absent today.' — Here the word 'for' is used as a/an—",
+      "o": [
+        "Interjection",
+        "Noun",
+        "Verb",
+        "Conjunction"
+      ],
+      "a": 3,
+      "e": "for এখানে কারণ বোঝাতে দুটি clause যুক্ত করছে।",
+      "t": "for + clause = conjunction।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'Wait here till I come back.' — Here the word 'till' is used as a/an—",
+      "o": [
+        "Conjunction",
+        "Verb",
+        "Interjection",
+        "Adjective"
+      ],
+      "a": 0,
+      "e": "till + clause = conjunction।",
+      "t": "till + clause = conjunction।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'You will fail unless you work hard.' — Here the word 'unless' is used as a/an—",
+      "o": [
+        "Adjective",
+        "Conjunction",
+        "Interjection",
+        "Preposition"
+      ],
+      "a": 1,
+      "e": "unless (যদি না) দুটি clause যুক্ত করছে।",
+      "t": "unless = conjunction।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'He left his umbrella behind.' — Here the word 'behind' is used as a/an—",
+      "o": [
+        "Conjunction",
+        "Interjection",
+        "Adverb",
+        "Adjective"
+      ],
+      "a": 2,
+      "e": "behind-এর পরে object নেই — adverb।",
+      "t": "object ছাড়া behind = adverb।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'The children went inside.' — Here the word 'inside' is used as a/an—",
+      "o": [
+        "Adjective",
+        "Verb",
+        "Interjection",
+        "Adverb"
+      ],
+      "a": 3,
+      "e": "inside-এর পরে object নেই — adverb।",
+      "t": "object ছাড়া inside = adverb।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Hard",
+      "q": "'Considering his age, he did very well.' — Here the word 'Considering' is used as a/an—",
+      "o": [
+        "Preposition",
+        "Noun",
+        "Verb",
+        "Interjection"
+      ],
+      "a": 0,
+      "e": "considering = বিবেচনায় — এখানে preposition হিসেবে ব্যবহৃত।",
+      "t": "considering + noun = preposition।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Hard",
+      "q": "'The decision was postponed pending the inquiry.' — Here the word 'pending' is used as a/an—",
+      "o": [
+        "Pronoun",
+        "Preposition",
+        "Conjunction",
+        "Adverb"
+      ],
+      "a": 1,
+      "e": "pending = (কিছুর) অপেক্ষায়, যতক্ষণ না — preposition।",
+      "t": "pending + noun = preposition।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Hard",
+      "q": "'Notwithstanding the rain, the match continued.' — Here the word 'Notwithstanding' is used as a/an—",
+      "o": [
+        "Adverb",
+        "Conjunction",
+        "Preposition",
+        "Pronoun"
+      ],
+      "a": 2,
+      "e": "notwithstanding = সত্ত্বেও — এখানে preposition।",
+      "t": "notwithstanding = in spite of।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'Alas! He is no more.' — Here the word 'Alas' is used as a/an—",
+      "o": [
+        "Adjective",
+        "Verb",
+        "Conjunction",
+        "Interjection"
+      ],
+      "a": 3,
+      "e": "দুঃখের আকস্মিক প্রকাশ — interjection।",
+      "t": "Alas = দুঃখ।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'That bag is mine.' — Here the word 'That' is used as a/an—",
+      "o": [
+        "Adjective",
+        "Noun",
+        "Adverb",
+        "Interjection"
+      ],
+      "a": 0,
+      "e": "That এখানে bag (noun)-এর আগে বসে নির্দেশ করছে — demonstrative adjective।",
+      "t": "that + noun = adjective।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'He spoke loudly in the meeting.' — Here the word 'loudly' is used as a/an—",
+      "o": [
+        "Conjunction",
+        "Adverb",
+        "Adjective",
+        "Pronoun"
+      ],
+      "a": 1,
+      "e": "loudly verb (spoke)-কে বিশেষিত করছে।",
+      "t": "-ly + verb বিশেষণ = adverb।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'They themselves repaired the roof.' — Here the word 'themselves' is used as a/an—",
+      "o": [
+        "Adjective",
+        "Verb",
+        "Pronoun",
+        "Conjunction"
+      ],
+      "a": 2,
+      "e": "themselves = emphatic pronoun।",
+      "t": "-self/-selves = pronoun।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "'Whose pen is this?' — Here the word 'Whose' is used as a/an—",
+      "o": [
+        "Adjective",
+        "Verb",
+        "Conjunction",
+        "Pronoun"
+      ],
+      "a": 3,
+      "e": "Whose এখানে প্রশ্নবোধক — interrogative pronoun (possessive)।",
+      "t": "Whose? = interrogative pronoun।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Easy",
+      "q": "How many parts of speech are there in traditional English grammar?",
+      "o": [
+        "Eight",
+        "Six",
+        "Seven",
+        "Nine"
+      ],
+      "a": 0,
+      "e": "প্রচলিত ব্যাকরণে parts of speech ৮টি: Noun, Pronoun, Adjective, Verb, Adverb, Preposition, Conjunction, Interjection।",
+      "t": "৮টি।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Easy",
+      "q": "A word that modifies a verb, an adjective or another adverb is called—",
+      "o": [
+        "an adjective",
+        "an adverb",
+        "a preposition",
+        "a conjunction"
+      ],
+      "a": 1,
+      "e": "adverb verb, adjective বা অন্য adverb-কে বিশেষিত করে।",
+      "t": "verb/adj/adverb-কে বিশেষিত = adverb।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Easy",
+      "q": "A word used instead of a noun is called—",
+      "o": [
+        "a verb",
+        "an adjective",
+        "a pronoun",
+        "an interjection"
+      ],
+      "a": 2,
+      "e": "noun-এর পরিবর্তে বসে = pronoun।",
+      "t": "pro = পরিবর্তে।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Easy",
+      "q": "A word that joins words, phrases or clauses is called—",
+      "o": [
+        "an interjection",
+        "a preposition",
+        "an adverb",
+        "a conjunction"
+      ],
+      "a": 3,
+      "e": "যুক্ত করে = conjunction।",
+      "t": "join = conjunction।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "A word placed before a noun or pronoun to show its relation to another word is—",
+      "o": [
+        "a preposition",
+        "a conjunction",
+        "an adverb",
+        "an article"
+      ],
+      "a": 0,
+      "e": "noun/pronoun-এর আগে বসে সম্পর্ক বোঝায় = preposition।",
+      "t": "pre-position = আগে বসে।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "Which of the following words can be used both as a noun and as a verb?",
+      "o": [
+        "Beautiful",
+        "Promise",
+        "Quickly",
+        "Very"
+      ],
+      "a": 1,
+      "e": "promise: ‘a promise’ (noun), ‘I promise’ (verb)।",
+      "t": "promise = noun + verb।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "Which word is NOT an adjective?",
+      "o": [
+        "Friendly",
+        "Happy",
+        "Happily",
+        "Lovely"
+      ],
+      "a": 2,
+      "e": "happily = adverb; friendly, lovely -ly থাকলেও adjective।",
+      "t": "friendly/lovely = adjective।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Hard",
+      "q": "Which of the following is an adverb?",
+      "o": [
+        "Elderly",
+        "Silly",
+        "Costly",
+        "Seldom"
+      ],
+      "a": 3,
+      "e": "seldom = কদাচিৎ (adverb); silly, costly, elderly adjective।",
+      "t": "-ly মানেই adverb নয়।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "Which of the following is a preposition?",
+      "o": [
+        "Beneath",
+        "Beautiful",
+        "Because",
+        "Become"
+      ],
+      "a": 0,
+      "e": "beneath = নিচে — preposition; because = conjunction।",
+      "t": "beneath = preposition।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "Which word is a conjunction?",
+      "o": [
+        "Above",
+        "Although",
+        "Almost",
+        "Alone"
+      ],
+      "a": 1,
+      "e": "although = যদিও — conjunction।",
+      "t": "although = conjunction।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "In which sentence is 'round' used as a noun?",
+      "o": [
+        "He turned round.",
+        "They sat at a round table.",
+        "The guard made his round of the building.",
+        "She walked round the lake."
+      ],
+      "a": 2,
+      "e": "a round (টহল/এক দফা) — article-সহ noun; অন্যগুলোতে adjective, adverb ও preposition।",
+      "t": "his round = noun।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Hard",
+      "q": "In which sentence is 'still' used as a verb?",
+      "o": [
+        "Still, I don't trust him.",
+        "He is still sleeping.",
+        "Keep still for a moment.",
+        "The mother tried to still the crying baby."
+      ],
+      "a": 3,
+      "e": "still the baby = শান্ত করা — verb।",
+      "t": "still + object = verb।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Hard",
+      "q": "In which sentence is 'since' used as an adverb?",
+      "o": [
+        "He left the town in 2015 and has not been seen since.",
+        "Since you insist, I will go.",
+        "I have lived here since 2010.",
+        "It has rained since morning."
+      ],
+      "a": 0,
+      "e": "বাক্যের শেষে object বা clause ছাড়া since = adverb।",
+      "t": "শেষে একা since = adverb।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    },
+    {
+      "st": "EN.GR.POS",
+      "d": "Medium",
+      "q": "In which sentence is 'better' used as a verb?",
+      "o": [
+        "This is a better plan.",
+        "We must try to better our results.",
+        "You had better go now.",
+        "She sings better than me."
+      ],
+      "a": 1,
+      "e": "to better = উন্নত করা — verb।",
+      "t": "to better = verb।",
+      "src": "Lecture 05–08 ও Standard Grammar Reference (Wren & Martin; Oxford Learner's Dictionary)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত",
+      "fixed": true
+    }
+  ]
+}

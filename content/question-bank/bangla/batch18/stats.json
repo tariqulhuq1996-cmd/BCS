@@ -1,0 +1,24 @@
+{
+  "target": 1500,
+  "priorityTarget": {
+    "A": 630,
+    "B": 330,
+    "C": 318,
+    "D": 222
+  },
+  "generated": 75,
+  "exact": 0,
+  "semantic": 0,
+  "near": 0,
+  "verify": 0,
+  "qc": 0,
+  "accepted": 75,
+  "cumulative": 1052,
+  "remaining": 448,
+  "cumByPriority": {
+    "B": 330,
+    "D": 17,
+    "A": 630,
+    "C": 75
+  }
+}

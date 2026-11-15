@@ -1,0 +1,998 @@
+{
+  "batch": "Batch 23",
+  "subject": "English Language & Literature",
+  "basis": "সিলেবাস-ফাঁক পূরণ (BCS Preliminary Syllabus): The Verb — Linking Verb, Finite: transitive/intransitive, Modals; The Noun — The Determiner; G. Composition — Names of parts of paragraphs/letters/applications",
+  "subtopics": {
+    "EN.GR.VRB": {},
+    "EN.GR.ADJ": {},
+    "EN.GR.OTH": {}
+  },
+  "questions": [
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "'The soup tastes delicious.' — Here 'tastes' is a/an—",
+      "o": [
+        "linking verb",
+        "transitive verb",
+        "auxiliary verb",
+        "modal verb"
+      ],
+      "a": 0,
+      "e": "taste এখানে কোনো কাজ বোঝাচ্ছে না, subject (soup)-এর অবস্থা বা গুণ (delicious)-এর সঙ্গে যুক্ত করছে — তাই linking verb।",
+      "t": "অবস্থা জোড়ে = linking verb।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Which sentence contains a linking verb?",
+      "o": [
+        "She bought a new car.",
+        "She became a doctor.",
+        "He ran very quickly.",
+        "They built a house."
+      ],
+      "a": 1,
+      "e": "become subject (She)-কে complement (a doctor)-এর সঙ্গে যুক্ত করে; বাকিগুলো কাজ বোঝানো action verb।",
+      "t": "become, seem, appear = linking।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "A linking verb is followed by a—",
+      "o": [
+        "indirect object",
+        "direct object",
+        "subject complement",
+        "adverb of manner"
+      ],
+      "a": 2,
+      "e": "linking verb-এর পরে object বসে না; subject সম্পর্কে তথ্য দেয় এমন subject complement (noun/adjective) বসে।",
+      "t": "Linking verb + complement, object নয়।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "'He looks tired.' — The word 'tired' functions as a/an—",
+      "o": [
+        "object complement",
+        "direct object",
+        "adverb",
+        "subject complement"
+      ],
+      "a": 3,
+      "e": "looks এখানে linking verb; tired শব্দটি subject (He)-এর অবস্থা বর্ণনা করে — subject complement।",
+      "t": "subject-এর বর্ণনা = subject complement।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "In which sentence is 'grew' used as a linking verb?",
+      "o": [
+        "The sky grew dark.",
+        "He grew roses in his garden.",
+        "The child grew quickly.",
+        "The farmer grew rice last year."
+      ],
+      "a": 0,
+      "e": "grew dark = অন্ধকার হয়ে গেল (অবস্থার পরিবর্তন) — linking; grew roses/rice-এ transitive, grew quickly-তে intransitive।",
+      "t": "grow + adjective = linking।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "The flower smells sweetly.",
+        "The flower smells sweet.",
+        "The flower smell sweet.",
+        "The flower is smelling sweetly."
+      ],
+      "a": 1,
+      "e": "smell এখানে linking verb, তাই পরে adverb (sweetly) নয়, adjective (sweet) বসে; subject singular বলে smells।",
+      "t": "Linking verb + adjective।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Easy",
+      "q": "Which of the following is NOT usually a linking verb?",
+      "o": [
+        "appear",
+        "seem",
+        "kick",
+        "remain"
+      ],
+      "a": 2,
+      "e": "seem, appear, remain subject-কে complement-এর সঙ্গে যুক্ত করে; kick একটি action verb।",
+      "t": "kick = কাজ, linking নয়।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Easy",
+      "q": "The most common linking verb in English is—",
+      "o": [
+        "make",
+        "have",
+        "do",
+        "be"
+      ],
+      "a": 3,
+      "e": "be (am/is/are/was/were) সবচেয়ে বেশি ব্যবহৃত linking verb — He is a teacher।",
+      "t": "be = প্রধান linking verb।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "'He remained silent.' — The word 'silent' is a/an—",
+      "o": [
+        "adjective",
+        "adverb",
+        "noun",
+        "verb"
+      ],
+      "a": 0,
+      "e": "remained এখানে linking verb; পরে subject-এর অবস্থা বোঝাতে adjective (silent) বসেছে।",
+      "t": "remain + adjective।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "In which sentence is 'appear' used as a linking verb?",
+      "o": [
+        "She appeared on stage at eight.",
+        "She appears confident.",
+        "A ship appeared on the horizon.",
+        "The actor appeared in three films."
+      ],
+      "a": 1,
+      "e": "appears confident = আত্মবিশ্বাসী মনে হয় (seem-এর অর্থে) — linking; বাকিগুলোতে appear = উপস্থিত হওয়া (intransitive)।",
+      "t": "appear = seem হলে linking।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Easy",
+      "q": "A verb that needs an object to complete its meaning is called a/an—",
+      "o": [
+        "linking verb",
+        "intransitive verb",
+        "transitive verb",
+        "auxiliary verb"
+      ],
+      "a": 2,
+      "e": "transitive verb-এর কাজ object-এর ওপর পড়ে; object ছাড়া অর্থ অসম্পূর্ণ থাকে।",
+      "t": "Transitive = object চাই।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "'He gave the beggar a coin.' — The indirect object is—",
+      "o": [
+        "gave",
+        "a coin",
+        "He",
+        "the beggar"
+      ],
+      "a": 3,
+      "e": "give দুটি object নেয়: যাকে দেওয়া হয় (ব্যক্তি) = indirect object (the beggar), যা দেওয়া হয় = direct object (a coin)।",
+      "t": "ব্যক্তি = indirect, বস্তু = direct।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "নিকট-সম্পর্কিত, পর্যালোচিত — ৪১-১৯৬, ৪৭-১১৬, ৪৯-৮২ (arrived/sleeps/sneezed = intransitive), ৫০-৫৯ (break = উভয়); এখানে indirect object শনাক্তকরণ, ভিন্ন তথ্য",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "A verb that takes two objects (direct and indirect) is called a/an—",
+      "o": [
+        "ditransitive verb",
+        "linking verb",
+        "intransitive verb",
+        "auxiliary verb"
+      ],
+      "a": 0,
+      "e": "give, send, show, tell ইত্যাদি দুটি object নিতে পারে — এদের ditransitive (double-object) verb বলে।",
+      "t": "দুই object = ditransitive।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "'They elected him captain.' — The word 'captain' is a/an—",
+      "o": [
+        "direct object",
+        "object complement",
+        "indirect object",
+        "subject complement"
+      ],
+      "a": 1,
+      "e": "elect, make, call, appoint (factitive verb)-এর object (him)-এর পরে তাকে সম্পূর্ণ করা শব্দটি object complement।",
+      "t": "object-এর পরিচয় = object complement।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "'He fought a good fight.' — 'a good fight' is a/an—",
+      "o": [
+        "subject complement",
+        "indirect object",
+        "cognate object",
+        "retained object"
+      ],
+      "a": 2,
+      "e": "intransitive verb-এর নিজের অর্থের সমজাতীয় noun object হয়ে বসলে তাকে cognate object বলে (fight a fight, live a life)।",
+      "t": "verb-এর জাত-ভাই noun = cognate object।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "In which sentence is 'run' used transitively?",
+      "o": [
+        "The bus runs on time.",
+        "He runs every morning.",
+        "The river runs fast.",
+        "He runs a small shop."
+      ],
+      "a": 3,
+      "e": "runs a shop = দোকান চালায় — object (a small shop) আছে, তাই transitive; বাকিগুলোতে object নেই।",
+      "t": "object থাকলে transitive।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "নিকট-সম্পর্কিত, পর্যালোচিত — ৫০-৫৯ (break উভয়ভাবে) ভিন্ন verb; run-এর transitive ব্যবহার আলাদা তথ্য",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "In which sentence is 'ring' used intransitively?",
+      "o": [
+        "The bell rang loudly.",
+        "He rang the bell twice.",
+        "The guard rang the alarm.",
+        "The boy rang the school bell."
+      ],
+      "a": 0,
+      "e": "The bell rang — কোনো object নেই, তাই intransitive; বাকিগুলোতে the bell/the alarm object।",
+      "t": "object নেই = intransitive।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "নিকট-সম্পর্কিত, পর্যালোচিত — ৪১-১৯৬, ৪৭-১১৬, ৪৯-৮২-তে ভিন্ন verb (arrive, sleep, sneeze); ring-এর দুই ব্যবহার আলাদা তথ্য",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Which of these verbs is intransitive?",
+      "o": [
+        "raise",
+        "rise",
+        "lay",
+        "carry"
+      ],
+      "a": 1,
+      "e": "rise (ওঠা) object নেয় না — The sun rises; raise (তোলা), lay (রাখা), carry (বহন করা) object নেয়।",
+      "t": "rise নিজে ওঠে, raise কিছু তোলে।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "নিকট-সম্পর্কিত, পর্যালোচিত — ৫০-৫৯ (break উভয়ভাবে) ও ৪১-১৯৬/৪৭-১১৬/৪৯-৮২ (arrive, sleep, sneeze); rise বনাম raise জোড়া কোথাও জিজ্ঞাসিত নয়",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "Which verb is the transitive counterpart of 'sit'?",
+      "o": [
+        "sitting",
+        "sat",
+        "seat",
+        "site"
+      ],
+      "a": 2,
+      "e": "sit (বসা) intransitive; কাউকে বসানো বোঝাতে transitive seat — He seated the guests।",
+      "t": "sit → seat (বসানো)।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "A 'retained object' is found in—",
+      "o": [
+        "a sentence with a linking verb",
+        "an imperative sentence",
+        "an exclamatory sentence",
+        "a passive sentence made from a verb with two objects"
+      ],
+      "a": 3,
+      "e": "দুই object-বিশিষ্ট active বাক্যকে passive করলে একটি object subject হয়, অন্যটি verb-এর পরে থেকে যায় — সেটিই retained object (I was given a book)।",
+      "t": "Passive-এ রয়ে যাওয়া object = retained।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "That ___ be Rina at the door; she is abroad now.",
+      "o": [
+        "can't",
+        "must",
+        "may",
+        "should"
+      ],
+      "a": 0,
+      "e": "যুক্তিসংগত অসম্ভাবনা (নিশ্চিত যে নয়) বোঝাতে can't; must হলে নিশ্চিত হ্যাঁ বোঝায়।",
+      "t": "নিশ্চিত না = can't।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "নিকট-সম্পর্কিত, পর্যালোচিত — ৪৬-১৬ (It --- Shajib = might be) সম্ভাবনা; এখানে অসম্ভাবনা (can't), ভিন্ন নিয়ম",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "You ___ have brought an umbrella; it did not rain at all.",
+      "o": [
+        "mustn't",
+        "needn't",
+        "can't",
+        "daren't"
+      ],
+      "a": 1,
+      "e": "needn't have + past participle = কাজটি করা হয়েছিল, কিন্তু প্রয়োজন ছিল না।",
+      "t": "অপ্রয়োজনে করা = needn't have।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "When we were children, we ___ swim in the river every summer.",
+      "o": [
+        "shall",
+        "should",
+        "would",
+        "must"
+      ],
+      "a": 2,
+      "e": "অতীতের নিয়মিত অভ্যাস (কাজ) বোঝাতে would ব্যবহার করা যায় — we would swim।",
+      "t": "অতীত অভ্যাসের কাজ = would।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Easy",
+      "q": "___ I carry your bag for you?",
+      "o": [
+        "Need",
+        "Will",
+        "Must",
+        "Shall"
+      ],
+      "a": 3,
+      "e": "প্রথম পুরুষে প্রস্তাব (offer) দিতে Shall I …?",
+      "t": "প্রস্তাব = Shall I।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "He ___ not speak to his boss in that tone; he is too afraid.",
+      "o": [
+        "dare",
+        "need",
+        "ought",
+        "used"
+      ],
+      "a": 0,
+      "e": "সাহস না থাকা বোঝাতে modal dare not — He dare not speak।",
+      "t": "সাহস নেই = dare not।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "'Will you shut the door, please?' — Here 'will' expresses a—",
+      "o": [
+        "future action",
+        "request",
+        "past habit",
+        "obligation"
+      ],
+      "a": 1,
+      "e": "Will you …, please? — ভদ্র অনুরোধ।",
+      "t": "Will you, please = অনুরোধ।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "'You shall be punished for this.' — Here 'shall' expresses a—",
+      "o": [
+        "ability",
+        "simple future",
+        "threat or command",
+        "permission"
+      ],
+      "a": 2,
+      "e": "second/third person-এর সঙ্গে shall দৃঢ় ইচ্ছা, আদেশ, প্রতিজ্ঞা বা হুমকি বোঝায়।",
+      "t": "You shall = হুমকি/আদেশ।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Most modal verbs (can, may, must etc.) are followed by the—",
+      "o": [
+        "past form of the verb",
+        "-ing form of the verb",
+        "past participle",
+        "base form of the verb"
+      ],
+      "a": 3,
+      "e": "modal-এর পরে মূল verb-এর base form (bare infinitive) বসে — can go, must come।",
+      "t": "Modal + V1।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "She can swim well.",
+        "She cans swim well.",
+        "She can swims well.",
+        "She can to swim well."
+      ],
+      "a": 0,
+      "e": "modal-এর third person singular-এ -s হয় না, আর পরে to ছাড়া base form।",
+      "t": "can + V1, -s নেই।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "Which of the following is a semi-modal (marginal modal)?",
+      "o": [
+        "can",
+        "dare",
+        "will",
+        "may"
+      ],
+      "a": 1,
+      "e": "need, dare, ought to, used to কখনো modal, কখনো main verb হিসেবে আচরণ করে — তাই marginal/semi-modal।",
+      "t": "need, dare = semi-modal।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "'He can't have seen me; I was not there.' — 'can't have' expresses—",
+      "o": [
+        "permission",
+        "past ability",
+        "impossibility in the past",
+        "obligation"
+      ],
+      "a": 2,
+      "e": "can't have + past participle = অতীতে ঘটা অসম্ভব বলে নিশ্চিত অনুমান।",
+      "t": "can't have + V3 = অতীতে অসম্ভব।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Hard",
+      "q": "'Need' is used as a modal verb mainly in—",
+      "o": [
+        "exclamatory sentences",
+        "affirmative sentences only",
+        "imperative sentences",
+        "negative and interrogative sentences"
+      ],
+      "a": 3,
+      "e": "modal need সাধারণত নেতিবাচক ও প্রশ্নবোধক বাক্যে — You need not go; Need I go?",
+      "t": "modal need = না/প্রশ্ন।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "The past form of 'shall' is—",
+      "o": [
+        "should",
+        "would",
+        "shalt",
+        "must"
+      ],
+      "a": 0,
+      "e": "shall → should, will → would।",
+      "t": "shall-should, will-would।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.VRB",
+      "d": "Medium",
+      "q": "'Must' has no past form. To express obligation in the past we use—",
+      "o": [
+        "must have",
+        "had to",
+        "should",
+        "would"
+      ],
+      "a": 1,
+      "e": "অতীতের বাধ্যবাধকতা: I had to go; must have + V3 অতীত অনুমান বোঝায়, বাধ্যবাধকতা নয়।",
+      "t": "অতীত বাধ্যতা = had to।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Easy",
+      "q": "A determiner is normally placed—",
+      "o": [
+        "after a main verb",
+        "after a noun",
+        "before a noun",
+        "at the end of a sentence"
+      ],
+      "a": 2,
+      "e": "determiner noun-এর আগে বসে তাকে নির্দিষ্ট/সীমিত করে — this book, my pen, some water।",
+      "t": "determiner + noun।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "Which of the following is a possessive determiner?",
+      "o": [
+        "they",
+        "theirs",
+        "them",
+        "their"
+      ],
+      "a": 3,
+      "e": "their noun-এর আগে বসে (their house) — possessive determiner; theirs একা বসে (possessive pronoun)।",
+      "t": "their + noun; theirs একা।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "নিকট-সম্পর্কিত, পর্যালোচিত — ৩৩-২৭ (Each of the sons … his father's) pronoun-এর agreement যাচাই করে; এখানে determiner বনাম possessive pronoun-এর পার্থক্য, ভিন্ন তথ্য",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "___ students attended the seminar, so the hall looked almost empty.",
+      "o": [
+        "Few",
+        "A few",
+        "Little",
+        "A little"
+      ],
+      "a": 0,
+      "e": "countable noun-এর সঙ্গে few = প্রায় নেই (নেতিবাচক); a few = কয়েকজন (ইতিবাচক); little/a little uncountable-এর জন্য।",
+      "t": "few = প্রায় কেউ না।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "Which determiner is used only with plural countable nouns?",
+      "o": [
+        "much",
+        "several",
+        "a little",
+        "each"
+      ],
+      "a": 1,
+      "e": "several + plural countable (several books); much/a little uncountable-এর সঙ্গে, each singular-এর সঙ্গে।",
+      "t": "several = বহুবচন।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "___ road leads to the station; both are closed for repair.",
+      "o": [
+        "Both",
+        "Either",
+        "Neither",
+        "Every"
+      ],
+      "a": 2,
+      "e": "দুটির কোনোটিই নয় বোঝাতে neither + singular noun; পরের অংশে both are closed — তাই কোনোটিই যায় না।",
+      "t": "দুটির কোনোটিই না = neither।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Easy",
+      "q": "She has ___ friends, so she never feels lonely.",
+      "o": [
+        "a little",
+        "much",
+        "little",
+        "many"
+      ],
+      "a": 3,
+      "e": "friends countable plural, তাই many; much/little uncountable-এর জন্য।",
+      "t": "countable = many।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Easy",
+      "q": "Which of the following is a demonstrative determiner?",
+      "o": [
+        "these",
+        "who",
+        "it",
+        "mine"
+      ],
+      "a": 0,
+      "e": "this, that, these, those noun-এর আগে বসে নির্দেশ করে — demonstrative determiner।",
+      "t": "this/that/these/those।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "নিকট-সম্পর্কিত, পর্যালোচিত — ৩৫-৫৫ (___ amazing song = That) একবচন-বহুবচনের মিল যাচাই করে; এখানে demonstrative determiner-এর শ্রেণি, ভিন্ন তথ্য",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "As a determiner, 'every' is followed by a—",
+      "o": [
+        "plural countable noun",
+        "singular countable noun",
+        "uncountable noun",
+        "personal pronoun"
+      ],
+      "a": 1,
+      "e": "every + singular countable noun — every student, every day; verb-ও singular।",
+      "t": "every + একবচন।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "নিকট-সম্পর্কিত, পর্যালোচিত — ১০-২২ (Each of the three boys) each/every + of-এর নিয়ম; এখানে every + singular noun, ভিন্ন নিয়ম",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Easy",
+      "q": "Which word can NOT be used as a determiner?",
+      "o": [
+        "any",
+        "some",
+        "although",
+        "this"
+      ],
+      "a": 2,
+      "e": "although একটি conjunction; some, any, this noun-এর আগে determiner হিসেবে বসে।",
+      "t": "although = conjunction।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "I have read ___ books on this subject, but not all of them.",
+      "o": [
+        "little",
+        "any",
+        "much",
+        "some"
+      ],
+      "a": 3,
+      "e": "affirmative বাক্যে অনির্দিষ্ট কিছুসংখ্যক বোঝাতে some; any সাধারণত negative/interrogative-এ।",
+      "t": "হ্যাঁ-বাক্যে some।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "Determiners are broadly classified into articles, demonstratives, possessives and—",
+      "o": [
+        "quantifiers",
+        "conjunctions",
+        "interjections",
+        "prepositions"
+      ],
+      "a": 0,
+      "e": "determiner-এর প্রধান শ্রেণি: article (a/an/the), demonstrative (this/that), possessive (my/your), quantifier (some/many/few)।",
+      "t": "A-D-P-Q।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ADJ",
+      "d": "Medium",
+      "q": "As a determiner, 'both' refers to—",
+      "o": [
+        "more than two persons",
+        "two persons or things together",
+        "an uncountable quantity",
+        "one person out of two"
+      ],
+      "a": 1,
+      "e": "both = দুজন/দুটিই একসঙ্গে — both brothers; একজন বোঝাতে either।",
+      "t": "both = দুটোই।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "নিকট-সম্পর্কিত, পর্যালোচিত — ৪৬-২৩ (both the sides) both-এর পরে the-এর অবস্থান; এখানে both-এর অর্থ (দুটি একসঙ্গে), ভিন্ন তথ্য",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "The last sentence of a paragraph that sums up its main idea is called the—",
+      "o": [
+        "supporting sentence",
+        "topic sentence",
+        "concluding sentence",
+        "transition sentence"
+      ],
+      "a": 2,
+      "e": "অনুচ্ছেদের শেষে মূল ভাবটি সংক্ষেপে পুনরায় বলে শেষ করে concluding sentence।",
+      "t": "শেষ বাক্য = concluding।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "নিকট-সম্পর্কিত, পর্যালোচিত — ৪২-৩৫ (topic sentence-এর কাজ), ৪৪-৮৪ (controlling sentence = topic sentence), ৫০-৫১ (transition sentence); concluding sentence-এর সংজ্ঞা কোথাও জিজ্ঞাসিত নয়",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "Sentences that give details, examples or reasons for the main idea of a paragraph are called—",
+      "o": [
+        "thesis statements",
+        "concluding sentences",
+        "topic sentences",
+        "supporting sentences"
+      ],
+      "a": 3,
+      "e": "topic sentence-এর মূল ভাবকে বিস্তারিত তথ্য, উদাহরণ ও যুক্তি দিয়ে সমর্থন করে supporting sentences।",
+      "t": "মাঝের বাক্য = supporting।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "নিকট-সম্পর্কিত, পর্যালোচিত — ৪২-৩৫, ৪৪-৮৪ (topic sentence), ৫০-৫১ (transition sentence); supporting sentence-এর সংজ্ঞা ভিন্ন তথ্য",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "When all the sentences of a paragraph deal with one single idea, the paragraph is said to have—",
+      "o": [
+        "unity",
+        "coherence",
+        "variety",
+        "emphasis"
+      ],
+      "a": 0,
+      "e": "একটিমাত্র কেন্দ্রীয় ভাব নিয়ে সব বাক্য — unity; বাক্যগুলোর যৌক্তিক ধারাবাহিকতা — coherence।",
+      "t": "এক ভাব = unity।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Hard",
+      "q": "The logical connection and orderly arrangement of sentences in a paragraph is called—",
+      "o": [
+        "unity",
+        "coherence",
+        "brevity",
+        "emphasis"
+      ],
+      "a": 1,
+      "e": "বাক্যগুলো যুক্তিসংগত ক্রমে সাজানো ও পরস্পর সংযুক্ত হলে অনুচ্ছেদে coherence থাকে।",
+      "t": "যুক্ত ক্রম = coherence।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "নিকট-সম্পর্কিত, পর্যালোচিত — ৫০-৫১ (smooth flow-এর জন্য transition sentence) উপাদানের নাম জানতে চায়; এখানে গুণটির নাম coherence, ভিন্ন তথ্য",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Easy",
+      "q": "A formal letter that begins with 'Dear Sir' should end with—",
+      "o": [
+        "Yours ever",
+        "Yours lovingly",
+        "Yours faithfully",
+        "With love"
+      ],
+      "a": 2,
+      "e": "নাম না জানা প্রাপককে (Dear Sir/Madam) লেখা আনুষ্ঠানিক চিঠির শেষে Yours faithfully; নাম জানা থাকলে Yours sincerely।",
+      "t": "Dear Sir → faithfully।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "The part of a formal letter that contains the receiver's name and address is called the—",
+      "o": [
+        "superscription",
+        "heading",
+        "subscription",
+        "inside address"
+      ],
+      "a": 3,
+      "e": "salutation-এর আগে প্রাপকের নাম-ঠিকানা লেখা অংশ inside address; খামের ওপরের ঠিকানা superscription।",
+      "t": "ভেতরের প্রাপক-ঠিকানা = inside address।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Easy",
+      "q": "'Dear Sir' or 'Dear Madam' in a letter is called the—",
+      "o": [
+        "salutation",
+        "subscription",
+        "heading",
+        "complimentary close"
+      ],
+      "a": 0,
+      "e": "চিঠির শুরুতে প্রাপককে সম্ভাষণ — salutation।",
+      "t": "সম্ভাষণ = salutation।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "'Yours faithfully' or 'Yours sincerely' at the end of a letter is called the—",
+      "o": [
+        "salutation",
+        "complimentary close",
+        "inside address",
+        "superscription"
+      ],
+      "a": 1,
+      "e": "চিঠির শেষে স্বাক্ষরের আগের বিদায়-সম্ভাষণ complimentary close (subscription-এর অংশ)।",
+      "t": "শেষ সম্ভাষণ = complimentary close।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "In an application, the line 'Subject: Prayer for leave of absence' is written—",
+      "o": [
+        "at the end of the body",
+        "after the signature",
+        "before the salutation",
+        "below the complimentary close"
+      ],
+      "a": 2,
+      "e": "দরখাস্তে প্রাপকের ঠিকানার পরে, 'Sir' (salutation)-এর আগে Subject লাইন বসে।",
+      "t": "Subject → তারপর Sir।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "'Encl.' written at the bottom of a letter indicates that—",
+      "o": [
+        "the letter needs an urgent reply",
+        "the letter is confidential",
+        "copies are sent to other people",
+        "some documents are attached with the letter"
+      ],
+      "a": 3,
+      "e": "Encl. = Enclosure(s) — চিঠির সঙ্গে কাগজপত্র সংযুক্ত।",
+      "t": "Encl. = সংযুক্তি।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "'CC' at the end of an official letter shows that—",
+      "o": [
+        "copies of the letter are sent to other persons",
+        "documents are attached",
+        "the letter is a reply",
+        "the writer has signed it"
+      ],
+      "a": 0,
+      "e": "CC (carbon copy/courtesy copy) — একই চিঠির অনুলিপি অন্য যাঁদের পাঠানো হয়েছে তাঁদের নাম।",
+      "t": "CC = অনুলিপি।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Easy",
+      "q": "The heading of a personal letter usually contains the—",
+      "o": [
+        "receiver's name and address",
+        "writer's address and the date",
+        "subject of the letter",
+        "writer's signature"
+      ],
+      "a": 1,
+      "e": "ব্যক্তিগত চিঠির heading-এ লেখকের ঠিকানা ও তারিখ থাকে।",
+      "t": "Heading = নিজের ঠিকানা + তারিখ।",
+      "src": "BCS Preliminary Syllabus (Part I: A, G) ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin; Oxford Guide to English Grammar)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

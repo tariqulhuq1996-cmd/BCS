@@ -1,0 +1,1067 @@
+{
+  "batch": "Batch 18",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 01 (One Word Substitution), Lecture 18–19 (Vocabulary; Group Verbs)",
+  "subtopics": {
+    "EN.VO.OWS": {},
+    "EN.VO.GVB": {}
+  },
+  "questions": [
+    {
+      "st": "EN.VO.OWS",
+      "d": "Hard",
+      "q": "'One who knows many languages' — one word for this is—",
+      "o": [
+        "polyglot",
+        "hydrophobia",
+        "oligarchy",
+        "aviary"
+      ],
+      "a": 0,
+      "e": "One who knows many languages = polyglot (বহুভাষাবিদ)।",
+      "t": "polyglot = বহুভাষাবিদ।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "Choose the one-word substitute: 'One who cannot be corrected'",
+      "o": [
+        "omniscient",
+        "incorrigible",
+        "calligraphy",
+        "ophthalmologist"
+      ],
+      "a": 1,
+      "e": "One who cannot be corrected = incorrigible (সংশোধনের অযোগ্য)।",
+      "t": "incorrigible = সংশোধনের অযোগ্য।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "Which single word means 'fear of heights'?",
+      "o": [
+        "entomology",
+        "mint",
+        "acrophobia",
+        "insomnia"
+      ],
+      "a": 2,
+      "e": "Fear of heights = acrophobia (উচ্চতাভীতি)।",
+      "t": "acrophobia = উচ্চতাভীতি।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "'Fear of water' — one word for this is—",
+      "o": [
+        "incurable",
+        "genocide",
+        "fatalist",
+        "hydrophobia"
+      ],
+      "a": 3,
+      "e": "Fear of water = hydrophobia (জলাতঙ্ক)।",
+      "t": "hydrophobia = জলাতঙ্ক।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Hard",
+      "q": "Choose the one-word substitute: 'Fear of enclosed spaces'",
+      "o": [
+        "claustrophobia",
+        "misogynist",
+        "usurer",
+        "ornithology"
+      ],
+      "a": 0,
+      "e": "Fear of enclosed spaces = claustrophobia (আবদ্ধ স্থানভীতি)।",
+      "t": "claustrophobia = আবদ্ধ স্থানভীতি।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "Which single word means 'killing of a king'?",
+      "o": [
+        "misogynist",
+        "regicide",
+        "usurer",
+        "ornithology"
+      ],
+      "a": 1,
+      "e": "Killing of a king = regicide (রাজহত্যা)।",
+      "t": "regicide = রাজহত্যা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "'Killing of one's mother' — one word for this is—",
+      "o": [
+        "regicide",
+        "aviary",
+        "matricide",
+        "atheist"
+      ],
+      "a": 2,
+      "e": "Killing of one's mother = matricide (মাতৃহত্যা)।",
+      "t": "matricide = মাতৃহত্যা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "Choose the one-word substitute: 'Killing of a whole race or community'",
+      "o": [
+        "aviary",
+        "acrophobia",
+        "oligarchy",
+        "genocide"
+      ],
+      "a": 3,
+      "e": "Killing of a whole race or community = genocide (গণহত্যা/জাতিহত্যা)।",
+      "t": "genocide = গণহত্যা/জাতিহত্যা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Hard",
+      "q": "Which single word means 'the scientific study of birds'?",
+      "o": [
+        "ornithology",
+        "incurable",
+        "seismology",
+        "amnesia"
+      ],
+      "a": 0,
+      "e": "The scientific study of birds = ornithology (পক্ষীবিজ্ঞান)।",
+      "t": "ornithology = পক্ষীবিজ্ঞান।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "'The scientific study of insects' — one word for this is—",
+      "o": [
+        "fatalist",
+        "entomology",
+        "incurable",
+        "seismology"
+      ],
+      "a": 1,
+      "e": "The scientific study of insects = entomology (কীটতত্ত্ব)।",
+      "t": "entomology = কীটতত্ত্ব।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "Choose the one-word substitute: 'The scientific study of earthquakes'",
+      "o": [
+        "omniscient",
+        "somnambulist",
+        "seismology",
+        "calligraphy"
+      ],
+      "a": 2,
+      "e": "The scientific study of earthquakes = seismology (ভূকম্পনবিদ্যা)।",
+      "t": "seismology = ভূকম্পনবিদ্যা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "Which single word means 'the art of beautiful handwriting'?",
+      "o": [
+        "hydrophobia",
+        "philatelist",
+        "amphibians",
+        "calligraphy"
+      ],
+      "a": 3,
+      "e": "The art of beautiful handwriting = calligraphy (হস্তলিপিশিল্প)।",
+      "t": "calligraphy = হস্তলিপিশিল্প।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Hard",
+      "q": "'A collector of postage stamps' — one word for this is—",
+      "o": [
+        "philatelist",
+        "acrophobia",
+        "oligarchy",
+        "aviary"
+      ],
+      "a": 0,
+      "e": "A collector of postage stamps = philatelist (ডাকটিকিট সংগ্রাহক)।",
+      "t": "philatelist = ডাকটিকিট সংগ্রাহক।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "Choose the one-word substitute: 'A collector of coins'",
+      "o": [
+        "ophthalmologist",
+        "numismatist",
+        "acrophobia",
+        "oligarchy"
+      ],
+      "a": 1,
+      "e": "A collector of coins = numismatist (মুদ্রা সংগ্রাহক)।",
+      "t": "numismatist = মুদ্রা সংগ্রাহক।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "Which single word means 'government by a small group of people'?",
+      "o": [
+        "amphibians",
+        "calligraphy",
+        "oligarchy",
+        "hydrophobia"
+      ],
+      "a": 2,
+      "e": "Government by a small group of people = oligarchy (স্বল্পজনতন্ত্র)।",
+      "t": "oligarchy = স্বল্পজনতন্ত্র।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "'Government by one person with absolute power' — one word for this is—",
+      "o": [
+        "apiary",
+        "incorrigible",
+        "philatelist",
+        "autocracy"
+      ],
+      "a": 3,
+      "e": "Government by one person with absolute power = autocracy (স্বৈরতন্ত্র)।",
+      "t": "autocracy = স্বৈরতন্ত্র।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Hard",
+      "q": "Choose the one-word substitute: 'One who hates women'",
+      "o": [
+        "misogynist",
+        "hydrophobia",
+        "oligarchy",
+        "arsenal"
+      ],
+      "a": 0,
+      "e": "One who hates women = misogynist (নারীবিদ্বেষী)।",
+      "t": "misogynist = নারীবিদ্বেষী।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "Which single word means 'one who does not believe in god'?",
+      "o": [
+        "insomnia",
+        "atheist",
+        "polyglot",
+        "calligraphy"
+      ],
+      "a": 1,
+      "e": "One who does not believe in God = atheist (নাস্তিক)।",
+      "t": "atheist = নাস্তিক।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "'One who believes that everything is decided by fate' — one word for this is—",
+      "o": [
+        "arsenal",
+        "oligarchy",
+        "fatalist",
+        "matricide"
+      ],
+      "a": 2,
+      "e": "One who believes that everything is decided by fate = fatalist (অদৃষ্টবাদী)।",
+      "t": "fatalist = অদৃষ্টবাদী।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "Choose the one-word substitute: 'One who walks in sleep'",
+      "o": [
+        "acrophobia",
+        "seismology",
+        "ophthalmologist",
+        "somnambulist"
+      ],
+      "a": 3,
+      "e": "One who walks in sleep = somnambulist (নিদ্রাচারী)।",
+      "t": "somnambulist = নিদ্রাচারী।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Hard",
+      "q": "Which single word means 'inability to sleep'?",
+      "o": [
+        "insomnia",
+        "ophthalmologist",
+        "acrophobia",
+        "numismatist"
+      ],
+      "a": 0,
+      "e": "Inability to sleep = insomnia (অনিদ্রা)।",
+      "t": "insomnia = অনিদ্রা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "'Loss of memory' — one word for this is—",
+      "o": [
+        "entomology",
+        "amnesia",
+        "insomnia",
+        "incorrigible"
+      ],
+      "a": 1,
+      "e": "Loss of memory = amnesia (স্মৃতিভ্রংশ)।",
+      "t": "amnesia = স্মৃতিভ্রংশ।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "Choose the one-word substitute: 'A specialist in diseases of the eye'",
+      "o": [
+        "amphibians",
+        "calligraphy",
+        "ophthalmologist",
+        "hydrophobia"
+      ],
+      "a": 2,
+      "e": "A specialist in diseases of the eye = ophthalmologist (চক্ষুবিশেষজ্ঞ)।",
+      "t": "ophthalmologist = চক্ষুবিশেষজ্ঞ।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "Which single word means 'animals that can live both on land and in water'?",
+      "o": [
+        "claustrophobia",
+        "philatelist",
+        "apiary",
+        "amphibians"
+      ],
+      "a": 3,
+      "e": "Animals that can live both on land and in water = amphibians (উভচর প্রাণী)।",
+      "t": "amphibians = উভচর প্রাণী।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Hard",
+      "q": "'A place where bees are kept' — one word for this is—",
+      "o": [
+        "apiary",
+        "oligarchy",
+        "arsenal",
+        "matricide"
+      ],
+      "a": 0,
+      "e": "A place where bees are kept = apiary (মৌমাছি পালনের স্থান)।",
+      "t": "apiary = মৌমাছি পালনের স্থান।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "Choose the one-word substitute: 'A place where birds are kept'",
+      "o": [
+        "calligraphy",
+        "aviary",
+        "ophthalmologist",
+        "hydrophobia"
+      ],
+      "a": 1,
+      "e": "A place where birds are kept = aviary (পাখিশালা)।",
+      "t": "aviary = পাখিশালা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "Which single word means 'a store of weapons and ammunition'?",
+      "o": [
+        "atheist",
+        "matricide",
+        "arsenal",
+        "incurable"
+      ],
+      "a": 2,
+      "e": "A store of weapons and ammunition = arsenal (অস্ত্রাগার)।",
+      "t": "arsenal = অস্ত্রাগার।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "'One who lends money at very high interest' — one word for this is—",
+      "o": [
+        "atheist",
+        "aviary",
+        "matricide",
+        "usurer"
+      ],
+      "a": 3,
+      "e": "One who lends money at very high interest = usurer (চড়া সুদে ঋণদাতা)।",
+      "t": "usurer = চড়া সুদে ঋণদাতা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Hard",
+      "q": "Choose the one-word substitute: 'A place where coins are made'",
+      "o": [
+        "mint",
+        "insomnia",
+        "incorrigible",
+        "philatelist"
+      ],
+      "a": 0,
+      "e": "A place where coins are made = mint (টাকশাল)।",
+      "t": "mint = টাকশাল।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "Which single word means 'a disease that cannot be cured'?",
+      "o": [
+        "regicide",
+        "incurable",
+        "misogynist",
+        "usurer"
+      ],
+      "a": 1,
+      "e": "A disease that cannot be cured = incurable (দুরারোগ্য)।",
+      "t": "incurable = দুরারোগ্য।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.OWS",
+      "d": "Medium",
+      "q": "'One who knows everything' — one word for this is—",
+      "o": [
+        "misogynist",
+        "regicide",
+        "omniscient",
+        "usurer"
+      ],
+      "a": 2,
+      "e": "One who knows everything = omniscient (সর্বজ্ঞ)।",
+      "t": "omniscient = সর্বজ্ঞ।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Easy",
+      "q": "The phrasal verb 'look after' means—",
+      "o": [
+        "have no more left",
+        "recover from",
+        "say goodbye to someone leaving",
+        "take care of"
+      ],
+      "a": 3,
+      "e": "look after = take care of (দেখাশোনা করা)।",
+      "t": "look after = দেখাশোনা করা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "What does 'bring up' mean?",
+      "o": [
+        "rear (a child)",
+        "resemble (a parent)",
+        "wait",
+        "cancel"
+      ],
+      "a": 0,
+      "e": "bring up = rear (a child) (লালনপালন করা)।",
+      "t": "bring up = লালনপালন করা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "'call off' means—",
+      "o": [
+        "compensate for",
+        "cancel",
+        "keep pace with",
+        "support"
+      ],
+      "a": 1,
+      "e": "call off = cancel (বাতিল করা)।",
+      "t": "call off = বাতিল করা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "The phrasal verb 'carry out' means—",
+      "o": [
+        "meet or find by chance",
+        "arrive",
+        "execute",
+        "confirm"
+      ],
+      "a": 2,
+      "e": "carry out = execute (বাস্তবায়ন করা)।",
+      "t": "carry out = বাস্তবায়ন করা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "What does 'break down' mean?",
+      "o": [
+        "quarrel",
+        "execute",
+        "visit",
+        "stop working"
+      ],
+      "a": 3,
+      "e": "break down = stop working (বিকল হওয়া/ভেঙে পড়া)।",
+      "t": "break down = বিকল হওয়া/ভেঙে পড়া।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Easy",
+      "q": "'come across' means—",
+      "o": [
+        "meet or find by chance",
+        "rear (a child)",
+        "despise",
+        "cause to happen"
+      ],
+      "a": 0,
+      "e": "come across = meet or find by chance (হঠাৎ সাক্ষাৎ পাওয়া)।",
+      "t": "come across = হঠাৎ সাক্ষাৎ পাওয়া।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "The phrasal verb 'make up for' means—",
+      "o": [
+        "wait",
+        "compensate for",
+        "rear (a child)",
+        "despise"
+      ],
+      "a": 1,
+      "e": "make up for = compensate for (ক্ষতিপূরণ করা)।",
+      "t": "make up for = ক্ষতিপূরণ করা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "What does 'run out of' mean?",
+      "o": [
+        "keep pace with",
+        "meet or find by chance",
+        "have no more left",
+        "support"
+      ],
+      "a": 2,
+      "e": "run out of = have no more left (ফুরিয়ে যাওয়া)।",
+      "t": "run out of = ফুরিয়ে যাওয়া।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "'set out' means—",
+      "o": [
+        "meet or find by chance",
+        "despise",
+        "cause to happen",
+        "start a journey"
+      ],
+      "a": 3,
+      "e": "set out = start a journey (যাত্রা শুরু করা)।",
+      "t": "set out = যাত্রা শুরু করা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "The phrasal verb 'take after' means—",
+      "o": [
+        "resemble (a parent)",
+        "leave the ground (of an aircraft)",
+        "start a journey",
+        "wait"
+      ],
+      "a": 0,
+      "e": "take after = resemble (a parent) ((বাবা-মায়ের) মতো হওয়া)।",
+      "t": "take after = (বাবা-মায়ের) মতো হওয়া।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Easy",
+      "q": "What does 'turn down' mean?",
+      "o": [
+        "rear (a child)",
+        "reject",
+        "despise",
+        "cause to happen"
+      ],
+      "a": 1,
+      "e": "turn down = reject (প্রত্যাখ্যান করা)।",
+      "t": "turn down = প্রত্যাখ্যান করা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "'put out' means—",
+      "o": [
+        "have no more left",
+        "quarrel",
+        "extinguish",
+        "understand"
+      ],
+      "a": 2,
+      "e": "put out = extinguish ((আগুন) নেভানো)।",
+      "t": "put out = (আগুন) নেভানো।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "The phrasal verb 'look up to' means—",
+      "o": [
+        "arrive",
+        "take care of",
+        "extinguish",
+        "respect"
+      ],
+      "a": 3,
+      "e": "look up to = respect (শ্রদ্ধা করা)।",
+      "t": "look up to = শ্রদ্ধা করা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "What does 'look down upon' mean?",
+      "o": [
+        "despise",
+        "bring to an end",
+        "reject",
+        "start suddenly"
+      ],
+      "a": 0,
+      "e": "look down upon = despise (অবজ্ঞা করা)।",
+      "t": "look down upon = অবজ্ঞা করা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "'get over' means—",
+      "o": [
+        "despise",
+        "recover from",
+        "say goodbye to someone leaving",
+        "compensate for"
+      ],
+      "a": 1,
+      "e": "get over = recover from (সেরে ওঠা/কাটিয়ে ওঠা)।",
+      "t": "get over = সেরে ওঠা/কাটিয়ে ওঠা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Easy",
+      "q": "The phrasal verb 'call on' means—",
+      "o": [
+        "resemble (a parent)",
+        "support",
+        "visit",
+        "distribute free"
+      ],
+      "a": 2,
+      "e": "call on = visit (দেখা করতে যাওয়া)।",
+      "t": "call on = দেখা করতে যাওয়া।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "What does 'bear out' mean?",
+      "o": [
+        "quarrel",
+        "execute",
+        "recover from",
+        "confirm"
+      ],
+      "a": 3,
+      "e": "bear out = confirm (সমর্থন/প্রমাণ করা)।",
+      "t": "bear out = সমর্থন/প্রমাণ করা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "'keep up with' means—",
+      "o": [
+        "keep pace with",
+        "support",
+        "resemble (a parent)",
+        "distribute free"
+      ],
+      "a": 0,
+      "e": "keep up with = keep pace with (তাল মিলিয়ে চলা)।",
+      "t": "keep up with = তাল মিলিয়ে চলা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "The phrasal verb 'put on' means—",
+      "o": [
+        "understand",
+        "wear",
+        "take care of",
+        "extinguish"
+      ],
+      "a": 1,
+      "e": "put on = wear (পরিধান করা)।",
+      "t": "put on = পরিধান করা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "Near Duplicate — ২৬-৫৭ (--- your shoes before entering the mosque = put off): put on/put off-এর একই প্রসঙ্গ",
+      "v": "যাচাইকৃত",
+      "reject": "Near Duplicate"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "What does 'make out' mean?",
+      "o": [
+        "wear",
+        "have no more left",
+        "understand",
+        "take care of"
+      ],
+      "a": 2,
+      "e": "make out = understand (বুঝতে পারা)।",
+      "t": "make out = বুঝতে পারা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Easy",
+      "q": "'hold on' means—",
+      "o": [
+        "cancel",
+        "resemble (a parent)",
+        "distribute free",
+        "wait"
+      ],
+      "a": 3,
+      "e": "hold on = wait (অপেক্ষা করা)।",
+      "t": "hold on = অপেক্ষা করা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "The phrasal verb 'give away' means—",
+      "o": [
+        "distribute free",
+        "cause to happen",
+        "meet or find by chance",
+        "confirm"
+      ],
+      "a": 0,
+      "e": "give away = distribute free (বিলিয়ে দেওয়া)।",
+      "t": "give away = বিলিয়ে দেওয়া।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "What does 'break out' mean?",
+      "o": [
+        "cause to happen",
+        "start suddenly",
+        "meet or find by chance",
+        "confirm"
+      ],
+      "a": 1,
+      "e": "break out = start suddenly ((যুদ্ধ/আগুন/রোগ) হঠাৎ শুরু হওয়া)।",
+      "t": "break out = (যুদ্ধ/আগুন/রোগ) হঠাৎ শুরু হওয়া।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "'turn up' means—",
+      "o": [
+        "stop working",
+        "start suddenly",
+        "arrive",
+        "visit"
+      ],
+      "a": 2,
+      "e": "turn up = arrive (উপস্থিত হওয়া)।",
+      "t": "turn up = উপস্থিত হওয়া।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "The phrasal verb 'bring about' means—",
+      "o": [
+        "distribute free",
+        "bring to an end",
+        "reject",
+        "cause to happen"
+      ],
+      "a": 3,
+      "e": "bring about = cause to happen (ঘটানো)।",
+      "t": "bring about = ঘটানো।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Easy",
+      "q": "What does 'see off' mean?",
+      "o": [
+        "say goodbye to someone leaving",
+        "leave the ground (of an aircraft)",
+        "start a journey",
+        "understand"
+      ],
+      "a": 0,
+      "e": "see off = say goodbye to someone leaving (বিদায় জানাতে যাওয়া)।",
+      "t": "see off = বিদায় জানাতে যাওয়া।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "'fall out' means—",
+      "o": [
+        "start a journey",
+        "quarrel",
+        "understand",
+        "rear (a child)"
+      ],
+      "a": 1,
+      "e": "fall out = quarrel (ঝগড়া করে সম্পর্ক ছিন্ন করা)।",
+      "t": "fall out = ঝগড়া করে সম্পর্ক ছিন্ন করা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "The phrasal verb 'take off' means—",
+      "o": [
+        "say goodbye to someone leaving",
+        "recover from",
+        "leave the ground (of an aircraft)",
+        "have no more left"
+      ],
+      "a": 2,
+      "e": "take off = leave the ground (of an aircraft) ((বিমান) উড্ডয়ন করা)।",
+      "t": "take off = (বিমান) উড্ডয়ন করা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "Semantic Duplicate — ২৩-৯৩ (We waited until the plane took off): বিমানের take off অর্থ একই",
+      "v": "যাচাইকৃত",
+      "reject": "Semantic Duplicate"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "What does 'back up' mean?",
+      "o": [
+        "keep pace with",
+        "cause to happen",
+        "compensate for",
+        "support"
+      ],
+      "a": 3,
+      "e": "back up = support (সমর্থন করা)।",
+      "t": "back up = সমর্থন করা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "'wind up' means—",
+      "o": [
+        "bring to an end",
+        "support",
+        "reject",
+        "distribute free"
+      ],
+      "a": 0,
+      "e": "wind up = bring to an end (গুটিয়ে আনা/শেষ করা)।",
+      "t": "wind up = গুটিয়ে আনা/শেষ করা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.GVB",
+      "d": "Medium",
+      "q": "The phrasal verb 'fill in' (a form) means—",
+      "o": [
+        "tear up",
+        "complete by writing information",
+        "post",
+        "sign only"
+      ],
+      "a": 1,
+      "e": "fill in a form = ফর্ম পূরণ করা।",
+      "t": "fill in = পূরণ করা।",
+      "src": "Lecture 01, 18–19 ও Standard English Dictionary (Oxford Learner's; Cambridge Phrasal Verbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

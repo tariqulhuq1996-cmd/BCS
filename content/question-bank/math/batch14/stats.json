@@ -1,0 +1,27 @@
+{
+  "target": 1000,
+  "priorityTarget": {
+    "A": 289,
+    "B": 198,
+    "C": 282,
+    "D": 231
+  },
+  "historicalReference": 575,
+  "coverage": "MA.AR.SNG: বিগত 21টি (২০০-নম্বর যুগে); MA.JY.CHT: বিগত 19টি (২০০-নম্বর যুগে)",
+  "generated": 46,
+  "exact": 0,
+  "semantic": 0,
+  "near": 0,
+  "verify": 0,
+  "qc": 0,
+  "accepted": 46,
+  "cumulative": 1000,
+  "remaining": 0,
+  "supplementary": 0,
+  "cumByPriority": {
+    "A": 289,
+    "B": 198,
+    "C": 282,
+    "D": 231
+  }
+}

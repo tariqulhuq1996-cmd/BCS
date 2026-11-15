@@ -1,0 +1,24 @@
+{
+  "target": 1000,
+  "priorityTarget": {
+    "A": 289,
+    "B": 198,
+    "C": 282,
+    "D": 231
+  },
+  "historicalReference": 575,
+  "coverage": "MA.BI.DHR: বিগত 24টি (২০০-নম্বর যুগে)",
+  "generated": 69,
+  "exact": 0,
+  "semantic": 0,
+  "near": 0,
+  "verify": 0,
+  "qc": 0,
+  "accepted": 69,
+  "cumulative": 233,
+  "remaining": 767,
+  "supplementary": 0,
+  "cumByPriority": {
+    "A": 233
+  }
+}

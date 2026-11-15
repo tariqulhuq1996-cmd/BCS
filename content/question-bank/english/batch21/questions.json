@@ -1,0 +1,1221 @@
+{
+  "batch": "Batch 21",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 20 (Analogy), Lecture 07, 18–19 (Vocabulary: Proverbs, Foreign Words, Word Formation, Translation)",
+  "subtopics": {
+    "EN.VO.ANL": {},
+    "EN.VO.PRV": {},
+    "EN.VO.FOR": {},
+    "EN.VO.WFM": {},
+    "EN.VO.TRN": {}
+  },
+  "questions": [
+    {
+      "st": "EN.VO.ANL",
+      "d": "Easy",
+      "q": "Pen : Write :: Knife : ?",
+      "o": [
+        "Cut",
+        "Sharp",
+        "Kitchen",
+        "Steel"
+      ],
+      "a": 0,
+      "e": "যন্ত্র : তার কাজ।",
+      "t": "Pen:Write = Knife:Cut।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANL",
+      "d": "Easy",
+      "q": "Doctor : Hospital :: Teacher : ?",
+      "o": [
+        "Student",
+        "School",
+        "Book",
+        "Lesson"
+      ],
+      "a": 1,
+      "e": "পেশাজীবী : কর্মস্থল।",
+      "t": "Doctor:Hospital = Teacher:School।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANL",
+      "d": "Easy",
+      "q": "Hunger : Food :: Thirst : ?",
+      "o": [
+        "Heat",
+        "Desert",
+        "Water",
+        "Juice"
+      ],
+      "a": 2,
+      "e": "অভাব : যা দিয়ে মেটে।",
+      "t": "Hunger:Food = Thirst:Water।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANL",
+      "d": "Medium",
+      "q": "Architect : Building :: Sculptor : ?",
+      "o": [
+        "Marble",
+        "Chisel",
+        "Museum",
+        "Statue"
+      ],
+      "a": 3,
+      "e": "স্রষ্টা : সৃষ্টি।",
+      "t": "Architect:Building = Sculptor:Statue।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANL",
+      "d": "Medium",
+      "q": "Puppy : Dog :: Calf : ?",
+      "o": [
+        "Cow",
+        "Lamb",
+        "Milk",
+        "Farm"
+      ],
+      "a": 0,
+      "e": "শাবক : পূর্ণবয়স্ক প্রাণী।",
+      "t": "Puppy:Dog = Calf:Cow।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANL",
+      "d": "Medium",
+      "q": "Bee : Hive :: Horse : ?",
+      "o": [
+        "Kennel",
+        "Stable",
+        "Saddle",
+        "Sty"
+      ],
+      "a": 1,
+      "e": "প্রাণী : বাসস্থান (kennel কুকুরের, sty শূকরের)।",
+      "t": "Bee:Hive = Horse:Stable।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANL",
+      "d": "Easy",
+      "q": "Glove : Hand :: Sock : ?",
+      "o": [
+        "Leg",
+        "Shoe",
+        "Foot",
+        "Wool"
+      ],
+      "a": 2,
+      "e": "পোশাক : শরীরের অংশ।",
+      "t": "Glove:Hand = Sock:Foot।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANL",
+      "d": "Medium",
+      "q": "Thermometer : Temperature :: Barometer : ?",
+      "o": [
+        "Wind speed",
+        "Humidity",
+        "Rainfall",
+        "Atmospheric pressure"
+      ],
+      "a": 3,
+      "e": "যন্ত্র : যা মাপে।",
+      "t": "Thermometer:Temperature = Barometer:Atmospheric pressure।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANL",
+      "d": "Easy",
+      "q": "Sun : Day :: Moon : ?",
+      "o": [
+        "Night",
+        "Star",
+        "Sky",
+        "Light"
+      ],
+      "a": 0,
+      "e": "আলোর উৎস : সময়।",
+      "t": "Sun:Day = Moon:Night।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANL",
+      "d": "Medium",
+      "q": "Chapter : Book :: Act : ?",
+      "o": [
+        "Actor",
+        "Play",
+        "Stage",
+        "Scene"
+      ],
+      "a": 1,
+      "e": "অংশ : সমগ্র।",
+      "t": "Chapter:Book = Act:Play।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANL",
+      "d": "Medium",
+      "q": "Fish : Gills :: Human : ?",
+      "o": [
+        "Nose",
+        "Heart",
+        "Lungs",
+        "Skin"
+      ],
+      "a": 2,
+      "e": "প্রাণী : শ্বাসযন্ত্র।",
+      "t": "Fish:Gills = Human:Lungs।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANL",
+      "d": "Medium",
+      "q": "Kilogram : Weight :: Litre : ?",
+      "o": [
+        "Mass",
+        "Length",
+        "Water",
+        "Volume"
+      ],
+      "a": 3,
+      "e": "একক : যা মাপে।",
+      "t": "Kilogram:Weight = Litre:Volume।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANL",
+      "d": "Hard",
+      "q": "Cowardice : Courage :: Ignorance : ?",
+      "o": [
+        "Knowledge",
+        "Stupidity",
+        "Darkness",
+        "Innocence"
+      ],
+      "a": 0,
+      "e": "বিপরীতার্থক সম্পর্ক।",
+      "t": "Cowardice:Courage = Ignorance:Knowledge।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANL",
+      "d": "Medium",
+      "q": "Carpenter : Wood :: Mason : ?",
+      "o": [
+        "Hammer",
+        "Stone",
+        "House",
+        "Cement mixer"
+      ],
+      "a": 1,
+      "e": "কারিগর : উপাদান।",
+      "t": "Carpenter:Wood = Mason:Stone।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.ANL",
+      "d": "Medium",
+      "q": "Seed : Tree :: Egg : ?",
+      "o": [
+        "Shell",
+        "Nest",
+        "Bird",
+        "Yolk"
+      ],
+      "a": 2,
+      "e": "শুরুর রূপ : পূর্ণ রূপ।",
+      "t": "Seed:Tree = Egg:Bird।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.PRV",
+      "d": "Easy",
+      "q": "The proverb 'Too many cooks spoil the broth.' means—",
+      "o": [
+        "you get the results of your own actions",
+        "a true friend helps in times of trouble",
+        "people of similar character keep company",
+        "too many people working on a task can ruin it"
+      ],
+      "a": 3,
+      "e": "Too many cooks spoil the broth. — অনেক রাঁধুনিতে রান্না নষ্ট।",
+      "t": "অনেক রাঁধুনিতে রান্না নষ্ট।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.PRV",
+      "d": "Medium",
+      "q": "The proverb 'Barking dogs seldom bite.' means—",
+      "o": [
+        "people who threaten loudly rarely act",
+        "a true friend helps in times of trouble",
+        "people of similar character keep company",
+        "you get the results of your own actions"
+      ],
+      "a": 0,
+      "e": "Barking dogs seldom bite. — যত গর্জে তত বর্ষে না।",
+      "t": "যত গর্জে তত বর্ষে না।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.PRV",
+      "d": "Medium",
+      "q": "The proverb 'Make hay while the sun shines.' means—",
+      "o": [
+        "too many people working on a task can ruin it",
+        "make use of an opportunity while it lasts",
+        "what you do matters more than what you say",
+        "it is wiser to stop a problem than to fix it later"
+      ],
+      "a": 1,
+      "e": "Make hay while the sun shines. — সময় থাকতে সুযোগ কাজে লাগাও।",
+      "t": "সময় থাকতে সুযোগ কাজে লাগাও।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.PRV",
+      "d": "Medium",
+      "q": "The proverb 'Empty vessels make the most noise.' means—",
+      "o": [
+        "people who threaten loudly rarely act",
+        "need drives people to find new solutions",
+        "the least knowledgeable often talk the most",
+        "doing things too quickly causes mistakes"
+      ],
+      "a": 2,
+      "e": "Empty vessels make the most noise. — খালি কলসি বাজে বেশি।",
+      "t": "খালি কলসি বাজে বেশি।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.PRV",
+      "d": "Easy",
+      "q": "The proverb 'Rome was not built in a day.' means—",
+      "o": [
+        "what you do matters more than what you say",
+        "doing things too quickly causes mistakes",
+        "too many people working on a task can ruin it",
+        "great achievements take time"
+      ],
+      "a": 3,
+      "e": "Rome was not built in a day. — বড় কাজে সময় লাগে।",
+      "t": "বড় কাজে সময় লাগে।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.PRV",
+      "d": "Medium",
+      "q": "The proverb 'Birds of a feather flock together.' means—",
+      "o": [
+        "people of similar character keep company",
+        "need drives people to find new solutions",
+        "people who threaten loudly rarely act",
+        "doing things too quickly causes mistakes"
+      ],
+      "a": 0,
+      "e": "Birds of a feather flock together. — রতনে রতন চেনে।",
+      "t": "রতনে রতন চেনে।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.PRV",
+      "d": "Medium",
+      "q": "The proverb 'Look before you leap.' means—",
+      "o": [
+        "arrogance leads to failure",
+        "think carefully before acting",
+        "family ties are stronger than other relationships",
+        "people of similar character keep company"
+      ],
+      "a": 1,
+      "e": "Look before you leap. — ভেবেচিন্তে কাজ করো।",
+      "t": "ভেবেচিন্তে কাজ করো।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.PRV",
+      "d": "Medium",
+      "q": "The proverb 'Pride goes before a fall.' means—",
+      "o": [
+        "too many people working on a task can ruin it",
+        "doing things too quickly causes mistakes",
+        "arrogance leads to failure",
+        "what you do matters more than what you say"
+      ],
+      "a": 2,
+      "e": "Pride goes before a fall. — অহংকার পতনের মূল।",
+      "t": "অহংকার পতনের মূল।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.PRV",
+      "d": "Easy",
+      "q": "The proverb 'Actions speak louder than words.' means—",
+      "o": [
+        "the least knowledgeable often talk the most",
+        "great achievements take time",
+        "you get the results of your own actions",
+        "what you do matters more than what you say"
+      ],
+      "a": 3,
+      "e": "Actions speak louder than words. — কথার চেয়ে কাজ বড়।",
+      "t": "কথার চেয়ে কাজ বড়।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.PRV",
+      "d": "Medium",
+      "q": "The proverb 'Haste makes waste.' means—",
+      "o": [
+        "doing things too quickly causes mistakes",
+        "what you do matters more than what you say",
+        "too many people working on a task can ruin it",
+        "arrogance leads to failure"
+      ],
+      "a": 0,
+      "e": "Haste makes waste. — তাড়াহুড়োয় কাজ পণ্ড হয়।",
+      "t": "তাড়াহুড়োয় কাজ পণ্ড হয়।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.PRV",
+      "d": "Medium",
+      "q": "The proverb 'Necessity is the mother of invention.' means—",
+      "o": [
+        "a true friend helps in times of trouble",
+        "need drives people to find new solutions",
+        "great achievements take time",
+        "you get the results of your own actions"
+      ],
+      "a": 1,
+      "e": "Necessity is the mother of invention. — প্রয়োজনই উদ্ভাবনের জননী।",
+      "t": "প্রয়োজনই উদ্ভাবনের জননী।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.PRV",
+      "d": "Medium",
+      "q": "The proverb 'Don't count your chickens before they are hatched.' means—",
+      "o": [
+        "it is wiser to stop a problem than to fix it later",
+        "arrogance leads to failure",
+        "don't rely on results before they happen",
+        "think carefully before acting"
+      ],
+      "a": 2,
+      "e": "Don't count your chickens before they are hatched. — গাছে কাঁঠাল গোঁফে তেল।",
+      "t": "গাছে কাঁঠাল গোঁফে তেল।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.PRV",
+      "d": "Easy",
+      "q": "The proverb 'As you sow, so shall you reap.' means—",
+      "o": [
+        "people who threaten loudly rarely act",
+        "make use of an opportunity while it lasts",
+        "doing things too quickly causes mistakes",
+        "you get the results of your own actions"
+      ],
+      "a": 3,
+      "e": "As you sow, so shall you reap. — যেমন কর্ম তেমন ফল।",
+      "t": "যেমন কর্ম তেমন ফল।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.PRV",
+      "d": "Medium",
+      "q": "The proverb 'A friend in need is a friend indeed.' means—",
+      "o": [
+        "a true friend helps in times of trouble",
+        "need drives people to find new solutions",
+        "make use of an opportunity while it lasts",
+        "doing things too quickly causes mistakes"
+      ],
+      "a": 0,
+      "e": "A friend in need is a friend indeed. — বিপদে বন্ধুর পরিচয়।",
+      "t": "বিপদে বন্ধুর পরিচয়।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.PRV",
+      "d": "Medium",
+      "q": "The proverb 'Blood is thicker than water.' means—",
+      "o": [
+        "too many people working on a task can ruin it",
+        "family ties are stronger than other relationships",
+        "arrogance leads to failure",
+        "it is wiser to stop a problem than to fix it later"
+      ],
+      "a": 1,
+      "e": "Blood is thicker than water. — রক্তের টান সবচেয়ে বেশি।",
+      "t": "রক্তের টান সবচেয়ে বেশি।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.PRV",
+      "d": "Medium",
+      "q": "The proverb 'Prevention is better than cure.' means—",
+      "o": [
+        "people who threaten loudly rarely act",
+        "doing things too quickly causes mistakes",
+        "it is wiser to stop a problem than to fix it later",
+        "what you do matters more than what you say"
+      ],
+      "a": 2,
+      "e": "Prevention is better than cure. — প্রতিকারের চেয়ে প্রতিরোধ উত্তম।",
+      "t": "প্রতিকারের চেয়ে প্রতিরোধ উত্তম।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.PRV",
+      "d": "Medium",
+      "q": "Complete the proverb: 'An idle brain is the devil's ___.'",
+      "o": [
+        "servant",
+        "playground",
+        "kingdom",
+        "workshop"
+      ],
+      "a": 3,
+      "e": "অলস মস্তিষ্ক শয়তানের কারখানা।",
+      "t": "idle brain — devil's workshop।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.PRV",
+      "d": "Medium",
+      "q": "Complete the proverb: 'All's well that ___ well.'",
+      "o": [
+        "ends",
+        "begins",
+        "goes",
+        "looks"
+      ],
+      "a": 0,
+      "e": "শেষ ভালো যার, সব ভালো তার।",
+      "t": "All's well that ends well।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.FOR",
+      "d": "Easy",
+      "q": "The expression 'bona fide' means—",
+      "o": [
+        "the existing state of affairs",
+        "genuine; in good faith",
+        "existing in fact, though not legally",
+        "the school or university one attended"
+      ],
+      "a": 1,
+      "e": "bona fide = genuine; in good faith।",
+      "t": "bona fide = genuine; in good faith।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.FOR",
+      "d": "Medium",
+      "q": "The expression 'ad hoc' means—",
+      "o": [
+        "a person's second self",
+        "have a good journey",
+        "for a particular purpose only",
+        "the greatest work of an artist or writer"
+      ],
+      "a": 2,
+      "e": "ad hoc = for a particular purpose only।",
+      "t": "ad hoc = for a particular purpose only।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.FOR",
+      "d": "Medium",
+      "q": "The expression 'vice versa' means—",
+      "o": [
+        "for each person",
+        "on the way",
+        "something already done and irreversible",
+        "the other way round"
+      ],
+      "a": 3,
+      "e": "vice versa = the other way round।",
+      "t": "vice versa = the other way round।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.FOR",
+      "d": "Medium",
+      "q": "The expression 'status quo' means—",
+      "o": [
+        "the existing state of affairs",
+        "the greatest work of an artist or writer",
+        "genuine; in good faith",
+        "for a particular purpose only"
+      ],
+      "a": 0,
+      "e": "status quo = the existing state of affairs।",
+      "t": "status quo = the existing state of affairs।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.FOR",
+      "d": "Easy",
+      "q": "The expression 'de facto' means—",
+      "o": [
+        "the other way round",
+        "existing in fact, though not legally",
+        "the existing state of affairs",
+        "the school or university one attended"
+      ],
+      "a": 1,
+      "e": "de facto = existing in fact, though not legally।",
+      "t": "de facto = existing in fact, though not legally।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.FOR",
+      "d": "Medium",
+      "q": "The expression 'alma mater' means—",
+      "o": [
+        "for a particular purpose only",
+        "genuine; in good faith",
+        "the school or university one attended",
+        "the other way round"
+      ],
+      "a": 2,
+      "e": "alma mater = the school or university one attended।",
+      "t": "alma mater = the school or university one attended।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.FOR",
+      "d": "Medium",
+      "q": "The expression 'carte blanche' means—",
+      "o": [
+        "existing in fact, though not legally",
+        "the other way round",
+        "the existing state of affairs",
+        "complete freedom to act"
+      ],
+      "a": 3,
+      "e": "carte blanche = complete freedom to act।",
+      "t": "carte blanche = complete freedom to act।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.FOR",
+      "d": "Medium",
+      "q": "The expression 'en route' means—",
+      "o": [
+        "on the way",
+        "existing in fact, though not legally",
+        "the school or university one attended",
+        "complete freedom to act"
+      ],
+      "a": 0,
+      "e": "en route = on the way।",
+      "t": "en route = on the way।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.FOR",
+      "d": "Easy",
+      "q": "The expression 'fait accompli' means—",
+      "o": [
+        "existing in fact, though not legally",
+        "something already done and irreversible",
+        "the school or university one attended",
+        "complete freedom to act"
+      ],
+      "a": 1,
+      "e": "fait accompli = something already done and irreversible।",
+      "t": "fait accompli = something already done and irreversible।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.FOR",
+      "d": "Medium",
+      "q": "The expression 'per capita' means—",
+      "o": [
+        "complete freedom to act",
+        "the school or university one attended",
+        "for each person",
+        "on the way"
+      ],
+      "a": 2,
+      "e": "per capita = for each person।",
+      "t": "per capita = for each person।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.FOR",
+      "d": "Medium",
+      "q": "The expression 'prima facie' means—",
+      "o": [
+        "have a good journey",
+        "for each person",
+        "a particular method of working",
+        "at first sight; based on first impression"
+      ],
+      "a": 3,
+      "e": "prima facie = at first sight; based on first impression।",
+      "t": "prima facie = at first sight; based on first impression।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.FOR",
+      "d": "Medium",
+      "q": "The expression 'modus operandi' means—",
+      "o": [
+        "a particular method of working",
+        "complete freedom to act",
+        "on the way",
+        "something already done and irreversible"
+      ],
+      "a": 0,
+      "e": "modus operandi = a particular method of working।",
+      "t": "modus operandi = a particular method of working।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.FOR",
+      "d": "Easy",
+      "q": "The expression 'bon voyage' means—",
+      "o": [
+        "something already done and irreversible",
+        "have a good journey",
+        "for each person",
+        "at first sight; based on first impression"
+      ],
+      "a": 1,
+      "e": "bon voyage = have a good journey।",
+      "t": "bon voyage = have a good journey।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.FOR",
+      "d": "Medium",
+      "q": "The expression 'alter ego' means—",
+      "o": [
+        "the other way round",
+        "for a particular purpose only",
+        "a person's second self",
+        "the existing state of affairs"
+      ],
+      "a": 2,
+      "e": "alter ego = a person's second self।",
+      "t": "alter ego = a person's second self।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.FOR",
+      "d": "Medium",
+      "q": "The expression 'magnum opus' means—",
+      "o": [
+        "genuine; in good faith",
+        "have a good journey",
+        "a person's second self",
+        "the greatest work of an artist or writer"
+      ],
+      "a": 3,
+      "e": "magnum opus = the greatest work of an artist or writer।",
+      "t": "magnum opus = the greatest work of an artist or writer।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.WFM",
+      "d": "Easy",
+      "q": "Which prefix forms the opposite of 'legal'?",
+      "o": [
+        "il-",
+        "un-",
+        "in-",
+        "dis-"
+      ],
+      "a": 0,
+      "e": "l দিয়ে শুরু শব্দে il-: illegal, illogical।",
+      "t": "l → il-।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.WFM",
+      "d": "Easy",
+      "q": "Which prefix forms the opposite of 'possible'?",
+      "o": [
+        "un-",
+        "im-",
+        "in-",
+        "non-"
+      ],
+      "a": 1,
+      "e": "p/b/m দিয়ে শুরু শব্দে সাধারণত im-: impossible, imbalance।",
+      "t": "p → im-।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.WFM",
+      "d": "Easy",
+      "q": "Which prefix forms the opposite of 'regular'?",
+      "o": [
+        "dis-",
+        "un-",
+        "ir-",
+        "in-"
+      ],
+      "a": 2,
+      "e": "r দিয়ে শুরু শব্দে ir-: irregular, irrelevant।",
+      "t": "r → ir-।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.WFM",
+      "d": "Easy",
+      "q": "Which prefix forms the opposite of 'agree'?",
+      "o": [
+        "mis-",
+        "un-",
+        "in-",
+        "dis-"
+      ],
+      "a": 3,
+      "e": "disagree।",
+      "t": "dis + agree।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.WFM",
+      "d": "Medium",
+      "q": "The prefix 'mis-' in 'misunderstand' means—",
+      "o": [
+        "wrongly",
+        "again",
+        "before",
+        "not at all"
+      ],
+      "a": 0,
+      "e": "mis- = ভুলভাবে।",
+      "t": "mis = ভুল।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.WFM",
+      "d": "Medium",
+      "q": "The prefix 'pre-' in 'prehistoric' means—",
+      "o": [
+        "after",
+        "before",
+        "against",
+        "again"
+      ],
+      "a": 1,
+      "e": "pre- = আগে।",
+      "t": "pre = আগে।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.WFM",
+      "d": "Medium",
+      "q": "The prefix 'anti-' in 'antibiotic' means—",
+      "o": [
+        "with",
+        "before",
+        "against",
+        "many"
+      ],
+      "a": 2,
+      "e": "anti- = বিরুদ্ধে।",
+      "t": "anti = বিরুদ্ধ।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.WFM",
+      "d": "Easy",
+      "q": "The suffix '-less' in 'hopeless' means—",
+      "o": [
+        "state of",
+        "full of",
+        "able to",
+        "without"
+      ],
+      "a": 3,
+      "e": "-less = ছাড়া/হীন।",
+      "t": "-less = হীন।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.WFM",
+      "d": "Medium",
+      "q": "Which suffix turns 'kind' into a noun?",
+      "o": [
+        "-ness",
+        "-ly",
+        "-ful",
+        "-ish"
+      ],
+      "a": 0,
+      "e": "kind + ness = kindness।",
+      "t": "-ness = noun।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.WFM",
+      "d": "Medium",
+      "q": "Which suffix turns 'comfort' into an adjective?",
+      "o": [
+        "-ness",
+        "-able",
+        "-ment",
+        "-hood"
+      ],
+      "a": 1,
+      "e": "comfort + able = comfortable।",
+      "t": "-able = adjective।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.WFM",
+      "d": "Medium",
+      "q": "The suffix '-hood' in 'childhood' indicates—",
+      "o": [
+        "a small size",
+        "a person who acts",
+        "a state or condition",
+        "the opposite"
+      ],
+      "a": 2,
+      "e": "-hood = অবস্থা (childhood, brotherhood)।",
+      "t": "-hood = অবস্থা।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.WFM",
+      "d": "Medium",
+      "q": "The combining form 'bio-' in 'biology' means—",
+      "o": [
+        "book",
+        "earth",
+        "water",
+        "life"
+      ],
+      "a": 3,
+      "e": "bio = জীবন।",
+      "t": "bio = জীবন।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.WFM",
+      "d": "Medium",
+      "q": "The prefix 'tele-' in 'telescope' means—",
+      "o": [
+        "far",
+        "small",
+        "light",
+        "near"
+      ],
+      "a": 0,
+      "e": "tele = দূর।",
+      "t": "tele = দূর।",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.TRN",
+      "d": "Medium",
+      "q": "Choose the correct translation: 'সে গতকাল থেকে জ্বরে ভুগছে।'",
+      "o": [
+        "He is suffering from fever since yesterday.",
+        "He has been suffering from fever since yesterday.",
+        "He suffered from fever from yesterday.",
+        "He has suffered with fever since yesterday."
+      ],
+      "a": 1,
+      "e": "গতকাল থেকে শুরু হয়ে এখনো চলছে — present perfect continuous; suffer from।",
+      "t": "He has been suffering from fever since yesterday.",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.TRN",
+      "d": "Easy",
+      "q": "Choose the correct translation: 'সূর্য পূর্ব দিকে ওঠে।'",
+      "o": [
+        "The sun rose in the east.",
+        "The sun rises from the east.",
+        "The sun rises in the east.",
+        "The sun is rising at the east."
+      ],
+      "a": 2,
+      "e": "চিরন্তন সত্য — present simple; দিকের আগে in।",
+      "t": "The sun rises in the east.",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.TRN",
+      "d": "Medium",
+      "q": "Choose the correct translation: 'আমি বাড়ি পৌঁছানোর আগেই ট্রেন ছেড়ে দিয়েছিল।'",
+      "o": [
+        "The train had left before I had reach home.",
+        "The train left before I had reached home.",
+        "The train has left before I reached home.",
+        "The train had left before I reached home."
+      ],
+      "a": 3,
+      "e": "অতীতের দুটি কাজের আগেরটি past perfect।",
+      "t": "The train had left before I reached home.",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.TRN",
+      "d": "Easy",
+      "q": "Choose the correct translation: 'তার বয়স দশ বছর।'",
+      "o": [
+        "He is ten years old.",
+        "He has ten years old.",
+        "His age is ten years old.",
+        "He is ten year old."
+      ],
+      "a": 0,
+      "e": "বয়স বোঝাতে be + number + years old।",
+      "t": "He is ten years old.",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.TRN",
+      "d": "Medium",
+      "q": "Choose the correct translation: 'তুমি কি কখনো কক্সবাজার গিয়েছ?'",
+      "o": [
+        "Did you ever go in Cox's Bazar?",
+        "Have you ever been to Cox's Bazar?",
+        "Have you ever gone at Cox's Bazar?",
+        "Were you ever been to Cox's Bazar?"
+      ],
+      "a": 1,
+      "e": "অভিজ্ঞতা জানতে have been to।",
+      "t": "Have you ever been to Cox's Bazar?",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.TRN",
+      "d": "Medium",
+      "q": "Choose the correct translation: 'অলস লোকেরা জীবনে উন্নতি করতে পারে না।'",
+      "o": [
+        "The idles cannot prosper in life.",
+        "Idle peoples cannot prosper in life.",
+        "Idle people cannot prosper in life.",
+        "Idle people can not prospered in life."
+      ],
+      "a": 2,
+      "e": "people বহুবচন; cannot + base form।",
+      "t": "Idle people cannot prosper in life.",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.TRN",
+      "d": "Medium",
+      "q": "Choose the correct translation: 'সে চাকরিটির জন্য আবেদন করেছে।'",
+      "o": [
+        "He has been applied for the job.",
+        "He has applied to the job.",
+        "He applied the job.",
+        "He has applied for the job."
+      ],
+      "a": 3,
+      "e": "apply for (পদের জন্য) — present perfect।",
+      "t": "He has applied for the job.",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.TRN",
+      "d": "Medium",
+      "q": "Choose the correct translation: 'বৃষ্টি হলে আমরা যাব না।'",
+      "o": [
+        "We will not go if it rains.",
+        "We will not go if it will rain.",
+        "We would not go if it rains.",
+        "We do not go if it rained."
+      ],
+      "a": 0,
+      "e": "first conditional: if + present, will + V1।",
+      "t": "We will not go if it rains.",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.TRN",
+      "d": "Hard",
+      "q": "Choose the correct translation: 'সে আমার চেয়ে বেশি পরিশ্রমী।'",
+      "o": [
+        "He is industrious than me.",
+        "He is more industrious than I.",
+        "He is most industrious than I.",
+        "He is more industrious to me."
+      ],
+      "a": 1,
+      "e": "দীর্ঘ adjective-এ more; than-এর পরে I (am)।",
+      "t": "He is more industrious than I.",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.VO.TRN",
+      "d": "Medium",
+      "q": "Choose the correct translation: 'দরজাটা বন্ধ করো।'",
+      "o": [
+        "Shutting the door.",
+        "Shut a door.",
+        "Shut the door.",
+        "Door be shut."
+      ],
+      "a": 2,
+      "e": "নির্দিষ্ট দরজা — the; imperative-এ base form।",
+      "t": "Shut the door.",
+      "src": "Lecture 07, 18–20 ও Standard English Dictionary (Oxford Learner's; Oxford Dictionary of Proverbs)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

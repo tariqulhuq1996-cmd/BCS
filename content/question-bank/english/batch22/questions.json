@@ -1,0 +1,1666 @@
+{
+  "batch": "Batch 22",
+  "subject": "English Language & Literature",
+  "basis": "BCS_English_Final: Lecture 08 (Pronoun), Lecture 16 (Narration), Lecture 17–18 (Miscellaneous; Completing Sentences), Article, Conjunction, Punctuation",
+  "subtopics": {
+    "EN.GR.OTH": {},
+    "EN.GR.PRO": {},
+    "EN.GR.NAR": {},
+    "EN.GR.ART": {},
+    "EN.GR.RDC": {},
+    "EN.GR.CNJ": {},
+    "EN.GR.PUN": {}
+  },
+  "questions": [
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "Choose the correct question tag: 'He is a doctor, ___?'",
+      "o": [
+        "is he",
+        "isn't he",
+        "doesn't he",
+        "wasn't he"
+      ],
+      "a": 1,
+      "e": "positive sentence → negative tag; be verb (is) দিয়েই tag।",
+      "t": "isn't he",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "Choose the correct question tag: 'They have finished the work, ___?'",
+      "o": [
+        "have they",
+        "didn't they",
+        "haven't they",
+        "don't they"
+      ],
+      "a": 2,
+      "e": "auxiliary have থাকলে tag-এ have।",
+      "t": "haven't they",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "Choose the correct question tag: 'She never tells lies, ___?'",
+      "o": [
+        "did she",
+        "doesn't she",
+        "is she",
+        "does she"
+      ],
+      "a": 3,
+      "e": "never নেতিবাচক — তাই positive tag।",
+      "t": "does she",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Hard",
+      "q": "Choose the correct question tag: 'I am right, ___?'",
+      "o": [
+        "amn't I",
+        "aren't I",
+        "am not I",
+        "isn't I"
+      ],
+      "a": 1,
+      "e": "I am-এর negative tag aren't I।",
+      "t": "aren't I",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Hard",
+      "q": "Choose the correct question tag: 'Let's go for a walk, ___?'",
+      "o": [
+        "don't we",
+        "will you",
+        "shall we",
+        "won't we"
+      ],
+      "a": 2,
+      "e": "Let's (প্রস্তাব)-এর tag shall we।",
+      "t": "shall we",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "Choose the correct question tag: 'Open the window, ___?'",
+      "o": [
+        "don't you",
+        "shall we",
+        "do you",
+        "will you"
+      ],
+      "a": 3,
+      "e": "imperative-এর tag সাধারণত will you।",
+      "t": "will you",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "Choose the correct question tag: 'Nobody came to the party, ___?'",
+      "o": [
+        "did they",
+        "didn't they",
+        "did he",
+        "didn't he"
+      ],
+      "a": 0,
+      "e": "nobody নেতিবাচক — positive tag; nobody/everybody-র tag-এ they।",
+      "t": "did they",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "You ___ smoke in the hospital; it is not allowed.",
+      "o": [
+        "need not",
+        "must not",
+        "may",
+        "would"
+      ],
+      "a": 1,
+      "e": "নিষেধ বোঝাতে must not; need not = প্রয়োজন নেই।",
+      "t": "নিষেধ = must not।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "___ I come in, sir?",
+      "o": [
+        "Would",
+        "Must",
+        "May",
+        "Should"
+      ],
+      "a": 2,
+      "e": "অনুমতি চাইতে May (formal)।",
+      "t": "অনুমতি = May।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "When he was young, he ___ run ten kilometres a day.",
+      "o": [
+        "must",
+        "can",
+        "may",
+        "could"
+      ],
+      "a": 3,
+      "e": "অতীতের সামর্থ্য — could।",
+      "t": "অতীত সামর্থ্য = could।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "You ___ respect your parents.",
+      "o": [
+        "should",
+        "may",
+        "can",
+        "might"
+      ],
+      "a": 0,
+      "e": "উপদেশ/নৈতিক দায়িত্ব — should।",
+      "t": "উপদেশ = should।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Hard",
+      "q": "It ___ rain this evening; take an umbrella.",
+      "o": [
+        "must",
+        "might",
+        "need",
+        "ought"
+      ],
+      "a": 1,
+      "e": "সম্ভাবনা (নিশ্চিত নয়) — might/may।",
+      "t": "সম্ভাবনা = might।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "Semantic Duplicate — ৪৬-১৬ (It --- Shajib = might be): সম্ভাবনা বোঝাতে might — একই নিয়ম",
+      "v": "যাচাইকৃত",
+      "reject": "Semantic Duplicate"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "___ you help me carry this box?",
+      "o": [
+        "Should",
+        "Must",
+        "Could",
+        "Need"
+      ],
+      "a": 2,
+      "e": "ভদ্র অনুরোধ — Could/Would you …?",
+      "t": "ভদ্র অনুরোধ = Could you।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Hard",
+      "q": "Choose the sentence with correct parallel structure.",
+      "o": [
+        "She likes reading, to write and swim.",
+        "She likes reading, writing and to swim.",
+        "She likes to read, writing and swimming.",
+        "She likes reading, writing and swimming."
+      ],
+      "a": 3,
+      "e": "তালিকার সব অংশ একই ব্যাকরণিক রূপে (সব gerund) থাকা উচিত।",
+      "t": "parallel = একই রূপ।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "The branch of grammar that deals with the formation of words is—",
+      "o": [
+        "morphology",
+        "syntax",
+        "phonetics",
+        "semantics"
+      ],
+      "a": 0,
+      "e": "morphology = শব্দগঠন; syntax = বাক্যগঠন।",
+      "t": "শব্দগঠন = morphology।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "The study of speech sounds is called—",
+      "o": [
+        "morphology",
+        "phonetics",
+        "semantics",
+        "syntax"
+      ],
+      "a": 1,
+      "e": "phonetics = ধ্বনিতত্ত্ব।",
+      "t": "ধ্বনি = phonetics।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "The study of meaning in language is called—",
+      "o": [
+        "morphology",
+        "phonetics",
+        "semantics",
+        "pragmatism"
+      ],
+      "a": 2,
+      "e": "semantics = অর্থতত্ত্ব।",
+      "t": "অর্থ = semantics।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "Choose the correct sentence.",
+      "o": [
+        "Neither the rain nor the cold stopped him.",
+        "Neither the rain or the cold stopped him.",
+        "Either the rain nor the cold stopped him.",
+        "Neither the rain and the cold stopped him."
+      ],
+      "a": 0,
+      "e": "neither-এর জোড়া nor; either-এর জোড়া or।",
+      "t": "neither … nor।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRO",
+      "d": "Easy",
+      "q": "He hurt ___ while playing football.",
+      "o": [
+        "hisself",
+        "him",
+        "his",
+        "himself"
+      ],
+      "a": 3,
+      "e": "কর্তা ও কর্ম একই ব্যক্তি — reflexive pronoun।",
+      "t": "নিজেকে = himself।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRO",
+      "d": "Medium",
+      "q": "'I myself saw the accident.' — Here 'myself' is a/an—",
+      "o": [
+        "emphatic pronoun",
+        "reflexive pronoun",
+        "relative pronoun",
+        "possessive pronoun"
+      ],
+      "a": 0,
+      "e": "কর্তার ওপর জোর দিতে — emphatic; object হলে reflexive।",
+      "t": "জোর = emphatic।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRO",
+      "d": "Hard",
+      "q": "It is ___ who am to blame.",
+      "o": [
+        "me",
+        "I",
+        "myself",
+        "mine"
+      ],
+      "a": 1,
+      "e": "be verb-এর পরে subjective case; am-এর সঙ্গে I।",
+      "t": "It is I।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRO",
+      "d": "Easy",
+      "q": "This book is ___.",
+      "o": [
+        "me",
+        "my",
+        "mine",
+        "myself"
+      ],
+      "a": 2,
+      "e": "noun ছাড়া একা বসলে possessive pronoun (mine)।",
+      "t": "noun ছাড়া = mine।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRO",
+      "d": "Medium",
+      "q": "This pen is not ___; it is hers.",
+      "o": [
+        "yours'",
+        "your",
+        "your's",
+        "yours"
+      ],
+      "a": 3,
+      "e": "possessive pronoun-এ apostrophe বসে না: yours, hers, ours।",
+      "t": "yours (apostrophe নেই)।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRO",
+      "d": "Medium",
+      "q": "To ___ did you give the letter?",
+      "o": [
+        "whom",
+        "who",
+        "which",
+        "whose"
+      ],
+      "a": 0,
+      "e": "preposition (to)-এর object — whom।",
+      "t": "preposition + whom।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRO",
+      "d": "Medium",
+      "q": "The boy ___ I met yesterday is my cousin.",
+      "o": [
+        "who's",
+        "whom",
+        "which",
+        "whose"
+      ],
+      "a": 1,
+      "e": "met-এর object — whom (কথ্যে who-ও চলে)।",
+      "t": "object = whom।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRO",
+      "d": "Easy",
+      "q": "This is the dog ___ bit the postman.",
+      "o": [
+        "whom",
+        "who",
+        "which",
+        "whose"
+      ],
+      "a": 2,
+      "e": "প্রাণী/বস্তুর জন্য which/that।",
+      "t": "প্রাণী = which।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRO",
+      "d": "Medium",
+      "q": "This is the house ___ I was born.",
+      "o": [
+        "what",
+        "which",
+        "whom",
+        "where"
+      ],
+      "a": 3,
+      "e": "স্থান বোঝাতে where (= in which)।",
+      "t": "স্থান = where।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRO",
+      "d": "Medium",
+      "q": "___ of these two pens do you want?",
+      "o": [
+        "Which",
+        "What",
+        "Who",
+        "Whom"
+      ],
+      "a": 0,
+      "e": "নির্দিষ্ট সংখ্যার মধ্যে বাছাইয়ে Which।",
+      "t": "বাছাই = Which।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRO",
+      "d": "Easy",
+      "q": "___ are my books on the table here.",
+      "o": [
+        "This",
+        "These",
+        "That",
+        "It"
+      ],
+      "a": 1,
+      "e": "কাছের বহুবচন বস্তু — these।",
+      "t": "কাছে + বহুবচন = these।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRO",
+      "d": "Hard",
+      "q": "Choose the correct order of pronouns.",
+      "o": [
+        "He, I and you are friends.",
+        "I, you and he are friends.",
+        "You, he and I are friends.",
+        "I, he and you are friends."
+      ],
+      "a": 2,
+      "e": "ভালো কাজে/সাধারণ ক্ষেত্রে ক্রম: 2nd, 3rd, 1st (you, he and I)।",
+      "t": "২-৩-১।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRO",
+      "d": "Hard",
+      "q": "When admitting a fault, the correct order is—",
+      "o": [
+        "You, I and he are to blame.",
+        "You, he and I are to blame.",
+        "He, you and I are to blame.",
+        "I, you and he are to blame."
+      ],
+      "a": 3,
+      "e": "দোষ স্বীকারে প্রথমে নিজে: 1st, 2nd, 3rd।",
+      "t": "দোষে ১-২-৩।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRO",
+      "d": "Medium",
+      "q": "This is the best film ___ I have ever seen.",
+      "o": [
+        "that",
+        "which",
+        "who",
+        "whom"
+      ],
+      "a": 0,
+      "e": "superlative-এর পরে relative pronoun হিসেবে that।",
+      "t": "superlative + that।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PRO",
+      "d": "Medium",
+      "q": "I know ___ you mean.",
+      "o": [
+        "which",
+        "what",
+        "that",
+        "who"
+      ],
+      "a": 1,
+      "e": "what = the thing which।",
+      "t": "what = যা।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NAR",
+      "d": "Medium",
+      "q": "Choose the correct indirect speech: 'He said to me, \"Open the door.\"'",
+      "o": [
+        "He ordered me that open the door.",
+        "He said me to open the door.",
+        "He ordered me to open the door.",
+        "He told to me to open the door."
+      ],
+      "a": 2,
+      "e": "আদেশসূচক → ordered/told + object + to-infinitive।",
+      "t": "আদেশ → ordered … to।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NAR",
+      "d": "Medium",
+      "q": "Choose the correct indirect speech: 'The teacher said to the boys, \"Don't make a noise.\"'",
+      "o": [
+        "The teacher said the boys not making a noise.",
+        "The teacher told the boys to not make a noise.",
+        "The teacher told the boys don't make a noise.",
+        "The teacher told the boys not to make a noise."
+      ],
+      "a": 3,
+      "e": "নেতিবাচক আদেশ → not + to-infinitive।",
+      "t": "Don't → not to।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NAR",
+      "d": "Medium",
+      "q": "Choose the correct indirect speech: 'She said to me, \"Please lend me your pen.\"'",
+      "o": [
+        "She requested me to lend her my pen.",
+        "She requested me to lend me your pen.",
+        "She asked me please lend her my pen.",
+        "She said me to lend her my pen."
+      ],
+      "a": 0,
+      "e": "অনুরোধ → requested + to-infinitive; সর্বনাম পরিবর্তন।",
+      "t": "Please → requested।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NAR",
+      "d": "Medium",
+      "q": "Choose the correct indirect speech: 'He said, \"What a beautiful bird it is!\"'",
+      "o": [
+        "He said what a beautiful bird it was.",
+        "He exclaimed with wonder that it was a very beautiful bird.",
+        "He exclaimed that what a beautiful bird it is.",
+        "He asked what a beautiful bird it was."
+      ],
+      "a": 1,
+      "e": "বিস্ময়সূচক → exclaimed with wonder that … very …।",
+      "t": "What a … ! → exclaimed … very।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NAR",
+      "d": "Hard",
+      "q": "Choose the correct indirect speech: 'Mother said to me, \"May you live long!\"'",
+      "o": [
+        "Mother wished me to may live long.",
+        "Mother said that may I live long.",
+        "Mother prayed that I might live long.",
+        "Mother prayed that I may lived long."
+      ],
+      "a": 2,
+      "e": "প্রার্থনাসূচক → prayed that … might।",
+      "t": "May → prayed … might।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NAR",
+      "d": "Medium",
+      "q": "Choose the correct indirect speech: 'The teacher said, \"The earth is round.\"'",
+      "o": [
+        "The teacher told that the earth is round.",
+        "The teacher said that the earth was round.",
+        "The teacher said that the earth had been round.",
+        "The teacher said that the earth is round."
+      ],
+      "a": 3,
+      "e": "চিরন্তন সত্যের tense বদলায় না।",
+      "t": "চিরন্তন সত্য = tense অপরিবর্তিত।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NAR",
+      "d": "Medium",
+      "q": "Choose the correct indirect speech: 'He said to us, \"Let us go for a walk.\"'",
+      "o": [
+        "He proposed to us that we should go for a walk.",
+        "He told us let us go for a walk.",
+        "He proposed us to go for a walk let.",
+        "He said us that we go for a walk."
+      ],
+      "a": 0,
+      "e": "Let us (প্রস্তাব) → proposed/suggested that … should।",
+      "t": "Let us → proposed … should।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NAR",
+      "d": "Medium",
+      "q": "Choose the correct indirect speech: 'She said, \"I am reading a novel now.\"'",
+      "o": [
+        "She said that she is reading a novel now.",
+        "She said that she was reading a novel then.",
+        "She said that she was reading a novel now.",
+        "She said that I was reading a novel then."
+      ],
+      "a": 1,
+      "e": "present continuous → past continuous; now → then।",
+      "t": "now → then।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NAR",
+      "d": "Medium",
+      "q": "Choose the correct indirect speech: 'He said, \"I will go there tomorrow.\"'",
+      "o": [
+        "He said that he will go there the next day.",
+        "He said that he would go here tomorrow.",
+        "He said that he would go there the next day.",
+        "He said that he would go there yesterday."
+      ],
+      "a": 2,
+      "e": "tomorrow → the next day; here → there।",
+      "t": "tomorrow → the next day।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NAR",
+      "d": "Medium",
+      "q": "Choose the correct indirect speech: 'He said, \"I have finished my homework.\"'",
+      "o": [
+        "He said that he finished my homework.",
+        "He said that he has finished his homework.",
+        "He said that I had finished my homework.",
+        "He said that he had finished his homework."
+      ],
+      "a": 3,
+      "e": "present perfect → past perfect।",
+      "t": "have + pp → had + pp।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NAR",
+      "d": "Medium",
+      "q": "Choose the correct indirect speech: 'She said, \"I can swim.\"'",
+      "o": [
+        "She said that she could swim.",
+        "She said that she can swim.",
+        "She said that she could swam.",
+        "She said that I could swim."
+      ],
+      "a": 0,
+      "e": "can → could।",
+      "t": "can → could।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NAR",
+      "d": "Hard",
+      "q": "Choose the correct indirect speech: 'He said, \"I must leave now.\"'",
+      "o": [
+        "He said that he must left now.",
+        "He said that he had to leave then.",
+        "He said that he has to leave now.",
+        "He said that I had to leave then."
+      ],
+      "a": 1,
+      "e": "বাধ্যবাধকতার must → had to (প্রায়ই); now → then।",
+      "t": "must → had to।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NAR",
+      "d": "Medium",
+      "q": "Choose the correct indirect speech: 'He says, \"I am ill.\"'",
+      "o": [
+        "He said that he is ill.",
+        "He says that he was ill.",
+        "He says that he is ill.",
+        "He says that I am ill."
+      ],
+      "a": 2,
+      "e": "reporting verb present (says) হলে tense বদলায় না।",
+      "t": "says → tense অপরিবর্তিত।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NAR",
+      "d": "Hard",
+      "q": "Choose the correct indirect speech: 'He said, \"Alas! I have lost my purse.\"'",
+      "o": [
+        "He exclaimed with sorrow that I have lost my purse.",
+        "He said alas that he had lost his purse.",
+        "He exclaimed with joy that he had lost his purse.",
+        "He exclaimed with sorrow that he had lost his purse."
+      ],
+      "a": 3,
+      "e": "Alas → exclaimed with sorrow; tense ও pronoun পরিবর্তন।",
+      "t": "Alas → with sorrow।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.NAR",
+      "d": "Medium",
+      "q": "Choose the correct indirect speech: 'He said to me, \"Good morning.\"'",
+      "o": [
+        "He wished me good morning.",
+        "He said me good morning.",
+        "He told me that good morning.",
+        "He greeted good morning to me."
+      ],
+      "a": 0,
+      "e": "সম্ভাষণ → wished।",
+      "t": "Good morning → wished।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ART",
+      "d": "Easy",
+      "q": "Fill in the blank with the correct article: 'He is ___ honest man.'",
+      "o": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "a": 1,
+      "e": "h অনুচ্চারিত — স্বরধ্বনিতে শুরু, তাই an।",
+      "t": "silent h = an।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ART",
+      "d": "Easy",
+      "q": "Fill in the blank with the correct article: '___ Himalayas are the highest mountains in the world.'",
+      "o": [
+        "An",
+        "A",
+        "The",
+        "No article"
+      ],
+      "a": 2,
+      "e": "পর্বতমালার নামের আগে the।",
+      "t": "পর্বতমালা = the।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ART",
+      "d": "Easy",
+      "q": "Fill in the blank with the correct article: 'The Padma flows into ___ Bay of Bengal.'",
+      "o": [
+        "no article",
+        "a",
+        "an",
+        "the"
+      ],
+      "a": 3,
+      "e": "উপসাগর/সাগরের নামের আগে the।",
+      "t": "উপসাগর = the।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ART",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct article: '___ Mount Everest is very high.'",
+      "o": [
+        "No article",
+        "The",
+        "A",
+        "An"
+      ],
+      "a": 0,
+      "e": "একক পর্বতশৃঙ্গের নামের আগে article বসে না।",
+      "t": "একক পর্বত = article নেই।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ART",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct article: '___ Bible is a holy book.'",
+      "o": [
+        "A",
+        "The",
+        "An",
+        "No article"
+      ],
+      "a": 1,
+      "e": "ধর্মগ্রন্থের নামের আগে the।",
+      "t": "ধর্মগ্রন্থ = the।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ART",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct article: 'My father reads ___ Daily Star every morning.'",
+      "o": [
+        "an",
+        "a",
+        "the",
+        "no article"
+      ],
+      "a": 2,
+      "e": "সংবাদপত্রের নামের আগে the।",
+      "t": "সংবাদপত্র = the।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ART",
+      "d": "Easy",
+      "q": "Fill in the blank with the correct article: 'He plays ___ football every afternoon.'",
+      "o": [
+        "an",
+        "the",
+        "a",
+        "no article"
+      ],
+      "a": 3,
+      "e": "খেলাধুলার নামের আগে article বসে না।",
+      "t": "খেলা = article নেই।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ART",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct article: 'She plays ___ guitar beautifully.'",
+      "o": [
+        "the",
+        "a",
+        "an",
+        "no article"
+      ],
+      "a": 0,
+      "e": "বাদ্যযন্ত্রের নামের আগে the।",
+      "t": "বাদ্যযন্ত্র = the।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ART",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct article: '___ Prime Minister will address the nation tonight.'",
+      "o": [
+        "A",
+        "The",
+        "An",
+        "No article"
+      ],
+      "a": 1,
+      "e": "নির্দিষ্ট একক পদ — the।",
+      "t": "নির্দিষ্ট পদ = the।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ART",
+      "d": "Easy",
+      "q": "Fill in the blank with the correct article: 'What ___ beautiful view!'",
+      "o": [
+        "the",
+        "an",
+        "a",
+        "no article"
+      ],
+      "a": 2,
+      "e": "What + a + adjective + singular countable noun।",
+      "t": "What a …!",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ART",
+      "d": "Easy",
+      "q": "Fill in the blank with the correct article: 'She is ___ best student in the class.'",
+      "o": [
+        "no article",
+        "a",
+        "an",
+        "the"
+      ],
+      "a": 3,
+      "e": "superlative-এর আগে the।",
+      "t": "superlative = the।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ART",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct article: '___ gold is a precious metal.'",
+      "o": [
+        "No article",
+        "The",
+        "A",
+        "An"
+      ],
+      "a": 0,
+      "e": "সাধারণ অর্থে material noun-এর আগে article বসে না।",
+      "t": "material (সাধারণ) = article নেই।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ART",
+      "d": "Medium",
+      "q": "Fill in the blank with the correct article: 'We meet twice ___ week.'",
+      "o": [
+        "the",
+        "a",
+        "an",
+        "no article"
+      ],
+      "a": 1,
+      "e": "প্রতি অর্থে a (twice a week)।",
+      "t": "প্রতি = a।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ART",
+      "d": "Hard",
+      "q": "Fill in the blank with the correct article: '___ Dhaka of today is very different from that of the 1970s.'",
+      "o": [
+        "An",
+        "A",
+        "The",
+        "No article"
+      ],
+      "a": 2,
+      "e": "স্থানের নির্দিষ্ট সময়ের রূপ বোঝাতে proper noun-এর আগে the।",
+      "t": "the Dhaka of today।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.ART",
+      "d": "Hard",
+      "q": "Fill in the blank with the correct article: 'He was elected ___ chairman of the committee.'",
+      "o": [
+        "the only",
+        "a",
+        "an",
+        "no article"
+      ],
+      "a": 3,
+      "e": "elect/appoint-এর পরে একক পদের নামে article বসে না।",
+      "t": "elected chairman।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.RDC",
+      "d": "Medium",
+      "q": "Read the passage: \"The Sundarbans, the largest mangrove forest in the world, lies along the coast of the Bay of Bengal. Its trees can survive in salty water because their roots rise above the mud to breathe. The forest protects the coast from cyclones and is the home of the Royal Bengal Tiger.\" — According to the passage, the trees of the Sundarbans survive in salty water because—",
+      "o": [
+        "their roots rise above the mud to breathe",
+        "they need no water",
+        "they grow on high land",
+        "cyclones protect them"
+      ],
+      "a": 0,
+      "e": "passage-এ বলা হয়েছে শিকড় কাদার ওপরে উঠে শ্বাস নেয়।",
+      "t": "উত্তর passage-এ খোঁজো।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.RDC",
+      "d": "Medium",
+      "q": "Read the passage: \"The Sundarbans, the largest mangrove forest in the world, lies along the coast of the Bay of Bengal. Its trees can survive in salty water because their roots rise above the mud to breathe. The forest protects the coast from cyclones and is the home of the Royal Bengal Tiger.\" — The passage states that the forest—",
+      "o": [
+        "causes frequent cyclones",
+        "protects the coast from cyclones",
+        "is the smallest mangrove forest",
+        "lies far from the sea"
+      ],
+      "a": 1,
+      "e": "‘The forest protects the coast from cyclones’ — passage-এর বাক্য।",
+      "t": "সরাসরি তথ্য।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.RDC",
+      "d": "Medium",
+      "q": "Read the passage: \"The Sundarbans, the largest mangrove forest in the world, lies along the coast of the Bay of Bengal. Its trees can survive in salty water because their roots rise above the mud to breathe. The forest protects the coast from cyclones and is the home of the Royal Bengal Tiger.\" — The best title for the passage is—",
+      "o": [
+        "The History of the Bay of Bengal",
+        "Cyclones in Bangladesh",
+        "The Sundarbans: A Unique Mangrove Forest",
+        "Wild Animals of Asia"
+      ],
+      "a": 2,
+      "e": "পুরো passage Sundarbans-এর বৈশিষ্ট্য নিয়ে।",
+      "t": "title = মূলভাব।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.RDC",
+      "d": "Medium",
+      "q": "Read the passage: \"Reading is to the mind what exercise is to the body. A person who reads regularly learns to think clearly and to express ideas well. Books also allow us to travel to distant lands and earlier ages without leaving our room.\" — The writer compares reading to—",
+      "o": [
+        "food",
+        "travel by plane",
+        "sleep",
+        "exercise"
+      ],
+      "a": 3,
+      "e": "‘Reading is to the mind what exercise is to the body।’",
+      "t": "উপমাটি খোঁজো।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.RDC",
+      "d": "Medium",
+      "q": "Read the passage: \"Reading is to the mind what exercise is to the body. A person who reads regularly learns to think clearly and to express ideas well. Books also allow us to travel to distant lands and earlier ages without leaving our room.\" — According to the passage, books allow us to—",
+      "o": [
+        "visit distant lands and earlier ages in imagination",
+        "avoid thinking clearly",
+        "travel physically to other countries",
+        "stop exercising"
+      ],
+      "a": 0,
+      "e": "‘travel to distant lands and earlier ages without leaving our room’ — কল্পনায় ভ্রমণ।",
+      "t": "অনুমান = কল্পনায়।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.RDC",
+      "d": "Medium",
+      "q": "'He is anything but honest.' This means—",
+      "o": [
+        "He is very honest.",
+        "He is not honest at all.",
+        "He is honest in everything.",
+        "He is partly honest."
+      ],
+      "a": 1,
+      "e": "anything but = মোটেই নয়।",
+      "t": "anything but = মোটেই নয়।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.RDC",
+      "d": "Medium",
+      "q": "'Hardly anyone came to the meeting.' This means—",
+      "o": [
+        "People came with difficulty.",
+        "Everyone came to the meeting.",
+        "Very few people came to the meeting.",
+        "Nobody stayed long at the meeting."
+      ],
+      "a": 2,
+      "e": "hardly anyone = প্রায় কেউই না।",
+      "t": "hardly anyone = খুব কম।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.RDC",
+      "d": "Medium",
+      "q": "'Not a single student was absent.' This means—",
+      "o": [
+        "Some students were absent.",
+        "Only one student was present.",
+        "One student was absent.",
+        "All the students were present."
+      ],
+      "a": 3,
+      "e": "not a single … absent = সবাই উপস্থিত।",
+      "t": "not a single absent = সবাই উপস্থিত।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.RDC",
+      "d": "Hard",
+      "q": "'She is none the worse for the accident.' This means—",
+      "o": [
+        "The accident did not harm her.",
+        "She was badly hurt in the accident.",
+        "She caused the accident.",
+        "Her condition has become worse."
+      ],
+      "a": 0,
+      "e": "none the worse = কোনো ক্ষতি হয়নি।",
+      "t": "none the worse = ক্ষতি নেই।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.RDC",
+      "d": "Medium",
+      "q": "'The old man is as good as dead.' This means—",
+      "o": [
+        "The old man is very good.",
+        "The old man is almost dead.",
+        "The old man is healthy.",
+        "The old man has died long ago."
+      ],
+      "a": 1,
+      "e": "as good as = প্রায়।",
+      "t": "as good as = প্রায়।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.CNJ",
+      "d": "Easy",
+      "q": "___ you or your brother must attend the meeting.",
+      "o": [
+        "Both",
+        "Neither",
+        "Either",
+        "Whether"
+      ],
+      "a": 2,
+      "e": "either … or।",
+      "t": "either … or।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.CNJ",
+      "d": "Medium",
+      "q": "He ___ smokes ___ drinks.",
+      "o": [
+        "neither … nor",
+        "either … nor",
+        "neither … or",
+        "both … or"
+      ],
+      "a": 0,
+      "e": "দুটোই না — neither … nor।",
+      "t": "neither … nor।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.CNJ",
+      "d": "Medium",
+      "q": "I don't know ___ he will come or not.",
+      "o": [
+        "that",
+        "if not",
+        "either",
+        "whether"
+      ],
+      "a": 3,
+      "e": "‘or not’-এর সঙ্গে whether।",
+      "t": "whether … or not।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.CNJ",
+      "d": "Medium",
+      "q": "We eat ___ we may live.",
+      "o": [
+        "that",
+        "so",
+        "lest",
+        "unless"
+      ],
+      "a": 0,
+      "e": "উদ্দেশ্য বোঝাতে (so) that + may।",
+      "t": "that … may = উদ্দেশ্য।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.CNJ",
+      "d": "Medium",
+      "q": "___ I was reading, the light went out.",
+      "o": [
+        "Until",
+        "While",
+        "Unless",
+        "Since"
+      ],
+      "a": 1,
+      "e": "একই সময়ে চলমান কাজ — while।",
+      "t": "while = চলাকালীন।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.CNJ",
+      "d": "Easy",
+      "q": "Think ___ you speak.",
+      "o": [
+        "unless",
+        "after",
+        "before",
+        "lest"
+      ],
+      "a": 2,
+      "e": "আগে ভাবো — before।",
+      "t": "before।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.CNJ",
+      "d": "Medium",
+      "q": "It is two years ___ he left the village.",
+      "o": [
+        "ago",
+        "for",
+        "when",
+        "since"
+      ],
+      "a": 3,
+      "e": "নির্দিষ্ট ঘটনা থেকে সময় গণনায় since (conjunction)।",
+      "t": "since + clause (সময়)।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.CNJ",
+      "d": "Medium",
+      "q": "He was ill; ___, he could not attend the class.",
+      "o": [
+        "therefore",
+        "however",
+        "but",
+        "otherwise"
+      ],
+      "a": 0,
+      "e": "ফল বোঝাতে therefore।",
+      "t": "ফল = therefore।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.CNJ",
+      "d": "Medium",
+      "q": "He tried hard; ___, he could not win.",
+      "o": [
+        "therefore",
+        "however",
+        "so",
+        "because"
+      ],
+      "a": 1,
+      "e": "বৈপরীত্য বোঝাতে however।",
+      "t": "বৈপরীত্য = however।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.CNJ",
+      "d": "Medium",
+      "q": "Which of the following is a subordinating conjunction?",
+      "o": [
+        "but",
+        "and",
+        "because",
+        "or"
+      ],
+      "a": 2,
+      "e": "because, if, although, since — subordinating; and, but, or — coordinating।",
+      "t": "because = subordinating।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.CNJ",
+      "d": "Medium",
+      "q": "He was so weak ___ he could not stand.",
+      "o": [
+        "then",
+        "as",
+        "than",
+        "that"
+      ],
+      "a": 3,
+      "e": "so … that।",
+      "t": "so … that।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.CNJ",
+      "d": "Medium",
+      "q": "He is poor, ___ he is honest.",
+      "o": [
+        "yet",
+        "so",
+        "for",
+        "or"
+      ],
+      "a": 0,
+      "e": "বৈপরীত্য — yet (তবুও)।",
+      "t": "yet = তবুও।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.CNJ",
+      "d": "Medium",
+      "q": "Hurry up, ___ you will miss the train.",
+      "o": [
+        "and",
+        "or",
+        "so",
+        "because"
+      ],
+      "a": 1,
+      "e": "হুঁশিয়ারি — or (নইলে)।",
+      "t": "or = নইলে।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PUN",
+      "d": "Easy",
+      "q": "Choose the correctly punctuated sentence.",
+      "o": [
+        "Its' raining heavily today.",
+        "Its raining heavily today.",
+        "It's raining heavily today.",
+        "It,s raining heavily today."
+      ],
+      "a": 2,
+      "e": "it is-এর সংক্ষেপ it's।",
+      "t": "it's = it is।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PUN",
+      "d": "Medium",
+      "q": "Choose the correctly punctuated sentence.",
+      "o": [
+        "The dog wagged it,s tail.",
+        "The dog wagged it's tail.",
+        "The dog wagged its' tail.",
+        "The dog wagged its tail."
+      ],
+      "a": 3,
+      "e": "possessive its-এ apostrophe নেই।",
+      "t": "its = তার (apostrophe নেই)।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PUN",
+      "d": "Easy",
+      "q": "Which sentence is correctly punctuated?",
+      "o": [
+        "Where are you going?",
+        "Where are you going.",
+        "Where are you going!",
+        "Where, are you going?"
+      ],
+      "a": 0,
+      "e": "প্রশ্নবোধক বাক্যের শেষে question mark।",
+      "t": "প্রশ্ন = ?",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PUN",
+      "d": "Easy",
+      "q": "Which sentence is correctly punctuated?",
+      "o": [
+        "What a lovely garden?",
+        "What a lovely garden!",
+        "What a lovely garden.",
+        "What, a lovely garden."
+      ],
+      "a": 1,
+      "e": "বিস্ময়সূচক বাক্যে exclamation mark।",
+      "t": "বিস্ময় = !",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PUN",
+      "d": "Medium",
+      "q": "Which sentence uses the semicolon correctly?",
+      "o": [
+        "I wanted to go; out it was raining.",
+        "I wanted; to go out it was raining.",
+        "I wanted to go out; it was raining.",
+        "I; wanted to go out it was raining."
+      ],
+      "a": 2,
+      "e": "দুটি স্বাধীন clause যুক্ত করতে semicolon।",
+      "t": "স্বাধীন clause; স্বাধীন clause।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PUN",
+      "d": "Medium",
+      "q": "Which sentence uses the colon correctly?",
+      "o": [
+        "Bring three things a pen: a book and a ruler.",
+        "Bring: three things a pen, a book and a ruler.",
+        "Bring three: things a pen, a book and a ruler.",
+        "Bring three things: a pen, a book and a ruler."
+      ],
+      "a": 3,
+      "e": "তালিকার আগে colon।",
+      "t": "তালিকার আগে :",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PUN",
+      "d": "Medium",
+      "q": "Which sentence is correctly punctuated?",
+      "o": [
+        "He said, \"I am tired.\"",
+        "He said \"I am tired\".",
+        "He said, I am tired.",
+        "He said \"I am tired.\""
+      ],
+      "a": 0,
+      "e": "direct speech-এ reporting verb-এর পরে comma ও উদ্ধৃতিচিহ্ন।",
+      "t": "said, \"…\"",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PUN",
+      "d": "Medium",
+      "q": "In the sentence 'We met him last wednesday in the park', which word must begin with a capital letter?",
+      "o": [
+        "park",
+        "wednesday",
+        "last",
+        "met"
+      ],
+      "a": 1,
+      "e": "সপ্তাহের দিনের নাম Proper Noun — প্রথম অক্ষর বড় হাতের (Wednesday); park, last, met সাধারণ শব্দ।",
+      "t": "দিন/মাস/স্থানের নাম = Capital।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PUN",
+      "d": "Medium",
+      "q": "Which sentence is correctly punctuated?",
+      "o": [
+        "If, you study hard you will pass.",
+        "If you study hard you, will pass.",
+        "If you study hard, you will pass.",
+        "If you study, hard you will pass."
+      ],
+      "a": 2,
+      "e": "বাক্যের শুরুতে আসা if-clause-এর পরে comma।",
+      "t": "If-clause, main clause।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.PUN",
+      "d": "Medium",
+      "q": "Choose the correct form for ending a formal letter.",
+      "o": [
+        "Your sincerely,",
+        "Your's sincerely,",
+        "Yours' sincerely,",
+        "Yours sincerely,"
+      ],
+      "a": 3,
+      "e": "yours-এ apostrophe বসে না।",
+      "t": "Yours sincerely।",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "EN.GR.OTH",
+      "d": "Medium",
+      "q": "Choose the correct question tag: 'There is no milk left, ___?'",
+      "o": [
+        "is there",
+        "isn't there",
+        "is it",
+        "isn't it"
+      ],
+      "a": 0,
+      "e": "no থাকায় বাক্য নেতিবাচক — positive tag; there is-এর tag-এ there।",
+      "t": "There is no … → is there?",
+      "src": "Lecture 08, 16–18 ও Standard Grammar Reference (Swan — Practical English Usage; Wren & Martin)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}
