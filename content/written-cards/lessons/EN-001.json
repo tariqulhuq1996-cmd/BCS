@@ -1,0 +1,225 @@
+{
+  "series": "Daily English Writing Practice",
+  "day": "Day 01",
+  "exam": "52nd BCS Written",
+  "lessonNo": "Lesson 01",
+  "theme": "Digital Literacy & Technology",
+  "topic": "Digital Literacy: A Necessity in the Modern World",
+  "intro": [
+    "আজকের অনুশীলনে বিশেষ গুরুত্ব থাকবে Digital Literacy, Digital Transformation, Digital Divide, Technology এবং Inclusive Development নিয়ে বিশ্লেষণধর্মী ইংরেজি লেখার ওপর।",
+    "আজ আমরা Introduction → Importance → Challenges → Opportunities → Conclusion কাঠামোয় Paragraph তৈরি করব। পাশাপাশি শিখব কীভাবে সাধারণ ইংরেজি শব্দের পরিবর্তে আরও যথাযথ ও প্রাসঙ্গিক শব্দ ব্যবহার করে লেখার মান উন্নত করা যায়।"
+  ],
+  "paragraph": {
+    "title": "Digital Literacy: A Necessity in the Modern World",
+    "words": 124,
+    "pattern": "Introduction → Importance → Challenges → Opportunities → Conclusion",
+    "text": "Digital literacy has become an essential skill in the modern world. It enables individuals to access, evaluate and use information effectively through digital technologies. In today's society, people rely on the internet for education, communication, healthcare and professional activities. However, having access to digital devices does not necessarily mean that a person is digitally literate. Individuals must also understand how to identify reliable information, protect their personal data and use online platforms responsibly. Moreover, digital literacy plays a significant role in reducing the digital divide and creating equal opportunities for all. It empowers people to participate in the digital economy and keep pace with technological advancements. Therefore, governments and educational institutions should take effective initiatives to promote digital literacy and ensure inclusive digital development.",
+    "tip": "একটি ভালো Paragraph লেখার জন্য প্রথমে বিষয়টির পরিচয় দিতে হবে, এরপর গুরুত্ব ও সমস্যা তুলে ধরতে হবে। সবশেষে সম্ভাব্য সমাধান ও উপসংহার লিখতে হবে।"
+  },
+  "structure": [
+    { "step": "Introduction", "what": "আধুনিক বিশ্বে Digital Literacy-এর গুরুত্ব" },
+    { "step": "Importance", "what": "শিক্ষা, যোগাযোগ, স্বাস্থ্যসেবা ও পেশাগত ক্ষেত্রে এর ভূমিকা" },
+    { "step": "Challenges", "what": "ভুল তথ্য, ব্যক্তিগত তথ্যের নিরাপত্তা ও ডিজিটাল দক্ষতার অভাব" },
+    { "step": "Opportunities", "what": "Digital Divide কমানো ও সমান সুযোগ সৃষ্টি" },
+    { "step": "Conclusion", "what": "ডিজিটাল সাক্ষরতা প্রসারে সরকার ও শিক্ষাপ্রতিষ্ঠানের ভূমিকা" }
+  ],
+  "vocabulary": [
+    { "word": "Essential", "bn": "অপরিহার্য, অত্যাবশ্যক", "pos": "Adjective", "synonym": "Necessary, Indispensable, Vital", "antonym": "Unnecessary, Optional", "example": "Digital literacy is essential for modern education.", "exampleBn": "আধুনিক শিক্ষার জন্য ডিজিটাল সাক্ষরতা অপরিহার্য।" },
+    { "word": "Evaluate", "bn": "মূল্যায়ন করা", "pos": "Verb", "synonym": "Assess, Examine, Analyse", "antonym": "Ignore, Overlook", "example": "Students should evaluate online information carefully.", "exampleBn": "শিক্ষার্থীদের অনলাইন তথ্য সতর্কতার সঙ্গে মূল্যায়ন করা উচিত।" },
+    { "word": "Facilitate", "bn": "সহজতর করা, সহায়তা করা", "pos": "Verb", "synonym": "Ease, Assist, Simplify", "antonym": "Hinder, Obstruct", "example": "Technology can facilitate communication.", "exampleBn": "প্রযুক্তি যোগাযোগকে সহজতর করতে পারে।" },
+    { "word": "Significant", "bn": "গুরুত্বপূর্ণ, তাৎপর্যপূর্ণ", "pos": "Adjective", "synonym": "Important, Considerable, Notable", "antonym": "Insignificant, Minor", "example": "Digital skills have a significant impact on employment.", "exampleBn": "কর্মসংস্থানের ওপর ডিজিটাল দক্ষতার উল্লেখযোগ্য প্রভাব রয়েছে।" },
+    { "word": "Empowerment", "bn": "ক্ষমতায়ন, সক্ষমতা বৃদ্ধি", "pos": "Noun", "synonym": "Enablement, Advancement, Strengthening", "antonym": "Disempowerment, Dependence", "example": "Education contributes to women's empowerment.", "exampleBn": "নারীর ক্ষমতায়নে শিক্ষা অবদান রাখে।" }
+  ],
+  "vocabularyRemember": [
+    "Essential: কোনো কিছু অপরিহার্য বোঝাতে।",
+    "Evaluate: তথ্য বা কোনো বিষয়ের গুণাগুণ বিচার করতে।",
+    "Facilitate: কোনো কাজ সহজতর করতে।",
+    "Significant: উল্লেখযোগ্য গুরুত্ব বা প্রভাব বোঝাতে।",
+    "Empowerment: ব্যক্তি বা জনগোষ্ঠীর সক্ষমতা ও সিদ্ধান্ত গ্রহণের ক্ষমতা বৃদ্ধির ক্ষেত্রে।"
+  ],
+  "prepositional": [
+    { "phrase": "In terms of", "bn": "দিক থেকে / বিবেচনায়", "example": "In terms of digital services, Bangladesh has made significant progress.", "exampleBn": "ডিজিটাল সেবার ক্ষেত্রে বাংলাদেশ উল্লেখযোগ্য অগ্রগতি অর্জন করেছে।" },
+    { "phrase": "In addition to", "bn": "ছাড়াও", "example": "In addition to education, technology supports healthcare.", "exampleBn": "শিক্ষা ছাড়াও প্রযুক্তি স্বাস্থ্যসেবায় সহায়তা করে।" },
+    { "phrase": "As a result of", "bn": "ফলস্বরূপ / কারণে", "example": "As a result of technological advancement, communication has become easier.", "exampleBn": "প্রযুক্তিগত অগ্রগতির ফলে যোগাযোগ সহজ হয়েছে।" },
+    { "phrase": "With regard to", "bn": "সম্পর্কে / প্রসঙ্গে", "example": "With regard to digital security, awareness is essential.", "exampleBn": "ডিজিটাল নিরাপত্তার বিষয়ে সচেতনতা অপরিহার্য।" },
+    { "phrase": "In response to", "bn": "প্রতিক্রিয়ায় / কোনো কিছুর জবাবে", "example": "The government introduced new policies in response to public demand.", "exampleBn": "জনদাবির প্রতিক্রিয়ায় সরকার নতুন নীতি প্রবর্তন করেছে।" }
+  ],
+  "idioms": {
+    "items": [
+      { "phrase": "A blessing in disguise", "bn": "আপাতদৃষ্টিতে খারাপ হলেও শেষ পর্যন্ত ভালো ফল বয়ে আনে এমন কিছু", "example": "The pandemic was a blessing in disguise for online education." },
+      { "phrase": "At the forefront of", "bn": "কোনো ক্ষেত্রে অগ্রভাগে থাকা", "example": "Bangladesh is working to remain at the forefront of digital transformation." },
+      { "phrase": "Bridge the gap", "bn": "ব্যবধান কমানো", "example": "Digital education can bridge the gap between urban and rural communities." },
+      { "phrase": "Keep pace with", "bn": "তাল মিলিয়ে চলা", "example": "Students must keep pace with technological changes." },
+      { "phrase": "A double-edged sword", "bn": "ইতিবাচক ও নেতিবাচক উভয় প্রভাববিশিষ্ট বিষয়", "example": "Social media can be a double-edged sword." }
+    ],
+    "tip": "Formal Essay-তে Bridge the gap, Keep pace with এবং At the forefront of সহজে ব্যবহার করা যায়। তবে প্রতিটি বাক্যে Idiom ব্যবহার করার প্রয়োজন নেই। প্রসঙ্গ অনুযায়ী ব্যবহার করাই ভালো।"
+  },
+  "writers": {
+    "intro": "এই অংশে প্রতিদিন ২ জন লেখক এবং প্রত্যেকের মাত্র ১টি বই বিশ্লেষণ করবে। প্রতিটি বইয়ের Summary, গুরুত্বপূর্ণ চরিত্র এবং লেখকের মূল বক্তব্য থাকবে।",
+    "items": [
+      {
+        "name": "George Orwell",
+        "nationality": "British",
+        "identity": "Novelist, Essayist and Political Writer",
+        "book": "Animal Farm",
+        "published": "1945",
+        "genre": "Political Satire / Allegorical Novella",
+        "summary": "Animal Farm একটি রূপকধর্মী রাজনৈতিক উপন্যাস। গল্পে একটি খামারের পশুরা মানুষের শোষণের বিরুদ্ধে বিদ্রোহ করে এবং নিজেদের জন্য সমতাভিত্তিক সমাজ প্রতিষ্ঠার চেষ্টা করে। কিন্তু পরবর্তী সময়ে শূকররা ক্ষমতা দখল করে এবং নিজেরাই শোষকে পরিণত হয়। উপন্যাসটি দেখায়, ক্ষমতার অপব্যবহার, স্বৈরাচার ও রাজনৈতিক দুর্নীতি কীভাবে বিপ্লবের মূল আদর্শকে ধ্বংস করতে পারে।",
+        "characters": [
+          { "name": "Napoleon", "desc": "ক্ষমতালোভী শূকর। তার চরিত্রের মাধ্যমে স্বৈরাচারী নেতৃত্ব, ক্ষমতার অপব্যবহার ও রাজনৈতিক দুর্নীতি তুলে ধরা হয়েছে।" },
+          { "name": "Snowball", "desc": "আদর্শবাদী ও পরিকল্পনাপ্রবণ শূকর। তার চরিত্র বিপ্লবী নেতৃত্ব ও পরিবর্তনের আকাঙ্ক্ষার প্রতীক।" },
+          { "name": "Boxer", "desc": "পরিশ্রমী ঘোড়া। তার মাধ্যমে শোষিত শ্রমজীবী মানুষের পরিশ্রম, সরলতা ও অসহায়ত্ব ফুটে উঠেছে।" },
+          { "name": "Squealer", "desc": "প্রচারণার মাধ্যমে শাসকের স্বার্থ রক্ষা করে। তার চরিত্র রাজনৈতিক প্রচারণা ও তথ্য বিকৃতির বিষয়টি তুলে ধরে।" }
+        ],
+        "message": [
+          "George Orwell দেখিয়েছেন, ক্ষমতার অপব্যবহার, রাজনৈতিক দুর্নীতি ও স্বৈরাচার একটি আদর্শভিত্তিক আন্দোলনকেও শোষণমূলক ব্যবস্থায় পরিণত করতে পারে।",
+          "তিনি রাজনৈতিক ক্ষমতার কেন্দ্রীকরণ, প্রচারণা এবং সাধারণ মানুষের ওপর শাসকগোষ্ঠীর নিয়ন্ত্রণের সমালোচনা করেছেন।"
+        ],
+        "bcsUse": ["Democracy", "Good Governance", "Political Corruption", "Abuse of Power", "Leadership", "Authoritarianism"]
+      },
+      {
+        "name": "Charles Dickens",
+        "nationality": "British",
+        "identity": "Novelist and Social Critic",
+        "book": "Oliver Twist",
+        "published": "1838",
+        "genre": "Social Novel",
+        "summary": "Oliver Twist উপন্যাসে Oliver নামের এক অনাথ শিশুর জীবনসংগ্রাম তুলে ধরা হয়েছে। দারিদ্র্য, অবহেলা ও নিষ্ঠুর সামাজিক ব্যবস্থার মধ্যে বেড়ে ওঠা Oliver নানা প্রতিকূলতার মুখোমুখি হয়। সে একসময় অপরাধী চক্রের কবলে পড়ে। কিন্তু প্রতিকূলতার মধ্যেও তার সততা ও মানবিকতা অটুট থাকে। উপন্যাসটি উনিশ শতকের ইংল্যান্ডের দারিদ্র্য, অনাথ শিশুদের দুর্দশা ও সামাজিক অবিচার তুলে ধরে।",
+        "characters": [
+          { "name": "Oliver Twist", "desc": "উপন্যাসের প্রধান চরিত্র। সে একজন অনাথ শিশু। তার মাধ্যমে নিষ্পাপত্ব, সততা ও প্রতিকূলতার মধ্যেও মানবিকতা ধরে রাখার বিষয়টি ফুটে উঠেছে।" },
+          { "name": "Fagin", "desc": "অপরাধী চক্রের নেতা। তার চরিত্রের মাধ্যমে শিশুদের অপরাধজগতে ব্যবহার ও শোষণের বিষয়টি তুলে ধরা হয়েছে।" },
+          { "name": "Nancy", "desc": "অপরাধজগতের সঙ্গে যুক্ত হলেও মানবিক গুণসম্পন্ন নারী। তার চরিত্রের মাধ্যমে সহানুভূতি ও নৈতিক দ্বন্দ্ব প্রকাশ পেয়েছে।" },
+          { "name": "Mr. Brownlow", "desc": "Oliver-এর প্রতি সহানুভূতিশীল ও সাহায্যকারী ব্যক্তি। তিনি মানবিকতা ও উদারতার প্রতীক।" }
+        ],
+        "message": [
+          "Charles Dickens দেখিয়েছেন, দারিদ্র্য, সামাজিক অবিচার ও শিশুশোষণ সমাজের গুরুতর সমস্যা। তিনি অনাথ শিশুদের দুর্দশা এবং দরিদ্র জনগোষ্ঠীর প্রতি সমাজের অবহেলার সমালোচনা করেছেন।",
+          "উপন্যাসটি মানবিকতা, সামাজিক ন্যায়বিচার ও অসহায় মানুষের প্রতি সহমর্মিতার গুরুত্ব তুলে ধরে।"
+        ],
+        "bcsUse": ["Poverty", "Child Rights", "Social Inequality", "Child Labour", "Humanitarian Values", "Social Justice"]
+      }
+    ],
+    "takeaway": [
+      "Animal Farm আমাদের রাজনৈতিক ক্ষমতার অপব্যবহার, স্বৈরাচার ও দুর্নীতির বিষয়টি বোঝায়।",
+      "Oliver Twist আমাদের দারিদ্র্য, শিশুশোষণ ও সামাজিক অবিচারের বিষয়টি বোঝায়।",
+      "এই দুটি বইয়ের উদাহরণ ব্যবহার করে Democracy, Good Governance, Poverty, Child Rights এবং Social Justice বিষয়ে Essay-তে সাহিত্যিক রেফারেন্স দেওয়া সম্ভব।"
+    ]
+  },
+  "quote": {
+    "text": "Reading maketh a full man; conference a ready man; and writing an exact man.",
+    "author": "Francis Bacon",
+    "work": "Of Studies",
+    "bn": "পড়াশোনা মানুষকে জ্ঞানসমৃদ্ধ করে, আলোচনা মানুষকে উপস্থিত বুদ্ধিসম্পন্ন করে এবং লেখালেখি মানুষকে নির্ভুল ও সুশৃঙ্খল করে।",
+    "explanation": "এই উক্তির মাধ্যমে Francis Bacon পড়া, আলোচনা ও লেখার গুরুত্ব তুলে ধরেছেন। জ্ঞান অর্জনের পাশাপাশি তা প্রকাশ ও প্রয়োগ করার দক্ষতাও গুরুত্বপূর্ণ।",
+    "useIn": ["Education", "Knowledge", "Reading Habit", "Self-development", "Importance of Writing"]
+  },
+  "sentences": [
+    { "en": "Digital literacy has become an essential skill in the modern world.", "bn": "আধুনিক বিশ্বে ডিজিটাল সাক্ষরতা একটি অপরিহার্য দক্ষতায় পরিণত হয়েছে।", "notes": ["Digital literacy = ডিজিটাল সাক্ষরতা", "Essential = অপরিহার্য", "Skill = দক্ষতা", "Has become = পরিণত হয়েছে"] },
+    { "en": "It enables individuals to access, evaluate and use information effectively through digital technologies.", "bn": "এটি ব্যক্তিকে ডিজিটাল প্রযুক্তির মাধ্যমে কার্যকরভাবে তথ্য সংগ্রহ, মূল্যায়ন ও ব্যবহার করতে সক্ষম করে।", "notes": ["Enables = সক্ষম করে", "Access = প্রবেশাধিকার পাওয়া / সংগ্রহ করা", "Evaluate = মূল্যায়ন করা", "Effectively = কার্যকরভাবে"] },
+    { "en": "In today's society, people rely on the internet for education, communication, healthcare and professional activities.", "bn": "বর্তমান সমাজে মানুষ শিক্ষা, যোগাযোগ, স্বাস্থ্যসেবা ও পেশাগত কার্যক্রমের জন্য ইন্টারনেটের ওপর নির্ভর করে।", "notes": ["Rely on = নির্ভর করা", "Healthcare = স্বাস্থ্যসেবা", "Professional activities = পেশাগত কার্যক্রম"] },
+    { "en": "However, having access to digital devices does not necessarily mean that a person is digitally literate.", "bn": "তবে ডিজিটাল ডিভাইস ব্যবহারের সুযোগ থাকলেই যে একজন ব্যক্তি ডিজিটালভাবে দক্ষ, তা নিশ্চিতভাবে বলা যায় না।", "notes": ["However = তবে", "Having access to = ব্যবহারের সুযোগ থাকা", "Does not necessarily mean = এমনটি অপরিহার্যভাবে বোঝায় না", "Digitally literate = ডিজিটাল বিষয়ে দক্ষ"] },
+    { "en": "Individuals must also understand how to identify reliable information, protect their personal data and use online platforms responsibly.", "bn": "ব্যক্তিদের নির্ভরযোগ্য তথ্য শনাক্ত করা, ব্যক্তিগত তথ্য সুরক্ষিত রাখা এবং অনলাইন প্ল্যাটফর্ম দায়িত্বশীলভাবে ব্যবহার করাও বুঝতে হবে।", "notes": ["Identify = শনাক্ত করা", "Reliable information = নির্ভরযোগ্য তথ্য", "Personal data = ব্যক্তিগত তথ্য", "Responsibly = দায়িত্বশীলভাবে"] },
+    { "en": "Moreover, digital literacy plays a significant role in reducing the digital divide and creating equal opportunities for all.", "bn": "তাছাড়া ডিজিটাল বৈষম্য কমানো এবং সবার জন্য সমান সুযোগ সৃষ্টি করার ক্ষেত্রে ডিজিটাল সাক্ষরতা গুরুত্বপূর্ণ ভূমিকা পালন করে।", "notes": ["Moreover = তাছাড়া", "Plays a significant role = গুরুত্বপূর্ণ ভূমিকা পালন করে", "Digital divide = ডিজিটাল বৈষম্য", "Equal opportunities = সমান সুযোগ"] },
+    { "en": "It empowers people to participate in the digital economy and keep pace with technological advancements.", "bn": "এটি মানুষকে ডিজিটাল অর্থনীতিতে অংশগ্রহণ করতে এবং প্রযুক্তিগত অগ্রগতির সঙ্গে তাল মিলিয়ে চলতে সক্ষম করে।", "notes": ["Empowers = ক্ষমতায়িত করে / সক্ষম করে", "Participate = অংশগ্রহণ করা", "Digital economy = ডিজিটাল অর্থনীতি", "Keep pace with = তাল মিলিয়ে চলা", "Technological advancements = প্রযুক্তিগত অগ্রগতি"] },
+    { "en": "Therefore, governments and educational institutions should take effective initiatives to promote digital literacy and ensure inclusive digital development.", "bn": "সুতরাং, ডিজিটাল সাক্ষরতা প্রসার এবং অন্তর্ভুক্তিমূলক ডিজিটাল উন্নয়ন নিশ্চিত করতে সরকার ও শিক্ষাপ্রতিষ্ঠানগুলোর কার্যকর উদ্যোগ নেওয়া উচিত।", "notes": ["Therefore = সুতরাং", "Take initiatives = উদ্যোগ গ্রহণ করা", "Effective = কার্যকর", "Promote = প্রসার করা", "Inclusive development = অন্তর্ভুক্তিমূলক উন্নয়ন"] }
+  ],
+  "wordChoice": {
+    "items": [
+      { "title": "Good vs Effective vs Beneficial", "rows": [
+        { "word": "Good", "meaning": "ভালো; সাধারণ অর্থে ব্যবহৃত হয়" },
+        { "word": "Effective", "meaning": "কার্যকর; কোনো উদ্যোগ বা পদ্ধতি ফল দিচ্ছে বোঝায়" },
+        { "word": "Beneficial", "meaning": "উপকারী; ইতিবাচক সুবিধা পাওয়া বোঝায়" }
+      ], "examples": ["Education is good for everyone.", "The government should adopt effective policies.", "Regular exercise is beneficial to health."] },
+      { "title": "Important vs Significant vs Crucial", "rows": [
+        { "word": "Important", "meaning": "গুরুত্বপূর্ণ।" },
+        { "word": "Significant", "meaning": "তাৎপর্যপূর্ণ বা উল্লেখযোগ্য।" },
+        { "word": "Crucial", "meaning": "অত্যন্ত গুরুত্বপূর্ণ; কোনো ফলাফল নির্ধারণে বড় ভূমিকা রাখে।" }
+      ], "examples": ["Education is important for development.", "Technology has a significant impact on society.", "Digital literacy is crucial for modern employment."] },
+      { "title": "Help vs Assist vs Facilitate", "rows": [
+        { "word": "Help", "meaning": "সাহায্য করা; সাধারণ ব্যবহার।" },
+        { "word": "Assist", "meaning": "সহায়তা করা; তুলনামূলক আনুষ্ঠানিক।" },
+        { "word": "Facilitate", "meaning": "কোনো কাজ সহজতর করা।" }
+      ], "examples": ["Technology helps students learn.", "Teachers assist students in their studies.", "Digital platforms facilitate communication."] },
+      { "title": "Show vs Demonstrate vs Illustrate", "rows": [
+        { "word": "Show", "meaning": "দেখানো।" },
+        { "word": "Demonstrate", "meaning": "প্রমাণ বা প্রদর্শন করা।" },
+        { "word": "Illustrate", "meaning": "উদাহরণ বা চিত্রের মাধ্যমে ব্যাখ্যা করা।" }
+      ], "examples": ["The report shows recent progress.", "The findings demonstrate the importance of education.", "This example illustrates the problem."] },
+      { "title": "Increase vs Enhance vs Expand", "rows": [
+        { "word": "Increase", "meaning": "বৃদ্ধি করা।" },
+        { "word": "Enhance", "meaning": "গুণগত মান বা কার্যকারিতা উন্নত করা।" },
+        { "word": "Expand", "meaning": "পরিধি বা আকার বাড়ানো।" }
+      ], "examples": ["The population continues to increase.", "Training can enhance professional skills.", "The government plans to expand digital services."] }
+    ],
+    "tip": "সুন্দর English লেখার জন্য শুধু Synonym জানা যথেষ্ট নয়। শব্দের অর্থ, Context এবং ব্যবহারিক পার্থক্য জানতে হবে।"
+  },
+  "grammar": [
+    {
+      "title": "Present Perfect Tense",
+      "structure": "Subject + have/has + Past Participle (V3)",
+      "usage": "অতীতে শুরু হওয়া কোনো কাজের বর্তমান ফলাফল বা প্রভাব বোঝাতে Present Perfect Tense ব্যবহৃত হয়।",
+      "example": "Digital literacy has become an essential skill in the modern world.",
+      "explanation": "এখানে Digital literacy একবচন Subject। তাই এর সঙ্গে has ব্যবহৃত হয়েছে। Has-এর পরে become (V3) বসেছে।",
+      "more": ["Technology has changed our lifestyle.", "Bangladesh has made significant progress in digital services.", "Education has created new opportunities for people."],
+      "wrong": "Digital literacy have become important.",
+      "right": "Digital literacy has become important."
+    },
+    {
+      "title": "Modal Verb — Should",
+      "structure": "Subject + should + base form of verb.",
+      "usage": "পরামর্শ, দায়িত্ব, কর্তব্য বা করণীয় বোঝাতে Should ব্যবহৃত হয়।",
+      "example": "Governments should promote digital literacy.",
+      "explanation": "Should-এর পরে Verb-এর Base Form বসে।",
+      "more": ["Students should develop reading habits.", "Governments should ensure equal opportunities.", "People should use technology responsibly."],
+      "wrong": "The government should promotes education.",
+      "right": "The government should promote education."
+    }
+  ],
+  "collocations": [
+    { "expr": "Digital transformation", "bn": "ডিজিটাল রূপান্তর" },
+    { "expr": "Equal opportunities", "bn": "সমান সুযোগ" },
+    { "expr": "Reliable information", "bn": "নির্ভরযোগ্য তথ্য" },
+    { "expr": "Effective measures", "bn": "কার্যকর পদক্ষেপ" },
+    { "expr": "Technological advancement", "bn": "প্রযুক্তিগত অগ্রগতি" }
+  ],
+  "connectors": [
+    { "word": "Moreover", "bn": "তাছাড়া", "use": "অতিরিক্ত তথ্য" },
+    { "word": "However", "bn": "তবে", "use": "বিপরীত বক্তব্য" },
+    { "word": "Therefore", "bn": "সুতরাং", "use": "সিদ্ধান্ত বা ফলাফল" },
+    { "word": "Furthermore", "bn": "অধিকন্তু", "use": "অতিরিক্ত যুক্তি" },
+    { "word": "Consequently", "bn": "ফলস্বরূপ", "use": "পরিণতি" }
+  ],
+  "connectorsExample": "Digital technology has created new opportunities. However, it has also increased cybersecurity risks. Therefore, digital awareness is essential.",
+  "transformation": [
+    { "label": "সাধারণ বাক্য", "text": "Digital literacy is essential because it helps people access information." },
+    { "label": "Simple Sentence", "text": "Digital literacy is essential for accessing information." },
+    { "label": "Complex Sentence", "text": "Digital literacy is essential because it enables people to access information." },
+    { "label": "Compound Sentence", "text": "Digital literacy is essential, and it helps people access information." },
+    { "label": "আরেকটি উদাহরণ — Original", "text": "Although technology offers many benefits, it also creates challenges." },
+    { "label": "Simple", "text": "Despite offering many benefits, technology creates challenges." },
+    { "label": "Compound", "text": "Technology offers many benefits, but it also creates challenges." }
+  ],
+  "transformationNote": "একই বক্তব্যকে বিভিন্ন Structure-এ প্রকাশ করতে পারলে Essay ও Paragraph-এর ভাষা আরও সমৃদ্ধ হবে। তবে Transformation করার সময় মূল অর্থ অপরিবর্তিত রাখতে হবে।",
+  "translation": {
+    "note": "প্রথমে নিজে অনুবাদ করবে। নিজের অনুবাদ শেষ হলে উত্তর মিলিয়ে নেবে।",
+    "bnToEn": [
+      { "q": "ডিজিটাল সাক্ষরতা আধুনিক জীবনের একটি অপরিহার্য দক্ষতা।", "a": "Digital literacy is an essential skill in modern life." },
+      { "q": "প্রযুক্তি মানুষের জীবনযাত্রাকে সহজ করেছে।", "a": "Technology has made people's lives easier." }
+    ],
+    "enToBn": [
+      { "q": "Education plays a significant role in reducing poverty.", "a": "দারিদ্র্য কমাতে শিক্ষা গুরুত্বপূর্ণ ভূমিকা পালন করে।" },
+      { "q": "Governments should take effective measures to ensure equal opportunities.", "a": "সমান সুযোগ নিশ্চিত করতে সরকারগুলোর কার্যকর পদক্ষেপ নেওয়া উচিত।" }
+    ]
+  },
+  "assignment": {
+    "intro": "নিচের ১০টি Expression থেকে অন্তত ৫টি ব্যবহার করে নিজে ৫টি English Sentence লিখবে।",
+    "expressions": ["Essential skill", "Evaluate information", "Facilitate communication", "Significant impact", "Digital empowerment", "Bridge the gap", "Keep pace with", "Reliable information", "Effective measures", "Inclusive development"],
+    "criteria": ["Grammar Accuracy", "Right Word Selection", "Sentence Structure", "Natural Expression", "Appropriate Vocabulary", "BCS Written Standard"],
+    "note": "তোমার লেখা বাক্যগুলো নিচের ঘরে লিখে রাখো (এই ডিভাইসে সংরক্ষিত থাকবে)। তারপর মূল্যায়নের মানদণ্ড ধরে নিজে মিলিয়ে দেখো।"
+  },
+  "finalGoal": {
+    "title": "Day 01 — Final Learning Goal",
+    "text": ["আজকের Lesson-এর মূল উদ্দেশ্য শুধু নতুন শব্দ মুখস্থ করা নয়। বরং Vocabulary, Grammar, Sentence Construction, Translation এবং Paragraph Writing—সবকিছু একসঙ্গে অনুশীলন করা।"],
+    "remember": "ভালো ইংরেজি লেখার জন্য কঠিন শব্দের চেয়ে সঠিক শব্দ, সঠিক Grammar, স্বাভাবিক বাক্যগঠন এবং যুক্তিসংগতভাবে ধারণা সাজানো বেশি গুরুত্বপূর্ণ।",
+    "principle": "Practice Principle: Learn → Understand → Apply → Revise."
+  }
+}

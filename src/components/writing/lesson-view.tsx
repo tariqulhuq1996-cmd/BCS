@@ -38,6 +38,7 @@ export function LessonView({ lesson: l, code }: { lesson: Lesson; code: string }
             <Table head={["ধাপ", "কী লিখবে"]} rows={l.structure.map((s) => [<b key="s" lang="en">{s.step}</b>, s.what])} />
           </>
         ) : null}
+        {p.tip && <Tip label="Writing Tip">{p.tip}</Tip>}
       </>
     )));
   }
@@ -59,6 +60,12 @@ export function LessonView({ lesson: l, code }: { lesson: Lesson; code: string }
             </li>
           ))}
         </ol>
+        {l.vocabularyRemember?.length ? (
+          <div className="mt-4 rounded-lg bg-omr-wash px-4 py-3 text-[15px]">
+            <p className="font-semibold">মনে রাখবে</p>
+            <ul className="mt-1 list-disc space-y-1 pl-6">{l.vocabularyRemember.map((x) => <li key={x}>{x}</li>)}</ul>
+          </div>
+        ) : null}
       </>
     )));
   }
@@ -190,6 +197,7 @@ export function LessonView({ lesson: l, code }: { lesson: Lesson; code: string }
           <div key={g.title} className="rounded-xl border border-line p-4">
             <h3 className="font-semibold">Rule {i + 1}: <span lang="en">{g.title}</span></h3>
             <p className="mt-2"><b>Structure:</b> <code lang="en" className="rounded bg-paper px-1.5 py-0.5">{g.structure}</code></p>
+            {g.usage && <p className="mt-2"><b>ব্যবহার:</b> {g.usage}</p>}
             <p className="mt-2" lang="en"><b>Example:</b> {g.example}</p>
             <p className="mt-2"><b>ব্যাখ্যা:</b> {g.explanation}</p>
             {g.wrong && <p className="mt-2 text-danger" lang="en"><b>✗ সাধারণ ভুল:</b> {g.wrong}</p>}
@@ -206,7 +214,7 @@ export function LessonView({ lesson: l, code }: { lesson: Lesson; code: string }
     parts.push(sec("Collocations and Connectors", (
       <div className="grid gap-6 lg:grid-cols-2">
         {l.collocations?.length ? <div><h3 className="font-semibold">Important Collocations</h3><Table head={["Expression", "বাংলা অর্থ"]} rows={l.collocations.map((c) => [<b key="c" lang="en">{c.expr}</b>, c.bn])} /></div> : null}
-        {l.connectors?.length ? <div><h3 className="font-semibold">Connectors</h3><Table head={["Connector", "বাংলা অর্থ", "ব্যবহার"]} rows={l.connectors.map((c) => [<b key="c" lang="en">{c.word}</b>, c.bn, c.use])} /></div> : null}
+        {l.connectors?.length ? <div><h3 className="font-semibold">Connectors</h3><Table head={["Connector", "বাংলা অর্থ", "ব্যবহার"]} rows={l.connectors.map((c) => [<b key="c" lang="en">{c.word}</b>, c.bn, c.use])} />{l.connectorsExample && <p className="mt-3 rounded-lg bg-paper px-3 py-2 italic" lang="en"><span className="not-italic font-semibold">Example:</span> {l.connectorsExample}</p>}</div> : null}
       </div>
     )));
   }
@@ -267,6 +275,18 @@ export function LessonView({ lesson: l, code }: { lesson: Lesson; code: string }
         <AssignmentBox storageKey={`writing-assignment:${code}`} />
       </>
     ), "আজকের ৫টি Sentence Challenge"));
+  }
+
+  if (l.finalGoal) {
+    const g = l.finalGoal;
+    parts.push(
+      <section key="final-goal" className="rounded-2xl border-2 border-green bg-green-wash p-5 sm:p-6">
+        <h2 className="text-xl font-bold" lang="en">{g.title ?? `${l.day ?? ""} — Final Learning Goal`}</h2>
+        {g.text.map((x) => <p key={x} className="mt-2">{x}</p>)}
+        {g.remember && <p className="mt-3"><b>মনে রাখবে:</b> {g.remember}</p>}
+        {g.principle && <p className="mt-3 text-lg font-bold text-green" lang="en">{g.principle}</p>}
+      </section>,
+    );
   }
 
   return (
