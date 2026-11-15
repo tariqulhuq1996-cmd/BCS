@@ -47,6 +47,7 @@ model User {
   caAnswers       CaAnswer[]
   achievements    UserAchievement[]
   questionReports QuestionReport[]      @relation("ReportBy")
+  writingReads    WritingCardRead[]
 }
 
 model StudentProfile {
@@ -749,4 +750,40 @@ model QuestionReport {
   @@index([status, createdAt])
   @@index([questionId])
   @@index([userId, createdAt])
+}
+
+// ── Pre BCS Writing Practice: বিসিএস লিখিত প্রস্তুতির তথ্য-কার্ড
+// কার্ড আসে content/written-cards/BCS_Written_Info_Cards.xlsx থেকে (scripts/import-writing-cards.ts)।
+// প্রতিটি বিষয়ে কার্ডগুলো ক্রমানুসারে খোলে: আগেরটি পড়া শেষ হলে পরেরটি।
+
+model WritingCard {
+  id          Int               @id @default(autoincrement())
+  code        String            @unique // যেমন BN-015
+  subject     String // BN, EN, BD, IA, MM, SC
+  subjectName String
+  order       Int // বিষয়ের ভেতরে ক্রম (১ থেকে)
+  paper       String?
+  section     String            @db.Text
+  marks       Int?
+  title       String            @db.Text
+  kind        String? // কার্ডের ধরন
+  info        String?           @db.Text
+  ref         String?           @db.Text
+  note        String?           @db.Text
+  updatedAt   DateTime          @updatedAt
+  reads       WritingCardRead[]
+
+  @@unique([subject, order])
+}
+
+/// শিক্ষার্থী কোন কার্ড পড়া শেষ করেছেন
+model WritingCardRead {
+  userId String
+  user   User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  cardId Int
+  card   WritingCard @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  readAt DateTime    @default(now())
+
+  @@id([userId, cardId])
+  @@index([cardId])
 }

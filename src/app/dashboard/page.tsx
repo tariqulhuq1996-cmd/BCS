@@ -12,6 +12,7 @@ import { getStudyStats } from "@/lib/progress/streak";
 import { progressRank } from "@/lib/progress/peers";
 import { DashboardTour } from "@/components/portal/tour";
 import { ResetProgress } from "@/components/portal/reset-progress";
+import { getOverview as getWritingOverview } from "@/lib/writing/service";
 
 export const metadata: Metadata = { title: "আমার Dashboard" };
 
@@ -215,6 +216,11 @@ async function Dashboard() {
         </section>
       </div>
 
+      {/* ── Pre BCS Writing Practice */}
+      <Suspense fallback={null}>
+        <WritingBlock userId={user.id} />
+      </Suspense>
+
       {/* ── সংখ্যায় অগ্রগতি */}
       <section aria-label="সংক্ষেপে অগ্রগতি" className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-5">
         {[
@@ -338,5 +344,34 @@ async function Dashboard() {
         <ResetProgress />
       </section>
     </>
+  );
+}
+
+/** লিখিত প্রস্তুতির তথ্য-কার্ড: বিষয়ভিত্তিক অগ্রগতি ও প্রবেশের বোতাম। */
+async function WritingBlock({ userId }: { userId: string }) {
+  const o = await getWritingOverview(prisma, userId);
+  const total = o.reduce((a, x) => a + x.total, 0);
+  if (!total) return null;
+  const read = o.reduce((a, x) => a + x.read, 0);
+  return (
+    <section aria-labelledby="writing-practice" className="mt-8 rounded-2xl border border-line bg-surface p-5 sm:p-6">
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <h2 id="writing-practice" className="text-xl font-bold">Pre BCS Writing Practice</h2>
+          <p className="mt-1 text-ink-2">লিখিত পরীক্ষার তথ্য-কার্ড — পড়া হয়েছে {bn(read)}/{bn(total)}টি</p>
+        </div>
+        <Link href="/writing" className="rounded-lg bg-green px-5 py-2.5 font-semibold text-white hover:bg-green-strong dark:text-paper">কার্ডগুলো দেখুন</Link>
+      </div>
+      <ul className="mt-4 grid gap-3 sm:grid-cols-3">
+        {o.map((x) => (
+          <li key={x.code}>
+            <Link href={`/writing?s=${x.code}`} className="block rounded-lg border border-line px-3 py-2.5 hover:border-green">
+              <span className="flex items-baseline justify-between gap-2 text-[15px]"><span className="font-semibold">{x.name}</span><span className="tabular text-sm text-muted">{bn(x.read)}/{bn(x.total)}</span></span>
+              <span className="mt-1.5 block"><ProgressBar pct={x.total ? (x.read / x.total) * 100 : 0} label={`${x.name}: পড়া কার্ড`} /></span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }

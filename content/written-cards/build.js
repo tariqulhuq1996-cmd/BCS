@@ -146,4 +146,6 @@ guide.getRow(13).height = 60;
 // ক্রম: নির্দেশনা, সারসংক্ষেপ, তারপর বিষয়
 wb.views = [{ activeTab: 0 }];
 const out = path.join(__dirname, "BCS_Written_Info_Cards.xlsx");
+// সাবধান: ফাইলটিতে আপনার লেখা তথ্য থাকতে পারে — নতুন করে তৈরি করলে সব মুছে যাবে
+if (require("fs").existsSync(out) && !process.argv.includes("--force")) { console.error("BCS_Written_Info_Cards.xlsx আগে থেকেই আছে; নতুন করে তৈরি করলে লেখা তথ্য মুছে যাবে। নিশ্চিত হলে: node build.js --force"); process.exit(1); }
 wb.xlsx.writeFile(out).then(() => console.log("written", out, SUBJ.map((s) => `${s.code}:${s.target}`).join(" ")));

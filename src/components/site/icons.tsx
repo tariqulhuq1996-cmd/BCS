@@ -9,7 +9,7 @@ function Svg({ children, ...p }: SVGProps<SVGSVGElement>) {
   );
 }
 
-export type IconName = "dashboard" | "revision" | "compass" | "report" | "user" | "key" | "mistakes" | "roadmap" | "research" | "repeat" | "news" | "admin" | "logout" | "chevron" | "mail" | "star" | "search" | "text" | "sun";
+export type IconName = "dashboard" | "revision" | "compass" | "report" | "user" | "key" | "mistakes" | "roadmap" | "research" | "repeat" | "news" | "admin" | "logout" | "chevron" | "mail" | "star" | "search" | "text" | "sun" | "lock" | "check";
 
 const PATHS: Record<IconName, React.ReactNode> = {
   dashboard: (
@@ -98,6 +98,13 @@ const PATHS: Record<IconName, React.ReactNode> = {
     </>
   ),
   chevron: <path d="m6 9 6 6 6-6" />,
+  lock: (
+    <>
+      <rect x="5" y="11" width="14" height="10" rx="2" />
+      <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+    </>
+  ),
+  check: <path d="m5 12.5 4.5 4.5L19 7.5" />,
   star: <path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.8l-5.2 2.8 1-5.8-4.3-4.1 5.9-.9z" />,
   search: (
     <>

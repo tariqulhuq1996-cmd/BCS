@@ -11,6 +11,7 @@ const EXPLORE: MenuItem[] = [
   { href: "/#roadmap", label: "Roadmap", icon: "roadmap", tone: "green", note: "শুরু থেকে পরীক্ষা পর্যন্ত পুরো পথ" },
   { href: "/repeated-questions", label: "বারবার আসা প্রশ্ন", icon: "repeat", tone: "omr", note: "একাধিক BCS-এ আসা প্রশ্ন" },
   { href: "/current-affairs", label: "সাম্প্রতিক বিষয়াবলি", icon: "news", tone: "omr", note: "Current Affairs প্রশ্নব্যাংক" },
+  { href: "/writing", label: "Pre BCS Writing Practice", icon: "text", tone: "green", note: "লিখিত পরীক্ষার তথ্য-কার্ড" },
 ];
 
 export function SiteHeader() {
@@ -101,6 +102,7 @@ async function TopBar() {
       <nav aria-label="প্রধান" className="hidden items-center gap-0.5 md:flex">
         <NavLink href="/dashboard" label="Dashboard" icon="dashboard" />
         <NavLink href="/revision" label="Revision" icon="revision" />
+        <NavLink href="/writing" label="Writing Practice" icon="text" />
         <ExploreMenu items={EXPLORE} />
       </nav>
       <div className="ml-auto flex items-center gap-1">

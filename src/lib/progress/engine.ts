@@ -151,7 +151,7 @@ export async function unlockAllForAdmin(db: Db, userId: string): Promise<boolean
  */
 export async function resetProgress(db: PrismaClient, userId: string) {
   const w = { where: { userId } };
-  const [tasks, attempts, stats, mastery, revision, checklist, achievements, ca] = await db.$transaction([
+  const [tasks, attempts, stats, mastery, revision, checklist, achievements, ca, writing] = await db.$transaction([
     db.studentTaskProgress.deleteMany(w),
     db.testAttempt.deleteMany(w), // উত্তরগুলো (AttemptAnswer) Cascade-এ মোছে
     db.questionStat.deleteMany(w),
@@ -160,8 +160,9 @@ export async function resetProgress(db: PrismaClient, userId: string) {
     db.studentChecklist.deleteMany(w),
     db.userAchievement.deleteMany(w),
     db.caAnswer.deleteMany(w),
+    db.writingCardRead.deleteMany(w), // Pre BCS Writing Practice-এর পড়ার হিসাব
   ]);
-  const counts = { tasks: tasks.count, attempts: attempts.count, stats: stats.count, mastery: mastery.count, revision: revision.count, checklist: checklist.count, achievements: achievements.count, ca: ca.count };
+  const counts = { tasks: tasks.count, attempts: attempts.count, stats: stats.count, mastery: mastery.count, revision: revision.count, checklist: checklist.count, achievements: achievements.count, ca: ca.count, writing: writing.count };
   await db.auditLog.create({ data: { actorId: userId, action: "reset_progress", entity: "User", entityId: userId, data: counts } });
   return counts;
 }

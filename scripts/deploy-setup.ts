@@ -100,6 +100,9 @@ async function main() {
     // Level 2-এর তৈরি প্রশ্নব্যাংক (data/source/level2/*.json) — যেগুলো নেই শুধু সেগুলো বসে
     run("npx tsx scripts/import-level2-bank.ts");
 
+    // Pre BCS Writing Practice-এর কার্ড (content/written-cards/*.xlsx) — নতুন/বদলানো কার্ড হালনাগাদ
+    run("npx tsx scripts/import-writing-cards.ts");
+
     // পুরোনো ডেটায় প্রশ্নের উৎস "…তম বিসিএস প্রিলিমিনারি" — এখন সাইটজুড়ে "BCS Preliminary" (একবারই বদলায়)
     const fixed = await db.$executeRaw`UPDATE Question SET source = REPLACE(source, ${"বিসিএস প্রিলিমিনারি"}, ${"BCS Preliminary"}) WHERE source LIKE ${"%বিসিএস প্রিলিমিনারি%"}`;
     if (fixed) console.log(`[deploy-setup] ${fixed}টি প্রশ্নের উৎস "BCS Preliminary"-তে হালনাগাদ`);
