@@ -40,8 +40,11 @@ async function main() {
   try {
     // ── দুটি Priority A উপবিষয়, ভিন্ন বিষয় থেকে
     const phaseA = await db.learningTask.findMany({ where: { kind: "L2_SUBTOPIC", phase: 1 }, include: { subtopic: { include: { topic: true } } }, orderBy: { order: "asc" } });
-    const subA = phaseA[0];
-    const subB = phaseA.find((t) => t.subtopic!.topic.subjectId !== subA.subtopic!.topic.subjectId)!;
+    // তৈরি প্রশ্নব্যাংক বসানো উপবিষয় বাদ — পরীক্ষার হিসাব (৩০টি প্রশ্ন ইত্যাদি) ফাঁকা উপবিষয় ধরে
+    const hasBank = new Set((await db.question.groupBy({ by: ["subtopicId"], where: { kind: "TOPIC", status: "PUBLISHED" } })).map((g) => g.subtopicId));
+    const free = phaseA.filter((t) => !hasBank.has(t.subtopicId!));
+    const subA = free[0];
+    const subB = free.find((t) => t.subtopic!.topic.subjectId !== subA.subtopic!.topic.subjectId)!;
     const codeA = subA.subtopic!.code, codeB = subB.subtopic!.code;
 
     // ── Import
