@@ -5,7 +5,9 @@ import { Suspense } from "react";
 import { requireUser } from "@/lib/auth/session";
 import { prisma } from "@/lib/db";
 import { bn } from "@/lib/bn";
-import { getCard, subjectOf } from "@/lib/writing/service";
+import { dayLabel, getCard, LESSON_SUBJECTS, subjectOf } from "@/lib/writing/service";
+import { asLesson } from "@/lib/writing/lesson";
+import { LessonView } from "@/components/writing/lesson-view";
 import { markCardRead } from "@/lib/writing/actions";
 import { Icon } from "@/components/site/icons";
 
@@ -37,6 +39,9 @@ async function Content({ params }: Props) {
   if (!c) notFound();
   const s = subjectOf(c.card.subject)!;
   const back = `/writing?s=${s.code}`;
+  const lessonMode = LESSON_SUBJECTS.has(s.code);
+  const lesson = asLesson(c.card.lesson);
+  const pad = (n: number) => String(n).padStart(2, "0");
 
   return (
     <>
@@ -44,6 +49,18 @@ async function Content({ params }: Props) {
         <Icon name="chevron" className="size-4 rotate-90" /> {s.name}-এর সব কার্ড
       </Link>
 
+      {lessonMode ? (
+        <header className={`relative mt-4 overflow-hidden rounded-2xl bg-gradient-to-br ${s.band} px-6 py-8 text-white`}>
+          <span aria-hidden className="absolute -right-12 -top-16 size-56 rotate-[24deg] rounded-[3rem] bg-white/10" />
+          <p className="relative text-sm font-semibold text-white/85" lang="en">{lesson?.series ?? "Daily English Writing Practice"} — {lesson?.day ?? dayLabel(c.card.order)}</p>
+          <h1 className="relative mt-2 text-[26px] font-extrabold leading-snug sm:text-[30px]" lang="en">{lesson?.topic ?? c.card.title}</h1>
+          <p className="relative mt-3 flex flex-wrap gap-2 text-sm" lang="en">
+            {[lesson?.exam ?? "52nd BCS Written", lesson?.lessonNo ?? `Lesson ${pad(c.card.order)}`, lesson?.theme].filter(Boolean).map((x) => (
+              <span key={x} className="rounded-full bg-white/15 px-3 py-1">{x}</span>
+            ))}
+          </p>
+        </header>
+      ) : (
       <header className={`relative mt-4 overflow-hidden rounded-2xl bg-gradient-to-br ${s.band} px-6 py-8 text-white`}>
         <span aria-hidden className="absolute -right-12 -top-16 size-56 rotate-[24deg] rounded-[3rem] bg-white/10" />
         <p className="relative text-sm font-semibold text-white/85">
@@ -54,6 +71,7 @@ async function Content({ params }: Props) {
           {c.card.section}{c.card.paper && c.card.paper !== "—" ? ` · ${c.card.paper}` : ""}{c.card.marks ? ` · অংশের নম্বর ${bn(c.card.marks)}` : ""}
         </p>
       </header>
+      )}
 
       {c.state === "locked" ? (
         <div className="mt-6 rounded-2xl border border-line bg-surface p-6">
@@ -67,6 +85,14 @@ async function Content({ params }: Props) {
         </div>
       ) : (
         <>
+          {lesson ? (
+            <LessonView lesson={lesson} code={c.card.code} />
+          ) : lessonMode && !c.card.info ? (
+            <div className="mt-6 rounded-2xl border border-line bg-surface p-6">
+              <p className="font-semibold" lang="en">{c.card.title}</p>
+              <p className="mt-2 text-ink-2">এই Lesson শিগগিরই যোগ করা হবে।</p>
+            </div>
+          ) : (
           <article className="mt-6 rounded-2xl border border-line bg-surface p-6">
             <h2 className="text-sm font-semibold text-muted">তথ্য</h2>
             {c.card.info ? (
@@ -82,6 +108,7 @@ async function Content({ params }: Props) {
             )}
             {c.card.ref && <p className="mt-5 text-sm text-muted">উৎস: {c.card.ref}</p>}
           </article>
+          )}
 
           <div className="mt-6 flex flex-wrap items-center gap-4">
             {c.state === "open" ? (

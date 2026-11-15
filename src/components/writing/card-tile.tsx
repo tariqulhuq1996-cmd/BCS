@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { Icon } from "@/components/site/icons";
 import { bn } from "@/lib/bn";
-import type { CardSummary } from "@/lib/writing/service";
+import { dayLabel, type CardSummary } from "@/lib/writing/service";
 
 /** তথ্য-কার্ডের টাইল: ওপরে রঙিন ব্যান্ড, নিচে অংশ, শিরোনাম ও পড়ার লিংক (খোলা/পড়া/লক)। */
-export function CardTile({ card, band, short }: { card: CardSummary; band: string; short: string }) {
+export function CardTile({ card, band, short, lessonMode = false }: { card: CardSummary; band: string; short: string; lessonMode?: boolean }) {
   const locked = card.state === "locked";
   return (
     <li className={`flex flex-col overflow-hidden rounded-2xl bg-surface shadow-[0_1px_3px_rgba(20,20,60,0.08)] ring-1 ring-line ${locked ? "opacity-80" : ""}`}>
@@ -13,8 +13,8 @@ export function CardTile({ card, band, short }: { card: CardSummary; band: strin
         <span aria-hidden className="absolute -left-10 -top-16 size-48 rotate-[28deg] rounded-[2.5rem] bg-white/8" />
         <span aria-hidden className="absolute -bottom-20 right-[-3rem] size-56 rotate-[-18deg] rounded-[3rem] bg-white/10" />
         <div className="relative text-center text-white">
-          <p className="text-sm font-semibold uppercase tracking-wide text-white/80">{short}</p>
-          <p className="font-display text-4xl font-extrabold leading-tight tabular" style={{ fontStretch: "110%" }}>কার্ড {bn(card.order)}</p>
+          <p className="text-sm font-semibold uppercase tracking-wide text-white/80">{lessonMode ? "Daily English Writing" : short}</p>
+          <p className="font-display text-4xl font-extrabold leading-tight tabular" style={{ fontStretch: "110%" }} lang={lessonMode ? "en" : undefined}>{lessonMode ? dayLabel(card.order) : `কার্ড ${bn(card.order)}`}</p>
         </div>
         {locked && (
           <span className="absolute right-3 top-3 grid size-9 place-items-center rounded-full bg-black/25 text-white" title="লক">
@@ -28,7 +28,7 @@ export function CardTile({ card, band, short }: { card: CardSummary; band: strin
         )}
       </div>
       <div className="flex flex-1 flex-col p-5">
-        <p className="text-sm text-muted">{card.section}{card.paper && card.paper !== "—" ? ` · ${card.paper}` : ""}</p>
+        <p className="text-sm text-muted">{lessonMode && card.lessonTheme ? `Lesson ${String(card.order).padStart(2, "0")} · ${card.lessonTheme}` : `${card.section}${card.paper && card.paper !== "—" ? ` · ${card.paper}` : ""}`}</p>
         <h3 className="mt-2.5 text-[17px] font-medium leading-snug text-ink">{card.title}</h3>
         <div className="mt-auto pt-6">
           {locked ? (
@@ -37,7 +37,7 @@ export function CardTile({ card, band, short }: { card: CardSummary; band: strin
             </p>
           ) : (
             <Link href={`/writing/${card.code}`} className="inline-flex items-center gap-1 text-[15px] font-bold text-[#1d4ed8] hover:underline dark:text-[#7ea8ff]">
-              {card.state === "read" ? "আবার পড়ুন" : "কার্ড পড়ুন"}
+              {card.state === "read" ? "আবার পড়ুন" : lessonMode ? "Lesson পড়ুন" : "কার্ড পড়ুন"}
               <Icon name="chevron" className="size-4 -rotate-90" />
             </Link>
           )}

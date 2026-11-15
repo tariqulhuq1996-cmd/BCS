@@ -1,4 +1,5 @@
 import type { PrismaClient } from "@prisma/client";
+import { asLesson } from "./lesson";
 
 /** Pre BCS Writing Practice — বিষয়ের ক্রম ও কার্ডের রং (শিরোনাম-ব্যান্ড)। */
 export const WRITING_SUBJECTS = [
@@ -13,7 +14,11 @@ export type WritingSubjectCode = (typeof WRITING_SUBJECTS)[number]["code"];
 export const subjectOf = (code: string) => WRITING_SUBJECTS.find((s) => s.code === code);
 
 export type CardState = "read" | "open" | "locked";
-export type CardSummary = { code: string; order: number; title: string; section: string; paper: string | null; kind: string | null; hasInfo: boolean; state: CardState };
+export type CardSummary = { code: string; order: number; title: string; section: string; paper: string | null; kind: string | null; hasInfo: boolean; lessonTheme: string | null; state: CardState };
+
+/** দৈনিক লেখার পাঠের বিষয় (ইংরেজি): টাইল ও পাতায় "Day 02" ধাঁচ */
+export const LESSON_SUBJECTS = new Set(["EN"]);
+export const dayLabel = (order: number) => `Day ${String(order).padStart(2, "0")}`;
 
 /**
  * ক্রমানুসারে খোলা: বিষয়ের প্রথম কার্ড সবসময় খোলা; কোনো কার্ড খোলে যখন তার আগের কার্ড পড়া শেষ।
@@ -38,11 +43,11 @@ export async function getSubjectCards(db: PrismaClient, userId: string, subject:
   const cards = await db.writingCard.findMany({
     where: { subject },
     orderBy: { order: "asc" },
-    select: { id: true, code: true, order: true, title: true, section: true, paper: true, kind: true, info: true },
+    select: { id: true, code: true, order: true, title: true, section: true, paper: true, kind: true, info: true, lesson: true },
   });
   const read = new Set((await db.writingCardRead.findMany({ where: { userId, cardId: { in: cards.map((c) => c.id) } }, select: { cardId: true } })).map((r) => r.cardId));
   const st = states(cards, read, admin);
-  return cards.map((c, i) => ({ code: c.code, order: c.order, title: c.title, section: c.section, paper: c.paper, kind: c.kind, hasInfo: !!c.info, state: st[i] }));
+  return cards.map((c, i) => ({ code: c.code, order: c.order, title: c.title, section: c.section, paper: c.paper, kind: c.kind, hasInfo: !!c.info || !!c.lesson, lessonTheme: asLesson(c.lesson)?.theme ?? null, state: st[i] }));
 }
 
 /** একটি কার্ড, তার অবস্থা এবং আগের/পরের কার্ড। কার্ড না থাকলে null। */

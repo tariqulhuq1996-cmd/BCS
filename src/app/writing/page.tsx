@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import { requireUser } from "@/lib/auth/session";
 import { prisma } from "@/lib/db";
 import { bn } from "@/lib/bn";
-import { getOverview, getSubjectCards, subjectOf } from "@/lib/writing/service";
+import { getOverview, getSubjectCards, LESSON_SUBJECTS, subjectOf } from "@/lib/writing/service";
 import { CardTile } from "@/components/writing/card-tile";
 import { ProgressBar } from "@/components/portal/progress-bar";
 
@@ -72,14 +72,14 @@ async function Content({ searchParams }: Props) {
         </div>
         {nextOpen && (
           <Link href={`/writing/${nextOpen.code}`} className="rounded-lg bg-green px-6 py-3 text-center text-lg font-semibold text-white hover:bg-green-strong dark:text-paper">
-            {cur.read ? "পরের কার্ড" : "শুরু করুন"}: কার্ড {bn(nextOpen.order)}
+            {cur.read ? "পরের কার্ড" : "শুরু করুন"}: {LESSON_SUBJECTS.has(current.code) ? `Day ${String(nextOpen.order).padStart(2, "0")}` : `কার্ড ${bn(nextOpen.order)}`}
           </Link>
         )}
       </div>
 
       <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {cards.map((c) => (
-          <CardTile key={c.code} card={c} band={current.band} short={current.short} />
+          <CardTile key={c.code} card={c} band={current.band} short={current.short} lessonMode={LESSON_SUBJECTS.has(current.code)} />
         ))}
       </ul>
     </>

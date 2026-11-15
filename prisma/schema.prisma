@@ -770,6 +770,8 @@ model WritingCard {
   info        String?           @db.Text
   ref         String?           @db.Text
   note        String?           @db.Text
+  /// সাজানো পাঠ (যেমন Daily English Writing Practice) — content/written-cards/lessons/<code>.json থেকে; ধরন: src/lib/writing/lesson.ts
+  lesson      Json?
   updatedAt   DateTime          @updatedAt
   reads       WritingCardRead[]
 
