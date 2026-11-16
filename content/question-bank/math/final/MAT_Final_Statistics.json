@@ -8,7 +8,7 @@
   },
   "historicalReference": 575,
   "computedAnswers": 643,
-  "generated": 1000,
+  "generated": 1090,
   "exact": 0,
   "semantic": 0,
   "near": 0,
@@ -16,8 +16,18 @@
   "qc": 0,
   "accepted": 1000,
   "remaining": 0,
-  "supplementary": 0,
-  "supplementaryBySubtopic": {},
+  "supplementary": 90,
+  "supplementaryBySubtopic": {
+    "MA.AR.OTH": 15,
+    "MA.JY.REK": 13,
+    "MA.JY.GHN": 11,
+    "MA.BI.SMK": 16,
+    "MA.AR.GTI": 6,
+    "MA.AR.KAJ": 8,
+    "MA.JY.TRB": 7,
+    "MA.JY.CHT": 7,
+    "MA.JY.BRT": 7
+  },
   "byPriority": {
     "A": 289,
     "B": 198,
@@ -274,6 +284,17 @@
       "verify": 0,
       "qc": 0,
       "accepted": 85
+    },
+    {
+      "batch": "Batch 19",
+      "subs": "AR.OTH, JY.REK, JY.GHN, BI.SMK, AR.GTI, AR.KAJ, JY.TRB, JY.CHT, JY.BRT",
+      "generated": 90,
+      "exact": 0,
+      "semantic": 0,
+      "near": 0,
+      "verify": 0,
+      "qc": 0,
+      "accepted": 90
     }
   ]
 }

@@ -48,8 +48,8 @@ for (const b of fs.readdirSync(HERE).filter((n) => /^batch\d+$/.test(n)).sort())
     qc: rows.filter((q) => q.reject === "Quality Control").length, accepted: rows.filter((q) => q.accepted).length,
   });
 }
-// সম্পূরক ব্যাচ নেই (গণিত)
-const SUPP = new Set([]);
+// Batch 19 = সম্পূর্ণ লেকচার শিটের নতুন অংশ (লেকচার ২১–২৫, ০৮ ও ১৪-এর অতিরিক্ত অনুশীলন) থেকে সম্পূরক প্রশ্ন (১০০০-এর অতিরিক্ত)
+const SUPP = new Set(["Batch 19"]);
 const acc = all.filter((q) => q.accepted && !SUPP.has(q.batch));
 const supp = all.filter((q) => q.accepted && SUPP.has(q.batch));
 const rejected = all.filter((q) => q.reject);
@@ -72,6 +72,8 @@ writeTable("MAT52_Mathematics_1000_PriorityWise", COLS, byPriority.map(rowOf));
 writeTable("MAT52_Mathematics_1000_SubtopicWise", COLS, byTopic.map(rowOf));
 for (const a of AREAS) writeTable(`MAT52_Mathematics_${a.replace(/ & /g, "_")}_Bank`, COLS, byTopic.filter((q) => q.area === a).map(rowOf));
 
+const suppSorted = [...supp].sort((a, b) => AREAS.indexOf(a.area) - AREAS.indexOf(b.area) || stOrder(a.st) - stOrder(b.st) || idNum(a) - idNum(b));
+writeTable("MAT52_Mathematics_Supplementary_LectureSheet", COLS, suppSorted.map(rowOf));
 writeTable("MAT52_Mathematics_All_Generated_With_Rejected", COLS, all.map(rowOf));
 writeTable("MAT_Duplicate_Rejection_Report", ["Question ID", "Subtopic", "Question", "Proposed Answer", "Rejection Type", "Reason / Matching Past Question", "Batch"], rejected.map((q) => [q.id, q.subtopic, q.q, q.o[q.a], q.reject, q.dup, q.batch]));
 writeTable("MAT_Solution_Verification_Report", ["Question ID", "Subtopic", "Question", "Proposed Answer", "Verification Status", "Batch"], verify.map((q) => [q.id, q.subtopic, q.q, q.o[q.a], q.v, q.batch]));
@@ -161,6 +163,7 @@ const PN = { A: "Priority A — সর্বোচ্চ গুরুত্ব",
 bankDoc("MAT52_Mathematics_1000_PriorityWise", "Priority-wise প্রশ্নব্যাংক (A → B → C → D)", byPriority, (q) => PN[q.priority]);
 bankDoc("MAT52_Mathematics_1000_SubtopicWise", "Topic ও Subtopic-wise প্রশ্নব্যাংক", byTopic, (q) => q.topic);
 for (const a of AREAS) bankDoc(`MAT52_Mathematics_${a.replace(/ & /g, "_")}_Bank`, `${a} Question Bank`, byTopic.filter((q) => q.area === a), (q) => q.topic);
+bankDoc("MAT52_Mathematics_Supplementary_LectureSheet", "সম্পূরক: সম্পূর্ণ লেকচার শিটের নতুন অংশ (লেকচার ২১–২৫; ০৮ ও ১৪-এর অতিরিক্ত অনুশীলন)", suppSorted, (q) => q.topic);
 
 
 save(makeDoc("EN Duplicate Rejection Report", [
@@ -191,7 +194,7 @@ save(makeDoc("EN Final Statistics", [
     ["৩", "Historical BCS Questions (Reference Only)", "৫৭৫টি (গণনায় নেই)"], ["৪", "Existing Database Coverage", "৩০টি উপবিষয়ে বিগত প্রশ্নের সঙ্গে তুলনা"],
     ["৫", "New Questions Generated", bn(stats.generated)], ["৬", "Exact Duplicate Rejected", bn(stats.exact)], ["৭", "Semantic Duplicate Rejected", bn(stats.semantic)],
     ["৮", "Near Duplicate Rejected", bn(stats.near)], ["৯", "Verification Required", bn(stats.verify)], ["১০", "Quality Control Rejected", bn(stats.qc)],
-    ["১১", "Final Accepted New Questions", `${bn(stats.accepted)} (+ সিলেবাস-ফাঁক পূরণের সম্পূরক ${bn(supp.length)}টি)`], ["১২", "Remaining Questions", bn(stats.remaining)],
+    ["১১", "Final Accepted New Questions", `${bn(stats.accepted)} (+ সম্পূর্ণ লেকচার শিট থেকে সম্পূরক ${bn(supp.length)}টি)`], ["১২", "Remaining Questions", bn(stats.remaining)],
   ], [900, 4800, 3300]),
   H(HeadingLevel.HEADING_3, "Priority ও ক্ষেত্র অনুযায়ী"),
   table(["Priority", "লক্ষ্য", "গৃহীত"], PORDER.map((p) => [p, bn(ALLOC[p]), bn(accP[p] || 0)]), [3000, 3000, 3000]),

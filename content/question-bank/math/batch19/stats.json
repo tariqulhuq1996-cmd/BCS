@@ -1,0 +1,27 @@
+{
+  "target": 1000,
+  "priorityTarget": {
+    "A": 289,
+    "B": 198,
+    "C": 282,
+    "D": 231
+  },
+  "historicalReference": 575,
+  "coverage": "MA.AR.OTH: বিগত 2টি (২০০-নম্বর যুগে); MA.JY.REK: বিগত 6টি (২০০-নম্বর যুগে); MA.JY.GHN: বিগত 3টি (২০০-নম্বর যুগে); MA.BI.SMK: বিগত 37টি (২০০-নম্বর যুগে); MA.AR.GTI: বিগত 9টি (২০০-নম্বর যুগে); MA.AR.KAJ: বিগত 11টি (২০০-নম্বর যুগে); MA.JY.TRB: বিগত 29টি (২০০-নম্বর যুগে); MA.JY.CHT: বিগত 19টি (২০০-নম্বর যুগে); MA.JY.BRT: বিগত 16টি (২০০-নম্বর যুগে)",
+  "generated": 90,
+  "exact": 0,
+  "semantic": 0,
+  "near": 0,
+  "verify": 0,
+  "qc": 0,
+  "accepted": 90,
+  "cumulative": 1090,
+  "remaining": 0,
+  "supplementary": 90,
+  "cumByPriority": {
+    "A": 305,
+    "B": 205,
+    "C": 296,
+    "D": 284
+  }
+}
