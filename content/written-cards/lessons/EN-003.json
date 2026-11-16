@@ -1,0 +1,207 @@
+{
+  "series": "Daily English Writing Practice",
+  "day": "Day 03",
+  "exam": "52nd BCS Written",
+  "lessonNo": "Lesson 03",
+  "theme": "Education & Skill Development",
+  "topic": "Quality Education and Skill Development in the 21st Century",
+  "paragraph": {
+    "title": "Quality Education and Skill Development in the 21st Century",
+    "words": 141,
+    "pattern": "Importance → Challenges → Solutions",
+    "text": "Quality education is essential for individual development and national progress. It equips people with the knowledge, skills and values needed to participate effectively in society. However, access to quality education remains unequal, particularly among disadvantaged communities. Many students face barriers such as poverty, inadequate infrastructure, outdated curricula and a shortage of qualified teachers. Moreover, rapid technological changes are transforming the job market, making lifelong learning and practical skills increasingly important. Therefore, educational institutions should promote critical thinking, creativity, digital literacy and problem-solving abilities. Governments must also ensure inclusive learning opportunities, improve teacher training and strengthen technical and vocational education. At the same time, students should develop adaptability and a willingness to learn new skills. Ultimately, quality education should not merely prepare individuals for employment; it should empower them to become responsible citizens and contribute to a more equitable and prosperous society.",
+    "tip": "Education বিষয়ে রচনা লিখলে শুধু শিক্ষার প্রয়োজনীয়তা বর্ণনা করবে না। শিক্ষার মান, সুযোগের বৈষম্য, কর্মমুখী শিক্ষা, প্রযুক্তিগত পরিবর্তন এবং ভবিষ্যৎ কর্মসংস্থানের বিষয়গুলোও যুক্ত করবে।"
+  },
+  "structure": [
+    { "step": "Introduction", "what": "শিক্ষার গুরুত্ব" },
+    { "step": "Importance", "what": "ব্যক্তিগত ও জাতীয় উন্নয়নে শিক্ষা" },
+    { "step": "Challenges", "what": "দারিদ্র্য, অবকাঠামো ও দক্ষ শিক্ষকের অভাব" },
+    { "step": "Changing Context", "what": "প্রযুক্তি ও কর্মবাজারের পরিবর্তন" },
+    { "step": "Solutions", "what": "দক্ষতাভিত্তিক ও অন্তর্ভুক্তিমূলক শিক্ষা" },
+    { "step": "Conclusion", "what": "দায়িত্বশীল নাগরিক ও সমৃদ্ধ সমাজ" }
+  ],
+  "vocabulary": [
+    { "word": "Equitable", "bn": "ন্যায়সংগত, ন্যায্য", "pos": "Adjective", "synonym": "Fair, Just", "antonym": "Unfair, Unequal", "example": "Every child deserves equitable access to quality education.", "exampleBn": "প্রত্যেক শিশুর মানসম্মত শিক্ষায় ন্যায়সংগত প্রবেশাধিকার প্রাপ্য।" },
+    { "word": "Curriculum", "bn": "পাঠ্যক্রম", "pos": "Noun", "synonym": "Syllabus, Course of Study", "example": "The curriculum should reflect the needs of the modern world.", "exampleBn": "পাঠ্যক্রমে আধুনিক বিশ্বের চাহিদার প্রতিফলন থাকা উচিত।" },
+    { "word": "Literacy", "bn": "সাক্ষরতা, কোনো বিষয়ে মৌলিক দক্ষতা", "pos": "Noun", "synonym": "Reading and Writing Ability (Related terms: Digital Literacy, Financial Literacy)", "example": "Literacy is essential for social and economic development.", "exampleBn": "সামাজিক ও অর্থনৈতিক উন্নয়নের জন্য সাক্ষরতা অপরিহার্য।" },
+    { "word": "Vocational", "bn": "বৃত্তিমূলক, পেশাভিত্তিক", "pos": "Adjective", "synonym": "Professional, Occupational", "example": "Vocational education can create employment opportunities for young people.", "exampleBn": "বৃত্তিমূলক শিক্ষা তরুণদের কর্মসংস্থানের সুযোগ সৃষ্টি করতে পারে।" },
+    { "word": "Empower", "bn": "ক্ষমতায়িত করা, সক্ষম করে তোলা", "pos": "Verb", "synonym": "Enable, Strengthen", "antonym": "Weaken, Disempower", "example": "Education empowers individuals to make informed decisions.", "exampleBn": "শিক্ষা ব্যক্তিকে সচেতন সিদ্ধান্ত গ্রহণে সক্ষম করে তোলে।" }
+  ],
+  "prepositional": [
+    { "phrase": "In pursuit of", "bn": "অর্জনের লক্ষ্যে", "example": "Students should work hard in pursuit of their goals.", "exampleBn": "শিক্ষার্থীদের নিজেদের লক্ষ্য অর্জনের জন্য কঠোর পরিশ্রম করা উচিত।" },
+    { "phrase": "Access to", "bn": "প্রবেশাধিকার / সুযোগ", "example": "Every child should have access to quality education.", "exampleBn": "প্রত্যেক শিশুর মানসম্মত শিক্ষার সুযোগ থাকা উচিত।" },
+    { "phrase": "In line with", "bn": "সঙ্গে সামঞ্জস্য রেখে", "example": "The curriculum should be updated in line with technological advancements.", "exampleBn": "প্রযুক্তিগত অগ্রগতির সঙ্গে সামঞ্জস্য রেখে পাঠ্যক্রম হালনাগাদ করা উচিত।" },
+    { "phrase": "In terms of", "bn": "বিবেচনায় / দিক থেকে", "example": "The country has made progress in terms of school enrolment.", "exampleBn": "বিদ্যালয়ে শিক্ষার্থী ভর্তির দিক থেকে দেশটি অগ্রগতি অর্জন করেছে।" },
+    { "phrase": "Equipped with", "bn": "কোনো দক্ষতা বা উপকরণে সজ্জিত", "example": "Young people should be equipped with practical skills.", "exampleBn": "তরুণদের ব্যবহারিক দক্ষতায় দক্ষ করে গড়ে তোলা উচিত।" }
+  ],
+  "idioms": {
+    "items": [
+      { "phrase": "Broaden one's horizons", "bn": "জ্ঞানের পরিধি বিস্তৃত করা", "example": "Reading books helps students broaden their horizons." },
+      { "phrase": "Learn the ropes", "bn": "কোনো কাজের প্রাথমিক নিয়মকানুন শেখা", "example": "New employees need time to learn the ropes." },
+      { "phrase": "Open doors", "bn": "নতুন সুযোগ সৃষ্টি করা", "example": "Quality education can open doors to better opportunities." },
+      { "phrase": "A level playing field", "bn": "সমান সুযোগের ক্ষেত্র", "example": "Equal access to education creates a level playing field." },
+      { "phrase": "Hit the books", "bn": "মনোযোগ দিয়ে পড়াশোনা শুরু করা", "example": "Students should hit the books before their examinations." }
+    ],
+    "tip": "Formal Essay-তে Broaden one's horizons, Open doors এবং A level playing field স্বাভাবিকভাবে ব্যবহার করা যায়। তবে প্রতিটি বাক্যে Idiom ব্যবহার করার প্রয়োজন নেই।"
+  },
+  "writers": {
+    "intro": "আজ আমরা ২ জন লেখক এবং প্রত্যেকের ১টি উল্লেখযোগ্য বই বিশ্লেষণ করব।",
+    "items": [
+      {
+        "name": "R. K. Narayan",
+        "nationality": "Indian",
+        "identity": "Novelist and Short Story Writer",
+        "book": "Swami and Friends",
+        "published": "1935",
+        "genre": "Coming-of-age Novel",
+        "summary": "Swami and Friends উপন্যাসের পটভূমি হলো মালগুডি নামের একটি কাল্পনিক ভারতীয় শহর। উপন্যাসের কেন্দ্রীয় চরিত্র দশ বছর বয়সী স্বামীনাথন, যাকে সবাই স্বামী নামে চেনে। তার স্কুলজীবন, বন্ধুদের সঙ্গে সম্পর্ক, পরীক্ষা, শিক্ষক এবং পারিবারিক অভিজ্ঞতার মধ্য দিয়ে শৈশবের আনন্দ, দ্বন্দ্ব ও মানসিক পরিবর্তন ফুটে উঠেছে। ব্রিটিশ ঔপনিবেশিক শাসনামলের শিক্ষাব্যবস্থা ও সামাজিক পরিবেশও উপন্যাসে প্রতিফলিত হয়েছে। বন্ধুত্ব, শৈশবের সরলতা এবং বেড়ে ওঠার অভিজ্ঞতা এই উপন্যাসের গুরুত্বপূর্ণ বিষয়।",
+        "characters": [
+          { "name": "Swaminathan (Swami)", "desc": "উপন্যাসের প্রধান চরিত্র। তার মাধ্যমে শৈশবের কৌতূহল, আবেগ, দুষ্টুমি এবং স্কুলজীবনের অভিজ্ঞতা তুলে ধরা হয়েছে।" },
+          { "name": "Rajam", "desc": "স্বামীর বন্ধু। সে আত্মবিশ্বাসী, সচ্ছল পরিবারের সন্তান এবং বন্ধুদের মধ্যে প্রভাবশালী চরিত্র।" },
+          { "name": "Mani", "desc": "স্বামীর ঘনিষ্ঠ বন্ধু। তার চরিত্রে বন্ধুত্ব, শক্তিমত্তা এবং শৈশবের সরলতা প্রকাশ পেয়েছে।" }
+        ],
+        "message": [
+          "Narayan শৈশবের স্বাভাবিক আনন্দ, বন্ধুত্ব এবং শিক্ষাজীবনের অভিজ্ঞতাকে সহজ ও রসাত্মক ভাষায় তুলে ধরেছেন।",
+          "উপন্যাসটি দেখায়, শিক্ষাজীবন শুধু পরীক্ষার ফলাফল বা পাঠ্যবইয়ের মধ্যে সীমাবদ্ধ নয়; বন্ধুত্ব, পারিবারিক পরিবেশ, সামাজিক সম্পর্ক এবং ব্যক্তিগত অভিজ্ঞতাও একজন শিশুর বেড়ে ওঠায় গুরুত্বপূর্ণ ভূমিকা রাখে।"
+        ],
+        "bcsUse": ["Quality Education", "Childhood and Education", "Importance of Friendship", "School Life", "Social Development"]
+      },
+      {
+        "name": "Charlotte Brontë",
+        "nationality": "British",
+        "identity": "Novelist and Poet",
+        "book": "Jane Eyre",
+        "published": "1847",
+        "genre": "Bildungsroman / Coming-of-age Novel",
+        "summary": "Jane Eyre উপন্যাসে অনাথ মেয়ে জেনের শৈশব থেকে প্রাপ্তবয়স্ক হয়ে ওঠার জীবনসংগ্রাম তুলে ধরা হয়েছে। শৈশবে সে আত্মীয়দের কাছে অবহেলা ও নির্যাতনের শিকার হয়। পরে তাকে Lowood নামের একটি বিদ্যালয়ে পাঠানো হয়, যেখানে শিক্ষার্থীরা কঠোর পরিবেশ ও বৈষম্যের মুখোমুখি হয়। সেখানে জেনের পরিচয় হয় হেলেন বার্নসের সঙ্গে। বিদ্যালয়ের অভিজ্ঞতা তার ব্যক্তিত্ব ও চিন্তাধারার বিকাশে ভূমিকা রাখে। পরবর্তীতে সে শিক্ষকতা পেশায় যুক্ত হয় এবং নিজের স্বাধীনতা ও আত্মমর্যাদা প্রতিষ্ঠার চেষ্টা করে। উপন্যাসে নারীর শিক্ষা, আত্মনির্ভরতা, সামাজিক বৈষম্য এবং ব্যক্তিস্বাধীনতার বিষয়গুলো গুরুত্বপূর্ণভাবে উঠে এসেছে।",
+        "characters": [
+          { "name": "Jane Eyre", "desc": "উপন্যাসের প্রধান চরিত্র। সে আত্মমর্যাদাবোধসম্পন্ন, স্বাধীনচেতা ও শিক্ষার প্রতি আগ্রহী। তার মাধ্যমে নারীর আত্মনির্ভরতা ও অধিকার তুলে ধরা হয়েছে।" },
+          { "name": "Helen Burns", "desc": "Lowood বিদ্যালয়ে জেনের বন্ধু। তার মাধ্যমে সহনশীলতা, মানবিকতা ও নৈতিকতার দিকগুলো প্রকাশ পেয়েছে।" },
+          { "name": "Mr. Brocklehurst", "desc": "Lowood বিদ্যালয়ের কঠোর ও ভণ্ড প্রধান শিক্ষক। তার চরিত্রের মাধ্যমে শিক্ষাপ্রতিষ্ঠানে বৈষম্য, ক্ষমতার অপব্যবহার ও অমানবিক আচরণের সমালোচনা করা হয়েছে।" }
+        ],
+        "message": [
+          "Charlotte Brontë দেখিয়েছেন, শিক্ষা মানুষের আত্মপরিচয়, আত্মবিশ্বাস ও স্বাধীনতা অর্জনের একটি গুরুত্বপূর্ণ মাধ্যম হতে পারে। তবে শিক্ষাপ্রতিষ্ঠানে বৈষম্য ও অমানবিক পরিবেশ থাকলে তা শিক্ষার প্রকৃত উদ্দেশ্যকে বাধাগ্রস্ত করে।",
+          "নারীর শিক্ষা, আত্মমর্যাদা এবং সামাজিক ন্যায়বিচারের বিষয়গুলোও উপন্যাসে গুরুত্বপূর্ণ।"
+        ],
+        "bcsUse": ["Women's Education", "Gender Equality", "Equal Opportunity", "Education and Social Justice", "Women Empowerment"]
+      }
+    ],
+    "takeaway": [
+      "Swami and Friends আমাদের শৈশব, বন্ধুত্ব ও শিক্ষাজীবনের অভিজ্ঞতা সম্পর্কে ধারণা দেয়।",
+      "Jane Eyre আমাদের শিক্ষা, নারীর আত্মনির্ভরতা, বৈষম্য এবং ব্যক্তিস্বাধীনতার গুরুত্ব বোঝায়।",
+      "এই দুটি বই থেকে Education, Gender Equality এবং Social Justice বিষয়ে Essay-তে সাহিত্যিক উদাহরণ ব্যবহার করা সম্ভব।"
+    ]
+  },
+  "quote": {
+    "text": "One child, one teacher, one book, one pen can change the world.",
+    "author": "Malala Yousafzai",
+    "work": "United Nations Youth Assembly Speech, 12 July 2013",
+    "bn": "একটি শিশু, একজন শিক্ষক, একটি বই ও একটি কলম পৃথিবীকে পরিবর্তন করতে পারে।",
+    "explanation": "শিক্ষার মাধ্যমে একজন মানুষ নিজের জীবন পরিবর্তনের পাশাপাশি সমাজ ও রাষ্ট্রের উন্নয়নেও ভূমিকা রাখতে পারে। একজন শিক্ষক, একটি বই কিংবা একটি শিক্ষার সুযোগও মানুষের জীবনে গুরুত্বপূর্ণ পরিবর্তন আনতে সক্ষম।",
+    "useIn": ["Importance of Education", "Women's Education", "Quality Education", "Youth Empowerment", "Education for All"]
+  },
+  "sentences": [
+    { "en": "Quality education is essential for individual development and national progress.", "bn": "ব্যক্তিগত বিকাশ ও জাতীয় অগ্রগতির জন্য মানসম্মত শিক্ষা অপরিহার্য।", "notes": ["Quality education = মানসম্মত শিক্ষা", "Individual development = ব্যক্তিগত বিকাশ", "National progress = জাতীয় অগ্রগতি"] },
+    { "en": "It equips people with the knowledge, skills and values needed to participate effectively in society.", "bn": "এটি মানুষকে সমাজে কার্যকরভাবে অংশগ্রহণের জন্য প্রয়োজনীয় জ্ঞান, দক্ষতা ও মূল্যবোধে সমৃদ্ধ করে।", "notes": ["Equip someone with = কাউকে কোনো দক্ষতা বা উপকরণে সজ্জিত করা।", "Participate effectively = কার্যকরভাবে অংশগ্রহণ করা।"] },
+    { "en": "However, access to quality education remains unequal, particularly among disadvantaged communities.", "bn": "তবে বিশেষ করে সুবিধাবঞ্চিত জনগোষ্ঠীর মধ্যে মানসম্মত শিক্ষার সুযোগ এখনো অসমান।", "notes": ["However = তবে / কিন্তু", "Access to = প্রবেশাধিকার", "Disadvantaged communities = সুবিধাবঞ্চিত জনগোষ্ঠী"] },
+    { "en": "Many students face barriers such as poverty, inadequate infrastructure, outdated curricula and a shortage of qualified teachers.", "bn": "অনেক শিক্ষার্থী দারিদ্র্য, অপর্যাপ্ত অবকাঠামো, পুরোনো পাঠ্যক্রম এবং যোগ্য শিক্ষকের স্বল্পতার মতো বাধার সম্মুখীন হয়।", "notes": ["এখানে শিক্ষার মান ও সুযোগের ক্ষেত্রে প্রধান কয়েকটি প্রতিবন্ধকতা তুলে ধরা হয়েছে।"] },
+    { "en": "Moreover, rapid technological changes are transforming the job market, making lifelong learning and practical skills increasingly important.", "bn": "অধিকন্তু, দ্রুত প্রযুক্তিগত পরিবর্তন কর্মবাজারকে রূপান্তরিত করছে, ফলে আজীবন শেখার অভ্যাস ও ব্যবহারিক দক্ষতা ক্রমেই গুরুত্বপূর্ণ হয়ে উঠছে।", "notes": ["Transforming = রূপান্তরিত করা", "Job market = কর্মবাজার", "Lifelong learning = আজীবন শেখা", "Increasingly important = ক্রমবর্ধমান গুরুত্বপূর্ণ"] },
+    { "en": "Therefore, educational institutions should promote critical thinking, creativity, digital literacy and problem-solving abilities.", "bn": "তাই শিক্ষাপ্রতিষ্ঠানগুলোর উচিত সমালোচনামূলক চিন্তাভাবনা, সৃজনশীলতা, ডিজিটাল সাক্ষরতা ও সমস্যা সমাধানের সক্ষমতা বাড়ানো।", "notes": ["এখানে শিক্ষাব্যবস্থার করণীয় তুলে ধরা হয়েছে।"] },
+    { "en": "Governments must also ensure inclusive learning opportunities, improve teacher training and strengthen technical and vocational education.", "bn": "সরকারগুলোকেও অন্তর্ভুক্তিমূলক শিক্ষার সুযোগ নিশ্চিত করতে হবে, শিক্ষকদের প্রশিক্ষণের মান উন্নত করতে হবে এবং কারিগরি ও বৃত্তিমূলক শিক্ষাকে শক্তিশালী করতে হবে।" },
+    { "en": "At the same time, students should develop adaptability and a willingness to learn new skills.", "bn": "একই সঙ্গে শিক্ষার্থীদের পরিবর্তিত পরিস্থিতির সঙ্গে খাপ খাইয়ে নেওয়ার সক্ষমতা এবং নতুন দক্ষতা শেখার আগ্রহ গড়ে তুলতে হবে।" },
+    { "en": "Ultimately, quality education should not merely prepare individuals for employment; it should empower them to become responsible citizens and contribute to a more equitable and prosperous society.", "bn": "পরিশেষে, মানসম্মত শিক্ষার উদ্দেশ্য শুধু মানুষকে কর্মসংস্থানের জন্য প্রস্তুত করা নয়; বরং তাদের দায়িত্বশীল নাগরিক হিসেবে গড়ে তোলা এবং আরও ন্যায়সংগত ও সমৃদ্ধ সমাজ গঠনে অবদান রাখতে সক্ষম করা।" }
+  ],
+  "wordChoice": {
+    "items": [
+      { "title": "Education vs Learning vs Training", "rows": [
+        { "word": "Education", "meaning": "জ্ঞান, দক্ষতা ও মূল্যবোধের সামগ্রিক বিকাশ" },
+        { "word": "Learning", "meaning": "শেখার প্রক্রিয়া" },
+        { "word": "Training", "meaning": "নির্দিষ্ট কাজ বা দক্ষতা অর্জনের প্রশিক্ষণ" }
+      ], "examples": ["Education plays a vital role in national development.", "Learning should continue throughout life.", "Vocational training can improve employability."] },
+      { "title": "Equal vs Equitable vs Fair", "note": "মনে রাখবে: Equal এবং Equitable সব ক্ষেত্রে একই অর্থ প্রকাশ করে না।", "rows": [
+        { "word": "Equal", "meaning": "সমান; সবার জন্য একই পরিমাণ বা সুযোগ।" },
+        { "word": "Equitable", "meaning": "ন্যায়সংগত; প্রয়োজন অনুযায়ী ন্যায্য সুযোগ।" },
+        { "word": "Fair", "meaning": "পক্ষপাতহীন ও ন্যায়সংগত।" }
+      ], "examples": ["All citizens should have equal rights.", "Disadvantaged students need equitable access to education.", "A fair selection process is essential."] },
+      { "title": "Skill vs Competence vs Proficiency", "rows": [
+        { "word": "Skill", "meaning": "কোনো কাজ করার নির্দিষ্ট দক্ষতা।" },
+        { "word": "Competence", "meaning": "কোনো কাজ যথাযথভাবে করার সামগ্রিক সক্ষমতা।" },
+        { "word": "Proficiency", "meaning": "কোনো বিষয়ে উচ্চমাত্রার দক্ষতা বা পারদর্শিতা।" }
+      ], "examples": ["Communication is an important professional skill.", "Teachers need professional competence.", "Language proficiency improves career opportunities."] },
+      { "title": "Acquire vs Gain vs Attain", "rows": [
+        { "word": "Acquire", "meaning": "জ্ঞান বা দক্ষতা অর্জন করা।" },
+        { "word": "Gain", "meaning": "অভিজ্ঞতা, জ্ঞান বা সুবিধা লাভ করা।" },
+        { "word": "Attain", "meaning": "প্রচেষ্টা করে নির্দিষ্ট লক্ষ্য বা স্তরে পৌঁছানো।" }
+      ], "examples": ["Students acquire knowledge through education.", "Young people gain practical experience.", "Everyone should have the opportunity to attain their goals."] },
+      { "title": "Essential vs Important vs Indispensable", "rows": [
+        { "word": "Essential", "meaning": "অত্যাবশ্যক।" },
+        { "word": "Important", "meaning": "গুরুত্বপূর্ণ।" },
+        { "word": "Indispensable", "meaning": "অপরিহার্য; যার বিকল্প নেই বা যা ছাড়া কাজটি সম্ভব নয়।" }
+      ], "examples": ["Education is essential for development.", "Teacher training is important for quality education.", "Trust is indispensable in a healthy relationship."] }
+    ]
+  },
+  "grammar": [
+    {
+      "title": "Relative Clause",
+      "structure": "Noun + who/which/that + Verb + ...",
+      "usage": "Relative Clause ব্যবহার করে কোনো ব্যক্তি, বস্তু বা বিষয় সম্পর্কে অতিরিক্ত তথ্য দেওয়া হয়।",
+      "example": "Students who develop practical skills are better prepared for employment.",
+      "explanation": "Who: মানুষের ক্ষেত্রে। Which: বস্তু বা বিষয় বোঝাতে। That: মানুষ বা বস্তু উভয় ক্ষেত্রেই ব্যবহৃত হতে পারে।",
+      "more": ["Education that promotes critical thinking benefits society.", "Teachers who inspire students can transform their lives."],
+      "wrong": "The students which work hard will succeed.",
+      "right": "The students who work hard will succeed."
+    },
+    {
+      "title": "Passive Voice",
+      "structure": "Subject + am/is/are/was/were + Past Participle.",
+      "usage": "কাজটি কে করছে তার চেয়ে কাজটি বা তার ফলাফল বেশি গুরুত্বপূর্ণ হলে Passive Voice ব্যবহার করা হয়।",
+      "example": "Quality education should be ensured for every child.",
+      "explanation": "Formal Essay ও Report Writing-এ Passive Voice কার্যকরভাবে ব্যবহার করা যায়।",
+      "more": ["The curriculum is updated regularly.", "Practical skills are required in the modern job market."],
+      "wrong": "The curriculum is update regularly.",
+      "right": "The curriculum is updated regularly."
+    }
+  ],
+  "collocations": [
+    { "expr": "Quality education", "bn": "মানসম্মত শিক্ষা" },
+    { "expr": "Lifelong learning", "bn": "আজীবন শিক্ষা" },
+    { "expr": "Vocational training", "bn": "বৃত্তিমূলক প্রশিক্ষণ" },
+    { "expr": "Critical thinking", "bn": "সমালোচনামূলক চিন্তাভাবনা" },
+    { "expr": "Inclusive learning environment", "bn": "অন্তর্ভুক্তিমূলক শিক্ষার পরিবেশ" }
+  ],
+  "connectors": [
+    { "word": "Furthermore", "bn": "তদুপরি", "use": "অতিরিক্ত তথ্য" },
+    { "word": "For instance", "bn": "উদাহরণস্বরূপ", "use": "উদাহরণ দেওয়া" },
+    { "word": "In contrast", "bn": "বিপরীতে", "use": "তুলনামূলক পার্থক্য" },
+    { "word": "As a result", "bn": "ফলস্বরূপ", "use": "পরিণতি" },
+    { "word": "In conclusion", "bn": "উপসংহারে", "use": "সমাপ্তি" }
+  ],
+  "transformation": [
+    { "label": "Simple Sentence", "text": "Quality education promotes individual development." },
+    { "label": "Compound Sentence", "text": "Quality education promotes individual development, and it contributes to national progress." },
+    { "label": "Complex Sentence", "text": "When people receive quality education, they can contribute more effectively to national development." },
+    { "label": "Advanced Expression", "text": "By equipping individuals with relevant knowledge and practical skills, quality education contributes to both personal growth and national development." }
+  ],
+  "transformationNote": "By + Verb-ing ব্যবহার করে কোনো কাজের মাধ্যম বা পদ্ধতি সংক্ষেপে প্রকাশ করা যায়।",
+  "translation": {
+    "note": "প্রথমে নিজে অনুবাদ করবে। নিজের অনুবাদ শেষ হলে উত্তর মিলিয়ে নেবে।",
+    "bnToEn": [
+      { "q": "মানসম্মত শিক্ষা একটি দেশের টেকসই উন্নয়নের অন্যতম প্রধান শর্ত।", "a": "Quality education is one of the key requirements for the sustainable development of a country." },
+      { "q": "তরুণদের কর্মসংস্থানের উপযোগী করে তুলতে কারিগরি শিক্ষার প্রসার প্রয়োজন।", "a": "The expansion of technical education is necessary to make young people employable." }
+    ],
+    "enToBn": [
+      { "q": "Lifelong learning helps individuals adapt to the changing demands of the job market.", "a": "আজীবন শিক্ষার অভ্যাস ব্যক্তিকে পরিবর্তিত কর্মবাজারের চাহিদার সঙ্গে খাপ খাইয়ে নিতে সাহায্য করে।" },
+      { "q": "Equal access to education can reduce social inequality and promote inclusive development.", "a": "শিক্ষায় সমান প্রবেশাধিকার সামাজিক বৈষম্য কমাতে এবং অন্তর্ভুক্তিমূলক উন্নয়নকে উৎসাহিত করতে পারে।" }
+    ]
+  },
+  "assignment": {
+    "intro": "নিচের ১০টি Expression থেকে অন্তত ৫টি ব্যবহার করে নিজে ৫টি English Sentence লিখবে।",
+    "expressions": ["Quality education", "Equitable access", "Lifelong learning", "Vocational training", "Critical thinking", "Broaden one's horizons", "Open doors", "Inclusive learning environment", "Practical skills", "National development"],
+    "criteria": ["Grammar Accuracy", "Right Word Selection", "Sentence Structure", "Natural Expression", "BCS Written Standard"],
+    "note": "তোমার লেখা বাক্যগুলো নিচের ঘরে লিখে রাখো (এই ডিভাইসে সংরক্ষিত থাকবে)। তারপর প্রতিটি বাক্যে Grammar mistake, Corrected sentence, Better expression ও বাংলা ব্যাখ্যা—এই চারটি দিক ধরে নিজে মিলিয়ে দেখো।"
+  },
+  "finalGoal": {
+    "title": "Day 03 — আজকের মূল শিক্ষা",
+    "text": ["Quality Education শুধু ডিগ্রি অর্জনের মাধ্যম নয়; এটি মানুষের চিন্তাশক্তি, দক্ষতা, আত্মনির্ভরতা ও দায়িত্বশীল নাগরিকত্ব গড়ে তোলার অন্যতম প্রধান ভিত্তি।"]
+  }
+}
