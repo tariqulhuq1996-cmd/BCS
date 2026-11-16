@@ -6,12 +6,14 @@ import { requireUser } from "@/lib/auth/session";
 import { getReadiness, getTimeAnalysis, RUSH_MS } from "@/lib/exam/analysis";
 import { bn, bnNum } from "@/lib/bn";
 import { ProgressBar } from "@/components/portal/progress-bar";
+import { BackLink } from "@/components/site/back-link";
 
 export const metadata: Metadata = { title: "প্রস্তুতির প্রতিবেদন" };
 
 export default function ReadinessPage() {
   return (
     <section className="mx-auto max-w-5xl px-4 pt-10 sm:px-6">
+      <BackLink href="/dashboard" label="Dashboard" />
       <h1 className="text-[32px] font-extrabold sm:text-[40px]" style={{ fontStretch: "110%" }}>প্রস্তুতির প্রতিবেদন</h1>
       <Suspense fallback={<p className="mt-6 text-ink-2">লোড হচ্ছে…</p>}>
         <Content />

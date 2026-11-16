@@ -6,6 +6,7 @@ import { acknowledgeModelTestAction } from "@/lib/exam/actions";
 import { bn, bnNum } from "@/lib/bn";
 import { QuestionReview } from "./question-review";
 import { modelTestRank } from "@/lib/progress/peers";
+import { BackLink } from "@/components/site/back-link";
 
 type R = Awaited<ReturnType<typeof getResultView>>;
 
@@ -21,6 +22,7 @@ export async function ModelTestResult({ attemptId, userId, r }: { attemptId: str
 
   return (
     <>
+      <BackLink href="/level-3" label="Level ৩-এর সব টেস্ট" />
       <p className="text-sm text-muted">{an.title}</p>
       <div className="mt-2 flex flex-wrap items-end gap-x-6 gap-y-2">
         <h1 className="font-display text-[56px] font-extrabold leading-none tabular" style={{ fontStretch: "105%" }}>{bnNum(an.net, 1)}</h1>

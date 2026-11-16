@@ -7,13 +7,14 @@ import { lockedBy } from "@/lib/progress/access";
 import { CaLocked } from "@/components/current-affairs/locked";
 import { listBanks } from "@/lib/current-affairs/service";
 import { bn } from "@/lib/bn";
+import { BackLink } from "@/components/site/back-link";
 
 export const metadata: Metadata = { title: "Current Affairs — Quick Revision" };
 
 export default function CaRevisionPage({ searchParams }: PageProps<"/current-affairs/revision">) {
   return (
     <section className="mx-auto max-w-5xl px-4 pt-8 sm:px-6">
-      <Link href="/current-affairs" className="text-sm text-green underline underline-offset-4">← সাম্প্রতিক বিষয়াবলি</Link>
+      <BackLink href="/current-affairs" label="সাম্প্রতিক বিষয়াবলি" className="" />
       <h1 className="mt-3 text-[32px] font-extrabold" style={{ fontStretch: "110%" }}>Quick Revision</h1>
       <nav aria-label="এই পাতায়" className="mt-3 flex flex-wrap gap-4 text-[15px]">
         <a href="#facts" className="text-green underline underline-offset-4">এক নজরে তথ্য</a>

@@ -5,6 +5,7 @@ import { prisma } from "@/lib/db";
 import { requireUser } from "@/lib/auth/session";
 import { bn } from "@/lib/bn";
 import { QuestionTools } from "@/components/exam/question-tools";
+import { BackLink } from "@/components/site/back-link";
 
 export const metadata: Metadata = { title: "সংরক্ষিত প্রশ্ন", robots: { index: false } };
 
@@ -45,6 +46,7 @@ async function Content({ searchParams }: { searchParams: Promise<Record<string, 
 
   return (
     <>
+      <BackLink href="/dashboard" label="Dashboard" />
       <h1 className="text-[30px] font-extrabold sm:text-[36px]" style={{ fontStretch: "110%" }}>সংরক্ষিত প্রশ্ন</h1>
       <p className="mt-2 max-w-2xl text-ink-2">
         ফলাফলের পাতায় ☆ চাপলে প্রশ্ন এখানে জমা হয়, নিজের নোটসহ। পরীক্ষার আগে এক নজরে পড়ে নিন।

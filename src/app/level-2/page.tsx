@@ -9,6 +9,7 @@ import { prisma } from "@/lib/db";
 import { GradeBadge } from "@/components/ui/grade";
 import { ProgressBar } from "@/components/portal/progress-bar";
 import { numify } from "@/lib/sql";
+import { BackLink } from "@/components/site/back-link";
 
 export const metadata: Metadata = { title: "Level ২: টপিকভিত্তিক প্রশ্ন" };
 const GRADES = ["A", "B", "C", "D"];
@@ -16,6 +17,7 @@ const GRADES = ["A", "B", "C", "D"];
 export default function Level2Page() {
   return (
     <section className="mx-auto max-w-5xl px-4 pt-10 sm:px-6">
+      <BackLink href="/dashboard" label="Dashboard" />
       <h1 className="text-[32px] font-extrabold sm:text-[40px]" style={{ fontStretch: "110%" }}>Level ২: টপিকভিত্তিক প্রশ্ন আয়ত্ত</h1>
       <p className="mt-2 max-w-2xl text-ink-2">
         ৫২তম Priority List-এর ক্রমে চারটি ধাপ: A → B → C → D। একটি ধাপের সব উপবিষয় একসঙ্গে খোলে; যেকোনো ক্রমে পড়তে পারেন। সব শেষ হলে Checkpoint, তারপর পরের ধাপ।

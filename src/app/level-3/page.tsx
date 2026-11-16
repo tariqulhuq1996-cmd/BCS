@@ -10,6 +10,7 @@ import { LOCKED_MESSAGE } from "@/lib/progress/cycle";
 import { bn, bnNum } from "@/lib/bn";
 import { ExamBubbles } from "@/components/portal/exam-bubbles";
 import { ProgressBar } from "@/components/portal/progress-bar";
+import { BackLink } from "@/components/site/back-link";
 
 export const metadata: Metadata = { title: "Level ৩: Model Test" };
 const TIER = [
@@ -21,6 +22,7 @@ const TIER = [
 export default function Level3Page() {
   return (
     <section className="mx-auto max-w-5xl px-4 pt-10 sm:px-6">
+      <BackLink href="/dashboard" label="Dashboard" />
       <h1 className="text-[32px] font-extrabold sm:text-[40px]" style={{ fontStretch: "110%" }}>Level ৩: পূর্ণাঙ্গ Model Test</h1>
       <Suspense fallback={<p className="mt-6 text-ink-2">লোড হচ্ছে…</p>}>
         <Content />

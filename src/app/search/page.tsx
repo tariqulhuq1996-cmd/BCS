@@ -4,6 +4,7 @@ import { prisma } from "@/lib/db";
 import { requireUser } from "@/lib/auth/session";
 import { bn } from "@/lib/bn";
 import { QuestionTools } from "@/components/exam/question-tools";
+import { BackLink } from "@/components/site/back-link";
 
 export const metadata: Metadata = { title: "প্রশ্ন খুঁজুন", robots: { index: false } };
 
@@ -13,6 +14,7 @@ const LETTERS = ["ক", "খ", "গ", "ঘ"];
 export default function SearchPage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   return (
     <div className="mx-auto max-w-4xl px-4 pt-8 sm:px-6">
+      <BackLink href="/dashboard" label="Dashboard" />
       <h1 className="text-[30px] font-extrabold sm:text-[36px]" style={{ fontStretch: "110%" }}>প্রশ্ন খুঁজুন</h1>
       <p className="mt-2 max-w-2xl text-ink-2">
         বিগত BCS, টপিকভিত্তিক আর সাম্প্রতিক বিষয়াবলির সব প্রশ্নে একটি শব্দ বা বাক্যাংশ লিখে খুঁজুন। যে প্রশ্ন আগে সমাধান করেছেন, তার সঠিক উত্তর ও ব্যাখ্যাও দেখাবে।

@@ -15,6 +15,7 @@ import { OrientBanner, OrientProvider, ReadCheck } from "@/components/research/r
 import { TrendChange } from "@/components/home/trend-change";
 import { RepeatList } from "@/components/home/repeat-list";
 import { RoadmapPreview } from "@/components/home/roadmap-preview";
+import { BackLink } from "@/components/site/back-link";
 
 export const metadata: Metadata = { title: "প্রশ্ন-বিশ্লেষণ: ১০ম–৫০তম BCS" };
 
@@ -54,7 +55,8 @@ async function ResearchPageContent({ user }: { user: CurrentUser }) {
   return (
     <OrientProvider initial={orient.checked} done={orient.done} total={ORIENT_ITEMS.length}>
       <section className="mx-auto max-w-6xl px-4 pt-12 sm:px-6">
-        <h1 className="text-[36px] font-extrabold sm:text-[46px]" style={{ fontStretch: "112%" }}>
+        <BackLink href="/dashboard" label="Dashboard" />
+      <h1 className="text-[36px] font-extrabold sm:text-[46px]" style={{ fontStretch: "112%" }}>
           প্রশ্ন-বিশ্লেষণ: ১০ম–৫০তম BCS
         </h1>
         <p className="mt-3 max-w-2xl text-lg text-ink-2">

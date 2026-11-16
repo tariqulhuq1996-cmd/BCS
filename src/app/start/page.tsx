@@ -8,6 +8,7 @@ import { getStudentTasks } from "@/lib/progress/dashboard";
 import { ORIENT_ITEMS, orientationStatus } from "@/lib/progress/journey";
 import { startStepAction } from "@/lib/exam/actions";
 import { bn, bnNum } from "@/lib/bn";
+import { BackLink } from "@/components/site/back-link";
 
 export const metadata: Metadata = { title: "যাত্রার শুরু" };
 
@@ -21,6 +22,7 @@ const ERR: Record<string, string> = {
 export default function StartPage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   return (
     <section className="mx-auto max-w-3xl px-4 pt-10 sm:px-6">
+      <BackLink href="/dashboard" label="Dashboard" />
       <p className="text-sm font-semibold text-muted">ধাপ ০</p>
       <h1 className="mt-1 text-[32px] font-extrabold sm:text-[40px]" style={{ fontStretch: "110%" }}>যাত্রার শুরু</h1>
       <p className="mt-2 max-w-2xl text-ink-2">

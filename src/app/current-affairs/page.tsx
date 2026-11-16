@@ -7,12 +7,14 @@ import { CaLocked } from "@/components/current-affairs/locked";
 import { prisma } from "@/lib/db";
 import { getOverview, SET_SIZE, STALE_DAYS } from "@/lib/current-affairs/service";
 import { bn } from "@/lib/bn";
+import { BackLink } from "@/components/site/back-link";
 
 export const metadata: Metadata = { title: "সাম্প্রতিক বিষয়াবলি (Current Affairs)" };
 
 export default function CurrentAffairsPage() {
   return (
     <section className="mx-auto max-w-5xl px-4 pt-10 sm:px-6">
+      <BackLink href="/dashboard" label="Dashboard" />
       <p className="text-sm font-semibold text-omr">Current Affairs</p>
       <h1 className="text-[32px] font-extrabold sm:text-[40px]" style={{ fontStretch: "110%" }}>সাম্প্রতিক বিষয়াবলি</h1>
       <p className="mt-2 max-w-2xl text-ink-2">

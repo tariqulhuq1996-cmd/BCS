@@ -9,6 +9,7 @@ import { loadTaskForPage } from "@/lib/progress/access";
 import { startStepAction } from "@/lib/exam/actions";
 import { bn, bnNum } from "@/lib/bn";
 import { LockedNotice } from "@/components/portal/step-page";
+import { BackLink } from "@/components/site/back-link";
 
 export const metadata: Metadata = { title: "Model Test" };
 
@@ -64,6 +65,7 @@ async function Content({ params, searchParams }: { params: Promise<{ testNo: str
 
   return (
     <section className="mx-auto max-w-4xl px-4 pt-10 sm:px-6">
+      <BackLink href="/level-3" label="Level ৩-এর সব টেস্ট" />
       <p className="text-sm text-muted">Level ৩, স্তর {bn(task.phase ?? 1)}</p>
       <h1 className="mt-1 text-[32px] font-extrabold sm:text-[40px]" style={{ fontStretch: "110%" }}>{task.title}</h1>
       <dl className="mt-5 flex flex-wrap gap-x-8 gap-y-2 text-[15px]">

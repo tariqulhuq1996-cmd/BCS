@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { bn } from "@/lib/bn";
 import { LOCKED_MESSAGE, type StepKey } from "@/lib/progress/cycle";
 import type { TaskView } from "@/lib/progress/dashboard";
+import { BackLink } from "@/components/site/back-link";
 
 const ORDER: StepKey[] = ["SOLVE", "REVIEW", "REVISION", "MASTERY", "CUMULATIVE", "DONE"];
 
@@ -37,6 +38,7 @@ export function StepPage({
   const curIdx = task.state === "COMPLETED" ? Infinity : ORDER.indexOf(task.step);
   return (
     <section className="mx-auto max-w-4xl px-4 pt-10 sm:px-6">
+      <BackLink href={`/level-${task.levelNo}`} label={`Level ${["", "১", "২", "৩"][task.levelNo] ?? task.levelNo}-এর সব ধাপ`} />
       <p className="text-sm text-muted">{levelLabel}</p>
       <h1 className="mt-1 text-[32px] font-extrabold sm:text-[40px]" style={{ fontStretch: "110%" }}>
         {task.title}

@@ -4,12 +4,14 @@ import { prisma } from "@/lib/db";
 import { requireUser } from "@/lib/auth/session";
 import { bn } from "@/lib/bn";
 import { PasswordForm, ProfileForm } from "@/components/portal/profile-forms";
+import { BackLink } from "@/components/site/back-link";
 
 export const metadata: Metadata = { title: "প্রোফাইল" };
 
 export default function ProfilePage() {
   return (
     <section className="mx-auto max-w-4xl px-4 pt-10 sm:px-6">
+      <BackLink href="/dashboard" label="Dashboard" />
       <h1 className="text-[32px] font-extrabold sm:text-[40px]" style={{ fontStretch: "110%" }}>প্রোফাইল</h1>
       <Suspense fallback={<p className="mt-6 text-ink-2">লোড হচ্ছে…</p>}>
         <Content />

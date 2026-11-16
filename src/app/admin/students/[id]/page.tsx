@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/db";
@@ -10,6 +9,7 @@ import { ATTEMPT_KIND_BN } from "@/lib/progress/cycle";
 import { bn, bnNum } from "@/lib/bn";
 import { AdminTitle, Notice, btn, btnGhost, input } from "@/components/admin/ui";
 import { ProgressBar } from "@/components/portal/progress-bar";
+import { BackLink } from "@/components/site/back-link";
 
 export const metadata: Metadata = { title: "শিক্ষার্থী — অ্যাডমিন", robots: { index: false } };
 
@@ -41,7 +41,7 @@ async function Content({ params, searchParams }: { params: Promise<{ id: string 
 
   return (
     <>
-      <p className="text-sm"><Link href="/admin/students" className="text-green underline">শিক্ষার্থীর তালিকা</Link></p>
+      <BackLink href="/admin/students" label="শিক্ষার্থীর তালিকা" className="" />
       <AdminTitle title={u.profile?.name ?? u.email} lead={`${u.email}${u.profile?.phone ? `, ${u.profile.phone}` : ""}। অ্যাকাউন্ট ${u.createdAt.toLocaleDateString("bn-BD", { timeZone: "Asia/Dhaka" })}${u.disabled ? " — বন্ধ" : ""}।`} />
       {typeof sp.ok === "string" && <Notice>{sp.ok}</Notice>}
       {typeof sp.err === "string" && <Notice kind="error">{sp.err}</Notice>}

@@ -6,6 +6,7 @@ import { acknowledgeReviewAction } from "@/lib/exam/actions";
 import { bn, bnNum } from "@/lib/bn";
 import { ResultBody } from "./result-body";
 import { LockedNotice } from "@/components/portal/step-page";
+import { BackLink } from "@/components/site/back-link";
 
 /** প্রথম সমাধানের সব ভাগ মিলিয়ে পর্যালোচনা ও ভুলের বিশ্লেষণ; শেষে Revision-ধাপে যাওয়া (Level 1 ও 2)। */
 export async function ReviewContent({ taskKey, path }: { taskKey: string; path: string }) {
@@ -13,10 +14,16 @@ export async function ReviewContent({ taskKey, path }: { taskKey: string; path: 
   if (locked) return <LockedNotice title={task.title} current={current} />;
   const user = await requireUser();
   const solved = await prisma.testAttempt.findMany({ where: { userId: user.id, taskId: task.id, kind: "SOLVE", submittedAt: { not: null } }, orderBy: { partNo: "asc" } });
-  if (!solved.length) return <p className="text-ink-2">এখনও প্রথম সমাধান হয়নি। আগে প্রশ্নগুলো সমাধান করুন।</p>;
+  if (!solved.length) return (
+    <>
+      <BackLink href={task.href} label="ধাপের পাতায় ফিরুন" />
+      <p className="text-ink-2">এখনও প্রথম সমাধান হয়নি। আগে প্রশ্নগুলো সমাধান করুন।</p>
+    </>
+  );
   const r = await getResultView(prisma, user.id, solved.map((s) => s.id));
   return (
     <>
+      <BackLink href={task.href} label="ধাপের পাতায় ফিরুন" />
       <p className="text-sm text-muted">{task.title}: প্রথম সমাধানের পর্যালোচনা{solved.length > 1 ? ` (${bn(solved.length)}টি ভাগ মিলিয়ে)` : ""}</p>
       <h1 className="mt-2 font-display text-[48px] font-extrabold leading-none tabular">{bnNum(r.scorePct, 0)}%</h1>
       <p className="mt-2 text-lg text-ink-2">{bn(r.total)}টির মধ্যে {bn(r.correct)}টি সঠিক</p>

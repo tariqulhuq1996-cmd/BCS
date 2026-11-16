@@ -8,6 +8,7 @@ import { connection } from "next/server";
 import { requireUser, type CurrentUser } from "@/lib/auth/session";
 import { prisma } from "@/lib/db";
 import { openRepeatFamilies } from "@/lib/progress/journey";
+import { BackLink } from "@/components/site/back-link";
 
 export const metadata: Metadata = { title: "বারবার আসা প্রশ্ন" };
 
@@ -42,6 +43,7 @@ async function RepeatedQuestionsPageContent({ user }: { user: CurrentUser }) {
 
   return (
     <section className="mx-auto max-w-4xl px-4 pt-12 sm:px-6">
+      <BackLink href="/dashboard" label="Dashboard" />
       <h1 className="text-[36px] font-extrabold sm:text-[46px]" style={{ fontStretch: "112%" }}>
         যে {bn(r.totals.families)}টি প্রশ্ন একাধিক BCS-এ এসেছে
       </h1>

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Suspense } from "react";
 import { requireUser } from "@/lib/auth/session";
 import { lockedBy } from "@/lib/progress/access";
@@ -8,13 +7,14 @@ import { MODES, latestBank, pickSet, type CaMode } from "@/lib/current-affairs/s
 import { CaPractice } from "@/components/current-affairs/practice";
 import { prisma } from "@/lib/db";
 import { bn } from "@/lib/bn";
+import { BackLink } from "@/components/site/back-link";
 
 export const metadata: Metadata = { title: "Current Affairs অনুশীলন" };
 
 export default function CaPracticePage({ searchParams }: PageProps<"/current-affairs/practice">) {
   return (
     <section className="mx-auto max-w-3xl px-4 pt-8 sm:px-6">
-      <Link href="/current-affairs" className="text-sm text-green underline underline-offset-4">← সাম্প্রতিক বিষয়াবলি</Link>
+      <BackLink href="/current-affairs" label="সাম্প্রতিক বিষয়াবলি" className="" />
       <Suspense fallback={<p className="mt-8 text-ink-2">প্রশ্ন সাজানো হচ্ছে…</p>}>
         <Content searchParams={searchParams} />
       </Suspense>

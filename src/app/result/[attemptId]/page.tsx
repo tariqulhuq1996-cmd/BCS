@@ -11,6 +11,7 @@ import { bn, bnNum } from "@/lib/bn";
 import { ResultBody } from "@/components/exam/result-body";
 import { ModelTestResult } from "@/components/exam/model-test-result";
 import { LevelComplete } from "@/components/exam/level-complete";
+import { BackLink } from "@/components/site/back-link";
 
 export const metadata: Metadata = { title: "ফলাফল", robots: { index: false } };
 
@@ -108,6 +109,7 @@ async function Content({ params }: { params: Promise<{ attemptId: string }> }) {
 
   return (
     <>
+      {r.kind === "SRS_REVIEW" ? <BackLink href="/revision" label="Revision" /> : r.kind === "MISTAKE_PRACTICE" ? <BackLink href="/mistakes" label="ভুলের ভান্ডার" /> : task ? <BackLink href={href} label="ধাপের পাতায় ফিরুন" /> : <BackLink href="/dashboard" label="Dashboard" />}
       <p className="text-sm text-muted">{r.taskKey ? `${r.taskTitle}: ${KIND_BN[r.kind]}` : KIND_BN[r.kind]}</p>
       <div className="mt-2 flex flex-wrap items-end gap-x-6 gap-y-2">
         <h1 className="font-display text-[56px] font-extrabold leading-none tabular" style={{ fontStretch: "105%" }}>

@@ -6,6 +6,7 @@ import { getStudentTasks } from "@/lib/progress/dashboard";
 import { bn, bnOrdinal } from "@/lib/bn";
 import { ExamBubbles } from "@/components/portal/exam-bubbles";
 import { ProgressBar } from "@/components/portal/progress-bar";
+import { BackLink } from "@/components/site/back-link";
 
 export const metadata: Metadata = { title: "Level ১: বিগত BCS-এর প্রশ্ন" };
 
@@ -15,6 +16,7 @@ const STEP_BN: Record<string, string> = { SOLVE: "প্রশ্ন সমা�
 export default function Level1Page() {
   return (
     <section className="mx-auto max-w-5xl px-4 pt-10 sm:px-6">
+      <BackLink href="/dashboard" label="Dashboard" />
       <h1 className="text-[32px] font-extrabold sm:text-[40px]" style={{ fontStretch: "110%" }}>Level ১: বিগত BCS-এর প্রশ্ন আয়ত্ত</h1>
       <p className="mt-2 max-w-2xl text-ink-2">১০ম থেকে ৫০তম BCS, একটির পর একটি। প্রতিটির Learning Cycle শেষ করে নির্ধারিত নম্বর পেলে পরেরটি খোলে।</p>
       <Suspense fallback={<p className="mt-8 text-ink-2">লোড হচ্ছে…</p>}>

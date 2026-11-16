@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/db";
@@ -7,6 +6,7 @@ import { requireAdmin } from "@/lib/auth/session";
 import { bn } from "@/lib/bn";
 import { AdminTitle } from "@/components/admin/ui";
 import { QuestionForm } from "@/components/admin/question-form";
+import { BackLink } from "@/components/site/back-link";
 
 export const metadata: Metadata = { title: "প্রশ্ন সম্পাদনা — অ্যাডমিন", robots: { index: false } };
 
@@ -30,7 +30,7 @@ async function Content({ params }: { params: Promise<{ id: string }> }) {
   const seen = stats._sum.seen ?? 0;
   return (
     <>
-      <p className="text-sm"><Link href="/admin/questions" className="text-green underline">প্রশ্নের তালিকা</Link></p>
+      <BackLink href="/admin/questions" label="প্রশ্নের তালিকা" className="" />
       <AdminTitle title={q.uid} lead={`${q.kind === "HISTORICAL" ? `বিগত BCS${q.exam ? ` (${bn(q.exam.bcsNo)}তম, প্রশ্ন ${bn(q.examQNo ?? "")})` : ""}` : "Level ২ প্রশ্ন"}। শিক্ষার্থীরা ${bn(seen)} বার উত্তর দিয়েছে${seen ? `, সঠিক ${bn(Math.round(((stats._sum.correct ?? 0) / seen) * 100))}%` : ""}।`} />
       {q.families.length > 0 && <p className="mt-2 text-sm text-ink-2">পুনরাবৃত্ত প্রশ্ন-পরিবারের অংশ ({q.families[0].family.refs})।</p>}
       <QuestionForm

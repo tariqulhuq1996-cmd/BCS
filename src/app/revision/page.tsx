@@ -7,6 +7,7 @@ import { loadRules } from "@/lib/rules";
 import { dhakaDayStart, revisionStatus } from "@/lib/exam/service";
 import { startRevisionAction } from "@/lib/exam/actions";
 import { bn } from "@/lib/bn";
+import { BackLink } from "@/components/site/back-link";
 
 export const metadata: Metadata = { title: "আজকের Revision" };
 
@@ -15,6 +16,7 @@ const ERR: Record<string, string> = { EMPTY: "এখন Revision-এর কো�
 export default function RevisionPage({ searchParams }: PageProps<"/revision">) {
   return (
     <section className="mx-auto max-w-5xl px-4 pt-10 sm:px-6">
+      <BackLink href="/dashboard" label="Dashboard" />
       <h1 className="text-[32px] font-extrabold sm:text-[40px]" style={{ fontStretch: "110%" }}>আজকের Revision</h1>
       <p className="mt-2 max-w-2xl text-ink-2">
         ভুল করা বা অনিশ্চিত প্রশ্ন নির্দিষ্ট দিন পরপর ফিরে আসে। ঠিক উত্তর দিলে পরের বার আসে আরও দেরিতে; ভুল হলে আবার পরদিন।
