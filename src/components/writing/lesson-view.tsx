@@ -294,7 +294,7 @@ export function LessonView({ lesson: l, code }: { lesson: Lesson; code: string }
   }
 
   return (
-    <div className="mt-6 grid gap-5">
+    <div className="mt-6 grid grid-cols-[minmax(0,1fr)] gap-5">
       {(l.intro?.length || l.topic) && (
         <section className="rounded-2xl border border-line bg-surface p-5 sm:p-6">
           <p className="text-sm font-semibold text-muted">আজকের বিষয়</p>
@@ -317,7 +317,7 @@ function BlockView({ b, code }: { b: Block; code: string }) {
     case "passage":
       return (
         <div lang={b.lang} className="space-y-3 rounded-xl bg-paper p-4 text-[17px] leading-8">
-          {b.text.split(/\n\n+/).map((x) => <p key={x}>{x}</p>)}
+          {b.text.split(/\n\n+/).map((x) => <p key={x} className="whitespace-pre-line">{x}</p>)}
         </div>
       );
     case "ul":
@@ -346,7 +346,7 @@ function BlockView({ b, code }: { b: Block; code: string }) {
     case "quote":
       return (
         <blockquote className="rounded-xl border-l-4 border-green bg-paper p-5">
-          <p className="text-2xl font-semibold leading-snug">“{b.text}”</p>
+          <p className="text-2xl font-semibold leading-snug" lang={b.lang}>“{b.text}”</p>
           <footer className="mt-2 text-ink-2">— {b.author}{b.source ? <span className="block text-sm text-muted">উৎস: {b.source}</span> : null}</footer>
         </blockquote>
       );

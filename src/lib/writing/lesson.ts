@@ -52,7 +52,7 @@ export type Block =
   | { t: "tip"; label: string; text: string }
   | { t: "info"; rows: [string, string][] } // কী: মান তালিকা
   | { t: "cards"; items: { title: string; rows: [string, string][] }[] } // শব্দ/প্রবাদ ধাঁচের কার্ড-গ্রিড
-  | { t: "quote"; text: string; author: string; source?: string }
+  | { t: "quote"; text: string; author: string; source?: string; lang?: "en" | "bn" }
   | { t: "fix"; wrong: string; right: string } // ভুল → শুদ্ধ
   | { t: "answer"; label?: string; items: string[] } // লুকানো উত্তর
   | { t: "dialogue"; lines: { who: string; text: string }[] }
