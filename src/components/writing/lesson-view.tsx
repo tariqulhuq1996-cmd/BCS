@@ -346,7 +346,7 @@ function BlockView({ b, code }: { b: Block; code: string }) {
     case "quote":
       return (
         <blockquote className="rounded-xl border-l-4 border-green bg-paper p-5">
-          <p className="text-2xl font-semibold leading-snug" lang={b.lang}>“{b.text}”</p>
+          <p className="whitespace-pre-line text-2xl font-semibold leading-snug" lang={b.lang}>“{b.text}”</p>
           <footer className="mt-2 text-ink-2">— {b.author}{b.source ? <span className="block text-sm text-muted">উৎস: {b.source}</span> : null}</footer>
         </blockquote>
       );
