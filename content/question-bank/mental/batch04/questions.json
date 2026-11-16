@@ -1,0 +1,1822 @@
+{
+  "batch": "Batch 04",
+  "subject": "মানসিক দক্ষতা (Mental Ability)",
+  "basis": "MN.BC.KOD কোডিং-ডিকোডিং (বর্ণ সরানো, বিপরীত বর্ণমালা, অবস্থান-সংখ্যা, মিশ্র নিয়ম, বর্ণ-অঙ্ক সংকেত, প্রক্রিয়া-সংকেত, নাম বদল) + MN.BC.SAD সাদৃশ্য (সংখ্যা, বর্ণ, বাংলা ও ইংরেজি শব্দ)",
+  "subtopics": {
+    "MN.BC.KOD": {},
+    "MN.BC.SAD": {}
+  },
+  "questions": [
+    {
+      "st": "MN.BC.KOD",
+      "d": "Easy",
+      "q": "কোনো সাংকেতিক ভাষায় CAT-কে লেখা হয় DBU। একই নিয়মে DOG-কে কীভাবে লেখা হবে?",
+      "o": [
+        "EPH",
+        "FQI",
+        "CNF",
+        "HPE"
+      ],
+      "a": 0,
+      "e": "প্রতিটি বর্ণ ১ ঘর সামনে সরানো হয়েছে (C → D)। একই নিয়মে DOG → EPH।",
+      "t": "প্রথম বর্ণের সরণ দেখে পুরো শব্দে প্রয়োগ।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Easy",
+      "q": "কোনো সাংকেতিক ভাষায় BOOK-কে লেখা হয় DQQM। একই নিয়মে PAGE-কে কীভাবে লেখা হবে?",
+      "o": [
+        "SDJH",
+        "RCIG",
+        "NYEC",
+        "GICR"
+      ],
+      "a": 1,
+      "e": "প্রতিটি বর্ণ ২ ঘর সামনে সরানো হয়েছে (B → D)। একই নিয়মে PAGE → RCIG।",
+      "t": "প্রথম বর্ণের সরণ দেখে পুরো শব্দে প্রয়োগ।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "কোনো সাংকেতিক ভাষায় FISH-কে লেখা হয় ILVK। একই নিয়মে BIRD-কে কীভাবে লেখা হবে?",
+      "o": [
+        "YFOA",
+        "FMVH",
+        "ELUG",
+        "GULE"
+      ],
+      "a": 2,
+      "e": "প্রতিটি বর্ণ ৩ ঘর সামনে সরানো হয়েছে (F → I)। একই নিয়মে BIRD → ELUG।",
+      "t": "প্রথম বর্ণের সরণ দেখে পুরো শব্দে প্রয়োগ।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "কোনো সাংকেতিক ভাষায় WATER-কে লেখা হয় YCVGT। একই নিয়মে RIVER-কে কীভাবে লেখা হবে?",
+      "o": [
+        "TGXKT",
+        "ULYHU",
+        "PGTCP",
+        "TKXGT"
+      ],
+      "a": 3,
+      "e": "প্রতিটি বর্ণ ২ ঘর সামনে সরানো হয়েছে (W → Y)। একই নিয়মে RIVER → TKXGT।",
+      "t": "প্রথম বর্ণের সরণ দেখে পুরো শব্দে প্রয়োগ।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "কোনো সাংকেতিক ভাষায় MANGO-কে লেখা হয় LZMFN। একই নিয়মে APPLE-কে কীভাবে লেখা হবে?",
+      "o": [
+        "ZOOKD",
+        "APPLE",
+        "BQQMF",
+        "DKOOZ"
+      ],
+      "a": 0,
+      "e": "প্রতিটি বর্ণ ১ ঘর পেছনে সরানো হয়েছে (M → L)। একই নিয়মে APPLE → ZOOKD।",
+      "t": "প্রথম বর্ণের সরণ দেখে পুরো শব্দে প্রয়োগ।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "কোনো সাংকেতিক ভাষায় SCHOOL-কে লেখা হয় TDIPPM। একই নিয়মে TEACHER-কে কীভাবে লেখা হবে?",
+      "o": [
+        "VGCEJGT",
+        "UFBDIFS",
+        "SDZBGDQ",
+        "SFIDBFU"
+      ],
+      "a": 1,
+      "e": "প্রতিটি বর্ণ ১ ঘর সামনে সরানো হয়েছে (S → T)। একই নিয়মে TEACHER → UFBDIFS।",
+      "t": "প্রথম বর্ণের সরণ দেখে পুরো শব্দে প্রয়োগ।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Easy",
+      "q": "একটি সংকেতে প্রতিটি বর্ণকে বর্ণমালায় নির্দিষ্ট সংখ্যক ঘর সরিয়ে লেখা হয়। EPPS সংকেতটি DOOR শব্দের। তাহলে IPNF কোন শব্দের সংকেত?",
+      "o": [
+        "IPNF",
+        "JQOG",
+        "HOME",
+        "GNLD"
+      ],
+      "a": 2,
+      "e": "DOOR → EPPS: প্রতিটি বর্ণ ১ ঘর সামনে। তাই ডিকোড করতে উল্টো দিকে সরাও: IPNF → HOME।",
+      "t": "ডিকোড = উল্টো দিকে একই সরণ।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "একটি সংকেতে প্রতিটি বর্ণকে বর্ণমালায় নির্দিষ্ট সংখ্যক ঘর সরিয়ে লেখা হয়। FQQT সংকেতটি DOOR শব্দের। তাহলে UVCT কোন শব্দের সংকেত?",
+      "o": [
+        "RSZQ",
+        "WXEV",
+        "TUBS",
+        "STAR"
+      ],
+      "a": 3,
+      "e": "DOOR → FQQT: প্রতিটি বর্ণ ২ ঘর সামনে। তাই ডিকোড করতে উল্টো দিকে সরাও: UVCT → STAR।",
+      "t": "ডিকোড = উল্টো দিকে একই সরণ।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "একটি সংকেতে প্রতিটি বর্ণকে বর্ণমালায় নির্দিষ্ট সংখ্যক ঘর সরিয়ে লেখা হয়। GRRU সংকেতটি DOOR শব্দের। তাহলে JUHHQ কোন শব্দের সংকেত?",
+      "o": [
+        "GREEN",
+        "MXKKT",
+        "HSFFO",
+        "FQDDM"
+      ],
+      "a": 0,
+      "e": "DOOR → GRRU: প্রতিটি বর্ণ ৩ ঘর সামনে। তাই ডিকোড করতে উল্টো দিকে সরাও: JUHHQ → GREEN।",
+      "t": "ডিকোড = উল্টো দিকে একই সরণ।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "একটি সংকেতে প্রতিটি বর্ণকে বর্ণমালায় নির্দিষ্ট সংখ্যক ঘর সরিয়ে লেখা হয়। CNNQ সংকেতটি DOOR শব্দের। তাহলে SDZBG কোন শব্দের সংকেত?",
+      "o": [
+        "RCYAF",
+        "TEACH",
+        "UFBDI",
+        "SDZBG"
+      ],
+      "a": 1,
+      "e": "DOOR → CNNQ: প্রতিটি বর্ণ ১ ঘর পেছনে। তাই ডিকোড করতে উল্টো দিকে সরাও: SDZBG → TEACH।",
+      "t": "ডিকোড = উল্টো দিকে একই সরণ।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "একটি সংকেতে প্রতিটি বর্ণকে বর্ণমালায় নির্দিষ্ট সংখ্যক ঘর সরিয়ে লেখা হয়। FQQT সংকেতটি DOOR শব্দের। তাহলে YKPF কোন শব্দের সংকেত?",
+      "o": [
+        "XJOE",
+        "AMRH",
+        "WIND",
+        "VHMC"
+      ],
+      "a": 2,
+      "e": "DOOR → FQQT: প্রতিটি বর্ণ ২ ঘর সামনে। তাই ডিকোড করতে উল্টো দিকে সরাও: YKPF → WIND।",
+      "t": "ডিকোড = উল্টো দিকে একই সরণ।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি GOLD-কে লেখা হয় HPME, তবে কোন শব্দটিকে লেখা হবে TJMWFS?",
+      "o": [
+        "RILVER",
+        "SILVRE",
+        "TILVER",
+        "SILVER"
+      ],
+      "a": 3,
+      "e": "প্রতিটি বর্ণ এক ঘর সামনে: G → H, O → P …। TJMWFS-এর প্রতিটি বর্ণ এক ঘর পেছনে নিলে SILVER।",
+      "t": "ডিকোড: এক ঘর পেছনে।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি SUN-কে লেখা হয় VXQ, তবে MOON-কে কী লেখা হবে?",
+      "o": [
+        "PRRQ",
+        "PQQR",
+        "NPPO",
+        "QSSQ"
+      ],
+      "a": 0,
+      "e": "প্রতিটি বর্ণ ৩ ঘর সামনে: S → V, U → X, N → Q। একই নিয়মে MOON → PRRQ।",
+      "t": "তিন ঘর সামনে।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি FACE-কে লেখা হয় UZXV, তবে LAMP-কে কী লেখা হবে?",
+      "o": [
+        "PAOL",
+        "OZNK",
+        "MBNQ",
+        "KNZO"
+      ],
+      "a": 1,
+      "e": "প্রতিটি বর্ণকে বর্ণমালার বিপরীত বর্ণে বদলানো হয়েছে (A ↔ Z, B ↔ Y …; অবস্থানের যোগফল ২৭)। LAMP → OZNK।",
+      "t": "বিপরীত বর্ণ = ২৭ − অবস্থান।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি FACE-কে লেখা হয় UZXV, তবে NIGHT-কে কী লেখা হবে?",
+      "o": [
+        "OJHIU",
+        "NSUTH",
+        "MRTSG",
+        "GSTRM"
+      ],
+      "a": 2,
+      "e": "প্রতিটি বর্ণকে বর্ণমালার বিপরীত বর্ণে বদলানো হয়েছে (A ↔ Z, B ↔ Y …; অবস্থানের যোগফল ২৭)। NIGHT → MRTSG।",
+      "t": "বিপরীত বর্ণ = ২৭ − অবস্থান।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি FACE-কে লেখা হয় UZXV, তবে FLOWER-কে কী লেখা হবে?",
+      "o": [
+        "IVDLOU",
+        "VPMEWJ",
+        "GMPXFS",
+        "UOLDVI"
+      ],
+      "a": 3,
+      "e": "প্রতিটি বর্ণকে বর্ণমালার বিপরীত বর্ণে বদলানো হয়েছে (A ↔ Z, B ↔ Y …; অবস্থানের যোগফল ২৭)। FLOWER → UOLDVI।",
+      "t": "বিপরীত বর্ণ = ২৭ − অবস্থান।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Easy",
+      "q": "যদি FACE-কে লেখা হয় UZXV, তবে RAIN-কে কী লেখা হবে?",
+      "o": [
+        "IZRM",
+        "JASN",
+        "SBJO",
+        "MRZI"
+      ],
+      "a": 0,
+      "e": "প্রতিটি বর্ণকে বর্ণমালার বিপরীত বর্ণে বদলানো হয়েছে (A ↔ Z, B ↔ Y …; অবস্থানের যোগফল ২৭)। RAIN → IZRM।",
+      "t": "বিপরীত বর্ণ = ২৭ − অবস্থান।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "যদি FACE-কে লেখা হয় UZXV, তবে QUIZ-কে কী লেখা হবে?",
+      "o": [
+        "KGSB",
+        "JFRA",
+        "RVJA",
+        "ARFJ"
+      ],
+      "a": 1,
+      "e": "প্রতিটি বর্ণকে বর্ণমালার বিপরীত বর্ণে বদলানো হয়েছে (A ↔ Z, B ↔ Y …; অবস্থানের যোগফল ২৭)। QUIZ → JFRA।",
+      "t": "বিপরীত বর্ণ = ২৭ − অবস্থান।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি FACE-কে লেখা হয় UZXV, তবে BRAIN-কে কী লেখা হবে?",
+      "o": [
+        "CSBJO",
+        "ZJASN",
+        "YIZRM",
+        "MRZIY"
+      ],
+      "a": 2,
+      "e": "প্রতিটি বর্ণকে বর্ণমালার বিপরীত বর্ণে বদলানো হয়েছে (A ↔ Z, B ↔ Y …; অবস্থানের যোগফল ২৭)। BRAIN → YIZRM।",
+      "t": "বিপরীত বর্ণ = ২৭ − অবস্থান।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Easy",
+      "q": "যদি BAD = 7 হয় (বর্ণগুলোর অবস্থান-নম্বরের যোগফল), তবে CAGE = কত?",
+      "o": [
+        "21",
+        "17",
+        "14",
+        "16"
+      ],
+      "a": 3,
+      "e": "C = ৩, A = ১, G = ৭, E = ৫ ⇒ যোগফল ১৬।",
+      "t": "A = ১, B = ২ … Z = ২৬।",
+      "calc": true,
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি ACE = 9 হয় (বর্ণগুলোর অবস্থান-নম্বরের যোগফল), তবে HIDE = কত?",
+      "o": [
+        "26",
+        "27",
+        "24",
+        "31"
+      ],
+      "a": 0,
+      "e": "H = ৮, I = ৯, D = ৪, E = ৫ ⇒ যোগফল ২৬।",
+      "t": "A = ১, B = ২ … Z = ২৬।",
+      "calc": true,
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি DOG = 26 হয় (বর্ণগুলোর অবস্থান-নম্বরের যোগফল), তবে GOAT = কত?",
+      "o": [
+        "44",
+        "43",
+        "41",
+        "48"
+      ],
+      "a": 1,
+      "e": "G = ৭, O = ১৫, A = ১, T = ২০ ⇒ যোগফল ৪৩।",
+      "t": "A = ১, B = ২ … Z = ২৬।",
+      "calc": true,
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি FAN = 21 হয় (বর্ণগুলোর অবস্থান-নম্বরের যোগফল), তবে MILK = কত?",
+      "o": [
+        "43",
+        "46",
+        "45",
+        "50"
+      ],
+      "a": 2,
+      "e": "M = ১৩, I = ৯, L = ১২, K = ১১ ⇒ যোগফল ৪৫।",
+      "t": "A = ১, B = ২ … Z = ২৬।",
+      "calc": true,
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি CAB = 6 হয় (বর্ণের অবস্থান-নম্বরের গুণফল), তবে BED = কত?",
+      "o": [
+        "20",
+        "11",
+        "30",
+        "40"
+      ],
+      "a": 3,
+      "e": "B = ২, E = ৫, D = ৪ ⇒ গুণফল ৪০।",
+      "t": "গুণফল নিয়ম।",
+      "calc": true,
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি Z = 1, Y = 2, X = 3 … A = 26 হয়, তবে BOX-এর অঙ্কগুলোর যোগফল কত?",
+      "o": [
+        "40",
+        "41",
+        "45",
+        "39"
+      ],
+      "a": 0,
+      "e": "উল্টো অবস্থান = ২৭ − স্বাভাবিক অবস্থান: B = ২৫, O = ১২, X = ৩ ⇒ ৪০। (স্বাভাবিক যোগফল ৪১)",
+      "t": "উল্টো অবস্থান = ২৭ − অবস্থান।",
+      "calc": true,
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "যদি PEN = 35 এবং INK = 34 হয় (অবস্থান-নম্বরের যোগফল), তবে PENCIL-এর যোগফল কত?",
+      "o": [
+        "69",
+        "59",
+        "71",
+        "60"
+      ],
+      "a": 1,
+      "e": "P১৬ + E৫ + N১৪ + C৩ + I৯ + L১২ = ৫৯।",
+      "t": "প্রদত্ত অংশ (PEN = ৩৫) কাজে লাগাও: ৩৫ + ৩ + ৯ + ১২।",
+      "calc": true,
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি TABLE-কে লেখা হয় FMCBU (শব্দ উল্টে প্রতিটি বর্ণ এক ঘর সামনে), তবে CLOCK-কে কী লেখা হবে?",
+      "o": [
+        "KCOLC",
+        "DMPDL",
+        "LDPMD",
+        "JBNKB"
+      ],
+      "a": 2,
+      "e": "CLOCK উল্টে KCOLC, তারপর প্রতিটি বর্ণ এক ঘর সামনে ⇒ LDPMD।",
+      "t": "দুই ধাপ: উল্টাও, তারপর সরাও।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি TABLE-কে লেখা হয় FMCBU (শব্দ উল্টে প্রতিটি বর্ণ এক ঘর সামনে), তবে PLANT-কে কী লেখা হবে?",
+      "o": [
+        "SMZKO",
+        "QMBOU",
+        "TNALP",
+        "UOBMQ"
+      ],
+      "a": 3,
+      "e": "PLANT উল্টে TNALP, তারপর প্রতিটি বর্ণ এক ঘর সামনে ⇒ UOBMQ।",
+      "t": "দুই ধাপ: উল্টাও, তারপর সরাও।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "যদি TABLE-কে লেখা হয় FMCBU (শব্দ উল্টে প্রতিটি বর্ণ এক ঘর সামনে), তবে MARKET-কে কী লেখা হবে?",
+      "o": [
+        "UFLSBN",
+        "NBSLFU",
+        "TEKRAM",
+        "SDJQZL"
+      ],
+      "a": 0,
+      "e": "MARKET উল্টে TEKRAM, তারপর প্রতিটি বর্ণ এক ঘর সামনে ⇒ UFLSBN।",
+      "t": "দুই ধাপ: উল্টাও, তারপর সরাও।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "একটি সংকেতে বিজোড় অবস্থানের বর্ণ এক ঘর সামনে এবং জোড় অবস্থানের বর্ণ এক ঘর পেছনে সরানো হয় (যেমন GAME → HZND)। SPEED-এর সংকেত কী?",
+      "o": [
+        "RQDFC",
+        "TOFDE",
+        "TQFFE",
+        "RODDC"
+      ],
+      "a": 1,
+      "e": "S→T, P→O, E→F, E→D, D→E।",
+      "t": "অবস্থান ধরে ধরে আলাদা নিয়ম।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "একটি সংকেতে বিজোড় অবস্থানের বর্ণ এক ঘর সামনে এবং জোড় অবস্থানের বর্ণ এক ঘর পেছনে সরানো হয় (যেমন GAME → HZND)। DREAM-এর সংকেত কী?",
+      "o": [
+        "ESFBN",
+        "CSDBL",
+        "EQFZN",
+        "CQDZL"
+      ],
+      "a": 2,
+      "e": "D→E, R→Q, E→F, A→Z, M→N।",
+      "t": "অবস্থান ধরে ধরে আলাদা নিয়ম।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "একটি সংকেতে বিজোড় অবস্থানের বর্ণ এক ঘর সামনে এবং জোড় অবস্থানের বর্ণ এক ঘর পেছনে সরানো হয় (যেমন GAME → HZND)। NATION-এর সংকেত কী?",
+      "o": [
+        "MZSHNM",
+        "MBSJNO",
+        "OBUJPO",
+        "OZUHPM"
+      ],
+      "a": 3,
+      "e": "N→O, A→Z, T→U, I→H, O→P, N→M।",
+      "t": "অবস্থান ধরে ধরে আলাদা নিয়ম।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "একটি সংকেতে প্রথম বর্ণ 1 ঘর, দ্বিতীয়টি 2 ঘর, তৃতীয়টি 3 ঘর — এভাবে সামনে সরানো হয় (যেমন CAT → DCW)। ABCD-এর সংকেত কী?",
+      "o": [
+        "BDFH",
+        "BCDE",
+        "CDEF",
+        "ZZZZ"
+      ],
+      "a": 0,
+      "e": "A + ১ = B; B + ২ = D; C + ৩ = F; D + ৪ = H।",
+      "t": "সরণ = বর্ণের অবস্থান-ক্রম।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "একটি সংকেতে প্রথম বর্ণ 1 ঘর, দ্বিতীয়টি 2 ঘর, তৃতীয়টি 3 ঘর — এভাবে সামনে সরানো হয় (যেমন CAT → DCW)। HOPE-এর সংকেত কী?",
+      "o": [
+        "IPQF",
+        "IQSI",
+        "JQRG",
+        "GMMA"
+      ],
+      "a": 1,
+      "e": "H + ১ = I; O + ২ = Q; P + ৩ = S; E + ৪ = I।",
+      "t": "সরণ = বর্ণের অবস্থান-ক্রম।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "একটি সংকেতে প্রথম বর্ণ 1 ঘর, দ্বিতীয়টি 2 ঘর, তৃতীয়টি 3 ঘর — এভাবে সামনে সরানো হয় (যেমন CAT → DCW)। LIGHT-এর সংকেত কী?",
+      "o": [
+        "NKIJV",
+        "MJHIU",
+        "MKJLY",
+        "KGDDO"
+      ],
+      "a": 2,
+      "e": "L + ১ = M; I + ২ = K; G + ৩ = J; H + ৪ = L; T + ৫ = Y।",
+      "t": "সরণ = বর্ণের অবস্থান-ক্রম।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "একটি সংকেতে প্রথম বর্ণ 1 ঘর, দ্বিতীয়টি 2 ঘর, তৃতীয়টি 3 ঘর — এভাবে সামনে সরানো হয় (যেমন CAT → DCW)। MILK-এর সংকেত কী?",
+      "o": [
+        "LGIG",
+        "NJML",
+        "OKNM",
+        "NKOO"
+      ],
+      "a": 3,
+      "e": "M + ১ = N; I + ২ = K; L + ৩ = O; K + ৪ = O।",
+      "t": "সরণ = বর্ণের অবস্থান-ক্রম।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "একটি সংকেতে MATE-কে লেখা হয় 5294 এবং RENT-কে লেখা হয় 7439। একই সংকেতে TEAM-কে কী লেখা হবে?",
+      "o": [
+        "9425",
+        "5249",
+        "8927",
+        "4259"
+      ],
+      "a": 0,
+      "e": "দুটি উদাহরণ মিলিয়ে প্রতিটি বর্ণের অঙ্ক: T = ৯, E = ৪, A = ২, M = ৫ ⇒ TEAM = ৯৪২৫।",
+      "t": "উদাহরণের একই অবস্থানের বর্ণ-অঙ্ক জোড়া মেলাও।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "একটি সংকেতে MATE = 5294 এবং RENT = 7439। তাহলে 3429 কোন শব্দের সংকেত?",
+      "o": [
+        "STAR",
+        "NEAT",
+        "MEAN",
+        "TEAM"
+      ],
+      "a": 1,
+      "e": "অঙ্ক থেকে বর্ণ: ৩ = N, ৪ = E, ২ = A, ৯ = T ⇒ NEAT।",
+      "t": "অঙ্ক → বর্ণ উল্টো করে পড়ো।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "একটি সংকেতে POLE-কে লেখা হয় 6132 এবং DICE-কে লেখা হয় 7852। একই সংকেতে CODE-কে কী লেখা হবে?",
+      "o": [
+        "6832",
+        "2715",
+        "5172",
+        "1725"
+      ],
+      "a": 2,
+      "e": "দুটি উদাহরণ মিলিয়ে প্রতিটি বর্ণের অঙ্ক: C = ৫, O = ১, D = ৭, E = ২ ⇒ CODE = ৫১৭২।",
+      "t": "উদাহরণের একই অবস্থানের বর্ণ-অঙ্ক জোড়া মেলাও।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "একটি সংকেতে POLE = 6132 এবং DICE = 7852। তাহলে 5137 কোন শব্দের সংকেত?",
+      "o": [
+        "CODE",
+        "PILE",
+        "LIED",
+        "COLD"
+      ],
+      "a": 3,
+      "e": "অঙ্ক থেকে বর্ণ: ৫ = C, ১ = O, ৩ = L, ৭ = D ⇒ COLD।",
+      "t": "অঙ্ক → বর্ণ উল্টো করে পড়ো।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "একটি সংকেতে BRIDE-কে লেখা হয় 49268 এবং GRADE-কে লেখা হয় 19568। একই সংকেতে BREAD-কে কী লেখা হবে?",
+      "o": [
+        "49856",
+        "65894",
+        "49261",
+        "98564"
+      ],
+      "a": 0,
+      "e": "দুটি উদাহরণ মিলিয়ে প্রতিটি বর্ণের অঙ্ক: B = ৪, R = ৯, E = ৮, A = ৫, D = ৬ ⇒ BREAD = ৪৯৮৫৬।",
+      "t": "উদাহরণের একই অবস্থানের বর্ণ-অঙ্ক জোড়া মেলাও।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "একটি সংকেতে BRIDE = 49268 এবং GRADE = 19568। তাহলে 5268 কোন শব্দের সংকেত?",
+      "o": [
+        "BRIDGE",
+        "AIDE",
+        "GRID",
+        "BREAD"
+      ],
+      "a": 1,
+      "e": "অঙ্ক থেকে বর্ণ: ৫ = A, ২ = I, ৬ = D, ৮ = E ⇒ AIDE।",
+      "t": "অঙ্ক → বর্ণ উল্টো করে পড়ো।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "একটি সংকেতে HOUSE-কে লেখা হয় 37195 এবং TRUE-কে লেখা হয় 4215। একই সংকেতে SHORE-কে কী লেখা হবে?",
+      "o": [
+        "31241",
+        "52739",
+        "93725",
+        "37259"
+      ],
+      "a": 2,
+      "e": "দুটি উদাহরণ মিলিয়ে প্রতিটি বর্ণের অঙ্ক: S = ৯, H = ৩, O = ৭, R = ২, E = ৫ ⇒ SHORE = ৯৩৭২৫।",
+      "t": "উদাহরণের একই অবস্থানের বর্ণ-অঙ্ক জোড়া মেলাও।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "একটি সংকেতে HOUSE = 37195 এবং TRUE = 4215। তাহলে 2795 কোন শব্দের সংকেত?",
+      "o": [
+        "SHORE",
+        "HURT",
+        "OTHER",
+        "ROSE"
+      ],
+      "a": 3,
+      "e": "অঙ্ক থেকে বর্ণ: ২ = R, ৭ = O, ৯ = S, ৫ = E ⇒ ROSE।",
+      "t": "অঙ্ক → বর্ণ উল্টো করে পড়ো।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি 4 # 3 = 25 এবং 6 # 2 = 40 হয়, তবে 5 # 1 = কত?",
+      "o": [
+        "26",
+        "6",
+        "24",
+        "16"
+      ],
+      "a": 0,
+      "e": "নিয়ম: a # b = a² + b² (১৬ + ৯ = ২৫; ৩৬ + ৪ = ৪০) ⇒ ২৫ + ১ = ২৬।",
+      "t": "বর্গের যোগফল।",
+      "calc": true,
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি 5 @ 2 = 21 এবং 3 @ 1 = 8 হয়, তবে 7 @ 3 = কত?",
+      "o": [
+        "58",
+        "40",
+        "10",
+        "4"
+      ],
+      "a": 1,
+      "e": "নিয়ম: a² − b² (২৫ − ৪ = ২১; ৯ − ১ = ৮) ⇒ ৪৯ − ৯ = ৪০।",
+      "t": "বর্গের অন্তর।",
+      "calc": true,
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "যদি 2 * 3 = 11 এবং 4 * 5 = 29 হয়, তবে 6 * 7 = কত?",
+      "o": [
+        "13",
+        "42",
+        "55",
+        "49"
+      ],
+      "a": 2,
+      "e": "নিয়ম: a × b + a + b (৬ + ৫ = ১১; ২০ + ৯ = ২৯) ⇒ ৪২ + ১৩ = ৫৫।",
+      "t": "গুণফল + যোগফল।",
+      "calc": true,
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি 3 ~ 4 = 712 এবং 5 ~ 2 = 710 হয় (যোগফল পরে গুণফল পাশাপাশি), তবে 6 ~ 3 = কত?",
+      "o": [
+        "9180",
+        "189",
+        "1918",
+        "918"
+      ],
+      "a": 3,
+      "e": "নিয়ম: (a + b) লিখে তার পাশে (a × b): ৩ + ৪ = ৭, ৩ × ৪ = ১২ ⇒ ৭১২। ৬ ~ ৩ ⇒ ৯ ও ১৮ ⇒ ৯১৮।",
+      "t": "দুটি ফল পাশাপাশি লেখা।",
+      "calc": true,
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "যদি 8 ÷ 2 = 610 এবং 9 ÷ 3 = 612 হয় (অন্তর পরে যোগফল পাশাপাশি), তবে 7 ÷ 1 = কত?",
+      "o": [
+        "68",
+        "86",
+        "76",
+        "78"
+      ],
+      "a": 0,
+      "e": "নিয়ম: (a − b) পাশে (a + b): ৮ − ২ = ৬, ৮ + ২ = ১০ ⇒ ৬১০। ৭ − ১ = ৬, ৭ + ১ = ৮ ⇒ ৬৮।",
+      "t": "চিহ্নের আসল অর্থ বাদ দিয়ে নতুন নিয়ম খোঁজো।",
+      "calc": true,
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "একটি সংকেতে '+' মানে '×', '×' মানে '−' এবং '−' মানে '+'। তাহলে 6 + 4 × 5 − 3 = কত?",
+      "o": [
+        "17",
+        "22",
+        "27",
+        "10"
+      ],
+      "a": 1,
+      "e": "চিহ্ন বদলে: ৬ × ৪ − ৫ + ৩ = ২৪ − ৫ + ৩ = ২২।",
+      "t": "আগে চিহ্ন বদলাও, তারপর BODMAS।",
+      "calc": true,
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "একটি সংকেতে '÷' মানে '+', '+' মানে '×' এবং '×' মানে '÷'। তাহলে 20 × 4 ÷ 3 + 2 = কত?",
+      "o": [
+        "16",
+        "10",
+        "11",
+        "13"
+      ],
+      "a": 2,
+      "e": "চিহ্ন বদলে: ২০ ÷ ৪ + ৩ × ২ = ৫ + ৬ = ১১।",
+      "t": "চিহ্ন বদলে BODMAS মেনে হিসাব।",
+      "calc": true,
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি 'আকাশ'-কে 'সমুদ্র', 'সমুদ্র'-কে 'পাহাড়', 'পাহাড়'-কে 'বাতাস' এবং 'বাতাস'-কে 'মেঘ' বলা হয়, তবে পাখি কোথায় ওড়ে?",
+      "o": [
+        "মেঘ",
+        "আকাশ",
+        "বাতাস",
+        "সমুদ্র"
+      ],
+      "a": 3,
+      "e": "পাখি ওড়ে আকাশে; আর আকাশকে বলা হচ্ছে 'সমুদ্র'।",
+      "t": "প্রশ্নে যা জানতে চাওয়া হয়েছে, বদলে দেওয়া নামটিই উত্তর।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি 'লাল'-কে 'নীল', 'নীল'-কে 'সবুজ', 'সবুজ'-কে 'হলুদ' এবং 'হলুদ'-কে 'সাদা' বলা হয়, তবে গাছের পাতার রং কী?",
+      "o": [
+        "হলুদ",
+        "সবুজ",
+        "সাদা",
+        "নীল"
+      ],
+      "a": 0,
+      "e": "পাতার রং সবুজ; আর সবুজকে বলা হচ্ছে 'হলুদ'।",
+      "t": "প্রশ্নে যা জানতে চাওয়া হয়েছে, বদলে দেওয়া নামটিই উত্তর।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি 'কলম'-কে 'খাতা', 'খাতা'-কে 'বই', 'বই'-কে 'ব্যাগ' এবং 'ব্যাগ'-কে 'টেবিল' বলা হয়, তবে লেখার জন্য কী ব্যবহার করা হয়?",
+      "o": [
+        "কলম",
+        "খাতা",
+        "বই",
+        "ব্যাগ"
+      ],
+      "a": 1,
+      "e": "লেখা হয় কলম দিয়ে; কলমকে বলা হচ্ছে 'খাতা'।",
+      "t": "প্রশ্নে যা জানতে চাওয়া হয়েছে, বদলে দেওয়া নামটিই উত্তর।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "যদি 'পানি'-কে 'দুধ', 'দুধ'-কে 'চা', 'চা'-কে 'রস' এবং 'রস'-কে 'তেল' বলা হয়, তবে গাভী থেকে কী পাওয়া যায়?",
+      "o": [
+        "রস",
+        "দুধ",
+        "চা",
+        "পানি"
+      ],
+      "a": 2,
+      "e": "গাভী থেকে পাওয়া যায় দুধ; দুধকে বলা হচ্ছে 'চা'।",
+      "t": "প্রশ্নে যা জানতে চাওয়া হয়েছে, বদলে দেওয়া নামটিই উত্তর।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Medium",
+      "q": "যদি 'সোমবার'-কে 'বুধবার', 'বুধবার'-কে 'শুক্রবার' এবং 'শুক্রবার'-কে 'রবিবার' বলা হয়, তবে বাংলাদেশে সাপ্তাহিক ছুটির প্রধান দিন কোনটি?",
+      "o": [
+        "শনিবার",
+        "শুক্রবার",
+        "বুধবার",
+        "রবিবার"
+      ],
+      "a": 3,
+      "e": "বাংলাদেশে সাপ্তাহিক ছুটির প্রধান দিন শুক্রবার; শুক্রবারকে বলা হচ্ছে 'রবিবার'।",
+      "t": "প্রশ্নে যা জানতে চাওয়া হয়েছে, বদলে দেওয়া নামটিই উত্তর।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.KOD",
+      "d": "Hard",
+      "q": "যদি 'চোখ'-কে 'কান', 'কান'-কে 'নাক', 'নাক'-কে 'জিহ্বা' এবং 'জিহ্বা'-কে 'ত্বক' বলা হয়, তবে আমরা কী দিয়ে গন্ধ নিই?",
+      "o": [
+        "জিহ্বা",
+        "নাক",
+        "কান",
+        "ত্বক"
+      ],
+      "a": 0,
+      "e": "গন্ধ নিই নাক দিয়ে; নাককে বলা হচ্ছে 'জিহ্বা'।",
+      "t": "প্রশ্নে যা জানতে চাওয়া হয়েছে, বদলে দেওয়া নামটিই উত্তর।",
+      "src": "লেকচার ০১ (Coding-Decoding) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Easy",
+      "q": "৪ : ১৬ :: ৭ : ? — প্রশ্নবোধক স্থানে কোন সংখ্যা বসবে?",
+      "o": [
+        "১৪",
+        "৪৯",
+        "২১",
+        "২৮"
+      ],
+      "a": 1,
+      "e": "প্রথমটির বর্গ দ্বিতীয়টি: ৪² = ১৬ ⇒ ৭² = ৪৯।",
+      "t": "বর্গ সম্পর্ক।",
+      "calc": true,
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "৩ : ২৭ :: ৬ : ? — প্রশ্নবোধক স্থানে কোন সংখ্যা বসবে?",
+      "o": [
+        "১৮",
+        "৩৬",
+        "২১৬",
+        "১০৮"
+      ],
+      "a": 2,
+      "e": "প্রথমটির ঘন দ্বিতীয়টি: ৩³ = ২৭ ⇒ ৬³ = ২১৬।",
+      "t": "ঘন সম্পর্ক।",
+      "calc": true,
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "৫ : ৩০ :: ৮ : ? — প্রশ্নবোধক স্থানে কোন সংখ্যা বসবে?",
+      "o": [
+        "৪০",
+        "৪৮",
+        "৬৪",
+        "৭২"
+      ],
+      "a": 3,
+      "e": "n × (n + ১): ৫ × ৬ = ৩০ ⇒ ৮ × ৯ = ৭২।",
+      "t": "n(n + ১)।",
+      "calc": true,
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "৯ : ৮০ :: ১১ : ? — প্রশ্নবোধক স্থানে কোন সংখ্যা বসবে?",
+      "o": [
+        "১২০",
+        "১২১",
+        "৯৯",
+        "১১০"
+      ],
+      "a": 0,
+      "e": "n² − ১: ৮১ − ১ = ৮০ ⇒ ১২১ − ১ = ১২০।",
+      "t": "বর্গ থেকে ১ কম।",
+      "calc": true,
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "৬ : ৩৭ :: ১০ : ? — প্রশ্নবোধক স্থানে কোন সংখ্যা বসবে?",
+      "o": [
+        "১০০",
+        "১০১",
+        "১১০",
+        "৯১"
+      ],
+      "a": 1,
+      "e": "n² + ১: ৩৬ + ১ = ৩৭ ⇒ ১০০ + ১ = ১০১।",
+      "t": "বর্গ + ১।",
+      "calc": true,
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "১২ : ১৪৪ :: ১৫ : ? — প্রশ্নবোধক স্থানে কোন সংখ্যা বসবে?",
+      "o": [
+        "১৫০",
+        "১৮০",
+        "২২৫",
+        "২৫৫"
+      ],
+      "a": 2,
+      "e": "বর্গ: ১২² = ১৪৪ ⇒ ১৫² = ২২৫।",
+      "t": "বর্গ।",
+      "calc": true,
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Hard",
+      "q": "২ : ১২ :: ৪ : ? — প্রশ্নবোধক স্থানে কোন সংখ্যা বসবে?",
+      "o": [
+        "২০",
+        "৬৪",
+        "৪৮",
+        "৮০"
+      ],
+      "a": 3,
+      "e": "n³ + n²: ৮ + ৪ = ১২ ⇒ ৬৪ + ১৬ = ৮০।",
+      "t": "ঘন + বর্গ।",
+      "calc": true,
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "৭ : ৫৬ :: ৯ : ? — প্রশ্নবোধক স্থানে কোন সংখ্যা বসবে?",
+      "o": [
+        "৯০",
+        "৮১",
+        "৭২",
+        "৬৩"
+      ],
+      "a": 0,
+      "e": "n(n + ১): ৭ × ৮ = ৫৬ ⇒ ৯ × ১০ = ৯০।",
+      "t": "ক্রমিক দুই সংখ্যার গুণফল।",
+      "calc": true,
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "৬৪ : ৮ :: ১২১ : ? — প্রশ্নবোধক স্থানে কোন সংখ্যা বসবে?",
+      "o": [
+        "১২",
+        "১১",
+        "২২",
+        "৬১"
+      ],
+      "a": 1,
+      "e": "বর্গমূল: √৬৪ = ৮ ⇒ √১২১ = ১১।",
+      "t": "বর্গমূল সম্পর্ক।",
+      "calc": true,
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Hard",
+      "q": "৫ : ১২৪ :: ৭ : ? — প্রশ্নবোধক স্থানে কোন সংখ্যা বসবে?",
+      "o": [
+        "৪৯",
+        "৩৪৩",
+        "৩৪২",
+        "৩৩৬"
+      ],
+      "a": 2,
+      "e": "n³ − ১: ১২৫ − ১ = ১২৪ ⇒ ৩৪৩ − ১ = ৩৪২।",
+      "t": "ঘন − ১।",
+      "calc": true,
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "১৮ : ৯ :: ৫০ : ? — প্রশ্নবোধক স্থানে কোন সংখ্যা বসবে?",
+      "o": [
+        "৪৫",
+        "৫",
+        "১০",
+        "২৫"
+      ],
+      "a": 3,
+      "e": "অর্ধেক: ১৮ ÷ ২ = ৯ ⇒ ৫০ ÷ ২ = ২৫।",
+      "t": "অর্ধেক সম্পর্ক।",
+      "calc": true,
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Hard",
+      "q": "১৩ : ৩১ :: ২৪ : ? — প্রশ্নবোধক স্থানে কোন সংখ্যা বসবে?",
+      "o": [
+        "৪২",
+        "২৬",
+        "৪৮",
+        "৩৪"
+      ],
+      "a": 0,
+      "e": "অঙ্ক দুটি উল্টে লেখা: ১৩ → ৩১ ⇒ ২৪ → ৪২।",
+      "t": "অঙ্কের স্থান বিনিময়।",
+      "calc": true,
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "ACE : DFH :: BDF : ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "FHJ",
+        "EGI",
+        "YAC",
+        "IGE"
+      ],
+      "a": 1,
+      "e": "ACE → DFH: প্রতিটি বর্ণ ৩ ঘর সামনে। BDF → EGI।",
+      "t": "প্রথম জোড়ের বর্ণে যে সরণ, দ্বিতীয় জোড়েও তাই।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "CAT : ECV :: DOG : ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "BME",
+        "GRJ",
+        "FQI",
+        "IQF"
+      ],
+      "a": 2,
+      "e": "CAT → ECV: প্রতিটি বর্ণ ২ ঘর সামনে। DOG → FQI।",
+      "t": "প্রথম জোড়ের বর্ণে যে সরণ, দ্বিতীয় জোড়েও তাই।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "MAP : LZO :: SUN : ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "MTR",
+        "SUN",
+        "TVO",
+        "RTM"
+      ],
+      "a": 3,
+      "e": "MAP → LZO: প্রতিটি বর্ণ ১ ঘর পেছনে। SUN → RTM।",
+      "t": "প্রথম জোড়ের বর্ণে যে সরণ, দ্বিতীয় জোড়েও তাই।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Hard",
+      "q": "KING : LJOH :: LORD : ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "MPSE",
+        "NQTF",
+        "KNQC",
+        "ESPM"
+      ],
+      "a": 0,
+      "e": "KING → LJOH: প্রতিটি বর্ণ ১ ঘর সামনে। LORD → MPSE।",
+      "t": "প্রথম জোড়ের বর্ণে যে সরণ, দ্বিতীয় জোড়েও তাই।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "BE : YV :: DM : ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "XO",
+        "WN",
+        "MD",
+        "EN"
+      ],
+      "a": 1,
+      "e": "BE → YV: প্রতিটি বর্ণ বিপরীত বর্ণমালার বর্ণে (A ↔ Z) বদলেছে। DM → WN।",
+      "t": "প্রথম জোড়ের বর্ণে যে সরণ, দ্বিতীয় জোড়েও তাই।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Hard",
+      "q": "GLOW : TOLD :: MILK : ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "KLIM",
+        "OSPQ",
+        "NROP",
+        "NJML"
+      ],
+      "a": 2,
+      "e": "GLOW → TOLD: প্রতিটি বর্ণ বিপরীত বর্ণমালার বর্ণে (A ↔ Z) বদলেছে। MILK → NROP।",
+      "t": "প্রথম জোড়ের বর্ণে যে সরণ, দ্বিতীয় জোড়েও তাই।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "PART : TRAP :: STOP : ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "HGLK",
+        "QPUT",
+        "TUPQ",
+        "POTS"
+      ],
+      "a": 3,
+      "e": "PART উল্টে লেখা হয়েছে TRAP; তেমনি STOP → POTS।",
+      "t": "প্রথম জোড়ের বর্ণে যে সরণ, দ্বিতীয় জোড়েও তাই।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "LIVE : EVIL :: DRAW : ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "WARD",
+        "XBSE",
+        "ESBX",
+        "WIZD"
+      ],
+      "a": 0,
+      "e": "LIVE উল্টে লেখা হয়েছে EVIL; তেমনি DRAW → WARD।",
+      "t": "প্রথম জোড়ের বর্ণে যে সরণ, দ্বিতীয় জোড়েও তাই।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "B : D :: F : ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "G",
+        "H",
+        "J",
+        "I"
+      ],
+      "a": 1,
+      "e": "দুই ঘর সামনে: B → D ⇒ F → H।",
+      "t": "প্রথম জোড়ের বর্ণে যে সরণ, দ্বিতীয় জোড়েও তাই।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Hard",
+      "q": "AB : BD :: CF : ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "EH",
+        "DG",
+        "DH",
+        "DI"
+      ],
+      "a": 2,
+      "e": "প্রথম বর্ণ এক ঘর, দ্বিতীয় বর্ণ দুই ঘর এগোয়: AB → BD ⇒ CF → DH।",
+      "t": "প্রথম জোড়ের বর্ণে যে সরণ, দ্বিতীয় জোড়েও তাই।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Easy",
+      "q": "কৃষক : লাঙল :: জেলে : ?",
+      "o": [
+        "নদী",
+        "নৌকা",
+        "মাছ",
+        "জাল"
+      ],
+      "a": 3,
+      "e": "কৃষকের কাজের হাতিয়ার লাঙল; জেলের কাজের হাতিয়ার জাল।",
+      "t": "প্রথম জোড়ের সম্পর্ক এক বাক্যে বলো, তারপর দ্বিতীয় জোড়ে প্রয়োগ করো।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Easy",
+      "q": "পাখি : বাসা :: মৌমাছি : ?",
+      "o": [
+        "মৌচাক",
+        "মধু",
+        "ফুল",
+        "গর্ত"
+      ],
+      "a": 0,
+      "e": "পাখির বাসস্থান বাসা; মৌমাছির বাসস্থান মৌচাক।",
+      "t": "প্রথম জোড়ের সম্পর্ক এক বাক্যে বলো, তারপর দ্বিতীয় জোড়ে প্রয়োগ করো।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "চিকিৎসক : হাসপাতাল :: বিচারক : ?",
+      "o": [
+        "আইন",
+        "আদালত",
+        "উকিল",
+        "রায়"
+      ],
+      "a": 1,
+      "e": "চিকিৎসকের কর্মস্থল হাসপাতাল; বিচারকের কর্মস্থল আদালত।",
+      "t": "প্রথম জোড়ের সম্পর্ক এক বাক্যে বলো, তারপর দ্বিতীয় জোড়ে প্রয়োগ করো।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "পাতা : গাছ :: পালক : ?",
+      "o": [
+        "বাতাস",
+        "কলম",
+        "পাখি",
+        "ডানা"
+      ],
+      "a": 2,
+      "e": "পাতা গাছের অংশ; পালক পাখির অংশ (অংশ : সমগ্র)।",
+      "t": "প্রথম জোড়ের সম্পর্ক এক বাক্যে বলো, তারপর দ্বিতীয় জোড়ে প্রয়োগ করো।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "দর্জি : সুই :: কাঠমিস্ত্রি : ?",
+      "o": [
+        "পেরেক",
+        "কাঠ",
+        "টেবিল",
+        "করাত"
+      ],
+      "a": 3,
+      "e": "দর্জির হাতিয়ার সুই; কাঠমিস্ত্রির হাতিয়ার করাত।",
+      "t": "প্রথম জোড়ের সম্পর্ক এক বাক্যে বলো, তারপর দ্বিতীয় জোড়ে প্রয়োগ করো।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "সিংহ : গর্জন :: ঘোড়া : ?",
+      "o": [
+        "হ্রেষা",
+        "আস্তাবল",
+        "লাগাম",
+        "কেশর"
+      ],
+      "a": 0,
+      "e": "সিংহের ডাককে বলে গর্জন; ঘোড়ার ডাককে বলে হ্রেষা।",
+      "t": "প্রথম জোড়ের সম্পর্ক এক বাক্যে বলো, তারপর দ্বিতীয় জোড়ে প্রয়োগ করো।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "ঠান্ডা : গরম :: আলো : ?",
+      "o": [
+        "সূর্য",
+        "অন্ধকার",
+        "দিন",
+        "উজ্জ্বল"
+      ],
+      "a": 1,
+      "e": "ঠান্ডা ও গরম বিপরীত; আলো ও অন্ধকার বিপরীত।",
+      "t": "প্রথম জোড়ের সম্পর্ক এক বাক্যে বলো, তারপর দ্বিতীয় জোড়ে প্রয়োগ করো।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "ডিম : মুরগি :: দুধ : ?",
+      "o": [
+        "ঘি",
+        "দই",
+        "গাভী",
+        "বাছুর"
+      ],
+      "a": 2,
+      "e": "ডিম আসে মুরগি থেকে; দুধ আসে গাভী থেকে (উৎপন্ন দ্রব্য : উৎস)।",
+      "t": "প্রথম জোড়ের সম্পর্ক এক বাক্যে বলো, তারপর দ্বিতীয় জোড়ে প্রয়োগ করো।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "ঢাকা : বাংলাদেশ :: কাঠমান্ডু : ?",
+      "o": [
+        "এভারেস্ট",
+        "ভুটান",
+        "হিমালয়",
+        "নেপাল"
+      ],
+      "a": 3,
+      "e": "ঢাকা বাংলাদেশের রাজধানী; কাঠমান্ডু নেপালের রাজধানী।",
+      "t": "প্রথম জোড়ের সম্পর্ক এক বাক্যে বলো, তারপর দ্বিতীয় জোড়ে প্রয়োগ করো।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Hard",
+      "q": "বই : গ্রন্থাগার :: ছবি : ?",
+      "o": [
+        "চিত্রশালা",
+        "ক্যামেরা",
+        "শিল্পী",
+        "রং"
+      ],
+      "a": 0,
+      "e": "বই সংরক্ষিত থাকে গ্রন্থাগারে; ছবি সংরক্ষিত ও প্রদর্শিত হয় চিত্রশালায়।",
+      "t": "প্রথম জোড়ের সম্পর্ক এক বাক্যে বলো, তারপর দ্বিতীয় জোড়ে প্রয়োগ করো।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "চোখ : দেখা :: কান : ?",
+      "o": [
+        "বলা",
+        "শোনা",
+        "গন্ধ নেওয়া",
+        "স্পর্শ করা"
+      ],
+      "a": 1,
+      "e": "চোখের কাজ দেখা; কানের কাজ শোনা।",
+      "t": "প্রথম জোড়ের সম্পর্ক এক বাক্যে বলো, তারপর দ্বিতীয় জোড়ে প্রয়োগ করো।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Hard",
+      "q": "মিটার : দৈর্ঘ্য :: কিলোগ্রাম : ?",
+      "o": [
+        "লিটার",
+        "ওজন-যন্ত্র",
+        "ভর",
+        "তাপমাত্রা"
+      ],
+      "a": 2,
+      "e": "মিটার দৈর্ঘ্যের একক; কিলোগ্রাম ভরের একক।",
+      "t": "প্রথম জোড়ের সম্পর্ক এক বাক্যে বলো, তারপর দ্বিতীয় জোড়ে প্রয়োগ করো।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "সাপ : সরীসৃপ :: তিমি : ?",
+      "o": [
+        "সামুদ্রিক",
+        "মাছ",
+        "উভচর",
+        "স্তন্যপায়ী"
+      ],
+      "a": 3,
+      "e": "সাপ সরীসৃপ শ্রেণির প্রাণী; তিমি স্তন্যপায়ী শ্রেণির প্রাণী।",
+      "t": "প্রথম জোড়ের সম্পর্ক এক বাক্যে বলো, তারপর দ্বিতীয় জোড়ে প্রয়োগ করো।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Hard",
+      "q": "সপ্তাহ : দিন :: বছর : ?",
+      "o": [
+        "মাস",
+        "ঋতু",
+        "শতাব্দী",
+        "ঘণ্টা"
+      ],
+      "a": 0,
+      "e": "সপ্তাহ কয়েকটি দিন নিয়ে গঠিত; বছর কয়েকটি মাস নিয়ে গঠিত (ঠিক পরের ছোট একক)।",
+      "t": "প্রথম জোড়ের সম্পর্ক এক বাক্যে বলো, তারপর দ্বিতীয় জোড়ে প্রয়োগ করো।",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Easy",
+      "q": "Brush : Paint :: Needle : ?",
+      "o": [
+        "Thread",
+        "Sew",
+        "Sharp",
+        "Cloth"
+      ],
+      "a": 1,
+      "e": "ব্রাশ দিয়ে রং করা হয়; সুই দিয়ে সেলাই করা হয় (হাতিয়ার : কাজ)।",
+      "t": "Identify the relationship in the first pair, then apply it.",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Easy",
+      "q": "Cow : Calf :: Dog : ?",
+      "o": [
+        "Cub",
+        "Kitten",
+        "Puppy",
+        "Kennel"
+      ],
+      "a": 2,
+      "e": "Cow-এর বাচ্চা Calf; Dog-এর বাচ্চা Puppy।",
+      "t": "Identify the relationship in the first pair, then apply it.",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "Pilot : Aeroplane :: Captain : ?",
+      "o": [
+        "Port",
+        "Army",
+        "Team",
+        "Ship"
+      ],
+      "a": 3,
+      "e": "Pilot বিমান চালান; Captain জাহাজ পরিচালনা করেন।",
+      "t": "Identify the relationship in the first pair, then apply it.",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "Wheat : Flour :: Grape : ?",
+      "o": [
+        "Raisin",
+        "Vine",
+        "Fruit",
+        "Wine glass"
+      ],
+      "a": 0,
+      "e": "গম শুকিয়ে-পিষে আটা; আঙুর শুকিয়ে কিশমিশ (কাঁচামাল : প্রক্রিয়াজাত রূপ)।",
+      "t": "Identify the relationship in the first pair, then apply it.",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "Thermometer : Temperature :: Barometer : ?",
+      "o": [
+        "Weather",
+        "Pressure",
+        "Height",
+        "Speed"
+      ],
+      "a": 1,
+      "e": "Thermometer তাপমাত্রা মাপে; Barometer বায়ুচাপ মাপে।",
+      "t": "Identify the relationship in the first pair, then apply it.",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "Hand : Glove :: Foot : ?",
+      "o": [
+        "Toe",
+        "Leg",
+        "Sock",
+        "Walk"
+      ],
+      "a": 2,
+      "e": "হাতে গ্লাভস পরা হয়; পায়ে মোজা পরা হয়।",
+      "t": "Identify the relationship in the first pair, then apply it.",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "Bee : Hive :: Lion : ?",
+      "o": [
+        "Roar",
+        "Forest",
+        "Cub",
+        "Den"
+      ],
+      "a": 3,
+      "e": "মৌমাছির বাসস্থান Hive; সিংহের বাসস্থান Den।",
+      "t": "Identify the relationship in the first pair, then apply it.",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Hard",
+      "q": "Author : Book :: Composer : ?",
+      "o": [
+        "Symphony",
+        "Orchestra",
+        "Piano",
+        "Singer"
+      ],
+      "a": 0,
+      "e": "লেখক বই রচনা করেন; সুরকার সিম্ফনি রচনা করেন (স্রষ্টা : সৃষ্টি)।",
+      "t": "Identify the relationship in the first pair, then apply it.",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "Happy : Sad :: Generous : ?",
+      "o": [
+        "Kind",
+        "Miserly",
+        "Rich",
+        "Giving"
+      ],
+      "a": 1,
+      "e": "Happy-র বিপরীত Sad; Generous-এর বিপরীত Miserly।",
+      "t": "Identify the relationship in the first pair, then apply it.",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Medium",
+      "q": "Petal : Flower :: Page : ?",
+      "o": [
+        "Write",
+        "Paper",
+        "Book",
+        "Read"
+      ],
+      "a": 2,
+      "e": "পাপড়ি ফুলের অংশ; পাতা বইয়ের অংশ (অংশ : সমগ্র)।",
+      "t": "Identify the relationship in the first pair, then apply it.",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Hard",
+      "q": "Ornithology : Birds :: Entomology : ?",
+      "o": [
+        "Fossils",
+        "Words",
+        "Fishes",
+        "Insects"
+      ],
+      "a": 3,
+      "e": "Ornithology পাখি নিয়ে বিজ্ঞান; Entomology পোকামাকড় নিয়ে বিজ্ঞান।",
+      "t": "Identify the relationship in the first pair, then apply it.",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.SAD",
+      "d": "Hard",
+      "q": "Cardiologist : Heart :: Dermatologist : ?",
+      "o": [
+        "Skin",
+        "Teeth",
+        "Eyes",
+        "Bones"
+      ],
+      "a": 0,
+      "e": "Cardiologist হৃদ্‌রোগ বিশেষজ্ঞ; Dermatologist চর্মরোগ বিশেষজ্ঞ।",
+      "t": "Identify the relationship in the first pair, then apply it.",
+      "src": "লেকচার ০১ (Analogy) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

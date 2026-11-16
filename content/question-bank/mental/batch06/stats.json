@@ -1,0 +1,27 @@
+{
+  "target": 800,
+  "priorityTarget": {
+    "A": 451,
+    "B": 200,
+    "C": 29,
+    "D": 120
+  },
+  "historicalReference": 181,
+  "coverage": "MN.JK.DIK: বিগত 11টি (২০০-নম্বর যুগে); MN.JK.GHR: বিগত 15টি (২০০-নম্বর যুগে)",
+  "generated": 109,
+  "exact": 0,
+  "semantic": 0,
+  "near": 0,
+  "verify": 0,
+  "qc": 0,
+  "accepted": 109,
+  "cumulative": 800,
+  "remaining": 0,
+  "supplementary": 0,
+  "cumByPriority": {
+    "A": 451,
+    "B": 200,
+    "C": 29,
+    "D": 120
+  }
+}

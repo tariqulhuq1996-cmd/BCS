@@ -1,0 +1,2102 @@
+{
+  "batch": "Batch 01",
+  "subject": "মানসিক দক্ষতা (Mental Ability)",
+  "basis": "MN.SN.DHR সংখ্যা ও বর্ণ ধারা — সমান্তর, দ্বিতীয় স্তরের অন্তর, গুণোত্তর, পর্যায়ক্রমিক প্রক্রিয়া, বর্গ-ঘন, মৌলিক, একান্তর ধারা, ভুল পদ, বর্ণ ধারা, বর্ণ-জোড়, বর্ণ-সংখ্যা, ভগ্নাংশ ও যোগফল-ধারা",
+  "subtopics": {
+    "MN.SN.DHR": {}
+  },
+  "questions": [
+    {
+      "st": "MN.SN.DHR",
+      "d": "Easy",
+      "q": "৭, ১৬, ২৫, ৩৪, ৪৩, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৫২",
+        "৫০",
+        "৫৪",
+        "৫৩"
+      ],
+      "a": 0,
+      "e": "প্রতি পদে ৯ যোগ: ৭, ১৬, ২৫, ৩৪, ৪৩ ⇒ ৫২।",
+      "t": "পরপর অন্তর একই ⇒ সমান্তর।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Easy",
+      "q": "৯৫, ৮৮, ৮১, ৭৪, ৬৭, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৬৩",
+        "৬০",
+        "৬১",
+        "৬৭"
+      ],
+      "a": 1,
+      "e": "প্রতি পদে ৭ বিয়োগ: ৯৫, ৮৮, ৮১, ৭৪, ৬৭ ⇒ ৬০।",
+      "t": "অন্তর −৭ স্থির।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Easy",
+      "q": "১৩, ২৫, ?, ৪৯, ৬১, ৭৩ — প্রশ্নবোধক স্থানে কোন সংখ্যাটি বসবে?",
+      "o": [
+        "৩৯",
+        "৩৫",
+        "৩৭",
+        "৩৬"
+      ],
+      "a": 2,
+      "e": "প্রতি পদে ১২ যোগ: ১৩, ২৫, ৩৭, ৪৯ …।",
+      "t": "দুই পাশের পদের গড়ই লুপ্ত পদ: (২৫ + ৪৯)/২।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Easy",
+      "q": "৪.৫, ৭, ৯.৫, ১২, ১৪.৫, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "১৫.৫",
+        "১৬",
+        "১৭.৫",
+        "১৭"
+      ],
+      "a": 3,
+      "e": "প্রতি পদে ২.৫ যোগ ⇒ ৪.৫, ৭, ৯.৫, ১২, ১৪.৫, ১৭।",
+      "t": "দশমিক অন্তরও স্থির থাকতে পারে।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "−১১, −৫, ১, ৭, ১৩, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "১৯",
+        "১৭",
+        "২১",
+        "১৩"
+      ],
+      "a": 0,
+      "e": "প্রতি পদে ৬ যোগ: −১১, −৫, ১, ৭, ১৩ ⇒ ১৯।",
+      "t": "ঋণাত্মক থেকে শুরু হলেও অন্তর স্থির।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Easy",
+      "q": "১২০, ১০৫, ৯০, ?, ৬০, ৪৫ — ধারাটির লুপ্ত সংখ্যা কোনটি?",
+      "o": [
+        "৮০",
+        "৭৫",
+        "৭০",
+        "৬৫"
+      ],
+      "a": 1,
+      "e": "প্রতি পদে ১৫ কমে: ১২০, ১০৫, ৯০, ৭৫, ৬০, ৪৫।",
+      "t": "অন্তর −১৫।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৩, ১৪, ২৫, ৩৬, ?, ৫৮ — প্রশ্নবোধক স্থানে কোন সংখ্যাটি বসবে?",
+      "o": [
+        "৪৯",
+        "৪৫",
+        "৪৭",
+        "৪৬"
+      ],
+      "a": 2,
+      "e": "অন্তর ১১: ৩, ১৪, ২৫, ৩৬, ৪৭, ৫৮।",
+      "t": "(৩৬ + ৫৮)/২ = ৪৭।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "একটি সমান্তর ধারার প্রথম পদ ৫ ও সাধারণ অন্তর ৪ হলে ধারাটির ১৫তম পদ কত?",
+      "o": [
+        "৫৬",
+        "৬০",
+        "৬৫",
+        "৬১"
+      ],
+      "a": 3,
+      "e": "n-তম পদ = a + (n − ১)d = ৫ + ১৪ × ৪ = ৬১।",
+      "t": "শেষ পদ = প্রথম + (n − ১) × অন্তর।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "২, ৯, ১৬, ২৩, … ধারার কততম পদ ১০০?",
+      "o": [
+        "১৫",
+        "১৪",
+        "১৬",
+        "১৩"
+      ],
+      "a": 0,
+      "e": "২ + (n − ১)৭ = ১০০ ⇒ n − ১ = ১৪ ⇒ n = ১৫।",
+      "t": "(শেষ − প্রথম)/অন্তর + ১।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Easy",
+      "q": "১০০০, ৮৭৫, ৭৫০, ৬২৫, ৫০০, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৪০০",
+        "৩৭৫",
+        "৪২৫",
+        "৩৫০"
+      ],
+      "a": 1,
+      "e": "প্রতি পদে ১২৫ কমে ⇒ ১০০০, ৮৭৫, ৭৫০, ৬২৫, ৫০০, ৩৭৫।",
+      "t": "অন্তর −১২৫।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১৭, ৩০, ৪৩, ৫৬, ৬৯, ৮২, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৯৭",
+        "৯৩",
+        "৯৫",
+        "৯১"
+      ],
+      "a": 2,
+      "e": "অন্তর ১৩: ১৭, ৩০, ৪৩, ৫৬, ৬৯, ৮২ ⇒ ৯৫।",
+      "t": "শেষ পদ + অন্তর।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৪, ১১, ১৮, ২৫, … ধারার প্রথম ১০টি পদের যোগফল কত?",
+      "o": [
+        "৩১৫",
+        "৩২৫",
+        "৩৬৫",
+        "৩৫৫"
+      ],
+      "a": 3,
+      "e": "Sn = n/২ [২a + (n − ১)d] = ৫ × (৮ + ৬৩) = ৩৫৫।",
+      "t": "যোগফল = পদসংখ্যা × (প্রথম + শেষ)/২ = ১০ × (৪ + ৬৭)/২।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "২, ৫, ১১, ২০, ৩২, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৪৭",
+        "৪৪",
+        "৫০",
+        "৪৫"
+      ],
+      "a": 0,
+      "e": "অন্তর ৩, ৬, ৯, ১২, ১৫: ২, ৫, ১১, ২০, ৩২ ⇒ ৪৭।",
+      "t": "অন্তরগুলো নিজেই সমান্তর।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৬, ৯, ১৪, ২১, ৩০, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৪০",
+        "৪১",
+        "৩৭",
+        "৪২"
+      ],
+      "a": 1,
+      "e": "অন্তর ৩, ৫, ৭, ৯, ১১ (বিজোড় সংখ্যা): ৬, ৯, ১৪, ২১, ৩০ ⇒ ৪১।",
+      "t": "অন্তর বিজোড় সংখ্যা ⇒ পদ = n² + ৫।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১০, ১১, ১৫, ২৪, ৪০, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৬১",
+        "৭০",
+        "৬৫",
+        "৬৬"
+      ],
+      "a": 2,
+      "e": "অন্তর ১, ৪, ৯, ১৬, ২৫ (বর্গ): ১০, ১১, ১৫, ২৪, ৪০ ⇒ ৬৫।",
+      "t": "অন্তর পূর্ণবর্গ।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "৫, ৬, ১৪, ৪১, ১০৫, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "২৩১",
+        "২১৬",
+        "১০৫",
+        "২৩০"
+      ],
+      "a": 3,
+      "e": "অন্তর ১, ৮, ২৭, ৬৪, ১২৫ (ঘন): ৫, ৬, ১৪, ৪১, ১০৫ ⇒ ২৩০।",
+      "t": "অন্তর পূর্ণঘন।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১০০, ৯৬, ৮৮, ৭৬, ৬০, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৪০",
+        "৪৪",
+        "৩৬",
+        "৪৫"
+      ],
+      "a": 0,
+      "e": "অন্তর −৪, −৮, −১২, −১৬, −২০: ১০০, ৯৬, ৮৮, ৭৬, ৬০ ⇒ ৪০।",
+      "t": "বিয়োগের পরিমাণও সমান্তরে বাড়ে।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১, ২, ৪, ?, ১১, ১৬, ২২ — ধারাটির লুপ্ত সংখ্যা কোনটি?",
+      "o": [
+        "৬",
+        "৭",
+        "৮",
+        "৫"
+      ],
+      "a": 1,
+      "e": "অন্তর ১, ২, ৩, ৪, …: ১, ২, ৪, ৭, ১১, ১৬, ২২।",
+      "t": "ক্রমিক স্বাভাবিক সংখ্যা যোগ।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "নিকট-সম্পর্কিত, পর্যালোচিত — ৪৫-১৮২ (1 2 4 7 11 → 16); এখানে মাঝের লুপ্ত পদ ও দীর্ঘ ধারা",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৪, ৯, ১৯, ৩৪, ৫৪, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৭০",
+        "৭৫",
+        "৭৯",
+        "৮০"
+      ],
+      "a": 2,
+      "e": "অন্তর ৫, ১০, ১৫, ২০, ২৫: ৪, ৯, ১৯, ৩৪, ৫৪ ⇒ ৭৯।",
+      "t": "অন্তর ৫-এর গুণিতক।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "৩, ৫, ৯, ১৭, ৩৩, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৬৪",
+        "৬১",
+        "৬৭",
+        "৬৫"
+      ],
+      "a": 3,
+      "e": "অন্তর ২, ৪, ৮, ১৬, ৩২: ৩, ৫, ৯, ১৭, ৩৩ ⇒ ৬৫।",
+      "t": "অন্তর দ্বিগুণ হয় ⇒ পদ = ২ⁿ + ১।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "২০, ২৭, ২৪, ৩১, ২৮, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৩৫",
+        "৩৬",
+        "৩৩",
+        "২৯"
+      ],
+      "a": 0,
+      "e": "পর্যায়ক্রমে +৭ ও −৩: ২০, ২৭, ২৪, ৩১, ২৮ ⇒ ৩৫।",
+      "t": "দুটি অন্তর পালাক্রমে।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "৭, ৯, ১৫, ২৭, ৪৭, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৬৯",
+        "৭৭",
+        "৭৫",
+        "৭৮"
+      ],
+      "a": 1,
+      "e": "অন্তর ২, ৬, ১২, ২০, ৩০ (n(n+১)): ৭, ৯, ১৫, ২৭, ৪৭ ⇒ ৭৭।",
+      "t": "অন্তর ১×২, ২×৩, ৩×৪ …।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৫০, ৪৯, ৪৬, ৪১, ৩৪, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "২৭",
+        "২৪",
+        "২৫",
+        "২৬"
+      ],
+      "a": 2,
+      "e": "বিয়োগ ১, ৩, ৫, ৭, ৯: ৫০, ৪৯, ৪৬, ৪১, ৩৪ ⇒ ২৫।",
+      "t": "বিয়োগ বিজোড় সংখ্যা।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "২, ৩, ৬, ১৫, ৪২, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৮০",
+        "৮৩",
+        "১৬২",
+        "১২৩"
+      ],
+      "a": 3,
+      "e": "অন্তর ১, ৩, ৯, ২৭, ৮১: ২, ৩, ৬, ১৫, ৪২ ⇒ ১২৩।",
+      "t": "অন্তর ৩ গুণ হয়।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Easy",
+      "q": "৩, ১২, ৪৮, ১৯২, ৭৬৮, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৩০৭২",
+        "২০৪৮",
+        "৭৬৮",
+        "৩০৭৩"
+      ],
+      "a": 0,
+      "e": "প্রতি পদে ৪ গুণ: ৩, ১২, ৪৮, ১৯২, ৭৬৮ ⇒ ৩০৭২।",
+      "t": "অনুপাত স্থির = ৪।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Easy",
+      "q": "৬৪০০, ৩২০০, ১৬০০, ৮০০, ৪০০, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৪০০",
+        "২০০",
+        "১০০",
+        "৩০০"
+      ],
+      "a": 1,
+      "e": "প্রতি পদে অর্ধেক: ৬৪০০, ৩২০০, ১৬০০, ৮০০, ৪০০ ⇒ ২০০।",
+      "t": "অনুপাত ১/২।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৫, ১৫, ?, ১৩৫, ৪০৫, ১২১৫ — প্রশ্নবোধক স্থানে কোন সংখ্যাটি বসবে?",
+      "o": [
+        "৪০",
+        "৩০",
+        "৪৫",
+        "৫০"
+      ],
+      "a": 2,
+      "e": "প্রতি পদে ৩ গুণ: ৫, ১৫, ৪৫, ১৩৫ …।",
+      "t": "১৩৫ ÷ ৩ = ৪৫।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১, ১, ২, ৬, ২৪, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৯৬",
+        "১০০",
+        "৬০০",
+        "১২০"
+      ],
+      "a": 3,
+      "e": "গুণক ১, ২, ৩, ৪, ৫: ১, ১, ২, ৬, ২৪ ⇒ ১২০ (ক্রমগুণিতক)।",
+      "t": "পদ = (n − ১)!।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "২, ৪, ১২, ৪৮, ২৪০, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "১৪৪০",
+        "৬০০",
+        "৩৬০",
+        "১৪৪১"
+      ],
+      "a": 0,
+      "e": "গুণক ২, ৩, ৪, ৫, ৬: ২, ৪, ১২, ৪৮, ২৪০ ⇒ ১৪৪০।",
+      "t": "প্রতি ধাপে গুণক ১ করে বাড়ে।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৭২৯, ২৪৩, ৮১, ২৭, ৯, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৯",
+        "৩",
+        "১",
+        "৬"
+      ],
+      "a": 1,
+      "e": "প্রতি পদে ৩ দিয়ে ভাগ: ৭২৯, ২৪৩, ৮১, ২৭, ৯ ⇒ ৩।",
+      "t": "অনুপাত ১/৩।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "৭, ১৫, ৩১, ৬৩, ১২৭, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "১২৭",
+        "২২৩",
+        "২৫৫",
+        "২৫৬"
+      ],
+      "a": 2,
+      "e": "প্রতি পদ = আগের পদ × ২ + ১: ৭, ১৫, ৩১, ৬৩, ১২৭ ⇒ ২৫৫।",
+      "t": "পদ + ১ = ৮, ১৬, ৩২ … (২-এর ঘাত)।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "৪, ১০, ২৮, ৮২, ২৪৪, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৭২৬",
+        "২৪২",
+        "২৭০",
+        "৭৩০"
+      ],
+      "a": 3,
+      "e": "প্রতি পদ = আগের × ৩ − ২: ৪, ১০, ২৮, ৮২, ২৪৪ ⇒ ৭৩০।",
+      "t": "পদ − ১ = ৩, ৯, ২৭, ৮১ … (৩-এর ঘাত)।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "০.৫, ৩, ১৮, ১০৮, ৬৪৮, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৩৮৮৮",
+        "১২৯৬",
+        "৩৮৮০",
+        "৩৮৮৯"
+      ],
+      "a": 0,
+      "e": "প্রতি পদে ৬ গুণ: ০.৫, ৩, ১৮, ১০৮, ৬৪৮ ⇒ ৩৮৮৮।",
+      "t": "অনুপাত ৬।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "একটি গুণোত্তর ধারার প্রথম পদ ৩ ও সাধারণ অনুপাত ২ হলে ৮ম পদ কত?",
+      "o": [
+        "৭৬৮",
+        "৩৮৪",
+        "১৯২",
+        "৩৯৬"
+      ],
+      "a": 1,
+      "e": "n-তম পদ = arⁿ⁻¹ = ৩ × ২⁷ = ৩৮৪।",
+      "t": "৮ম পদে ঘাত ৭।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "২, ৬, ১০, ৩০, ৩৪, ১০২, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৩০",
+        "৩৭",
+        "১০৬",
+        "৪২"
+      ],
+      "a": 2,
+      "e": "পর্যায়ক্রমে ×৩ ও +৪: ২, ৬, ১০, ৩০, ৩৪, ১০২ ⇒ ১০৬।",
+      "t": "দুটি প্রক্রিয়া পালাক্রমে।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "৫, ১০, ৭, ১৪, ১১, ২২, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৫২",
+        "২৬",
+        "২৫",
+        "১৯"
+      ],
+      "a": 3,
+      "e": "পর্যায়ক্রমে ×২ ও −৩: ৫, ১০, ৭, ১৪, ১১, ২২ ⇒ ১৯।",
+      "t": "×২, −৩, ×২, −৩ …।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১, ২, ৬, ১২, ৩৬, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৭২",
+        "৩৬",
+        "২১৬",
+        "৭৩"
+      ],
+      "a": 0,
+      "e": "পর্যায়ক্রমে ×২ ও ×৩: ১, ২, ৬, ১২, ৩৬ ⇒ ৭২।",
+      "t": "গুণক ২ ও ৩ পালাক্রমে।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "৩, ৪, ১০, ৩৩, ১৩৬, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৩৯৫",
+        "৬৮৫",
+        "৩২৫",
+        "৩০০"
+      ],
+      "a": 1,
+      "e": "পদ = আগের × n + n: ৩×১+১ = ৪, ৪×২+২ = ১০, ১০×৩+৩ = ৩৩, ৩৩×৪+৪ = ১৩৬ ⇒ ১৩৬×৫+৫ = ৬৮৫।",
+      "t": "গুণক ও যোগ্য একই ক্রমিক সংখ্যা।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১০, ১৯, ৩৬, ৬৯, ১৩৪, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "১২০",
+        "১৩৭",
+        "২৬৩",
+        "১২১"
+      ],
+      "a": 2,
+      "e": "পদ = আগের × ২ − n: ১০, ১৯, ৩৬, ৬৯, ১৩৪ ⇒ ২৬৩।",
+      "t": "×২ থেকে ক্রমে ১, ২, ৩ … বিয়োগ।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "২, ৩, ৮, ৬৩, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৩৯৬৭",
+        "৩৯৬৯",
+        "৪০৯৫",
+        "৩৯৬৮"
+      ],
+      "a": 3,
+      "e": "পদ = আগের পদের বর্গ − ১: ২, ৩, ৮, ৬৩ ⇒ ৬৩² − ১ = ৩৯৬৮।",
+      "t": "নিজের বর্গ থেকে ১ বিয়োগ।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৬৪, ৩২, ৪০, ২০, ২৮, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "১৪",
+        "৩৬",
+        "২৬",
+        "৪৪"
+      ],
+      "a": 0,
+      "e": "পর্যায়ক্রমে ÷২ ও +৮: ৬৪, ৩২, ৪০, ২০, ২৮ ⇒ ১৪।",
+      "t": "÷২, +৮ পালাক্রমে।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১, ৩, ৮, ১৯, ৪২, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৫৭",
+        "৮৯",
+        "৫২",
+        "৫৮"
+      ],
+      "a": 1,
+      "e": "পদ = আগের × ২ + n: ১, ৩, ৮, ১৯, ৪২ ⇒ ৮৯।",
+      "t": "×২-এর পর ক্রমিক সংখ্যা যোগ।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "৪, ১২, ১৬, ১৮, ১৯, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "১৬.৭৫",
+        "১৭.২৫",
+        "১৯.৫",
+        "১৮.৫"
+      ],
+      "a": 2,
+      "e": "পদ = আগের ÷ ২ + ১০: ৪, ১২, ১৬, ১৮, ১৯ ⇒ ১৯.৫।",
+      "t": "÷২ ও +১০।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৭, ১৩, ৩৮, ১৫১, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৭৫০",
+        "৭৫৫",
+        "৬০৪",
+        "৭৫৪"
+      ],
+      "a": 3,
+      "e": "পদ = আগের × (n + ১) − ১: ৭×২−১ = ১৩, ১৩×৩−১ = ৩৮, ৩৮×৪−১ = ১৫১ ⇒ ১৫১×৫−১ = ৭৫৪।",
+      "t": "গুণক ক্রমে বাড়ে, প্রতিবার ১ বিয়োগ।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৫, ১০, ১৭, ২৬, ৩৭, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৫০",
+        "৪৯",
+        "৬৪",
+        "৫১"
+      ],
+      "a": 0,
+      "e": "পদ = n² + ১ (n = ২, ৩, …): ৫, ১০, ১৭, ২৬, ৩৭ ⇒ ৫০।",
+      "t": "পূর্ণবর্গ + ১।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৭, ১৪, ২৩, ৩৪, ৪৭, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৬৬",
+        "৬২",
+        "৮১",
+        "৬৩"
+      ],
+      "a": 1,
+      "e": "পদ = n² − ২ (n = ৩ থেকে): ৭, ১৪, ২৩, ৩৪, ৪৭ ⇒ ৬২।",
+      "t": "পূর্ণবর্গ − ২।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১, ৮, ২৭, ৬৪, ১২৫, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "১৯৬",
+        "১২৫",
+        "২১৬",
+        "৩৪৩"
+      ],
+      "a": 2,
+      "e": "পূর্ণঘন: ১, ৮, ২৭, ৬৪, ১২৫ ⇒ ২১৬।",
+      "t": "n³।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "২, ৯, ২৮, ৬৫, ১২৬, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "২১৮",
+        "১২৬",
+        "২১৫",
+        "২১৭"
+      ],
+      "a": 3,
+      "e": "পদ = n³ + ১: ২, ৯, ২৮, ৬৫, ১২৬ ⇒ ২১৭।",
+      "t": "পূর্ণঘন + ১।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১, ৯, ২৫, ৪৯, ৮১, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "১২১",
+        "১০০",
+        "১৪৪",
+        "৮১"
+      ],
+      "a": 0,
+      "e": "বিজোড় সংখ্যার বর্গ: ১, ৯, ২৫, ৪৯, ৮১ ⇒ ১২১।",
+      "t": "১², ৩², ৫² …।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "২, ৬, ১২, ২০, ৩০, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৩৬",
+        "৪২",
+        "৪৯",
+        "৪০"
+      ],
+      "a": 1,
+      "e": "পদ = n(n + ১): ২, ৬, ১২, ২০, ৩০ ⇒ ৪২।",
+      "t": "ক্রমিক দুই সংখ্যার গুণফল।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "৬, ২৪, ৬০, ১২০, ২১০, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৩৪৩",
+        "৩৩০",
+        "৩৩৬",
+        "৩০০"
+      ],
+      "a": 2,
+      "e": "পদ = n³ − n (n = ২ থেকে): ৬, ২৪, ৬০, ১২০, ২১০ ⇒ ৩৩৬।",
+      "t": "তিনটি ক্রমিক সংখ্যার গুণফল: ৬×৭×৮ = ৩৩৬।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১০০, ৮১, ৬৪, ৪৯, ৩৬, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৪৯",
+        "৩৬",
+        "১৬",
+        "২৫"
+      ],
+      "a": 3,
+      "e": "বর্গ কমছে: ১০০, ৮১, ৬৪, ৪৯, ৩৬ ⇒ ২৫।",
+      "t": "১০², ৯², ৮² …।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "২, ৬, ?, ২০, ৩০, ৪২ — প্রশ্নবোধক স্থানে কোন সংখ্যাটি বসবে?",
+      "o": [
+        "১২",
+        "৯",
+        "১১",
+        "১৪"
+      ],
+      "a": 0,
+      "e": "পদ = n² + n: ২, ৬, ১২, ২০, ৩০, ৪২।",
+      "t": "n(n+১) — ৩² + ৩ = ১২।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "১, ৩, ৭, ১৫, ৩১, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৩১",
+        "৬৩",
+        "৬৪",
+        "৬৫"
+      ],
+      "a": 1,
+      "e": "পদ = ২ⁿ − ১: ১, ৩, ৭, ১৫, ৩১ ⇒ ৬৩।",
+      "t": "২-এর ঘাত থেকে ১ কম।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Easy",
+      "q": "১১, ১৩, ১৭, ১৯, ২৩, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৩১",
+        "২৭",
+        "২৯",
+        "২৫"
+      ],
+      "a": 2,
+      "e": "ক্রমিক মৌলিক সংখ্যা: ১১, ১৩, ১৭, ১৯, ২৩ ⇒ ২৯।",
+      "t": "পরের মৌলিক সংখ্যা।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৪, ৯, ২৫, ৪৯, ১২১, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "১৯৬",
+        "১৪৪",
+        "১২১",
+        "১৬৯"
+      ],
+      "a": 3,
+      "e": "মৌলিক সংখ্যার বর্গ: ৪, ৯, ২৫, ৪৯, ১২১ ⇒ ১৬৯।",
+      "t": "২², ৩², ৫², ৭², ১১², ১৩²।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৪, ৬, ৮, ১২, ১৪, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "১৮",
+        "১৬",
+        "২০",
+        "১৯"
+      ],
+      "a": 0,
+      "e": "মৌলিক সংখ্যা + ১: ৪, ৬, ৮, ১২, ১৪ ⇒ ১৮।",
+      "t": "৩+১, ৫+১, ৭+১, ১১+১ …।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "৬, ১৫, ৩৫, ৭৭, ১৪৩, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "১৮৭",
+        "২২১",
+        "১৪৩",
+        "২৮৯"
+      ],
+      "a": 1,
+      "e": "পরপর দুটি মৌলিকের গুণফল: ২×৩, ৩×৫, ৫×৭, ৭×১১, ১১×১৩ ⇒ ১৩×১৭ = ২২১।",
+      "t": "পাশাপাশি মৌলিক সংখ্যার গুণফল।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৪, ৬, ১০, ১৪, ২২, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "২৮",
+        "২৪",
+        "২৬",
+        "২২"
+      ],
+      "a": 2,
+      "e": "মৌলিক সংখ্যার দ্বিগুণ: ৪, ৬, ১০, ১৪, ২২ ⇒ ২৬।",
+      "t": "২ × মৌলিক।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "২, ৫, ১০, ১৭, ২৮, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৪৩",
+        "৫৪",
+        "৫১",
+        "৪১"
+      ],
+      "a": 3,
+      "e": "ক্রমিক মৌলিক যোগ: ২, ২+৩ = ৫, ৫+৫ = ১০, ১০+৭ = ১৭, ১৭+১১ = ২৮ ⇒ ২৮+১৩ = ৪১।",
+      "t": "অন্তর ৩, ৫, ৭, ১১, ১৩ (মৌলিক)।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "২, ২০, ৫, ১৮, ৮, ১৬, ১১, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "১৪",
+        "১২",
+        "১১",
+        "১৬"
+      ],
+      "a": 0,
+      "e": "বিজোড় অবস্থানে ২, ৫, ৮, ১১ (+৩); জোড় অবস্থানে ২০, ১৮, ১৬, ? (−২) ⇒ ১৪।",
+      "t": "একান্তর পদ আলাদা করে দেখো।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "নিকট-সম্পর্কিত, পর্যালোচিত — ৩৬-১৯১ (3,7,4,14,5,21); এখানে দুটি সমান্তর ধারা",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১, ২, ২, ৪, ৩, ৮, ৪, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "১০",
+        "১৬",
+        "১২",
+        "১৮"
+      ],
+      "a": 1,
+      "e": "বিজোড় অবস্থানে ১, ২, ৩, ৪; জোড় অবস্থানে ২, ৪, ৮, ? ⇒ ১৬।",
+      "t": "একটি ধারা +১, অন্যটি ×২।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "৫, ১, ১০, ৪, ১৫, ৯, ?, ১৬ — প্রশ্নবোধক স্থানে কোন সংখ্যাটি বসবে?",
+      "o": [
+        "২১",
+        "১৬",
+        "২০",
+        "২৫"
+      ],
+      "a": 2,
+      "e": "বিজোড় অবস্থানে ৫, ১০, ১৫, ? (+৫) ⇒ ২০; জোড় অবস্থানে ১, ৪, ৯, ১৬ (বর্গ)।",
+      "t": "একটি ৫-এর গুণিতক, অন্যটি বর্গ।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১০০, ৩, ৯০, ৭, ৮০, ১১, ৭০, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৭০",
+        "১৭",
+        "১৯",
+        "১৫"
+      ],
+      "a": 3,
+      "e": "বিজোড় অবস্থানে ১০০, ৯০, ৮০, ৭০; জোড় অবস্থানে ৩, ৭, ১১, ? ⇒ ১৫।",
+      "t": "দুটি ধারা বিপরীতমুখী।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "১, ১, ৩, ৩, ৯, ৫, ২৭, ৭, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৮১",
+        "৬৪",
+        "২৪৩",
+        "২৭"
+      ],
+      "a": 0,
+      "e": "বিজোড় অবস্থানে ১, ৩, ৯, ২৭, ? (×৩) ⇒ ৮১; জোড় অবস্থানে ১, ৩, ৫, ৭।",
+      "t": "×৩ ও +২ ধারা মিশ্রিত।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১১, ৯, ২২, ৮, ৩৩, ৭, ৪৪, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৭",
+        "৬",
+        "৪",
+        "৫৫"
+      ],
+      "a": 1,
+      "e": "বিজোড় অবস্থানে ১১, ২২, ৩৩, ৪৪; জোড় অবস্থানে ৯, ৮, ৭, ? ⇒ ৬।",
+      "t": "১১-এর গুণিতক ও ক্রমহ্রাসমান সংখ্যা।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "৪, ৮, ৯, ২৭, ১৬, ৬৪, ২৫, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "২১৬",
+        "৬৪",
+        "১২৫",
+        "১২৬"
+      ],
+      "a": 2,
+      "e": "বিজোড় অবস্থানে ৪, ৯, ১৬, ২৫ (বর্গ); জোড় অবস্থানে ৮, ২৭, ৬৪, ? (ঘন) ⇒ ১২৫।",
+      "t": "একই ভিত্তির বর্গ ও ঘন পালাক্রমে।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৭, ৫০, ১৩, ৪৫, ১৯, ৪০, ?, ৩৫ — প্রশ্নবোধক স্থানে কোন সংখ্যাটি বসবে?",
+      "o": [
+        "৩১",
+        "২৬",
+        "৩০",
+        "২৫"
+      ],
+      "a": 3,
+      "e": "বিজোড় অবস্থানে ৭, ১৩, ১৯, ? (+৬) ⇒ ২৫; জোড় অবস্থানে ৫০, ৪৫, ৪০, ৩৫।",
+      "t": "+৬ ও −৫।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "২, ৩, ৪, ৫, ৮, ৯, ১৬, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "১৭",
+        "১৬",
+        "১৫",
+        "৩৩"
+      ],
+      "a": 0,
+      "e": "বিজোড় অবস্থানে ২, ৪, ৮, ১৬; জোড় অবস্থানে প্রতিটির সঙ্গে ১ যোগ: ৩, ৫, ৯, ? ⇒ ১৭।",
+      "t": "জোড়-পদ = আগের পদ + ১।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৪, ৩, ৮, ৭, ১২, ১১, ১৬, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "১৭",
+        "১৫",
+        "১২",
+        "১৬"
+      ],
+      "a": 1,
+      "e": "জোড়ায় জোড়ায়: (৪, ৩), (৮, ৭), (১২, ১১), (১৬, ?) ⇒ ১৫।",
+      "t": "প্রতি জোড়ায় দ্বিতীয়টি ১ কম।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৩, ৬, ১২, ২৫, ৪৮, ৯৬ — ধারাটিতে কোন সংখ্যাটি নিয়ম মানেনি?",
+      "o": [
+        "৪৮",
+        "১২",
+        "২৫",
+        "৬"
+      ],
+      "a": 2,
+      "e": "নিয়ম ×২: ৩, ৬, ১২, ২৪, ৪৮, ৯৬ — ২৫ এর জায়গায় ২৪ হবে।",
+      "t": "অনুপাত মিলিয়ে দেখো।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১, ৪, ৯, ১৬, ২৬, ৩৬ — ধারাটিতে কোন সংখ্যাটি নিয়ম মানেনি?",
+      "o": [
+        "৯",
+        "১৬",
+        "৩৬",
+        "২৬"
+      ],
+      "a": 3,
+      "e": "বর্গসংখ্যা ১, ৪, ৯, ১৬, ২৫, ৩৬ — ২৬ এর জায়গায় ২৫।",
+      "t": "পূর্ণবর্গ নয় এমন পদ খোঁজো।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৫, ১১, ১৭, ২৩, ৩০, ৩৫, ৪১ — ধারাটিতে কোন সংখ্যাটি নিয়ম মানেনি?",
+      "o": [
+        "৩০",
+        "২৩",
+        "৩৫",
+        "১৭"
+      ],
+      "a": 0,
+      "e": "অন্তর ৬: ৫, ১১, ১৭, ২৩, ২৯, ৩৫, ৪১ — ৩০ এর জায়গায় ২৯।",
+      "t": "অন্তর ভেঙেছে কোথায় দেখো।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "২, ৪, ৮, ১৫, ২২, ৩২ — ধারাটিতে কোন সংখ্যাটি নিয়ম মানেনি?",
+      "o": [
+        "৮",
+        "১৫",
+        "২২",
+        "৩২"
+      ],
+      "a": 1,
+      "e": "অন্তর ২, ৪, ৬, ৮, ১০ হলে ধারা ২, ৪, ৮, ১৪, ২২, ৩২ — ১৫ এর জায়গায় ১৪ হবে।",
+      "t": "পরপর অন্তর লিখে দেখো।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "৭, ১১, ১৫, ১৭, ১৯, ২৩ — ধারাটিতে কোন সংখ্যাটি নিয়ম মানেনি?",
+      "o": [
+        "১৯",
+        "৭",
+        "১৫",
+        "২৩"
+      ],
+      "a": 2,
+      "e": "ক্রমিক মৌলিক সংখ্যা ৭, ১১, ১৩, ১৭, ১৯, ২৩ — ১৫ মৌলিক নয় (১৩ হবে)।",
+      "t": "যৌগিক সংখ্যাটি খোঁজো।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১, ৩, ৯, ২৭, ৮০, ২৪৩ — ধারাটিতে কোন সংখ্যাটি নিয়ম মানেনি?",
+      "o": [
+        "৯",
+        "২৭",
+        "২৪৩",
+        "৮০"
+      ],
+      "a": 3,
+      "e": "নিয়ম ×৩: ১, ৩, ৯, ২৭, ৮১, ২৪৩ — ৮০ এর জায়গায় ৮১।",
+      "t": "প্রতি পদ আগের তিনগুণ।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "১, ৮, ২৫, ৬৪, ১২৫, ২১৬ — ধারাটিতে কোন সংখ্যাটি নিয়ম মানেনি?",
+      "o": [
+        "২৫",
+        "৮",
+        "৬৪",
+        "১২৫"
+      ],
+      "a": 0,
+      "e": "পূর্ণঘন ১, ৮, ২৭, ৬৪, ১২৫, ২১৬ — ২৫ এর জায়গায় ২৭।",
+      "t": "ঘনসংখ্যা মিলিয়ে দেখো।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৯০, ৭৮, ৬৬, ৫৬, ৪২, ৩০ — ধারাটিতে কোন সংখ্যাটি নিয়ম মানেনি?",
+      "o": [
+        "৭৮",
+        "৫৬",
+        "৪২",
+        "৩০"
+      ],
+      "a": 1,
+      "e": "অন্তর −১২: ৯০, ৭৮, ৬৬, ৫৪, ৪২, ৩০ — ৫৬ এর জায়গায় ৫৪।",
+      "t": "স্থির বিয়োগফল যাচাই।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "২, ৬, ১২, ২০, ৩১, ৪২ — ধারাটিতে কোন সংখ্যাটি নিয়ম মানেনি?",
+      "o": [
+        "৪২",
+        "১২",
+        "৩১",
+        "২০"
+      ],
+      "a": 2,
+      "e": "n(n+১): ২, ৬, ১২, ২০, ৩০, ৪২ — ৩১ এর জায়গায় ৩০।",
+      "t": "ক্রমিক দুই সংখ্যার গুণফল।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৭, ১৫, ২১, ২৮, ৩৫, ৪২ — ধারাটিতে কোন সংখ্যাটি নিয়ম মানেনি?",
+      "o": [
+        "৪২",
+        "২১",
+        "২৮",
+        "১৫"
+      ],
+      "a": 3,
+      "e": "৭-এর গুণিতক: ৭, ১৪, ২১, ২৮, ৩৫, ৪২ — ১৫ এর জায়গায় ১৪।",
+      "t": "সব পদ ৭ দিয়ে বিভাজ্য কি না দেখো।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Easy",
+      "q": "B, E, H, K, N, … — ধারাটির পরবর্তী বর্ণ কোনটি?",
+      "o": [
+        "Q",
+        "P",
+        "R",
+        "S"
+      ],
+      "a": 0,
+      "e": "অবস্থান ২, ৫, ৮, ১১, ১৪ (+৩) ⇒ ১৭ = Q।",
+      "t": "বর্ণের অবস্থান নম্বর লিখে নাও।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Easy",
+      "q": "Z, X, V, T, R, … — ধারাটির পরবর্তী বর্ণ কোনটি?",
+      "o": [
+        "O",
+        "P",
+        "Q",
+        "N"
+      ],
+      "a": 1,
+      "e": "অবস্থান ২৬, ২৪, ২২, ২০, ১৮ (−২) ⇒ ১৬ = P।",
+      "t": "উল্টো দিকে এক বর্ণ বাদ।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "A, B, D, G, K, … — ধারাটির পরবর্তী বর্ণ কোনটি?",
+      "o": [
+        "Q",
+        "O",
+        "P",
+        "R"
+      ],
+      "a": 2,
+      "e": "অবস্থান ১, ২, ৪, ৭, ১১ (অন্তর ১, ২, ৩, ৪) ⇒ ১৬ = P।",
+      "t": "অন্তর ক্রমে বাড়ে।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "C, F, J, O, … — ধারাটির পরবর্তী বর্ণ কোনটি?",
+      "o": [
+        "W",
+        "T",
+        "V",
+        "U"
+      ],
+      "a": 3,
+      "e": "অবস্থান ৩, ৬, ১০, ১৫ (অন্তর ৩, ৪, ৫) ⇒ ২১ = U।",
+      "t": "অন্তর ৩, ৪, ৫, ৬।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "A, D, I, P, … — ধারাটির পরবর্তী বর্ণ কোনটি?",
+      "o": [
+        "Y",
+        "X",
+        "W",
+        "Z"
+      ],
+      "a": 0,
+      "e": "অবস্থান ১, ৪, ৯, ১৬ (বর্গ) ⇒ ২৫ = Y।",
+      "t": "অবস্থান পূর্ণবর্গ।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "E, J, ?, T, Y — প্রশ্নবোধক স্থানে কোন বর্ণ বসবে?",
+      "o": [
+        "N",
+        "O",
+        "P",
+        "M"
+      ],
+      "a": 1,
+      "e": "অবস্থান ৫-এর গুণিতক: E, J, ?, T, Y ⇒ ১৫ = O।",
+      "t": "৫, ১০, ১৫, ২০, ২৫।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "B, C, E, G, K, … — ধারাটির পরবর্তী বর্ণ কোনটি?",
+      "o": [
+        "N",
+        "L",
+        "M",
+        "Q"
+      ],
+      "a": 2,
+      "e": "অবস্থান মৌলিক সংখ্যা ২, ৩, ৫, ৭, ১১ ⇒ ১৩ = M।",
+      "t": "মৌলিক অবস্থানের বর্ণ।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "X, U, R, O, … — ধারাটির পরবর্তী বর্ণ কোনটি?",
+      "o": [
+        "I",
+        "K",
+        "M",
+        "L"
+      ],
+      "a": 3,
+      "e": "অবস্থান ২৪, ২১, ১৮, ১৫ (−৩) ⇒ ১২ = L।",
+      "t": "তিন বর্ণ পিছিয়ে।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "A, C, G, M, … — ধারাটির পরবর্তী বর্ণ কোনটি?",
+      "o": [
+        "U",
+        "T",
+        "V",
+        "S"
+      ],
+      "a": 0,
+      "e": "অবস্থান ১, ৩, ৭, ১৩ (অন্তর ২, ৪, ৬, ৮) ⇒ ২১ = U।",
+      "t": "অন্তর জোড় সংখ্যা।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "G, I, K, ?, O, Q — প্রশ্নবোধক স্থানে কোন বর্ণ বসবে?",
+      "o": [
+        "L",
+        "M",
+        "N",
+        "K"
+      ],
+      "a": 1,
+      "e": "অবস্থান ৭, ৯, ১১, ১৩, ১৫, ১৭ (+২) — লুপ্ত চতুর্থ পদ ১৩ = M।",
+      "t": "প্রতি ধাপে এক বর্ণ বাদ।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "Z, A, Y, B, ?, C — প্রশ্নবোধক স্থানে কোন বর্ণ বসবে?",
+      "o": [
+        "Y",
+        "W",
+        "X",
+        "C"
+      ],
+      "a": 2,
+      "e": "একান্তর: শেষ থেকে Z, Y, ? (২৬, ২৫, ২৪) এবং শুরু থেকে A, B, C ⇒ X।",
+      "t": "দুই প্রান্ত থেকে পালাক্রমে।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "D, H, L, P, … — ধারাটির পরবর্তী বর্ণ কোনটি?",
+      "o": [
+        "V",
+        "S",
+        "U",
+        "T"
+      ],
+      "a": 3,
+      "e": "অবস্থান ৪-এর গুণিতক: D, H, L, P ⇒ ২০ = T।",
+      "t": "প্রতি ধাপে তিন বর্ণ বাদ।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "AC, DF, GI, JL, … — পরবর্তী বর্ণ-জোড় কোনটি?",
+      "o": [
+        "MO",
+        "MN",
+        "LN",
+        "NP"
+      ],
+      "a": 0,
+      "e": "প্রথম বর্ণ ১, ৪, ৭, ১০ (+৩) ⇒ ১৩ = M; দ্বিতীয় বর্ণ প্রথমটির ২ পরে ⇒ ১৫ = O।",
+      "t": "প্রতি জোড়ের দুই বর্ণের ব্যবধান স্থির।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "AZ, BY, CX, ? , EV — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "DV",
+        "DW",
+        "EW",
+        "CW"
+      ],
+      "a": 1,
+      "e": "প্রথম বর্ণ সামনে (A, B, C, D), দ্বিতীয় বর্ণ পেছনে (Z, Y, X, W) ⇒ DW।",
+      "t": "বিপরীত বর্ণজোড়: অবস্থানের যোগফল ২৭।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "BDF, HJL, NPR, ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "TUV",
+        "SUW",
+        "TVX",
+        "UWY"
+      ],
+      "a": 2,
+      "e": "জোড় অবস্থানের বর্ণ ক্রমে: ২, ৪, ৬ | ৮, ১০, ১২ | ১৪, ১৬, ১৮ | ২০, ২২, ২৪ ⇒ TVX।",
+      "t": "প্রতি ধাপে একটি বর্ণ বাদ।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "ZY, WV, TS, QP, … — পরবর্তী বর্ণ-জোড় কোনটি?",
+      "o": [
+        "NL",
+        "ON",
+        "ML",
+        "NM"
+      ],
+      "a": 3,
+      "e": "প্রতি জোড়ের প্রথম বর্ণ ২৬, ২৩, ২০, ১৭ (−৩) ⇒ ১৪ = N; পরেরটি তার আগের বর্ণ ⇒ M।",
+      "t": "জোড়ের শুরু তিন করে পেছায়।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "AB, CE, FI, JN, ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "OT",
+        "OS",
+        "NS",
+        "PU"
+      ],
+      "a": 0,
+      "e": "প্রতি জোড়ের প্রথম বর্ণ আগের জোড়ের শেষ বর্ণের পরেরটি; জোড়ের ভেতরের ব্যবধান ১, ২, ৩, ৪, ৫ ⇒ ১৫ ও ২০ = OT।",
+      "t": "ভেতরের ব্যবধান ক্রমে বাড়ে।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "BA, DC, FE, HG, … — পরবর্তী বর্ণ-জোড় কোনটি?",
+      "o": [
+        "IJ",
+        "JI",
+        "JK",
+        "IH"
+      ],
+      "a": 1,
+      "e": "জোড়ায় জোড়ায় বর্ণ উল্টো: BA, DC, FE, HG ⇒ JI।",
+      "t": "দুটি করে বর্ণ, উল্টো ক্রমে।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "ABC, BDF, CFI, ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "DHK",
+        "DGJ",
+        "DHL",
+        "EJO"
+      ],
+      "a": 2,
+      "e": "n-তম গুচ্ছে অবস্থান n, ২n, ৩n ⇒ চতুর্থটি ৪, ৮, ১২ = DHL।",
+      "t": "গুচ্ছের বর্ণ গুণিতক অবস্থানে।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "A, BB, CCC, DDDD, … — নিয়ম মেনে পরের গুচ্ছটি কোনটি?",
+      "o": [
+        "FFFFF",
+        "EEEE",
+        "DDDDD",
+        "EEEEE"
+      ],
+      "a": 3,
+      "e": "n-তম বর্ণ n বার লেখা হয়েছে: A (১), BB (২), CCC (৩), DDDD (৪) ⇒ EEEEE (৫)।",
+      "t": "বর্ণের অবস্থান = পুনরাবৃত্তির সংখ্যা।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "A2, C6, E10, G14, ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "I18",
+        "H16",
+        "I16",
+        "J18"
+      ],
+      "a": 0,
+      "e": "বর্ণ A, C, E, G (এক বর্ণ বাদ) ⇒ I; সংখ্যা ২, ৬, ১০, ১৪ (+৪) ⇒ ১৮।",
+      "t": "বর্ণ ও সংখ্যা আলাদা নিয়মে।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "Z1, X3, V5, T7, ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "S9",
+        "R9",
+        "R8",
+        "Q9"
+      ],
+      "a": 1,
+      "e": "বর্ণ Z, X, V, T (−২) ⇒ R; সংখ্যা বিজোড় ১, ৩, ৫, ৭ ⇒ ৯।",
+      "t": "বর্ণ পেছায়, সংখ্যা বাড়ে।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "B4, D16, F36, H64, ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "I100",
+        "J81",
+        "J100",
+        "K121"
+      ],
+      "a": 2,
+      "e": "বর্ণের অবস্থান ২, ৪, ৬, ৮ ⇒ ১০ = J; সংখ্যা = অবস্থানের বর্গ ⇒ ১০০।",
+      "t": "সংখ্যা = বর্ণের অবস্থান²।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "1A, 3D, 5G, 7J, ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "9N",
+        "9L",
+        "8M",
+        "9M"
+      ],
+      "a": 3,
+      "e": "সংখ্যা ১, ৩, ৫, ৭ ⇒ ৯; বর্ণ A, D, G, J (+৩) ⇒ M।",
+      "t": "বর্ণ তিন ঘর করে এগোয়।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "C3, F6, I9, L12, ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "O15",
+        "N14",
+        "O14",
+        "P16"
+      ],
+      "a": 0,
+      "e": "বর্ণের অবস্থানই সংখ্যা: C = ৩, F = ৬ … ⇒ O = ১৫।",
+      "t": "সংখ্যা = বর্ণের অবস্থান।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "A1B, C2D, E3F, ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "G4I",
+        "G4H",
+        "H4I",
+        "F4G"
+      ],
+      "a": 1,
+      "e": "বর্ণ জোড়ায় এগোয় (AB, CD, EF, GH), মাঝে সংখ্যা ১, ২, ৩, ৪ ⇒ G৪H।",
+      "t": "জোড় বর্ণের মাঝে ক্রমিক সংখ্যা।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "Y25, W23, U21, S19, ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "Q18",
+        "R18",
+        "Q17",
+        "P16"
+      ],
+      "a": 2,
+      "e": "বর্ণ Y, W, U, S (−২) ⇒ Q; সংখ্যা = বর্ণের অবস্থান ⇒ ১৭।",
+      "t": "সংখ্যা বর্ণের অবস্থান নির্দেশ করে।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "3C, 6F, 9I, 12L, ? — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "15P",
+        "15N",
+        "14O",
+        "15O"
+      ],
+      "a": 3,
+      "e": "সংখ্যা ৩-এর গুণিতক এবং বর্ণ সেই অবস্থানের (৩ = C, ৬ = F, ৯ = I, ১২ = L) ⇒ ১৫ = O।",
+      "t": "সংখ্যা = বর্ণের অবস্থান।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১/২, ২/৩, ৩/৪, ৪/৫, … — ধারাটির পরবর্তী পদ কোনটি?",
+      "o": [
+        "৫/৬",
+        "৬/৭",
+        "৫/৭",
+        "৪/৬"
+      ],
+      "a": 0,
+      "e": "লব ও হর একে একে বাড়ে: n/(n + ১) ⇒ ৫/৬।",
+      "t": "লব ১, ২, ৩ …; হর লবের চেয়ে ১ বেশি।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১/৩, ১/৯, ১/২৭, ?, ১/২৪৩ — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "১/৫৪",
+        "১/৮১",
+        "১/৭২",
+        "১/৩৬"
+      ],
+      "a": 1,
+      "e": "প্রতি পদে ১/৩ গুণ: হর ৩, ৯, ২৭, ৮১, ২৪৩।",
+      "t": "হর ৩-এর ঘাত।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "০.২, ০.৬, ১.৮, ৫.৪, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "১৬",
+        "১০.৮",
+        "১৬.২",
+        "১৫.৪"
+      ],
+      "a": 2,
+      "e": "প্রতি পদে ৩ গুণ: ৫.৪ × ৩ = ১৬.২।",
+      "t": "অনুপাত ৩।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "২/৩, ৪/৯, ৮/২৭, ?, ৩২/২৪৩ — প্রশ্নবোধক স্থানে কোনটি বসবে?",
+      "o": [
+        "১০/৮১",
+        "১৬/৫৪",
+        "১২/৮১",
+        "১৬/৮১"
+      ],
+      "a": 3,
+      "e": "লব ২-এর ঘাত, হর ৩-এর ঘাত: (২/৩)⁴ = ১৬/৮১।",
+      "t": "পদ = (২/৩)ⁿ।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "১.৫, ৩, ৪.৫, ৬, ?, ৯ — প্রশ্নবোধক স্থানে কোন সংখ্যা বসবে?",
+      "o": [
+        "৭.৫",
+        "৭",
+        "৮",
+        "৬.৫"
+      ],
+      "a": 0,
+      "e": "প্রতি পদে ১.৫ যোগ ⇒ ৭.৫।",
+      "t": "১.৫-এর গুণিতক।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "১/১, ১/২, ২/৩, ৩/৫, ৫/৮, … — ধারাটির পরবর্তী পদ কোনটি?",
+      "o": [
+        "৮/১১",
+        "৮/১৩",
+        "৭/১২",
+        "১৩/৮"
+      ],
+      "a": 1,
+      "e": "লব ও হর উভয়ই ফিবোনাচ্চি ক্রমে: পরের লব = আগের হর (৮), পরের হর = আগের লব + হর (৫ + ৮ = ১৩)।",
+      "t": "লব = আগের হর; হর = লব + হর।",
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Medium",
+      "q": "৩, ৪, ৭, ১১, ১৮, ২৯, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "৪৫",
+        "৪০",
+        "৪৭",
+        "৫৮"
+      ],
+      "a": 2,
+      "e": "প্রতি পদ = আগের দুই পদের যোগফল: ৩, ৪, ৭, ১১, ১৮, ২৯ ⇒ ৪৭।",
+      "t": "শেষ দুই পদ যোগ।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "১, ১, ২, ৪, ৭, ১৩, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "২৬",
+        "২০",
+        "২৩",
+        "২৪"
+      ],
+      "a": 3,
+      "e": "প্রতি পদ = আগের তিন পদের যোগফল: ১, ১, ২, ৪, ৭, ১৩ ⇒ ২৪।",
+      "t": "শেষ তিন পদ যোগ (ট্রিবোনাচ্চি)।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "৪, ৭, ১১, ?, ২৯, ৪৭, ৭৬ — ধারাটির লুপ্ত সংখ্যা কোনটি?",
+      "o": [
+        "১৮",
+        "১৬",
+        "১৭",
+        "১৯"
+      ],
+      "a": 0,
+      "e": "৪, ৭, ১১, ১৮, ২৯, ৪৭, ৭৬ — চতুর্থ পদ = ৭ + ১১ = ১৮।",
+      "t": "আগের দুই পদের যোগফল।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.SN.DHR",
+      "d": "Hard",
+      "q": "১, ২, ২, ৪, ৮, … — ধারাটির পরবর্তী সংখ্যা কোনটি?",
+      "o": [
+        "১৬",
+        "৩২",
+        "২৪",
+        "৬৪"
+      ],
+      "a": 1,
+      "e": "প্রতি পদ = আগের দুই পদের গুণফল: ১, ২, ২, ৪, ৮ ⇒ ৩২।",
+      "t": "শেষ দুই পদের গুণফল।",
+      "calc": true,
+      "src": "লেকচার ০৩ (Numerical Ability) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal & Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

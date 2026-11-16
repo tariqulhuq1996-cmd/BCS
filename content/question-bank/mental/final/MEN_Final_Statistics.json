@@ -1,0 +1,152 @@
+{
+  "target": 800,
+  "priorityTarget": {
+    "A": 451,
+    "B": 200,
+    "C": 29,
+    "D": 120
+  },
+  "historicalReference": 181,
+  "computedAnswers": 301,
+  "generated": 800,
+  "exact": 0,
+  "semantic": 0,
+  "near": 0,
+  "verify": 0,
+  "qc": 0,
+  "accepted": 800,
+  "remaining": 0,
+  "supplementary": 0,
+  "supplementaryBySubtopic": {},
+  "byPriority": {
+    "A": 451,
+    "B": 200,
+    "C": 29,
+    "D": 120
+  },
+  "byArea": {
+    "Numerical": 152,
+    "Figural & Mechanical": 200,
+    "Verbal": 253,
+    "Logical": 195
+  },
+  "byDifficulty": {
+    "Easy": 71,
+    "Medium": 497,
+    "Hard": 232
+  },
+  "answerPosition": {
+    "A": 204,
+    "B": 201,
+    "C": 198,
+    "D": 197
+  },
+  "bySubtopic": {
+    "MN.SN.DHR": 118,
+    "MN.CH.PRT": 114,
+    "MN.CH.JNT": 86,
+    "MN.BC.KOD": 57,
+    "MN.BC.SAD": 48,
+    "MN.BC.BAN": 76,
+    "MN.JK.DIK": 52,
+    "MN.JK.GHR": 57,
+    "MN.BC.BRN": 43,
+    "MN.JK.RKT": 29,
+    "MN.BC.BEM": 29,
+    "MN.JK.KRM": 24,
+    "MN.JK.SID": 33,
+    "MN.SN.SMS": 34
+  },
+  "reviewedNearRelated": 8,
+  "sameFactAsLecturePractice": 0,
+  "batches": [
+    {
+      "batch": "Batch 01",
+      "subs": "SN.DHR",
+      "generated": 118,
+      "exact": 0,
+      "semantic": 0,
+      "near": 0,
+      "verify": 0,
+      "qc": 0,
+      "accepted": 118
+    },
+    {
+      "batch": "Batch 02",
+      "subs": "CH.PRT",
+      "generated": 114,
+      "exact": 0,
+      "semantic": 0,
+      "near": 0,
+      "verify": 0,
+      "qc": 0,
+      "accepted": 114
+    },
+    {
+      "batch": "Batch 03",
+      "subs": "CH.JNT",
+      "generated": 86,
+      "exact": 0,
+      "semantic": 0,
+      "near": 0,
+      "verify": 0,
+      "qc": 0,
+      "accepted": 86
+    },
+    {
+      "batch": "Batch 04",
+      "subs": "BC.KOD, BC.SAD",
+      "generated": 105,
+      "exact": 0,
+      "semantic": 0,
+      "near": 0,
+      "verify": 0,
+      "qc": 0,
+      "accepted": 105
+    },
+    {
+      "batch": "Batch 05",
+      "subs": "BC.BAN",
+      "generated": 76,
+      "exact": 0,
+      "semantic": 0,
+      "near": 0,
+      "verify": 0,
+      "qc": 0,
+      "accepted": 76
+    },
+    {
+      "batch": "Batch 06",
+      "subs": "JK.DIK, JK.GHR",
+      "generated": 109,
+      "exact": 0,
+      "semantic": 0,
+      "near": 0,
+      "verify": 0,
+      "qc": 0,
+      "accepted": 109
+    },
+    {
+      "batch": "Batch 07",
+      "subs": "BC.BRN, JK.RKT, BC.BEM",
+      "generated": 101,
+      "exact": 0,
+      "semantic": 0,
+      "near": 0,
+      "verify": 0,
+      "qc": 0,
+      "accepted": 101
+    },
+    {
+      "batch": "Batch 08",
+      "subs": "JK.KRM, JK.SID, SN.SMS",
+      "generated": 91,
+      "exact": 0,
+      "semantic": 0,
+      "near": 0,
+      "verify": 0,
+      "qc": 0,
+      "accepted": 91
+    }
+  ]
+}

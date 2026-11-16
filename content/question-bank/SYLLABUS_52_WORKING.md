@@ -134,9 +134,18 @@ Level 2-এর প্রতিটি নতুন বিষয় যোগ ক�
 
 সম্পূরক (Batch 19, MAT-1001–1090): সম্পূর্ণ লেকচার শিটে (BCS_Math_Final.docx, ১৬ নভেম্বর ২০২৬) নতুন যুক্ত লেকচার ২১–২৫ এবং লেকচার ০৮ ও ১৪-এর অতিরিক্ত অনুশীলন থেকে; ১০০০-এর মূল বণ্টন অপরিবর্তিত।
 
-## ৯. মানসিক দক্ষতা (১৫)
+## ৯. মানসিক দক্ষতা (১৫) — প্রশ্নব্যাংক ৮০০ (অনুমোদিত বণ্টন), Level 2-এ যোগ হয়েছে
 
-Verbal Reasoning, Problem Solving, Spelling & Language, Mechanical Reasoning, Space Relation, Numerical Ability — MN.* উপবিষয়ে সবই আছে ✅
+| সিলেবাস (৫০তম) | উপবিষয় | প্রশ্ন | অবস্থা |
+|---|---|---|---|
+| Verbal Reasoning | MN.BC.KOD, SAD, BRN, BEM; MN.JK.RKT, KRM, SID | 263 | ✅ |
+| Problem Solving | MN.SN.SMS; MN.JK.DIK, GHR | 143 | ✅ |
+| Spelling & Language | MN.BC.BAN | 76 | ✅ |
+| Mechanical Reasoning | MN.CH.JNT | 86 | ✅ |
+| Space Relation | MN.CH.PRT | 114 | ✅ (ছবিনির্ভর প্রশ্ন লেখায় রূপান্তরিত: প্রতিবিম্ব, ঘনক, চিত্র গণনা, ভাঁজ-ছিদ্র, ঘূর্ণন) |
+| Numerical Ability | MN.SN.DHR | 118 | ✅ |
+
+উৎস: BCS_Mental_Ability.docx (লেকচার ০১–০৪)। ছবি দেখে উত্তর দিতে হয় এমন প্রশ্ন লেখায় আনা সম্ভব নয় বলে সেগুলোর বদলে নিয়মভিত্তিক লিখিত রূপ নেওয়া হয়েছে।
 
 ## ১০. নৈতিকতা, মূল্যবোধ ও সুশাসন (১৫)
 

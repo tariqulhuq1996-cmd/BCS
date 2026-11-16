@@ -1,0 +1,2007 @@
+{
+  "batch": "Batch 02",
+  "subject": "মানসিক দক্ষতা (Mental Ability)",
+  "basis": "MN.CH.PRT — চিত্রনির্ভর প্রশ্ন লেখায় রূপান্তর: আয়না ও পানির প্রতিবিম্ব, বর্ণের প্রতিসাম্য, দর্পণ-ঘড়ি, রং করা ঘনক, ছক্কা, সূত্রে চিত্র গণনা, কাগজ ভাঁজ-ছিদ্র ও ঘূর্ণন-ধারা",
+  "subtopics": {
+    "MN.CH.PRT": {}
+  },
+  "questions": [
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "আয়নার সামনে (ডান-বাম প্রতিবিম্বে) নিচের কোন শব্দটি হুবহু একই দেখাবে?",
+      "o": [
+        "MOM",
+        "DAD",
+        "MOON",
+        "NOON"
+      ],
+      "a": 0,
+      "e": "MOM শব্দের প্রতিটি বর্ণ উল্লম্ব অক্ষে প্রতিসম (A, H, I, M, O, T, U, V, W, X, Y-এর মধ্যে) এবং শব্দটি দুই দিক থেকে একই (প্যালিনড্রোম) — তাই আয়নায় বর্ণক্রম উল্টে গেলেও একই দেখায়। অন্যগুলোতে হয় অপ্রতিসম বর্ণ আছে, নয়তো উল্টো পড়লে শব্দ বদলায়।",
+      "t": "আয়নায় একই = সব বর্ণ উল্লম্ব-প্রতিসম + প্যালিনড্রোম।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি সাইনবোর্ডের লেখা পেছনের আয়নায় দেখা হচ্ছে। কোন শব্দটির প্রতিবিম্ব মূল লেখার মতোই পড়া যাবে?",
+      "o": [
+        "NOW",
+        "WOW",
+        "TOWN",
+        "SOS"
+      ],
+      "a": 1,
+      "e": "WOW শব্দের প্রতিটি বর্ণ উল্লম্ব অক্ষে প্রতিসম (A, H, I, M, O, T, U, V, W, X, Y-এর মধ্যে) এবং শব্দটি দুই দিক থেকে একই (প্যালিনড্রোম) — তাই আয়নায় বর্ণক্রম উল্টে গেলেও একই দেখায়। অন্যগুলোতে হয় অপ্রতিসম বর্ণ আছে, নয়তো উল্টো পড়লে শব্দ বদলায়।",
+      "t": "আয়নায় একই = সব বর্ণ উল্লম্ব-প্রতিসম + প্যালিনড্রোম।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "কোন শব্দটি দর্পণে প্রতিফলিত হলেও বর্ণ ও বর্ণক্রম অপরিবর্তিত দেখায়?",
+      "o": [
+        "BOOT",
+        "TOOK",
+        "TOOT",
+        "TOTO"
+      ],
+      "a": 2,
+      "e": "TOOT শব্দের প্রতিটি বর্ণ উল্লম্ব অক্ষে প্রতিসম (A, H, I, M, O, T, U, V, W, X, Y-এর মধ্যে) এবং শব্দটি দুই দিক থেকে একই (প্যালিনড্রোম) — তাই আয়নায় বর্ণক্রম উল্টে গেলেও একই দেখায়। অন্যগুলোতে হয় অপ্রতিসম বর্ণ আছে, নয়তো উল্টো পড়লে শব্দ বদলায়।",
+      "t": "আয়নায় একই = সব বর্ণ উল্লম্ব-প্রতিসম + প্যালিনড্রোম।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "অ্যাম্বুলেন্সের সামনে উল্টো করে লেখা থাকে যাতে আয়নায় ঠিক পড়া যায়। কোন শব্দকে উল্টো করে লেখার দরকারই পড়বে না?",
+      "o": [
+        "ABBA",
+        "AHEAD",
+        "HAHA",
+        "AHA"
+      ],
+      "a": 3,
+      "e": "AHA শব্দের প্রতিটি বর্ণ উল্লম্ব অক্ষে প্রতিসম (A, H, I, M, O, T, U, V, W, X, Y-এর মধ্যে) এবং শব্দটি দুই দিক থেকে একই (প্যালিনড্রোম) — তাই আয়নায় বর্ণক্রম উল্টে গেলেও একই দেখায়। অন্যগুলোতে হয় অপ্রতিসম বর্ণ আছে, নয়তো উল্টো পড়লে শব্দ বদলায়।",
+      "t": "আয়নায় একই = সব বর্ণ উল্লম্ব-প্রতিসম + প্যালিনড্রোম।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "কাচের দরজার একপাশে বড় হাতের অক্ষরে একটি শব্দ লেখা; অপর পাশ থেকে দেখলে কোন শব্দটি একই রকম পড়া যাবে?",
+      "o": [
+        "TUT",
+        "TUB",
+        "PUT",
+        "TOTE"
+      ],
+      "a": 0,
+      "e": "TUT শব্দের প্রতিটি বর্ণ উল্লম্ব অক্ষে প্রতিসম (A, H, I, M, O, T, U, V, W, X, Y-এর মধ্যে) এবং শব্দটি দুই দিক থেকে একই (প্যালিনড্রোম) — তাই আয়নায় বর্ণক্রম উল্টে গেলেও একই দেখায়। অন্যগুলোতে হয় অপ্রতিসম বর্ণ আছে, নয়তো উল্টো পড়লে শব্দ বদলায়।",
+      "t": "আয়নায় একই = সব বর্ণ উল্লম্ব-প্রতিসম + প্যালিনড্রোম।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "ড্রেসিং টেবিলের আয়নায় নিজের টি-শার্টের লেখা দেখলে কোনটি অবিকৃত দেখাবে?",
+      "o": [
+        "YAW",
+        "YAY",
+        "PAY",
+        "XYZ"
+      ],
+      "a": 1,
+      "e": "YAY শব্দের প্রতিটি বর্ণ উল্লম্ব অক্ষে প্রতিসম (A, H, I, M, O, T, U, V, W, X, Y-এর মধ্যে) এবং শব্দটি দুই দিক থেকে একই (প্যালিনড্রোম) — তাই আয়নায় বর্ণক্রম উল্টে গেলেও একই দেখায়। অন্যগুলোতে হয় অপ্রতিসম বর্ণ আছে, নয়তো উল্টো পড়লে শব্দ বদলায়।",
+      "t": "আয়নায় একই = সব বর্ণ উল্লম্ব-প্রতিসম + প্যালিনড্রোম।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "আয়নার সামনে (ডান-বাম প্রতিবিম্বে) নিচের কোন শব্দটি হুবহু একই দেখাবে?",
+      "o": [
+        "GUM",
+        "MUD",
+        "MUM",
+        "MUMS"
+      ],
+      "a": 2,
+      "e": "MUM শব্দের প্রতিটি বর্ণ উল্লম্ব অক্ষে প্রতিসম (A, H, I, M, O, T, U, V, W, X, Y-এর মধ্যে) এবং শব্দটি দুই দিক থেকে একই (প্যালিনড্রোম) — তাই আয়নায় বর্ণক্রম উল্টে গেলেও একই দেখায়। অন্যগুলোতে হয় অপ্রতিসম বর্ণ আছে, নয়তো উল্টো পড়লে শব্দ বদলায়।",
+      "t": "আয়নায় একই = সব বর্ণ উল্লম্ব-প্রতিসম + প্যালিনড্রোম।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি সাইনবোর্ডের লেখা পেছনের আয়নায় দেখা হচ্ছে। কোন শব্দটির প্রতিবিম্ব মূল লেখার মতোই পড়া যাবে?",
+      "o": [
+        "TOTE",
+        "TOP",
+        "DOT",
+        "TOT"
+      ],
+      "a": 3,
+      "e": "TOT শব্দের প্রতিটি বর্ণ উল্লম্ব অক্ষে প্রতিসম (A, H, I, M, O, T, U, V, W, X, Y-এর মধ্যে) এবং শব্দটি দুই দিক থেকে একই (প্যালিনড্রোম) — তাই আয়নায় বর্ণক্রম উল্টে গেলেও একই দেখায়। অন্যগুলোতে হয় অপ্রতিসম বর্ণ আছে, নয়তো উল্টো পড়লে শব্দ বদলায়।",
+      "t": "আয়নায় একই = সব বর্ণ উল্লম্ব-প্রতিসম + প্যালিনড্রোম।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "কোন শব্দটি দর্পণে প্রতিফলিত হলেও বর্ণ ও বর্ণক্রম অপরিবর্তিত দেখায়?",
+      "o": [
+        "HAH",
+        "HAT",
+        "BAH",
+        "HAHA"
+      ],
+      "a": 0,
+      "e": "HAH শব্দের প্রতিটি বর্ণ উল্লম্ব অক্ষে প্রতিসম (A, H, I, M, O, T, U, V, W, X, Y-এর মধ্যে) এবং শব্দটি দুই দিক থেকে একই (প্যালিনড্রোম) — তাই আয়নায় বর্ণক্রম উল্টে গেলেও একই দেখায়। অন্যগুলোতে হয় অপ্রতিসম বর্ণ আছে, নয়তো উল্টো পড়লে শব্দ বদলায়।",
+      "t": "আয়নায় একই = সব বর্ণ উল্লম্ব-প্রতিসম + প্যালিনড্রোম।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "অ্যাম্বুলেন্সের সামনে উল্টো করে লেখা থাকে যাতে আয়নায় ঠিক পড়া যায়। কোন শব্দকে উল্টো করে লেখার দরকারই পড়বে না?",
+      "o": [
+        "MAMA",
+        "MAAM",
+        "MADAM",
+        "MAIM"
+      ],
+      "a": 1,
+      "e": "MAAM শব্দের প্রতিটি বর্ণ উল্লম্ব অক্ষে প্রতিসম (A, H, I, M, O, T, U, V, W, X, Y-এর মধ্যে) এবং শব্দটি দুই দিক থেকে একই (প্যালিনড্রোম) — তাই আয়নায় বর্ণক্রম উল্টে গেলেও একই দেখায়। অন্যগুলোতে হয় অপ্রতিসম বর্ণ আছে, নয়তো উল্টো পড়লে শব্দ বদলায়।",
+      "t": "আয়নায় একই = সব বর্ণ উল্লম্ব-প্রতিসম + প্যালিনড্রোম।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "কাচের দরজার একপাশে বড় হাতের অক্ষরে একটি শব্দ লেখা; অপর পাশ থেকে দেখলে কোন শব্দটি একই রকম পড়া যাবে?",
+      "o": [
+        "OXEN",
+        "BOX",
+        "OXO",
+        "OXOX"
+      ],
+      "a": 2,
+      "e": "OXO শব্দের প্রতিটি বর্ণ উল্লম্ব অক্ষে প্রতিসম (A, H, I, M, O, T, U, V, W, X, Y-এর মধ্যে) এবং শব্দটি দুই দিক থেকে একই (প্যালিনড্রোম) — তাই আয়নায় বর্ণক্রম উল্টে গেলেও একই দেখায়। অন্যগুলোতে হয় অপ্রতিসম বর্ণ আছে, নয়তো উল্টো পড়লে শব্দ বদলায়।",
+      "t": "আয়নায় একই = সব বর্ণ উল্লম্ব-প্রতিসম + প্যালিনড্রোম।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "ড্রেসিং টেবিলের আয়নায় নিজের টি-শার্টের লেখা দেখলে কোনটি অবিকৃত দেখাবে?",
+      "o": [
+        "MAXIM",
+        "AXE",
+        "AXIS",
+        "AXA"
+      ],
+      "a": 3,
+      "e": "AXA শব্দের প্রতিটি বর্ণ উল্লম্ব অক্ষে প্রতিসম (A, H, I, M, O, T, U, V, W, X, Y-এর মধ্যে) এবং শব্দটি দুই দিক থেকে একই (প্যালিনড্রোম) — তাই আয়নায় বর্ণক্রম উল্টে গেলেও একই দেখায়। অন্যগুলোতে হয় অপ্রতিসম বর্ণ আছে, নয়তো উল্টো পড়লে শব্দ বদলায়।",
+      "t": "আয়নায় একই = সব বর্ণ উল্লম্ব-প্রতিসম + প্যালিনড্রোম।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "পানিতে (উপর-নিচ প্রতিবিম্বে) নিচের কোন শব্দটি হুবহু একই দেখাবে?",
+      "o": [
+        "BOX",
+        "BOAT",
+        "FOX",
+        "TOY"
+      ],
+      "a": 0,
+      "e": "পানির প্রতিবিম্বে বর্ণক্রম একই থাকে, শুধু প্রতিটি বর্ণ উল্টো হয়। BOX-এর সব বর্ণ (B, C, D, E, H, I, K, O, X-এর মধ্যে) অনুভূমিক অক্ষে প্রতিসম, তাই শব্দটি একই দেখায়।",
+      "t": "পানিতে একই = সব বর্ণ অনুভূমিক-প্রতিসম (B C D E H I K O X)।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "পানিতে (উপর-নিচ প্রতিবিম্বে) নিচের কোন শব্দটি হুবহু একই দেখাবে?",
+      "o": [
+        "CAKE",
+        "CODE",
+        "COPE",
+        "MODE"
+      ],
+      "a": 1,
+      "e": "পানির প্রতিবিম্বে বর্ণক্রম একই থাকে, শুধু প্রতিটি বর্ণ উল্টো হয়। CODE-এর সব বর্ণ (B, C, D, E, H, I, K, O, X-এর মধ্যে) অনুভূমিক অক্ষে প্রতিসম, তাই শব্দটি একই দেখায়।",
+      "t": "পানিতে একই = সব বর্ণ অনুভূমিক-প্রতিসম (B C D E H I K O X)।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "পানিতে (উপর-নিচ প্রতিবিম্বে) নিচের কোন শব্দটি হুবহু একই দেখাবে?",
+      "o": [
+        "RIDE",
+        "HIRE",
+        "HIDE",
+        "WIDE"
+      ],
+      "a": 2,
+      "e": "পানির প্রতিবিম্বে বর্ণক্রম একই থাকে, শুধু প্রতিটি বর্ণ উল্টো হয়। HIDE-এর সব বর্ণ (B, C, D, E, H, I, K, O, X-এর মধ্যে) অনুভূমিক অক্ষে প্রতিসম, তাই শব্দটি একই দেখায়।",
+      "t": "পানিতে একই = সব বর্ণ অনুভূমিক-প্রতিসম (B C D E H I K O X)।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "পানিতে (উপর-নিচ প্রতিবিম্বে) নিচের কোন শব্দটি হুবহু একই দেখাবে?",
+      "o": [
+        "DUCK",
+        "DESK",
+        "NECK",
+        "DECK"
+      ],
+      "a": 3,
+      "e": "পানির প্রতিবিম্বে বর্ণক্রম একই থাকে, শুধু প্রতিটি বর্ণ উল্টো হয়। DECK-এর সব বর্ণ (B, C, D, E, H, I, K, O, X-এর মধ্যে) অনুভূমিক অক্ষে প্রতিসম, তাই শব্দটি একই দেখায়।",
+      "t": "পানিতে একই = সব বর্ণ অনুভূমিক-প্রতিসম (B C D E H I K O X)।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "পানিতে (উপর-নিচ প্রতিবিম্বে) নিচের কোন শব্দটি হুবহু একই দেখাবে?",
+      "o": [
+        "BOOK",
+        "LOOK",
+        "BOOM",
+        "TOOK"
+      ],
+      "a": 0,
+      "e": "পানির প্রতিবিম্বে বর্ণক্রম একই থাকে, শুধু প্রতিটি বর্ণ উল্টো হয়। BOOK-এর সব বর্ণ (B, C, D, E, H, I, K, O, X-এর মধ্যে) অনুভূমিক অক্ষে প্রতিসম, তাই শব্দটি একই দেখায়।",
+      "t": "পানিতে একই = সব বর্ণ অনুভূমিক-প্রতিসম (B C D E H I K O X)।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "পানিতে (উপর-নিচ প্রতিবিম্বে) নিচের কোন শব্দটি হুবহু একই দেখাবে?",
+      "o": [
+        "CHEAP",
+        "CHECK",
+        "CHEST",
+        "CLOCK"
+      ],
+      "a": 1,
+      "e": "পানির প্রতিবিম্বে বর্ণক্রম একই থাকে, শুধু প্রতিটি বর্ণ উল্টো হয়। CHECK-এর সব বর্ণ (B, C, D, E, H, I, K, O, X-এর মধ্যে) অনুভূমিক অক্ষে প্রতিসম, তাই শব্দটি একই দেখায়।",
+      "t": "পানিতে একই = সব বর্ণ অনুভূমিক-প্রতিসম (B C D E H I K O X)।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "পানিতে (উপর-নিচ প্রতিবিম্বে) নিচের কোন শব্দটি হুবহু একই দেখাবে?",
+      "o": [
+        "ICY",
+        "ACE",
+        "ICE",
+        "RICE"
+      ],
+      "a": 2,
+      "e": "পানির প্রতিবিম্বে বর্ণক্রম একই থাকে, শুধু প্রতিটি বর্ণ উল্টো হয়। ICE-এর সব বর্ণ (B, C, D, E, H, I, K, O, X-এর মধ্যে) অনুভূমিক অক্ষে প্রতিসম, তাই শব্দটি একই দেখায়।",
+      "t": "পানিতে একই = সব বর্ণ অনুভূমিক-প্রতিসম (B C D E H I K O X)।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "পানিতে (উপর-নিচ প্রতিবিম্বে) নিচের কোন শব্দটি হুবহু একই দেখাবে?",
+      "o": [
+        "KING",
+        "KIT",
+        "LID",
+        "KID"
+      ],
+      "a": 3,
+      "e": "পানির প্রতিবিম্বে বর্ণক্রম একই থাকে, শুধু প্রতিটি বর্ণ উল্টো হয়। KID-এর সব বর্ণ (B, C, D, E, H, I, K, O, X-এর মধ্যে) অনুভূমিক অক্ষে প্রতিসম, তাই শব্দটি একই দেখায়।",
+      "t": "পানিতে একই = সব বর্ণ অনুভূমিক-প্রতিসম (B C D E H I K O X)।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "পানিতে (উপর-নিচ প্রতিবিম্বে) নিচের কোন শব্দটি হুবহু একই দেখাবে?",
+      "o": [
+        "ECHO",
+        "ECHT",
+        "EGO",
+        "TACO"
+      ],
+      "a": 0,
+      "e": "পানির প্রতিবিম্বে বর্ণক্রম একই থাকে, শুধু প্রতিটি বর্ণ উল্টো হয়। ECHO-এর সব বর্ণ (B, C, D, E, H, I, K, O, X-এর মধ্যে) অনুভূমিক অক্ষে প্রতিসম, তাই শব্দটি একই দেখায়।",
+      "t": "পানিতে একই = সব বর্ণ অনুভূমিক-প্রতিসম (B C D E H I K O X)।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "পানিতে (উপর-নিচ প্রতিবিম্বে) নিচের কোন শব্দটি হুবহু একই দেখাবে?",
+      "o": [
+        "BET",
+        "BED",
+        "RED",
+        "BEG"
+      ],
+      "a": 1,
+      "e": "পানির প্রতিবিম্বে বর্ণক্রম একই থাকে, শুধু প্রতিটি বর্ণ উল্টো হয়। BED-এর সব বর্ণ (B, C, D, E, H, I, K, O, X-এর মধ্যে) অনুভূমিক অক্ষে প্রতিসম, তাই শব্দটি একই দেখায়।",
+      "t": "পানিতে একই = সব বর্ণ অনুভূমিক-প্রতিসম (B C D E H I K O X)।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "MATHEMATICS শব্দের কয়টি বর্ণ (পুনরাবৃত্তিসহ) আয়নায় (ডান-বাম) আলাদাভাবে একই রকম দেখায়?",
+      "o": [
+        "7",
+        "9",
+        "8",
+        "11"
+      ],
+      "a": 2,
+      "e": "আয়নায় (ডান-বাম) একই দেখায় এমন বর্ণ: M, A, T, H, M, A, T, I — মোট ৮টি।",
+      "t": "উল্লম্ব-প্রতিসম: A H I M O T U V W X Y।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "EXAMINATION শব্দের কয়টি বর্ণ (পুনরাবৃত্তিসহ) আয়নায় (ডান-বাম) আলাদাভাবে একই রকম দেখায়?",
+      "o": [
+        "11",
+        "9",
+        "7",
+        "8"
+      ],
+      "a": 3,
+      "e": "আয়নায় (ডান-বাম) একই দেখায় এমন বর্ণ: X, A, M, I, A, T, I, O — মোট ৮টি।",
+      "t": "উল্লম্ব-প্রতিসম: A H I M O T U V W X Y।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "BANGLADESH শব্দের কয়টি বর্ণ (পুনরাবৃত্তিসহ) আয়নায় (ডান-বাম) আলাদাভাবে একই রকম দেখায়?",
+      "o": [
+        "3",
+        "4",
+        "2",
+        "10"
+      ],
+      "a": 0,
+      "e": "আয়নায় (ডান-বাম) একই দেখায় এমন বর্ণ: A, A, H — মোট ৩টি।",
+      "t": "উল্লম্ব-প্রতিসম: A H I M O T U V W X Y।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "COMMITTEE শব্দের কয়টি বর্ণ (পুনরাবৃত্তিসহ) পানিতে (উপর-নিচ) আলাদাভাবে একই রকম দেখায়?",
+      "o": [
+        "6",
+        "5",
+        "4",
+        "9"
+      ],
+      "a": 1,
+      "e": "পানিতে (উপর-নিচ) একই দেখায় এমন বর্ণ: C, O, I, E, E — মোট ৫টি।",
+      "t": "অনুভূমিক-প্রতিসম: B C D E H I K O X।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "DHAKA শব্দের কয়টি বর্ণ (পুনরাবৃত্তিসহ) পানিতে (উপর-নিচ) আলাদাভাবে একই রকম দেখায়?",
+      "o": [
+        "2",
+        "4",
+        "3",
+        "5"
+      ],
+      "a": 2,
+      "e": "পানিতে (উপর-নিচ) একই দেখায় এমন বর্ণ: D, H, K — মোট ৩টি।",
+      "t": "অনুভূমিক-প্রতিসম: B C D E H I K O X।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "BOOKKEEPER শব্দের কয়টি বর্ণ (পুনরাবৃত্তিসহ) পানিতে (উপর-নিচ) আলাদাভাবে একই রকম দেখায়?",
+      "o": [
+        "10",
+        "9",
+        "7",
+        "8"
+      ],
+      "a": 3,
+      "e": "পানিতে (উপর-নিচ) একই দেখায় এমন বর্ণ: B, O, O, K, K, E, E, E — মোট ৮টি।",
+      "t": "অনুভূমিক-প্রতিসম: B C D E H I K O X।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "SHOWROOM শব্দের কয়টি বর্ণ (পুনরাবৃত্তিসহ) আয়নায় (ডান-বাম) আলাদাভাবে একই রকম দেখায়?",
+      "o": [
+        "6",
+        "7",
+        "5",
+        "8"
+      ],
+      "a": 0,
+      "e": "আয়নায় (ডান-বাম) একই দেখায় এমন বর্ণ: H, O, W, O, O, M — মোট ৬টি।",
+      "t": "উল্লম্ব-প্রতিসম: A H I M O T U V W X Y।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "CHECKBOX শব্দের কয়টি বর্ণ (পুনরাবৃত্তিসহ) পানিতে (উপর-নিচ) আলাদাভাবে একই রকম দেখায়?",
+      "o": [
+        "9",
+        "8",
+        "7",
+        "10"
+      ],
+      "a": 1,
+      "e": "পানিতে (উপর-নিচ) একই দেখায় এমন বর্ণ: C, H, E, C, K, B, O, X — মোট ৮টি।",
+      "t": "অনুভূমিক-প্রতিসম: B C D E H I K O X।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "HORIZON শব্দের কয়টি বর্ণ (পুনরাবৃত্তিসহ) 180° ঘোরালে আলাদাভাবে একই রকম দেখায়?",
+      "o": [
+        "5",
+        "7",
+        "6",
+        "8"
+      ],
+      "a": 2,
+      "e": "১৮০° ঘোরালে একই দেখায় এমন বর্ণ: H, O, I, Z, O, N — মোট ৬টি।",
+      "t": "১৮০°-প্রতিসম: H I N O S X Z।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "NOSIZE শব্দের কয়টি বর্ণ (পুনরাবৃত্তিসহ) 180° ঘোরালে আলাদাভাবে একই রকম দেখায়?",
+      "o": [
+        "7",
+        "6",
+        "4",
+        "5"
+      ],
+      "a": 3,
+      "e": "১৮০° ঘোরালে একই দেখায় এমন বর্ণ: N, O, S, I, Z — মোট ৫টি।",
+      "t": "১৮০°-প্রতিসম: H I N O S X Z।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "ইংরেজি বড় হাতের কোন বর্ণটি 180° ঘোরালে (উল্টো করে ধরলে) একই দেখায়?",
+      "o": [
+        "S",
+        "F",
+        "P",
+        "R"
+      ],
+      "a": 0,
+      "e": "S অর্ধেক ঘোরালে নিজের মতোই দেখায় (H, I, N, O, S, X, Z এমন বর্ণ); F, P, R উল্টে যায়।",
+      "t": "১৮০°-প্রতিসম: H I N O S X Z।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "নিচের কোন বর্ণটি 180° ঘোরালে একই দেখায়, কিন্তু আয়নায় একই দেখায় না?",
+      "o": [
+        "M",
+        "N",
+        "W",
+        "E"
+      ],
+      "a": 1,
+      "e": "N অর্ধেক ঘোরালে N-ই থাকে, কিন্তু আয়নায় উল্টো (И) দেখায়। M ও W আয়নায় একই, E কোনোটিতেই নয়।",
+      "t": "N, S, Z — ঘূর্ণনে একই, আয়নায় নয়।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "নিচের কোন বর্ণটি আয়নায় একই দেখায় না, কিন্তু 180° ঘোরালে একই দেখায়?",
+      "o": [
+        "V",
+        "Y",
+        "Z",
+        "T"
+      ],
+      "a": 2,
+      "e": "Z ঘোরালে একই, আয়নায় উল্টো; Y, V, T আয়নায় একই কিন্তু ঘোরালে উল্টো।",
+      "t": "Z ↔ N ↔ S একই দলে।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "নিচের কোন বর্ণটি আয়নায় (ডান-বাম) ও পানিতে (উপর-নিচ) — দুই প্রতিবিম্বেই একই দেখায়?",
+      "o": [
+        "M",
+        "A",
+        "B",
+        "H"
+      ],
+      "a": 3,
+      "e": "H উল্লম্ব ও অনুভূমিক দুই অক্ষেই প্রতিসম। A ও M শুধু আয়নায়, B শুধু পানিতে একই।",
+      "t": "দুই অক্ষেই প্রতিসম: H I O X।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "নিচের কোন বর্ণের দুটি প্রতিসাম্য-অক্ষ (উল্লম্ব ও অনুভূমিক) আছে?",
+      "o": [
+        "X",
+        "V",
+        "D",
+        "Y"
+      ],
+      "a": 0,
+      "e": "X উল্লম্ব ও অনুভূমিক দুই অক্ষেই প্রতিসম; V ও Y-এর শুধু উল্লম্ব, D-এর শুধু অনুভূমিক অক্ষ।",
+      "t": "H I O X — দুই অক্ষ।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "নিচের কোন বর্ণে কোনো বক্ররেখা নেই (শুধু সরলরেখায় গঠিত)?",
+      "o": [
+        "B",
+        "K",
+        "C",
+        "G"
+      ],
+      "a": 1,
+      "e": "K তিনটি সরলরেখায় গঠিত; B, C, G-তে বক্ররেখা আছে।",
+      "t": "সরলরেখার বর্ণ: A E F H I K L M N T V W X Y Z।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "শুধু সরলরেখা দিয়ে লেখা যায় কোন বর্ণটি?",
+      "o": [
+        "U",
+        "J",
+        "L",
+        "S"
+      ],
+      "a": 2,
+      "e": "L দুটি সরলরেখা; J, U, S-এ বক্ররেখা আছে।",
+      "t": "বক্ররেখাহীন বর্ণ মনে রাখো।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "নিচের কোন বর্ণটি পানিতে (উপর-নিচ) একই দেখায়, কিন্তু আয়নায় (ডান-বাম) উল্টো দেখায়?",
+      "o": [
+        "W",
+        "A",
+        "T",
+        "D"
+      ],
+      "a": 3,
+      "e": "D-এর অনুভূমিক অক্ষ আছে, উল্লম্ব অক্ষ নেই; A, T, W-এর উল্লম্ব অক্ষ আছে।",
+      "t": "B C D E K — শুধু পানিতে একই।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "নিচের কোন বর্ণটি আয়নায় একই দেখায়, কিন্তু পানিতে উল্টো দেখায়?",
+      "o": [
+        "T",
+        "E",
+        "K",
+        "C"
+      ],
+      "a": 0,
+      "e": "T উল্লম্ব অক্ষে প্রতিসম, অনুভূমিক অক্ষে নয়; E, K, C উল্টো আচরণ করে।",
+      "t": "A M T U V W Y — শুধু আয়নায় একই।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "নিচের কোন বর্ণের কোনো প্রতিসাম্য-অক্ষ নেই?",
+      "o": [
+        "H",
+        "F",
+        "O",
+        "X"
+      ],
+      "a": 1,
+      "e": "F আয়নায়, পানিতে বা ঘোরালে কখনোই একই দেখায় না; H, O, X-এর দুটি করে অক্ষ আছে।",
+      "t": "F G J L P Q R — কোনো প্রতিসাম্য নেই।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "নিচের কোন বর্ণকে যেকোনো দিকে প্রতিফলিত বা 180° ঘোরালেও একই দেখায়?",
+      "o": [
+        "D",
+        "Q",
+        "O",
+        "C"
+      ],
+      "a": 2,
+      "e": "O বৃত্তাকার — আয়না, পানি ও ঘূর্ণন সবেতেই একই; Q-এর লেজ, D ও C একদিকে খোলা।",
+      "t": "O, H, I, X — সবদিকে প্রতিসম।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "নিচের কোন শব্দটি 180° ঘোরালে (উল্টো করে ধরলে) হুবহু একই দেখায়?",
+      "o": [
+        "NUN",
+        "SAS",
+        "MOM",
+        "SOS"
+      ],
+      "a": 3,
+      "e": "S ও O দুটিই ১৮০°-প্রতিসম এবং SOS প্যালিনড্রোম; SAS-এ A, MOM-এ M, NUN-এ U ঘোরালে বদলে যায়।",
+      "t": "ঘূর্ণনে একই = সব বর্ণ ১৮০°-প্রতিসম + প্যালিনড্রোম।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "নিচের কোন শব্দটি 180° ঘোরালে একই দেখায়?",
+      "o": [
+        "NOON",
+        "MOON",
+        "SOON",
+        "ZOOM"
+      ],
+      "a": 0,
+      "e": "N ও O ১৮০°-প্রতিসম এবং NOON প্যালিনড্রোম — ঘোরালে একই থাকে।",
+      "t": "ঘূর্ণনে বর্ণক্রমও উল্টে যায়।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "নিচের কোন শব্দটি আয়নায়, পানিতে এবং 180° ঘোরালে — তিনভাবেই একই দেখায়?",
+      "o": [
+        "XOXO",
+        "XOX",
+        "OXEN",
+        "BOX"
+      ],
+      "a": 1,
+      "e": "X ও O সবদিকে প্রতিসম এবং XOX প্যালিনড্রোম; XOXO উল্টালে OXOX হয়।",
+      "t": "সবদিকে একই = H I O X দিয়ে গঠিত প্যালিনড্রোম।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "দেয়ালঘড়ির আয়নার প্রতিবিম্বে সময় 3:40 দেখা যাচ্ছে। ঘড়িতে প্রকৃত সময় কত?",
+      "o": [
+        "8:50",
+        "3:40",
+        "8:20",
+        "9:40"
+      ],
+      "a": 2,
+      "e": "প্রকৃত সময় = ১১:৬০ − ৩:৪০ = ৮:২০।",
+      "t": "দর্পণ-ঘড়ি: ১১:৬০ থেকে দেখা সময় বিয়োগ।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "দেয়ালঘড়ির আয়নার প্রতিবিম্বে সময় 2:15 দেখা যাচ্ছে। ঘড়িতে প্রকৃত সময় কত?",
+      "o": [
+        "10:15",
+        "2:15",
+        "9:15",
+        "9:45"
+      ],
+      "a": 3,
+      "e": "প্রকৃত সময় = ১১:৬০ − ২:১৫ = ৯:৪৫।",
+      "t": "দর্পণ-ঘড়ি: ১১:৬০ থেকে দেখা সময় বিয়োগ।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "দেয়ালঘড়ির আয়নার প্রতিবিম্বে সময় 9:25 দেখা যাচ্ছে। ঘড়িতে প্রকৃত সময় কত?",
+      "o": [
+        "2:35",
+        "9:25",
+        "2:05",
+        "3:25"
+      ],
+      "a": 0,
+      "e": "প্রকৃত সময় = ১১:৬০ − ৯:২৫ = ২:৩৫।",
+      "t": "দর্পণ-ঘড়ি: ১১:৬০ থেকে দেখা সময় বিয়োগ।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "দেয়ালঘড়ির আয়নার প্রতিবিম্বে সময় 4:50 দেখা যাচ্ছে। ঘড়িতে প্রকৃত সময় কত?",
+      "o": [
+        "4:50",
+        "7:10",
+        "7:40",
+        "8:50"
+      ],
+      "a": 1,
+      "e": "প্রকৃত সময় = ১১:৬০ − ৪:৫০ = ৭:১০।",
+      "t": "দর্পণ-ঘড়ি: ১১:৬০ থেকে দেখা সময় বিয়োগ।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "দেয়ালঘড়ির আয়নার প্রতিবিম্বে সময় 10:10 দেখা যাচ্ছে। ঘড়িতে প্রকৃত সময় কত?",
+      "o": [
+        "1:20",
+        "10:10",
+        "1:50",
+        "2:10"
+      ],
+      "a": 2,
+      "e": "প্রকৃত সময় = ১১:৬০ − ১০:১০ = ১:৫০।",
+      "t": "দর্পণ-ঘড়ি: ১১:৬০ থেকে দেখা সময় বিয়োগ।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "দেয়ালঘড়ির আয়নার প্রতিবিম্বে সময় 6:35 দেখা যাচ্ছে। ঘড়িতে প্রকৃত সময় কত?",
+      "o": [
+        "6:25",
+        "6:35",
+        "5:55",
+        "5:25"
+      ],
+      "a": 3,
+      "e": "প্রকৃত সময় = ১১:৬০ − ৬:৩৫ = ৫:২৫।",
+      "t": "দর্পণ-ঘড়ি: ১১:৬০ থেকে দেখা সময় বিয়োগ।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "দেয়ালঘড়ির আয়নার প্রতিবিম্বে সময় 1:05 দেখা যাচ্ছে। ঘড়িতে প্রকৃত সময় কত?",
+      "o": [
+        "10:55",
+        "1:05",
+        "10:25",
+        "11:05"
+      ],
+      "a": 0,
+      "e": "প্রকৃত সময় = ১১:৬০ − ১:০৫ = ১০:৫৫।",
+      "t": "দর্পণ-ঘড়ি: ১১:৬০ থেকে দেখা সময় বিয়োগ।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "দেয়ালঘড়ির আয়নার প্রতিবিম্বে সময় 8:45 দেখা যাচ্ছে। ঘড়িতে প্রকৃত সময় কত?",
+      "o": [
+        "8:45",
+        "3:15",
+        "3:45",
+        "4:45"
+      ],
+      "a": 1,
+      "e": "প্রকৃত সময় = ১১:৬০ − ৮:৪৫ = ৩:১৫।",
+      "t": "দর্পণ-ঘড়ি: ১১:৬০ থেকে দেখা সময় বিয়োগ।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Easy",
+      "q": "দেয়ালঘড়ির আয়নার প্রতিবিম্বে সময় 5:00 দেখা যাচ্ছে। ঘড়িতে প্রকৃত সময় কত?",
+      "o": [
+        "7:30",
+        "5:00",
+        "7:00",
+        "8:00"
+      ],
+      "a": 2,
+      "e": "পূর্ণ ঘণ্টায় প্রকৃত সময় = ১২:০০ − ৫:০০ = ৭:০০।",
+      "t": "দর্পণ-ঘড়ি: ১১:৬০ থেকে দেখা সময় বিয়োগ।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "দেয়ালঘড়ির আয়নার প্রতিবিম্বে সময় 11:30 দেখা যাচ্ছে। ঘড়িতে প্রকৃত সময় কত?",
+      "o": [
+        "1:30",
+        "11:30",
+        "12:00",
+        "12:30"
+      ],
+      "a": 3,
+      "e": "প্রকৃত সময় = ১১:৬০ − ১১:৩০ = ১২:৩০।",
+      "t": "দর্পণ-ঘড়ি: ১১:৬০ থেকে দেখা সময় বিয়োগ।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "দেয়ালঘড়ির আয়নার প্রতিবিম্বে সময় 12:20 দেখা যাচ্ছে। ঘড়িতে প্রকৃত সময় কত?",
+      "o": [
+        "11:40",
+        "12:20",
+        "11:10",
+        "12:40"
+      ],
+      "a": 0,
+      "e": "প্রকৃত সময় = ১১:৬০ − ১২:২০ = ১১:৪০।",
+      "t": "দর্পণ-ঘড়ি: ১১:৬০ থেকে দেখা সময় বিয়োগ।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "দেয়ালঘড়ির আয়নার প্রতিবিম্বে সময় 7:55 দেখা যাচ্ছে। ঘড়িতে প্রকৃত সময় কত?",
+      "o": [
+        "7:55",
+        "4:05",
+        "4:35",
+        "5:55"
+      ],
+      "a": 1,
+      "e": "প্রকৃত সময় = ১১:৬০ − ৭:৫৫ = ৪:০৫।",
+      "t": "দর্পণ-ঘড়ি: ১১:৬০ থেকে দেখা সময় বিয়োগ।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "নিকট-সম্পর্কিত, পর্যালোচিত — ৩৮-১৮৮ (দর্পণ-ঘড়ি, উত্তর 7:20); এখানে ভিন্ন সময়",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি ঘনকের সব তল লাল রং করে সমান মাপের ২৭টি ছোট ঘনকে কাটা হলো। কতগুলো ছোট ঘনকের ঠিক দুটি তলে রং আছে?",
+      "o": [
+        "৬",
+        "৮",
+        "১২",
+        "১"
+      ],
+      "a": 2,
+      "e": "২৭ = ৩³ ⇒ প্রতি ধারে ৩টি। ধার-বরাবর: ১২(n − ২) = ১২।",
+      "t": "৩ তল: ৮ · ২ তল: ১২(n−২) · ১ তল: ৬(n−২)² · ০ তল: (n−২)³।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি বড় কাঠের ঘনকের বাইরের ছয় তল নীল রঙে রাঙিয়ে প্রতিটি ধারকে ৩ ভাগ করে কাটা হলো। এমন কয়টি টুকরো পাওয়া যাবে যার ঠিক একটি তলে নীল রং পড়েছে?",
+      "o": [
+        "১",
+        "৮",
+        "১২",
+        "৬"
+      ],
+      "a": 3,
+      "e": "২৭ = ৩³ ⇒ প্রতি ধারে ৩টি। তলের মাঝে: ৬(n − ২)² = ৬।",
+      "t": "৩ তল: ৮ · ২ তল: ১২(n−২) · ১ তল: ৬(n−২)² · ০ তল: (n−২)³।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "৪ × ৪ × ৪ মাপে সাজানো ৬৪টি ছোট ঘনক দিয়ে গঠিত একটি বড় ঘনকের পুরো বাইরের অংশ সবুজ করা হলো। আলাদা করলে ঠিক একটি তলে সবুজ আছে এমন ঘনক কয়টি?",
+      "o": [
+        "২৪",
+        "৮",
+        "২৮",
+        "২৫"
+      ],
+      "a": 0,
+      "e": "৬৪ = ৪³ ⇒ প্রতি ধারে ৪টি। তলের মাঝে: ৬(n − ২)² = ২৪।",
+      "t": "৩ তল: ৮ · ২ তল: ১২(n−২) · ১ তল: ৬(n−২)² · ০ তল: (n−২)³।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "রুবিক্স কিউবের মতো প্রতি ধারে ৪টি করে খণ্ড আছে এমন একটি ঘনক-ব্লকের সব বাইরের পৃষ্ঠ হলুদ রং করা হলো। খুলে দেখলে কয়টি খণ্ডের কোনো তলেই হলুদ পাওয়া যাবে না?",
+      "o": [
+        "২৪",
+        "৮",
+        "২৫",
+        "৯"
+      ],
+      "a": 1,
+      "e": "৬৪ = ৪³ ⇒ প্রতি ধারে ৪টি। ভেতরের: (n − ২)³ = ৮।",
+      "t": "৩ তল: ৮ · ২ তল: ১২(n−২) · ১ তল: ৬(n−২)² · ০ তল: (n−২)³।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "একজন শিল্পী ১২৫টি সমান ছোট কিউব জুড়ে একটি নিরেট বড় কিউব বানিয়ে বাইরের সব দিকে লাল রং স্প্রে করলেন। পরে কিউবগুলো আলাদা করলে ঠিক দুটি তলে রং লেগেছে এমন কিউবের সংখ্যা কত?",
+      "o": [
+        "৫৪",
+        "৮",
+        "৩৬",
+        "২৭"
+      ],
+      "a": 2,
+      "e": "১২৫ = ৫³ ⇒ প্রতি ধারে ৫টি। ধার-বরাবর: ১২(n − ২) = ৩৬।",
+      "t": "৩ তল: ৮ · ২ তল: ১২(n−২) · ১ তল: ৬(n−২)² · ০ তল: (n−২)³।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "কাঠমিস্ত্রি একটি বড় ঘনকাকার কাঠের খণ্ডের ছয় পাশ বার্নিশ করে সেটিকে ২১৬টি সমান ঘনকে কাটলেন। কোনো তলেই বার্নিশ নেই এমন ঘনক কয়টি?",
+      "o": [
+        "৯৭",
+        "৮",
+        "৪৮",
+        "৬৪"
+      ],
+      "a": 3,
+      "e": "২১৬ = ৬³ ⇒ প্রতি ধারে ৬টি। ভেতরের: (n − ২)³ = ৬৪।",
+      "t": "৩ তল: ৮ · ২ তল: ১২(n−২) · ১ তল: ৬(n−২)² · ০ তল: (n−২)³।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "৩৪৩টি ছোট ঘনক দিয়ে গড়া একটি বড় ঘনককে রঙের বালতিতে পুরোপুরি ডুবিয়ে তোলা হলো। ছোট ঘনকগুলো আলাদা করলে ঠিক একটি তলে রং লেগেছে এমন ঘনক কয়টি?",
+      "o": [
+        "১৫০",
+        "৮",
+        "৬০",
+        "১২৫"
+      ],
+      "a": 0,
+      "e": "৩৪৩ = ৭³ ⇒ প্রতি ধারে ৭টি। তলের মাঝে: ৬(n − ২)² = ১৫০।",
+      "t": "৩ তল: ৮ · ২ তল: ১২(n−২) · ১ তল: ৬(n−২)² · ০ তল: (n−২)³।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি বর্গক্ষেত্রের দুটি কর্ণই আঁকা হলো। চিত্রে মোট কতটি ত্রিভুজ আছে?",
+      "o": [
+        "৪",
+        "৮",
+        "৬",
+        "১০"
+      ],
+      "a": 1,
+      "e": "কর্ণ দুটি বর্গকে ৪টি ছোট ত্রিভুজে ভাগ করে; প্রতিটি কর্ণ আরও ২টি বড় ত্রিভুজ তৈরি করে (২ × ২ = ৪) ⇒ ৪ + ৪ = ৮।",
+      "t": "ছোট ত্রিভুজ ও যুক্ত-ত্রিভুজ আলাদা গোনো।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি ঘনকের ছয়টি তল এমনভাবে রং করতে হবে যাতে পাশাপাশি দুটি তলে একই রং না থাকে। কমপক্ষে কয়টি রং লাগবে?",
+      "o": [
+        "৪",
+        "২",
+        "৩",
+        "৬"
+      ],
+      "a": 2,
+      "e": "বিপরীত তলগুলো পরস্পর সংলগ্ন নয়, তাই তিন জোড়া বিপরীত তলে তিনটি রং যথেষ্ট; একটি কোণে তিনটি তল মিলিত হয় বলে ২টি রং যথেষ্ট নয়।",
+      "t": "বিপরীত তল একই রং পেতে পারে।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Easy",
+      "q": "একটি ঘনককে যেকোনো দিক থেকে দেখলে একসাথে সর্বোচ্চ কয়টি তল দেখা যায়?",
+      "o": [
+        "৬",
+        "২",
+        "৪",
+        "৩"
+      ],
+      "a": 3,
+      "e": "একটি কোণের দিক থেকে দেখলে তিনটি তল দেখা যায়; এর বেশি একসাথে দেখা সম্ভব নয়।",
+      "t": "একটি শীর্ষে ৩টি তল মিলিত হয়।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "একটি উত্তল পঞ্চভুজের সব কর্ণ আঁকলে পঞ্চভুজের ভেতরে কর্ণগুলোর মোট কতটি ছেদবিন্দু হয় (কোনো তিনটি কর্ণ একবিন্দুগামী নয়)?",
+      "o": [
+        "৫",
+        "১০",
+        "৪",
+        "৬"
+      ],
+      "a": 0,
+      "e": "প্রতি চারটি শীর্ষবিন্দু থেকে একটি ছেদবিন্দু ⇒ C(৫, ৪) = ৫।",
+      "t": "ভেতরের ছেদবিন্দু = C(n, ৪)।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি সুষম ষড়ভুজের কেন্দ্রকে ছয়টি শীর্ষবিন্দুর সঙ্গে যুক্ত করলে কয়টি সমবাহু ত্রিভুজ পাওয়া যায়?",
+      "o": [
+        "৪",
+        "৬",
+        "৮",
+        "১২"
+      ],
+      "a": 1,
+      "e": "সুষম ষড়ভুজে কেন্দ্র থেকে প্রতিটি শীর্ষের দূরত্ব বাহুর সমান, তাই ৬টি সমবাহু ত্রিভুজ তৈরি হয়।",
+      "t": "ষড়ভুজ = ৬টি সমবাহু ত্রিভুজ।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি ঘনকের সব তল রং করে ৬৪টি সমান ছোট ঘনকে কাটা হলো। অন্তত একটি তলে রং আছে এমন ছোট ঘনক কয়টি?",
+      "o": [
+        "৬০",
+        "৪৮",
+        "৫৬",
+        "২৪"
+      ],
+      "a": 2,
+      "e": "রংহীন (ভেতরের) = (৪ − ২)³ = ৮ ⇒ রংযুক্ত = ৬৪ − ৮ = ৫৬।",
+      "t": "রংযুক্ত = মোট − ভেতরের।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "৩ সেমি × ৩ সেমি × ৩ সেমি একটি কাঠের ঘনকের সব তল রং করে ১ সেমি ধারের ছোট ঘনকে কাটা হলো। রং না থাকা ও ঠিক একটি তলে রং থাকা ঘনকের মোট সংখ্যা কত?",
+      "o": [
+        "১২",
+        "৮",
+        "৯",
+        "৭"
+      ],
+      "a": 3,
+      "e": "রংহীন = ১³ = ১; এক তলে রং = ৬ × ১² = ৬ ⇒ মোট ৭।",
+      "t": "n = ৩ হলে প্রতিটি তলের ঠিক মাঝে একটি করে।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Easy",
+      "q": "একটি সাধারণ ছক্কায় বিপরীত তলের সংখ্যার যোগফল সবসময় ৭। এমন ছক্কায় ২-এর বিপরীত তলে কোন সংখ্যা থাকে?",
+      "o": [
+        "৫",
+        "৩",
+        "৪",
+        "৬"
+      ],
+      "a": 0,
+      "e": "বিপরীত তলের যোগফল ৭ ⇒ ৭ − ২ = ৫।",
+      "t": "বিপরীত = ৭ − সংখ্যা।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Easy",
+      "q": "একটি ঘনকের যেকোনো একটি তলের সঙ্গে সংলগ্ন (পাশাপাশি) তল কয়টি?",
+      "o": [
+        "৩",
+        "৪",
+        "৫",
+        "৬"
+      ],
+      "a": 1,
+      "e": "ঘনকের ৬টি তলের মধ্যে একটি নিজে ও একটি বিপরীত — বাকি ৪টি সংলগ্ন।",
+      "t": "সংলগ্ন = ৬ − ২।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি ঘনকের ছয় তলে ১ থেকে ৬ লেখা। দুটি ভিন্ন অবস্থানে দেখা গেল, ৩-এর চারপাশের তলগুলোতে ১, ২, ৫ ও ৬ আছে। ৩-এর বিপরীত তলে কোন সংখ্যা?",
+      "o": [
+        "২",
+        "১",
+        "৪",
+        "৬"
+      ],
+      "a": 2,
+      "e": "একটি তলের চারটি সংলগ্ন তল জানা গেলে বাকি যে একটি সংখ্যা থাকে (৪), সেটিই বিপরীত তল।",
+      "t": "সংলগ্ন চারটি বাদ দিলে যা থাকে = বিপরীত।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি ঘনকের ছয় তলে A থেকে F লেখা। দুটি অবস্থানে দেখা গেল, B-এর পাশে A, C, D ও F আছে। B-এর বিপরীত তলে কোন বর্ণ?",
+      "o": [
+        "F",
+        "A",
+        "C",
+        "E"
+      ],
+      "a": 3,
+      "e": "B-এর চারটি সংলগ্ন তল A, C, D, F ⇒ বাকি E-ই বিপরীত তল।",
+      "t": "সংলগ্ন চারটি বাদ দিলে যা থাকে = বিপরীত।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি ঘনকের শীর্ষবিন্দু, ধার ও তলের সংখ্যার যোগফল কত?",
+      "o": [
+        "২৬",
+        "২৪",
+        "২০",
+        "২৮"
+      ],
+      "a": 0,
+      "e": "শীর্ষ ৮ + ধার ১২ + তল ৬ = ২৬।",
+      "t": "ঘনক: ৮ শীর্ষ, ১২ ধার, ৬ তল।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "একটি সাধারণ ছক্কা (বিপরীত তলের যোগফল ৭) টেবিলের ওপর রাখা হলে উপরের তলে ৬ দেখা যায়। নিচের তল ছাড়া বাকি পাঁচটি তলের সংখ্যার যোগফল কত?",
+      "o": [
+        "২১",
+        "২০",
+        "১৫",
+        "১৪"
+      ],
+      "a": 1,
+      "e": "মোট ১ + ২ + … + ৬ = ২১; নিচের তল = ৭ − ৬ = ১ ⇒ বাকি পাঁচটি = ২০।",
+      "t": "দৃশ্যমান পাঁচ তল = ২১ − নিচের তল।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি বর্গক্ষেত্রকে ৩ × ৩ সমান ছোট বর্গে ভাগ করা হলো (দাবার ছকের মতো)। চিত্রে মোট কতটি বর্গক্ষেত্র আছে (সব আকারের)?",
+      "o": [
+        "১১",
+        "৯",
+        "১৪",
+        "৩০"
+      ],
+      "a": 2,
+      "e": "বর্গের সংখ্যা = ১² + ২² + … + ৩² = ১৪।",
+      "t": "n × n ছকে বর্গ = Σk²।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি বর্গক্ষেত্রকে ৪ × ৪ সমান ছোট বর্গে ভাগ করা হলো (দাবার ছকের মতো)। চিত্রে মোট কতটি বর্গক্ষেত্র আছে (সব আকারের)?",
+      "o": [
+        "৫৫",
+        "১৬",
+        "২৬",
+        "৩০"
+      ],
+      "a": 3,
+      "e": "বর্গের সংখ্যা = ১² + ২² + … + ৪² = ৩০।",
+      "t": "n × n ছকে বর্গ = Σk²।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "একটি বর্গক্ষেত্রকে ৫ × ৫ সমান ছোট বর্গে ভাগ করা হলো (দাবার ছকের মতো)। চিত্রে মোট কতটি বর্গক্ষেত্র আছে (সব আকারের)?",
+      "o": [
+        "৫৫",
+        "২৫",
+        "৫০",
+        "৯১"
+      ],
+      "a": 0,
+      "e": "বর্গের সংখ্যা = ১² + ২² + … + ৫² = ৫৫।",
+      "t": "n × n ছকে বর্গ = Σk²।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "একটি বর্গক্ষেত্রকে ৬ × ৬ সমান ছোট বর্গে ভাগ করা হলো (দাবার ছকের মতো)। চিত্রে মোট কতটি বর্গক্ষেত্র আছে (সব আকারের)?",
+      "o": [
+        "৩৬",
+        "৯১",
+        "৮৫",
+        "১৪০"
+      ],
+      "a": 1,
+      "e": "বর্গের সংখ্যা = ১² + ২² + … + ৬² = ৯১।",
+      "t": "n × n ছকে বর্গ = Σk²।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "দাবার বোর্ডে (৮ × ৮ ছক) সব আকার মিলিয়ে মোট কতটি বর্গক্ষেত্র আছে?",
+      "o": [
+        "১৯৬",
+        "৬৪",
+        "২০৪",
+        "২৫৬"
+      ],
+      "a": 2,
+      "e": "১² + ২² + … + ৮² = ২০৪।",
+      "t": "n(n + ১)(২n + ১)/৬ = ৮ × ৯ × ১৭/৬।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "একটি আয়তক্ষেত্রকে ২ সারি × ৩ কলামে সমান ছোট খোপে ভাগ করা হলো। চিত্রে মোট কতটি আয়তক্ষেত্র (বর্গসহ) আছে?",
+      "o": [
+        "১২",
+        "৬",
+        "৯",
+        "১৮"
+      ],
+      "a": 3,
+      "e": "৩টি অনুভূমিক রেখা থেকে ২টি ও ৪টি উল্লম্ব রেখা থেকে ২টি বাছাই: C(৩, ২) × C(৪, ২) = ৩ × ৬।",
+      "t": "আয়ত = C(অনুভূমিক রেখা, ২) × C(উল্লম্ব রেখা, ২)।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "একটি জানালার গ্রিলে ৪টি আনুভূমিক ও ৪টি খাড়া রড পরস্পরকে ছেদ করেছে। রডগুলো দিয়ে সব আকার মিলিয়ে কতটি আয়তাকার ঘর গঠিত হয় (বর্গসহ)?",
+      "o": [
+        "৩৬",
+        "৯",
+        "১২",
+        "২৭"
+      ],
+      "a": 0,
+      "e": "৪টি অনুভূমিক রেখা থেকে ২টি ও ৪টি উল্লম্ব রেখা থেকে ২টি বাছাই: C(৪, ২) × C(৪, ২) = ৬ × ৬।",
+      "t": "আয়ত = C(অনুভূমিক রেখা, ২) × C(উল্লম্ব রেখা, ২)।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "২ × ৪ খোপের একটি ছকে (প্রতিটি খোপ বর্গাকার) ছোট-বড় সব মিলিয়ে কয়টি আয়ত খুঁজে পাওয়া যাবে?",
+      "o": [
+        "৮",
+        "৩০",
+        "১৩",
+        "২২"
+      ],
+      "a": 1,
+      "e": "৩টি অনুভূমিক রেখা থেকে ২টি ও ৫টি উল্লম্ব রেখা থেকে ২টি বাছাই: C(৩, ২) × C(৫, ২) = ৩ × ১০।",
+      "t": "আয়ত = C(অনুভূমিক রেখা, ২) × C(উল্লম্ব রেখা, ২)।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "একটি বাগানকে সরু পথ দিয়ে ৩টি সারি ও ৪টি কলামে সমান প্লটে ভাগ করা হলো। পথের রেখাগুলো দিয়ে গঠিত সব আয়তের (একাধিক প্লট মিলিয়ে বড় আয়তসহ) সংখ্যা কত?",
+      "o": [
+        "১৬",
+        "১২",
+        "৬০",
+        "৪৮"
+      ],
+      "a": 2,
+      "e": "৪টি অনুভূমিক রেখা থেকে ২টি ও ৫টি উল্লম্ব রেখা থেকে ২টি বাছাই: C(৪, ২) × C(৫, ২) = ৬ × ১০।",
+      "t": "আয়ত = C(অনুভূমিক রেখা, ২) × C(উল্লম্ব রেখা, ২)।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি ত্রিভুজের শীর্ষবিন্দু থেকে ভূমি পর্যন্ত ভেতরে ২টি সরলরেখা টানা হলো। চিত্রে মোট কতটি ত্রিভুজ আছে?",
+      "o": [
+        "৭",
+        "৩",
+        "৫",
+        "৬"
+      ],
+      "a": 3,
+      "e": "ভূমিতে মোট ৪টি বিন্দু (দুই প্রান্তসহ); যেকোনো দুটি বিন্দু শীর্ষের সঙ্গে একটি ত্রিভুজ গঠন করে ⇒ C(৪, ২) = ৬।",
+      "t": "শীর্ষ থেকে k রেখা ⇒ ত্রিভুজ = C(k + ২, ২)।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি ত্রিভুজাকার পতাকার চূড়া থেকে নিচের বাহু পর্যন্ত ৩টি দাগ টানা হয়েছে। দাগ ও বাহু মিলিয়ে ছোট-বড় কয়টি ত্রিভুজ দেখা যাবে?",
+      "o": [
+        "১০",
+        "৪",
+        "৯",
+        "৮"
+      ],
+      "a": 0,
+      "e": "ভূমিতে মোট ৫টি বিন্দু (দুই প্রান্তসহ); যেকোনো দুটি বিন্দু শীর্ষের সঙ্গে একটি ত্রিভুজ গঠন করে ⇒ C(৫, ২) = ১০।",
+      "t": "শীর্ষ থেকে k রেখা ⇒ ত্রিভুজ = C(k + ২, ২)।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "ABC ত্রিভুজের শীর্ষ A থেকে BC বাহুর ওপর ৪টি ভিন্ন বিন্দুতে রেখা টানা হলো। মোট ত্রিভুজের সংখ্যা কত?",
+      "o": [
+        "৫",
+        "১৫",
+        "১৪",
+        "১০"
+      ],
+      "a": 1,
+      "e": "ভূমিতে মোট ৬টি বিন্দু (দুই প্রান্তসহ); যেকোনো দুটি বিন্দু শীর্ষের সঙ্গে একটি ত্রিভুজ গঠন করে ⇒ C(৬, ২) = ১৫।",
+      "t": "শীর্ষ থেকে k রেখা ⇒ ত্রিভুজ = C(k + ২, ২)।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "শীর্ষবিন্দু থেকে ভূমিতে ৫টি রেখা টানলে একটি ত্রিভুজ কতগুলো ত্রিভুজে (সব আকার মিলিয়ে) পরিণত হয়?",
+      "o": [
+        "২০",
+        "৬",
+        "২১",
+        "১২"
+      ],
+      "a": 2,
+      "e": "ভূমিতে মোট ৭টি বিন্দু (দুই প্রান্তসহ); যেকোনো দুটি বিন্দু শীর্ষের সঙ্গে একটি ত্রিভুজ গঠন করে ⇒ C(৭, ২) = ২১।",
+      "t": "শীর্ষ থেকে k রেখা ⇒ ত্রিভুজ = C(k + ২, ২)।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "একটি ত্রিভুজের শীর্ষবিন্দু থেকে ভূমি পর্যন্ত ভেতরে ২টি সরলরেখা এবং ভূমির সমান্তরাল ১টি সরলরেখা টানা হলো (প্রতিটি সমান্তরাল রেখা দুই বাহু পর্যন্ত বিস্তৃত)। চিত্রে মোট কতটি ত্রিভুজ আছে?",
+      "o": [
+        "১১",
+        "৬",
+        "১৩",
+        "১২"
+      ],
+      "a": 3,
+      "e": "প্রতিটি অনুভূমিক স্তরে (ভূমিসহ ২টি) শীর্ষ থেকে C(৪, ২) = ৬টি ত্রিভুজ ⇒ ৬ × ২ = ১২।",
+      "t": "ত্রিভুজ = C(k + ২, ২) × (সমান্তরাল রেখা + ১)।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "একটি ত্রিভুজের ভেতরে চূড়া থেকে নিচের বাহুতে ৩টি রেখা নামানো হলো, আবার নিচের বাহুর সমান্তরালে আড়াআড়ি ২টি রেখা টানা হলো যেগুলো দুই পাশের বাহু ছুঁয়েছে। এখন ছবিতে মোট ত্রিভুজ কয়টি?",
+      "o": [
+        "৩০",
+        "১০",
+        "২০",
+        "১২"
+      ],
+      "a": 0,
+      "e": "প্রতিটি অনুভূমিক স্তরে (ভূমিসহ ৩টি) শীর্ষ থেকে C(৫, ২) = ১০টি ত্রিভুজ ⇒ ১০ × ৩ = ৩০।",
+      "t": "ত্রিভুজ = C(k + ২, ২) × (সমান্তরাল রেখা + ১)।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি সুষম ৬-ভুজের মোট কর্ণ কয়টি?",
+      "o": [
+        "১৫",
+        "৯",
+        "১২",
+        "১৮"
+      ],
+      "a": 1,
+      "e": "কর্ণ = n(n − ৩)/২ = ৬ × ৩/২ = ৯।",
+      "t": "প্রতি শীর্ষ থেকে n − ৩টি কর্ণ, প্রতিটি দুবার গোনা।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি সুষম ৮-ভুজের মোট কর্ণ কয়টি?",
+      "o": [
+        "২৪",
+        "২৮",
+        "২০",
+        "৪০"
+      ],
+      "a": 2,
+      "e": "কর্ণ = n(n − ৩)/২ = ৮ × ৫/২ = ২০।",
+      "t": "প্রতি শীর্ষ থেকে n − ৩টি কর্ণ, প্রতিটি দুবার গোনা।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি সুষম ১০-ভুজের মোট কর্ণ কয়টি?",
+      "o": [
+        "৭০",
+        "৪৫",
+        "৪০",
+        "৩৫"
+      ],
+      "a": 3,
+      "e": "কর্ণ = n(n − ৩)/২ = ১০ × ৭/২ = ৩৫।",
+      "t": "প্রতি শীর্ষ থেকে n − ৩টি কর্ণ, প্রতিটি দুবার গোনা।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "একটি ৬-ভুজের শীর্ষবিন্দুগুলো যুক্ত করে মোট কতটি ত্রিভুজ আঁকা যায়?",
+      "o": [
+        "২০",
+        "১৫",
+        "১৮",
+        "১৪"
+      ],
+      "a": 0,
+      "e": "যেকোনো তিনটি শীর্ষ একটি ত্রিভুজ ⇒ C(৬, ৩) = ২০।",
+      "t": "ত্রিভুজ = C(n, ৩)।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "একটি ৮-ভুজের শীর্ষবিন্দুগুলো যুক্ত করে মোট কতটি ত্রিভুজ আঁকা যায়?",
+      "o": [
+        "২৮",
+        "৫৬",
+        "২৪",
+        "৪৮"
+      ],
+      "a": 1,
+      "e": "যেকোনো তিনটি শীর্ষ একটি ত্রিভুজ ⇒ C(৮, ৩) = ৫৬।",
+      "t": "ত্রিভুজ = C(n, ৩)।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি সমতলে ৭টি বিন্দু আছে, যাদের কোনো তিনটি একই সরলরেখায় নয়। বিন্দুগুলো জোড়ায় জোড়ায় যুক্ত করে কতটি সরলরেখা আঁকা যায়?",
+      "o": [
+        "৩৫",
+        "৪২",
+        "২১",
+        "৭"
+      ],
+      "a": 2,
+      "e": "যেকোনো দুটি বিন্দু একটি রেখা ⇒ C(৭, ২) = ২১।",
+      "t": "রেখা = C(n, ২)।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি বৃত্তের পরিধিতে ৯টি বিন্দু চিহ্নিত করা হলো। প্রতিটি বিন্দুকে অন্য প্রতিটির সঙ্গে সরলরেখা দিয়ে যুক্ত করলে মোট কতটি রেখা (জ্যা) হবে?",
+      "o": [
+        "৯",
+        "৭২",
+        "৮৪",
+        "৩৬"
+      ],
+      "a": 3,
+      "e": "যেকোনো দুটি বিন্দু একটি রেখা ⇒ C(৯, ২) = ৩৬।",
+      "t": "রেখা = C(n, ২)।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি বর্গাকার কাগজকে কর্ণ বরাবর ভাঁজ করে ত্রিভুজ বানানো হলো, তারপর সেই ত্রিভুজকে আবার অর্ধেক ভাঁজ করে ছোট ত্রিভুজ বানানো হলো। সব স্তর ভেদ করে একটি ছিদ্র করে খুললে কয়টি ছিদ্র দেখা যাবে?",
+      "o": [
+        "৪",
+        "২",
+        "৩",
+        "৮"
+      ],
+      "a": 0,
+      "e": "কর্ণ বরাবর ভাঁজেও স্তর দ্বিগুণ হয়: দুই ভাঁজে ৪ স্তর ⇒ ৪টি ছিদ্র।",
+      "t": "ভাঁজের আকার যা-ই হোক, প্রতি অর্ধেক ভাঁজে স্তর দ্বিগুণ।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি লম্বা কাগজকে সমান তিন ভাগে (একবারে Z-আকারে) ভাঁজ করে সব স্তর ভেদ করে একটি ছিদ্র করা হলো। খুললে কয়টি ছিদ্র দেখা যাবে?",
+      "o": [
+        "২",
+        "৩",
+        "৪",
+        "৬"
+      ],
+      "a": 1,
+      "e": "তিন ভাগে ভাঁজ করলে ৩টি স্তর ⇒ ৩টি ছিদ্র।",
+      "t": "ছিদ্র = ভাঁজ করা অবস্থায় স্তরের সংখ্যা।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Easy",
+      "q": "একটি বর্গাকার কাগজকে প্রতিবার অর্ধেক করে মোট ২ বার ভাঁজ করা হলো। ভাঁজ করা অবস্থায় সব স্তর ভেদ করে একটি ছিদ্র করে কাগজটি খোলা হলে কয়টি ছিদ্র দেখা যাবে?",
+      "o": [
+        "৬",
+        "২",
+        "৪",
+        "৫"
+      ],
+      "a": 2,
+      "e": "প্রতিটি ভাঁজে স্তর দ্বিগুণ হয় ⇒ ২ ভাঁজে ২^২ = ৪ স্তর, তাই ৪টি ছিদ্র।",
+      "t": "ছিদ্র = ২^(ভাঁজের সংখ্যা)।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "রুমা একটি কাগজকে চারবার পরপর মাঝ বরাবর ভাঁজ করে পাঞ্চ মেশিন দিয়ে একবার ফুটো করল। কাগজটি পুরো খুললে মোট ফুটো কয়টি হবে?",
+      "o": [
+        "১৭",
+        "৪",
+        "৮",
+        "১৬"
+      ],
+      "a": 3,
+      "e": "প্রতিটি ভাঁজে স্তর দ্বিগুণ হয় ⇒ ৪ ভাঁজে ২^৪ = ১৬ স্তর, তাই ১৬টি ছিদ্র।",
+      "t": "ছিদ্র = ২^(ভাঁজের সংখ্যা)।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি কাগজ অর্ধেক করে ২ বার ভাঁজ করে ভাঁজ করা অবস্থায় ৩টি ছিদ্র করা হলো। খুললে মোট কয়টি ছিদ্র দেখা যাবে?",
+      "o": [
+        "১২",
+        "৬",
+        "৭",
+        "১৬"
+      ],
+      "a": 0,
+      "e": "২ ভাঁজে ৪ স্তর; প্রতিটি ছিদ্র ৪টি করে ⇒ ৩ × ৪ = ১২।",
+      "t": "মোট = ছিদ্র × ২^ভাঁজ।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "একটি কাগজ অর্ধেক করে ৩ বার ভাঁজ করে একটি ছিদ্র করা হলো এবং আরও একবার অর্ধেক ভাঁজ করে আরেকটি ছিদ্র করা হলো। খুললে মোট কয়টি ছিদ্র?",
+      "o": [
+        "১৬",
+        "২৪",
+        "৩২",
+        "২০"
+      ],
+      "a": 1,
+      "e": "প্রথম ছিদ্র ৩ ভাঁজে ⇒ ৮টি; দ্বিতীয় ছিদ্র ৪ ভাঁজে ⇒ ১৬টি; মোট ২৪।",
+      "t": "প্রতিটি ছিদ্র তার সময়ের স্তরসংখ্যার সমান হয়।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি কাগজকে কতবার অর্ধেক করে ভাঁজ করে একটি ছিদ্র করলে খোলার পর ৩২টি ছিদ্র পাওয়া যাবে?",
+      "o": [
+        "৬",
+        "৪",
+        "৫",
+        "১৬"
+      ],
+      "a": 2,
+      "e": "২ⁿ = ৩২ ⇒ n = ৫।",
+      "t": "ছিদ্র = ২ⁿ।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি আয়তাকার কাগজ লম্বালম্বি একবার এবং আড়াআড়ি একবার অর্ধেক ভাঁজ করে ভাঁজের ঠিক কোণটি কেটে ফেলা হলো। খুললে কাগজের মাঝখানে কয়টি ছিদ্র দেখা যাবে?",
+      "o": [
+        "০",
+        "২",
+        "৪",
+        "১"
+      ],
+      "a": 3,
+      "e": "দুই ভাঁজের মিলনবিন্দু (কোণ) খোলার পর কাগজের ঠিক কেন্দ্রে পড়ে — চার স্তরের কাটা অংশ মিলে একটি ছিদ্র হয়।",
+      "t": "ভাঁজের কোণ কাটলে কেন্দ্রে একটি ছিদ্র।",
+      "calc": true,
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Easy",
+      "q": "একটি চিত্র-ধারায় একটি তীর প্রথমে উত্তর দিকে মুখ করে আছে এবং প্রতি ধাপে ৪৫° ঘড়ির কাঁটার দিকে ঘোরে। ৫টি ধাপ পরে তীরটি কোন দিকে মুখ করবে?",
+      "o": [
+        "দক্ষিণ-পশ্চিম",
+        "দক্ষিণ",
+        "দক্ষিণ-পূর্ব",
+        "পশ্চিম"
+      ],
+      "a": 0,
+      "e": "মোট ঘূর্ণন ২২৫° ঘড়ির কাঁটার দিকে — প্রতি ৪৫°-এ এক দিক সরে ⇒ দক্ষিণ-পশ্চিম।",
+      "t": "মোট ঘূর্ণন = ধাপ × কোণ; ৩৬০° পূর্ণ হলে আগের অবস্থান।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "একটি আবহাওয়া-মোরগের (বাতাসের দিক নির্দেশক) মুখ উত্তর দিকে। প্রতি ঘণ্টায় বাতাস বদলে এটি ১৩৫° করে ঘড়ির কাঁটার দিকে সরে। ৩ ঘণ্টা পরে এর মুখ কোন দিকে থাকবে?",
+      "o": [
+        "পশ্চিম",
+        "উত্তর-পূর্ব",
+        "উত্তর-পশ্চিম",
+        "দক্ষিণ"
+      ],
+      "a": 1,
+      "e": "মোট ঘূর্ণন ৪০৫° ঘড়ির কাঁটার দিকে — প্রতি ৪৫°-এ এক দিক সরে ⇒ উত্তর-পূর্ব।",
+      "t": "মোট ঘূর্ণন = ধাপ × কোণ; ৩৬০° পূর্ণ হলে আগের অবস্থান।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "কম্পাসের কাঁটার মতো একটি সূচক পূর্ব নির্দেশ করছে। প্রতিবার বোতাম চাপলে সূচকটি ঘড়ির কাঁটার বিপরীতে ৯০° ঘোরে। ৩ বার চাপার পর সূচক কোন দিক নির্দেশ করবে?",
+      "o": [
+        "উত্তর",
+        "পশ্চিম",
+        "দক্ষিণ",
+        "পূর্ব"
+      ],
+      "a": 2,
+      "e": "মোট ঘূর্ণন ২৭০° ঘড়ির কাঁটার বিপরীতে — প্রতি ৪৫°-এ এক দিক সরে ⇒ দক্ষিণ।",
+      "t": "মোট ঘূর্ণন = ধাপ × কোণ; ৩৬০° পূর্ণ হলে আগের অবস্থান।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "একটি নকশা-সিরিজের প্রথম ছবিতে পতাকাটি দক্ষিণ দিকে উড়ছে; পরের প্রতিটি ছবিতে পতাকার দিক ঘড়ির কাঁটার দিকে ১৩৫° সরে যায়। ৫তম ছবিতে পতাকা কোন দিকে উড়বে?",
+      "o": [
+        "পশ্চিম",
+        "দক্ষিণ-পশ্চিম",
+        "দক্ষিণ-পূর্ব",
+        "উত্তর"
+      ],
+      "a": 3,
+      "e": "মোট ঘূর্ণন ৫৪০° ঘড়ির কাঁটার দিকে — প্রতি ৪৫°-এ এক দিক সরে ⇒ উত্তর।",
+      "t": "মোট ঘূর্ণন = ধাপ × কোণ; ৩৬০° পূর্ণ হলে আগের অবস্থান।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Hard",
+      "q": "ঘূর্ণায়মান মঞ্চে একজন অভিনেতা শুরুতে পশ্চিমমুখী। মঞ্চ প্রতি দফায় ২২৫° ঘড়ির কাঁটার দিকে ঘোরে। ৩ দফা পরে অভিনেতার মুখ কোন দিকে?",
+      "o": [
+        "দক্ষিণ-পশ্চিম",
+        "উত্তর",
+        "উত্তর-পশ্চিম",
+        "পূর্ব"
+      ],
+      "a": 0,
+      "e": "মোট ঘূর্ণন ৬৭৫° ঘড়ির কাঁটার দিকে — প্রতি ৪৫°-এ এক দিক সরে ⇒ দক্ষিণ-পশ্চিম।",
+      "t": "মোট ঘূর্ণন = ধাপ × কোণ; ৩৬০° পূর্ণ হলে আগের অবস্থান।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.CH.PRT",
+      "d": "Medium",
+      "q": "বাতিঘরের আলোর রশ্মি এখন উত্তর-পূর্ব দিকে। প্রতি সেকেন্ডে রশ্মিটি ঘড়ির কাঁটার বিপরীতে ১৩৫° ঘোরে। ২ সেকেন্ড পরে রশ্মি কোন দিকে পড়বে?",
+      "o": [
+        "পশ্চিম",
+        "দক্ষিণ-পূর্ব",
+        "উত্তর-পশ্চিম",
+        "উত্তর"
+      ],
+      "a": 1,
+      "e": "মোট ঘূর্ণন ২৭০° ঘড়ির কাঁটার বিপরীতে — প্রতি ৪৫°-এ এক দিক সরে ⇒ দক্ষিণ-পূর্ব।",
+      "t": "মোট ঘূর্ণন = ধাপ × কোণ; ৩৬০° পূর্ণ হলে আগের অবস্থান।",
+      "src": "লেকচার ০৪ (Space Relation) ও Standard Reasoning Reference (R. S. Aggarwal — A Modern Approach to Non-Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

@@ -1,0 +1,1302 @@
+{
+  "batch": "Batch 05",
+  "subject": "মানসিক দক্ষতা (Mental Ability)",
+  "basis": "MN.BC.BAN বানান ও ভাষাগত দক্ষতা — বাংলা ও ইংরেজি শুদ্ধ বানান, সমার্থক-বিপরীতার্থক, এক কথায় প্রকাশ",
+  "subtopics": {
+    "MN.BC.BAN": {}
+  },
+  "questions": [
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "শুদ্ধ বানান কোনটি?",
+      "o": [
+        "মুহূর্ত",
+        "মুহুর্ত",
+        "মূহুর্ত",
+        "মুহূর্থ"
+      ],
+      "a": 0,
+      "e": "শুদ্ধ: মুহূর্ত। মু-তে হ্রস্ব উ, হূ-তে দীর্ঘ ঊ।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "কোন বানানটি শুদ্ধ?",
+      "o": [
+        "পুরষ্কার",
+        "পুরস্কার",
+        "পূরস্কার",
+        "পুরুস্কার"
+      ],
+      "a": 1,
+      "e": "শুদ্ধ: পুরস্কার। পুরঃ + কার — বিসর্গের পরে ক থাকায় 'স্ক' (মূর্ধন্য ষ নয়)।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "শুদ্ধ বানান কোনটি?",
+      "o": [
+        "বুদ্ধিজিবী",
+        "বুদ্ধিজীবি",
+        "বুদ্ধিজীবী",
+        "বুদ্ধীজীবী"
+      ],
+      "a": 2,
+      "e": "শুদ্ধ: বুদ্ধিজীবী। জী ও বী — দুটিতেই দীর্ঘ ঈ; বুদ্ধি-তে হ্রস্ব ই।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Hard",
+      "q": "কোন বানানটি শুদ্ধ?",
+      "o": [
+        "উজ্জ্বোল",
+        "উজ্জল",
+        "উজ্বল",
+        "উজ্জ্বল"
+      ],
+      "a": 3,
+      "e": "শুদ্ধ: উজ্জ্বল। উৎ + জ্বল ⇒ উজ্জ্বল — জ্জ-এর সঙ্গে ব-ফলা।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "শুদ্ধ বানান কোনটি?",
+      "o": [
+        "কৌতূহল",
+        "কৌতুহল",
+        "কোতূহল",
+        "কৌতূহোল"
+      ],
+      "a": 0,
+      "e": "শুদ্ধ: কৌতূহল। কৌ-তে ঔ-কার, তূ-তে দীর্ঘ ঊ।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "কোন বানানটি শুদ্ধ?",
+      "o": [
+        "দূরাবস্থা",
+        "দুরবস্থা",
+        "দুরাবস্থা",
+        "দূরবস্থা"
+      ],
+      "a": 1,
+      "e": "শুদ্ধ: দুরবস্থা। দুঃ + অবস্থা ⇒ দুরবস্থা (হ্রস্ব উ, আ-কার নেই)।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "শুদ্ধ বানান কোনটি?",
+      "o": [
+        "সমীচিন",
+        "সমিচীন",
+        "সমীচীন",
+        "সমিচিন"
+      ],
+      "a": 2,
+      "e": "শুদ্ধ: সমীচীন। মী ও চী — দুটিতেই দীর্ঘ ঈ।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Hard",
+      "q": "কোন বানানটি শুদ্ধ?",
+      "o": [
+        "মনিষি",
+        "মনিষী",
+        "মনীষি",
+        "মনীষী"
+      ],
+      "a": 3,
+      "e": "শুদ্ধ: মনীষী। নী ও ষী — দুটিতেই দীর্ঘ ঈ, মূর্ধন্য ষ।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "শুদ্ধ বানান কোনটি?",
+      "o": [
+        "অত্যধিক",
+        "অত্যাধিক",
+        "অত্যধীক",
+        "অতধিক"
+      ],
+      "a": 0,
+      "e": "শুদ্ধ: অত্যধিক। অতি + অধিক ⇒ অত্যধিক (য-ফলা, আ-কার নেই)।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "কোন বানানটি শুদ্ধ?",
+      "o": [
+        "ভৌগলিক",
+        "ভৌগোলিক",
+        "ভোগোলিক",
+        "ভৌগোলীক"
+      ],
+      "a": 1,
+      "e": "শুদ্ধ: ভৌগোলিক। ভূগোল + ইক ⇒ ভৌগোলিক — 'গো' থাকে।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "শুদ্ধ বানান কোনটি?",
+      "o": [
+        "মরীচীকা",
+        "মরিচিকা",
+        "মরীচিকা",
+        "মরিচীকা"
+      ],
+      "a": 2,
+      "e": "শুদ্ধ: মরীচিকা। রী-তে দীর্ঘ ঈ, চি-তে হ্রস্ব ই।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Hard",
+      "q": "কোন বানানটি শুদ্ধ?",
+      "o": [
+        "নুপূর",
+        "নুপুর",
+        "নূপূর",
+        "নূপুর"
+      ],
+      "a": 3,
+      "e": "শুদ্ধ: নূপুর। নূ-তে দীর্ঘ ঊ, পু-তে হ্রস্ব উ।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "শুদ্ধ বানান কোনটি?",
+      "o": [
+        "দারিদ্র্য",
+        "দারিদ্রতা",
+        "দারিদ্য",
+        "দারীদ্র্য"
+      ],
+      "a": 0,
+      "e": "শুদ্ধ: দারিদ্র্য। দরিদ্র + য (ষ্ণ্য) ⇒ দারিদ্র্য; 'দারিদ্রতা' দ্বিগুণ প্রত্যয়ের ভুল।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "কোন বানানটি শুদ্ধ?",
+      "o": [
+        "বৈচিত্র",
+        "বৈচিত্র্য",
+        "বৈচিত্রতা",
+        "বৈচীত্র্য"
+      ],
+      "a": 1,
+      "e": "শুদ্ধ: বৈচিত্র্য। বিচিত্র + য ⇒ বৈচিত্র্য (শেষে য-ফলা)।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "শুদ্ধ বানান কোনটি?",
+      "o": [
+        "সুশ্রূষা",
+        "শুশ্রুষা",
+        "শুশ্রূষা",
+        "শুস্রূষা"
+      ],
+      "a": 2,
+      "e": "শুদ্ধ: শুশ্রূষা। শু-তে হ্রস্ব উ, শ্রূ-তে দীর্ঘ ঊ, শেষে মূর্ধন্য ষ।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Hard",
+      "q": "কোন বানানটি শুদ্ধ?",
+      "o": [
+        "স্বায়ত্তসাশন",
+        "স্বায়ত্বশাসন",
+        "সায়ত্তশাসন",
+        "স্বায়ত্তশাসন"
+      ],
+      "a": 3,
+      "e": "শুদ্ধ: স্বায়ত্তশাসন। স্ব + আয়ত্ত ⇒ স্বায়ত্ত (ত্ত, ত্ব নয়)।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "শুদ্ধ বানান কোনটি?",
+      "o": [
+        "মুমূর্ষু",
+        "মুমুর্ষু",
+        "মূমূর্ষু",
+        "মুমূর্ষূ"
+      ],
+      "a": 0,
+      "e": "শুদ্ধ: মুমূর্ষু। মু-তে হ্রস্ব উ, মূ-তে দীর্ঘ ঊ, ষু-তে হ্রস্ব উ।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "কোন বানানটি শুদ্ধ?",
+      "o": [
+        "সান্তনা",
+        "সান্ত্বনা",
+        "শান্ত্বনা",
+        "সান্ত্বোনা"
+      ],
+      "a": 1,
+      "e": "শুদ্ধ: সান্ত্বনা। ন্ত-এর সঙ্গে ব-ফলা (ন্ত্ব), দন্ত্য স।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "শুদ্ধ বানান কোনটি?",
+      "o": [
+        "উচ্ছ্বাশ",
+        "উচ্ছাস",
+        "উচ্ছ্বাস",
+        "উছ্বাস"
+      ],
+      "a": 2,
+      "e": "শুদ্ধ: উচ্ছ্বাস। উৎ + শ্বাস ⇒ উচ্ছ্বাস — ব-ফলা থাকে।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Hard",
+      "q": "কোন বানানটি শুদ্ধ?",
+      "o": [
+        "অপড়াহ্ণ",
+        "অপরাহ্ন",
+        "অপরান্হ",
+        "অপরাহ্ণ"
+      ],
+      "a": 3,
+      "e": "শুদ্ধ: অপরাহ্ণ। অপর + অহ্ন ⇒ অপরাহ্ণ — র-এর প্রভাবে মূর্ধন্য ণ।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "শুদ্ধ বানান কোনটি?",
+      "o": [
+        "ঊর্ধ্ব",
+        "উর্ধ্ব",
+        "ঊর্দ্ধ",
+        "উর্দ্ধ"
+      ],
+      "a": 0,
+      "e": "শুদ্ধ: ঊর্ধ্ব। দীর্ঘ ঊ, র-ফলার পরে ধ্ব (দ্ধ নয়)।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "কোন বানানটি শুদ্ধ?",
+      "o": [
+        "মন্ত্রীসভা",
+        "মন্ত্রিসভা",
+        "মন্ত্রিসবা",
+        "মন্ত্রীসবা"
+      ],
+      "a": 1,
+      "e": "শুদ্ধ: মন্ত্রিসভা। সমাসবদ্ধ পদে 'মন্ত্রী' → 'মন্ত্রি' (হ্রস্ব ই)।",
+      "t": "উৎস-শব্দ ও সন্ধি/প্রত্যয় মনে রাখলে বানান সহজ হয়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Choose the correctly spelt word.",
+      "o": [
+        "Acommodate",
+        "Accomodate",
+        "Accommodate",
+        "Accommadate"
+      ],
+      "a": 2,
+      "e": "সঠিক বানান: Accommodate — double c, double m।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Which spelling is correct?",
+      "o": [
+        "Emberrass",
+        "Embarass",
+        "Embarras",
+        "Embarrass"
+      ],
+      "a": 3,
+      "e": "সঠিক বানান: Embarrass — double r, double s।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Hard",
+      "q": "Choose the correctly spelt word.",
+      "o": [
+        "Millennium",
+        "Millenium",
+        "Milennium",
+        "Millenniam"
+      ],
+      "a": 0,
+      "e": "সঠিক বানান: Millennium — double l, double n।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Which spelling is correct?",
+      "o": [
+        "Neccessary",
+        "Necessary",
+        "Necessery",
+        "Necesary"
+      ],
+      "a": 1,
+      "e": "সঠিক বানান: Necessary — one c, double s।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Choose the correctly spelt word.",
+      "o": [
+        "Separete",
+        "Seperate",
+        "Separate",
+        "Seprate"
+      ],
+      "a": 2,
+      "e": "সঠিক বানান: Separate — sep-A-rate — মাঝে a।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Hard",
+      "q": "Which spelling is correct?",
+      "o": [
+        "Occurrance",
+        "Occurence",
+        "Ocurrence",
+        "Occurrence"
+      ],
+      "a": 3,
+      "e": "সঠিক বানান: Occurrence — double c, double r, শেষে -ence।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Choose the correctly spelt word.",
+      "o": [
+        "Questionnaire",
+        "Questionaire",
+        "Questionnair",
+        "Quessionnaire"
+      ],
+      "a": 0,
+      "e": "সঠিক বানান: Questionnaire — double n, শেষে -aire।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Which spelling is correct?",
+      "o": [
+        "Commitee",
+        "Committee",
+        "Comittee",
+        "Committe"
+      ],
+      "a": 1,
+      "e": "সঠিক বানান: Committee — double m, double t, double e।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Hard",
+      "q": "Choose the correctly spelt word.",
+      "o": [
+        "Privilage",
+        "Priviledge",
+        "Privilege",
+        "Previlege"
+      ],
+      "a": 2,
+      "e": "সঠিক বানান: Privilege — pri-vi-lege — শব্দে d নেই।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Which spelling is correct?",
+      "o": [
+        "Mantenance",
+        "Maintainance",
+        "Maintenence",
+        "Maintenance"
+      ],
+      "a": 3,
+      "e": "সঠিক বানান: Maintenance — maintain থেকে হলেও বানান main-ten-ance।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Choose the correctly spelt word.",
+      "o": [
+        "Bureaucracy",
+        "Beaurocracy",
+        "Bureaucrasy",
+        "Burocracy"
+      ],
+      "a": 0,
+      "e": "সঠিক বানান: Bureaucracy — bureau + cracy।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Hard",
+      "q": "Which spelling is correct?",
+      "o": [
+        "Entrepeneur",
+        "Entrepreneur",
+        "Enterpreneur",
+        "Entreprenuer"
+      ],
+      "a": 1,
+      "e": "সঠিক বানান: Entrepreneur — entre-pre-neur।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Choose the correctly spelt word.",
+      "o": [
+        "Rhythem",
+        "Rythm",
+        "Rhythm",
+        "Rhytm"
+      ],
+      "a": 2,
+      "e": "সঠিক বানান: Rhythm — rh + y + thm।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Which spelling is correct?",
+      "o": [
+        "Defenitely",
+        "Definately",
+        "Definitly",
+        "Definitely"
+      ],
+      "a": 3,
+      "e": "সঠিক বানান: Definitely — definite + ly।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Hard",
+      "q": "Choose the correctly spelt word.",
+      "o": [
+        "Receive",
+        "Recieve",
+        "Receeve",
+        "Riceive"
+      ],
+      "a": 0,
+      "e": "সঠিক বানান: Receive — c-এর পরে ei (i before e except after c)।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Which spelling is correct?",
+      "o": [
+        "Collegue",
+        "Colleague",
+        "Colleage",
+        "Coleague"
+      ],
+      "a": 1,
+      "e": "সঠিক বানান: Colleague — double l, শেষে -league।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Choose the correctly spelt word.",
+      "o": [
+        "Garantee",
+        "Guarentee",
+        "Guarantee",
+        "Guarrantee"
+      ],
+      "a": 2,
+      "e": "সঠিক বানান: Guarantee — gua-ran-tee — একটি r।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Hard",
+      "q": "Which spelling is correct?",
+      "o": [
+        "Harasse",
+        "Harrass",
+        "Haras",
+        "Harass"
+      ],
+      "a": 3,
+      "e": "সঠিক বানান: Harass — one r, double s।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Choose the correctly spelt word.",
+      "o": [
+        "Lieutenant",
+        "Leutenant",
+        "Lieutenent",
+        "Lieutanant"
+      ],
+      "a": 0,
+      "e": "সঠিক বানান: Lieutenant — lieu + tenant।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Which spelling is correct?",
+      "o": [
+        "Pronounciation",
+        "Pronunciation",
+        "Pronunciasion",
+        "Prononciation"
+      ],
+      "a": 1,
+      "e": "সঠিক বানান: Pronunciation — pronounce থেকে হলেও pro-NUN-ciation (o বাদ)।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Hard",
+      "q": "Choose the correctly spelt word.",
+      "o": [
+        "Survelliance",
+        "Surveilance",
+        "Surveillance",
+        "Surveillence"
+      ],
+      "a": 2,
+      "e": "সঠিক বানান: Surveillance — double l, শেষে -ance।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Which spelling is correct?",
+      "o": [
+        "Acquintance",
+        "Aquaintance",
+        "Acquaintence",
+        "Acquaintance"
+      ],
+      "a": 3,
+      "e": "সঠিক বানান: Acquaintance — ac + quaint + ance।",
+      "t": "দ্বিত্ব বর্ণ (double letter) ও শব্দের উৎস খেয়াল করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "'সূর্য'-এর সমার্থক শব্দ কোনটি?",
+      "o": [
+        "দিবাকর",
+        "শশধর",
+        "সুধাকর",
+        "নিশাকর"
+      ],
+      "a": 0,
+      "e": "দিবাকর = যে দিন সৃষ্টি করে — সূর্য; শশধর, সুধাকর ও নিশাকর চাঁদের প্রতিশব্দ।",
+      "t": "সমার্থক ও বিপরীত শব্দের তালিকা নিয়মিত পড়লে দ্রুত উত্তর দেওয়া যায়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "'পানি'-এর সমার্থক শব্দ কোনটি?",
+      "o": [
+        "অনল",
+        "সলিল",
+        "অনিল",
+        "ভূধর"
+      ],
+      "a": 1,
+      "e": "সলিল = পানি; অনল = আগুন, অনিল = বাতাস, ভূধর = পাহাড়।",
+      "t": "সমার্থক ও বিপরীত শব্দের তালিকা নিয়মিত পড়লে দ্রুত উত্তর দেওয়া যায়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "'পর্বত'-এর সমার্থক শব্দ কোনটি?",
+      "o": [
+        "অম্বর",
+        "জলধি",
+        "ভূধর",
+        "অর্ণব"
+      ],
+      "a": 2,
+      "e": "ভূধর = পর্বত; জলধি ও অর্ণব = সমুদ্র, অম্বর = আকাশ।",
+      "t": "সমার্থক ও বিপরীত শব্দের তালিকা নিয়মিত পড়লে দ্রুত উত্তর দেওয়া যায়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "'চাঁদ'-এর সমার্থক শব্দ কোনটি?",
+      "o": [
+        "প্রভাকর",
+        "ভাস্কর",
+        "তপন",
+        "শশাঙ্ক"
+      ],
+      "a": 3,
+      "e": "শশাঙ্ক = চাঁদ; ভাস্কর, তপন ও প্রভাকর সূর্যের প্রতিশব্দ।",
+      "t": "সমার্থক ও বিপরীত শব্দের তালিকা নিয়মিত পড়লে দ্রুত উত্তর দেওয়া যায়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "'বাতাস'-এর সমার্থক শব্দ কোনটি?",
+      "o": [
+        "সমীরণ",
+        "জলধর",
+        "অনল",
+        "বারি"
+      ],
+      "a": 0,
+      "e": "সমীরণ = বাতাস; জলধর = মেঘ, অনল = আগুন, বারি = পানি।",
+      "t": "সমার্থক ও বিপরীত শব্দের তালিকা নিয়মিত পড়লে দ্রুত উত্তর দেওয়া যায়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Easy",
+      "q": "'উদয়'-এর বিপরীত শব্দ কোনটি?",
+      "o": [
+        "উত্থান",
+        "অস্ত",
+        "আরম্ভ",
+        "প্রকাশ"
+      ],
+      "a": 1,
+      "e": "উদয় ↔ অস্ত।",
+      "t": "সমার্থক ও বিপরীত শব্দের তালিকা নিয়মিত পড়লে দ্রুত উত্তর দেওয়া যায়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "'আবির্ভাব'-এর বিপরীত শব্দ কোনটি?",
+      "o": [
+        "আগমন",
+        "উদ্ভব",
+        "তিরোভাব",
+        "প্রকাশ"
+      ],
+      "a": 2,
+      "e": "আবির্ভাব (প্রকাশিত হওয়া) ↔ তিরোভাব (অদৃশ্য হওয়া)।",
+      "t": "সমার্থক ও বিপরীত শব্দের তালিকা নিয়মিত পড়লে দ্রুত উত্তর দেওয়া যায়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Easy",
+      "q": "'সুলভ'-এর বিপরীত শব্দ কোনটি?",
+      "o": [
+        "প্রাপ্য",
+        "সহজ",
+        "সস্তা",
+        "দুর্লভ"
+      ],
+      "a": 3,
+      "e": "সুলভ (সহজে পাওয়া যায়) ↔ দুর্লভ।",
+      "t": "সমার্থক ও বিপরীত শব্দের তালিকা নিয়মিত পড়লে দ্রুত উত্তর দেওয়া যায়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "'আসক্ত'-এর বিপরীত শব্দ কোনটি?",
+      "o": [
+        "নিরাসক্ত",
+        "অনুরক্ত",
+        "আগ্রহী",
+        "লিপ্ত"
+      ],
+      "a": 0,
+      "e": "আসক্ত ↔ নিরাসক্ত (আসক্তিহীন)।",
+      "t": "সমার্থক ও বিপরীত শব্দের তালিকা নিয়মিত পড়লে দ্রুত উত্তর দেওয়া যায়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "'কৃতজ্ঞ'-এর বিপরীত শব্দ কোনটি?",
+      "o": [
+        "বিনয়ী",
+        "কৃতঘ্ন",
+        "অকৃতকার্য",
+        "কৃতী"
+      ],
+      "a": 1,
+      "e": "কৃতজ্ঞ (উপকার স্বীকার করে) ↔ কৃতঘ্ন (উপকারীর ক্ষতি করে)।",
+      "t": "সমার্থক ও বিপরীত শব্দের তালিকা নিয়মিত পড়লে দ্রুত উত্তর দেওয়া যায়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Synonym of 'Abundant' is—",
+      "o": [
+        "Rare",
+        "Scarce",
+        "Plentiful",
+        "Meagre"
+      ],
+      "a": 2,
+      "e": "Abundant = প্রচুর = Plentiful; বাকি তিনটি উল্টো অর্থের।",
+      "t": "শব্দের মূল অর্থ ধরে বিকল্পগুলো যাচাই করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Synonym of 'Candid' is—",
+      "o": [
+        "Rude",
+        "Secretive",
+        "Clever",
+        "Frank"
+      ],
+      "a": 3,
+      "e": "Candid = অকপট, স্পষ্টবাদী = Frank।",
+      "t": "শব্দের মূল অর্থ ধরে বিকল্পগুলো যাচাই করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Easy",
+      "q": "Synonym of 'Diligent' is—",
+      "o": [
+        "Hardworking",
+        "Lazy",
+        "Intelligent",
+        "Careless"
+      ],
+      "a": 0,
+      "e": "Diligent = পরিশ্রমী।",
+      "t": "শব্দের মূল অর্থ ধরে বিকল্পগুলো যাচাই করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Synonym of 'Obsolete' is—",
+      "o": [
+        "Modern",
+        "Outdated",
+        "Rare",
+        "Useful"
+      ],
+      "a": 1,
+      "e": "Obsolete = অপ্রচলিত = Outdated।",
+      "t": "শব্দের মূল অর্থ ধরে বিকল্পগুলো যাচাই করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Synonym of 'Benevolent' is—",
+      "o": [
+        "Wealthy",
+        "Cruel",
+        "Kind",
+        "Clever"
+      ],
+      "a": 2,
+      "e": "Benevolent = দয়ালু, পরোপকারী।",
+      "t": "শব্দের মূল অর্থ ধরে বিকল্পগুলো যাচাই করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Synonym of 'Ponder' is—",
+      "o": [
+        "Hurry",
+        "Ignore",
+        "Forget",
+        "Consider"
+      ],
+      "a": 3,
+      "e": "Ponder = গভীরভাবে ভাবা = Consider।",
+      "t": "শব্দের মূল অর্থ ধরে বিকল্পগুলো যাচাই করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Easy",
+      "q": "Antonym of 'Ancient' is—",
+      "o": [
+        "Modern",
+        "Old",
+        "Antique",
+        "Historic"
+      ],
+      "a": 0,
+      "e": "Ancient (প্রাচীন) ↔ Modern (আধুনিক)।",
+      "t": "শব্দের মূল অর্থ ধরে বিকল্পগুলো যাচাই করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Antonym of 'Expand' is—",
+      "o": [
+        "Enlarge",
+        "Contract",
+        "Spread",
+        "Extend"
+      ],
+      "a": 1,
+      "e": "Expand (প্রসারিত হওয়া) ↔ Contract (সংকুচিত হওয়া)।",
+      "t": "শব্দের মূল অর্থ ধরে বিকল্পগুলো যাচাই করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Antonym of 'Optimist' is—",
+      "o": [
+        "Realist",
+        "Idealist",
+        "Pessimist",
+        "Dreamer"
+      ],
+      "a": 2,
+      "e": "Optimist (আশাবাদী) ↔ Pessimist (নৈরাশ্যবাদী)।",
+      "t": "শব্দের মূল অর্থ ধরে বিকল্পগুলো যাচাই করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Antonym of 'Transparent' is—",
+      "o": [
+        "Visible",
+        "Clear",
+        "Glassy",
+        "Opaque"
+      ],
+      "a": 3,
+      "e": "Transparent (স্বচ্ছ) ↔ Opaque (অস্বচ্ছ)।",
+      "t": "শব্দের মূল অর্থ ধরে বিকল্পগুলো যাচাই করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Easy",
+      "q": "Antonym of 'Victory' is—",
+      "o": [
+        "Defeat",
+        "Triumph",
+        "Success",
+        "Win"
+      ],
+      "a": 0,
+      "e": "Victory ↔ Defeat।",
+      "t": "শব্দের মূল অর্থ ধরে বিকল্পগুলো যাচাই করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "Antonym of 'Humble' is—",
+      "o": [
+        "Modest",
+        "Arrogant",
+        "Polite",
+        "Meek"
+      ],
+      "a": 1,
+      "e": "Humble (বিনয়ী) ↔ Arrogant (উদ্ধত)।",
+      "t": "শব্দের মূল অর্থ ধরে বিকল্পগুলো যাচাই করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "'যা পূর্বে ছিল, এখন নেই' — এক কথায় কী বলে?",
+      "o": [
+        "অপূর্ব",
+        "অভূতপূর্ব",
+        "ভূতপূর্ব",
+        "পূর্ববর্তী"
+      ],
+      "a": 2,
+      "e": "ভূতপূর্ব = আগে ছিল, এখন নেই; অভূতপূর্ব = যা আগে কখনো হয়নি।",
+      "t": "সমার্থক ও বিপরীত শব্দের তালিকা নিয়মিত পড়লে দ্রুত উত্তর দেওয়া যায়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "'যিনি বহু বিষয়ে জানেন' — এক কথায় কী বলে?",
+      "o": [
+        "বিজ্ঞানী",
+        "সর্বজ্ঞ",
+        "অভিজ্ঞ",
+        "বহুজ্ঞ"
+      ],
+      "a": 3,
+      "e": "বহুজ্ঞ = বহু বিষয়ে জ্ঞানসম্পন্ন; সর্বজ্ঞ = সব জানেন যিনি।",
+      "t": "সমার্থক ও বিপরীত শব্দের তালিকা নিয়মিত পড়লে দ্রুত উত্তর দেওয়া যায়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "'যার কোনো উপায় নেই' — এক কথায় কী বলে?",
+      "o": [
+        "নিরুপায়",
+        "অসহায়",
+        "নিঃসঙ্গ",
+        "নিরুদ্দেশ"
+      ],
+      "a": 0,
+      "e": "নিরুপায় = উপায়হীন।",
+      "t": "সমার্থক ও বিপরীত শব্দের তালিকা নিয়মিত পড়লে দ্রুত উত্তর দেওয়া যায়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "'যা বলা হয়নি' — এক কথায় কী বলে?",
+      "o": [
+        "অব্যক্ত",
+        "অনুক্ত",
+        "অনুচিত",
+        "উক্ত"
+      ],
+      "a": 1,
+      "e": "অনুক্ত = যা বলা হয়নি; উক্ত = যা বলা হয়েছে।",
+      "t": "সমার্থক ও বিপরীত শব্দের তালিকা নিয়মিত পড়লে দ্রুত উত্তর দেওয়া যায়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Hard",
+      "q": "'যা সহজে পাওয়া যায় না' — এক কথায় কী বলে?",
+      "o": [
+        "দুর্গম",
+        "সুলভ",
+        "দুর্লভ",
+        "দুর্বোধ্য"
+      ],
+      "a": 2,
+      "e": "দুর্লভ = দুঃখে লভ্য, সহজে পাওয়া যায় না; দুর্গম = যেখানে যাওয়া কঠিন।",
+      "t": "সমার্থক ও বিপরীত শব্দের তালিকা নিয়মিত পড়লে দ্রুত উত্তর দেওয়া যায়।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও বাংলা একাডেমি আধুনিক বাংলা অভিধান / প্রমিত বাংলা বানানের নিয়ম",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "One who cannot read or write is called—",
+      "o": [
+        "Illegible",
+        "Ignorant",
+        "Innocent",
+        "Illiterate"
+      ],
+      "a": 3,
+      "e": "Illiterate = নিরক্ষর; Illegible = (লেখা) পড়া যায় না এমন।",
+      "t": "শব্দের মূল অর্থ ধরে বিকল্পগুলো যাচাই করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Medium",
+      "q": "A person who works for the welfare of mankind is called a—",
+      "o": [
+        "Philanthropist",
+        "Misanthrope",
+        "Philatelist",
+        "Pessimist"
+      ],
+      "a": 0,
+      "e": "Philanthropist = মানবহিতৈষী; Misanthrope = মানববিদ্বেষী; Philatelist = ডাকটিকিট সংগ্রাহক।",
+      "t": "শব্দের মূল অর্থ ধরে বিকল্পগুলো যাচাই করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Hard",
+      "q": "A speech delivered without preparation is called—",
+      "o": [
+        "Eulogy",
+        "Extempore",
+        "Monologue",
+        "Epilogue"
+      ],
+      "a": 1,
+      "e": "Extempore = প্রস্তুতি ছাড়া তাৎক্ষণিক বক্তৃতা।",
+      "t": "শব্দের মূল অর্থ ধরে বিকল্পগুলো যাচাই করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Easy",
+      "q": "That which cannot be seen is—",
+      "o": [
+        "Indivisible",
+        "Invincible",
+        "Invisible",
+        "Inevitable"
+      ],
+      "a": 2,
+      "e": "Invisible = অদৃশ্য; Invincible = অজেয়।",
+      "t": "শব্দের মূল অর্থ ধরে বিকল্পগুলো যাচাই করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BAN",
+      "d": "Hard",
+      "q": "One who knows everything is called—",
+      "o": [
+        "Omnivorous",
+        "Omnipotent",
+        "Omnipresent",
+        "Omniscient"
+      ],
+      "a": 3,
+      "e": "Omniscient = সর্বজ্ঞ; Omnipotent = সর্বশক্তিমান; Omnipresent = সর্বব্যাপী।",
+      "t": "শব্দের মূল অর্থ ধরে বিকল্পগুলো যাচাই করো।",
+      "src": "লেকচার ০৩ (Spelling & Language) ও Oxford Advanced Learner's Dictionary / Merriam-Webster",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

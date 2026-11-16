@@ -1,0 +1,142 @@
+[
+ {
+  "code": "MN.SN.DHR",
+  "topic": "সংখ্যাগত দক্ষতা ও সমস্যা সমাধান",
+  "area": "Numerical",
+  "name": "সংখ্যা ও বর্ণ ধারা",
+  "g": "A",
+  "base": 118,
+  "hist200": 30,
+  "target": 118
+ },
+ {
+  "code": "MN.CH.PRT",
+  "topic": "চিত্রভিত্তিক ও যান্ত্রিক দক্ষতা",
+  "area": "Figural & Mechanical",
+  "name": "চিত্র ধারা, প্রতিবিম্ব, ঘনক ও চিত্র গণনা",
+  "g": "A",
+  "base": 114,
+  "hist200": 22,
+  "target": 114
+ },
+ {
+  "code": "MN.CH.JNT",
+  "topic": "চিত্রভিত্তিক ও যান্ত্রিক দক্ষতা",
+  "area": "Figural & Mechanical",
+  "name": "যান্ত্রিক ও স্থানিক দক্ষতা",
+  "g": "A",
+  "base": 86,
+  "hist200": 16,
+  "target": 86
+ },
+ {
+  "code": "MN.BC.BAN",
+  "topic": "ভাষাগত যুক্তি",
+  "area": "Verbal",
+  "name": "বানান ও ভাষাগত দক্ষতা",
+  "g": "A",
+  "base": 76,
+  "hist200": 14,
+  "target": 76
+ },
+ {
+  "code": "MN.BC.KOD",
+  "topic": "ভাষাগত যুক্তি",
+  "area": "Verbal",
+  "name": "কোডিং-ডিকোডিং",
+  "g": "A",
+  "base": 57,
+  "hist200": 10,
+  "target": 57
+ },
+ {
+  "code": "MN.JK.GHR",
+  "topic": "যৌক্তিক বিশ্লেষণ",
+  "area": "Logical",
+  "name": "ঘড়ি ও ক্যালেন্ডার",
+  "g": "B",
+  "base": 57,
+  "hist200": 15,
+  "target": 57
+ },
+ {
+  "code": "MN.JK.DIK",
+  "topic": "যৌক্তিক বিশ্লেষণ",
+  "area": "Logical",
+  "name": "দিক নির্ণয়",
+  "g": "B",
+  "base": 52,
+  "hist200": 11,
+  "target": 52
+ },
+ {
+  "code": "MN.BC.SAD",
+  "topic": "ভাষাগত যুক্তি",
+  "area": "Verbal",
+  "name": "সাদৃশ্য (Analogy)",
+  "g": "B",
+  "base": 48,
+  "hist200": 9,
+  "target": 48
+ },
+ {
+  "code": "MN.BC.BRN",
+  "topic": "ভাষাগত যুক্তি",
+  "area": "Verbal",
+  "name": "বর্ণক্রম, শব্দ গঠন ও শব্দ-বিন্যাস",
+  "g": "B",
+  "base": 43,
+  "hist200": 8,
+  "target": 43
+ },
+ {
+  "code": "MN.JK.RKT",
+  "topic": "যৌক্তিক বিশ্লেষণ",
+  "area": "Logical",
+  "name": "রক্তের সম্পর্ক",
+  "g": "C",
+  "base": 29,
+  "hist200": 5,
+  "target": 29
+ },
+ {
+  "code": "MN.SN.SMS",
+  "topic": "সংখ্যাগত দক্ষতা ও সমস্যা সমাধান",
+  "area": "Numerical",
+  "name": "সংখ্যাগত সমস্যা সমাধান",
+  "g": "D",
+  "base": 34,
+  "hist200": 11,
+  "target": 34
+ },
+ {
+  "code": "MN.JK.SID",
+  "topic": "যৌক্তিক বিশ্লেষণ",
+  "area": "Logical",
+  "name": "যুক্তি, বিবৃতি ও সিদ্ধান্ত",
+  "g": "D",
+  "base": 33,
+  "hist200": 6,
+  "target": 33
+ },
+ {
+  "code": "MN.BC.BEM",
+  "topic": "ভাষাগত যুক্তি",
+  "area": "Verbal",
+  "name": "বেমানান নির্ণয় (Odd One Out)",
+  "g": "D",
+  "base": 29,
+  "hist200": 4,
+  "target": 29
+ },
+ {
+  "code": "MN.JK.KRM",
+  "topic": "যৌক্তিক বিশ্লেষণ",
+  "area": "Logical",
+  "name": "ক্রম, অবস্থান ও বিন্যাস",
+  "g": "D",
+  "base": 24,
+  "hist200": 3,
+  "target": 24
+ }
+]

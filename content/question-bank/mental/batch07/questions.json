@@ -1,0 +1,1744 @@
+{
+  "batch": "Batch 07",
+  "subject": "মানসিক দক্ষতা (Mental Ability)",
+  "basis": "MN.BC.BRN বর্ণক্রম ও শব্দ গঠন + MN.JK.RKT রক্তের সম্পর্ক + MN.BC.BEM বেমানান নির্ণয়",
+  "subtopics": {
+    "MN.BC.BRN": {},
+    "MN.JK.RKT": {},
+    "MN.BC.BEM": {}
+  },
+  "questions": [
+    {
+      "st": "MN.BC.BRN",
+      "d": "Easy",
+      "q": "ইংরেজি বর্ণমালায় বাম দিক থেকে ৭তম বর্ণের ডান দিকে ৫তম বর্ণ কোনটি?",
+      "o": [
+        "L",
+        "M",
+        "K",
+        "O"
+      ],
+      "a": 0,
+      "e": "অবস্থান হিসাব: ১২ ⇒ L।",
+      "t": "ডান থেকে n-তম = বাম থেকে (২৭ − n)-তম।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "ইংরেজি বর্ণমালায় ডান দিক থেকে ৪তম বর্ণের বাম দিকে ৬তম বর্ণ কোনটি?",
+      "o": [
+        "R",
+        "Q",
+        "P",
+        "J"
+      ],
+      "a": 1,
+      "e": "অবস্থান হিসাব: ১৭ ⇒ Q।",
+      "t": "ডান থেকে n-তম = বাম থেকে (২৭ − n)-তম।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "ইংরেজি বর্ণমালায় বাম দিক থেকে ২০তম বর্ণের বাম দিকে ৮তম বর্ণ কোনটি?",
+      "o": [
+        "K",
+        "M",
+        "L",
+        "O"
+      ],
+      "a": 2,
+      "e": "অবস্থান হিসাব: ১২ ⇒ L।",
+      "t": "ডান থেকে n-তম = বাম থেকে (২৭ − n)-তম।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Easy",
+      "q": "ইংরেজি বর্ণমালায় ডান দিক থেকে ১০তম বর্ণ কোনটি?",
+      "o": [
+        "J",
+        "R",
+        "P",
+        "Q"
+      ],
+      "a": 3,
+      "e": "অবস্থান হিসাব: ১৭ ⇒ Q।",
+      "t": "ডান থেকে n-তম = বাম থেকে (২৭ − n)-তম।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "ইংরেজি বর্ণমালায় বাম দিক থেকে ১৩তম ও ডান দিক থেকে ১৩তম বর্ণের মাঝে মোট কয়টি বর্ণ আছে?",
+      "o": [
+        "০",
+        "১",
+        "২",
+        "১৩"
+      ],
+      "a": 0,
+      "e": "বাম থেকে ১৩তম = M, ডান থেকে ১৩তম = N — পাশাপাশি, তাই মাঝে কোনো বর্ণ নেই (০টি)।",
+      "t": "২৬ বর্ণ: বাম থেকে n-তম = ডান থেকে (২৭ − n)-তম।",
+      "calc": true,
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Easy",
+      "q": "ইংরেজি বর্ণমালায় ঠিক মাঝখানের দুটি বর্ণের প্রথমটি কোনটি?",
+      "o": [
+        "N",
+        "M",
+        "L",
+        "R"
+      ],
+      "a": 1,
+      "e": "অবস্থান হিসাব: ১৩ ⇒ M।",
+      "t": "ডান থেকে n-তম = বাম থেকে (২৭ − n)-তম।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "ইংরেজি বর্ণমালায় বর্ণমালা উল্টো করে (Z থেকে A) লিখলে বাম দিক থেকে ৯তম বর্ণ কোনটি?",
+      "o": [
+        "Q",
+        "S",
+        "R",
+        "I"
+      ],
+      "a": 2,
+      "e": "অবস্থান হিসাব: ১৮ ⇒ R।",
+      "t": "ডান থেকে n-তম = বাম থেকে (২৭ − n)-তম।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Hard",
+      "q": "ইংরেজি বর্ণমালায় বাম দিক থেকে ১৫তম বর্ণের ডান দিকে ৭তম বর্ণের বাম দিকে ৩তম বর্ণ কোনটি?",
+      "o": [
+        "H",
+        "T",
+        "R",
+        "S"
+      ],
+      "a": 3,
+      "e": "অবস্থান হিসাব: ১৯ ⇒ S।",
+      "t": "ডান থেকে n-তম = বাম থেকে (২৭ − n)-তম।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "ইংরেজি বর্ণমালায় ডান দিক থেকে ৮তম বর্ণের বাম দিকে ১১তম বর্ণ কোনটি?",
+      "o": [
+        "H",
+        "I",
+        "G",
+        "S"
+      ],
+      "a": 0,
+      "e": "অবস্থান হিসাব: ৮ ⇒ H।",
+      "t": "ডান থেকে n-তম = বাম থেকে (২৭ − n)-তম।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Hard",
+      "q": "ইংরেজি বর্ণমালায় প্রথম অর্ধেক (A–M) উল্টো লিখলে বাম দিক থেকে ৪তম বর্ণ কোনটি?",
+      "o": [
+        "K",
+        "J",
+        "I",
+        "Q"
+      ],
+      "a": 1,
+      "e": "অবস্থান হিসাব: ১০ ⇒ J।",
+      "t": "ডান থেকে n-তম = বাম থেকে (২৭ − n)-তম।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "বাংলা ব্যঞ্জনবর্ণমালায় 'চ'-এর পরের চতুর্থ বর্ণ কোনটি?",
+      "o": [
+        "ঝ",
+        "ট",
+        "ঞ",
+        "ঠ"
+      ],
+      "a": 2,
+      "e": "চ, ছ, জ, ঝ, ঞ — চ-এর পরের চতুর্থ বর্ণ ঞ।",
+      "t": "বর্গ ধরে গোনো: ক-বর্গ, চ-বর্গ, ট-বর্গ, ত-বর্গ, প-বর্গ — প্রতিটিতে ৫টি।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও বাংলা বর্ণমালা (বাংলা একাডেমি প্রমিত ক্রম)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "বাংলা ব্যঞ্জনবর্ণমালায় 'প'-এর আগের তৃতীয় বর্ণ কোনটি?",
+      "o": [
+        "ন",
+        "ধ",
+        "থ",
+        "দ"
+      ],
+      "a": 3,
+      "e": "প-এর আগে: ন (১), ধ (২), দ (৩) ⇒ দ।",
+      "t": "বর্গ ধরে গোনো: ক-বর্গ, চ-বর্গ, ট-বর্গ, ত-বর্গ, প-বর্গ — প্রতিটিতে ৫টি।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও বাংলা বর্ণমালা (বাংলা একাডেমি প্রমিত ক্রম)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "বাংলা ব্যঞ্জনবর্ণমালার 'ট' বর্গের তৃতীয় বর্ণ কোনটি?",
+      "o": [
+        "ড",
+        "ঢ",
+        "ঠ",
+        "ণ"
+      ],
+      "a": 0,
+      "e": "ট-বর্গ: ট, ঠ, ড, ঢ, ণ ⇒ তৃতীয় বর্ণ ড।",
+      "t": "বর্গ ধরে গোনো: ক-বর্গ, চ-বর্গ, ট-বর্গ, ত-বর্গ, প-বর্গ — প্রতিটিতে ৫টি।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও বাংলা বর্ণমালা (বাংলা একাডেমি প্রমিত ক্রম)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Hard",
+      "q": "বাংলা ব্যঞ্জনবর্ণমালায় ক থেকে গুনলে ১৮তম বর্ণ কোনটি?",
+      "o": [
+        "ধ",
+        "দ",
+        "থ",
+        "ন"
+      ],
+      "a": 1,
+      "e": "পাঁচটি বর্গে ২৫টি বর্ণ: ক-বর্গ (১–৫), চ-বর্গ (৬–১০), ট-বর্গ (১১–১৫), ত-বর্গ (১৬–২০) ⇒ ১৮তম = দ।",
+      "t": "বর্গ ধরে গোনো: ক-বর্গ, চ-বর্গ, ট-বর্গ, ত-বর্গ, প-বর্গ — প্রতিটিতে ৫টি।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও বাংলা বর্ণমালা (বাংলা একাডেমি প্রমিত ক্রম)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "বাংলা স্বরবর্ণমালায় 'উ'-এর পরের তৃতীয় বর্ণ কোনটি?",
+      "o": [
+        "ঋ",
+        "ঐ",
+        "এ",
+        "ও"
+      ],
+      "a": 2,
+      "e": "উ, ঊ, ঋ, এ ⇒ উ-এর পরের তৃতীয় বর্ণ এ।",
+      "t": "বর্গ ধরে গোনো: ক-বর্গ, চ-বর্গ, ট-বর্গ, ত-বর্গ, প-বর্গ — প্রতিটিতে ৫টি।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও বাংলা বর্ণমালা (বাংলা একাডেমি প্রমিত ক্রম)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "বাংলা স্বরবর্ণ কয়টি?",
+      "o": [
+        "৩৯",
+        "১২",
+        "১০",
+        "১১"
+      ],
+      "a": 3,
+      "e": "অ, আ, ই, ঈ, উ, ঊ, ঋ, এ, ঐ, ও, ঔ — মোট ১১টি।",
+      "t": "স্বরবর্ণ ১১, ব্যঞ্জনবর্ণ ৩৯।",
+      "calc": true,
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও বাংলা বর্ণমালা (বাংলা একাডেমি প্রমিত ক্রম)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "অভিধানের ক্রমে সাজালে নিচের শব্দগুলোর মধ্যে তৃতীয় শব্দ কোনটি হবে? Market, Marble, March, Marine, Margin",
+      "o": [
+        "Margin",
+        "March",
+        "Marine",
+        "Marble"
+      ],
+      "a": 0,
+      "e": "অভিধান-ক্রম: Marble → March → Margin → Marine → Market ⇒ তৃতীয়: Margin।",
+      "t": "প্রথম যে বর্ণে পার্থক্য, সেটি দিয়ে তুলনা করো।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Hard",
+      "q": "অভিধানের ক্রমে সাজালে নিচের শব্দগুলোর মধ্যে তৃতীয় শব্দ কোনটি হবে? Plant, Planet, Plane, Plank, Plan",
+      "o": [
+        "Plane",
+        "Planet",
+        "Plank",
+        "Plan"
+      ],
+      "a": 1,
+      "e": "অভিধান-ক্রম: Plan → Plane → Planet → Plank → Plant ⇒ তৃতীয়: Planet।",
+      "t": "প্রথম যে বর্ণে পার্থক্য, সেটি দিয়ে তুলনা করো।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "অভিধানের ক্রমে সাজালে নিচের শব্দগুলোর মধ্যে তৃতীয় শব্দ কোনটি হবে? Dream, Dress, Drain, Drama, Drift",
+      "o": [
+        "Dress",
+        "Drama",
+        "Dream",
+        "Drain"
+      ],
+      "a": 2,
+      "e": "অভিধান-ক্রম: Drain → Drama → Dream → Dress → Drift ⇒ তৃতীয়: Dream।",
+      "t": "প্রথম যে বর্ণে পার্থক্য, সেটি দিয়ে তুলনা করো।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Hard",
+      "q": "অভিধানের ক্রমে সাজালে নিচের শব্দগুলোর মধ্যে তৃতীয় শব্দ কোনটি হবে? Stable, Stamp, Stage, Staff, Stack",
+      "o": [
+        "Stable",
+        "Stack",
+        "Stage",
+        "Staff"
+      ],
+      "a": 3,
+      "e": "অভিধান-ক্রম: Stable → Stack → Staff → Stage → Stamp ⇒ তৃতীয়: Staff।",
+      "t": "প্রথম যে বর্ণে পার্থক্য, সেটি দিয়ে তুলনা করো।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Hard",
+      "q": "অভিধানের ক্রমে সাজালে নিচের শব্দগুলোর মধ্যে তৃতীয় শব্দ কোনটি হবে? Bright, Bring, Brick, Bridge, Brief",
+      "o": [
+        "Brief",
+        "Bridge",
+        "Bright",
+        "Brick"
+      ],
+      "a": 0,
+      "e": "অভিধান-ক্রম: Brick → Bridge → Brief → Bright → Bring ⇒ তৃতীয়: Brief।",
+      "t": "প্রথম যে বর্ণে পার্থক্য, সেটি দিয়ে তুলনা করো।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Hard",
+      "q": "অভিধানের ক্রমে সাজালে নিচের শব্দগুলোর মধ্যে তৃতীয় শব্দ কোনটি হবে? Cloud, Clock, Close, Cloth, Clone",
+      "o": [
+        "Clone",
+        "Close",
+        "Cloth",
+        "Clock"
+      ],
+      "a": 1,
+      "e": "অভিধান-ক্রম: Clock → Clone → Close → Cloth → Cloud ⇒ তৃতীয়: Close।",
+      "t": "প্রথম যে বর্ণে পার্থক্য, সেটি দিয়ে তুলনা করো।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "নিচের শব্দগুলো অভিধানের ক্রমে সাজালে সঠিক ক্রম কোনটি? (১) Rice (২) Rich (৩) Rise (৪) Ride",
+      "o": [
+        "১২৩৪",
+        "৩৪২১",
+        "১২৪৩",
+        "২৪৩১"
+      ],
+      "a": 2,
+      "e": "অভিধান-ক্রম: Rice, Rich, Ride, Rise ⇒ ১২৪৩।",
+      "t": "প্রথম তিন বর্ণ একই হলে চতুর্থ বর্ণ দেখো।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Hard",
+      "q": "নিচের শব্দগুলো অভিধানের ক্রমে সাজালে সঠিক ক্রম কোনটি? (১) Faith (২) Fairy (৩) Fault (৪) Falcon",
+      "o": [
+        "১৪৩২",
+        "৩৪১২",
+        "১২৩৪",
+        "২১৪৩"
+      ],
+      "a": 3,
+      "e": "অভিধান-ক্রম: Fairy, Faith, Falcon, Fault ⇒ ২১৪৩।",
+      "t": "প্রথম তিন বর্ণ একই হলে চতুর্থ বর্ণ দেখো।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "'NOMEL' অক্ষরগুলো পুনর্বিন্যাস করলে একটি ফলের নাম পাওয়া যায়। সেটি কোনটি?",
+      "o": [
+        "LEMON",
+        "APPLE",
+        "GRAPE",
+        "PEACH"
+      ],
+      "a": 0,
+      "e": "NOMEL-এর অক্ষরগুলো সাজালে LEMON; অন্য বিকল্পগুলোর অক্ষর NOMEL-এর সঙ্গে মেলে না।",
+      "t": "বিকল্পের অক্ষর গুনে মিলিয়ে নাও।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "'RIGTE' অক্ষরগুলো পুনর্বিন্যাস করলে একটি প্রাণীর নাম পাওয়া যায়। সেটি কোনটি?",
+      "o": [
+        "HORSE",
+        "TIGER",
+        "CAMEL",
+        "SHEEP"
+      ],
+      "a": 1,
+      "e": "RIGTE-এর অক্ষরগুলো সাজালে TIGER; অন্য বিকল্পগুলোর অক্ষর RIGTE-এর সঙ্গে মেলে না।",
+      "t": "বিকল্পের অক্ষর গুনে মিলিয়ে নাও।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "'TRAHE' অক্ষরগুলো পুনর্বিন্যাস করলে দেহের একটি অঙ্গের নাম পাওয়া যায়। সেটি কোনটি?",
+      "o": [
+        "ANKLE",
+        "MOUTH",
+        "HEART",
+        "CHEST"
+      ],
+      "a": 2,
+      "e": "TRAHE-এর অক্ষরগুলো সাজালে HEART; অন্য বিকল্পগুলোর অক্ষর TRAHE-এর সঙ্গে মেলে না।",
+      "t": "বিকল্পের অক্ষর গুনে মিলিয়ে নাও।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "'NAIDI' অক্ষরগুলো পুনর্বিন্যাস করলে একটি দেশের নাম পাওয়া যায়। সেটি কোনটি?",
+      "o": [
+        "JAPAN",
+        "CHINA",
+        "NEPAL",
+        "INDIA"
+      ],
+      "a": 3,
+      "e": "NAIDI-এর অক্ষরগুলো সাজালে INDIA; অন্য বিকল্পগুলোর অক্ষর NAIDI-এর সঙ্গে মেলে না।",
+      "t": "বিকল্পের অক্ষর গুনে মিলিয়ে নাও।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "'ANGOM' অক্ষরগুলো পুনর্বিন্যাস করলে একটি ফলের নাম পাওয়া যায়। সেটি কোনটি?",
+      "o": [
+        "MANGO",
+        "APPLE",
+        "GRAPE",
+        "PEACH"
+      ],
+      "a": 0,
+      "e": "ANGOM-এর অক্ষরগুলো সাজালে MANGO; অন্য বিকল্পগুলোর অক্ষর ANGOM-এর সঙ্গে মেলে না।",
+      "t": "বিকল্পের অক্ষর গুনে মিলিয়ে নাও।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "'LPETNA' অক্ষরগুলো পুনর্বিন্যাস করলে সৌরজগতের একটি বস্তুর নাম পাওয়া যায়। সেটি কোনটি?",
+      "o": [
+        "COMET",
+        "PLANET",
+        "STARS",
+        "ORBIT"
+      ],
+      "a": 1,
+      "e": "LPETNA-এর অক্ষরগুলো সাজালে PLANET; অন্য বিকল্পগুলোর অক্ষর LPETNA-এর সঙ্গে মেলে না।",
+      "t": "বিকল্পের অক্ষর গুনে মিলিয়ে নাও।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "'TORCOD' অক্ষরগুলো পুনর্বিন্যাস করলে একটি পেশার নাম পাওয়া যায়। সেটি কোনটি?",
+      "o": [
+        "LAWYER",
+        "DRIVER",
+        "DOCTOR",
+        "FARMER"
+      ],
+      "a": 2,
+      "e": "TORCOD-এর অক্ষরগুলো সাজালে DOCTOR; অন্য বিকল্পগুলোর অক্ষর TORCOD-এর সঙ্গে মেলে না।",
+      "t": "বিকল্পের অক্ষর গুনে মিলিয়ে নাও।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Hard",
+      "q": "নিচের কোন শব্দটি 'LISTEN' শব্দের অক্ষরগুলো পুনর্বিন্যাস করে পাওয়া যায়?",
+      "o": [
+        "STOLEN",
+        "LISTED",
+        "LINENS",
+        "SILENT"
+      ],
+      "a": 3,
+      "e": "LISTEN ও SILENT — দুটিতেই E, I, L, N, S, T একবার করে।",
+      "t": "অক্ষর গুনে মিলিয়ে নাও।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "'INFORMATION' শব্দের অক্ষরগুলো ব্যবহার করে (প্রতিটি অক্ষর যতবার আছে ততবার পর্যন্ত) নিচের কোন শব্দটি গঠন করা যায় না?",
+      "o": [
+        "FICTION",
+        "FORMAT",
+        "NATION",
+        "MOTION"
+      ],
+      "a": 0,
+      "e": "FICTION গঠনে যে অক্ষর/অক্ষরের সংখ্যা লাগে তা INFORMATION-এ নেই; বাকি তিনটি শব্দ গঠন সম্ভব।",
+      "t": "প্রতিটি অক্ষর কতবার আছে গুনে মিলাও।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Hard",
+      "q": "'DEVELOPMENT' শব্দের অক্ষরগুলো ব্যবহার করে (প্রতিটি অক্ষর যতবার আছে ততবার পর্যন্ত) নিচের কোন শব্দটি গঠন করা যায় না?",
+      "o": [
+        "PELMET",
+        "DEVELOPER",
+        "DEVOTE",
+        "MELTED"
+      ],
+      "a": 1,
+      "e": "DEVELOPER গঠনে যে অক্ষর/অক্ষরের সংখ্যা লাগে তা DEVELOPMENT-এ নেই; বাকি তিনটি শব্দ গঠন সম্ভব।",
+      "t": "প্রতিটি অক্ষর কতবার আছে গুনে মিলাও।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "'EDUCATION' শব্দের অক্ষরগুলো ব্যবহার করে (প্রতিটি অক্ষর যতবার আছে ততবার পর্যন্ত) নিচের কোন শব্দটি গঠন করা যায় না?",
+      "o": [
+        "AUCTION",
+        "CAUTION",
+        "STATION",
+        "DUET"
+      ],
+      "a": 2,
+      "e": "STATION গঠনে যে অক্ষর/অক্ষরের সংখ্যা লাগে তা EDUCATION-এ নেই; বাকি তিনটি শব্দ গঠন সম্ভব।",
+      "t": "প্রতিটি অক্ষর কতবার আছে গুনে মিলাও।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Hard",
+      "q": "'CONSTITUTION' শব্দের অক্ষরগুলো ব্যবহার করে (প্রতিটি অক্ষর যতবার আছে ততবার পর্যন্ত) নিচের কোন শব্দটি গঠন করা যায় না?",
+      "o": [
+        "NOTION",
+        "COUNTS",
+        "TUITION",
+        "CAUTION"
+      ],
+      "a": 3,
+      "e": "CAUTION গঠনে যে অক্ষর/অক্ষরের সংখ্যা লাগে তা CONSTITUTION-এ নেই; বাকি তিনটি শব্দ গঠন সম্ভব।",
+      "t": "প্রতিটি অক্ষর কতবার আছে গুনে মিলাও।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Hard",
+      "q": "'TELEVISION' শব্দের অক্ষরগুলো ব্যবহার করে নিচের কোন শব্দটি গঠন করা যায়?",
+      "o": [
+        "VIOLENT",
+        "VISITOR",
+        "VELVET",
+        "OVERSEE"
+      ],
+      "a": 0,
+      "e": "VIOLENT-এর সব অক্ষর TELEVISION-এ যথেষ্ট সংখ্যায় আছে; অন্যগুলোতে বাড়তি বা অনুপস্থিত অক্ষর আছে।",
+      "t": "প্রতিটি অক্ষর কতবার আছে গুনে মিলাও।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Hard",
+      "q": "'GOVERNMENT' শব্দের অক্ষরগুলো ব্যবহার করে নিচের কোন শব্দটি গঠন করা যায়?",
+      "o": [
+        "MOMENT",
+        "MENTOR",
+        "GARMENT",
+        "GOVERNOR"
+      ],
+      "a": 1,
+      "e": "MENTOR-এর সব অক্ষর GOVERNMENT-এ যথেষ্ট সংখ্যায় আছে; অন্যগুলোতে বাড়তি বা অনুপস্থিত অক্ষর আছে।",
+      "t": "প্রতিটি অক্ষর কতবার আছে গুনে মিলাও।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "নিচের কোন শব্দটির বর্ণগুলো বর্ণমালার ক্রমে সাজানো নয়?",
+      "o": [
+        "BEGIN",
+        "ALMOST",
+        "CHOOSE",
+        "FIRST"
+      ],
+      "a": 2,
+      "e": "ALMOST (A-L-M-O-S-T), BEGIN (B-E-G-I-N), FIRST (F-I-R-S-T) — প্রতিটি বর্ণ আগেরটির পরে; CHOOSE-এ S-এর পরে E এসেছে।",
+      "t": "পাশাপাশি দুটি বর্ণ তুলনা করো।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "'ABSTEMIOUS' শব্দে কয়টি স্বরবর্ণ (A, E, I, O, U) আছে?",
+      "o": [
+        "৬",
+        "৪",
+        "৩",
+        "৫"
+      ],
+      "a": 3,
+      "e": "A, E, I, O, U — পাঁচটি স্বরবর্ণই একবার করে আছে (এবং ক্রমানুসারে)।",
+      "t": "স্বরবর্ণ গুনে দেখো।",
+      "calc": true,
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Medium",
+      "q": "'MISSISSIPPI' শব্দে 'S' বর্ণটি কতবার আছে?",
+      "o": [
+        "৪",
+        "৩",
+        "৫",
+        "২"
+      ],
+      "a": 0,
+      "e": "M-I-S-S-I-S-S-I-P-P-I ⇒ S চারবার।",
+      "t": "জোড়ায় জোড়ায় গোনো।",
+      "calc": true,
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Hard",
+      "q": "'EXCELLENCE' শব্দের অক্ষরগুলো দিয়ে কয়টি ভিন্ন বর্ণ (unique letters) আছে?",
+      "o": [
+        "১০",
+        "৫",
+        "৪",
+        "৬"
+      ],
+      "a": 1,
+      "e": "E, X, C, L, N — ৫টি ভিন্ন বর্ণ।",
+      "t": "পুনরাবৃত্তি বাদ দিয়ে গোনো।",
+      "calc": true,
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BRN",
+      "d": "Hard",
+      "q": "'BRAIN' শব্দের প্রতিটি বর্ণকে বর্ণমালার পরের বর্ণ দিয়ে বদলালে যে শব্দ পাওয়া যায়, তার কোন বর্ণটি স্বরবর্ণ?",
+      "o": [
+        "J",
+        "B",
+        "O",
+        "S"
+      ],
+      "a": 2,
+      "e": "BRAIN → CSBJO; এর মধ্যে স্বরবর্ণ কেবল O।",
+      "t": "রূপান্তরের পর স্বরবর্ণ খোঁজো।",
+      "src": "লেকচার ০১ (Logical Sequence of Word) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Easy",
+      "q": "আমার বাবার একমাত্র ভাইয়ের ছেলে আমার কী হয়?",
+      "o": [
+        "ভাতিজা",
+        "মামাতো ভাই",
+        "ফুফাতো ভাই",
+        "চাচাতো ভাই"
+      ],
+      "a": 3,
+      "e": "বাবার ভাই = চাচা; চাচার ছেলে = চাচাতো ভাই।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Easy",
+      "q": "আমার মায়ের ভাইয়ের মেয়ে আমার কী হয়?",
+      "o": [
+        "মামাতো বোন",
+        "খালাতো বোন",
+        "চাচাতো বোন",
+        "ভাগ্নি"
+      ],
+      "a": 0,
+      "e": "মায়ের ভাই = মামা; মামার মেয়ে = মামাতো বোন।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Easy",
+      "q": "আমার বাবার বোনের স্বামী আমার কী হন?",
+      "o": [
+        "খালু",
+        "ফুফা",
+        "চাচা",
+        "মামা"
+      ],
+      "a": 1,
+      "e": "বাবার বোন = ফুফু; ফুফুর স্বামী = ফুফা।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Easy",
+      "q": "আমার মায়ের বোনের ছেলে আমার কী হয়?",
+      "o": [
+        "চাচাতো ভাই",
+        "মামাতো ভাই",
+        "খালাতো ভাই",
+        "ভাগ্নে"
+      ],
+      "a": 2,
+      "e": "মায়ের বোন = খালা; খালার ছেলে = খালাতো ভাই।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Easy",
+      "q": "আমার দাদার একমাত্র ছেলে আমার কী হন?",
+      "o": [
+        "মামা",
+        "চাচা",
+        "দাদা",
+        "বাবা"
+      ],
+      "a": 3,
+      "e": "দাদার একমাত্র ছেলেই আমার বাবা।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Easy",
+      "q": "আমার ভাইয়ের ছেলে আমার কী হয়?",
+      "o": [
+        "ভাতিজা",
+        "ভাগ্নে",
+        "নাতি",
+        "চাচাতো ভাই"
+      ],
+      "a": 0,
+      "e": "ভাইয়ের ছেলে = ভাতিজা; বোনের ছেলে = ভাগ্নে।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Easy",
+      "q": "আমার বোনের মেয়ে আমার কী হয়?",
+      "o": [
+        "ভাতিজি",
+        "ভাগ্নি",
+        "নাতনি",
+        "খালাতো বোন"
+      ],
+      "a": 1,
+      "e": "বোনের মেয়ে = ভাগ্নি; ভাইয়ের মেয়ে = ভাতিজি।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Easy",
+      "q": "আমার ছেলের ছেলে আমার কী হয়?",
+      "o": [
+        "ভাগ্নে",
+        "ভাতিজা",
+        "নাতি",
+        "ছেলে"
+      ],
+      "a": 2,
+      "e": "ছেলের ছেলে = নাতি।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Easy",
+      "q": "একজন পুরুষের স্ত্রীর বাবা তাঁর কী হন?",
+      "o": [
+        "দাদা",
+        "বাবা",
+        "শ্যালক",
+        "শ্বশুর"
+      ],
+      "a": 3,
+      "e": "স্ত্রীর বাবা = শ্বশুর; স্ত্রীর ভাই = শ্যালক।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Easy",
+      "q": "একজন নারীর স্বামীর মা তাঁর কী হন?",
+      "o": [
+        "শাশুড়ি",
+        "মা",
+        "খালা",
+        "ননদ"
+      ],
+      "a": 0,
+      "e": "স্বামীর মা = শাশুড়ি; স্বামীর বোন = ননদ।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Medium",
+      "q": "আমার বোনের স্বামী আমার কী হন?",
+      "o": [
+        "ভাবি",
+        "দুলাভাই (ভগ্নিপতি)",
+        "শ্যালক",
+        "ভাসুর"
+      ],
+      "a": 1,
+      "e": "বোনের স্বামী = দুলাভাই বা ভগ্নিপতি।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Medium",
+      "q": "আমার ভাইয়ের স্ত্রী আমার কী হন?",
+      "o": [
+        "শ্যালিকা",
+        "বোন",
+        "ভাবি",
+        "ননদ"
+      ],
+      "a": 2,
+      "e": "ভাইয়ের স্ত্রী = ভাবি।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Medium",
+      "q": "একটি ছবি দেখিয়ে রাশেদ বললেন, 'ওর মা আমার মায়ের একমাত্র মেয়ে।' ছবির ছেলেটি রাশেদের কী হয়?",
+      "o": [
+        "মামাতো ভাই",
+        "ভাতিজা",
+        "ছেলে",
+        "ভাগ্নে"
+      ],
+      "a": 3,
+      "e": "রাশেদ পুরুষ, তাই তাঁর মায়ের একমাত্র মেয়ে = রাশেদের বোন; বোনের ছেলে = ভাগ্নে।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Medium",
+      "q": "সুমি একটি ছেলেকে দেখিয়ে বলল, 'ওর বাবা আমার বাবার একমাত্র ছেলে।' ছেলেটি সুমির কী হয়?",
+      "o": [
+        "ভাতিজা",
+        "ভাগ্নে",
+        "ভাই",
+        "ছেলে"
+      ],
+      "a": 0,
+      "e": "সুমি মেয়ে, তাই তার বাবার একমাত্র ছেলে = সুমির ভাই; ভাইয়ের ছেলে = ভাতিজা।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Medium",
+      "q": "P হলেন Q-এর বাবা; Q হলেন R-এর বোন; S হলেন R-এর মা। S, P-এর কী হন?",
+      "o": [
+        "বোন",
+        "স্ত্রী",
+        "মা",
+        "মেয়ে"
+      ],
+      "a": 1,
+      "e": "Q ও R ভাইবোন, তাদের বাবা P ও মা S ⇒ S, P-এর স্ত্রী।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Medium",
+      "q": "A হলেন B-এর ভাই; B হলেন C-এর বাবা। A, C-এর কী হন?",
+      "o": [
+        "দাদা",
+        "মামা",
+        "চাচা",
+        "ভাই"
+      ],
+      "a": 2,
+      "e": "বাবার ভাই = চাচা।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Medium",
+      "q": "X-এর মা হলেন Y-এর বোন, আর Y একজন পুরুষ। Y, X-এর কী হন?",
+      "o": [
+        "ফুফা",
+        "চাচা",
+        "খালু",
+        "মামা"
+      ],
+      "a": 3,
+      "e": "মায়ের ভাই = মামা।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Medium",
+      "q": "X-এর বাবা হলেন Y-এর ভাই, আর Y একজন নারী। Y, X-এর কী হন?",
+      "o": [
+        "ফুফু",
+        "খালা",
+        "চাচি",
+        "মামি"
+      ],
+      "a": 0,
+      "e": "বাবার বোন = ফুফু।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Medium",
+      "q": "X-এর মা হলেন Y-এর বোন, আর Y একজন নারী। Y, X-এর কী হন?",
+      "o": [
+        "ফুফু",
+        "খালা",
+        "মামি",
+        "চাচি"
+      ],
+      "a": 1,
+      "e": "মায়ের বোন = খালা।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Medium",
+      "q": "M ও N স্বামী-স্ত্রী; O তাঁদের ছেলে। P হলেন N-এর বাবা। P, O-এর কী হন?",
+      "o": [
+        "মামা",
+        "দাদা",
+        "নানা",
+        "চাচা"
+      ],
+      "a": 2,
+      "e": "O-এর মা N, আর মায়ের বাবা = নানা।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Hard",
+      "q": "দুই বাবা ও দুই ছেলে মাছ ধরতে গেলেন। প্রত্যেকে একটি করে মাছ ধরলেন, কিন্তু মোট মাছ হলো তিনটি। তাঁরা মোট কতজন ছিলেন?",
+      "o": [
+        "৫ জন",
+        "৪ জন",
+        "২ জন",
+        "৩ জন"
+      ],
+      "a": 3,
+      "e": "দাদা, বাবা ও ছেলে — বাবা একইসঙ্গে 'বাবা' ও 'ছেলে'; তাই দুই বাবা ও দুই ছেলে মিলে ৩ জন।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Hard",
+      "q": "A হলেন B-এর বোন; C হলেন B-এর মা; D হলেন C-এর বাবা। A, D-এর কী হন?",
+      "o": [
+        "নাতনি",
+        "মেয়ে",
+        "নাতি",
+        "বোন"
+      ],
+      "a": 0,
+      "e": "A ও B ভাইবোন, তাদের মা C; C-এর বাবা D ⇒ A হলেন D-এর মেয়ের মেয়ে, অর্থাৎ নাতনি।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Medium",
+      "q": "রিনার বাবার একমাত্র মেয়ের ছেলে রিনার কী হয়?",
+      "o": [
+        "ভাগ্নে",
+        "ছেলে",
+        "ভাতিজা",
+        "নাতি"
+      ],
+      "a": 1,
+      "e": "রিনার বাবার একমাত্র মেয়ে রিনা নিজেই; তার ছেলে = রিনার ছেলে।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Medium",
+      "q": "আমার নানার একমাত্র মেয়ের স্বামী আমার কী হন?",
+      "o": [
+        "খালু",
+        "মামা",
+        "বাবা",
+        "চাচা"
+      ],
+      "a": 2,
+      "e": "নানার একমাত্র মেয়ে = আমার মা; মায়ের স্বামী = বাবা।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Medium",
+      "q": "আমার দাদির একমাত্র পুত্রবধূ আমার কী হন?",
+      "o": [
+        "খালা",
+        "চাচি",
+        "ফুফু",
+        "মা"
+      ],
+      "a": 3,
+      "e": "দাদির ছেলে আমার বাবা (একমাত্র পুত্রবধূ থাকলে ছেলেও একজনই); তাঁর স্ত্রী = মা।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Medium",
+      "q": "একজন পুরুষের শ্বশুরের একমাত্র মেয়ে ঐ পুরুষের কী হন?",
+      "o": [
+        "স্ত্রী",
+        "শ্যালিকা",
+        "বোন",
+        "শাশুড়ি"
+      ],
+      "a": 0,
+      "e": "শ্বশুরের একমাত্র মেয়েই তাঁর স্ত্রী।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Medium",
+      "q": "A ও B দুই ভাই; C হলো A-এর মেয়ে এবং D হলো B-এর ছেলে। D, C-এর কী হয়?",
+      "o": [
+        "মামাতো ভাই",
+        "চাচাতো ভাই",
+        "ভাই",
+        "ভাতিজা"
+      ],
+      "a": 1,
+      "e": "C-এর বাবা A ও D-এর বাবা B ভাই ⇒ D হলো C-এর চাচার ছেলে, অর্থাৎ চাচাতো ভাই।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Hard",
+      "q": "রনি তার দাদার একমাত্র ছেলের একমাত্র ছেলে। রনির বাবার কয়টি ছেলে আছে?",
+      "o": [
+        "০টি",
+        "২টি",
+        "১টি",
+        "নির্ণয় করা যায় না"
+      ],
+      "a": 2,
+      "e": "দাদার একমাত্র ছেলে = রনির বাবা; তাঁর একমাত্র ছেলে রনি ⇒ রনির বাবার ছেলে একজনই।",
+      "t": "বক্তার দিক থেকে ধাপে ধাপে সম্পর্ক বসাও (পারিবারিক বৃক্ষ এঁকে নাও)।",
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.JK.RKT",
+      "d": "Hard",
+      "q": "একটি পরিবারে স্বামী-স্ত্রী, তাঁদের ৩ ছেলে আছেন। প্রত্যেক ছেলে বিবাহিত এবং প্রত্যেকের ২টি করে মেয়ে আছে। পরিবারে মোট সদস্য কতজন?",
+      "o": [
+        "১৭",
+        "১১",
+        "১২",
+        "১৪"
+      ],
+      "a": 3,
+      "e": "স্বামী-স্ত্রী ২ + ছেলে ৩ + পুত্রবধূ ৩ + নাতনি ৩ × ২ = ৬ ⇒ মোট ১৪।",
+      "t": "প্রতিটি প্রজন্ম আলাদা করে গোনো।",
+      "calc": true,
+      "src": "লেকচার ০১ (Blood Relation) ও Standard Reasoning Reference (R. S. Aggarwal — Verbal Reasoning)",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "নিচের কোন সংখ্যাটি অন্যগুলো থেকে আলাদা? ১৩, ১৭, ১৯, ২১",
+      "o": [
+        "২১",
+        "১৩",
+        "১৭",
+        "১৯"
+      ],
+      "a": 0,
+      "e": "১৩, ১৭, ১৯ মৌলিক; ২১ = ৩ × ৭ যৌগিক। তাই বেমানান ২১ (মৌলিক নয়)।",
+      "t": "প্রথমে তিনটির সাধারণ বৈশিষ্ট্য খোঁজো।",
+      "calc": true,
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "নিচের কোন সংখ্যাটি অন্যগুলো থেকে আলাদা? ২৯, ৩১, ৩৭, ৩৯",
+      "o": [
+        "২৯",
+        "৩৯",
+        "৩১",
+        "৩৭"
+      ],
+      "a": 1,
+      "e": "৩৯ = ৩ × ১৩। তাই বেমানান ৩৯ (মৌলিক নয়)।",
+      "t": "প্রথমে তিনটির সাধারণ বৈশিষ্ট্য খোঁজো।",
+      "calc": true,
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "নিচের কোন সংখ্যাটি অন্যগুলো থেকে আলাদা? ১৬, ২৫, ৩৬, ৪৮",
+      "o": [
+        "২৫",
+        "১৬",
+        "৪৮",
+        "৩৬"
+      ],
+      "a": 2,
+      "e": "১৬, ২৫, ৩৬ পূর্ণবর্গ; ৪৮ নয়। তাই বেমানান ৪৮ (পূর্ণবর্গ নয়)।",
+      "t": "প্রথমে তিনটির সাধারণ বৈশিষ্ট্য খোঁজো।",
+      "calc": true,
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "নিচের কোন সংখ্যাটি অন্যগুলো থেকে আলাদা? ৪৯, ৬৪, ৮১, ৯০",
+      "o": [
+        "৮১",
+        "৪৯",
+        "৬৪",
+        "৯০"
+      ],
+      "a": 3,
+      "e": "৯০ পূর্ণবর্গ নয়। তাই বেমানান ৯০ (পূর্ণবর্গ নয়)।",
+      "t": "প্রথমে তিনটির সাধারণ বৈশিষ্ট্য খোঁজো।",
+      "calc": true,
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "নিচের কোন সংখ্যাটি অন্যগুলো থেকে আলাদা? ৮, ২৭, ৬৪, ১০০",
+      "o": [
+        "১০০",
+        "৮",
+        "২৭",
+        "৬৪"
+      ],
+      "a": 0,
+      "e": "৮, ২৭, ৬৪ পূর্ণঘন (২³, ৩³, ৪³); ১০০ নয়। তাই বেমানান ১০০ (পূর্ণঘন নয়)।",
+      "t": "প্রথমে তিনটির সাধারণ বৈশিষ্ট্য খোঁজো।",
+      "calc": true,
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "নিচের কোন সংখ্যাটি অন্যগুলো থেকে আলাদা? ১৪, ৩৫, ৬৩, ৫২",
+      "o": [
+        "১৪",
+        "৫২",
+        "৩৫",
+        "৬৩"
+      ],
+      "a": 1,
+      "e": "৫২ ÷ ৭ মেলে না। তাই বেমানান ৫২ (৭-এর গুণিতক নয়)।",
+      "t": "প্রথমে তিনটির সাধারণ বৈশিষ্ট্য খোঁজো।",
+      "calc": true,
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "নিচের কোন সংখ্যাটি অন্যগুলো থেকে আলাদা? ১১, ২৩, ৩৫, ৪৬",
+      "o": [
+        "২৩",
+        "১১",
+        "৪৬",
+        "৩৫"
+      ],
+      "a": 2,
+      "e": "অন্যগুলো বিজোড়, ৪৬ জোড়। তাই বেমানান ৪৬ (জোড় সংখ্যা)।",
+      "t": "প্রথমে তিনটির সাধারণ বৈশিষ্ট্য খোঁজো।",
+      "calc": true,
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "নিচের কোন সংখ্যাটি অন্যগুলো থেকে আলাদা? ১৯, ২৮, ৩৭, ৪৫",
+      "o": [
+        "৩৭",
+        "১৯",
+        "২৮",
+        "৪৫"
+      ],
+      "a": 3,
+      "e": "১৯, ২৮, ৩৭-এর অঙ্কের যোগফল ১০; ৪৫-এর ৯। তাই বেমানান ৪৫ (অঙ্কের যোগফল ১০ নয়)।",
+      "t": "প্রথমে তিনটির সাধারণ বৈশিষ্ট্য খোঁজো।",
+      "calc": true,
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "নিচের কোন সংখ্যাটি অন্যগুলো থেকে আলাদা? ১২১, ১৪৪, ১৬৯, ১৮০",
+      "o": [
+        "১৮০",
+        "১২১",
+        "১৪৪",
+        "১৬৯"
+      ],
+      "a": 0,
+      "e": "১৮০ পূর্ণবর্গ নয়। তাই বেমানান ১৮০ (পূর্ণবর্গ নয়)।",
+      "t": "প্রথমে তিনটির সাধারণ বৈশিষ্ট্য খোঁজো।",
+      "calc": true,
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "নিচের কোন জোড়টি অন্যগুলো থেকে আলাদা?",
+      "o": [
+        "৩ – ৯",
+        "৬ – ৩০",
+        "৪ – ১৬",
+        "৫ – ২৫"
+      ],
+      "a": 1,
+      "e": "অন্য জোড়ে দ্বিতীয় সংখ্যা প্রথমটির বর্গ (৩² = ৯, ৪² = ১৬, ৫² = ২৫); ৬² = ৩৬, ৩০ নয়।",
+      "t": "জোড়ের ভেতরের সম্পর্ক মিলিয়ে দেখো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Easy",
+      "q": "নিচের কোনটি অন্যগুলো থেকে আলাদা?",
+      "o": [
+        "কাঁঠাল",
+        "আম",
+        "আলু",
+        "লিচু"
+      ],
+      "a": 2,
+      "e": "আম, কাঁঠাল, লিচু ফল; আলু সবজি (কন্দ)।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Easy",
+      "q": "নিচের কোনটি অন্যগুলো থেকে আলাদা?",
+      "o": [
+        "রাজশাহী",
+        "ঢাকা",
+        "চট্টগ্রাম",
+        "কলকাতা"
+      ],
+      "a": 3,
+      "e": "অন্য তিনটি বাংলাদেশের শহর; কলকাতা ভারতের।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "নিচের কোনটি অন্যগুলো থেকে আলাদা?",
+      "o": [
+        "কাপ্তাই",
+        "পদ্মা",
+        "মেঘনা",
+        "যমুনা"
+      ],
+      "a": 0,
+      "e": "পদ্মা, মেঘনা, যমুনা নদী; কাপ্তাই একটি কৃত্রিম হ্রদ।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Easy",
+      "q": "নিচের কোন প্রাণীটি অন্যগুলো থেকে আলাদা?",
+      "o": [
+        "বাঘ",
+        "হরিণ",
+        "সিংহ",
+        "চিতা"
+      ],
+      "a": 1,
+      "e": "বাঘ, সিংহ, চিতা মাংসাশী; হরিণ তৃণভোজী।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "Which one is different from the others?",
+      "o": [
+        "Venus",
+        "Mercury",
+        "Moon",
+        "Mars"
+      ],
+      "a": 2,
+      "e": "Mercury, Venus, Mars গ্রহ; Moon পৃথিবীর উপগ্রহ।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "Which one is different from the others?",
+      "o": [
+        "Hydrogen",
+        "Oxygen",
+        "Nitrogen",
+        "Water"
+      ],
+      "a": 3,
+      "e": "অন্যগুলো মৌলিক পদার্থ; Water যৌগিক পদার্থ।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Easy",
+      "q": "Which one is different from the others?",
+      "o": [
+        "Eraser",
+        "Pen",
+        "Pencil",
+        "Marker"
+      ],
+      "a": 0,
+      "e": "Pen, Pencil, Marker লেখার উপকরণ; Eraser মুছে ফেলার।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Easy",
+      "q": "Which one is different from the others?",
+      "o": [
+        "Tulip",
+        "Oak",
+        "Rose",
+        "Lily"
+      ],
+      "a": 1,
+      "e": "Tulip, Rose, Lily ফুল; Oak একটি গাছ।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "Which one is different from the others?",
+      "o": [
+        "Football",
+        "Cricket",
+        "Chess",
+        "Hockey"
+      ],
+      "a": 2,
+      "e": "অন্যগুলো মাঠের দলগত খেলা; Chess বোর্ডে দুজনের খেলা।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "Which one is different from the others?",
+      "o": [
+        "Triangle",
+        "Square",
+        "Rectangle",
+        "Cube"
+      ],
+      "a": 3,
+      "e": "Square, Rectangle, Triangle দ্বিমাত্রিক; Cube ত্রিমাত্রিক।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "Which one is different from the others?",
+      "o": [
+        "Litre",
+        "Kilogram",
+        "Gram",
+        "Tonne"
+      ],
+      "a": 0,
+      "e": "Kilogram, Gram, Tonne ভরের একক; Litre আয়তনের একক।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Hard",
+      "q": "Which one is different from the others?",
+      "o": [
+        "Violin",
+        "Flute",
+        "Guitar",
+        "Sitar"
+      ],
+      "a": 1,
+      "e": "Violin, Guitar, Sitar তারের বাদ্যযন্ত্র; Flute বায়ু (ফুঁ) বাদ্যযন্ত্র।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "Which one is different from the others?",
+      "o": [
+        "Crow",
+        "Sparrow",
+        "Bat",
+        "Parrot"
+      ],
+      "a": 2,
+      "e": "Sparrow, Crow, Parrot পাখি; Bat (বাদুড়) উড়লেও স্তন্যপায়ী।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Hard",
+      "q": "Which month is different from the others?",
+      "o": [
+        "May",
+        "January",
+        "March",
+        "June"
+      ],
+      "a": 3,
+      "e": "January, March, May ৩১ দিনের মাস; June ৩০ দিনের।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "Which one is different from the others?",
+      "o": [
+        "Sydney",
+        "Dhaka",
+        "Delhi",
+        "Tokyo"
+      ],
+      "a": 0,
+      "e": "Dhaka, Delhi, Tokyo রাজধানী; Sydney অস্ট্রেলিয়ার রাজধানী নয় (রাজধানী Canberra)।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Medium",
+      "q": "Which word is different from the others?",
+      "o": [
+        "Swim",
+        "Happy",
+        "Run",
+        "Jump"
+      ],
+      "a": 1,
+      "e": "Swim, Run, Jump ক্রিয়া (verb); Happy বিশেষণ (adjective)।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Easy",
+      "q": "নিচের কোনটি অন্যগুলো থেকে আলাদা?",
+      "o": [
+        "কান",
+        "চোখ",
+        "হাত",
+        "নাক"
+      ],
+      "a": 2,
+      "e": "চোখ, কান, নাক জ্ঞানেন্দ্রিয়; হাত কর্মেন্দ্রিয়।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Easy",
+      "q": "নিচের কোনটি অন্যগুলো থেকে আলাদা?",
+      "o": [
+        "তামা",
+        "সোনা",
+        "রুপা",
+        "কাঠ"
+      ],
+      "a": 3,
+      "e": "সোনা, রুপা, তামা ধাতু; কাঠ ধাতু নয়।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    },
+    {
+      "st": "MN.BC.BEM",
+      "d": "Easy",
+      "q": "নিচের কোন নামটি অন্যগুলো থেকে আলাদা?",
+      "o": [
+        "আইনস্টাইন",
+        "রবীন্দ্রনাথ",
+        "নজরুল",
+        "জীবনানন্দ"
+      ],
+      "a": 0,
+      "e": "অন্য তিনজন বাঙালি কবি; আইনস্টাইন বিজ্ঞানী।",
+      "t": "তিনটির সাধারণ শ্রেণি খুঁজে চতুর্থটিকে আলাদা করো।",
+      "src": "লেকচার ০১ (Impossibility ও Odd-man-out) ও Standard Reasoning Reference",
+      "dup": "পাস",
+      "v": "যাচাইকৃত"
+    }
+  ]
+}

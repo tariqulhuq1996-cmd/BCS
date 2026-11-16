@@ -1,0 +1,27 @@
+{
+  "target": 800,
+  "priorityTarget": {
+    "A": 451,
+    "B": 200,
+    "C": 29,
+    "D": 120
+  },
+  "historicalReference": 181,
+  "coverage": "MN.BC.BRN: বিগত 8টি (২০০-নম্বর যুগে); MN.JK.RKT: বিগত 5টি (২০০-নম্বর যুগে); MN.BC.BEM: বিগত 4টি (২০০-নম্বর যুগে)",
+  "generated": 101,
+  "exact": 0,
+  "semantic": 0,
+  "near": 0,
+  "verify": 0,
+  "qc": 0,
+  "accepted": 101,
+  "cumulative": 709,
+  "remaining": 91,
+  "supplementary": 0,
+  "cumByPriority": {
+    "A": 451,
+    "B": 200,
+    "C": 29,
+    "D": 29
+  }
+}
