@@ -38,6 +38,8 @@ export const DEFAULT_RULES: Record<string, { value: RuleValue; noteBn: string }>
   "l1.cumulative.max": { value: 100, noteBn: "Cumulative Test: সর্বোচ্চ প্রশ্ন" },
   "l1.cumulative.min_per_exam": { value: 2, noteBn: "Cumulative Test-এ প্রতিটি আগের BCS থেকে ন্যূনতম প্রশ্ন" },
   "l1.final.size": { value: 100, noteBn: "Level 1 Final Assessment-এর প্রশ্নসংখ্যা" },
+  "exam.seconds_per_question": { value: 36, noteBn: "বাস্তব BCS-এর মতো প্রতি প্রশ্নে বরাদ্দ সময় (সেকেন্ড); প্রতিটি পরীক্ষার সময়সীমা = প্রশ্নসংখ্যা × এই মান (Model Test ও শুরুর মূল্যায়নের নিজস্ব সময় বাদে)" },
+  "exam.mark_seconds": { value: 10, noteBn: "উত্তরপত্রে উত্তর চিহ্নিত করার জন্য প্রতি উত্তরে ধরা অতিরিক্ত সময় (সেকেন্ড) — কেবল সময়-বিশ্লেষণে যোগ হয়" },
   "shuffle.options": { value: true, noteBn: "Revision/Mastery/Cumulative-এ অপশনের ক্রম এলোমেলো (\"সবগুলো\"/\"কোনটিই নয়\" ধরনের অপশন থাকলে নয়)" },
 
   // প্রশ্ন বাছাইয়ের ওজন (প্রোটোটাইপ থেকে)

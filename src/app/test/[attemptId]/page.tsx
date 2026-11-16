@@ -27,5 +27,5 @@ async function Content({ params }: { params: Promise<{ attemptId: string }> }) {
     throw e;
   }
   if (view.submitted) redirect(`/result/${attemptId}`);
-  return <TestRunner attemptId={view.id} title={view.title} questions={view.questions} deadlineAt={view.deadlineAt} />;
+  return <TestRunner attemptId={view.id} title={view.title} questions={view.questions} deadlineAt={view.deadlineAt} startedAt={view.startedAt} secPerQ={view.secPerQ} markSec={view.markSec} />;
 }

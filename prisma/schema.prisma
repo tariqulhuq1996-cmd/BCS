@@ -478,6 +478,13 @@ enum Confidence {
   UNSURE
 }
 
+/// উত্তরের ধরন: নিশ্চিত উত্তর, দুটি অপশন বাদ দিয়ে অনুমান, বা বাদ দেওয়া (Skip)
+enum AnswerMode {
+  DIRECT
+  GUESS
+  SKIP
+}
+
 model AttemptAnswer {
   attemptId  String
   attempt    TestAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
@@ -487,7 +494,10 @@ model AttemptAnswer {
   isCorrect  Boolean?
   confidence Confidence  @default(SURE)
   marked     Boolean     @default(false)
-  timeMs     Int?
+  timeMs     Int? // প্রশ্নটি সমাধানে মোট সময় (উত্তরপত্রে চিহ্নিত করার ১০ সেকেন্ড বাদে)
+  mode       AnswerMode?
+  /// [IntList]
+  eliminated Json? // Guess: বাদ দেওয়া দুটি মূল অপশন-সূচক
 
   @@id([attemptId, questionId])
   @@index([questionId])

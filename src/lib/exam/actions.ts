@@ -3,7 +3,7 @@
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth/session";
-import { ExamError, acknowledgeModelTestReview, acknowledgeReview, addTime, saveAnswer, startMistakePractice, startRevision, startStep, submitAttempt } from "./service";
+import { type AnswerModeIn, ExamError, acknowledgeModelTestReview, acknowledgeReview, addTime, saveAnswer, startMistakePractice, startRevision, startStep, submitAttempt } from "./service";
 
 async function uid() {
   const u = await getCurrentUser();
@@ -64,10 +64,10 @@ export async function startMistakeAction(fd: FormData) {
 }
 
 /** পরীক্ষার পর্দা থেকে প্রতিটি উত্তর সংরক্ষণ। */
-export async function saveAnswerAction(attemptId: string, qid: string, display: number | null, marked: boolean, unsure: boolean): Promise<{ ok: boolean; error?: string }> {
+export async function saveAnswerAction(attemptId: string, qid: string, display: number | null, marked: boolean, unsure: boolean, mode: AnswerModeIn = null, eliminated: number[] = []): Promise<{ ok: boolean; error?: string }> {
   const userId = await uid();
   try {
-    await saveAnswer(prisma, userId, attemptId, qid, display, marked, unsure);
+    await saveAnswer(prisma, userId, attemptId, qid, display, marked, unsure, mode, eliminated);
     return { ok: true };
   } catch (e) {
     if (e instanceof ExamError) return { ok: false, error: e.message };

@@ -5,6 +5,7 @@ import type { getResultView } from "@/lib/exam/service";
 import { acknowledgeModelTestAction } from "@/lib/exam/actions";
 import { bn, bnNum } from "@/lib/bn";
 import { QuestionReview } from "./question-review";
+import { TimingReportView } from "./timing-report";
 import { modelTestRank } from "@/lib/progress/peers";
 import { BackLink } from "@/components/site/back-link";
 
@@ -134,6 +135,8 @@ export async function ModelTestResult({ attemptId, userId, r }: { attemptId: str
           )}
         </section>
       </div>
+
+      <TimingReportView t={r.timing} />
 
       <section aria-labelledby="review" className="mt-12">
         <h2 id="review" className="text-xl font-bold">প্রশ্নভিত্তিক পর্যালোচনা</h2>

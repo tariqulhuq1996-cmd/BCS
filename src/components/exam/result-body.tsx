@@ -2,6 +2,7 @@ import { bn, bnNum } from "@/lib/bn";
 import type { getResultView } from "@/lib/exam/service";
 import { ProgressBar } from "@/components/portal/progress-bar";
 import { QuestionReview } from "./question-review";
+import { TimingReportView } from "./timing-report";
 
 type R = Awaited<ReturnType<typeof getResultView>>;
 
@@ -22,6 +23,8 @@ export function ResultBody({ r }: { r: R }) {
           </div>
         ))}
       </section>
+
+      <TimingReportView t={r.timing} />
 
       <div className="mt-10 grid gap-10 lg:grid-cols-2">
         <section aria-labelledby="by-subject">

@@ -5,6 +5,7 @@ declare global {
     type StringList = string[];
     /** প্রশ্ন-id → উপস্থাপনের অপশন-বিন্যাস */
     type OptionPerms = Record<string, number[]>;
+    type IntList = number[];
   }
 }
 export {};

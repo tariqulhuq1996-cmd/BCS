@@ -8,12 +8,14 @@
  *  - একই Attempt দুবার জমা দেওয়া যায় না (ডেটাবেস-স্তরে শর্তসাপেক্ষ হালনাগাদ)।
  * এই ফাইল "server-only" নয়, যাতে স্বয়ংক্রিয় পরীক্ষা সরাসরি চালাতে পারে; ডেটাবেস-ক্লায়েন্ট প্যারামিটারে আসে।
  */
-import type { AttemptKind, LearningTask, Exam, PrismaClient, Prisma } from "@prisma/client";
+import { Prisma } from "@prisma/client";
+import type { AttemptKind, LearningTask, Exam, PrismaClient } from "@prisma/client";
 import { loadRules, type Rules } from "@/lib/rules";
 import { OPEN_STATES, completeTask, markStarted, unlockAllForAdmin } from "@/lib/progress/engine";
 import { normalizeOption } from "@/lib/questions/hash";
 import { pickCumulative, pickProportional, rank, optionPerm, revisionSize, shuffleArr, splitParts, type Candidate, type Stat, type Weights } from "./select";
 import { withWriteRetry } from "@/lib/db-retry";
+import { analyzeTiming } from "./timing";
 
 export class ExamError extends Error {
   constructor(
@@ -170,7 +172,9 @@ async function createAttempt(db: Db, userId: string, taskId: number | null, kind
   for (const o of qs) perms[o.id] = optionPerm(o.options, shuffle, Math.random);
   if (taskId) await markStarted(db, userId, taskId);
   const partNo = opts.partNo ?? 1;
-  const a = await db.testAttempt.create({ data: { userId, taskId, kind, partNo, questionIds, optionPerms: perms, threshold: opts.threshold ?? null } });
+  // বাস্তব পরীক্ষার মতো সময়সীমা: প্রশ্নসংখ্যা × প্রতি প্রশ্নের বরাদ্দ সময় (Model Test/শুরুর মূল্যায়ন পরে নিজের সময় বসায়)
+  const deadlineAt = new Date(Date.now() + questionIds.length * opts.rules.get<number>("exam.seconds_per_question") * 1000);
+  const a = await db.testAttempt.create({ data: { userId, taskId, kind, partNo, questionIds, optionPerms: perms, threshold: opts.threshold ?? null, deadlineAt } });
   // একযোগে দুবার শুরু (যেমন দুবার ক্লিক) হলে দুটি পরীক্ষা তৈরি হতে পারে — সবচেয়ে আগেরটি রেখে নিজেরটি মুছে ফেলা।
   // দুটি অনুরোধই একই ক্রম (startedAt, id) দেখে, তাই দুজনই একই "প্রথম" পরীক্ষা বেছে নেয়।
   const twins = await db.testAttempt.findMany({
@@ -462,6 +466,9 @@ export async function getAttemptView(db: Db, userId: string, attemptId: string) 
     title: attemptTitle(a, parts),
     submitted: !!a.submittedAt,
     deadlineAt: a.deadlineAt?.toISOString() ?? null,
+    startedAt: a.startedAt.toISOString(),
+    secPerQ: (await loadRules(db)).get<number>("exam.seconds_per_question"),
+    markSec: (await loadRules(db)).get<number>("exam.mark_seconds"),
     threshold: a.threshold,
     taskKey: a.task?.key ?? null,
     questions: a.questionIds.map((qid) => {
@@ -475,13 +482,17 @@ export async function getAttemptView(db: Db, userId: string, attemptId: string) 
         selected: saved?.selected != null ? perm.indexOf(saved.selected) : null,
         marked: saved?.marked ?? false,
         unsure: saved?.confidence === "UNSURE",
+        mode: saved?.mode ?? null,
+        eliminated: Array.isArray(saved?.eliminated) ? saved.eliminated.map((o) => perm.indexOf(o)) : [],
+        timeMs: saved?.timeMs ?? 0,
       };
     }),
   };
 }
 
 /** একটি উত্তর সংরক্ষণ (প্রতিবার বদলালে)। display = পর্দায় দেখানো অপশনের ক্রম (০–৩)। */
-export async function saveAnswer(db: Db, userId: string, attemptId: string, qid: string, display: number | null, marked: boolean, unsure: boolean) {
+export type AnswerModeIn = "DIRECT" | "GUESS" | "SKIP" | null;
+export async function saveAnswer(db: Db, userId: string, attemptId: string, qid: string, display: number | null, marked: boolean, unsure: boolean, mode: AnswerModeIn = null, elimDisplay: number[] = []) {
   const a = await ownAttempt(db, userId, attemptId);
   if (a.submittedAt) throw new ExamError("SUBMITTED", "পরীক্ষাটি আগেই জমা হয়েছে।");
   if (a.deadlineAt && Date.now() > a.deadlineAt.getTime() + GRACE_MS) throw new ExamError("SUBMITTED", "সময় শেষ।");
@@ -489,11 +500,21 @@ export async function saveAnswer(db: Db, userId: string, attemptId: string, qid:
   if (display != null && (!Number.isInteger(display) || display < 0 || display > 3)) throw new ExamError("BAD_INPUT", "অপশন সঠিক নয়।");
   const perm = (a.optionPerms as Record<string, number[]>)[qid] ?? [0, 1, 2, 3];
   const selected = display == null ? null : perm[display];
+  if (mode && !["DIRECT", "GUESS", "SKIP"].includes(mode)) throw new ExamError("BAD_INPUT", "উত্তরের ধরন সঠিক নয়।");
+  // Guess: ঠিক দুটি ভিন্ন অপশন বাদ, আর নির্বাচিত উত্তর বাদ দেওয়াগুলোর বাইরে
+  let eliminated: number[] | null = null;
+  if (mode === "GUESS") {
+    const e = [...new Set(elimDisplay)];
+    if (e.length !== 2 || e.some((x) => !Number.isInteger(x) || x < 0 || x > 3) || (display != null && e.includes(display))) throw new ExamError("BAD_INPUT", "Guess-এ দুটি ভিন্ন অপশন বাদ দিয়ে বাকি দুটির একটি বাছাই করতে হবে।");
+    eliminated = e.map((x) => perm[x]);
+  }
+  const conf = unsure || mode === "GUESS" ? "UNSURE" : "SURE";
+  const extra = { mode: mode ?? (display == null ? null : "DIRECT"), eliminated: eliminated ?? Prisma.DbNull };
   await withWriteRetry(() =>
     db.attemptAnswer.upsert({
       where: { attemptId_questionId: { attemptId, questionId: qid } },
-      update: { selected, marked, confidence: unsure ? "UNSURE" : "SURE" },
-      create: { attemptId, questionId: qid, selected, marked, confidence: unsure ? "UNSURE" : "SURE" },
+      update: { selected, marked, confidence: conf, ...extra },
+      create: { attemptId, questionId: qid, selected, marked, confidence: conf, ...extra },
     }),
   );
 }
@@ -702,6 +723,9 @@ export async function getResultView(db: Db, userId: string, attemptIds: string[]
           correct: q.correctIndex == null ? null : perm.indexOf(q.correctIndex),
           status: status as "correct" | "wrong" | "unanswered",
           unsure: ans?.confidence === "UNSURE",
+          mode: (ans?.mode ?? (sel == null ? null : "DIRECT")) as "DIRECT" | "GUESS" | "SKIP" | null,
+          eliminated: Array.isArray(ans?.eliminated) ? ans.eliminated.map((o) => perm.indexOf(o)) : [],
+          timeMs: ans?.timeMs ?? null,
           explanation: q.explanation,
           explanationVerified: q.explanationStatus === "VERIFIED",
           saved: markBy.has(qid),
@@ -731,8 +755,16 @@ export async function getResultView(db: Db, userId: string, attemptIds: string[]
   const total = items.length;
   const correct = items.filter((i) => i.status === "correct").length;
   const first = attempts[0];
+  const rules = await loadRules(db);
+  const timing = analyzeTiming({
+    items,
+    attempts: attempts.map((a) => ({ startedAt: a.startedAt.toISOString(), submittedAt: a.submittedAt?.toISOString() ?? null, deadlineAt: a.deadlineAt?.toISOString() ?? null })),
+    secPerQ: rules.get<number>("exam.seconds_per_question"),
+    markSec: rules.get<number>("exam.mark_seconds"),
+    negativeMark: rules.get<number>("l3.negative_mark"),
+  });
   return {
-    attempts: attempts.map((a) => ({ id: a.id, kind: a.kind, partNo: a.partNo, threshold: a.threshold, passed: a.passed, scorePct: a.scorePct })),
+    attempts: attempts.map((a) => ({ id: a.id, kind: a.kind, partNo: a.partNo, threshold: a.threshold, passed: a.passed, scorePct: a.scorePct, startedAt: a.startedAt.toISOString(), submittedAt: a.submittedAt?.toISOString() ?? null, deadlineAt: a.deadlineAt?.toISOString() ?? null })),
     kind: first.kind,
     taskKey: first.task?.key ?? null,
     taskKind: first.task?.kind ?? null,
@@ -748,6 +780,7 @@ export async function getResultView(db: Db, userId: string, attemptIds: string[]
     scorePct: total ? (correct / total) * 100 : 0,
     subjects: [...bySubject.values()].sort((x, y) => x.order - y.order),
     weakSubtopics: [...mistakesBySubtopic.values()].sort((x, y) => y.n - x.n).slice(0, 6),
+    timing,
     items,
   };
 }
