@@ -9,6 +9,8 @@ export type Lesson = {
   lessonNo?: string; // "Lesson 02"
   theme?: string; // "Climate & Environment"
   topic: string; // আজকের বিষয়
+  lang?: "en" | "bn"; // পাঠের মূল ভাষা (ডিফল্ট en)
+  paper?: string; // যেমন "প্রথম ও দ্বিতীয় পত্র"
   intro?: string[];
   paragraph?: { title: string; words?: number; pattern?: string; text: string; note?: string; sources?: string[]; tip?: string };
   structure?: { step: string; what: string }[];
@@ -36,7 +38,25 @@ export type Lesson = {
   translation?: { bnToEn: { q: string; a: string }[]; enToBn: { q: string; a: string }[]; note?: string };
   assignment?: { intro: string; expressions: string[]; criteria: string[]; note?: string };
   finalGoal?: { title?: string; text: string[]; remember?: string; principle?: string };
+  /** মুক্ত কাঠামোর অংশ (বাংলা পাঠ ইত্যাদি) — নির্দিষ্ট অংশগুলোর পরে নম্বরসহ দেখায়। */
+  sections?: { title: string; sub?: string; blocks: Block[] }[];
 };
+
+/** মুক্ত কাঠামোর ব্লক */
+export type Block =
+  | { t: "h"; text: string }
+  | { t: "p"; text: string }
+  | { t: "passage"; text: string; lang?: "en" | "bn" } // হাইলাইট করা মূল লেখা (ফাঁকা লাইন = নতুন অনুচ্ছেদ)
+  | { t: "ul" | "ol"; items: string[] }
+  | { t: "table"; head: string[]; rows: string[][] }
+  | { t: "tip"; label: string; text: string }
+  | { t: "info"; rows: [string, string][] } // কী: মান তালিকা
+  | { t: "cards"; items: { title: string; rows: [string, string][] }[] } // শব্দ/প্রবাদ ধাঁচের কার্ড-গ্রিড
+  | { t: "quote"; text: string; author: string; source?: string }
+  | { t: "fix"; wrong: string; right: string } // ভুল → শুদ্ধ
+  | { t: "answer"; label?: string; items: string[] } // লুকানো উত্তর
+  | { t: "dialogue"; lines: { who: string; text: string }[] }
+  | { t: "write"; id: string; label: string; rows?: number; placeholder?: string; count?: "lines" | "words" };
 
 export function asLesson(v: unknown): Lesson | null {
   return v && typeof v === "object" && typeof (v as Lesson).topic === "string" ? (v as Lesson) : null;

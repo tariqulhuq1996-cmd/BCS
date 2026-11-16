@@ -4,7 +4,7 @@ import { bn } from "@/lib/bn";
 import { dayLabel, type CardSummary } from "@/lib/writing/service";
 
 /** তথ্য-কার্ডের টাইল: ওপরে রঙিন ব্যান্ড, নিচে অংশ, শিরোনাম ও পড়ার লিংক (খোলা/পড়া/লক)। */
-export function CardTile({ card, band, short, lessonMode = false }: { card: CardSummary; band: string; short: string; lessonMode?: boolean }) {
+export function CardTile({ card, band, short, lessonMode = false, lessonLabel = "Daily English Writing" }: { card: CardSummary; band: string; short: string; lessonMode?: boolean; lessonLabel?: string }) {
   const locked = card.state === "locked";
   return (
     <li className={`flex flex-col overflow-hidden rounded-2xl bg-surface shadow-[0_1px_3px_rgba(20,20,60,0.08)] ring-1 ring-line ${locked ? "opacity-80" : ""}`}>
@@ -13,7 +13,7 @@ export function CardTile({ card, band, short, lessonMode = false }: { card: Card
         <span aria-hidden className="absolute -left-10 -top-16 size-48 rotate-[28deg] rounded-[2.5rem] bg-white/8" />
         <span aria-hidden className="absolute -bottom-20 right-[-3rem] size-56 rotate-[-18deg] rounded-[3rem] bg-white/10" />
         <div className="relative text-center text-white">
-          <p className="text-sm font-semibold uppercase tracking-wide text-white/80">{lessonMode ? "Daily English Writing" : short}</p>
+          <p className="text-sm font-semibold uppercase tracking-wide text-white/80">{lessonMode ? lessonLabel : short}</p>
           <p className="font-display text-4xl font-extrabold leading-tight tabular" style={{ fontStretch: "110%" }} lang={lessonMode ? "en" : undefined}>{lessonMode ? dayLabel(card.order) : `কার্ড ${bn(card.order)}`}</p>
         </div>
         {locked && (

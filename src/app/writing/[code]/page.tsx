@@ -39,8 +39,9 @@ async function Content({ params }: Props) {
   if (!c) notFound();
   const s = subjectOf(c.card.subject)!;
   const back = `/writing?s=${s.code}`;
-  const lessonMode = LESSON_SUBJECTS.has(s.code);
   const lesson = asLesson(c.card.lesson);
+  const lessonMode = LESSON_SUBJECTS.has(s.code) || !!lesson;
+  const en = lesson?.lang !== "bn" && s.code === "EN" ? "en" : undefined;
   const pad = (n: number) => String(n).padStart(2, "0");
 
   return (
@@ -52,10 +53,10 @@ async function Content({ params }: Props) {
       {lessonMode ? (
         <header className={`relative mt-4 overflow-hidden rounded-2xl bg-gradient-to-br ${s.band} px-6 py-8 text-white`}>
           <span aria-hidden className="absolute -right-12 -top-16 size-56 rotate-[24deg] rounded-[3rem] bg-white/10" />
-          <p className="relative text-sm font-semibold text-white/85" lang="en">{lesson?.series ?? "Daily English Writing Practice"} — {lesson?.day ?? dayLabel(c.card.order)}</p>
-          <h1 className="relative mt-2 text-[26px] font-extrabold leading-snug sm:text-[30px]" lang="en">{lesson?.topic ?? c.card.title}</h1>
-          <p className="relative mt-3 flex flex-wrap gap-2 text-sm" lang="en">
-            {[lesson?.exam ?? "52nd BCS Written", lesson?.lessonNo ?? `Lesson ${pad(c.card.order)}`, lesson?.theme].filter(Boolean).map((x) => (
+          <p className="relative text-sm font-semibold text-white/85" lang={en}>{lesson?.series ?? "Daily English Writing Practice"} — {lesson?.day ?? dayLabel(c.card.order)}</p>
+          <h1 className="relative mt-2 text-[26px] font-extrabold leading-snug sm:text-[30px]" lang={en}>{lesson?.topic ?? c.card.title}</h1>
+          <p className="relative mt-3 flex flex-wrap gap-2 text-sm" lang={en}>
+            {[lesson?.exam ?? "52nd BCS Written", lesson?.lessonNo ?? `Lesson ${pad(c.card.order)}`, lesson?.paper, lesson?.theme].filter(Boolean).map((x) => (
               <span key={x} className="rounded-full bg-white/15 px-3 py-1">{x}</span>
             ))}
           </p>

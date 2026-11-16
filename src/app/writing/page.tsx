@@ -72,14 +72,14 @@ async function Content({ searchParams }: Props) {
         </div>
         {nextOpen && (
           <Link href={`/writing/${nextOpen.code}`} className="rounded-lg bg-green px-6 py-3 text-center text-lg font-semibold text-white hover:bg-green-strong dark:text-paper">
-            {cur.read ? "পরের কার্ড" : "শুরু করুন"}: {LESSON_SUBJECTS.has(current.code) ? `Day ${String(nextOpen.order).padStart(2, "0")}` : `কার্ড ${bn(nextOpen.order)}`}
+            {cur.read ? "পরের কার্ড" : "শুরু করুন"}: {LESSON_SUBJECTS.has(current.code) || nextOpen.lessonTheme ? `Day ${String(nextOpen.order).padStart(2, "0")}` : `কার্ড ${bn(nextOpen.order)}`}
           </Link>
         )}
       </div>
 
       <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {cards.map((c) => (
-          <CardTile key={c.code} card={c} band={current.band} short={current.short} lessonMode={LESSON_SUBJECTS.has(current.code)} />
+          <CardTile key={c.code} card={c} band={current.band} short={current.short} lessonMode={LESSON_SUBJECTS.has(current.code) || !!c.lessonTheme} lessonLabel={current.code === "EN" ? "Daily English Writing" : current.code === "BN" ? "Daily Bangla Written" : current.short} />
         ))}
       </ul>
     </>

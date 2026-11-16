@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { bn } from "@/lib/bn";
-import type { Lesson } from "@/lib/writing/lesson";
+import type { Block, Lesson } from "@/lib/writing/lesson";
 import { AssignmentBox } from "./assignment-box";
 
 /** Daily English Writing Practice ধাঁচের সাজানো পাঠ — অংশগুলো ক্রমানুসারে নম্বরসহ। */
@@ -289,18 +289,90 @@ export function LessonView({ lesson: l, code }: { lesson: Lesson; code: string }
     );
   }
 
+  for (const s of l.sections ?? []) {
+    parts.push(sec(s.title, <div className="space-y-4">{s.blocks.map((b, i) => <BlockView key={i} b={b} code={code} />)}</div>, s.sub));
+  }
+
   return (
     <div className="mt-6 grid gap-5">
       {(l.intro?.length || l.topic) && (
         <section className="rounded-2xl border border-line bg-surface p-5 sm:p-6">
           <p className="text-sm font-semibold text-muted">আজকের বিষয়</p>
-          <p className="mt-1 text-xl font-bold" lang="en">{l.topic}</p>
+          <p className="mt-1 text-xl font-bold" lang={l.lang === "bn" ? undefined : "en"}>{l.topic}</p>
           {l.intro?.map((x) => <p key={x} className="mt-2 text-ink-2">{x}</p>)}
         </section>
       )}
       {parts}
     </div>
   );
+}
+
+/** মুক্ত কাঠামোর একটি ব্লক */
+function BlockView({ b, code }: { b: Block; code: string }) {
+  switch (b.t) {
+    case "h":
+      return <h3 className="pt-2 text-lg font-semibold">{b.text}</h3>;
+    case "p":
+      return <p className="leading-8">{b.text}</p>;
+    case "passage":
+      return (
+        <div lang={b.lang} className="space-y-3 rounded-xl bg-paper p-4 text-[17px] leading-8">
+          {b.text.split(/\n\n+/).map((x) => <p key={x}>{x}</p>)}
+        </div>
+      );
+    case "ul":
+      return <ul className="list-disc space-y-1.5 pl-6 leading-7">{b.items.map((x) => <li key={x}>{x}</li>)}</ul>;
+    case "ol":
+      return <ol className="list-decimal space-y-1.5 pl-6 leading-7 marker:text-muted">{b.items.map((x) => <li key={x}>{x}</li>)}</ol>;
+    case "table":
+      return <Table head={b.head} rows={b.rows} />;
+    case "tip":
+      return <p className="rounded-lg bg-omr-wash px-4 py-3 text-[15px] leading-7"><b>{b.label}:</b> {b.text}</p>;
+    case "info":
+      return <dl className="grid gap-x-6 gap-y-1.5 rounded-xl bg-paper p-4 text-[15px] sm:grid-cols-2">{b.rows.map(([k, v]) => <Info key={k} k={k} v={v} />)}</dl>;
+    case "cards":
+      return (
+        <ol className="grid gap-3 sm:grid-cols-2">
+          {b.items.map((c, i) => (
+            <li key={c.title} className="rounded-xl border border-line p-4">
+              <p className="text-lg font-semibold"><span className="text-muted">{bn(i + 1)}.</span> {c.title}</p>
+              <dl className="mt-2 space-y-1.5 text-[15px] leading-7">
+                {c.rows.map(([k, v]) => <div key={k}><dt className="inline font-semibold text-ink-2">{k}: </dt><dd className="inline">{v}</dd></div>)}
+              </dl>
+            </li>
+          ))}
+        </ol>
+      );
+    case "quote":
+      return (
+        <blockquote className="rounded-xl border-l-4 border-green bg-paper p-5">
+          <p className="text-2xl font-semibold leading-snug">“{b.text}”</p>
+          <footer className="mt-2 text-ink-2">— {b.author}{b.source ? <span className="block text-sm text-muted">উৎস: {b.source}</span> : null}</footer>
+        </blockquote>
+      );
+    case "fix":
+      return (
+        <div className="rounded-lg border border-line px-4 py-3 text-[15px] leading-7">
+          <p className="text-danger"><b>✗ ভুল:</b> {b.wrong}</p>
+          <p className="mt-1 text-green"><b>✓ শুদ্ধ:</b> {b.right}</p>
+        </div>
+      );
+    case "answer":
+      return (
+        <details className="rounded-xl border border-line px-4 py-3">
+          <summary className="cursor-pointer font-semibold text-green">{b.label ?? "উত্তর দেখো"}</summary>
+          <ol className="mt-3 list-decimal space-y-1.5 rounded-lg bg-green-wash py-3 pl-9 pr-3 leading-7">{b.items.map((x) => <li key={x}>{x}</li>)}</ol>
+        </details>
+      );
+    case "dialogue":
+      return (
+        <div className="space-y-2.5 rounded-xl bg-paper p-4">
+          {b.lines.map((x, i) => <p key={i} className="leading-7"><b className="text-green">{x.who}:</b> {x.text}</p>)}
+        </div>
+      );
+    case "write":
+      return <AssignmentBox storageKey={`writing-assignment:${code}:${b.id}`} label={b.label} rows={b.rows ?? 5} placeholder={b.placeholder ?? "এখানে লিখুন…"} count={b.count ?? "words"} lang="bn" />;
+  }
 }
 
 function Chip({ children }: { children: ReactNode }) {
