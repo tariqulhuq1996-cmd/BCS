@@ -23,6 +23,7 @@ export type Lesson = {
     items: {
       name: string; nationality: string; identity: string; book: string; published: string; genre: string;
       summary: string; characters: { name: string; desc: string }[]; message: string[]; sources?: string[]; bcsUse: string[];
+      photo?: Img; cover?: Img | null; // লেখকের ছবি ও বইয়ের প্রচ্ছদ (null = প্রতীকী প্রচ্ছদ)
     }[];
     takeaway?: string[];
   };
@@ -42,6 +43,9 @@ export type Lesson = {
   sections?: { title: string; sub?: string; blocks: Block[] }[];
 };
 
+/** ছবি: public/ ফোল্ডারের পথ ও স্বীকৃতি (উৎস/লাইসেন্স) */
+export type Img = { src: string; credit?: string };
+
 /** মুক্ত কাঠামোর ব্লক */
 export type Block =
   | { t: "h"; text: string }
@@ -56,6 +60,7 @@ export type Block =
   | { t: "fix"; wrong: string; right: string } // ভুল → শুদ্ধ
   | { t: "answer"; label?: string; items: string[] } // লুকানো উত্তর
   | { t: "dialogue"; lines: { who: string; text: string }[] }
+  | { t: "media"; items: { kind: "photo" | "cover"; title: string; sub?: string; src?: string; credit?: string }[] } // লেখকের ছবি / বইয়ের প্রচ্ছদ
   | { t: "write"; id: string; label: string; rows?: number; placeholder?: string; count?: "lines" | "words" };
 
 export function asLesson(v: unknown): Lesson | null {

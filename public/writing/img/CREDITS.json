@@ -1,0 +1,80 @@
+{
+ "rokeya": {
+  "file": "/writing/img/rokeya.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Begum_Rokeya.jpg",
+  "license": "Public domain",
+  "author": "Unknown authorUnknown author"
+ },
+ "orwell": {
+  "file": "/writing/img/orwell.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:George_Orwell_press_photo.jpg",
+  "license": "Public domain",
+  "author": "Branch of the National Union of Journalists (BNUJ)."
+ },
+ "book-jane-eyre": {
+  "file": "/writing/img/book-jane-eyre.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Jane_Eyre_title_page.jpg",
+  "license": "Public domain",
+  "author": "Unknown authorUnknown author"
+ },
+ "book-hard-times": {
+  "file": "/writing/img/book-hard-times.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Hardtimes_serial_cover.jpg",
+  "license": "Public domain",
+  "author": "Bradbury &amp; Evans"
+ },
+ "book-animal-farm": {
+  "file": "/writing/img/book-animal-farm.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Animal_Farm_-_1st_edition.jpg",
+  "license": "Public domain",
+  "author": "Unknown authorUnknown author"
+ },
+ "jasimuddin": {
+  "file": "/writing/img/jasimuddin.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Jasimuddin_Lomax_1951_(1).jpg",
+  "license": "Public domain",
+  "author": "Jennifer A. Cutting, American Folklife Center, Library of Congress."
+ },
+ "bibhutibhushan": {
+  "file": "/writing/img/bibhutibhushan.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Bibhuti_Bhushan_Bandyopadhyay.jpg",
+  "license": "Public domain",
+  "author": "Unknown authorUnknown author"
+ },
+ "book-oliver-twist": {
+  "file": "/writing/img/book-oliver-twist.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Oliver_Twist-_or,_the_parish_boy%27s_progress._-_Upper_cover_(c151b10).jpg",
+  "license": "CC0",
+  "author": "Condie, David, of Worcester"
+ },
+ "narayan": {
+  "file": "/writing/img/narayan.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:RK_Narayan_in_Mysore.jpg",
+  "license": "Public domain",
+  "author": "R. K. Balaraman (photographer)"
+ },
+ "dickens": {
+  "file": "/writing/img/dickens.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Charles_Dickens_by_Herbert_Watkins_29_April_1858_(alternate).jpg",
+  "license": "Public domain",
+  "author": "Herbert Watkins (1828–1916)"
+ },
+ "book-grapes-of-wrath": {
+  "file": "/writing/img/book-grapes-of-wrath.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:The_Grapes_of_Wrath_(1939_1st_ed_cover).jpg",
+  "license": "Public domain",
+  "author": "Elmer Hader"
+ },
+ "steinbeck": {
+  "file": "/writing/img/steinbeck.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:John_Steinbeck_1939_(cropped).jpg",
+  "license": "Public domain",
+  "author": "McFadden Publications, Inc.; no photographer credited; photo likely the work of Sonya Noskowiak, as Steinbeck is wearing the same clothes from her 1935 studio session that produced the work shown here: https://www.si.edu/object/npg_NPG.2006.74"
+ },
+ "bronte": {
+  "file": "/writing/img/bronte.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Charlotte_Bront%C3%AB_by_George_Richmond,_1850.png",
+  "license": "Public domain",
+  "author": "George Richmond"
+ }
+}

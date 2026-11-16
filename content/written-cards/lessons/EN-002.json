@@ -15,37 +15,141 @@
     "pattern": "Cause → Effect → Solution",
     "text": "Climate change is one of the most pressing challenges facing Bangladesh. Rising temperatures, erratic rainfall, sea-level rise and frequent extreme weather events threaten agriculture, public health and livelihoods, particularly in coastal communities. Although Bangladesh contributes relatively little to global greenhouse-gas emissions, it bears a disproportionate share of the consequences. Floods, cyclones, river erosion and salinity intrusion can displace families and damage essential infrastructure. Therefore, climate action must combine mitigation with adaptation. The government should strengthen early-warning systems, protect mangrove forests, promote renewable energy and invest in climate-resilient agriculture. At the same time, international cooperation and climate finance are essential to support vulnerable countries. Citizens also have a role in conserving resources and reducing waste. Ultimately, addressing climate change requires collective responsibility, sound planning and sustained commitment to a safer and more sustainable future.",
     "note": "বাংলাদেশের তুলনামূলক কম বৈশ্বিক নিঃসরণ সত্ত্বেও জলবায়ু পরিবর্তনের ঝুঁকি বেশি—এই বক্তব্যটি বিশ্বব্যাংকের তথ্যের সঙ্গে সামঞ্জস্যপূর্ণ।",
-    "sources": ["World Bank"]
+    "sources": [
+      "World Bank"
+    ]
   },
   "structure": [
-    { "step": "Introduction", "what": "জলবায়ু পরিবর্তন কেন গুরুত্বপূর্ণ" },
-    { "step": "Cause/Background", "what": "তাপমাত্রা, বৃষ্টিপাত, সমুদ্রপৃষ্ঠের উচ্চতা" },
-    { "step": "Effects", "what": "কৃষি, স্বাস্থ্য ও জীবিকার ক্ষতি" },
-    { "step": "Challenges", "what": "বাংলাদেশের বিশেষ ঝুঁকি" },
-    { "step": "Solutions", "what": "Adaptation ও Mitigation" },
-    { "step": "Conclusion", "what": "সম্মিলিত দায়িত্ব ও টেকসই ভবিষ্যৎ" }
+    {
+      "step": "Introduction",
+      "what": "জলবায়ু পরিবর্তন কেন গুরুত্বপূর্ণ"
+    },
+    {
+      "step": "Cause/Background",
+      "what": "তাপমাত্রা, বৃষ্টিপাত, সমুদ্রপৃষ্ঠের উচ্চতা"
+    },
+    {
+      "step": "Effects",
+      "what": "কৃষি, স্বাস্থ্য ও জীবিকার ক্ষতি"
+    },
+    {
+      "step": "Challenges",
+      "what": "বাংলাদেশের বিশেষ ঝুঁকি"
+    },
+    {
+      "step": "Solutions",
+      "what": "Adaptation ও Mitigation"
+    },
+    {
+      "step": "Conclusion",
+      "what": "সম্মিলিত দায়িত্ব ও টেকসই ভবিষ্যৎ"
+    }
   ],
   "vocabulary": [
-    { "word": "Erratic", "bn": "অনিয়মিত, অস্থির", "pos": "Adjective", "synonym": "Unpredictable", "antonym": "Regular", "example": "Erratic rainfall affects agricultural production.", "exampleBn": "অনিয়মিত বৃষ্টিপাত কৃষি উৎপাদনকে প্রভাবিত করে।" },
-    { "word": "Disproportionate", "bn": "অসামঞ্জস্যপূর্ণ, তুলনামূলকভাবে অতিরিক্ত", "pos": "Adjective", "synonym": "Unequal", "antonym": "Proportionate", "example": "Poor communities often suffer a disproportionate impact of climate change.", "exampleBn": "দরিদ্র জনগোষ্ঠী প্রায়ই জলবায়ু পরিবর্তনের অসমানুপাতিক প্রভাবের শিকার হয়।" },
-    { "word": "Intrusion", "bn": "অনুপ্রবেশ", "pos": "Noun", "synonym": "Encroachment", "example": "Salinity intrusion threatens coastal agriculture.", "exampleBn": "লবণাক্ততার অনুপ্রবেশ উপকূলীয় কৃষির জন্য হুমকি সৃষ্টি করে।" },
-    { "word": "Displace", "bn": "বাস্তুচ্যুত করা", "pos": "Verb", "synonym": "Uproot", "antonym": "Settle (প্রসঙ্গভেদে)", "example": "Natural disasters may displace thousands of families.", "exampleBn": "প্রাকৃতিক দুর্যোগ হাজার হাজার পরিবারকে বাস্তুচ্যুত করতে পারে।" },
-    { "word": "Resilient", "bn": "প্রতিকূলতা মোকাবিলায় সক্ষম", "pos": "Adjective", "synonym": "Robust, Adaptable", "antonym": "Vulnerable, Fragile", "example": "Bangladesh needs resilient infrastructure.", "exampleBn": "বাংলাদেশের দুর্যোগসহনশীল অবকাঠামো প্রয়োজন।" }
+    {
+      "word": "Erratic",
+      "bn": "অনিয়মিত, অস্থির",
+      "pos": "Adjective",
+      "synonym": "Unpredictable",
+      "antonym": "Regular",
+      "example": "Erratic rainfall affects agricultural production.",
+      "exampleBn": "অনিয়মিত বৃষ্টিপাত কৃষি উৎপাদনকে প্রভাবিত করে।"
+    },
+    {
+      "word": "Disproportionate",
+      "bn": "অসামঞ্জস্যপূর্ণ, তুলনামূলকভাবে অতিরিক্ত",
+      "pos": "Adjective",
+      "synonym": "Unequal",
+      "antonym": "Proportionate",
+      "example": "Poor communities often suffer a disproportionate impact of climate change.",
+      "exampleBn": "দরিদ্র জনগোষ্ঠী প্রায়ই জলবায়ু পরিবর্তনের অসমানুপাতিক প্রভাবের শিকার হয়।"
+    },
+    {
+      "word": "Intrusion",
+      "bn": "অনুপ্রবেশ",
+      "pos": "Noun",
+      "synonym": "Encroachment",
+      "example": "Salinity intrusion threatens coastal agriculture.",
+      "exampleBn": "লবণাক্ততার অনুপ্রবেশ উপকূলীয় কৃষির জন্য হুমকি সৃষ্টি করে।"
+    },
+    {
+      "word": "Displace",
+      "bn": "বাস্তুচ্যুত করা",
+      "pos": "Verb",
+      "synonym": "Uproot",
+      "antonym": "Settle (প্রসঙ্গভেদে)",
+      "example": "Natural disasters may displace thousands of families.",
+      "exampleBn": "প্রাকৃতিক দুর্যোগ হাজার হাজার পরিবারকে বাস্তুচ্যুত করতে পারে।"
+    },
+    {
+      "word": "Resilient",
+      "bn": "প্রতিকূলতা মোকাবিলায় সক্ষম",
+      "pos": "Adjective",
+      "synonym": "Robust, Adaptable",
+      "antonym": "Vulnerable, Fragile",
+      "example": "Bangladesh needs resilient infrastructure.",
+      "exampleBn": "বাংলাদেশের দুর্যোগসহনশীল অবকাঠামো প্রয়োজন।"
+    }
   ],
   "prepositional": [
-    { "phrase": "In the face of", "bn": "মোকাবিলায় / সম্মুখীন অবস্থায়", "example": "In the face of climate change, adaptation is essential.", "exampleBn": "জলবায়ু পরিবর্তনের মোকাবিলায় অভিযোজন অপরিহার্য।" },
-    { "phrase": "In response to", "bn": "প্রতিক্রিয়া হিসেবে", "example": "The government introduced new policies in response to environmental challenges.", "exampleBn": "পরিবেশগত চ্যালেঞ্জের প্রতিক্রিয়ায় সরকার নতুন নীতি প্রবর্তন করেছে।" },
-    { "phrase": "In the wake of", "bn": "পরবর্তী সময়ে / পরিণতিতে", "example": "In the wake of the cyclone, many families lost their homes.", "exampleBn": "ঘূর্ণিঝড়ের পর অনেক পরিবার তাদের বাড়িঘর হারিয়েছে।" },
-    { "phrase": "At the expense of", "bn": "কোনো কিছুর ক্ষতির বিনিময়ে", "example": "Economic development should not come at the expense of environmental protection.", "exampleBn": "পরিবেশ সুরক্ষার ক্ষতির বিনিময়ে অর্থনৈতিক উন্নয়ন হওয়া উচিত নয়।" },
-    { "phrase": "With regard to", "bn": "সম্পর্কিত বিষয়ে", "example": "With regard to climate finance, international cooperation is essential.", "exampleBn": "জলবায়ু অর্থায়নের বিষয়ে আন্তর্জাতিক সহযোগিতা অপরিহার্য।" }
+    {
+      "phrase": "In the face of",
+      "bn": "মোকাবিলায় / সম্মুখীন অবস্থায়",
+      "example": "In the face of climate change, adaptation is essential.",
+      "exampleBn": "জলবায়ু পরিবর্তনের মোকাবিলায় অভিযোজন অপরিহার্য।"
+    },
+    {
+      "phrase": "In response to",
+      "bn": "প্রতিক্রিয়া হিসেবে",
+      "example": "The government introduced new policies in response to environmental challenges.",
+      "exampleBn": "পরিবেশগত চ্যালেঞ্জের প্রতিক্রিয়ায় সরকার নতুন নীতি প্রবর্তন করেছে।"
+    },
+    {
+      "phrase": "In the wake of",
+      "bn": "পরবর্তী সময়ে / পরিণতিতে",
+      "example": "In the wake of the cyclone, many families lost their homes.",
+      "exampleBn": "ঘূর্ণিঝড়ের পর অনেক পরিবার তাদের বাড়িঘর হারিয়েছে।"
+    },
+    {
+      "phrase": "At the expense of",
+      "bn": "কোনো কিছুর ক্ষতির বিনিময়ে",
+      "example": "Economic development should not come at the expense of environmental protection.",
+      "exampleBn": "পরিবেশ সুরক্ষার ক্ষতির বিনিময়ে অর্থনৈতিক উন্নয়ন হওয়া উচিত নয়।"
+    },
+    {
+      "phrase": "With regard to",
+      "bn": "সম্পর্কিত বিষয়ে",
+      "example": "With regard to climate finance, international cooperation is essential.",
+      "exampleBn": "জলবায়ু অর্থায়নের বিষয়ে আন্তর্জাতিক সহযোগিতা অপরিহার্য।"
+    }
   ],
   "idioms": {
     "items": [
-      { "phrase": "Bear the brunt of", "bn": "সবচেয়ে বেশি ক্ষতির শিকার হওয়া", "example": "Developing countries often bear the brunt of climate change." },
-      { "phrase": "Weather the storm", "bn": "প্রতিকূল পরিস্থিতি সামাল দেওয়া", "example": "Communities must work together to weather the storm." },
-      { "phrase": "A wake-up call", "bn": "সতর্কবার্তা", "example": "The recent floods should serve as a wake-up call." },
-      { "phrase": "Leave no stone unturned", "bn": "সর্বাত্মক চেষ্টা করা", "example": "Governments must leave no stone unturned to protect the environment." },
-      { "phrase": "At stake", "bn": "ঝুঁকির মুখে / বিপন্ন অবস্থায়", "example": "The future of vulnerable communities is at stake." }
+      {
+        "phrase": "Bear the brunt of",
+        "bn": "সবচেয়ে বেশি ক্ষতির শিকার হওয়া",
+        "example": "Developing countries often bear the brunt of climate change."
+      },
+      {
+        "phrase": "Weather the storm",
+        "bn": "প্রতিকূল পরিস্থিতি সামাল দেওয়া",
+        "example": "Communities must work together to weather the storm."
+      },
+      {
+        "phrase": "A wake-up call",
+        "bn": "সতর্কবার্তা",
+        "example": "The recent floods should serve as a wake-up call."
+      },
+      {
+        "phrase": "Leave no stone unturned",
+        "bn": "সর্বাত্মক চেষ্টা করা",
+        "example": "Governments must leave no stone unturned to protect the environment."
+      },
+      {
+        "phrase": "At stake",
+        "bn": "ঝুঁকির মুখে / বিপন্ন অবস্থায়",
+        "example": "The future of vulnerable communities is at stake."
+      }
     ],
     "tip": "Formal Essay-তে Bear the brunt of এবং At stake সহজে ব্যবহার করা যায়। তবে প্রতিটি বাক্যে Idiom ব্যবহার করার প্রয়োজন নেই।"
   },
@@ -61,16 +165,41 @@
         "genre": "Social Novel / Industrial Novel",
         "summary": "Hard Times উপন্যাসের পটভূমি হলো Coketown নামের একটি কাল্পনিক শিল্পনগরী। এখানে Thomas Gradgrind বিশ্বাস করেন, মানুষের শিক্ষা ও জীবনে কেবল বাস্তব তথ্যের গুরুত্ব রয়েছে; কল্পনা, আবেগ ও মানবিকতার প্রয়োজন নেই। অন্যদিকে শিল্পকারখানার শ্রমিকেরা কঠিন জীবনযাপন করেন। উপন্যাসের কাহিনির মধ্য দিয়ে শিল্পায়নের ফলে সৃষ্ট সামাজিক বৈষম্য, শ্রমিক শোষণ এবং মানবিক মূল্যবোধের অবক্ষয় ফুটে উঠেছে।",
         "characters": [
-          { "name": "Thomas Gradgrind", "desc": "তথ্য ও বাস্তবতাকেন্দ্রিক শিক্ষাব্যবস্থার প্রবক্তা। তাঁর চরিত্রের মাধ্যমে অতিরিক্ত তথ্যনির্ভর ও মানবিকতাবর্জিত শিক্ষার সীমাবদ্ধতা তুলে ধরা হয়েছে।" },
-          { "name": "Louisa Gradgrind", "desc": "Gradgrind-এর মেয়ে। আবেগ ও কল্পনাকে অবহেলা করে বড় হওয়ার কারণে তার জীবনে মানসিক সংকট তৈরি হয়।" },
-          { "name": "Stephen Blackpool", "desc": "একজন কারখানার শ্রমিক। তাঁর মাধ্যমে শ্রমিকদের শোষণ, দারিদ্র্য ও সামাজিক অবিচার তুলে ধরা হয়েছে।" }
+          {
+            "name": "Thomas Gradgrind",
+            "desc": "তথ্য ও বাস্তবতাকেন্দ্রিক শিক্ষাব্যবস্থার প্রবক্তা। তাঁর চরিত্রের মাধ্যমে অতিরিক্ত তথ্যনির্ভর ও মানবিকতাবর্জিত শিক্ষার সীমাবদ্ধতা তুলে ধরা হয়েছে।"
+          },
+          {
+            "name": "Louisa Gradgrind",
+            "desc": "Gradgrind-এর মেয়ে। আবেগ ও কল্পনাকে অবহেলা করে বড় হওয়ার কারণে তার জীবনে মানসিক সংকট তৈরি হয়।"
+          },
+          {
+            "name": "Stephen Blackpool",
+            "desc": "একজন কারখানার শ্রমিক। তাঁর মাধ্যমে শ্রমিকদের শোষণ, দারিদ্র্য ও সামাজিক অবিচার তুলে ধরা হয়েছে।"
+          }
         ],
         "message": [
           "Dickens দেখাতে চেয়েছেন, মানুষের জীবনকে শুধু অর্থনীতি, উৎপাদন ও পরিসংখ্যান দিয়ে বিচার করা যায় না। শিক্ষা ও সমাজব্যবস্থায় মানবিকতা, কল্পনা ও সহমর্মিতার প্রয়োজন রয়েছে।",
           "তিনি শিল্পপতিদের শোষণ এবং শ্রমিকদের অমানবিক জীবনযাপনের সমালোচনা করেছেন।"
         ],
-        "sources": ["Classics Library"],
-        "bcsUse": ["Industrialization", "Social Inequality", "Labour Rights", "Importance of Education", "Human Values"]
+        "sources": [
+          "Classics Library"
+        ],
+        "bcsUse": [
+          "Industrialization",
+          "Social Inequality",
+          "Labour Rights",
+          "Importance of Education",
+          "Human Values"
+        ],
+        "photo": {
+          "src": "/writing/img/dickens.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": {
+          "src": "/writing/img/book-hard-times.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        }
       },
       {
         "name": "John Steinbeck",
@@ -81,16 +210,41 @@
         "genre": "Social Novel",
         "summary": "The Grapes of Wrath উপন্যাসে Great Depression-এর সময় যুক্তরাষ্ট্রের Oklahoma অঞ্চলের Joad পরিবারের দুর্দশার কাহিনি তুলে ধরা হয়েছে। Dust Bowl-এর খরা ও ধূলিঝড় তাদের কৃষিজমি ও জীবিকা ধ্বংস করে দেয়। অর্থনৈতিক সংকট ও জমি হারানোর কারণে পরিবারটি কাজের সন্ধানে California-র দিকে যাত্রা করে। যাত্রাপথে তারা দারিদ্র্য, শোষণ, বৈষম্য এবং কঠিন জীবনসংগ্রামের মুখোমুখি হয়। উপন্যাসটি পরিবেশগত বিপর্যয় ও অর্থনৈতিক সংকট কীভাবে সাধারণ মানুষের জীবন ধ্বংস করতে পারে, তা তুলে ধরে।",
         "characters": [
-          { "name": "Tom Joad", "desc": "উপন্যাসের প্রধান চরিত্র। ব্যক্তিগত জীবনসংগ্রাম থেকে ধীরে ধীরে বৃহত্তর সামাজিক ন্যায়বিচারের প্রতি সচেতন হয়ে ওঠে।" },
-          { "name": "Ma Joad", "desc": "পরিবারের ঐক্য ও শক্তির প্রতীক। প্রতিকূল পরিস্থিতিতেও পরিবারকে একত্রিত রাখার চেষ্টা করেন।" },
-          { "name": "Jim Casy", "desc": "সাবেক ধর্মযাজক। মানবিক সংহতি, সামাজিক ন্যায়বিচার ও সম্মিলিত সংগ্রামের ধারণা তুলে ধরেন।" }
+          {
+            "name": "Tom Joad",
+            "desc": "উপন্যাসের প্রধান চরিত্র। ব্যক্তিগত জীবনসংগ্রাম থেকে ধীরে ধীরে বৃহত্তর সামাজিক ন্যায়বিচারের প্রতি সচেতন হয়ে ওঠে।"
+          },
+          {
+            "name": "Ma Joad",
+            "desc": "পরিবারের ঐক্য ও শক্তির প্রতীক। প্রতিকূল পরিস্থিতিতেও পরিবারকে একত্রিত রাখার চেষ্টা করেন।"
+          },
+          {
+            "name": "Jim Casy",
+            "desc": "সাবেক ধর্মযাজক। মানবিক সংহতি, সামাজিক ন্যায়বিচার ও সম্মিলিত সংগ্রামের ধারণা তুলে ধরেন।"
+          }
         ],
         "message": [
           "Steinbeck দেখিয়েছেন, পরিবেশগত বিপর্যয় ও অর্থনৈতিক শোষণ একসঙ্গে সাধারণ মানুষের জীবনকে বিপর্যস্ত করতে পারে। তিনি দরিদ্র কৃষক ও শ্রমজীবী মানুষের প্রতি সহমর্মিতা প্রকাশ করেছেন এবং সামাজিক সংহতির গুরুত্ব তুলে ধরেছেন।",
           "এই উপন্যাসে Dust Bowl ও Great Depression-এর ঐতিহাসিক পটভূমি বিশেষ গুরুত্বপূর্ণ।"
         ],
-        "sources": ["National Endowment for the Arts"],
-        "bcsUse": ["Climate Change and Environmental Crisis", "Poverty and Unemployment", "Economic Inequality", "Human Rights", "Social Justice"]
+        "sources": [
+          "National Endowment for the Arts"
+        ],
+        "bcsUse": [
+          "Climate Change and Environmental Crisis",
+          "Poverty and Unemployment",
+          "Economic Inequality",
+          "Human Rights",
+          "Social Justice"
+        ],
+        "photo": {
+          "src": "/writing/img/steinbeck.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": {
+          "src": "/writing/img/book-grapes-of-wrath.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        }
       }
     ],
     "takeaway": [
@@ -105,45 +259,174 @@
     "work": "Silent Spring (1962)",
     "bn": "প্রকৃতিতে কোনো কিছুই বিচ্ছিন্নভাবে অস্তিত্বশীল নয়।",
     "explanation": "প্রকৃতির প্রতিটি উপাদান একে অপরের সঙ্গে সম্পর্কিত। পরিবেশের একটি অংশ ক্ষতিগ্রস্ত হলে তার প্রভাব অন্য অংশেও পড়ে।",
-    "useIn": ["Environmental Protection", "Biodiversity", "Climate Change", "Ecological Balance", "Sustainable Development"]
+    "useIn": [
+      "Environmental Protection",
+      "Biodiversity",
+      "Climate Change",
+      "Ecological Balance",
+      "Sustainable Development"
+    ]
   },
   "sentences": [
-    { "en": "Climate change is one of the most pressing challenges facing Bangladesh.", "bn": "জলবায়ু পরিবর্তন বাংলাদেশের সামনে থাকা সবচেয়ে জরুরি চ্যালেঞ্জগুলোর একটি।", "notes": ["Pressing = জরুরি", "Challenges facing Bangladesh = বাংলাদেশের সম্মুখীন চ্যালেঞ্জ"] },
-    { "en": "Rising temperatures, erratic rainfall, sea-level rise and frequent extreme weather events threaten agriculture, public health and livelihoods, particularly in coastal communities.", "bn": "তাপমাত্রা বৃদ্ধি, অনিয়মিত বৃষ্টিপাত, সমুদ্রপৃষ্ঠের উচ্চতা বৃদ্ধি এবং ঘন ঘন চরম আবহাওয়াজনিত ঘটনা কৃষি, জনস্বাস্থ্য ও জীবিকার জন্য হুমকি সৃষ্টি করে, বিশেষ করে উপকূলীয় জনগোষ্ঠীর ক্ষেত্রে।", "notes": ["এখানে একাধিক Cause একসঙ্গে উল্লেখ করে তাদের সম্মিলিত Effect বোঝানো হয়েছে।"] },
-    { "en": "Although Bangladesh contributes relatively little to global greenhouse-gas emissions, it bears a disproportionate share of the consequences.", "bn": "বাংলাদেশ বৈশ্বিক গ্রিনহাউস গ্যাস নিঃসরণে তুলনামূলকভাবে কম অবদান রাখলেও এর পরিণতির অসমানুপাতিক অংশ বহন করে।", "notes": ["Although দিয়ে বিপরীতধর্মী দুটি বক্তব্য যুক্ত হয়েছে।"] },
-    { "en": "Floods, cyclones, river erosion and salinity intrusion can displace families and damage essential infrastructure.", "bn": "বন্যা, ঘূর্ণিঝড়, নদীভাঙন ও লবণাক্ততার অনুপ্রবেশ পরিবারগুলোকে বাস্তুচ্যুত করতে পারে এবং অপরিহার্য অবকাঠামোর ক্ষতি করতে পারে।" },
-    { "en": "Therefore, climate action must combine mitigation with adaptation.", "bn": "তাই জলবায়ু মোকাবিলার কার্যক্রমে নির্গমন হ্রাসের পাশাপাশি অভিযোজনও অন্তর্ভুক্ত করতে হবে।", "notes": ["Mitigation = জলবায়ু পরিবর্তনের কারণ বা প্রভাব কমানোর পদক্ষেপ।", "Adaptation = পরিবর্তিত জলবায়ুর সঙ্গে খাপ খাইয়ে নেওয়ার ব্যবস্থা।"] },
-    { "en": "The government should strengthen early-warning systems, protect mangrove forests, promote renewable energy and invest in climate-resilient agriculture.", "bn": "সরকারের উচিত আগাম সতর্কীকরণ ব্যবস্থা শক্তিশালী করা, ম্যানগ্রোভ বন রক্ষা করা, নবায়নযোগ্য জ্বালানির প্রসার ঘটানো এবং জলবায়ুসহিষ্ণু কৃষিতে বিনিয়োগ করা।" },
-    { "en": "At the same time, international cooperation and climate finance are essential to support vulnerable countries.", "bn": "একই সময়ে ঝুঁকিপূর্ণ দেশগুলোকে সহায়তা করার জন্য আন্তর্জাতিক সহযোগিতা ও জলবায়ু অর্থায়ন অপরিহার্য।" },
-    { "en": "Citizens also have a role in conserving resources and reducing waste.", "bn": "সম্পদ সংরক্ষণ এবং অপচয় কমানোর ক্ষেত্রেও নাগরিকদের ভূমিকা রয়েছে।" },
-    { "en": "Ultimately, addressing climate change requires collective responsibility, sound planning and sustained commitment to a safer and more sustainable future.", "bn": "পরিশেষে, জলবায়ু পরিবর্তন মোকাবিলার জন্য সম্মিলিত দায়িত্ববোধ, সঠিক পরিকল্পনা এবং নিরাপদ ও অধিক টেকসই ভবিষ্যৎ গড়ার প্রতি ধারাবাহিক অঙ্গীকার প্রয়োজন।" }
+    {
+      "en": "Climate change is one of the most pressing challenges facing Bangladesh.",
+      "bn": "জলবায়ু পরিবর্তন বাংলাদেশের সামনে থাকা সবচেয়ে জরুরি চ্যালেঞ্জগুলোর একটি।",
+      "notes": [
+        "Pressing = জরুরি",
+        "Challenges facing Bangladesh = বাংলাদেশের সম্মুখীন চ্যালেঞ্জ"
+      ]
+    },
+    {
+      "en": "Rising temperatures, erratic rainfall, sea-level rise and frequent extreme weather events threaten agriculture, public health and livelihoods, particularly in coastal communities.",
+      "bn": "তাপমাত্রা বৃদ্ধি, অনিয়মিত বৃষ্টিপাত, সমুদ্রপৃষ্ঠের উচ্চতা বৃদ্ধি এবং ঘন ঘন চরম আবহাওয়াজনিত ঘটনা কৃষি, জনস্বাস্থ্য ও জীবিকার জন্য হুমকি সৃষ্টি করে, বিশেষ করে উপকূলীয় জনগোষ্ঠীর ক্ষেত্রে।",
+      "notes": [
+        "এখানে একাধিক Cause একসঙ্গে উল্লেখ করে তাদের সম্মিলিত Effect বোঝানো হয়েছে।"
+      ]
+    },
+    {
+      "en": "Although Bangladesh contributes relatively little to global greenhouse-gas emissions, it bears a disproportionate share of the consequences.",
+      "bn": "বাংলাদেশ বৈশ্বিক গ্রিনহাউস গ্যাস নিঃসরণে তুলনামূলকভাবে কম অবদান রাখলেও এর পরিণতির অসমানুপাতিক অংশ বহন করে।",
+      "notes": [
+        "Although দিয়ে বিপরীতধর্মী দুটি বক্তব্য যুক্ত হয়েছে।"
+      ]
+    },
+    {
+      "en": "Floods, cyclones, river erosion and salinity intrusion can displace families and damage essential infrastructure.",
+      "bn": "বন্যা, ঘূর্ণিঝড়, নদীভাঙন ও লবণাক্ততার অনুপ্রবেশ পরিবারগুলোকে বাস্তুচ্যুত করতে পারে এবং অপরিহার্য অবকাঠামোর ক্ষতি করতে পারে।"
+    },
+    {
+      "en": "Therefore, climate action must combine mitigation with adaptation.",
+      "bn": "তাই জলবায়ু মোকাবিলার কার্যক্রমে নির্গমন হ্রাসের পাশাপাশি অভিযোজনও অন্তর্ভুক্ত করতে হবে।",
+      "notes": [
+        "Mitigation = জলবায়ু পরিবর্তনের কারণ বা প্রভাব কমানোর পদক্ষেপ।",
+        "Adaptation = পরিবর্তিত জলবায়ুর সঙ্গে খাপ খাইয়ে নেওয়ার ব্যবস্থা।"
+      ]
+    },
+    {
+      "en": "The government should strengthen early-warning systems, protect mangrove forests, promote renewable energy and invest in climate-resilient agriculture.",
+      "bn": "সরকারের উচিত আগাম সতর্কীকরণ ব্যবস্থা শক্তিশালী করা, ম্যানগ্রোভ বন রক্ষা করা, নবায়নযোগ্য জ্বালানির প্রসার ঘটানো এবং জলবায়ুসহিষ্ণু কৃষিতে বিনিয়োগ করা।"
+    },
+    {
+      "en": "At the same time, international cooperation and climate finance are essential to support vulnerable countries.",
+      "bn": "একই সময়ে ঝুঁকিপূর্ণ দেশগুলোকে সহায়তা করার জন্য আন্তর্জাতিক সহযোগিতা ও জলবায়ু অর্থায়ন অপরিহার্য।"
+    },
+    {
+      "en": "Citizens also have a role in conserving resources and reducing waste.",
+      "bn": "সম্পদ সংরক্ষণ এবং অপচয় কমানোর ক্ষেত্রেও নাগরিকদের ভূমিকা রয়েছে।"
+    },
+    {
+      "en": "Ultimately, addressing climate change requires collective responsibility, sound planning and sustained commitment to a safer and more sustainable future.",
+      "bn": "পরিশেষে, জলবায়ু পরিবর্তন মোকাবিলার জন্য সম্মিলিত দায়িত্ববোধ, সঠিক পরিকল্পনা এবং নিরাপদ ও অধিক টেকসই ভবিষ্যৎ গড়ার প্রতি ধারাবাহিক অঙ্গীকার প্রয়োজন।"
+    }
   ],
   "wordChoice": {
     "items": [
-      { "title": "Pressing vs Urgent vs Critical", "rows": [
-        { "word": "Pressing", "meaning": "দ্রুত মনোযোগ দেওয়া প্রয়োজন এমন সমস্যা" },
-        { "word": "Urgent", "meaning": "অবিলম্বে ব্যবস্থা নেওয়া প্রয়োজন" },
-        { "word": "Critical", "meaning": "অত্যন্ত গুরুত্বপূর্ণ বা সংকটপূর্ণ" }
-      ], "examples": ["Climate change is a pressing issue.", "Immediate action is urgent.", "Water security is critical for human survival."] },
-      { "title": "Frequent vs Recurrent vs Repeated", "rows": [
-        { "word": "Frequent", "meaning": "ঘন ঘন ঘটে।" },
-        { "word": "Recurrent", "meaning": "বারবার ফিরে আসে, প্রায়ই নির্দিষ্ট বিরতিতে।" },
-        { "word": "Repeated", "meaning": "একই ঘটনা একাধিকবার ঘটে।" }
-      ], "examples": ["Frequent floods affect coastal communities.", "Recurrent droughts threaten agriculture.", "Repeated warnings were ignored."] },
-      { "title": "Threat vs Risk vs Hazard", "rows": [
-        { "word": "Threat", "meaning": "ক্ষতির আশঙ্কা বা হুমকি।" },
-        { "word": "Risk", "meaning": "ক্ষতি হওয়ার সম্ভাবনা।" },
-        { "word": "Hazard", "meaning": "ক্ষতি ঘটাতে সক্ষম বিপজ্জনক অবস্থা বা ঘটনা।" }
-      ], "examples": ["Climate change is a threat to biodiversity.", "Coastal communities face a high risk of flooding.", "Cyclones are natural hazards."] },
-      { "title": "Vulnerable vs Susceptible vs Exposed", "rows": [
-        { "word": "Vulnerable", "meaning": "ক্ষতির শিকার হওয়ার ঝুঁকিতে থাকা।" },
-        { "word": "Susceptible", "meaning": "কোনো প্রভাবের প্রতি বেশি সংবেদনশীল।" },
-        { "word": "Exposed", "meaning": "সরাসরি কোনো ঝুঁকির সংস্পর্শে থাকা।" }
-      ], "examples": ["Vulnerable communities need assistance.", "Children are susceptible to heat-related illnesses.", "Coastal villages are exposed to cyclones."] },
-      { "title": "Mitigation vs Adaptation", "note": "এ দুটি Synonym নয়। পার্থক্যটি খুব গুরুত্বপূর্ণ।", "rows": [
-        { "word": "Mitigation", "meaning": "জলবায়ু পরিবর্তনের কারণ বা মাত্রা কমানোর পদক্ষেপ।" },
-        { "word": "Adaptation", "meaning": "জলবায়ু পরিবর্তনের সঙ্গে খাপ খাইয়ে নেওয়ার ব্যবস্থা।" }
-      ], "examples": ["Renewable energy supports climate change mitigation.", "Climate-resilient agriculture supports climate adaptation."] }
+      {
+        "title": "Pressing vs Urgent vs Critical",
+        "rows": [
+          {
+            "word": "Pressing",
+            "meaning": "দ্রুত মনোযোগ দেওয়া প্রয়োজন এমন সমস্যা"
+          },
+          {
+            "word": "Urgent",
+            "meaning": "অবিলম্বে ব্যবস্থা নেওয়া প্রয়োজন"
+          },
+          {
+            "word": "Critical",
+            "meaning": "অত্যন্ত গুরুত্বপূর্ণ বা সংকটপূর্ণ"
+          }
+        ],
+        "examples": [
+          "Climate change is a pressing issue.",
+          "Immediate action is urgent.",
+          "Water security is critical for human survival."
+        ]
+      },
+      {
+        "title": "Frequent vs Recurrent vs Repeated",
+        "rows": [
+          {
+            "word": "Frequent",
+            "meaning": "ঘন ঘন ঘটে।"
+          },
+          {
+            "word": "Recurrent",
+            "meaning": "বারবার ফিরে আসে, প্রায়ই নির্দিষ্ট বিরতিতে।"
+          },
+          {
+            "word": "Repeated",
+            "meaning": "একই ঘটনা একাধিকবার ঘটে।"
+          }
+        ],
+        "examples": [
+          "Frequent floods affect coastal communities.",
+          "Recurrent droughts threaten agriculture.",
+          "Repeated warnings were ignored."
+        ]
+      },
+      {
+        "title": "Threat vs Risk vs Hazard",
+        "rows": [
+          {
+            "word": "Threat",
+            "meaning": "ক্ষতির আশঙ্কা বা হুমকি।"
+          },
+          {
+            "word": "Risk",
+            "meaning": "ক্ষতি হওয়ার সম্ভাবনা।"
+          },
+          {
+            "word": "Hazard",
+            "meaning": "ক্ষতি ঘটাতে সক্ষম বিপজ্জনক অবস্থা বা ঘটনা।"
+          }
+        ],
+        "examples": [
+          "Climate change is a threat to biodiversity.",
+          "Coastal communities face a high risk of flooding.",
+          "Cyclones are natural hazards."
+        ]
+      },
+      {
+        "title": "Vulnerable vs Susceptible vs Exposed",
+        "rows": [
+          {
+            "word": "Vulnerable",
+            "meaning": "ক্ষতির শিকার হওয়ার ঝুঁকিতে থাকা।"
+          },
+          {
+            "word": "Susceptible",
+            "meaning": "কোনো প্রভাবের প্রতি বেশি সংবেদনশীল।"
+          },
+          {
+            "word": "Exposed",
+            "meaning": "সরাসরি কোনো ঝুঁকির সংস্পর্শে থাকা।"
+          }
+        ],
+        "examples": [
+          "Vulnerable communities need assistance.",
+          "Children are susceptible to heat-related illnesses.",
+          "Coastal villages are exposed to cyclones."
+        ]
+      },
+      {
+        "title": "Mitigation vs Adaptation",
+        "note": "এ দুটি Synonym নয়। পার্থক্যটি খুব গুরুত্বপূর্ণ।",
+        "rows": [
+          {
+            "word": "Mitigation",
+            "meaning": "জলবায়ু পরিবর্তনের কারণ বা মাত্রা কমানোর পদক্ষেপ।"
+          },
+          {
+            "word": "Adaptation",
+            "meaning": "জলবায়ু পরিবর্তনের সঙ্গে খাপ খাইয়ে নেওয়ার ব্যবস্থা।"
+          }
+        ],
+        "examples": [
+          "Renewable energy supports climate change mitigation.",
+          "Climate-resilient agriculture supports climate adaptation."
+        ]
+      }
     ],
     "tip": "সুন্দর English লেখার জন্য শুধু Synonym জানা যথেষ্ট নয়। শব্দের অর্থ, Context এবং ব্যবহারিক পার্থক্য জানতে হবে।"
   },
@@ -162,45 +445,124 @@
       "structure": "Subject + should + base form of verb.",
       "example": "The government should strengthen early-warning systems.",
       "explanation": "Should ব্যবহার করে পরামর্শ, দায়িত্ব বা করণীয় বোঝানো হয়।",
-      "more": ["Governments should protect natural resources.", "Citizens should reduce plastic waste."]
+      "more": [
+        "Governments should protect natural resources.",
+        "Citizens should reduce plastic waste."
+      ]
     }
   ],
   "collocations": [
-    { "expr": "Face severe challenges", "bn": "গুরুতর চ্যালেঞ্জের মুখোমুখি হওয়া" },
-    { "expr": "Bear disproportionate impacts", "bn": "অসমানুপাতিক প্রভাব বহন করা" },
-    { "expr": "Strengthen early-warning systems", "bn": "আগাম সতর্কীকরণ ব্যবস্থা শক্তিশালী করা" },
-    { "expr": "Invest in climate-resilient agriculture", "bn": "জলবায়ুসহিষ্ণু কৃষিতে বিনিয়োগ করা" },
-    { "expr": "Mobilise climate finance", "bn": "জলবায়ু অর্থায়ন সংগ্রহ করা" }
+    {
+      "expr": "Face severe challenges",
+      "bn": "গুরুতর চ্যালেঞ্জের মুখোমুখি হওয়া"
+    },
+    {
+      "expr": "Bear disproportionate impacts",
+      "bn": "অসমানুপাতিক প্রভাব বহন করা"
+    },
+    {
+      "expr": "Strengthen early-warning systems",
+      "bn": "আগাম সতর্কীকরণ ব্যবস্থা শক্তিশালী করা"
+    },
+    {
+      "expr": "Invest in climate-resilient agriculture",
+      "bn": "জলবায়ুসহিষ্ণু কৃষিতে বিনিয়োগ করা"
+    },
+    {
+      "expr": "Mobilise climate finance",
+      "bn": "জলবায়ু অর্থায়ন সংগ্রহ করা"
+    }
   ],
   "connectors": [
-    { "word": "Although", "bn": "যদিও", "use": "বিপরীত বক্তব্য" },
-    { "word": "Moreover", "bn": "অধিকন্তু", "use": "অতিরিক্ত তথ্য" },
-    { "word": "Nevertheless", "bn": "তা সত্ত্বেও", "use": "বিপরীত পরিস্থিতি" },
-    { "word": "Consequently", "bn": "ফলস্বরূপ", "use": "পরিণতি" },
-    { "word": "Ultimately", "bn": "পরিশেষে", "use": "উপসংহার" }
+    {
+      "word": "Although",
+      "bn": "যদিও",
+      "use": "বিপরীত বক্তব্য"
+    },
+    {
+      "word": "Moreover",
+      "bn": "অধিকন্তু",
+      "use": "অতিরিক্ত তথ্য"
+    },
+    {
+      "word": "Nevertheless",
+      "bn": "তা সত্ত্বেও",
+      "use": "বিপরীত পরিস্থিতি"
+    },
+    {
+      "word": "Consequently",
+      "bn": "ফলস্বরূপ",
+      "use": "পরিণতি"
+    },
+    {
+      "word": "Ultimately",
+      "bn": "পরিশেষে",
+      "use": "উপসংহার"
+    }
   ],
   "transformation": [
-    { "label": "সাধারণ বাক্য", "text": "Climate change threatens agriculture. It threatens public health." },
-    { "label": "Compound Sentence", "text": "Climate change threatens agriculture, and it also threatens public health." },
-    { "label": "Complex Sentence", "text": "Because climate change causes extreme weather events, it threatens agriculture and public health." },
-    { "label": "Advanced Expression", "text": "Climate change poses a serious threat to both agricultural production and public health." }
+    {
+      "label": "সাধারণ বাক্য",
+      "text": "Climate change threatens agriculture. It threatens public health."
+    },
+    {
+      "label": "Compound Sentence",
+      "text": "Climate change threatens agriculture, and it also threatens public health."
+    },
+    {
+      "label": "Complex Sentence",
+      "text": "Because climate change causes extreme weather events, it threatens agriculture and public health."
+    },
+    {
+      "label": "Advanced Expression",
+      "text": "Climate change poses a serious threat to both agricultural production and public health."
+    }
   ],
   "transformationNote": "একই বক্তব্যকে বিভিন্ন Structure-এ প্রকাশ করতে পারলে Essay ও Paragraph-এর ভাষা আরও সমৃদ্ধ হবে।",
   "translation": {
     "note": "প্রথমে নিজে অনুবাদ করবে। নিজের অনুবাদ শেষ হলে উত্তর মিলিয়ে নেবে।",
     "bnToEn": [
-      { "q": "জলবায়ু পরিবর্তন বাংলাদেশের কৃষি ও জনস্বাস্থ্যের জন্য গুরুতর হুমকি সৃষ্টি করছে।", "a": "Climate change is posing a serious threat to agriculture and public health in Bangladesh." },
-      { "q": "উপকূলীয় জনগোষ্ঠীকে রক্ষা করার জন্য সরকারকে কার্যকর পদক্ষেপ নিতে হবে।", "a": "The government must take effective measures to protect coastal communities." }
+      {
+        "q": "জলবায়ু পরিবর্তন বাংলাদেশের কৃষি ও জনস্বাস্থ্যের জন্য গুরুতর হুমকি সৃষ্টি করছে।",
+        "a": "Climate change is posing a serious threat to agriculture and public health in Bangladesh."
+      },
+      {
+        "q": "উপকূলীয় জনগোষ্ঠীকে রক্ষা করার জন্য সরকারকে কার্যকর পদক্ষেপ নিতে হবে।",
+        "a": "The government must take effective measures to protect coastal communities."
+      }
     ],
     "enToBn": [
-      { "q": "Climate resilience requires long-term planning and international cooperation.", "a": "জলবায়ু সহনশীলতার জন্য দীর্ঘমেয়াদি পরিকল্পনা ও আন্তর্জাতিক সহযোগিতা প্রয়োজন।" },
-      { "q": "Environmental degradation disproportionately affects poor and vulnerable communities.", "a": "পরিবেশের অবক্ষয় দরিদ্র ও ঝুঁকিপূর্ণ জনগোষ্ঠীকে অসমানুপাতিকভাবে প্রভাবিত করে।" }
+      {
+        "q": "Climate resilience requires long-term planning and international cooperation.",
+        "a": "জলবায়ু সহনশীলতার জন্য দীর্ঘমেয়াদি পরিকল্পনা ও আন্তর্জাতিক সহযোগিতা প্রয়োজন।"
+      },
+      {
+        "q": "Environmental degradation disproportionately affects poor and vulnerable communities.",
+        "a": "পরিবেশের অবক্ষয় দরিদ্র ও ঝুঁকিপূর্ণ জনগোষ্ঠীকে অসমানুপাতিকভাবে প্রভাবিত করে।"
+      }
     ]
   },
   "assignment": {
     "intro": "নিচের ১০টি Expression থেকে অন্তত ৫টি ব্যবহার করে নিজে ৫টি English Sentence লিখবে।",
-    "expressions": ["Pressing challenge", "Erratic rainfall", "Bear the brunt of", "In the face of", "Climate-resilient agriculture", "Take effective measures", "Disproportionate impact", "Sustainable development", "Mitigation and adaptation", "Collective responsibility"],
-    "criteria": ["Grammar Accuracy", "Right Word Selection", "Sentence Structure", "Natural Expression", "BCS Written Standard"],
+    "expressions": [
+      "Pressing challenge",
+      "Erratic rainfall",
+      "Bear the brunt of",
+      "In the face of",
+      "Climate-resilient agriculture",
+      "Take effective measures",
+      "Disproportionate impact",
+      "Sustainable development",
+      "Mitigation and adaptation",
+      "Collective responsibility"
+    ],
+    "criteria": [
+      "Grammar Accuracy",
+      "Right Word Selection",
+      "Sentence Structure",
+      "Natural Expression",
+      "BCS Written Standard"
+    ],
     "note": "তোমার লেখা বাক্যগুলো নিচের ঘরে লিখে রাখো (এই ডিভাইসে সংরক্ষিত থাকবে)। তারপর মূল্যায়নের মানদণ্ড ধরে নিজে মিলিয়ে দেখো।"
   }
 }

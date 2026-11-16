@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Image from "next/image";
 import { bn } from "@/lib/bn";
 import type { Block, Lesson } from "@/lib/writing/lesson";
 import { AssignmentBox } from "./assignment-box";
@@ -115,6 +116,10 @@ export function LessonView({ lesson: l, code }: { lesson: Lesson; code: string }
                 </dl>
               </header>
               <div className="space-y-4 p-4">
+                <Figures items={[
+                  { kind: "photo", title: x.name, sub: x.identity, src: x.photo?.src, credit: x.photo?.credit, lang: "en" },
+                  { kind: "cover", title: x.book, sub: `${x.name} · ${x.published}`, src: x.cover?.src, credit: x.cover?.credit, lang: "en" },
+                ]} />
                 <div><h4 className="font-semibold">A. বইটির সংক্ষিপ্ত Summary</h4><p className="mt-1 leading-7">{x.summary}</p></div>
                 <div>
                   <h4 className="font-semibold">B. গুরুত্বপূর্ণ চরিত্র</h4>
@@ -370,9 +375,41 @@ function BlockView({ b, code }: { b: Block; code: string }) {
           {b.lines.map((x, i) => <p key={i} className="leading-7"><b className="text-green">{x.who}:</b> {x.text}</p>)}
         </div>
       );
+    case "media":
+      return <Figures items={b.items} />;
     case "write":
       return <AssignmentBox storageKey={`writing-assignment:${code}:${b.id}`} label={b.label} rows={b.rows ?? 5} placeholder={b.placeholder ?? "এখানে লিখুন…"} count={b.count ?? "words"} lang="bn" />;
   }
+}
+
+type Fig = { kind: "photo" | "cover"; title: string; sub?: string; src?: string; credit?: string; lang?: string };
+/** লেখকের ছবি ও বইয়ের প্রচ্ছদ পাশাপাশি; প্রচ্ছদের মুক্ত-লাইসেন্স ছবি না থাকলে প্রতীকী প্রচ্ছদ। */
+function Figures({ items }: { items: Fig[] }) {
+  return (
+    <div className="flex flex-wrap gap-4">
+      {items.map((f) => (
+        <figure key={f.kind + f.title} className="w-[calc(50%-0.5rem)] max-w-40">
+          {f.src ? (
+            <Image src={f.src} alt={f.kind === "photo" ? `${f.title}-এর ছবি` : `${f.title} বইয়ের প্রচ্ছদ`} width={320} height={427} className="aspect-[3/4] w-full rounded-lg bg-paper object-cover ring-1 ring-line" />
+          ) : f.kind === "cover" ? (
+            <div role="img" aria-label={`${f.title} — প্রতীকী প্রচ্ছদ`} className="relative flex aspect-[3/4] w-full flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-[#5b2a0e] to-[#a3541c] p-3 text-white shadow-inner ring-1 ring-line">
+              <span aria-hidden className="absolute inset-y-0 left-2 w-px bg-white/30" />
+              <span className="text-[11px] font-semibold uppercase tracking-wider text-white/70">প্রতীকী প্রচ্ছদ</span>
+              <span className="text-lg font-extrabold leading-snug" lang={f.lang}>{f.title}</span>
+              <span className="text-xs text-white/85" lang={f.lang}>{f.sub}</span>
+            </div>
+          ) : (
+            <div aria-hidden className="grid aspect-[3/4] w-full place-items-center rounded-lg bg-paper text-4xl font-bold text-muted ring-1 ring-line">{f.title.slice(0, 1)}</div>
+          )}
+          <figcaption className="mt-1.5 text-sm leading-snug">
+            <span className="font-semibold" lang={f.lang}>{f.title}</span>
+            {f.sub && <span className="block text-muted" lang={f.lang}>{f.sub}</span>}
+            <span className="block text-xs text-muted">{f.kind === "photo" ? "লেখক" : "নির্বাচিত গ্রন্থ"}{f.credit ? ` · ছবি: ${f.credit}` : ""}</span>
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  );
 }
 
 function Chip({ children }: { children: ReactNode }) {
