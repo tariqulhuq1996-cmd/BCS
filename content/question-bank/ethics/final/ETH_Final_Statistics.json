@@ -1,0 +1,33 @@
+{
+  "total": 500,
+  "accepted": 500,
+  "target": 500,
+  "byPriority": {
+    "A": 350,
+    "B": 47,
+    "C": 33,
+    "D": 70
+  },
+  "byDifficulty": {
+    "Easy": 48,
+    "Medium": 382,
+    "Hard": 70
+  },
+  "answerPosition": {
+    "A": 127,
+    "B": 126,
+    "C": 126,
+    "D": 121
+  },
+  "bySubtopic": {
+    "ET.NT.DHR": 120,
+    "ET.SS.DHR": 154,
+    "ET.ML.DHR": 76,
+    "ET.SS.DUR": 47,
+    "ET.ML.GNT": 33,
+    "ET.NT.PES": 23,
+    "ET.SS.MNB": 20,
+    "ET.SS.PRS": 27
+  },
+  "targetMismatch": []
+}
