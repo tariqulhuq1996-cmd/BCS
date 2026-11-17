@@ -1,0 +1,48 @@
+{
+  "total": 500,
+  "accepted": 500,
+  "target": 500,
+  "byPriority": {
+    "A": 39,
+    "B": 81,
+    "C": 151,
+    "D": 229
+  },
+  "byDifficulty": {
+    "Easy": 133,
+    "Medium": 318,
+    "Hard": 49
+  },
+  "answerPosition": {
+    "A": 127,
+    "B": 126,
+    "C": 125,
+    "D": 122
+  },
+  "bySubtopic": {
+    "GE.BS.DES": 39,
+    "GE.PR.CHK": 42,
+    "GE.DR.PRK": 39,
+    "GE.PK.BAY": 31,
+    "GE.DR.BBS": 27,
+    "GE.PK.SIL": 26,
+    "GE.BD.UPK": 24,
+    "GE.BD.NOD": 20,
+    "GE.BD.AVS": 23,
+    "GE.PR.JLV": 24,
+    "GE.BD.ANC": 23,
+    "GE.PK.AKS": 19,
+    "GE.BD.BON": 21,
+    "GE.BS.MNB": 14,
+    "GE.BS.PAH": 16,
+    "GE.BD.BHU": 18,
+    "GE.PR.DUS": 15,
+    "GE.PK.MAN": 14,
+    "GE.BS.MHD": 14,
+    "GE.BD.JLB": 17,
+    "GE.PR.JIB": 13,
+    "GE.PK.SMD": 11,
+    "GE.BS.NOD": 10
+  },
+  "targetMismatch": []
+}
