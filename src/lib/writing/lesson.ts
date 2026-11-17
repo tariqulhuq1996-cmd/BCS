@@ -34,6 +34,7 @@ export type Lesson = {
   collocations?: { expr: string; bn: string }[];
   connectors?: { word: string; bn: string; use: string }[];
   connectorsExample?: string;
+  connectorsTip?: string; // Connector ব্যবহারের পরীক্ষা-টিপস
   transformation?: { label: string; text: string }[];
   transformationNote?: string;
   translation?: { bnToEn: { q: string; a: string }[]; enToBn: { q: string; a: string }[]; note?: string };

@@ -106,9 +106,9 @@ export function LessonView({ lesson: l, code }: { lesson: Lesson; code: string }
         {w.intro && <p className="text-ink-2">{w.intro}</p>}
         <div className="mt-4 grid gap-5">
           {w.items.map((x, i) => (
-            <article key={x.name} className="overflow-hidden rounded-xl border border-line">
+            <article key={x.name + x.book} className="overflow-hidden rounded-xl border border-line">
               <header className="bg-paper px-4 py-3">
-                <p className="text-sm text-muted">Writer {String(i + 1).padStart(2, "0")}</p>
+                <p className="text-sm text-muted">{writerLabel(w.items, i)}</p>
                 <h3 className="text-lg font-bold" lang="en">{x.name}</h3>
                 <dl className="mt-2 grid gap-x-6 gap-y-1 text-[15px] sm:grid-cols-2" lang="en">
                   <Info k="Nationality" v={x.nationality} /><Info k="Literary identity" v={x.identity} />
@@ -219,7 +219,7 @@ export function LessonView({ lesson: l, code }: { lesson: Lesson; code: string }
     parts.push(sec("Collocations and Connectors", (
       <div className="grid gap-6 lg:grid-cols-2">
         {l.collocations?.length ? <div><h3 className="font-semibold">Important Collocations</h3><Table head={["Expression", "বাংলা অর্থ"]} rows={l.collocations.map((c) => [<b key="c" lang="en">{c.expr}</b>, c.bn])} /></div> : null}
-        {l.connectors?.length ? <div><h3 className="font-semibold">Connectors</h3><Table head={["Connector", "বাংলা অর্থ", "ব্যবহার"]} rows={l.connectors.map((c) => [<b key="c" lang="en">{c.word}</b>, c.bn, c.use])} />{l.connectorsExample && <p className="mt-3 rounded-lg bg-paper px-3 py-2 italic" lang="en"><span className="not-italic font-semibold">Example:</span> {l.connectorsExample}</p>}</div> : null}
+        {l.connectors?.length ? <div><h3 className="font-semibold">Connectors</h3><Table head={["Connector", "বাংলা অর্থ", "ব্যবহার"]} rows={l.connectors.map((c) => [<b key="c" lang="en">{c.word}</b>, c.bn, c.use])} />{l.connectorsExample && <p className="mt-3 rounded-lg bg-paper px-3 py-2 italic" lang="en"><span className="not-italic font-semibold">Example:</span> {l.connectorsExample}</p>}{l.connectorsTip && <Tip label="Exam Tip">{l.connectorsTip}</Tip>}</div> : null}
       </div>
     )));
   }
@@ -282,6 +282,11 @@ export function LessonView({ lesson: l, code }: { lesson: Lesson; code: string }
     ), "আজকের ৫টি Sentence Challenge"));
   }
 
+  // মুক্ত কাঠামোর অংশ (যেমন Additional Writing Practice) — সমাপনী ‘মূল শিক্ষা’-র আগে
+  for (const s of l.sections ?? []) {
+    parts.push(sec(s.title, <div className="space-y-4">{s.blocks.map((b, i) => <BlockView key={i} b={b} code={code} />)}</div>, s.sub));
+  }
+
   if (l.finalGoal) {
     const g = l.finalGoal;
     parts.push(
@@ -292,10 +297,6 @@ export function LessonView({ lesson: l, code }: { lesson: Lesson; code: string }
         {g.principle && <p className="mt-3 text-lg font-bold text-green" lang="en">{g.principle}</p>}
       </section>,
     );
-  }
-
-  for (const s of l.sections ?? []) {
-    parts.push(sec(s.title, <div className="space-y-4">{s.blocks.map((b, i) => <BlockView key={i} b={b} code={code} />)}</div>, s.sub));
   }
 
   return (
@@ -410,6 +411,14 @@ function Figures({ items }: { items: Fig[] }) {
       ))}
     </div>
   );
+}
+
+/** “Writer 01”; একই লেখকের একাধিক বই থাকলে “Writer 01 · Book 02” (বইয়ের ক্রমিক পুরো তালিকাজুড়ে) */
+function writerLabel(items: { name: string }[], i: number) {
+  const pad = (n: number) => String(n).padStart(2, "0");
+  const names = [...new Set(items.map((x) => x.name))];
+  const multi = names.length < items.length;
+  return `Writer ${pad(names.indexOf(items[i].name) + 1)}${multi ? ` · Book ${pad(i + 1)}` : ""}`;
 }
 
 function Chip({ children }: { children: ReactNode }) {

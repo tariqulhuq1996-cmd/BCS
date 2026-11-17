@@ -1,0 +1,750 @@
+{
+  "series": "Daily English Writing Practice",
+  "day": "Day 05",
+  "exam": "52nd BCS Written",
+  "lessonNo": "Lesson 05",
+  "theme": "Economy · Inclusive Growth · Employment",
+  "topic": "Economic Inequality and Inclusive Development",
+  "intro": [
+    "আজকের পাঠে বিশেষ গুরুত্ব থাকবে Economic Growth, Income Inequality, Employment, Poverty Reduction, Social Protection এবং বাংলাদেশের অন্তর্ভুক্তিমূলক অর্থনৈতিক উন্নয়ন নিয়ে ইংরেজিতে লেখার ওপর।",
+    "গত পাঠগুলোতে আমরা Technology, Climate Change, Education এবং Governance নিয়ে কাজ করেছি। আজকের Paragraph-এর কাঠামো হবে: Problem → Causes → Economic Opportunities → Government Action → Conclusion"
+  ],
+  "paragraph": {
+    "title": "Economic Inequality and Inclusive Development",
+    "words": 137,
+    "pattern": "Problem → Causes → Opportunities → Government Action → Conclusion",
+    "text": "Economic inequality remains a major obstacle to inclusive development. When income and opportunities are concentrated in a small section of society, disadvantaged communities struggle to access quality education, healthcare and decent employment. Unemployment, low wages and insecure work can deepen poverty and weaken social mobility. Although economic growth can create new opportunities, its benefits do not automatically reach everyone. Governments should therefore promote productive investment, fair labour practices and accessible skills training. Small businesses also need better access to finance and markets so that they can generate sustainable jobs. At the same time, effective social protection can support people facing economic hardship. Tax systems should be fair, transparent and capable of funding essential public services. Ultimately, development should be measured not only by rising national income but also by improvements in people's living standards and equal opportunities.",
+    "tip": "Economic Development বিষয়ে রচনা লিখলে শুধু GDP বা জাতীয় আয় বৃদ্ধির কথা বলবে না। আয়বৈষম্য, কর্মসংস্থান, শ্রমিকের অধিকার, ক্ষুদ্র উদ্যোক্তা, সামাজিক নিরাপত্তা এবং জীবনযাত্রার মানও আলোচনা করবে।"
+  },
+  "structure": [
+    {
+      "step": "Introduction",
+      "what": "অর্থনৈতিক বৈষম্যের পরিচয়"
+    },
+    {
+      "step": "Problem",
+      "what": "আয় ও সুযোগের অসম বণ্টন"
+    },
+    {
+      "step": "Effects",
+      "what": "দারিদ্র্য, বেকারত্ব ও সামাজিক গতিশীলতার বাধা"
+    },
+    {
+      "step": "Opportunities",
+      "what": "বিনিয়োগ, কর্মসংস্থান ও দক্ষতা উন্নয়ন"
+    },
+    {
+      "step": "Solutions",
+      "what": "সামাজিক সুরক্ষা ও ন্যায়সংগত করব্যবস্থা"
+    },
+    {
+      "step": "Conclusion",
+      "what": "জীবনযাত্রার মান ও সমান সুযোগ"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "Inclusive",
+      "bn": "অন্তর্ভুক্তিমূলক",
+      "pos": "Adjective",
+      "synonym": "Comprehensive, Broad-based",
+      "antonym": "Exclusive",
+      "example": "Economic policies should promote inclusive growth.",
+      "exampleBn": "অর্থনৈতিক নীতিগুলো অন্তর্ভুক্তিমূলক প্রবৃদ্ধিকে উৎসাহিত করা উচিত।"
+    },
+    {
+      "word": "Disparity",
+      "bn": "বৈষম্য, অসামঞ্জস্য",
+      "pos": "Noun",
+      "synonym": "Inequality, Imbalance (Related expression: Income disparity)",
+      "example": "Income disparity can create social tension.",
+      "exampleBn": "আয়বৈষম্য সামাজিক উত্তেজনা সৃষ্টি করতে পারে।"
+    },
+    {
+      "word": "Livelihood",
+      "bn": "জীবিকা",
+      "pos": "Noun",
+      "synonym": "Means of living, Source of income",
+      "example": "Agriculture provides a livelihood for millions of people.",
+      "exampleBn": "কৃষি লাখো মানুষের জীবিকার সংস্থান করে।"
+    },
+    {
+      "word": "Stagnant",
+      "bn": "স্থবির, অপরিবর্তিত",
+      "pos": "Adjective",
+      "synonym": "Unchanging, Inactive",
+      "antonym": "Growing, Dynamic",
+      "example": "A stagnant economy may struggle to create employment opportunities.",
+      "exampleBn": "স্থবির অর্থনীতিতে কর্মসংস্থানের সুযোগ সৃষ্টি করা কঠিন হতে পারে।"
+    },
+    {
+      "word": "Allocate",
+      "bn": "বরাদ্দ করা, বণ্টন করা",
+      "pos": "Verb",
+      "synonym": "Assign, Distribute",
+      "example": "The government should allocate sufficient funds for social protection.",
+      "exampleBn": "সামাজিক সুরক্ষার জন্য সরকারের পর্যাপ্ত অর্থ বরাদ্দ করা উচিত।"
+    }
+  ],
+  "prepositional": [
+    {
+      "phrase": "In the long run",
+      "bn": "দীর্ঘ মেয়াদে",
+      "example": "Investment in education benefits the economy in the long run.",
+      "exampleBn": "দীর্ঘ মেয়াদে শিক্ষায় বিনিয়োগ অর্থনীতির উপকার করে।"
+    },
+    {
+      "phrase": "At the expense of",
+      "bn": "কোনো কিছুর ক্ষতির বিনিময়ে",
+      "example": "Economic growth should not occur at the expense of workers' rights.",
+      "exampleBn": "শ্রমিকদের অধিকারের ক্ষতির বিনিময়ে অর্থনৈতিক প্রবৃদ্ধি হওয়া উচিত নয়।"
+    },
+    {
+      "phrase": "In response to",
+      "bn": "কোনো কিছুর প্রতিক্রিয়ায়",
+      "example": "The government introduced new measures in response to rising unemployment.",
+      "exampleBn": "বেকারত্ব বৃদ্ধির প্রতিক্রিয়ায় সরকার নতুন পদক্ষেপ গ্রহণ করেছে।"
+    },
+    {
+      "phrase": "In comparison with",
+      "bn": "কোনো কিছুর তুলনায়",
+      "example": "Small businesses often have limited access to finance in comparison with large corporations.",
+      "exampleBn": "বড় প্রতিষ্ঠানের তুলনায় ক্ষুদ্র ব্যবসাপ্রতিষ্ঠানের অর্থায়নের সুযোগ প্রায়ই সীমিত থাকে।"
+    },
+    {
+      "phrase": "On behalf of",
+      "bn": "কারও পক্ষে বা পক্ষ থেকে",
+      "example": "The representative submitted a proposal on behalf of the workers.",
+      "exampleBn": "প্রতিনিধি শ্রমিকদের পক্ষ থেকে একটি প্রস্তাব জমা দিয়েছেন।"
+    }
+  ],
+  "idioms": {
+    "items": [
+      {
+        "phrase": "Make ends meet",
+        "bn": "আয় দিয়ে প্রয়োজনীয় ব্যয় মেটানো",
+        "example": "Many low-income families struggle to make ends meet."
+      },
+      {
+        "phrase": "A level playing field",
+        "bn": "সবার জন্য সমান সুযোগের ক্ষেত্র",
+        "example": "Fair policies can create a level playing field for small businesses."
+      },
+      {
+        "phrase": "Climb the economic ladder",
+        "bn": "অর্থনৈতিক অবস্থার উন্নতি ঘটানো",
+        "example": "Education can help people climb the economic ladder."
+      },
+      {
+        "phrase": "Tighten one's belt",
+        "bn": "ব্যয় সংকোচন করা",
+        "example": "Households often tighten their belts during periods of inflation."
+      },
+      {
+        "phrase": "On the breadline",
+        "bn": "চরম দারিদ্র্যের মধ্যে থাকা",
+        "example": "Some vulnerable families live on the breadline."
+      }
+    ],
+    "tip": "Formal Essay-তে make ends meet এবং a level playing field স্বাভাবিকভাবে ব্যবহার করা যায়। তবে on the breadline তুলনামূলকভাবে কথ্যধর্মী; আনুষ্ঠানিক লেখায় এর পরিবর্তে living in extreme poverty ব্যবহার করা যেতে পারে।"
+  },
+  "writers": {
+    "intro": "আজকের Economic Inequality, Poverty এবং Workers' Rights বিষয়গুলো বোঝার জন্য দুজন লেখকের দুটি করে উল্লেখযোগ্য গ্রন্থ পড়ব।",
+    "items": [
+      {
+        "name": "Upton Sinclair",
+        "nationality": "American",
+        "identity": "Novelist, Investigative Writer and Social Activist",
+        "book": "The Jungle",
+        "published": "1906",
+        "genre": "Social Realist Novel",
+        "summary": "উপন্যাসে Jurgis Rudkus নামের একজন লিথুয়ানীয় অভিবাসী ও তার পরিবারের যুক্তরাষ্ট্রে নতুন জীবন গড়ার সংগ্রাম তুলে ধরা হয়েছে। তারা Chicago-র মাংস প্রক্রিয়াজাতকরণ শিল্পে কাজ করতে গিয়ে অমানবিক শ্রমপরিবেশ, কম মজুরি, দারিদ্র্য ও শোষণের শিকার হয়। পরিবারের সদস্যদের জীবনে একের পর এক দুর্যোগ নেমে আসে। উপন্যাসটি শিল্পায়নের অমানবিক দিক এবং শ্রমিকদের অধিকারহীনতার সমালোচনা করে।",
+        "characters": [
+          {
+            "name": "Jurgis Rudkus",
+            "desc": "উপন্যাসের কেন্দ্রীয় চরিত্র; শ্রমিক শ্রেণির সংগ্রাম ও শোষণের প্রতীক।"
+          },
+          {
+            "name": "Ona",
+            "desc": "Jurgis-এর স্ত্রী; দারিদ্র্য ও কর্মক্ষেত্রে নারীর শোষণের অভিজ্ঞতা তুলে ধরে।"
+          },
+          {
+            "name": "Marija",
+            "desc": "পরিবারের একজন সদস্য; অর্থনৈতিক অনিশ্চয়তা ও প্রতিকূলতার মুখে শ্রমজীবী নারীর সংগ্রাম প্রকাশ করে।"
+          }
+        ],
+        "message": [
+          "সাহিত্যিক অবদান: শ্রমিক শোষণ, দারিদ্র্য, শিল্পায়ন ও অর্থনৈতিক বৈষম্য নিয়ে লেখার জন্য পরিচিত।",
+          "Sinclair দেখিয়েছেন, নিয়ন্ত্রণহীন শিল্পব্যবস্থা ও মুনাফাকেন্দ্রিক অর্থনীতি শ্রমিকদের জীবন ও মর্যাদাকে ক্ষতিগ্রস্ত করতে পারে। শ্রমিকের অধিকার ও নিরাপদ কর্মপরিবেশ নিশ্চিত করা প্রয়োজন।"
+        ],
+        "bcsUse": [
+          "Poverty and Inequality",
+          "Workers' Rights",
+          "Industrialization",
+          "Labour Exploitation",
+          "Social Justice"
+        ],
+        "photo": {
+          "src": "/writing/img/sinclair.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": {
+          "src": "/writing/img/book-the-jungle.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        }
+      },
+      {
+        "name": "Upton Sinclair",
+        "nationality": "American",
+        "identity": "Novelist, Investigative Writer and Social Activist",
+        "book": "Oil!",
+        "published": "1927",
+        "genre": "Political and Social Novel",
+        "summary": "উপন্যাসটির কেন্দ্রীয় চরিত্র Bunny Ross, একজন ধনী তেল ব্যবসায়ীর ছেলে। তার বাবা James Arnold Ross তেলশিল্পের মাধ্যমে বিপুল সম্পদ অর্জন করেন। কিন্তু Bunny তেলশিল্পের শ্রমিকদের দুরবস্থা, ব্যবসায়িক অনৈতিকতা এবং রাজনৈতিক দুর্নীতি সম্পর্কে সচেতন হয়ে ওঠে। তার বাবার অর্থনৈতিক স্বার্থ এবং শ্রমিকদের অধিকারের প্রশ্নে Bunny-র চিন্তার পার্থক্য তৈরি হয়। উপন্যাসটি পুঁজির ক্ষমতা, ব্যবসা ও রাজনীতির সম্পর্ক এবং সামাজিক ন্যায়বিচারের বিষয়গুলো তুলে ধরে।",
+        "characters": [
+          {
+            "name": "Bunny Ross",
+            "desc": "কেন্দ্রীয় চরিত্র; শ্রমিকদের অধিকার ও সামাজিক ন্যায়বিচারের প্রতি সহানুভূতিশীল।"
+          },
+          {
+            "name": "James Arnold Ross (Dad)",
+            "desc": "Bunny-র বাবা ও তেল ব্যবসায়ী; পুঁজির শক্তি ও ব্যবসায়িক স্বার্থের প্রতীক।"
+          },
+          {
+            "name": "Paul Watkins",
+            "desc": "শ্রমিক অধিকার ও সমাজতান্ত্রিক চিন্তার সঙ্গে যুক্ত চরিত্র।"
+          }
+        ],
+        "message": [
+          "সাহিত্যিক অবদান: শ্রমিক শোষণ, দারিদ্র্য, শিল্পায়ন ও অর্থনৈতিক বৈষম্য নিয়ে লেখার জন্য পরিচিত।",
+          "Sinclair দেখিয়েছেন, বৃহৎ ব্যবসায়িক স্বার্থ যখন রাজনৈতিক ক্ষমতার সঙ্গে যুক্ত হয়, তখন শ্রমিক ও সাধারণ মানুষের অধিকার ক্ষতিগ্রস্ত হতে পারে।"
+        ],
+        "bcsUse": [
+          "Corporate Power",
+          "Political Corruption",
+          "Workers' Rights",
+          "Economic Inequality",
+          "Ethical Business Practices"
+        ],
+        "photo": {
+          "src": "/writing/img/sinclair.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": {
+          "src": "/writing/img/book-oil.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        }
+      },
+      {
+        "name": "John Steinbeck",
+        "nationality": "American",
+        "identity": "Novelist and Social Realist",
+        "book": "Of Mice and Men",
+        "published": "1937",
+        "genre": "Novella / Social Realism",
+        "summary": "উপন্যাসে Great Depression-এর সময় California-তে কাজের সন্ধানে ঘুরে বেড়ানো দুই শ্রমিক George Milton ও Lennie Small-এর জীবনসংগ্রাম তুলে ধরা হয়েছে। তারা নিজেদের একটি ছোট খামারের মালিক হওয়ার স্বপ্ন দেখে। কিন্তু অর্থনৈতিক অনিশ্চয়তা, সামাজিক বৈষম্য ও ব্যক্তিগত সীমাবদ্ধতা তাদের স্বপ্নকে কঠিন করে তোলে। উপন্যাসটি শ্রমজীবী মানুষের অনিশ্চিত জীবন, নিঃসঙ্গতা, বন্ধুত্ব এবং স্বপ্নভঙ্গের বেদনাকে প্রকাশ করে।",
+        "characters": [
+          {
+            "name": "George Milton",
+            "desc": "বাস্তববাদী ও দায়িত্বশীল শ্রমিক; Lennie-র দেখাশোনা করে।"
+          },
+          {
+            "name": "Lennie Small",
+            "desc": "শারীরিকভাবে শক্তিশালী কিন্তু মানসিকভাবে সহায়তানির্ভর; একটি উন্নত জীবনের স্বপ্ন দেখে।"
+          },
+          {
+            "name": "Candy",
+            "desc": "বয়স্ক শ্রমিক; কর্মক্ষমতা হারালে জীবিকা হারানোর আশঙ্কার প্রতীক।"
+          }
+        ],
+        "message": [
+          "সাহিত্যিক অবদান: সাধারণ শ্রমজীবী মানুষ, অভিবাসী, দারিদ্র্য ও সামাজিক প্রান্তিকতার বাস্তব চিত্র তুলে ধরেছেন।",
+          "Steinbeck দেখিয়েছেন, অর্থনৈতিক মন্দা ও সামাজিক বৈষম্য শ্রমজীবী মানুষের স্বপ্ন, নিরাপত্তা ও মর্যাদাকে কীভাবে ক্ষতিগ্রস্ত করে।"
+        ],
+        "bcsUse": [
+          "Unemployment",
+          "Poverty",
+          "Social Security",
+          "Human Dignity",
+          "Economic Depression"
+        ],
+        "photo": {
+          "src": "/writing/img/steinbeck.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": {
+          "src": "/writing/img/book-of-mice-and-men.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        }
+      },
+      {
+        "name": "John Steinbeck",
+        "nationality": "American",
+        "identity": "Novelist and Social Realist",
+        "book": "Cannery Row",
+        "published": "1945",
+        "genre": "Social Novel",
+        "summary": "উপন্যাসটির পটভূমি California-র Monterey শহরের Cannery Row নামের একটি এলাকা। এখানে শ্রমজীবী, বেকার, ব্যবসায়ী ও প্রান্তিক মানুষের জীবন এবং পারস্পরিক সম্পর্ক তুলে ধরা হয়েছে। Mack ও তার বন্ধুরা Doc-এর জন্য একটি অনুষ্ঠান আয়োজনের পরিকল্পনা করে, কিন্তু নানা ঘটনার কারণে পরিকল্পনা জটিল হয়ে ওঠে। উপন্যাসটি দারিদ্র্য, সামাজিক প্রান্তিকতা, বন্ধুত্ব, মানবিকতা এবং একটি সম্প্রদায়ের পারস্পরিক সহযোগিতার চিত্র তুলে ধরে।",
+        "characters": [
+          {
+            "name": "Doc",
+            "desc": "একজন সামুদ্রিক জীববিজ্ঞানী; মানবিকতা ও জ্ঞানচর্চার প্রতীক।"
+          },
+          {
+            "name": "Mack",
+            "desc": "একদল প্রান্তিক মানুষের নেতা; তার মাধ্যমে বেঁচে থাকার সংগ্রাম ও সামাজিক সম্পর্ক প্রকাশ পায়।"
+          },
+          {
+            "name": "Dora Flood",
+            "desc": "Bear Flag প্রতিষ্ঠানের মালিক; কঠিন সামাজিক পরিবেশেও দানশীলতা ও সম্প্রদায়ের প্রতি দায়িত্বশীলতার পরিচয় দেয়।"
+          }
+        ],
+        "message": [
+          "সাহিত্যিক অবদান: সাধারণ শ্রমজীবী মানুষ, অভিবাসী, দারিদ্র্য ও সামাজিক প্রান্তিকতার বাস্তব চিত্র তুলে ধরেছেন।",
+          "Steinbeck দেখিয়েছেন, মানুষের মর্যাদা শুধু সম্পদ বা সামাজিক অবস্থান দিয়ে নির্ধারিত হয় না। পারস্পরিক সহযোগিতা, সহমর্মিতা ও সামাজিক বন্ধনও একটি সম্প্রদায়ের শক্তি।"
+        ],
+        "bcsUse": [
+          "Social Inclusion",
+          "Community Development",
+          "Poverty and Marginalization",
+          "Human Values",
+          "Social Solidarity"
+        ],
+        "photo": {
+          "src": "/writing/img/steinbeck.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": {
+          "src": "/writing/img/book-cannery-row.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        }
+      }
+    ],
+    "takeaway": [
+      "The Jungle — শ্রমিক শোষণ ও শিল্পায়নের নেতিবাচক প্রভাব।",
+      "Oil! — ব্যবসা, রাজনৈতিক ক্ষমতা ও অর্থনৈতিক বৈষম্য।",
+      "Of Mice and Men — বেকারত্ব, শ্রমিকের অনিশ্চিত জীবন ও স্বপ্ন।",
+      "Cannery Row — প্রান্তিক মানুষের জীবন ও সামাজিক সংহতি।",
+      "BCS Writing Tip: রচনায় সাহিত্যিক উদাহরণ ব্যবহার করলে তা মূল বক্তব্যের সঙ্গে সম্পর্কিত হতে হবে। শুধু বইয়ের নাম লিখলে নম্বর বাড়বে না; বইটি থেকে কী সামাজিক শিক্ষা পাওয়া যায়, সেটি সংক্ষেপে ব্যাখ্যা করবে।"
+    ]
+  },
+  "quote": {
+    "text": "If a free society cannot help the many who are poor, it cannot save the few who are rich.",
+    "author": "John F. Kennedy",
+    "work": "Inaugural Address, 20 January 1961",
+    "bn": "একটি স্বাধীন সমাজ যদি দরিদ্র সংখ্যাগরিষ্ঠ মানুষকে সাহায্য করতে না পারে, তবে ধনী অল্পসংখ্যক মানুষকেও রক্ষা করতে পারবে না।",
+    "explanation": "একটি সমাজের স্থিতিশীলতা শুধু ধনী জনগোষ্ঠীর সমৃদ্ধির ওপর নির্ভর করে না। দরিদ্র ও সুবিধাবঞ্চিত মানুষের জীবনমান উন্নয়ন, সামাজিক নিরাপত্তা এবং সমান সুযোগ নিশ্চিত করাও সামগ্রিক উন্নয়নের অপরিহার্য অংশ।",
+    "useIn": [
+      "Poverty Reduction",
+      "Economic Inequality",
+      "Inclusive Development",
+      "Social Justice",
+      "Welfare State"
+    ]
+  },
+  "sentences": [
+    {
+      "en": "Economic inequality remains a major obstacle to inclusive development.",
+      "bn": "অর্থনৈতিক বৈষম্য অন্তর্ভুক্তিমূলক উন্নয়নের ক্ষেত্রে একটি বড় বাধা হিসেবে রয়ে গেছে।",
+      "notes": [
+        "Economic inequality = অর্থনৈতিক বৈষম্য",
+        "Obstacle = প্রতিবন্ধকতা",
+        "Inclusive development = অন্তর্ভুক্তিমূলক উন্নয়ন"
+      ]
+    },
+    {
+      "en": "When income and opportunities are concentrated in a small section of society, disadvantaged communities struggle to access quality education, healthcare and decent employment.",
+      "bn": "যখন সমাজের একটি ক্ষুদ্র অংশের মধ্যে আয় ও সুযোগ কেন্দ্রীভূত থাকে, তখন সুবিধাবঞ্চিত জনগোষ্ঠী মানসম্মত শিক্ষা, স্বাস্থ্যসেবা ও শোভন কর্মসংস্থানের সুযোগ পেতে সংগ্রাম করে।",
+      "notes": [
+        "Concentrated = কেন্দ্রীভূত",
+        "Disadvantaged communities = সুবিধাবঞ্চিত জনগোষ্ঠী",
+        "Decent employment = শোভন কর্মসংস্থান"
+      ]
+    },
+    {
+      "en": "Unemployment, low wages and insecure work can deepen poverty and weaken social mobility.",
+      "bn": "বেকারত্ব, কম মজুরি ও অনিরাপদ কর্মসংস্থান দারিদ্র্য বাড়াতে এবং সামাজিক গতিশীলতা দুর্বল করতে পারে।",
+      "notes": [
+        "Unemployment = বেকারত্ব",
+        "Low wages = কম মজুরি",
+        "Social mobility = সামাজিক অবস্থানের পরিবর্তনের সুযোগ"
+      ]
+    },
+    {
+      "en": "Although economic growth can create new opportunities, its benefits do not automatically reach everyone.",
+      "bn": "যদিও অর্থনৈতিক প্রবৃদ্ধি নতুন সুযোগ সৃষ্টি করতে পারে, এর সুফল স্বয়ংক্রিয়ভাবে সবার কাছে পৌঁছায় না।",
+      "notes": [
+        "Although = যদিও",
+        "Economic growth = অর্থনৈতিক প্রবৃদ্ধি",
+        "Automatically = স্বয়ংক্রিয়ভাবে",
+        "এখানে Although দিয়ে দুটি বিপরীতধর্মী বক্তব্য যুক্ত হয়েছে।"
+      ]
+    },
+    {
+      "en": "Governments should therefore promote productive investment, fair labour practices and accessible skills training.",
+      "bn": "তাই সরকারগুলোর উৎপাদনশীল বিনিয়োগ, ন্যায়সংগত শ্রমচর্চা এবং সহজলভ্য দক্ষতা প্রশিক্ষণের প্রসার ঘটানো উচিত।",
+      "notes": [
+        "Productive investment = উৎপাদনশীল বিনিয়োগ",
+        "Labour practices = শ্রমচর্চা",
+        "Accessible skills training = সহজলভ্য দক্ষতা প্রশিক্ষণ"
+      ]
+    },
+    {
+      "en": "Small businesses also need better access to finance and markets so that they can generate sustainable jobs.",
+      "bn": "ক্ষুদ্র ব্যবসাপ্রতিষ্ঠানগুলোরও অর্থায়ন ও বাজারে উন্নত প্রবেশাধিকার প্রয়োজন, যাতে তারা টেকসই কর্মসংস্থান সৃষ্টি করতে পারে।",
+      "notes": [
+        "Small businesses = ক্ষুদ্র ব্যবসাপ্রতিষ্ঠান",
+        "Access to finance = অর্থায়নের সুযোগ",
+        "Generate = সৃষ্টি করা",
+        "Sustainable jobs = টেকসই কর্মসংস্থান"
+      ]
+    },
+    {
+      "en": "At the same time, effective social protection can support people facing economic hardship.",
+      "bn": "একই সময়ে কার্যকর সামাজিক সুরক্ষা অর্থনৈতিক সংকটে থাকা মানুষকে সহায়তা করতে পারে।",
+      "notes": [
+        "Social protection = সামাজিক সুরক্ষা",
+        "Economic hardship = অর্থনৈতিক দুর্দশা",
+        "Effective = কার্যকর"
+      ]
+    },
+    {
+      "en": "Tax systems should be fair, transparent and capable of funding essential public services.",
+      "bn": "করব্যবস্থা ন্যায়সংগত, স্বচ্ছ এবং অপরিহার্য সরকারি সেবার অর্থায়নে সক্ষম হওয়া উচিত।",
+      "notes": [
+        "Tax systems = করব্যবস্থা",
+        "Transparent = স্বচ্ছ",
+        "Capable of = সক্ষম",
+        "Public services = সরকারি সেবা"
+      ]
+    },
+    {
+      "en": "Ultimately, development should be measured not only by rising national income but also by improvements in people's living standards and equal opportunities.",
+      "bn": "পরিশেষে, উন্নয়ন শুধু জাতীয় আয় বৃদ্ধির মাধ্যমে নয়, বরং মানুষের জীবনযাত্রার মান ও সমান সুযোগের উন্নতির মাধ্যমেও পরিমাপ করা উচিত।",
+      "notes": [
+        "Measured = পরিমাপ করা",
+        "National income = জাতীয় আয়",
+        "Living standards = জীবনযাত্রার মান",
+        "Equal opportunities = সমান সুযোগ"
+      ]
+    }
+  ],
+  "wordChoice": {
+    "items": [
+      {
+        "title": "Economic Growth vs Economic Development vs Prosperity",
+        "rows": [
+          {
+            "word": "Economic Growth",
+            "meaning": "উৎপাদন বা জাতীয় আয়ের পরিমাণগত বৃদ্ধি"
+          },
+          {
+            "word": "Economic Development",
+            "meaning": "অর্থনৈতিক ও সামাজিক কাঠামোর গুণগত উন্নয়ন"
+          },
+          {
+            "word": "Prosperity",
+            "meaning": "সমৃদ্ধি বা উন্নত জীবনযাত্রার অবস্থা"
+          }
+        ],
+        "examples": [
+          "Economic growth increases national output.",
+          "Economic development improves people's living conditions.",
+          "Shared prosperity benefits different sections of society."
+        ],
+        "note": "মনে রাখবে: Growth সাধারণত পরিমাণগত; Development-এর মধ্যে গুণগত পরিবর্তনও অন্তর্ভুক্ত।"
+      },
+      {
+        "title": "Poverty vs Deprivation vs Hardship",
+        "rows": [
+          {
+            "word": "Poverty",
+            "meaning": "দারিদ্র্য বা প্রয়োজনীয় সম্পদের অভাব।"
+          },
+          {
+            "word": "Deprivation",
+            "meaning": "প্রয়োজনীয় অধিকার, সুযোগ বা সুবিধা থেকে বঞ্চিত অবস্থা।"
+          },
+          {
+            "word": "Hardship",
+            "meaning": "কঠিন জীবনযাপন বা প্রতিকূল পরিস্থিতি।"
+          }
+        ],
+        "examples": [
+          "Poverty limits access to education.",
+          "Social deprivation affects vulnerable communities.",
+          "Many families face economic hardship."
+        ]
+      },
+      {
+        "title": "Wage vs Salary vs Income",
+        "rows": [
+          {
+            "word": "Wage",
+            "meaning": "সাধারণত ঘণ্টা, দিন বা কাজের পরিমাণ অনুযায়ী মজুরি।"
+          },
+          {
+            "word": "Salary",
+            "meaning": "নির্দিষ্ট সময়ের জন্য নিয়মিত নির্ধারিত বেতন।"
+          },
+          {
+            "word": "Income",
+            "meaning": "সব ধরনের আয়; বেতন, মজুরি ও ব্যবসার লাভ অন্তর্ভুক্ত হতে পারে।"
+          }
+        ],
+        "examples": [
+          "Factory workers often receive daily wages.",
+          "Government employees receive monthly salaries.",
+          "Household income influences living standards."
+        ]
+      },
+      {
+        "title": "Employment vs Occupation vs Livelihood",
+        "rows": [
+          {
+            "word": "Employment",
+            "meaning": "চাকরি বা কর্মসংস্থানে নিয়োজিত থাকার অবস্থা।"
+          },
+          {
+            "word": "Occupation",
+            "meaning": "ব্যক্তির পেশা।"
+          },
+          {
+            "word": "Livelihood",
+            "meaning": "জীবনধারণের জন্য আয়ের উৎস বা জীবিকা।"
+          }
+        ],
+        "examples": [
+          "Employment opportunities are essential for young people.",
+          "Teaching is a respected occupation.",
+          "Agriculture remains a major source of livelihood."
+        ]
+      },
+      {
+        "title": "Inequality vs Disparity vs Discrimination",
+        "rows": [
+          {
+            "word": "Inequality",
+            "meaning": "সুযোগ, অধিকার বা সম্পদের অসম বণ্টন।"
+          },
+          {
+            "word": "Disparity",
+            "meaning": "দুই বা ততোধিক বিষয়ের মধ্যে উল্লেখযোগ্য পার্থক্য।"
+          },
+          {
+            "word": "Discrimination",
+            "meaning": "পরিচয় বা বৈশিষ্ট্যের ভিত্তিতে অন্যায্য আচরণ।"
+          }
+        ],
+        "examples": [
+          "Income inequality can weaken social cohesion.",
+          "Regional disparities affect balanced development.",
+          "Gender discrimination restricts women's opportunities."
+        ],
+        "note": "মনে রাখবে: Discrimination সাধারণত অন্যায্য আচরণ বোঝায়; সব Disparity-ই Discrimination নয়।"
+      }
+    ]
+  },
+  "grammar": [
+    {
+      "title": "Although — Contrast Clause",
+      "structure": "Although + Subject + Verb, Main Clause.",
+      "usage": "Paragraph-এ: Although economic growth can create new opportunities, its benefits do not automatically reach everyone.",
+      "example": "Although economic growth can create new opportunities, its benefits do not automatically reach everyone.",
+      "explanation": "মনে রাখবে: একই বাক্যগঠনে Although এবং But একসঙ্গে ব্যবহার করবে না। বিকল্প: Poverty has declined, but inequality remains high.",
+      "more": [
+        "Although economic growth is important, inequality must be addressed.",
+        "Although small businesses create jobs, they often face financial constraints.",
+        "Although technology improves productivity, not everyone has equal access to it."
+      ],
+      "wrong": "Although poverty has declined, but inequality remains high.",
+      "right": "Although poverty has declined, inequality remains high."
+    },
+    {
+      "title": "So That — Purpose Clause",
+      "structure": "Main Clause + so that + Subject + can/could/may/might + Base Verb.",
+      "usage": "Paragraph-এ: Small businesses also need better access to finance and markets so that they can generate sustainable jobs.",
+      "example": "Small businesses also need better access to finance and markets so that they can generate sustainable jobs.",
+      "explanation": "So that ব্যবহার করে কোনো কাজের উদ্দেশ্য বা প্রত্যাশিত ফলাফল প্রকাশ করা হয়।",
+      "more": [
+        "The government should improve education so that young people can develop relevant skills.",
+        "Small firms need financial support so that they can expand their businesses.",
+        "Public investment should increase so that essential services can reach remote communities."
+      ]
+    }
+  ],
+  "collocations": [
+    {
+      "expr": "Reduce income inequality",
+      "bn": "আয়বৈষম্য কমানো"
+    },
+    {
+      "expr": "Create sustainable employment",
+      "bn": "টেকসই কর্মসংস্থান সৃষ্টি করা"
+    },
+    {
+      "expr": "Promote inclusive growth",
+      "bn": "অন্তর্ভুক্তিমূলক প্রবৃদ্ধি উৎসাহিত করা"
+    },
+    {
+      "expr": "Improve living standards",
+      "bn": "জীবনযাত্রার মান উন্নত করা"
+    },
+    {
+      "expr": "Expand social protection",
+      "bn": "সামাজিক সুরক্ষার পরিধি বাড়ানো"
+    }
+  ],
+  "connectors": [
+    {
+      "word": "Although",
+      "bn": "যদিও",
+      "use": "বিপরীত বক্তব্য"
+    },
+    {
+      "word": "Therefore",
+      "bn": "অতএব / তাই",
+      "use": "সিদ্ধান্ত বা করণীয়"
+    },
+    {
+      "word": "Furthermore",
+      "bn": "অধিকন্তু",
+      "use": "অতিরিক্ত তথ্য"
+    },
+    {
+      "word": "As a result",
+      "bn": "ফলস্বরূপ",
+      "use": "পরিণতি"
+    },
+    {
+      "word": "Ultimately",
+      "bn": "পরিশেষে",
+      "use": "উপসংহার"
+    }
+  ],
+  "connectorsTip": "Connectors-এর সঠিক ব্যবহার Paragraph ও Essay-তে যুক্তির ধারাবাহিকতা বজায় রাখে। শুধু Connector যোগ করলেই লেখা উন্নত হয় না; বাক্যগুলোর মধ্যে অর্থগত সম্পর্কও থাকতে হবে।",
+  "transformation": [
+    {
+      "label": "Simple Sentence",
+      "text": "Investment in education improves employment opportunities."
+    },
+    {
+      "label": "Compound Sentence",
+      "text": "Investment in education improves skills, and it creates better employment opportunities."
+    },
+    {
+      "label": "Complex Sentence",
+      "text": "When people receive quality education, they become better prepared for employment."
+    },
+    {
+      "label": "Advanced Expression",
+      "text": "By investing in quality education and practical skills training, governments can strengthen employability and support inclusive economic growth."
+    }
+  ],
+  "transformationNote": "By + Verb-ing ব্যবহার করে কোনো কাজের মাধ্যমে কী ফলাফল অর্জিত হয়, তা সংক্ষেপে প্রকাশ করা যায়।",
+  "translation": {
+    "note": "প্রথমে নিজে অনুবাদ করবে। নিজের অনুবাদ শেষ হলে উত্তর মিলিয়ে নেবে।",
+    "bnToEn": [
+      {
+        "q": "অর্থনৈতিক প্রবৃদ্ধির সুফল সমাজের সব শ্রেণির মানুষের কাছে পৌঁছানো উচিত।",
+        "a": "The benefits of economic growth should reach all sections of society."
+      },
+      {
+        "q": "কর্মসংস্থান সৃষ্টি ও দারিদ্র্য হ্রাসের জন্য ক্ষুদ্র উদ্যোক্তাদের সহায়তা করা প্রয়োজন।",
+        "a": "Small entrepreneurs need support to create employment and reduce poverty."
+      }
+    ],
+    "enToBn": [
+      {
+        "q": "Social protection programmes can reduce the economic vulnerability of disadvantaged communities.",
+        "a": "সামাজিক সুরক্ষা কর্মসূচি সুবিধাবঞ্চিত জনগোষ্ঠীর অর্থনৈতিক ঝুঁকিপূর্ণ অবস্থা কমাতে পারে।"
+      },
+      {
+        "q": "Sustainable development requires both economic opportunities and a fair distribution of resources.",
+        "a": "টেকসই উন্নয়নের জন্য অর্থনৈতিক সুযোগ এবং সম্পদের ন্যায়সংগত বণ্টন—উভয়ই প্রয়োজন।"
+      }
+    ]
+  },
+  "assignment": {
+    "intro": "নিচের ১০টি Expression থেকে অন্তত ৫টি ব্যবহার করে নিজে ৫টি English Sentence লিখবে।",
+    "expressions": [
+      "Economic inequality",
+      "Inclusive development",
+      "Sustainable employment",
+      "Income disparity",
+      "Social protection",
+      "Make ends meet",
+      "Access to finance",
+      "Improve living standards",
+      "Fair labour practices",
+      "Productive investment"
+    ],
+    "criteria": [
+      "Grammar Accuracy",
+      "Right Word Selection",
+      "Sentence Structure",
+      "Natural Expression",
+      "BCS Written Standard"
+    ],
+    "note": "তোমার লেখা বাক্যগুলো নিচের ঘরে লিখে রাখো (এই ডিভাইসে সংরক্ষিত থাকবে)। তারপর প্রতিটি বাক্যে Grammar mistake, Corrected sentence, Better expression ও বাংলা ব্যাখ্যা—এই চারটি দিক ধরে নিজে মিলিয়ে দেখো।"
+  },
+  "sections": [
+    {
+      "title": "Additional Writing Practice",
+      "sub": "Paragraph Practice একা সম্পূর্ণ Written English প্রস্তুতির বিকল্প নয়। তাই আজ একটি Essay Outline ও Summary অনুশীলন করবে।",
+      "blocks": [
+        {
+          "t": "h",
+          "text": "Essay Outline Practice"
+        },
+        {
+          "t": "p",
+          "text": "Topic: Economic Inequality: Challenges and Ways Forward — নিজে নিচের কাঠামো ধরে Essay Outline তৈরি করো:"
+        },
+        {
+          "t": "ol",
+          "items": [
+            "Introduction",
+            "Meaning and Dimensions of Economic Inequality",
+            "Major Causes",
+            "Effects on Poverty and Employment",
+            "Gender and Regional Disparities",
+            "Role of Education and Skills Development",
+            "Social Protection and Government Policies",
+            "Recommendations",
+            "Conclusion"
+          ]
+        },
+        {
+          "t": "write",
+          "id": "outline",
+          "label": "আমার Essay Outline",
+          "rows": 10,
+          "placeholder": "Point-wise outline…",
+          "count": "lines"
+        },
+        {
+          "t": "h",
+          "text": "Summary Practice"
+        },
+        {
+          "t": "p",
+          "text": "আজকের Paragraph-টি ৪০–৫০ শব্দের মধ্যে সংক্ষেপে লেখো। লক্ষ্য: মূল বক্তব্য অক্ষুণ্ণ রেখে অপ্রয়োজনীয় উদাহরণ ও পুনরাবৃত্তি বাদ দেওয়া।"
+        },
+        {
+          "t": "write",
+          "id": "summary",
+          "label": "আমার Summary (৪০–৫০ শব্দ)",
+          "rows": 4,
+          "placeholder": "Write your summary here…"
+        }
+      ]
+    }
+  ],
+  "finalGoal": {
+    "title": "Day 05 — আজকের মূল শিক্ষা",
+    "text": [
+      "উন্নয়ন শুধু জাতীয় আয়ের পরিসংখ্যান নয়; কর্মসংস্থান, ন্যায্য মজুরি, সামাজিক সুরক্ষা, ক্ষুদ্র উদ্যোক্তার সুযোগ এবং সবার জন্য সমান সুযোগ নিশ্চিত হলেই প্রবৃদ্ধি অন্তর্ভুক্তিমূলক উন্নয়নে রূপ নেয়।"
+    ]
+  }
+}

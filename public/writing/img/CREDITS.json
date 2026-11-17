@@ -82,5 +82,59 @@
   "source": "https://commons.wikimedia.org/wiki/File:Manik_Bandopadhyay2.jpg",
   "license": "Public domain",
   "author": "Unknown author"
+ },
+ "harper-lee": {
+  "file": "/writing/img/harper-lee.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Photo_portrait_of_Harper_Lee_(To_Kill_a_Mockingbird_dust_jacket,_1960)_(cropped).jpg",
+  "license": "Public domain",
+  "author": "Photo credited to Truman Capote."
+ },
+ "kafka": {
+  "file": "/writing/img/kafka.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Franz_Kafka,_1923.jpg",
+  "license": "Public domain",
+  "author": "Unknown photographer"
+ },
+ "sinclair": {
+  "file": "/writing/img/sinclair.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Upton_Sinclair_Portrait_1934.jpg",
+  "license": "Public domain",
+  "author": "Unknown authorUnknown author"
+ },
+ "book-mockingbird": {
+  "file": "/writing/img/book-mockingbird.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:To_Kill_a_Mockingbird_(first_edition_cover).jpg",
+  "license": "Public domain",
+  "author": "The credit \"Jacket design by Shirley Smith\" is found on the left jacket flap. (There is very little information online about Shirley Smith; this presents a possible problem for use of the image in cou"
+ },
+ "book-the-trial": {
+  "file": "/writing/img/book-the-trial.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Kafka_Der_Prozess_1925.jpg",
+  "license": "Public domain",
+  "author": "© Foto H.-P.Haack"
+ },
+ "book-the-jungle": {
+  "file": "/writing/img/book-the-jungle.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:The_Jungle_(1906)_cover.jpg",
+  "license": "Public domain",
+  "author": "Unknown authorUnknown author"
+ },
+ "book-oil": {
+  "file": "/writing/img/book-oil.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Oil!_(Upton_Sinclair_novel_-_cover_art).jpg",
+  "license": "Public domain",
+  "author": "Albert &amp; Charles Boni"
+ },
+ "book-of-mice-and-men": {
+  "file": "/writing/img/book-of-mice-and-men.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Of_Mice_and_Men_(1937_1st_ed_dust_jacket).jpg",
+  "license": "Public domain",
+  "author": "Illustrated by Ross MacDonald. Published by Covici-Friede."
+ },
+ "book-cannery-row": {
+  "file": "/writing/img/book-cannery-row.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Cannery_Row_(1945_1st_ed_dust_jacket).jpg",
+  "license": "Public domain",
+  "author": "Illustrated by Arthur Hawkins, Jr. Published by Viking Press."
  }
 }

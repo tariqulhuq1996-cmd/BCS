@@ -1,0 +1,690 @@
+{
+  "series": "Daily English Writing Practice",
+  "day": "Day 04",
+  "exam": "52nd BCS Written",
+  "lessonNo": "Lesson 04",
+  "theme": "Governance & Public Administration",
+  "topic": "Transparency and Accountability in Public Administration",
+  "intro": [
+    "আজকের পাঠে বিশেষ গুরুত্ব থাকবে Good Governance, Public Accountability, Rule of Law, Transparency এবং দুর্নীতি প্রতিরোধ নিয়ে ইংরেজিতে বিশ্লেষণধর্মী লেখার ওপর।",
+    "Day 01: Digital Literacy · Day 02: Climate Change · Day 03: Education and Skill Development · Day 04: Governance and Accountability",
+    "আজ আমরা Problem → Institutional Responsibility → Citizen Participation → Solutions → Conclusion কাঠামোয় Paragraph তৈরি করব।"
+  ],
+  "paragraph": {
+    "title": "Transparency and Accountability in Public Administration",
+    "words": 138,
+    "pattern": "Problem → Responsibility → Solutions",
+    "text": "Public accountability is a cornerstone of good governance. It ensures that public officials explain their decisions, use public resources responsibly and remain answerable for their actions. Transparency allows citizens to access relevant information, while independent oversight helps detect misuse of authority. However, accountability cannot be achieved through rules alone. Institutions must be impartial, complaints must be investigated fairly, and those who violate the law must face appropriate consequences. Digital services can make public procedures more accessible and reduce unnecessary discretion, but technology cannot replace ethical leadership. Citizens, journalists and civil society also play an important role in monitoring public institutions. When information is available and decisions are open to scrutiny, public trust is more likely to grow. Ultimately, accountable governance requires strong institutions, respect for the rule of law and a shared commitment to serving the public interest.",
+    "tip": "Governance বিষয়ে রচনা লিখলে শুধু দুর্নীতির কথা বলবে না। জবাবদিহি, আইনের শাসন, প্রাতিষ্ঠানিক স্বাধীনতা, নাগরিক অংশগ্রহণ ও প্রশাসনিক সংস্কার—এসব বিষয়ও যুক্ত করবে।"
+  },
+  "structure": [
+    {
+      "step": "Introduction",
+      "what": "Public accountability-এর গুরুত্ব"
+    },
+    {
+      "step": "Explanation",
+      "what": "সরকারি কর্মকর্তাদের জবাবদিহি"
+    },
+    {
+      "step": "Institutional Role",
+      "what": "স্বচ্ছতা ও স্বাধীন তদারকি"
+    },
+    {
+      "step": "Challenges",
+      "what": "ক্ষমতার অপব্যবহার ও অনিয়ম"
+    },
+    {
+      "step": "Solutions",
+      "what": "নিরপেক্ষ প্রতিষ্ঠান ও প্রযুক্তির ব্যবহার"
+    },
+    {
+      "step": "Citizen Role",
+      "what": "নাগরিক ও গণমাধ্যমের অংশগ্রহণ"
+    },
+    {
+      "step": "Conclusion",
+      "what": "আইনের শাসন ও জনস্বার্থ"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "Accountability",
+      "bn": "জবাবদিহি",
+      "pos": "Noun",
+      "synonym": "Answerability, Responsibility (Related expression: Public accountability)",
+      "example": "Public accountability is essential for effective administration.",
+      "exampleBn": "কার্যকর প্রশাসনের জন্য জনজবাবদিহি অপরিহার্য।"
+    },
+    {
+      "word": "Impartial",
+      "bn": "নিরপেক্ষ",
+      "pos": "Adjective",
+      "synonym": "Unbiased, Fair",
+      "antonym": "Biased, Prejudiced",
+      "example": "Public officials should remain impartial while performing their duties.",
+      "exampleBn": "সরকারি কর্মকর্তাদের দায়িত্ব পালনের ক্ষেত্রে নিরপেক্ষ থাকা উচিত।"
+    },
+    {
+      "word": "Integrity",
+      "bn": "নৈতিক সততা, চারিত্রিক দৃঢ়তা",
+      "pos": "Noun",
+      "synonym": "Honesty, Uprightness",
+      "antonym": "Dishonesty, Corruption",
+      "example": "Integrity is an essential quality of an effective public servant.",
+      "exampleBn": "একজন কার্যকর সরকারি কর্মচারীর অপরিহার্য গুণ হলো নৈতিক সততা।"
+    },
+    {
+      "word": "Oversight",
+      "bn": "তদারকি, কার্যক্রম পর্যবেক্ষণ",
+      "pos": "Noun",
+      "synonym": "Supervision, Monitoring",
+      "example": "Independent oversight can prevent the misuse of public funds.",
+      "exampleBn": "স্বাধীন তদারকি সরকারি অর্থের অপব্যবহার প্রতিরোধ করতে পারে।"
+    },
+    {
+      "word": "Misconduct",
+      "bn": "অসদাচরণ, দায়িত্বে অনিয়ম",
+      "pos": "Noun",
+      "synonym": "Wrongdoing, Improper Behaviour",
+      "example": "Strict measures should be taken against official misconduct.",
+      "exampleBn": "সরকারি দায়িত্ব পালনে অসদাচরণের বিরুদ্ধে কঠোর ব্যবস্থা নেওয়া উচিত।"
+    }
+  ],
+  "prepositional": [
+    {
+      "phrase": "In accordance with",
+      "bn": "অনুযায়ী / সঙ্গে সামঞ্জস্য রেখে",
+      "example": "Public officials must act in accordance with the law.",
+      "exampleBn": "সরকারি কর্মকর্তাদের আইন অনুযায়ী কাজ করতে হবে।"
+    },
+    {
+      "phrase": "On behalf of",
+      "bn": "পক্ষ থেকে",
+      "example": "The representative spoke on behalf of the local community.",
+      "exampleBn": "প্রতিনিধি স্থানীয় জনগোষ্ঠীর পক্ষ থেকে বক্তব্য দিয়েছেন।"
+    },
+    {
+      "phrase": "In the interest of",
+      "bn": "স্বার্থে / কল্যাণে",
+      "example": "Government policies should be designed in the interest of the public.",
+      "exampleBn": "সরকারি নীতিমালা জনগণের স্বার্থে প্রণয়ন করা উচিত।"
+    },
+    {
+      "phrase": "Subject to",
+      "bn": "সাপেক্ষে",
+      "example": "All public institutions should be subject to proper scrutiny.",
+      "exampleBn": "সব সরকারি প্রতিষ্ঠান যথাযথ পর্যালোচনা ও তদারকির আওতাধীন থাকা উচিত।"
+    },
+    {
+      "phrase": "With a view to",
+      "bn": "উদ্দেশ্যে / লক্ষ্য নিয়ে",
+      "example": "The government introduced reforms with a view to improving public services.",
+      "exampleBn": "সরকারি সেবার মান উন্নয়নের উদ্দেশ্যে সরকার সংস্কার কার্যক্রম চালু করেছে।"
+    }
+  ],
+  "idioms": {
+    "items": [
+      {
+        "phrase": "Turn a blind eye",
+        "bn": "জেনেশুনে উপেক্ষা করা",
+        "example": "Authorities should not turn a blind eye to corruption."
+      },
+      {
+        "phrase": "Be above the law",
+        "bn": "আইনের ঊর্ধ্বে থাকা",
+        "example": "No individual should be above the law."
+      },
+      {
+        "phrase": "Keep someone in check",
+        "bn": "কাউকে নিয়ন্ত্রণে বা জবাবদিহির মধ্যে রাখা",
+        "example": "Strong institutions help keep public officials in check."
+      },
+      {
+        "phrase": "Sweep something under the rug",
+        "bn": "কোনো সমস্যা গোপন করে রাখা",
+        "example": "Misconduct should not be swept under the rug."
+      },
+      {
+        "phrase": "Stand one's ground",
+        "bn": "নিজের নীতিগত অবস্থানে অটল থাকা",
+        "example": "Honest officials must stand their ground against undue pressure."
+      }
+    ],
+    "tip": "Formal Essay-তে above the law, turn a blind eye এবং stand one's ground ব্যবহার করা যায়। তবে এগুলো কথ্যধর্মী অভিব্যক্তি; অতিরিক্ত ব্যবহার করলে লেখার আনুষ্ঠানিকতা কমে যেতে পারে।"
+  },
+  "writers": {
+    "intro": "আজকের Governance ও Justice বিষয়টি বোঝার জন্য দুইজন লেখকের একটি করে উল্লেখযোগ্য সাহিত্যকর্ম পড়ব।",
+    "items": [
+      {
+        "name": "Harper Lee",
+        "nationality": "American",
+        "identity": "Novelist",
+        "book": "To Kill a Mockingbird",
+        "published": "1960",
+        "genre": "Social Novel / Bildungsroman",
+        "summary": "উপন্যাসটির পটভূমি যুক্তরাষ্ট্রের Alabama অঙ্গরাজ্যের কাল্পনিক Maycomb শহর। কাহিনি বর্ণিত হয়েছে শিশু Scout Finch-এর দৃষ্টিকোণ থেকে। তার বাবা Atticus Finch একজন আইনজীবী, যিনি Tom Robinson নামের একজন কৃষ্ণাঙ্গ ব্যক্তির পক্ষে আদালতে মামলা পরিচালনা করেন। বর্ণবৈষম্যপূর্ণ সমাজে Tom ন্যায়বিচার থেকে বঞ্চিত হন। উপন্যাসের মধ্য দিয়ে জাতিগত বৈষম্য, সামাজিক কুসংস্কার, ন্যায়বিচার, সহমর্মিতা ও নৈতিক সাহসের বিষয়গুলো ফুটে উঠেছে।",
+        "characters": [
+          {
+            "name": "Atticus Finch",
+            "desc": "একজন আইনজীবী। তাঁর মাধ্যমে ন্যায়বিচার, নৈতিক সাহস এবং আইনের চোখে সমতার গুরুত্ব তুলে ধরা হয়েছে।"
+          },
+          {
+            "name": "Scout Finch",
+            "desc": "উপন্যাসের কথক ও কেন্দ্রীয় চরিত্র। তার অভিজ্ঞতার মাধ্যমে শিশুমন, সামাজিক বৈষম্য ও নৈতিক উপলব্ধির বিকাশ প্রকাশ পেয়েছে।"
+          },
+          {
+            "name": "Tom Robinson",
+            "desc": "একজন কৃষ্ণাঙ্গ শ্রমিক, যিনি অন্যায় অভিযোগের মুখোমুখি হন। তাঁর মাধ্যমে বর্ণবৈষম্য ও বিচারব্যবস্থার সীমাবদ্ধতা তুলে ধরা হয়েছে।"
+          }
+        ],
+        "message": [
+          "Harper Lee দেখিয়েছেন, সমাজে আইন ও বিচারব্যবস্থা থাকলেই সবসময় ন্যায়বিচার নিশ্চিত হয় না। সামাজিক পূর্বধারণা, বর্ণবৈষম্য ও ক্ষমতার অসমতা বিচারপ্রক্রিয়াকে প্রভাবিত করতে পারে।",
+          "Atticus Finch-এর চরিত্রের মাধ্যমে লেখক নৈতিক সাহস, নিরপেক্ষতা এবং ন্যায়বিচারের প্রতি অঙ্গীকারের গুরুত্ব তুলে ধরেছেন।"
+        ],
+        "bcsUse": [
+          "Rule of Law",
+          "Human Rights",
+          "Social Justice",
+          "Racial Discrimination",
+          "Ethical Leadership"
+        ],
+        "photo": {
+          "src": "/writing/img/harper-lee.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": {
+          "src": "/writing/img/book-mockingbird.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        }
+      },
+      {
+        "name": "Franz Kafka",
+        "nationality": "Bohemian-born, German-language writer (then Austria-Hungary)",
+        "identity": "Novelist and Short Story Writer",
+        "book": "The Trial (Der Prozess)",
+        "published": "1925 (Posthumously)",
+        "genre": "Philosophical / Absurdist Novel",
+        "summary": "The Trial উপন্যাসে Josef K. নামের একজন ব্যাংক কর্মকর্তা হঠাৎ গ্রেপ্তার হন। কিন্তু কী অপরাধে তাঁকে গ্রেপ্তার করা হয়েছে, তা তাঁকে জানানো হয় না। তিনি একটি জটিল ও দুর্বোধ্য বিচারব্যবস্থার মধ্যে নিজের নির্দোষিতা প্রমাণের চেষ্টা করেন। কিন্তু বিচারপ্রক্রিয়ার নিয়ম, কর্তৃপক্ষ এবং সিদ্ধান্ত গ্রহণের পদ্ধতি তাঁর কাছে অস্পষ্ট থেকে যায়। উপন্যাসে আমলাতান্ত্রিক জটিলতা, ক্ষমতার অপব্যবহার, বিচারব্যবস্থার অস্বচ্ছতা এবং ব্যক্তির অসহায়ত্ব ফুটে উঠেছে।",
+        "characters": [
+          {
+            "name": "Josef K.",
+            "desc": "উপন্যাসের প্রধান চরিত্র। তাঁর মাধ্যমে অস্বচ্ছ বিচারব্যবস্থা ও আমলাতান্ত্রিক ক্ষমতার সামনে একজন সাধারণ মানুষের অসহায়ত্ব তুলে ধরা হয়েছে।"
+          },
+          {
+            "name": "The Priest",
+            "desc": "উপন্যাসের গুরুত্বপূর্ণ চরিত্র। আইনের ব্যাখ্যা ও বিচারব্যবস্থার দুর্বোধ্যতার বিষয়টি তাঁর সঙ্গে Josef K.-এর আলোচনায় প্রকাশ পায়।"
+          }
+        ],
+        "message": [
+          "Kafka এমন একটি ব্যবস্থার চিত্র তুলে ধরেছেন, যেখানে ক্ষমতাধর কর্তৃপক্ষের সিদ্ধান্ত সাধারণ মানুষের কাছে অস্পষ্ট ও দুর্বোধ্য। ব্যক্তি নিজের অধিকার রক্ষার চেষ্টা করলেও জটিল আমলাতান্ত্রিক প্রক্রিয়া তাকে অসহায় করে তোলে।"
+        ],
+        "bcsUse": [
+          "Bureaucratic Complexity",
+          "Transparency in Administration",
+          "Access to Justice",
+          "Abuse of Power",
+          "Rule of Law"
+        ],
+        "photo": {
+          "src": "/writing/img/kafka.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": {
+          "src": "/writing/img/book-the-trial.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        }
+      }
+    ],
+    "takeaway": [
+      "To Kill a Mockingbird আমাদের ন্যায়বিচার ও সামাজিক বৈষম্যের সম্পর্ক বোঝায়।",
+      "The Trial আমাদের অস্বচ্ছ প্রশাসনিক ও বিচারিক প্রক্রিয়ার কারণে সাধারণ মানুষের ভোগান্তি বোঝায়।",
+      "এই দুটি সাহিত্যকর্মের উদাহরণ ব্যবহার করে Rule of Law, Justice এবং Good Governance বিষয়ে Essay-তে সাহিত্যিক রেফারেন্স দেওয়া সম্ভব।"
+    ]
+  },
+  "quote": {
+    "text": "Government of the people, by the people, for the people.",
+    "author": "Abraham Lincoln",
+    "work": "Gettysburg Address (19 November 1863)",
+    "bn": "জনগণের সরকার, জনগণের দ্বারা পরিচালিত সরকার এবং জনগণের কল্যাণে পরিচালিত সরকার।",
+    "explanation": "গণতান্ত্রিক রাষ্ট্রব্যবস্থায় জনগণই ক্ষমতার মূল উৎস। সরকারের দায়িত্ব হলো জনগণের অধিকার রক্ষা করা এবং তাদের কল্যাণে কাজ করা।",
+    "useIn": [
+      "Democracy and Good Governance",
+      "Public Accountability",
+      "People's Participation",
+      "Rule of Law",
+      "Democratic Institutions"
+    ]
+  },
+  "sentences": [
+    {
+      "en": "Public accountability is a cornerstone of good governance.",
+      "bn": "জনজবাবদিহি সুশাসনের অন্যতম ভিত্তি।",
+      "notes": [
+        "Public accountability = জনজবাবদিহি",
+        "Cornerstone = ভিত্তিপ্রস্তর / প্রধান ভিত্তি",
+        "Good governance = সুশাসন"
+      ]
+    },
+    {
+      "en": "It ensures that public officials explain their decisions, use public resources responsibly and remain answerable for their actions.",
+      "bn": "এটি নিশ্চিত করে যে সরকারি কর্মকর্তারা তাঁদের সিদ্ধান্তের ব্যাখ্যা দেবেন, রাষ্ট্রীয় সম্পদ দায়িত্বশীলতার সঙ্গে ব্যবহার করবেন এবং নিজেদের কর্মকাণ্ডের জন্য জবাবদিহি করবেন।",
+      "notes": [
+        "Public officials = সরকারি কর্মকর্তা",
+        "Responsibly = দায়িত্বশীলতার সঙ্গে",
+        "Answerable = জবাবদিহি করতে বাধ্য"
+      ]
+    },
+    {
+      "en": "Transparency allows citizens to access relevant information, while independent oversight helps detect misuse of authority.",
+      "bn": "স্বচ্ছতা নাগরিকদের প্রাসঙ্গিক তথ্য পাওয়ার সুযোগ দেয়, অন্যদিকে স্বাধীন তদারকি ক্ষমতার অপব্যবহার শনাক্ত করতে সহায়তা করে।",
+      "notes": [
+        "Transparency = স্বচ্ছতা",
+        "Relevant information = প্রাসঙ্গিক তথ্য",
+        "Oversight = তদারকি",
+        "Misuse of authority = ক্ষমতার অপব্যবহার",
+        "এখানে while দুটি সম্পর্কিত কিন্তু ভিন্ন ভূমিকা প্রকাশ করেছে।"
+      ]
+    },
+    {
+      "en": "However, accountability cannot be achieved through rules alone.",
+      "bn": "তবে শুধু নিয়মকানুনের মাধ্যমে জবাবদিহি প্রতিষ্ঠা করা সম্ভব নয়।",
+      "notes": [
+        "However = তবে",
+        "Achieved = অর্জিত / প্রতিষ্ঠিত",
+        "Alone = শুধু / একমাত্র"
+      ]
+    },
+    {
+      "en": "Institutions must be impartial, complaints must be investigated fairly, and those who violate the law must face appropriate consequences.",
+      "bn": "প্রতিষ্ঠানগুলোকে নিরপেক্ষ হতে হবে, অভিযোগগুলো ন্যায়সংগতভাবে তদন্ত করতে হবে এবং যারা আইন লঙ্ঘন করবে তাদের উপযুক্ত পরিণতির মুখোমুখি হতে হবে।",
+      "notes": [
+        "Impartial = নিরপেক্ষ",
+        "Investigated = তদন্ত করা",
+        "Violate the law = আইন লঙ্ঘন করা",
+        "Appropriate consequences = উপযুক্ত পরিণতি"
+      ]
+    },
+    {
+      "en": "Digital services can make public procedures more accessible and reduce unnecessary discretion, but technology cannot replace ethical leadership.",
+      "bn": "ডিজিটাল সেবা সরকারি কার্যক্রমকে আরও সহজলভ্য করতে এবং অপ্রয়োজনীয় ব্যক্তিনির্ভর সিদ্ধান্ত গ্রহণ কমাতে পারে, কিন্তু প্রযুক্তি নৈতিক নেতৃত্বের বিকল্প হতে পারে না।",
+      "notes": [
+        "Public procedures = সরকারি কার্যপ্রক্রিয়া",
+        "Accessible = সহজলভ্য",
+        "Discretion = বিবেচনাভিত্তিক সিদ্ধান্ত গ্রহণের ক্ষমতা",
+        "Ethical leadership = নৈতিক নেতৃত্ব"
+      ]
+    },
+    {
+      "en": "Citizens, journalists and civil society also play an important role in monitoring public institutions.",
+      "bn": "নাগরিক, সাংবাদিক এবং নাগরিক সমাজও সরকারি প্রতিষ্ঠানগুলো পর্যবেক্ষণে গুরুত্বপূর্ণ ভূমিকা পালন করে।",
+      "notes": [
+        "Civil society = নাগরিক সমাজ",
+        "Monitoring = পর্যবেক্ষণ",
+        "Public institutions = সরকারি প্রতিষ্ঠান"
+      ]
+    },
+    {
+      "en": "When information is available and decisions are open to scrutiny, public trust is more likely to grow.",
+      "bn": "যখন তথ্য সহজলভ্য থাকে এবং সিদ্ধান্তগুলো পর্যালোচনার জন্য উন্মুক্ত থাকে, তখন জনগণের আস্থা বৃদ্ধির সম্ভাবনা বেশি থাকে।",
+      "notes": [
+        "Available = সহজলভ্য",
+        "Open to scrutiny = পর্যালোচনার জন্য উন্মুক্ত",
+        "Public trust = জনগণের আস্থা"
+      ]
+    },
+    {
+      "en": "Ultimately, accountable governance requires strong institutions, respect for the rule of law and a shared commitment to serving the public interest.",
+      "bn": "পরিশেষে, জবাবদিহিমূলক শাসনব্যবস্থার জন্য শক্তিশালী প্রতিষ্ঠান, আইনের শাসনের প্রতি শ্রদ্ধা এবং জনস্বার্থে কাজ করার সম্মিলিত অঙ্গীকার প্রয়োজন।",
+      "notes": [
+        "Accountable governance = জবাবদিহিমূলক শাসনব্যবস্থা",
+        "Rule of law = আইনের শাসন",
+        "Shared commitment = সম্মিলিত অঙ্গীকার",
+        "Public interest = জনস্বার্থ"
+      ]
+    }
+  ],
+  "wordChoice": {
+    "items": [
+      {
+        "title": "Accountability vs Responsibility vs Liability",
+        "rows": [
+          {
+            "word": "Accountability",
+            "meaning": "কাজের জন্য ব্যাখ্যা ও জবাব দিতে বাধ্য থাকা"
+          },
+          {
+            "word": "Responsibility",
+            "meaning": "কোনো কাজ বা দায়িত্ব পালনের কর্তব্য"
+          },
+          {
+            "word": "Liability",
+            "meaning": "আইনগত বা আর্থিক দায় বহনের বাধ্যবাধকতা"
+          }
+        ],
+        "examples": [
+          "Public accountability strengthens governance.",
+          "Every officer has a responsibility to serve citizens.",
+          "The organisation may face legal liability for misconduct."
+        ],
+        "note": "মনে রাখবে: Responsibility হলো দায়িত্ব; Accountability হলো সেই দায়িত্ব পালনের জন্য জবাবদিহি; Liability হলো দায়বদ্ধতার আইনগত বা আর্থিক দিক।"
+      },
+      {
+        "title": "Transparency vs Openness vs Disclosure",
+        "rows": [
+          {
+            "word": "Transparency",
+            "meaning": "সিদ্ধান্ত ও কার্যক্রম সম্পর্কে স্বচ্ছতা।"
+          },
+          {
+            "word": "Openness",
+            "meaning": "তথ্য, আলোচনা বা অংশগ্রহণের জন্য উন্মুক্ততা।"
+          },
+          {
+            "word": "Disclosure",
+            "meaning": "নির্দিষ্ট তথ্য আনুষ্ঠানিকভাবে প্রকাশ করা।"
+          }
+        ],
+        "examples": [
+          "Transparency builds public trust.",
+          "Openness encourages citizen participation.",
+          "Financial disclosure helps identify conflicts of interest."
+        ]
+      },
+      {
+        "title": "Impartial vs Neutral vs Unbiased",
+        "rows": [
+          {
+            "word": "Impartial",
+            "meaning": "সিদ্ধান্ত গ্রহণে কোনো পক্ষকে অন্যায্য সুবিধা না দেওয়া।"
+          },
+          {
+            "word": "Neutral",
+            "meaning": "কোনো পক্ষের প্রতি অবস্থান না নেওয়া।"
+          },
+          {
+            "word": "Unbiased",
+            "meaning": "পূর্বধারণা বা পক্ষপাত থেকে মুক্ত।"
+          }
+        ],
+        "examples": [
+          "Judges must remain impartial.",
+          "A mediator should remain neutral.",
+          "Public recruitment should follow an unbiased process."
+        ],
+        "note": "মনে রাখবে: বিচারকের ক্ষেত্রে Impartial এবং মধ্যস্থতাকারীর ক্ষেত্রে Neutral বিশেষভাবে উপযুক্ত।"
+      },
+      {
+        "title": "Authority vs Power vs Discretion",
+        "rows": [
+          {
+            "word": "Authority",
+            "meaning": "আইন বা নিয়ম দ্বারা প্রদত্ত আনুষ্ঠানিক কর্তৃত্ব।"
+          },
+          {
+            "word": "Power",
+            "meaning": "কোনো কিছু করার বা প্রভাব বিস্তারের সামর্থ্য।"
+          },
+          {
+            "word": "Discretion",
+            "meaning": "নির্দিষ্ট সীমার মধ্যে বিবেচনা করে সিদ্ধান্ত নেওয়ার ক্ষমতা।"
+          }
+        ],
+        "examples": [
+          "The authority must follow the law.",
+          "Power should not be abused.",
+          "Administrative discretion should be exercised responsibly."
+        ]
+      },
+      {
+        "title": "Misconduct vs Corruption vs Irregularity",
+        "rows": [
+          {
+            "word": "Misconduct",
+            "meaning": "পেশাগত বা দায়িত্ব পালনের ক্ষেত্রে অসদাচরণ।"
+          },
+          {
+            "word": "Corruption",
+            "meaning": "ব্যক্তিগত সুবিধার জন্য ক্ষমতা বা দায়িত্বের অসৎ ব্যবহার।"
+          },
+          {
+            "word": "Irregularity",
+            "meaning": "নির্ধারিত নিয়ম বা পদ্ধতির ব্যত্যয়।"
+          }
+        ],
+        "examples": [
+          "Official misconduct damages institutional credibility.",
+          "Corruption wastes public resources.",
+          "Financial irregularities require investigation."
+        ],
+        "note": "মনে রাখবে: এই তিনটি শব্দ কাছাকাছি অর্থ প্রকাশ করলেও সব ক্ষেত্রে পরস্পরের বিকল্প নয়।"
+      }
+    ]
+  },
+  "grammar": [
+    {
+      "title": "Passive Voice",
+      "structure": "Subject + Modal Verb + Be + Past Participle.",
+      "usage": "Paragraph-এ: Complaints must be investigated fairly.",
+      "example": "Complaints must be investigated fairly.",
+      "explanation": "এখানে কে কাজটি করছে তার চেয়ে কাজটি সম্পন্ন হওয়া বেশি গুরুত্বপূর্ণ।",
+      "more": [
+        "Public funds must be used responsibly.",
+        "Complaints should be investigated independently.",
+        "Citizens' rights must be protected."
+      ],
+      "wrong": "Complaints must investigated fairly.",
+      "right": "Complaints must be investigated fairly."
+    },
+    {
+      "title": "Relative Clause — Who",
+      "structure": "Noun / Pronoun + who + Verb.",
+      "usage": "Paragraph-এ: Those who violate the law must face appropriate consequences.",
+      "example": "Those who violate the law must face appropriate consequences.",
+      "explanation": "Who ব্যবহার করে মানুষের পরিচয় বা বৈশিষ্ট্য সম্পর্কে অতিরিক্ত তথ্য দেওয়া হয়।",
+      "more": [
+        "Citizens who follow the law contribute to social stability.",
+        "Officials who abuse their authority should be held accountable.",
+        "People who respect others' rights help build a fair society."
+      ],
+      "wrong": "People which violate the law should be punished.",
+      "right": "People who violate the law should be punished."
+    }
+  ],
+  "collocations": [
+    {
+      "expr": "Public accountability",
+      "bn": "জনজবাবদিহি"
+    },
+    {
+      "expr": "Independent oversight",
+      "bn": "স্বাধীন তদারকি"
+    },
+    {
+      "expr": "Misuse of authority",
+      "bn": "ক্ষমতার অপব্যবহার"
+    },
+    {
+      "expr": "Public resources",
+      "bn": "রাষ্ট্রীয় সম্পদ"
+    },
+    {
+      "expr": "Serve the public interest",
+      "bn": "জনস্বার্থে কাজ করা"
+    }
+  ],
+  "connectors": [
+    {
+      "word": "However",
+      "bn": "তবে",
+      "use": "বিপরীত বক্তব্য"
+    },
+    {
+      "word": "Moreover",
+      "bn": "অধিকন্তু",
+      "use": "অতিরিক্ত তথ্য"
+    },
+    {
+      "word": "While",
+      "bn": "অন্যদিকে / যখন",
+      "use": "তুলনা বা সময়"
+    },
+    {
+      "word": "Consequently",
+      "bn": "ফলস্বরূপ",
+      "use": "পরিণতি"
+    },
+    {
+      "word": "Ultimately",
+      "bn": "পরিশেষে",
+      "use": "উপসংহার"
+    }
+  ],
+  "transformation": [
+    {
+      "label": "Simple Sentence",
+      "text": "Strong institutions ensure public accountability."
+    },
+    {
+      "label": "Compound Sentence",
+      "text": "Institutions must be strong, and they must ensure public accountability."
+    },
+    {
+      "label": "Complex Sentence",
+      "text": "When institutions are strong, they can ensure public accountability."
+    },
+    {
+      "label": "Passive Sentence",
+      "text": "Public accountability must be ensured by strong institutions."
+    },
+    {
+      "label": "Advanced Expression",
+      "text": "By strengthening institutional mechanisms, governments can promote transparency and ensure public accountability."
+    }
+  ],
+  "transformationNote": "By + Verb-ing ব্যবহার করে কোনো কাজের পদ্ধতি বা মাধ্যম প্রকাশ করা যায়।",
+  "translation": {
+    "note": "প্রথমে নিজে অনুবাদ করবে। নিজের অনুবাদ শেষ হলে উত্তর মিলিয়ে নেবে।",
+    "bnToEn": [
+      {
+        "q": "সুশাসন প্রতিষ্ঠার জন্য সরকারি প্রতিষ্ঠানে স্বচ্ছতা ও জবাবদিহি নিশ্চিত করা প্রয়োজন।",
+        "a": "Transparency and accountability must be ensured in public institutions to establish good governance."
+      },
+      {
+        "q": "কোনো ব্যক্তিই আইনের ঊর্ধ্বে নয় এবং সবাইকে আইনের প্রতি শ্রদ্ধাশীল হতে হবে।",
+        "a": "No individual is above the law, and everyone must respect it."
+      }
+    ],
+    "enToBn": [
+      {
+        "q": "Independent institutions play a vital role in protecting citizens' rights.",
+        "a": "নাগরিকদের অধিকার রক্ষায় স্বাধীন প্রতিষ্ঠানগুলো গুরুত্বপূর্ণ ভূমিকা পালন করে।"
+      },
+      {
+        "q": "Public trust can be strengthened through transparency and responsible leadership.",
+        "a": "স্বচ্ছতা ও দায়িত্বশীল নেতৃত্বের মাধ্যমে জনগণের আস্থা আরও শক্তিশালী করা যায়।"
+      }
+    ]
+  },
+  "assignment": {
+    "intro": "নিচের ১০টি Expression থেকে অন্তত ৫টি ব্যবহার করে নিজে ৫টি English Sentence লিখবে।",
+    "expressions": [
+      "Public accountability",
+      "Rule of law",
+      "Impartial institutions",
+      "Misuse of authority",
+      "Independent oversight",
+      "Turn a blind eye",
+      "Public interest",
+      "Ethical leadership",
+      "Transparency in administration",
+      "Citizen participation"
+    ],
+    "criteria": [
+      "Grammar Accuracy",
+      "Right Word Selection",
+      "Sentence Structure",
+      "Natural Expression",
+      "BCS Written Standard"
+    ],
+    "note": "তোমার লেখা বাক্যগুলো নিচের ঘরে লিখে রাখো (এই ডিভাইসে সংরক্ষিত থাকবে)। তারপর প্রতিটি বাক্যে Grammar mistake, Corrected sentence, Better expression ও বাংলা ব্যাখ্যা—এই চারটি দিক ধরে নিজে মিলিয়ে দেখো।"
+  },
+  "sections": [
+    {
+      "title": "Additional Writing Practice",
+      "sub": "Paragraph Practice একা সম্পূর্ণ Written English প্রস্তুতির বিকল্প নয়। তাই আলাদাভাবে Summary, Essay Outline ও Letter Writing অনুশীলন করবে।",
+      "blocks": [
+        {
+          "t": "h",
+          "text": "A. Summary Practice"
+        },
+        {
+          "t": "p",
+          "text": "আজকের মূল Paragraph-টি ৪০–৫০ শব্দের মধ্যে সংক্ষেপে লেখো। লক্ষ্য: মূল বক্তব্য অক্ষুণ্ণ রেখে অপ্রয়োজনীয় ব্যাখ্যা বাদ দেওয়া।"
+        },
+        {
+          "t": "write",
+          "id": "summary",
+          "label": "আমার Summary (৪০–৫০ শব্দ)",
+          "rows": 4,
+          "placeholder": "Write your summary here…"
+        },
+        {
+          "t": "h",
+          "text": "B. Essay Outline Practice"
+        },
+        {
+          "t": "p",
+          "text": "Topic: Good Governance: Challenges and Prospects in Bangladesh — নিজে নিচের বিষয়গুলো ধরে Essay Outline তৈরি করো:"
+        },
+        {
+          "t": "ol",
+          "items": [
+            "Introduction",
+            "Meaning and Principles of Good Governance",
+            "Major Challenges",
+            "Institutional Accountability",
+            "Role of Citizens and Media",
+            "Necessary Reforms",
+            "Conclusion"
+          ]
+        },
+        {
+          "t": "write",
+          "id": "outline",
+          "label": "আমার Essay Outline",
+          "rows": 8,
+          "placeholder": "Point-wise outline…",
+          "count": "lines"
+        },
+        {
+          "t": "h",
+          "text": "C. Letter Writing Practice"
+        },
+        {
+          "t": "p",
+          "text": "Task: Write a letter to the Editor of a national newspaper expressing concern about the lack of transparency and accountability in public service delivery."
+        },
+        {
+          "t": "tip",
+          "label": "লক্ষ্য",
+          "text": "Formal tone, appropriate salutation, clear argument and a suitable closing."
+        },
+        {
+          "t": "write",
+          "id": "letter",
+          "label": "আমার Letter to the Editor",
+          "rows": 10,
+          "placeholder": "To / The Editor…"
+        }
+      ]
+    }
+  ],
+  "finalGoal": {
+    "title": "Day 04 — আজকের মূল শিক্ষা",
+    "text": [
+      "জবাবদিহিমূলক শাসনব্যবস্থার জন্য শুধু নিয়মকানুন যথেষ্ট নয়; নিরপেক্ষ প্রতিষ্ঠান, আইনের শাসন, স্বচ্ছ তথ্যপ্রবাহ, নৈতিক নেতৃত্ব এবং সচেতন নাগরিকের অংশগ্রহণ — সবকিছুর সমন্বয় প্রয়োজন।"
+    ]
+  },
+  "connectorsTip": "একটি Paragraph-এ একই Connector বারবার ব্যবহার না করে বাক্যের অর্থ অনুযায়ী Connector নির্বাচন করবে।"
+}
