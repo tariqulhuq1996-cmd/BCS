@@ -14,7 +14,7 @@ export type WritingSubjectCode = (typeof WRITING_SUBJECTS)[number]["code"];
 export const subjectOf = (code: string) => WRITING_SUBJECTS.find((s) => s.code === code);
 
 export type CardState = "read" | "open" | "locked";
-export type CardSummary = { code: string; order: number; title: string; section: string; paper: string | null; kind: string | null; hasInfo: boolean; lessonTheme: string | null; state: CardState };
+export type CardSummary = { code: string; order: number; title: string; section: string; paper: string | null; kind: string | null; hasInfo: boolean; lessonTheme: string | null; lessonTopic: string | null; state: CardState };
 
 /** দৈনিক লেখার পাঠের বিষয় (ইংরেজি): টাইল ও পাতায় "Day 02" ধাঁচ */
 export const LESSON_SUBJECTS = new Set(["EN"]);
@@ -47,7 +47,7 @@ export async function getSubjectCards(db: PrismaClient, userId: string, subject:
   });
   const read = new Set((await db.writingCardRead.findMany({ where: { userId, cardId: { in: cards.map((c) => c.id) } }, select: { cardId: true } })).map((r) => r.cardId));
   const st = states(cards, read, admin);
-  return cards.map((c, i) => ({ code: c.code, order: c.order, title: c.title, section: c.section, paper: c.paper, kind: c.kind, hasInfo: !!c.info || !!c.lesson, lessonTheme: asLesson(c.lesson)?.theme ?? null, state: st[i] }));
+  return cards.map((c, i) => ({ code: c.code, order: c.order, title: c.title, section: c.section, paper: c.paper, kind: c.kind, hasInfo: !!c.info || !!c.lesson, lessonTheme: asLesson(c.lesson)?.theme ?? null, lessonTopic: asLesson(c.lesson)?.topic ?? null, state: st[i] }));
 }
 
 /** একটি কার্ড, তার অবস্থা এবং আগের/পরের কার্ড। কার্ড না থাকলে null। */
