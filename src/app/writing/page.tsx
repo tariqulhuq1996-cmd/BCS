@@ -79,7 +79,7 @@ async function Content({ searchParams }: Props) {
 
       <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {cards.map((c) => (
-          <CardTile key={c.code} card={c} band={current.band} short={current.short} lessonMode={LESSON_SUBJECTS.has(current.code) || !!c.lessonTheme} lessonLabel={current.code === "EN" ? "Daily English Writing" : current.code === "BN" ? "Daily Bangla Written" : current.short} />
+          <CardTile key={c.code} card={c} band={current.band} short={current.short} lessonMode={LESSON_SUBJECTS.has(current.code) || !!c.lessonTheme} lessonLabel={current.code === "EN" ? "Daily English Writing" : current.code === "BN" ? "Daily Bangla Written" : current.code === "IA" ? "International Affairs" : current.short} />
         ))}
       </ul>
     </>

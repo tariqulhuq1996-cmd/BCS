@@ -327,7 +327,7 @@ function BlockView({ b, code }: { b: Block; code: string }) {
         </div>
       );
     case "ul":
-      return <ul className="list-disc space-y-1.5 pl-6 leading-7">{b.items.map((x) => <li key={x}>{x}</li>)}</ul>;
+      return <ul className="list-disc space-y-1.5 pl-6 leading-7 [overflow-wrap:anywhere]">{b.items.map((x) => <li key={x}>{x}</li>)}</ul>;
     case "ol":
       return <ol className="list-decimal space-y-1.5 pl-6 leading-7 marker:text-muted">{b.items.map((x) => <li key={x}>{x}</li>)}</ol>;
     case "table":
