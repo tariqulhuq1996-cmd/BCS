@@ -1,0 +1,641 @@
+{
+  "series": "Daily English Writing Practice",
+  "day": "Day 09",
+  "exam": "52nd BCS Written",
+  "lessonNo": "Lesson 09",
+  "theme": "International Affairs & Global Economy",
+  "topic": "US–China Trade Relations: Tariffs, Supply Chains and Strategic Competition",
+  "intro": [
+    "আজকের লক্ষ্য: শুল্কনীতি, সরবরাহব্যবস্থা, প্রযুক্তিগত প্রতিযোগিতা ও বাংলাদেশের বাণিজ্যিক স্বার্থ নিয়ে লেখা।"
+  ],
+  "paragraph": {
+    "title": "US–China Trade Relations: Cooperation Amid Competition",
+    "words": 145,
+    "text": "Trade links between the United States and China have become both economically valuable and politically sensitive. Although tariffs can protect selected industries in the short term, prolonged trade disputes raise costs for businesses and consumers and disrupt global supply chains. At a September 2026 summit, the two countries agreed to tariff reductions covering $30 billion in goods in each direction and to establish a dialogue on artificial-intelligence risks. In November, China extended the suspension of certain rare-earth export controls until 10 January 2027, while Washington introduced tighter rules on remote access to advanced US semiconductors. These steps show that cooperation and strategic rivalry can exist side by side. Neither complete economic separation nor excessive dependence offers an easy solution. For Bangladesh, diversifying export markets and sources of imported inputs, improving productivity and supporting predictable trade rules can help businesses adapt to changing global supply chains."
+  },
+  "vocabulary": [
+    {
+      "word": "Tariff",
+      "bn": "আমদানি/রপ্তানির ওপর শুল্ক",
+      "pos": "Noun",
+      "synonym": "Customs duty",
+      "example": "High tariffs can increase the cost of imported goods.",
+      "exampleBn": "উচ্চ শুল্ক আমদানিকৃত পণ্যের দাম বাড়াতে পারে।"
+    },
+    {
+      "word": "Retaliation",
+      "bn": "পাল্টা ব্যবস্থা",
+      "pos": "Noun",
+      "synonym": "Counteraction",
+      "antonym": "Reconciliation",
+      "example": "Trade retaliation may intensify economic tensions.",
+      "exampleBn": "বাণিজ্যিক পাল্টা ব্যবস্থা অর্থনৈতিক উত্তেজনা বাড়াতে পারে।"
+    },
+    {
+      "word": "Interdependence",
+      "bn": "পারস্পরিক নির্ভরশীলতা",
+      "pos": "Noun",
+      "synonym": "Mutual dependence",
+      "antonym": "Independence",
+      "example": "Economic interdependence encourages stable trade relations.",
+      "exampleBn": "অর্থনৈতিক পারস্পরিক নির্ভরশীলতা স্থিতিশীল বাণিজ্য সম্পর্ককে উৎসাহিত করে।"
+    },
+    {
+      "word": "Diversification",
+      "bn": "বৈচিত্র্যকরণ",
+      "pos": "Noun",
+      "synonym": "Variation",
+      "antonym": "Concentration",
+      "example": "Export diversification reduces dependence on one market.",
+      "exampleBn": "রপ্তানি বৈচিত্র্যকরণ একক বাজারের ওপর নির্ভরতা কমায়।"
+    },
+    {
+      "word": "Competitive",
+      "bn": "প্রতিযোগিতামূলক",
+      "pos": "Adjective",
+      "synonym": "Rivalrous",
+      "antonym": "Uncompetitive",
+      "example": "Innovation makes domestic industries more competitive.",
+      "exampleBn": "উদ্ভাবন দেশীয় শিল্পকে আরও প্রতিযোগিতামূলক করে।"
+    }
+  ],
+  "prepositional": [
+    {
+      "phrase": "At the expense of",
+      "bn": "কোনো কিছুর ক্ষতি বা বিনিময়ে",
+      "example": "Growth should not come at the expense of environmental protection.",
+      "exampleBn": "পরিবেশ সুরক্ষার ক্ষতির বিনিময়ে প্রবৃদ্ধি হওয়া উচিত নয়।"
+    },
+    {
+      "phrase": "In response to",
+      "bn": "প্রতিক্রিয়ায়",
+      "example": "China introduced measures in response to restrictions.",
+      "exampleBn": "বিধিনিষেধের প্রতিক্রিয়ায় চীন কিছু পদক্ষেপ নেয়।"
+    },
+    {
+      "phrase": "Subject to",
+      "bn": "নিয়ম/শর্তের অধীন",
+      "example": "Certain imports are subject to additional tariffs.",
+      "exampleBn": "কিছু আমদানি পণ্যের ওপর অতিরিক্ত শুল্ক প্রযোজ্য।"
+    },
+    {
+      "phrase": "In the wake of",
+      "bn": "কোনো ঘটনার পরিপ্রেক্ষিতে",
+      "example": "In the wake of trade tensions, firms may reconsider supply chains.",
+      "exampleBn": "বাণিজ্যিক উত্তেজনার পরিপ্রেক্ষিতে প্রতিষ্ঠানগুলো সরবরাহব্যবস্থা পুনর্বিবেচনা করতে পারে।"
+    },
+    {
+      "phrase": "In exchange for",
+      "bn": "বিনিময়ে",
+      "example": "The company received market access in exchange for investment.",
+      "exampleBn": "বিনিয়োগের বিনিময়ে প্রতিষ্ঠানটি বাজারে প্রবেশাধিকার পায়।"
+    }
+  ],
+  "idioms": {
+    "items": [
+      {
+        "phrase": "Put all one’s eggs in one basket",
+        "bn": "সবকিছু একটি উৎসের ওপর নির্ভর করা",
+        "example": "A country should not put all its eggs in one basket by relying on a single export market."
+      },
+      {
+        "phrase": "Gain a competitive edge",
+        "bn": "প্রতিযোগিতায় বাড়তি সুবিধা",
+        "example": "Innovation helps industries gain a competitive edge."
+      },
+      {
+        "phrase": "Strike a balance",
+        "bn": "ভারসাম্য বজায় রাখা",
+        "example": "Governments must strike a balance between security and openness."
+      },
+      {
+        "phrase": "Be caught in the crossfire",
+        "bn": "দুই পক্ষের বিরোধে ক্ষতিগ্রস্ত হওয়া",
+        "example": "Smaller economies may be caught in the crossfire."
+      },
+      {
+        "phrase": "A race to the bottom",
+        "bn": "মান/শর্ত কমিয়ে প্রতিযোগিতা",
+        "example": "Unfair tax competition may trigger a race to the bottom."
+      }
+    ]
+  },
+  "writers": {
+    "intro": "আজকের বিষয়ের সঙ্গে সম্পর্কিত দুজন লেখক — Émile Zola ও Thomas Hardy — এবং তাঁদের দুটি করে উল্লেখযোগ্য গ্রন্থ।",
+    "items": [
+      {
+        "name": "Émile Zola",
+        "nationality": "French",
+        "identity": "Naturalist Novelist and Journalist (1840–1902)",
+        "book": "The Ladies’ Paradise",
+        "published": "1883",
+        "genre": "Naturalist Novel",
+        "summary": "বড় department store-এর উত্থান ও ছোট দোকানের ওপর প্রভাব নিয়ে উপন্যাস।",
+        "characters": [
+          {
+            "name": "Denise Baudu",
+            "desc": "তরুণী বিক্রয়কর্মী"
+          },
+          {
+            "name": "Octave Mouret",
+            "desc": "বিপণিবিতানের মালিক"
+          },
+          {
+            "name": "Baudu",
+            "desc": "ছোট ব্যবসায়ী"
+          }
+        ],
+        "message": [
+          "ফরাসি ঔপন্যাসিক ও সাংবাদিক; Naturalism ধারার প্রধান লেখক। শিল্পায়ন, পুঁজিবাদ, শ্রমিকজীবন ও সামাজিক বৈষম্য তাঁর রচনায় গুরুত্বপূর্ণ।"
+        ],
+        "bcsUse": [
+          "Market Competition",
+          "Consumerism",
+          "Small Businesses vs Large Corporations"
+        ],
+        "photo": {
+          "src": "/writing/img/zola.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": null
+      },
+      {
+        "name": "Émile Zola",
+        "nationality": "French",
+        "identity": "Naturalist Novelist and Journalist (1840–1902)",
+        "book": "Germinal",
+        "published": "1885",
+        "genre": "Naturalist Novel",
+        "summary": "ফরাসি কয়লাখনির শ্রমিকদের দারিদ্র্য, শোষণ ও ধর্মঘট নিয়ে উপন্যাস।",
+        "characters": [
+          {
+            "name": "Étienne Lantier",
+            "desc": "শ্রমিক নেতা"
+          },
+          {
+            "name": "Catherine Maheu",
+            "desc": "তরুণী খনিশ্রমিক"
+          },
+          {
+            "name": "Toussaint Maheu",
+            "desc": "পরিবারের প্রধান"
+          },
+          {
+            "name": "Souvarine",
+            "desc": "রুশ বিপ্লবী"
+          },
+          {
+            "name": "Chaval",
+            "desc": "শ্রমিক ও প্রতিদ্বন্দ্বী"
+          }
+        ],
+        "message": [
+          "ফরাসি ঔপন্যাসিক ও সাংবাদিক; Naturalism ধারার প্রধান লেখক। শিল্পায়ন, পুঁজিবাদ, শ্রমিকজীবন ও সামাজিক বৈষম্য তাঁর রচনায় গুরুত্বপূর্ণ।"
+        ],
+        "bcsUse": [
+          "Workers' Rights",
+          "Labour Exploitation",
+          "Industrialisation",
+          "Economic Inequality"
+        ],
+        "photo": {
+          "src": "/writing/img/zola.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": {
+          "src": "/writing/img/book-germinal.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        }
+      },
+      {
+        "name": "Thomas Hardy",
+        "nationality": "English",
+        "identity": "Novelist and Poet (1840–1928)",
+        "book": "The Mayor of Casterbridge",
+        "published": "1886",
+        "genre": "Tragic Novel",
+        "summary": "Michael Henchard শ্রমজীবী অবস্থা থেকে ব্যবসায়ী ও মেয়র হন, কিন্তু ব্যক্তিগত ভুল ও প্রতিদ্বন্দ্বিতায় পতিত হন।",
+        "characters": [
+          {
+            "name": "Michael Henchard",
+            "desc": "ব্যবসায়ী ও মেয়র"
+          },
+          {
+            "name": "Donald Farfrae",
+            "desc": "দক্ষ ব্যবসায়িক প্রতিদ্বন্দ্বী"
+          },
+          {
+            "name": "Elizabeth-Jane",
+            "desc": "গুরুত্বপূর্ণ নারী চরিত্র"
+          },
+          {
+            "name": "Susan Henchard",
+            "desc": "স্ত্রী"
+          }
+        ],
+        "message": [
+          "ইংরেজ ঔপন্যাসিক ও কবি; গ্রামীণ সমাজ, শ্রেণিবৈষম্য, অর্থনৈতিক অনিশ্চয়তা ও সামাজিক পরিবর্তন তাঁর রচনায় প্রতিফলিত।"
+        ],
+        "bcsUse": [
+          "Trade and Commerce",
+          "Competition",
+          "Leadership and Accountability"
+        ],
+        "cover": null
+      },
+      {
+        "name": "Thomas Hardy",
+        "nationality": "English",
+        "identity": "Novelist and Poet (1840–1928)",
+        "book": "Jude the Obscure",
+        "published": "1895",
+        "genre": "Tragic Novel",
+        "summary": "শ্রমজীবী Jude Fawley উচ্চশিক্ষার স্বপ্ন দেখে; অর্থনৈতিক সীমাবদ্ধতা ও শ্রেণিবিভাজন তাকে বাধা দেয়।",
+        "characters": [
+          {
+            "name": "Jude Fawley",
+            "desc": "শিক্ষার আকাঙ্ক্ষী তরুণ"
+          },
+          {
+            "name": "Sue Bridehead",
+            "desc": "চাচাতো বোন"
+          },
+          {
+            "name": "Arabella Donn",
+            "desc": "প্রথম স্ত্রী"
+          },
+          {
+            "name": "Richard Phillotson",
+            "desc": "শিক্ষক"
+          }
+        ],
+        "message": [
+          "ইংরেজ ঔপন্যাসিক ও কবি; গ্রামীণ সমাজ, শ্রেণিবৈষম্য, অর্থনৈতিক অনিশ্চয়তা ও সামাজিক পরিবর্তন তাঁর রচনায় প্রতিফলিত।"
+        ],
+        "bcsUse": [
+          "Class Barriers",
+          "Access to Education",
+          "Social Mobility"
+        ],
+        "cover": null
+      }
+    ]
+  },
+  "quote": {
+    "text": "Commerce is a cure for the most destructive prejudices",
+    "author": "Montesquieu",
+    "work": "The Spirit of Laws (1748), Book XX, Chapter 1",
+    "bn": "বাণিজ্য সবচেয়ে ক্ষতিকর পূর্বধারণা ও বিদ্বেষ দূর করার একটি উপায়।",
+    "explanation": "Montesquieu-র মতে, বাণিজ্য বিভিন্ন জাতিকে পরস্পরের সংস্পর্শে আনে ও পারস্পরিক নির্ভরশীলতা তৈরি করে; ফলে বিদ্বেষ ও শত্রুতা কমে। US–China সম্পর্কের ক্ষেত্রেও বাণিজ্য একই সঙ্গে প্রতিযোগিতা ও সহযোগিতার সেতু হতে পারে।",
+    "useIn": [
+      "International Trade",
+      "Globalisation",
+      "Economic Cooperation",
+      "Free Trade and Protectionism"
+    ]
+  },
+  "sentences": [
+    {
+      "en": "Trade links between the United States and China have become both economically valuable and politically sensitive.",
+      "bn": "যুক্তরাষ্ট্র ও চীনের বাণিজ্যিক সম্পর্ক অর্থনৈতিকভাবে মূল্যবান এবং রাজনৈতিকভাবে সংবেদনশীল হয়েছে।"
+    },
+    {
+      "en": "Although tariffs can protect selected industries in the short term, prolonged trade disputes raise costs for businesses and consumers and disrupt global supply chains.",
+      "bn": "যদিও শুল্ক স্বল্পমেয়াদে নির্দিষ্ট শিল্পকে সুরক্ষা দিতে পারে, দীর্ঘস্থায়ী বিরোধ ব্যবসা ও ভোক্তার ব্যয় বাড়ায় এবং সরবরাহব্যবস্থায় বিঘ্ন ঘটায়।"
+    },
+    {
+      "en": "At a September 2026 summit, the two countries agreed to tariff reductions covering $30 billion in goods in each direction and to establish a dialogue on AI risks.",
+      "bn": "২০২৬ সালের সেপ্টেম্বরে দুই দেশ উভয় দিকের ৩০ বিলিয়ন ডলারের পণ্য বাণিজ্যে শুল্ক হ্রাস এবং AI ঝুঁকি নিয়ে সংলাপে সম্মত হয়।"
+    },
+    {
+      "en": "In November, China extended the suspension of certain rare-earth export controls until 10 January 2027, while Washington introduced tighter rules on remote access to advanced US semiconductors.",
+      "bn": "নভেম্বরে চীন নির্দিষ্ট বিরল মৃত্তিকা উপাদানের রপ্তানি নিয়ন্ত্রণ স্থগিতের মেয়াদ ১০ জানুয়ারি ২০২৭ পর্যন্ত বাড়ায়; যুক্তরাষ্ট্র উন্নত সেমিকন্ডাক্টরে দূরবর্তী প্রবেশাধিকারে কঠোর নিয়ম আনে।"
+    },
+    {
+      "en": "These steps show that cooperation and strategic rivalry can exist side by side.",
+      "bn": "এসব পদক্ষেপ দেখায় সহযোগিতা ও কৌশলগত প্রতিযোগিতা একই সঙ্গে চলতে পারে।"
+    },
+    {
+      "en": "Neither complete economic separation nor excessive dependence offers an easy solution.",
+      "bn": "সম্পূর্ণ অর্থনৈতিক বিচ্ছিন্নতা কিংবা অতিরিক্ত নির্ভরশীলতা—কোনোটিই সহজ সমাধান নয়।"
+    },
+    {
+      "en": "For Bangladesh, diversifying export markets and sources of imported inputs, improving productivity and supporting predictable trade rules can help businesses adapt to changing global supply chains.",
+      "bn": "বাংলাদেশের জন্য রপ্তানি বাজার ও আমদানিকৃত উপকরণের উৎসে বৈচিত্র্য, উৎপাদনশীলতা বৃদ্ধি ও পূর্বানুমানযোগ্য বাণিজ্যনীতি ব্যবসাকে পরিবর্তিত সরবরাহব্যবস্থার সঙ্গে খাপ খাওয়াতে সাহায্য করতে পারে।"
+    }
+  ],
+  "wordChoice": {
+    "items": [
+      {
+        "title": "Tariff vs Duty vs Tax",
+        "rows": [
+          {
+            "word": "Tariff",
+            "meaning": "আন্তর্জাতিক বাণিজ্যে শুল্ক"
+          },
+          {
+            "word": "Duty",
+            "meaning": "নির্দিষ্ট পণ্যের শুল্ক"
+          },
+          {
+            "word": "Tax",
+            "meaning": "বৃহত্তর সরকারি কর"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Trade Deficit vs Surplus vs Balance",
+        "rows": [
+          {
+            "word": "Deficit",
+            "meaning": "আমদানি বেশি"
+          },
+          {
+            "word": "Surplus",
+            "meaning": "রপ্তানি বেশি"
+          },
+          {
+            "word": "Balance",
+            "meaning": "আমদানি-রপ্তানির সামগ্রিক ভারসাম্য"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Protection vs Protectionism vs Promotion",
+        "rows": [
+          {
+            "word": "Protection",
+            "meaning": "সুরক্ষা"
+          },
+          {
+            "word": "Protectionism",
+            "meaning": "আমদানি সীমিত করে দেশীয় শিল্প রক্ষার নীতি"
+          },
+          {
+            "word": "Promotion",
+            "meaning": "প্রসার/উন্নয়ন"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Dependence vs Interdependence vs Independence",
+        "rows": [
+          {
+            "word": "Dependence",
+            "meaning": "একতরফা নির্ভরতা"
+          },
+          {
+            "word": "Interdependence",
+            "meaning": "পারস্পরিক নির্ভরতা"
+          },
+          {
+            "word": "Independence",
+            "meaning": "স্বাধীনতা"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Efficient vs Effective vs Competitive",
+        "rows": [
+          {
+            "word": "Efficient",
+            "meaning": "কম সম্পদে ভালো ফল"
+          },
+          {
+            "word": "Effective",
+            "meaning": "লক্ষ্য অর্জনে সফল"
+          },
+          {
+            "word": "Competitive",
+            "meaning": "প্রতিযোগিতায় সক্ষম"
+          }
+        ],
+        "examples": []
+      }
+    ]
+  },
+  "grammar": [
+    {
+      "title": "Although — Contrast Clause",
+      "structure": "Although + Subject + Verb, Main Clause.",
+      "example": "Although tariffs may protect domestic industries, they can increase consumer prices.",
+      "explanation": "বিপরীত ধারণা প্রকাশ করে। একই বাক্যে Although-এর সঙ্গে but ব্যবহার করবে না।",
+      "wrong": "Although tariffs may protect domestic industries, but they can increase prices.",
+      "right": "Although tariffs may protect domestic industries, they can increase prices."
+    },
+    {
+      "title": "Neither … nor",
+      "structure": "Neither + A + nor + B + Verb (কাছের subject অনুযায়ী)",
+      "example": "Neither complete separation nor excessive dependence offers an easy solution.",
+      "explanation": "দুটি বিষয়কেই অস্বীকার করে। Verb সাধারণত কাছের subject (nor-এর পরের subject)-এর সঙ্গে agreement করে। Neither…nor-এর সঙ্গে not ব্যবহার করবে না।",
+      "wrong": "Neither tariffs nor sanctions does not solve the problem.",
+      "right": "Neither tariffs nor sanctions solve the problem."
+    }
+  ],
+  "collocations": [
+    {
+      "expr": "Bilateral trade relations",
+      "bn": "দ্বিপাক্ষিক বাণিজ্য সম্পর্ক"
+    },
+    {
+      "expr": "Global supply chains",
+      "bn": "বৈশ্বিক সরবরাহব্যবস্থা"
+    },
+    {
+      "expr": "Trade barriers",
+      "bn": "বাণিজ্য বাধা"
+    },
+    {
+      "expr": "Reciprocal tariffs",
+      "bn": "পাল্টাপাল্টি শুল্ক"
+    },
+    {
+      "expr": "Economic interdependence",
+      "bn": "অর্থনৈতিক পারস্পরিক নির্ভরশীলতা"
+    },
+    {
+      "expr": "Strategic competition",
+      "bn": "কৌশলগত প্রতিযোগিতা"
+    },
+    {
+      "expr": "Market access",
+      "bn": "বাজারে প্রবেশাধিকার"
+    },
+    {
+      "expr": "Export diversification",
+      "bn": "রপ্তানি বৈচিত্র্যকরণ"
+    },
+    {
+      "expr": "Domestic industries",
+      "bn": "দেশীয় শিল্প"
+    },
+    {
+      "expr": "Technological self-reliance",
+      "bn": "প্রযুক্তিগত স্বনির্ভরতা"
+    }
+  ],
+  "connectors": [
+    {
+      "word": "Although",
+      "bn": "যদিও",
+      "use": "বিপরীত বক্তব্য"
+    },
+    {
+      "word": "Conversely",
+      "bn": "উল্টোভাবে",
+      "use": "বিপরীত দিক"
+    },
+    {
+      "word": "Furthermore",
+      "bn": "অধিকন্তু",
+      "use": "অতিরিক্ত তথ্য"
+    },
+    {
+      "word": "As a consequence",
+      "bn": "ফলস্বরূপ",
+      "use": "পরিণতি"
+    },
+    {
+      "word": "In the meantime",
+      "bn": "ইতিমধ্যে / এর মধ্যে",
+      "use": "সমান্তরাল ঘটনা"
+    },
+    {
+      "word": "In the long run",
+      "bn": "দীর্ঘ মেয়াদে",
+      "use": "ভবিষ্যৎ প্রভাব"
+    }
+  ],
+  "connectorsExample": "Tariffs may protect selected industries. Conversely, prolonged disputes raise costs for consumers. As a consequence, supply chains are being reorganised.",
+  "transformation": [
+    {
+      "label": "Simple Sentence",
+      "text": "Following the imposition of tariffs, trade costs increased."
+    },
+    {
+      "label": "Compound Sentence",
+      "text": "The two countries imposed tariffs, and their trade costs increased."
+    },
+    {
+      "label": "Complex Sentence",
+      "text": "After the two countries imposed tariffs, their trade costs increased."
+    },
+    {
+      "label": "Advanced Expression",
+      "text": "The imposition of reciprocal tariffs contributed to higher trade costs and increased uncertainty across international markets."
+    }
+  ],
+  "translation": {
+    "note": "প্রথমে নিজে অনুবাদ করবে। নিজের অনুবাদ শেষ হলে উত্তর মিলিয়ে নেবে।",
+    "bnToEn": [
+      {
+        "q": "কোনো একটি দেশের ওপর অতিরিক্ত নির্ভরশীলতা একটি অর্থনীতিকে বহিরাগত ঝুঁকির মুখে ফেলতে পারে।",
+        "a": "Excessive dependence on a single country may expose an economy to external risks."
+      },
+      {
+        "q": "আন্তর্জাতিক বাণিজ্যে ন্যায্য প্রতিযোগিতা নিশ্চিত করতে স্বচ্ছ নীতি ও কার্যকর সহযোগিতা প্রয়োজন।",
+        "a": "Transparent policies and effective cooperation are necessary to ensure fair competition in international trade."
+      }
+    ],
+    "enToBn": [
+      {
+        "q": "Trade restrictions may protect domestic industries, but they can also disrupt international supply chains.",
+        "a": "বাণিজ্যিক বিধিনিষেধ দেশীয় শিল্পকে সুরক্ষা দিতে পারে, তবে আন্তর্জাতিক সরবরাহব্যবস্থায় বিঘ্ন ঘটাতে পারে।"
+      },
+      {
+        "q": "Economic diversification enables developing countries to reduce their vulnerability to external shocks.",
+        "a": "অর্থনৈতিক বৈচিত্র্যকরণ উন্নয়নশীল দেশকে বহিরাগত অভিঘাতের ঝুঁকি কমাতে সক্ষম করে।"
+      }
+    ]
+  },
+  "assignment": {
+    "intro": "নিচের ১০টি Expression থেকে অন্তত ৫টি ব্যবহার করে নিজে ৫টি English Sentence লিখবে।",
+    "expressions": [
+      "Bilateral trade relations",
+      "Global supply chains",
+      "Trade barriers",
+      "Reciprocal tariffs",
+      "Economic interdependence",
+      "Strategic competition",
+      "Market access",
+      "Export diversification",
+      "Technological self-reliance",
+      "External economic shocks"
+    ],
+    "criteria": [
+      "Grammar Accuracy",
+      "Right Word Selection",
+      "Sentence Structure",
+      "Natural Expression",
+      "BCS Written Standard"
+    ],
+    "note": "শর্ত: একটি complex sentence ও বাংলাদেশের স্বার্থ নিয়ে একটি বাক্য থাকবে। তোমার লেখা বাক্যগুলো নিচের ঘরে লিখে রাখো (এই ডিভাইসে সংরক্ষিত থাকবে)। তারপর প্রতিটি বাক্যে Grammar mistake, Corrected sentence, Better expression ও বাংলা ব্যাখ্যা—এই চারটি দিক ধরে নিজে মিলিয়ে দেখো।"
+  },
+  "sections": [
+    {
+      "title": "Current Affairs & Key Facts",
+      "sub": "Paragraph-এ ব্যবহৃত সাম্প্রতিক তথ্য — তারিখসহ মনে রাখবে।",
+      "blocks": [
+        {
+          "t": "ul",
+          "items": [
+            "26 September 2026: যুক্তরাষ্ট্র ও চীন ৩০ বিলিয়ন ডলারের পণ্য বাণিজ্যে উভয় দিকেই শুল্ক হ্রাস এবং AI ঝুঁকি নিয়ে সংলাপের বিষয়ে সম্মত হয়।",
+            "9 November 2026: চীন নির্দিষ্ট Rare Earth উপাদানের রপ্তানি নিয়ন্ত্রণ-সংক্রান্ত ছাড় ১০ জানুয়ারি ২০২৭ পর্যন্ত বাড়ায়।",
+            "19 November 2026: যুক্তরাষ্ট্র উন্নত সেমিকন্ডাক্টর ও বিদেশি ডেটা সেন্টারের মাধ্যমে দূরবর্তী প্রবেশাধিকার নিয়ন্ত্রণে নতুন নিয়ম আনে।",
+            "20 November 2026: প্রযুক্তিগত প্রতিযোগিতা চিপ ছাড়িয়ে cloud computing, software ও দেশীয় semiconductor উৎপাদনেও বিস্তৃত হচ্ছে বলে Reuters জানায়।"
+          ]
+        },
+        {
+          "t": "h",
+          "text": "বাংলাদেশের সম্ভাব্য প্রভাব"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "সরবরাহব্যবস্থার পরিবর্তনে আমদানিকৃত কাঁচামাল ও যন্ত্রপাতির দাম প্রভাবিত হতে পারে",
+            "নতুন উৎপাদনকেন্দ্র খোঁজার প্রবণতা বিনিয়োগের সুযোগ তৈরি করতে পারে",
+            "রপ্তানি বাজারের বৈচিত্র্য একক বাজারের ওপর নির্ভরতা কমাতে পারে",
+            "দক্ষ জনশক্তি ও প্রযুক্তি উন্নয়ন বাংলাদেশের অবস্থান শক্তিশালী করতে পারে"
+          ]
+        },
+        {
+          "t": "tip",
+          "label": "সতর্কতা",
+          "text": "এগুলো সম্ভাব্য প্রভাব, নিশ্চিত ফল নয়।"
+        },
+        {
+          "t": "tip",
+          "label": "লেখার নিয়ম",
+          "text": "চলমান আন্তর্জাতিক ঘটনার ক্ষেত্রে তারিখ, সংশ্লিষ্ট পক্ষের বক্তব্য এবং স্বাধীনভাবে যাচাইকৃত তথ্য আলাদা রাখবে।"
+        }
+      ]
+    },
+    {
+      "title": "Revision Checklist",
+      "sub": "পাঠ শেষে নিজেকে যাচাই করো।",
+      "blocks": [
+        {
+          "t": "ul",
+          "items": [
+            "Tariff, Duty ও Tax-এর পার্থক্য জানি।",
+            "Trade deficit, surplus ও balance বুঝেছি।",
+            "Interdependence ও dependence-এর পার্থক্য জানি।",
+            "২০২৬ সালের আলোচনার মূল তথ্য মনে আছে।",
+            "Although ও Neither…nor ব্যবহার করতে পারি।",
+            "আন্তর্জাতিক বাণিজ্য নিয়ে balanced paragraph লিখতে পারি।"
+          ]
+        }
+      ]
+    }
+  ],
+  "finalGoal": {
+    "title": "Day 09 — আজকের মূল শিক্ষা",
+    "text": [
+      "আন্তর্জাতিক বাণিজ্য নিয়ে লেখায় শুল্ক ও প্রতিযোগিতার নেতিবাচক দিকের পাশাপাশি সহযোগিতার সুযোগও দেখাবে, এবং শেষে বাংলাদেশের জন্য বাজার ও উপকরণের উৎসে বৈচিত্র্য, উৎপাদনশীলতা ও পূর্বানুমানযোগ্য বাণিজ্যনীতির কথা বলবে।"
+    ]
+  }
+}

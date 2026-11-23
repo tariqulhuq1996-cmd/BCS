@@ -1,0 +1,744 @@
+{
+  "series": "Daily English Writing Practice",
+  "day": "Day 10",
+  "exam": "52nd BCS Written",
+  "lessonNo": "Lesson 10",
+  "theme": "International Affairs & Geopolitics",
+  "topic": "Iran and the Middle East: Regional Conflict and Energy Security",
+  "intro": [
+    "আজকের লক্ষ্য: মধ্যপ্রাচ্যের সংঘাত, জ্বালানি নিরাপত্তা, সামুদ্রিক নিরাপত্তা ও কূটনৈতিক সমাধান নিয়ে লেখা।"
+  ],
+  "paragraph": {
+    "title": "Iran and the Middle East: The Search for Regional Stability",
+    "words": 142,
+    "text": "The Middle East remains central to global security because its conflicts affect civilian lives, energy supplies and international trade. Since the United States and Israel attacked Iran on 28 February 2026, the conflict has spread across the region, with Iran striking Israel and Gulf states hosting US military bases. On 21 November, Reuters reported that a Qatari delegation had held talks in Tehran as diplomatic efforts continued, although no settlement had been announced. Bahrain said an Iranian attack had hit a civilian industrial facility and injured two people; Iran’s Revolutionary Guards said their strikes targeted US military positions. Meanwhile, attacks on vessels near the Strait of Hormuz have heightened concern about maritime security. A lasting settlement requires restraint, credible dialogue, protection of civilians and respect for international law. For Bangladesh, regional stability matters because disruption to shipping and energy markets can raise import costs and economic uncertainty."
+  },
+  "vocabulary": [
+    {
+      "word": "Escalation",
+      "bn": "সংঘাতের তীব্রতা বৃদ্ধি",
+      "pos": "Noun",
+      "synonym": "Intensification",
+      "antonym": "De-escalation",
+      "example": "Further escalation could threaten regional stability.",
+      "exampleBn": "সংঘাতের আরও তীব্রতা বৃদ্ধি আঞ্চলিক স্থিতিশীলতাকে হুমকিতে ফেলতে পারে।"
+    },
+    {
+      "word": "Mediation",
+      "bn": "মধ্যস্থতা",
+      "pos": "Noun",
+      "synonym": "Intervention",
+      "antonym": "Confrontation",
+      "example": "Qatar has played a role in diplomatic mediation.",
+      "exampleBn": "কূটনৈতিক মধ্যস্থতায় কাতার ভূমিকা রেখেছে।"
+    },
+    {
+      "word": "Maritime",
+      "bn": "সামুদ্রিক/নৌপরিবহন-সম্পর্কিত",
+      "pos": "Adjective",
+      "synonym": "Naval",
+      "antonym": "Inland",
+      "example": "Maritime security is essential for international trade.",
+      "exampleBn": "আন্তর্জাতিক বাণিজ্যের জন্য সামুদ্রিক নিরাপত্তা অপরিহার্য।"
+    },
+    {
+      "word": "Restraint",
+      "bn": "সংযম",
+      "pos": "Noun",
+      "synonym": "Self-control",
+      "antonym": "Aggression",
+      "example": "All parties should exercise restraint.",
+      "exampleBn": "সব পক্ষের সংযম প্রদর্শন করা উচিত।"
+    },
+    {
+      "word": "Vulnerability",
+      "bn": "ঝুঁকিপ্রবণতা",
+      "pos": "Noun",
+      "synonym": "Susceptibility",
+      "antonym": "Resilience",
+      "example": "Dependence on imported energy increases economic vulnerability.",
+      "exampleBn": "আমদানিকৃত জ্বালানির ওপর নির্ভরতা অর্থনৈতিক ঝুঁকিপ্রবণতা বাড়ায়।"
+    }
+  ],
+  "prepositional": [
+    {
+      "phrase": "Amid rising tensions",
+      "bn": "ক্রমবর্ধমান উত্তেজনার মধ্যে",
+      "example": "Amid rising tensions, diplomatic efforts should continue.",
+      "exampleBn": "ক্রমবর্ধমান উত্তেজনার মধ্যেও কূটনৈতিক প্রচেষ্টা অব্যাহত রাখা উচিত।"
+    },
+    {
+      "phrase": "In the wake of",
+      "bn": "ঘটনার পরিপ্রেক্ষিতে",
+      "example": "In the wake of conflict, energy prices may become uncertain.",
+      "exampleBn": "সংঘাতের পরিপ্রেক্ষিতে জ্বালানির দাম অনিশ্চিত হয়ে উঠতে পারে।"
+    },
+    {
+      "phrase": "Through diplomatic channels",
+      "bn": "কূটনৈতিক মাধ্যমের মাধ্যমে",
+      "example": "Disputes should be resolved through diplomatic channels.",
+      "exampleBn": "বিরোধ কূটনৈতিক মাধ্যমে নিষ্পত্তি করা উচিত।"
+    },
+    {
+      "phrase": "In accordance with",
+      "bn": "আইন/নিয়ম অনুসারে",
+      "example": "States should act in accordance with international law.",
+      "exampleBn": "রাষ্ট্রগুলোর আন্তর্জাতিক আইন অনুসারে কাজ করা উচিত।"
+    },
+    {
+      "phrase": "Put … at risk",
+      "bn": "ঝুঁকির মুখে ফেলা",
+      "example": "Escalation may put regional stability at risk.",
+      "exampleBn": "সংঘাতের তীব্রতা বৃদ্ধি আঞ্চলিক স্থিতিশীলতাকে ঝুঁকির মুখে ফেলতে পারে।"
+    }
+  ],
+  "idioms": {
+    "items": [
+      {
+        "phrase": "Spill over into",
+        "bn": "অন্য অঞ্চল/ক্ষেত্রে ছড়িয়ে পড়া",
+        "example": "A local conflict may spill over into neighbouring countries."
+      },
+      {
+        "phrase": "Keep tensions in check",
+        "bn": "উত্তেজনা নিয়ন্ত্রণে রাখা",
+        "example": "Diplomacy can help keep tensions in check."
+      },
+      {
+        "phrase": "At a crossroads",
+        "bn": "সন্ধিক্ষণে",
+        "example": "The region is at a crossroads between confrontation and diplomacy."
+      },
+      {
+        "phrase": "Open the door to dialogue",
+        "bn": "আলোচনার সুযোগ সৃষ্টি করা",
+        "example": "Mediation may open the door to dialogue."
+      },
+      {
+        "phrase": "A fragile peace",
+        "bn": "ভঙ্গুর শান্তি",
+        "example": "A ceasefire may create a fragile peace."
+      }
+    ]
+  },
+  "writers": {
+    "intro": "আজকের বিষয়ের সঙ্গে সম্পর্কিত দুজন লেখক — Naguib Mahfouz ও Ghassan Kanafani — এবং তাঁদের দুটি করে উল্লেখযোগ্য গ্রন্থ।",
+    "items": [
+      {
+        "name": "Naguib Mahfouz",
+        "nationality": "Egyptian",
+        "identity": "Novelist (1911–2006)",
+        "book": "Midaq Alley",
+        "published": "1947",
+        "genre": "Social Realist Novel",
+        "summary": "দ্বিতীয় বিশ্বযুদ্ধের সময় কায়রোর একটি গলির মানুষের জীবন, দারিদ্র্য, উচ্চাকাঙ্ক্ষা ও সামাজিক পরিবর্তন নিয়ে উপন্যাস।",
+        "characters": [
+          {
+            "name": "Hamida",
+            "desc": "উন্নত জীবনের আকাঙ্ক্ষী তরুণী"
+          },
+          {
+            "name": "Abbas Hilu",
+            "desc": "নাপিত ও Hamida-কে ভালোবাসে"
+          },
+          {
+            "name": "Salim Alwan",
+            "desc": "ধনী ব্যবসায়ী"
+          },
+          {
+            "name": "Kirsha",
+            "desc": "কফিহাউসের মালিক"
+          },
+          {
+            "name": "Husain Kirsha",
+            "desc": "তাঁর ছেলে"
+          }
+        ],
+        "message": [
+          "মিশরীয় ঔপন্যাসিক; ১৯৮৮ সালে সাহিত্যে নোবেল পুরস্কার পান। তাঁর রচনায় মিশরের সামাজিক পরিবর্তন, শ্রেণিবৈষম্য ও আধুনিকতার দ্বন্দ্ব রয়েছে।"
+        ],
+        "bcsUse": [
+          "Urban Poverty",
+          "Social Change",
+          "Impact of War on Society"
+        ],
+        "photo": {
+          "src": "/writing/img/mahfouz.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": null
+      },
+      {
+        "name": "Naguib Mahfouz",
+        "nationality": "Egyptian",
+        "identity": "Novelist (1911–2006)",
+        "book": "Palace Walk",
+        "published": "1956",
+        "genre": "Family Saga / Historical Novel",
+        "summary": "১৯১৭–১৯১৯ সালের কায়রোর একটি পরিবারের জীবন, ঔপনিবেশিক শাসন ও রাজনৈতিক পরিবর্তন।",
+        "characters": [
+          {
+            "name": "Al-Sayyid Ahmad",
+            "desc": "পরিবারের কর্তৃত্বপরায়ণ প্রধান"
+          },
+          {
+            "name": "Amina",
+            "desc": "স্ত্রী"
+          },
+          {
+            "name": "Fahmy",
+            "desc": "জাতীয়তাবাদী কর্মকাণ্ডে যুক্ত ছেলে"
+          },
+          {
+            "name": "Kamal",
+            "desc": "ছোট ছেলে"
+          },
+          {
+            "name": "Yasin",
+            "desc": "আগের স্ত্রীর সন্তান"
+          },
+          {
+            "name": "Khadija ও Aisha",
+            "desc": "দুই মেয়ে"
+          }
+        ],
+        "message": [
+          "মিশরীয় ঔপন্যাসিক; ১৯৮৮ সালে সাহিত্যে নোবেল পুরস্কার পান। তাঁর রচনায় মিশরের সামাজিক পরিবর্তন, শ্রেণিবৈষম্য ও আধুনিকতার দ্বন্দ্ব রয়েছে।"
+        ],
+        "bcsUse": [
+          "Colonialism and Nationalism",
+          "Political Change",
+          "Tradition and Modernity"
+        ],
+        "photo": {
+          "src": "/writing/img/mahfouz.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": null
+      },
+      {
+        "name": "Ghassan Kanafani",
+        "nationality": "Palestinian",
+        "identity": "Novelist, Journalist and Artist (1936–1972)",
+        "book": "Men in the Sun",
+        "published": "1962",
+        "genre": "Novella",
+        "summary": "তিন ফিলিস্তিনি শরণার্থী Abu Qais, Assad ও Marwan কাজের সন্ধানে কুয়েতে যাওয়ার চেষ্টা করে; মরুভূমির উত্তাপে যাত্রা মর্মান্তিক হয়।",
+        "characters": [
+          {
+            "name": "Abu Qais",
+            "desc": "বয়স্ক শরণার্থী"
+          },
+          {
+            "name": "Assad",
+            "desc": "তরুণ শরণার্থী"
+          },
+          {
+            "name": "Marwan",
+            "desc": "কনিষ্ঠ শরণার্থী"
+          },
+          {
+            "name": "Abul Khaizuran",
+            "desc": "ট্রাকচালক"
+          }
+        ],
+        "message": [
+          "ফিলিস্তিনি ঔপন্যাসিক, সাংবাদিক ও শিল্পী; বাস্তুচ্যুতি, শরণার্থী জীবন, পরিচয় ও মাতৃভূমি তাঁর লেখার প্রধান বিষয়।"
+        ],
+        "bcsUse": [
+          "Refugee Crisis",
+          "Displacement",
+          "Migrant Workers",
+          "Humanitarian Crisis"
+        ],
+        "photo": {
+          "src": "/writing/img/kanafani.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": null
+      },
+      {
+        "name": "Ghassan Kanafani",
+        "nationality": "Palestinian",
+        "identity": "Novelist, Journalist and Artist (1936–1972)",
+        "book": "Returning to Haifa",
+        "published": "1970",
+        "genre": "Novella",
+        "summary": "১৯৪৮ সালে হাইফা ছেড়ে যাওয়া দম্পতি ১৯৬৭ সালে পুরোনো বাড়িতে ফিরে জানতে পারে তাদের সন্তান Khaldun-কে অন্য পরিবার বড় করেছে, তার নতুন নাম Dov।",
+        "characters": [
+          {
+            "name": "Said S.",
+            "desc": "বাবা"
+          },
+          {
+            "name": "Safiyya",
+            "desc": "মা"
+          },
+          {
+            "name": "Khaldun/Dov",
+            "desc": "সন্তান"
+          },
+          {
+            "name": "Miriam",
+            "desc": "তাকে বড় করা নারী"
+          }
+        ],
+        "message": [
+          "ফিলিস্তিনি ঔপন্যাসিক, সাংবাদিক ও শিল্পী; বাস্তুচ্যুতি, শরণার্থী জীবন, পরিচয় ও মাতৃভূমি তাঁর লেখার প্রধান বিষয়।"
+        ],
+        "bcsUse": [
+          "Displacement and Identity",
+          "Palestinian Question",
+          "Human Cost of Conflict"
+        ],
+        "photo": {
+          "src": "/writing/img/kanafani.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": null
+      }
+    ]
+  },
+  "quote": {
+    "text": "To save succeeding generations from the scourge of war",
+    "author": "Charter of the United Nations",
+    "work": "Preamble (1945)",
+    "bn": "ভবিষ্যৎ প্রজন্মকে যুদ্ধের ভয়াবহ অভিশাপ থেকে রক্ষা করা।",
+    "explanation": "জাতিসংঘ সনদের প্রস্তাবনার এই অংশ জাতিসংঘ প্রতিষ্ঠার মূল উদ্দেশ্য প্রকাশ করে: যুদ্ধের অভিশাপ থেকে ভবিষ্যৎ প্রজন্মকে রক্ষা করা। মধ্যপ্রাচ্যের সংঘাত নিয়ে লেখায় এটি সংযম, সংলাপ ও আন্তর্জাতিক আইনের গুরুত্ব তুলে ধরতে কাজে লাগে।",
+    "useIn": [
+      "International Peace",
+      "Role of the UN",
+      "War and Humanitarian Crisis",
+      "Global Cooperation"
+    ]
+  },
+  "sentences": [
+    {
+      "en": "The Middle East remains central to global security because its conflicts affect civilian lives, energy supplies and international trade.",
+      "bn": "মধ্যপ্রাচ্য বৈশ্বিক নিরাপত্তার জন্য গুরুত্বপূর্ণ, কারণ সংঘাত বেসামরিক মানুষের জীবন, জ্বালানি সরবরাহ ও আন্তর্জাতিক বাণিজ্যকে প্রভাবিত করে।"
+    },
+    {
+      "en": "Since the United States and Israel attacked Iran on 28 February 2026, the conflict has spread across the region, with Iran striking Israel and Gulf states hosting US military bases.",
+      "bn": "২৮ ফেব্রুয়ারি ২০২৬ যুক্তরাষ্ট্র ও ইসরায়েল ইরানে হামলার পর সংঘাত অঞ্চলে ছড়িয়ে পড়ে; ইরান ইসরায়েল ও মার্কিন ঘাঁটি রয়েছে এমন উপসাগরীয় দেশগুলোতে হামলা চালায়।"
+    },
+    {
+      "en": "On 21 November, Reuters reported that a Qatari delegation had held talks in Tehran as diplomatic efforts continued, although no settlement had been announced.",
+      "bn": "২১ নভেম্বর রয়টার্স জানায়, কূটনৈতিক প্রচেষ্টা চলার মধ্যে কাতারের প্রতিনিধিদল তেহরানে আলোচনা করেছে, যদিও কোনো সমঝোতা ঘোষণা হয়নি।"
+    },
+    {
+      "en": "Bahrain said an Iranian attack had hit a civilian industrial facility and injured two people; Iran’s Revolutionary Guards said their strikes targeted US military positions.",
+      "bn": "বাহরাইন জানায়, ইরানের হামলায় বেসামরিক শিল্প স্থাপনা ক্ষতিগ্রস্ত ও দুজন আহত হয়েছেন; ইরানের Revolutionary Guards জানায় তাদের লক্ষ্য ছিল মার্কিন সামরিক অবস্থান।"
+    },
+    {
+      "en": "Meanwhile, attacks on vessels near the Strait of Hormuz have heightened concern about maritime security.",
+      "bn": "এদিকে Strait of Hormuz-এর কাছে জাহাজে হামলা সামুদ্রিক নিরাপত্তা নিয়ে উদ্বেগ বাড়িয়েছে।"
+    },
+    {
+      "en": "A lasting settlement requires restraint, credible dialogue, protection of civilians and respect for international law.",
+      "bn": "দীর্ঘস্থায়ী সমাধানের জন্য সংযম, বিশ্বাসযোগ্য সংলাপ, বেসামরিক মানুষের সুরক্ষা ও আন্তর্জাতিক আইনের প্রতি শ্রদ্ধা প্রয়োজন।"
+    },
+    {
+      "en": "For Bangladesh, regional stability matters because disruption to shipping and energy markets can raise import costs and economic uncertainty.",
+      "bn": "বাংলাদেশের জন্য আঞ্চলিক স্থিতিশীলতা গুরুত্বপূর্ণ, কারণ জাহাজ চলাচল ও জ্বালানি বাজারে বিঘ্ন আমদানি ব্যয় ও অর্থনৈতিক অনিশ্চয়তা বাড়াতে পারে।"
+    }
+  ],
+  "wordChoice": {
+    "items": [
+      {
+        "title": "Conflict vs War vs Hostilities",
+        "rows": [
+          {
+            "word": "Conflict",
+            "meaning": "সামরিক/রাজনৈতিক বিরোধ"
+          },
+          {
+            "word": "War",
+            "meaning": "ব্যাপক সশস্ত্র যুদ্ধ"
+          },
+          {
+            "word": "Hostilities",
+            "meaning": "চলমান সশস্ত্র শত্রুতা"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Mediation vs Negotiation vs Dialogue",
+        "rows": [
+          {
+            "word": "Mediation",
+            "meaning": "তৃতীয় পক্ষের মধ্যস্থতা"
+          },
+          {
+            "word": "Negotiation",
+            "meaning": "সরাসরি সমঝোতা আলোচনা"
+          },
+          {
+            "word": "Dialogue",
+            "meaning": "মতবিনিময়"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Escalation vs Intensification vs Expansion",
+        "rows": [
+          {
+            "word": "Escalation",
+            "meaning": "সংঘাতের মাত্রা বৃদ্ধি"
+          },
+          {
+            "word": "Intensification",
+            "meaning": "তীব্রতা বৃদ্ধি"
+          },
+          {
+            "word": "Expansion",
+            "meaning": "পরিধি বৃদ্ধি"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Peace vs Stability vs Security",
+        "rows": [
+          {
+            "word": "Peace",
+            "meaning": "শান্তি"
+          },
+          {
+            "word": "Stability",
+            "meaning": "স্থিতিশীলতা"
+          },
+          {
+            "word": "Security",
+            "meaning": "হুমকি থেকে সুরক্ষা"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Humanitarian Aid vs Relief vs Assistance",
+        "rows": [
+          {
+            "word": "Humanitarian aid",
+            "meaning": "মানবিক সহায়তা"
+          },
+          {
+            "word": "Relief",
+            "meaning": "জরুরি ত্রাণ"
+          },
+          {
+            "word": "Assistance",
+            "meaning": "সাধারণ সহায়তা"
+          }
+        ],
+        "examples": []
+      }
+    ]
+  },
+  "grammar": [
+    {
+      "title": "Since + Past Simple, Present Perfect",
+      "structure": "Since + Subject + Past Simple, Subject + have/has + V3",
+      "example": "Since the conflict began, regional tensions have increased.",
+      "explanation": "অতীতে শুরু হওয়া ঘটনার প্রভাব বর্তমান পর্যন্ত চলছে বোঝায়। Since-এর পরে সূচনাবিন্দু বোঝাতে সাধারণত Past Simple, আর main clause-এ Present Perfect বসে।",
+      "wrong": "Since the conflict began, regional tensions increased.",
+      "right": "Since the conflict began, regional tensions have increased."
+    },
+    {
+      "title": "Reported Speech",
+      "structure": "Subject + said (that) + Subject + Backshifted Verb",
+      "example": "Bahrain said that an attack had hit the facility.",
+      "explanation": "অন্যের বক্তব্য পরোক্ষভাবে প্রকাশ করে। Reporting verb অতীতকালে (said, reported) থাকলে প্রয়োজন অনুযায়ী tense এক ধাপ পিছিয়ে যায় (hit → had hit)। সংবাদভিত্তিক লেখায় দাবি ও যাচাইকৃত তথ্য আলাদা রাখতে এটি জরুরি।",
+      "more": [
+        "Reuters reported that a Qatari delegation had held talks in Tehran."
+      ]
+    }
+  ],
+  "collocations": [
+    {
+      "expr": "Regional stability",
+      "bn": "আঞ্চলিক স্থিতিশীলতা"
+    },
+    {
+      "expr": "Energy security",
+      "bn": "জ্বালানি নিরাপত্তা"
+    },
+    {
+      "expr": "Maritime security",
+      "bn": "সামুদ্রিক নিরাপত্তা"
+    },
+    {
+      "expr": "Diplomatic mediation",
+      "bn": "কূটনৈতিক মধ্যস্থতা"
+    },
+    {
+      "expr": "Humanitarian crisis",
+      "bn": "মানবিক সংকট"
+    },
+    {
+      "expr": "Civilian casualties",
+      "bn": "বেসামরিক হতাহত"
+    },
+    {
+      "expr": "Strategic interests",
+      "bn": "কৌশলগত স্বার্থ"
+    },
+    {
+      "expr": "International law",
+      "bn": "আন্তর্জাতিক আইন"
+    },
+    {
+      "expr": "Peaceful settlement",
+      "bn": "শান্তিপূর্ণ নিষ্পত্তি"
+    },
+    {
+      "expr": "Protection of civilians",
+      "bn": "বেসামরিক মানুষের সুরক্ষা"
+    }
+  ],
+  "connectors": [
+    {
+      "word": "Nevertheless",
+      "bn": "তা সত্ত্বেও",
+      "use": "বিপরীত বক্তব্য"
+    },
+    {
+      "word": "Meanwhile",
+      "bn": "এদিকে / একই সময়ে",
+      "use": "সমান্তরাল ঘটনা"
+    },
+    {
+      "word": "Consequently",
+      "bn": "ফলস্বরূপ",
+      "use": "পরিণতি"
+    },
+    {
+      "word": "In particular",
+      "bn": "বিশেষ করে",
+      "use": "নির্দিষ্ট উদাহরণ"
+    },
+    {
+      "word": "In this context",
+      "bn": "এই প্রেক্ষাপটে",
+      "use": "প্রসঙ্গ নির্দেশ"
+    },
+    {
+      "word": "Ultimately",
+      "bn": "পরিশেষে",
+      "use": "উপসংহার"
+    }
+  ],
+  "connectorsExample": "A Qatari delegation held talks in Tehran. Meanwhile, attacks near the Strait of Hormuz continued. Consequently, concern about maritime security has grown.",
+  "transformation": [
+    {
+      "label": "Simple Sentence",
+      "text": "Due to the continuation of the conflict, energy markets became unstable."
+    },
+    {
+      "label": "Compound Sentence",
+      "text": "The conflict continued, and energy markets became unstable."
+    },
+    {
+      "label": "Complex Sentence",
+      "text": "As the conflict continued, energy markets became unstable."
+    },
+    {
+      "label": "Advanced Expression",
+      "text": "The prolonged regional conflict heightened uncertainty in international energy markets and increased concerns over vital shipping routes."
+    }
+  ],
+  "translation": {
+    "note": "প্রথমে নিজে অনুবাদ করবে। নিজের অনুবাদ শেষ হলে উত্তর মিলিয়ে নেবে।",
+    "bnToEn": [
+      {
+        "q": "মধ্যপ্রাচ্যের রাজনৈতিক অস্থিতিশীলতা আন্তর্জাতিক জ্বালানি বাজারে অনিশ্চয়তা সৃষ্টি করতে পারে।",
+        "a": "Political instability in the Middle East may create uncertainty in international energy markets."
+      },
+      {
+        "q": "দীর্ঘস্থায়ী শান্তির জন্য সামরিক সংযম, কূটনৈতিক আলোচনা এবং আন্তর্জাতিক সহযোগিতা প্রয়োজন।",
+        "a": "Lasting peace requires military restraint, diplomatic negotiations and international cooperation."
+      }
+    ],
+    "enToBn": [
+      {
+        "q": "Disruption to major shipping routes can increase transportation costs and affect global trade.",
+        "a": "গুরুত্বপূর্ণ নৌপথে বিঘ্ন পরিবহন ব্যয় বাড়াতে ও বৈশ্বিক বাণিজ্যকে প্রভাবিত করতে পারে।"
+      },
+      {
+        "q": "Regional mediation may create an opportunity for dialogue, but a lasting settlement requires political commitment from all parties.",
+        "a": "আঞ্চলিক মধ্যস্থতা সংলাপের সুযোগ তৈরি করতে পারে, তবে দীর্ঘস্থায়ী সমাধানে সব পক্ষের রাজনৈতিক অঙ্গীকার প্রয়োজন।"
+      }
+    ]
+  },
+  "assignment": {
+    "intro": "নিচের ১০টি Expression থেকে অন্তত ৫টি ব্যবহার করে নিজে ৫টি English Sentence লিখবে।",
+    "expressions": [
+      "Regional stability",
+      "Energy security",
+      "Maritime security",
+      "Diplomatic mediation",
+      "Humanitarian crisis",
+      "Civilian protection",
+      "Strategic interests",
+      "International law",
+      "Peaceful settlement",
+      "Economic vulnerability"
+    ],
+    "criteria": [
+      "Grammar Accuracy",
+      "Right Word Selection",
+      "Sentence Structure",
+      "Natural Expression",
+      "BCS Written Standard"
+    ],
+    "note": "শর্ত: একটি complex sentence ও বাংলাদেশের অর্থনৈতিক স্বার্থ নিয়ে একটি বাক্য থাকবে। তোমার লেখা বাক্যগুলো নিচের ঘরে লিখে রাখো (এই ডিভাইসে সংরক্ষিত থাকবে)। তারপর প্রতিটি বাক্যে Grammar mistake, Corrected sentence, Better expression ও বাংলা ব্যাখ্যা—এই চারটি দিক ধরে নিজে মিলিয়ে দেখো।"
+  },
+  "sections": [
+    {
+      "title": "Current Affairs & Key Facts",
+      "sub": "Paragraph-এ ব্যবহৃত সাম্প্রতিক তথ্য — তারিখসহ মনে রাখবে।",
+      "blocks": [
+        {
+          "t": "ul",
+          "items": [
+            "28 February 2026: Reuters-এর প্রতিবেদন অনুযায়ী যুক্তরাষ্ট্র ও ইসরায়েল ইরানে হামলা চালায়; পরে ইরান ইসরায়েল ও উপসাগরীয় অঞ্চলের মার্কিন ঘাঁটি-সম্পর্কিত লক্ষ্যবস্তুতে হামলা চালায়।",
+            "21 November 2026: কাতারের প্রতিনিধিদল তেহরানে ইরানি কর্মকর্তাদের সঙ্গে আলোচনা করে; যুদ্ধ অবসানের সমঝোতা ঘোষণা হয়নি।",
+            "21 November 2026: বাহরাইন জানায় ইরানের হামলায় বেসামরিক শিল্প স্থাপনা ক্ষতিগ্রস্ত ও দুজন আহত হন; ইরানের Revolutionary Guards দাবি করে তাদের লক্ষ্য ছিল মার্কিন সামরিক অবস্থান।",
+            "17 November 2026: Strait of Hormuz-এর কাছে জাহাজ ও ট্যাংকারে হামলার খবর প্রকাশিত হয়।",
+            "19 November 2026: যুক্তরাষ্ট্র, যুক্তরাজ্য, ফ্রান্স ও জার্মানি IAEA-কে ক্ষতিগ্রস্ত ইরানি পারমাণবিক স্থাপনায় পুনরায় পরিদর্শনের সুযোগ দেওয়ার আহ্বান জানায়।"
+          ]
+        },
+        {
+          "t": "h",
+          "text": "বাংলাদেশের সম্ভাব্য প্রভাব"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "জ্বালানি পরিবহনে বিঘ্নে আমদানি ব্যয় বাড়তে পারে",
+            "জ্বালানি ও পরিবহন ব্যয়ে মূল্যস্ফীতির চাপ তৈরি হতে পারে",
+            "উপসাগরীয় অঞ্চলে কর্মরত বাংলাদেশি শ্রমিকদের নিরাপত্তা ও কর্মসংস্থানে ঝুঁকি হতে পারে",
+            "নৌপথে অনিশ্চয়তা পণ্য পরিবহনের সময় ও ব্যয় বাড়াতে পারে"
+          ]
+        },
+        {
+          "t": "tip",
+          "label": "সতর্কতা",
+          "text": "এগুলো সম্ভাব্য প্রভাব, নিশ্চিত ফল নয়।"
+        },
+        {
+          "t": "tip",
+          "label": "লেখার নিয়ম",
+          "text": "চলমান আন্তর্জাতিক ঘটনার ক্ষেত্রে তারিখ, সংশ্লিষ্ট পক্ষের বক্তব্য এবং স্বাধীনভাবে যাচাইকৃত তথ্য আলাদা রাখবে।"
+        }
+      ]
+    },
+    {
+      "title": "Revision Checklist",
+      "sub": "পাঠ শেষে নিজেকে যাচাই করো।",
+      "blocks": [
+        {
+          "t": "ul",
+          "items": [
+            "Mediation, Negotiation ও Dialogue-এর পার্থক্য বুঝেছি।",
+            "Maritime Security ও Energy Security-এর অর্থ জানি।",
+            "Strait of Hormuz-এর কৌশলগত গুরুত্ব বুঝেছি।",
+            "কাতারের কূটনৈতিক উদ্যোগ ও IAEA পরিদর্শন-সংক্রান্ত আলোচনার সারাংশ জানি।",
+            "Since + Past Simple, Present Perfect এবং Reported Speech ব্যবহার করতে পারি।",
+            "বাংলাদেশের অর্থনৈতিক স্বার্থসহ মধ্যপ্রাচ্য বিষয়ে balanced paragraph লিখতে পারি।"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Final Review — Days 06–10",
+      "sub": "পাঁচ দিনের পাঠের সারসংক্ষেপ ও চূড়ান্ত লেখার অনুশীলন।",
+      "blocks": [
+        {
+          "t": "table",
+          "head": [
+            "Day",
+            "Topic",
+            "Core writing focus"
+          ],
+          "rows": [
+            [
+              "06",
+              "Public Health and Universal Access to Healthcare",
+              "Health equity, prevention, universal coverage, inclusion"
+            ],
+            [
+              "07",
+              "Nuclear Arms Control",
+              "NPT, deterrence, disarmament, non-proliferation"
+            ],
+            [
+              "08",
+              "Russia–Ukraine War",
+              "Sovereignty, ceasefire, diplomacy, reconstruction"
+            ],
+            [
+              "09",
+              "US–China Trade",
+              "Tariffs, supply chains, strategic competition, diversification"
+            ],
+            [
+              "10",
+              "Iran and the Middle East",
+              "Regional conflict, energy security, maritime security, mediation"
+            ]
+          ]
+        },
+        {
+          "t": "h",
+          "text": "Final Writing Practice"
+        },
+        {
+          "t": "p",
+          "text": "নিজে ১৫০–১৮০ শব্দের একটি paragraph লেখো: “The Role of Diplomacy in Addressing Global Challenges”"
+        },
+        {
+          "t": "ol",
+          "items": [
+            "Introduction: global challenges-এর পরিচয়",
+            "Challenges: war, trade tensions, climate and health crises",
+            "Role of diplomacy: dialogue, negotiation and mediation",
+            "International cooperation: UN and multilateral institutions",
+            "Bangladesh perspective",
+            "Conclusion: peaceful and rules-based cooperation"
+          ]
+        },
+        {
+          "t": "write",
+          "id": "final-review",
+          "label": "আমার Paragraph (১৫০–১৮০ শব্দ)",
+          "rows": 10,
+          "placeholder": "The Role of Diplomacy in Addressing Global Challenges…",
+          "count": "words"
+        },
+        {
+          "t": "h",
+          "text": "Submission Checklist"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "প্রতিটি paragraph-এ একটি স্পষ্ট central idea আছে।",
+            "প্রাসঙ্গিক supporting details ব্যবহার করেছি।",
+            "তথ্য ও মতামত আলাদা রেখেছি।",
+            "Formal vocabulary ব্যবহার করেছি; অপ্রয়োজনীয় কঠিন শব্দ এড়িয়েছি।",
+            "Grammar, punctuation ও spelling যাচাই করেছি।",
+            "Conclusion-এ সমাধান বা ভবিষ্যৎ করণীয় তুলে ধরেছি।"
+          ]
+        }
+      ]
+    }
+  ],
+  "finalGoal": {
+    "title": "Day 10 — আজকের মূল শিক্ষা",
+    "text": [
+      "মধ্যপ্রাচ্য বিষয়ে লেখায় প্রতিটি পক্ষের দাবি ‘said/reported’ দিয়ে আলাদা রাখবে, জ্বালানি ও সামুদ্রিক নিরাপত্তার প্রভাব ব্যাখ্যা করবে, এবং বাংলাদেশের আমদানি ব্যয়, মূল্যস্ফীতি ও প্রবাসী শ্রমিকদের স্বার্থের দিকটি যুক্ত করবে।"
+    ]
+  }
+}

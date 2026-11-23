@@ -1,0 +1,612 @@
+{
+  "series": "Daily English Writing Practice",
+  "day": "Day 08",
+  "exam": "52nd BCS Written",
+  "lessonNo": "Lesson 08",
+  "theme": "International Affairs & Global Security",
+  "topic": "The Russia–Ukraine War: Prospects for Peace",
+  "intro": [
+    "আজকের লক্ষ্য: যুদ্ধের আন্তর্জাতিক প্রভাব, সার্বভৌমত্ব, কূটনীতি ও শান্তির সম্ভাবনা নিয়ে balanced paragraph লেখা।"
+  ],
+  "paragraph": {
+    "title": "The Russia–Ukraine War: Prospects for Peace",
+    "words": 140,
+    "text": "The Russia–Ukraine war, which began with Russia’s full-scale invasion in February 2022, has become a major test of international law and collective security. Beyond the battlefield, it has disrupted energy and transport networks, strained public finances and exposed civilians to grave risks. The United Nations Charter calls on states to settle disputes peacefully and respect the territorial integrity of other countries. Recent diplomatic contacts have produced limited progress: talks in Abu Dhabi in November 2026 led to an agreed prisoner exchange but no major breakthrough. On 20 November, a large Russian attack killed eight people and damaged energy and transport infrastructure, according to Reuters. A durable settlement would require a ceasefire, credible security guarantees, humanitarian access and sustained negotiations that respect Ukraine’s sovereignty. For Bangladesh, the conflict highlights the importance of economic stability, peaceful diplomacy and a rules-based international order."
+  },
+  "vocabulary": [
+    {
+      "word": "Sovereignty",
+      "bn": "সার্বভৌমত্ব",
+      "pos": "Noun",
+      "synonym": "Self-rule",
+      "antonym": "Subjugation",
+      "example": "Every state has the right to protect its sovereignty.",
+      "exampleBn": "প্রত্যেক রাষ্ট্রের নিজের সার্বভৌমত্ব রক্ষার অধিকার আছে।"
+    },
+    {
+      "word": "Escalation",
+      "bn": "সংঘাতের তীব্রতা বৃদ্ধি",
+      "pos": "Noun",
+      "synonym": "Intensification",
+      "antonym": "De-escalation",
+      "example": "Further escalation could undermine stability.",
+      "exampleBn": "সংঘাতের আরও তীব্রতা বৃদ্ধি স্থিতিশীলতাকে দুর্বল করতে পারে।"
+    },
+    {
+      "word": "Ceasefire",
+      "bn": "যুদ্ধবিরতি",
+      "pos": "Noun",
+      "synonym": "Truce",
+      "antonym": "Resumption of hostilities",
+      "example": "A ceasefire is a first step towards ending conflict.",
+      "exampleBn": "যুদ্ধবিরতি সংঘাত অবসানের প্রথম পদক্ষেপ।"
+    },
+    {
+      "word": "Displacement",
+      "bn": "বাস্তুচ্যুতি",
+      "pos": "Noun",
+      "synonym": "Forced relocation",
+      "antonym": "Resettlement",
+      "example": "Armed conflicts have caused widespread displacement.",
+      "exampleBn": "সশস্ত্র সংঘাত ব্যাপক বাস্তুচ্যুতি ঘটিয়েছে।"
+    },
+    {
+      "word": "Reconstruction",
+      "bn": "পুনর্গঠন",
+      "pos": "Noun",
+      "synonym": "Rebuilding",
+      "antonym": "Destruction",
+      "example": "International cooperation is necessary for reconstruction.",
+      "exampleBn": "পুনর্গঠনের জন্য আন্তর্জাতিক সহযোগিতা প্রয়োজন।"
+    }
+  ],
+  "prepositional": [
+    {
+      "phrase": "In the aftermath of",
+      "bn": "ঘটনার পরবর্তী সময়ে",
+      "example": "In the aftermath of war, reconstruction becomes a challenge.",
+      "exampleBn": "যুদ্ধের পরবর্তী সময়ে পুনর্গঠন একটি চ্যালেঞ্জ হয়ে দাঁড়ায়।"
+    },
+    {
+      "phrase": "In the absence of",
+      "bn": "অনুপস্থিতিতে",
+      "example": "In the absence of dialogue, tensions may increase.",
+      "exampleBn": "সংলাপের অনুপস্থিতিতে উত্তেজনা বাড়তে পারে।"
+    },
+    {
+      "phrase": "In line with",
+      "bn": "নীতির সঙ্গে সামঞ্জস্য রেখে",
+      "example": "States should act in line with international law.",
+      "exampleBn": "রাষ্ট্রগুলোর আন্তর্জাতিক আইনের সঙ্গে সামঞ্জস্য রেখে কাজ করা উচিত।"
+    },
+    {
+      "phrase": "With regard to",
+      "bn": "কোনো বিষয়ে",
+      "example": "With regard to regional security, diplomacy is essential.",
+      "exampleBn": "আঞ্চলিক নিরাপত্তার ক্ষেত্রে কূটনীতি অপরিহার্য।"
+    },
+    {
+      "phrase": "On the basis of",
+      "bn": "কোনো ভিত্তির ওপর",
+      "example": "A peace agreement should be concluded on the basis of mutual understanding.",
+      "exampleBn": "পারস্পরিক বোঝাপড়ার ভিত্তিতে একটি শান্তিচুক্তি সম্পন্ন হওয়া উচিত।"
+    }
+  ],
+  "idioms": {
+    "items": [
+      {
+        "phrase": "Break the deadlock",
+        "bn": "অচলাবস্থা কাটানো",
+        "example": "Mediation may help break the deadlock."
+      },
+      {
+        "phrase": "Lay down arms",
+        "bn": "অস্ত্র সমর্পণ/যুদ্ধ বন্ধ করা",
+        "example": "Both sides must eventually lay down arms."
+      },
+      {
+        "phrase": "Reach a turning point",
+        "bn": "গুরুত্বপূর্ণ পরিবর্তনের পর্যায়ে পৌঁছানো",
+        "example": "The talks could reach a turning point."
+      },
+      {
+        "phrase": "On the brink of",
+        "bn": "দ্বারপ্রান্তে",
+        "example": "The region was on the brink of a wider conflict."
+      },
+      {
+        "phrase": "A long road ahead",
+        "bn": "সামনে দীর্ঘ ও কঠিন পথ",
+        "example": "There is a long road ahead towards lasting peace."
+      }
+    ]
+  },
+  "writers": {
+    "intro": "আজকের বিষয়ের সঙ্গে সম্পর্কিত দুজন লেখক — Erich Maria Remarque ও Ernest Hemingway — এবং তাঁদের দুটি করে উল্লেখযোগ্য গ্রন্থ।",
+    "items": [
+      {
+        "name": "Erich Maria Remarque",
+        "nationality": "German",
+        "identity": "Novelist (1898–1970)",
+        "book": "All Quiet on the Western Front",
+        "published": "1929",
+        "genre": "Anti-war Novel",
+        "summary": "প্রথম বিশ্বযুদ্ধে তরুণ জার্মান সৈনিক Paul Bäumer ও সহযোদ্ধাদের অভিজ্ঞতা; যুদ্ধের ভয়াবহতা, বন্ধুত্ব ও তরুণ প্রজন্মের স্বপ্নভঙ্গ।",
+        "characters": [
+          {
+            "name": "Paul Bäumer",
+            "desc": "প্রধান চরিত্র ও বর্ণনাকারী"
+          },
+          {
+            "name": "Katczinsky (Kat)",
+            "desc": "ঘনিষ্ঠ বন্ধু ও অভিজ্ঞ সৈনিক"
+          },
+          {
+            "name": "Albert Kropp",
+            "desc": "সহপাঠী ও যুদ্ধসঙ্গী"
+          }
+        ],
+        "message": [
+          "জার্মান ঔপন্যাসিক; প্রথম বিশ্বযুদ্ধের অভিজ্ঞতা ও যুদ্ধের মানবিক মূল্য নিয়ে লেখার জন্য পরিচিত।"
+        ],
+        "bcsUse": [
+          "Horrors of War",
+          "Impact of War on Youth",
+          "International Peace"
+        ],
+        "cover": null
+      },
+      {
+        "name": "Erich Maria Remarque",
+        "nationality": "German",
+        "identity": "Novelist (1898–1970)",
+        "book": "A Time to Love and a Time to Die",
+        "published": "1954",
+        "genre": "War Novel",
+        "summary": "জার্মান সৈনিক Ernst Graeber ছুটিতে বাড়ি ফিরে যুদ্ধবিধ্বস্ত সমাজ দেখে এবং Elisabeth Kruse-এর সঙ্গে সম্পর্ক গড়ে তোলে।",
+        "characters": [
+          {
+            "name": "Ernst Graeber",
+            "desc": "সৈনিক"
+          },
+          {
+            "name": "Elisabeth Kruse",
+            "desc": "প্রেমিকা"
+          }
+        ],
+        "message": [
+          "জার্মান ঔপন্যাসিক; প্রথম বিশ্বযুদ্ধের অভিজ্ঞতা ও যুদ্ধের মানবিক মূল্য নিয়ে লেখার জন্য পরিচিত।"
+        ],
+        "bcsUse": [
+          "War and Civilian Life",
+          "Human Cost of Conflict",
+          "Peace and Humanity"
+        ],
+        "cover": null
+      },
+      {
+        "name": "Ernest Hemingway",
+        "nationality": "American",
+        "identity": "Novelist, Short-story Writer and Journalist (1899–1961)",
+        "book": "A Farewell to Arms",
+        "published": "1929",
+        "genre": "War Novel",
+        "summary": "প্রথম বিশ্বযুদ্ধের ইতালীয় রণাঙ্গনে Frederic Henry ও নার্স Catherine Barkley-এর সম্পর্ক; যুদ্ধ, ভালোবাসা, মৃত্যু ও অসহায়ত্ব।",
+        "characters": [
+          {
+            "name": "Frederic Henry",
+            "desc": "অ্যাম্বুলেন্স কর্মকর্তা"
+          },
+          {
+            "name": "Catherine Barkley",
+            "desc": "নার্স"
+          },
+          {
+            "name": "Rinaldi",
+            "desc": "সামরিক সার্জন ও বন্ধু"
+          }
+        ],
+        "message": [
+          "মার্কিন ঔপন্যাসিক ও সাংবাদিক; সংক্ষিপ্ত, সরাসরি ভাষা এবং যুদ্ধ ও মানবিক অভিজ্ঞতার বর্ণনার জন্য পরিচিত।"
+        ],
+        "bcsUse": [
+          "War and Humanity",
+          "Futility of War",
+          "Conflict Resolution"
+        ],
+        "photo": {
+          "src": "/writing/img/hemingway.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": null
+      },
+      {
+        "name": "Ernest Hemingway",
+        "nationality": "American",
+        "identity": "Novelist, Short-story Writer and Journalist (1899–1961)",
+        "book": "For Whom the Bell Tolls",
+        "published": "1940",
+        "genre": "War Novel",
+        "summary": "স্পেনের গৃহযুদ্ধে Robert Jordan-কে একটি সেতু ধ্বংসের দায়িত্ব দেওয়া হয়; যুদ্ধ, আত্মত্যাগ ও মানবিক সম্পর্কের গল্প।",
+        "characters": [
+          {
+            "name": "Robert Jordan",
+            "desc": "স্বেচ্ছাসেবক"
+          },
+          {
+            "name": "Maria",
+            "desc": "প্রেমিকা"
+          },
+          {
+            "name": "Pilar",
+            "desc": "গেরিলা দলের নারী সদস্য"
+          },
+          {
+            "name": "Anselmo",
+            "desc": "প্রবীণ গেরিলা"
+          }
+        ],
+        "message": [
+          "মার্কিন ঔপন্যাসিক ও সাংবাদিক; সংক্ষিপ্ত, সরাসরি ভাষা এবং যুদ্ধ ও মানবিক অভিজ্ঞতার বর্ণনার জন্য পরিচিত।"
+        ],
+        "bcsUse": [
+          "Civil War",
+          "Sacrifice and Solidarity",
+          "Human Cost of Conflict"
+        ],
+        "photo": {
+          "src": "/writing/img/hemingway.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": {
+          "src": "/writing/img/book-bell-tolls.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        }
+      }
+    ]
+  },
+  "quote": {
+    "text": "True peace is not merely the absence of tension; it is the presence of justice",
+    "author": "Martin Luther King Jr.",
+    "work": "Stride Toward Freedom: The Montgomery Story (1958), Chapter 2",
+    "bn": "প্রকৃত শান্তি কেবল সংঘাতের অনুপস্থিতি নয়; ন্যায়বিচারের উপস্থিতিই প্রকৃত শান্তি।",
+    "explanation": "শুধু যুদ্ধ থেমে গেলেই শান্তি প্রতিষ্ঠিত হয় না; ন্যায়বিচার, অধিকার ও মর্যাদা নিশ্চিত না হলে সংঘাত আবার ফিরে আসতে পারে। তাই যুদ্ধবিরতির পাশাপাশি ন্যায্য রাজনৈতিক সমাধান প্রয়োজন।",
+    "useIn": [
+      "International Peace",
+      "Human Rights",
+      "Justice",
+      "Conflict Resolution"
+    ]
+  },
+  "sentences": [
+    {
+      "en": "The Russia–Ukraine war, which began with Russia’s full-scale invasion in February 2022, has become a major test of international law and collective security.",
+      "bn": "২০২২ সালের ফেব্রুয়ারিতে রাশিয়ার পূর্ণমাত্রার সামরিক অভিযানে শুরু হওয়া যুদ্ধ আন্তর্জাতিক আইন ও সম্মিলিত নিরাপত্তার বড় পরীক্ষা।"
+    },
+    {
+      "en": "Beyond the battlefield, it has disrupted energy and transport networks, strained public finances and exposed civilians to grave risks.",
+      "bn": "যুদ্ধক্ষেত্রের বাইরেও এটি জ্বালানি ও পরিবহন নেটওয়ার্কে বিঘ্ন ঘটিয়েছে, সরকারি অর্থব্যবস্থায় চাপ সৃষ্টি করেছে এবং বেসামরিক মানুষকে ঝুঁকিতে ফেলেছে।"
+    },
+    {
+      "en": "The United Nations Charter calls on states to settle disputes peacefully and respect the territorial integrity of other countries.",
+      "bn": "জাতিসংঘ সনদ রাষ্ট্রগুলোকে শান্তিপূর্ণভাবে বিরোধ নিষ্পত্তি ও অন্য দেশের ভৌগোলিক অখণ্ডতাকে সম্মান করতে আহ্বান জানায়।"
+    },
+    {
+      "en": "Recent diplomatic contacts have produced limited progress: talks in Abu Dhabi led to an agreed prisoner exchange but no major breakthrough.",
+      "bn": "সাম্প্রতিক কূটনৈতিক যোগাযোগে সীমিত অগ্রগতি হয়েছে: আবুধাবির আলোচনায় বন্দি বিনিময়ে সমঝোতা হলেও বড় অগ্রগতি হয়নি।"
+    },
+    {
+      "en": "On 20 November, a large Russian attack killed eight people and damaged energy and transport infrastructure, according to Reuters.",
+      "bn": "রয়টার্সের মতে, ২০ নভেম্বর রাশিয়ার হামলায় আটজন নিহত হন এবং জ্বালানি ও পরিবহন অবকাঠামো ক্ষতিগ্রস্ত হয়।"
+    },
+    {
+      "en": "A durable settlement would require a ceasefire, credible security guarantees, humanitarian access and sustained negotiations that respect Ukraine’s sovereignty.",
+      "bn": "দীর্ঘস্থায়ী সমাধানে যুদ্ধবিরতি, বিশ্বাসযোগ্য নিরাপত্তার নিশ্চয়তা, মানবিক সহায়তার সুযোগ ও ইউক্রেনের সার্বভৌমত্বকে সম্মান করে অব্যাহত আলোচনা প্রয়োজন।"
+    },
+    {
+      "en": "For Bangladesh, the conflict highlights the importance of economic stability, peaceful diplomacy and a rules-based international order.",
+      "bn": "বাংলাদেশের জন্য সংঘাতটি অর্থনৈতিক স্থিতিশীলতা, শান্তিপূর্ণ কূটনীতি ও নিয়মভিত্তিক আন্তর্জাতিক ব্যবস্থার গুরুত্ব তুলে ধরে।"
+    }
+  ],
+  "wordChoice": {
+    "items": [
+      {
+        "title": "War vs Conflict vs Hostilities",
+        "rows": [
+          {
+            "word": "War",
+            "meaning": "ব্যাপক সশস্ত্র যুদ্ধ"
+          },
+          {
+            "word": "Conflict",
+            "meaning": "সামরিক/রাজনৈতিক বিরোধ"
+          },
+          {
+            "word": "Hostilities",
+            "meaning": "চলমান সশস্ত্র শত্রুতা"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Ceasefire vs Truce vs Peace Agreement",
+        "rows": [
+          {
+            "word": "Ceasefire",
+            "meaning": "যুদ্ধবিরতি"
+          },
+          {
+            "word": "Truce",
+            "meaning": "সাধারণত সাময়িক বিরতি"
+          },
+          {
+            "word": "Peace Agreement",
+            "meaning": "বৃহত্তর রাজনৈতিক চুক্তি"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Sovereignty vs Independence vs Autonomy",
+        "rows": [
+          {
+            "word": "Sovereignty",
+            "meaning": "রাষ্ট্রের সর্বোচ্চ কর্তৃত্ব"
+          },
+          {
+            "word": "Independence",
+            "meaning": "অন্য শাসন থেকে মুক্তি"
+          },
+          {
+            "word": "Autonomy",
+            "meaning": "বৃহত্তর রাষ্ট্রের মধ্যে স্বশাসন"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Humanitarian vs Charitable vs Philanthropic",
+        "rows": [
+          {
+            "word": "Humanitarian",
+            "meaning": "মানবিক দুর্দশা লাঘব"
+          },
+          {
+            "word": "Charitable",
+            "meaning": "দাতব্য"
+          },
+          {
+            "word": "Philanthropic",
+            "meaning": "বৃহত্তর মানবকল্যাণে অবদান"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Negotiate vs Mediate vs Arbitrate",
+        "rows": [
+          {
+            "word": "Negotiate",
+            "meaning": "সরাসরি আলোচনা"
+          },
+          {
+            "word": "Mediate",
+            "meaning": "তৃতীয় পক্ষের মধ্যস্থতা"
+          },
+          {
+            "word": "Arbitrate",
+            "meaning": "নিরপেক্ষ পক্ষের মাধ্যমে সিদ্ধান্ত"
+          }
+        ],
+        "examples": []
+      }
+    ]
+  },
+  "grammar": [
+    {
+      "title": "Non-defining Relative Clause",
+      "structure": "Noun + , + which/who + Verb … + , + Main Clause",
+      "example": "The United Nations, which was established in 1945, plays an important role.",
+      "explanation": "কোনো noun সম্পর্কে অতিরিক্ত তথ্য দিতে ব্যবহৃত হয়; clause-টি বাদ দিলেও মূল বাক্যের অর্থ ঠিক থাকে। দুই পাশে comma বসে এবং এখানে that ব্যবহার করা যায় না।",
+      "wrong": "The United Nations that was established in 1945 plays an important role.",
+      "right": "The United Nations, which was established in 1945, plays an important role.",
+      "more": [
+        "The Russia–Ukraine war, which began in February 2022, has become a major test of international law."
+      ]
+    },
+    {
+      "title": "Would + Base Verb",
+      "structure": "Subject + would + Base Verb",
+      "example": "A ceasefire would reduce civilian suffering.",
+      "explanation": "সম্ভাব্য বা শর্তসাপেক্ষ পরিস্থিতি বোঝায় — কোনো কিছু ঘটলে কী হতো বা হবে।",
+      "more": [
+        "International cooperation would support reconstruction.",
+        "A durable settlement would require credible security guarantees."
+      ]
+    }
+  ],
+  "collocations": [
+    {
+      "expr": "Territorial integrity",
+      "bn": "ভৌগোলিক অখণ্ডতা"
+    },
+    {
+      "expr": "Civilian casualties",
+      "bn": "বেসামরিক হতাহত"
+    },
+    {
+      "expr": "Humanitarian access",
+      "bn": "মানবিক সহায়তা পৌঁছানোর সুযোগ"
+    },
+    {
+      "expr": "Security guarantees",
+      "bn": "নিরাপত্তার নিশ্চয়তা"
+    },
+    {
+      "expr": "Post-war reconstruction",
+      "bn": "যুদ্ধ-পরবর্তী পুনর্গঠন"
+    },
+    {
+      "expr": "Peace negotiations",
+      "bn": "শান্তি আলোচনা"
+    },
+    {
+      "expr": "Ceasefire agreement",
+      "bn": "যুদ্ধবিরতি চুক্তি"
+    },
+    {
+      "expr": "Economic recovery",
+      "bn": "অর্থনৈতিক পুনরুদ্ধার"
+    },
+    {
+      "expr": "Rules-based international order",
+      "bn": "নিয়মভিত্তিক আন্তর্জাতিক ব্যবস্থা"
+    },
+    {
+      "expr": "Diplomatic settlement",
+      "bn": "কূটনৈতিক সমাধান"
+    }
+  ],
+  "connectors": [
+    {
+      "word": "Nevertheless",
+      "bn": "তা সত্ত্বেও",
+      "use": "বিপরীত বক্তব্য"
+    },
+    {
+      "word": "Meanwhile",
+      "bn": "এদিকে / একই সময়ে",
+      "use": "সমান্তরাল ঘটনা"
+    },
+    {
+      "word": "Consequently",
+      "bn": "ফলস্বরূপ",
+      "use": "পরিণতি"
+    },
+    {
+      "word": "In the long term",
+      "bn": "দীর্ঘমেয়াদে",
+      "use": "ভবিষ্যৎ প্রভাব"
+    },
+    {
+      "word": "Provided that",
+      "bn": "যদি / এই শর্তে যে",
+      "use": "শর্ত"
+    },
+    {
+      "word": "Ultimately",
+      "bn": "পরিশেষে",
+      "use": "উপসংহার"
+    }
+  ],
+  "connectorsExample": "Talks in Abu Dhabi produced a prisoner exchange. Nevertheless, no major breakthrough was achieved. Meanwhile, attacks on infrastructure continued.",
+  "transformation": [
+    {
+      "label": "Simple Sentence",
+      "text": "Despite resuming talks, the parties failed to reach an agreement."
+    },
+    {
+      "label": "Compound Sentence",
+      "text": "The parties resumed talks, but they failed to reach an agreement."
+    },
+    {
+      "label": "Complex Sentence",
+      "text": "Although the parties resumed talks, they failed to reach an agreement."
+    },
+    {
+      "label": "Advanced Expression",
+      "text": "Despite renewed diplomatic engagement, the parties remained unable to reach a mutually acceptable settlement."
+    }
+  ],
+  "translation": {
+    "note": "প্রথমে নিজে অনুবাদ করবে। নিজের অনুবাদ শেষ হলে উত্তর মিলিয়ে নেবে।",
+    "bnToEn": [
+      {
+        "q": "যুদ্ধের দীর্ঘস্থায়ী প্রভাব শুধু সীমান্তে সীমাবদ্ধ থাকে না; তা বিশ্ব অর্থনীতি ও নিরাপত্তাকেও প্রভাবিত করে।",
+        "a": "The long-term effects of war are not confined to national borders; they also affect the global economy and security."
+      },
+      {
+        "q": "স্থায়ী শান্তির জন্য যুদ্ধবিরতির পাশাপাশি রাজনৈতিক সমঝোতা ও নিরাপত্তার নিশ্চয়তা প্রয়োজন।",
+        "a": "Lasting peace requires political compromise and security guarantees, alongside a ceasefire."
+      }
+    ],
+    "enToBn": [
+      {
+        "q": "A ceasefire may stop the fighting temporarily, but it does not automatically resolve the underlying political disputes.",
+        "a": "যুদ্ধবিরতি সাময়িকভাবে লড়াই থামাতে পারে, কিন্তু অন্তর্নিহিত রাজনৈতিক বিরোধের সমাধান করে না।"
+      },
+      {
+        "q": "Post-war reconstruction requires international assistance, institutional reform and long-term investment.",
+        "a": "যুদ্ধ-পরবর্তী পুনর্গঠনে আন্তর্জাতিক সহায়তা, প্রাতিষ্ঠানিক সংস্কার ও দীর্ঘমেয়াদি বিনিয়োগ প্রয়োজন।"
+      }
+    ]
+  },
+  "assignment": {
+    "intro": "নিচের ১০টি Expression থেকে অন্তত ৫টি ব্যবহার করে নিজে ৫টি English Sentence লিখবে।",
+    "expressions": [
+      "Territorial integrity",
+      "Civilian casualties",
+      "Security guarantees",
+      "Humanitarian access",
+      "Break the deadlock",
+      "Lay down arms",
+      "Sustained negotiations",
+      "Post-war reconstruction",
+      "Economic recovery",
+      "Rules-based international order"
+    ],
+    "criteria": [
+      "Grammar Accuracy",
+      "Right Word Selection",
+      "Sentence Structure",
+      "Natural Expression",
+      "BCS Written Standard"
+    ],
+    "note": "শর্ত: একটি complex sentence ও বাংলাদেশের স্বার্থ নিয়ে একটি বাক্য থাকবে। তোমার লেখা বাক্যগুলো নিচের ঘরে লিখে রাখো (এই ডিভাইসে সংরক্ষিত থাকবে)। তারপর প্রতিটি বাক্যে Grammar mistake, Corrected sentence, Better expression ও বাংলা ব্যাখ্যা—এই চারটি দিক ধরে নিজে মিলিয়ে দেখো।"
+  },
+  "sections": [
+    {
+      "title": "Current Affairs & Key Facts",
+      "sub": "Paragraph-এ ব্যবহৃত সাম্প্রতিক তথ্য — তারিখসহ মনে রাখবে।",
+      "blocks": [
+        {
+          "t": "ul",
+          "items": [
+            "24 February 2022: রাশিয়া ইউক্রেনে পূর্ণমাত্রার সামরিক অভিযান শুরু করে।",
+            "November 2026: আবুধাবিতে রাশিয়া, ইউক্রেন ও যুক্তরাষ্ট্রের কর্মকর্তাদের আলোচনা; বন্দি বিনিময়ে সমঝোতা হলেও যুদ্ধ বন্ধের বড় অগ্রগতি হয়নি।",
+            "20 November 2026: Reuters জানায়, রাশিয়ার হামলায় আটজন নিহত এবং বিদ্যুৎ, পরিবহন ও অবকাঠামো ক্ষতিগ্রস্ত হয়।",
+            "17 November 2026: জাতিসংঘের মানবাধিকার কর্মকর্তাদের তথ্যমতে, অক্টোবরে বেসামরিক হতাহতের সংখ্যা আগের বছরের একই মাসের তুলনায় ৯৫% বেশি ছিল।",
+            "16 November 2026: Reuters-এ IMF-সংক্রান্ত প্রতিবেদনে ২০২৭ সালে ইউক্রেনের সম্ভাব্য অর্থায়ন ঘাটতি ৩২–৩৪ বিলিয়ন ডলার হতে পারে বলা হয়।"
+          ]
+        },
+        {
+          "t": "tip",
+          "label": "লেখার নিয়ম",
+          "text": "চলমান আন্তর্জাতিক ঘটনার ক্ষেত্রে তারিখ, সংশ্লিষ্ট পক্ষের বক্তব্য এবং স্বাধীনভাবে যাচাইকৃত তথ্য আলাদা রাখবে।"
+        }
+      ]
+    },
+    {
+      "title": "Revision Checklist",
+      "sub": "পাঠ শেষে নিজেকে যাচাই করো।",
+      "blocks": [
+        {
+          "t": "ul",
+          "items": [
+            "Ceasefire, Truce ও Peace Agreement-এর পার্থক্য বুঝেছি।",
+            "UN Charter-এর শান্তিপূর্ণ বিরোধ নিষ্পত্তির নীতি জানি।",
+            "আবুধাবির আলোচনা ও ২০ নভেম্বরের ঘটনার সারাংশ জানি।",
+            "Non-defining relative clause এবং would + verb ব্যবহার করতে পারি।",
+            "যুদ্ধ ও শান্তি বিষয়ে balanced paragraph লিখতে পারি।"
+          ]
+        }
+      ]
+    }
+  ],
+  "finalGoal": {
+    "title": "Day 08 — আজকের মূল শিক্ষা",
+    "text": [
+      "যুদ্ধ নিয়ে লেখায় পক্ষপাত নয়, তথ্য ও নীতির ভিত্তিতে ভারসাম্য রাখবে: আন্তর্জাতিক আইন ও সার্বভৌমত্ব, মানবিক প্রভাব, কূটনৈতিক অগ্রগতি, এবং বাংলাদেশের অর্থনৈতিক ও কূটনৈতিক স্বার্থ — এই চারটি দিক যুক্ত করবে। চলমান ঘটনার তারিখ ও সূত্র (যেমন Reuters, UN) উল্লেখ করবে।"
+    ]
+  }
+}

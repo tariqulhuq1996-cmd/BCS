@@ -1,0 +1,685 @@
+{
+  "series": "Daily English Writing Practice",
+  "day": "Day 07",
+  "exam": "52nd BCS Written",
+  "lessonNo": "Lesson 07",
+  "theme": "International Affairs & Geopolitics",
+  "topic": "Nuclear Arms Control: A Global Imperative",
+  "intro": [
+    "আজকের লক্ষ্য: পারমাণবিক অস্ত্র নিয়ন্ত্রণ, নিরস্ত্রীকরণ, NPT ও আন্তর্জাতিক নিরাপত্তা নিয়ে ভারসাম্যপূর্ণ লেখা।"
+  ],
+  "paragraph": {
+    "title": "Nuclear Arms Control: A Global Imperative",
+    "words": 139,
+    "text": "Nuclear weapons remain one of the gravest threats to international security. Although nuclear deterrence is often presented as a way to prevent war, excessive dependence on it can deepen mistrust and encourage an arms race. Arms control seeks to limit the number, deployment or testing of weapons, while disarmament aims to reduce or eliminate them. The Non-Proliferation Treaty (NPT) supports three goals: preventing the spread of nuclear weapons, promoting peaceful uses of nuclear energy and pursuing disarmament. Yet progress has weakened. The New START treaty between the United States and Russia expired on 5 February 2026, and the NPT Review Conference ended without consensus in May 2026. These setbacks underline the need for dialogue, transparency and verifiable agreements. As a non-nuclear-weapon state, Bangladesh has a strong interest in a stable international order and should continue supporting multilateral disarmament efforts."
+  },
+  "structure": [
+    {
+      "step": "Nuclear weapons as a global threat",
+      "what": "পারমাণবিক অস্ত্র বৈশ্বিক হুমকি"
+    },
+    {
+      "step": "Deterrence and arms race",
+      "what": "নিবৃত্তকরণ ও অস্ত্র প্রতিযোগিতা"
+    },
+    {
+      "step": "Arms control vs disarmament",
+      "what": "অস্ত্র নিয়ন্ত্রণ বনাম নিরস্ত্রীকরণ"
+    },
+    {
+      "step": "NPT framework",
+      "what": "NPT-এর কাঠামো"
+    },
+    {
+      "step": "Recent developments",
+      "what": "সাম্প্রতিক ঘটনা"
+    },
+    {
+      "step": "Dialogue and verifiable agreements",
+      "what": "সংলাপ ও যাচাইযোগ্য চুক্তি"
+    },
+    {
+      "step": "Bangladesh perspective",
+      "what": "বাংলাদেশের দৃষ্টিভঙ্গি"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "Deterrence",
+      "bn": "নিবৃত্তকরণ",
+      "pos": "Noun",
+      "synonym": "Discouragement",
+      "antonym": "Encouragement",
+      "example": "Nuclear deterrence may prevent direct military confrontation.",
+      "exampleBn": "পারমাণবিক নিবৃত্তকরণ সরাসরি সামরিক সংঘাত ঠেকাতে পারে।"
+    },
+    {
+      "word": "Proliferation",
+      "bn": "বিস্তার",
+      "pos": "Noun",
+      "synonym": "Spread",
+      "antonym": "Containment",
+      "example": "The international community must prevent nuclear proliferation.",
+      "exampleBn": "আন্তর্জাতিক সম্প্রদায়কে পারমাণবিক অস্ত্রের বিস্তার রোধ করতে হবে।"
+    },
+    {
+      "word": "Disarmament",
+      "bn": "নিরস্ত্রীকরণ",
+      "pos": "Noun",
+      "synonym": "Demilitarisation",
+      "antonym": "Rearmament",
+      "example": "Global peace requires commitment to nuclear disarmament.",
+      "exampleBn": "বৈশ্বিক শান্তির জন্য পারমাণবিক নিরস্ত্রীকরণের প্রতি অঙ্গীকার প্রয়োজন।"
+    },
+    {
+      "word": "Verifiable",
+      "bn": "যাচাইযোগ্য",
+      "pos": "Adjective",
+      "synonym": "Confirmable",
+      "antonym": "Unverifiable",
+      "example": "Both countries should accept a verifiable agreement.",
+      "exampleBn": "উভয় দেশের একটি যাচাইযোগ্য চুক্তি মেনে নেওয়া উচিত।"
+    },
+    {
+      "word": "Transparency",
+      "bn": "স্বচ্ছতা",
+      "pos": "Noun",
+      "synonym": "Openness",
+      "antonym": "Secrecy",
+      "example": "Transparency is essential for building trust.",
+      "exampleBn": "আস্থা গড়ে তুলতে স্বচ্ছতা অপরিহার্য।"
+    }
+  ],
+  "prepositional": [
+    {
+      "phrase": "In pursuit of",
+      "bn": "লক্ষ্য অর্জনের প্রচেষ্টায়",
+      "example": "Nations should cooperate in pursuit of global peace.",
+      "exampleBn": "বৈশ্বিক শান্তি অর্জনের লক্ষ্যে রাষ্ট্রগুলোর সহযোগিতা করা উচিত।"
+    },
+    {
+      "phrase": "In response to",
+      "bn": "কোনো ঘটনার প্রতিক্রিয়ায়",
+      "example": "The UN acted in response to security concerns.",
+      "exampleBn": "নিরাপত্তা-উদ্বেগের প্রতিক্রিয়ায় জাতিসংঘ পদক্ষেপ নিয়েছিল।"
+    },
+    {
+      "phrase": "In accordance with",
+      "bn": "নিয়ম/চুক্তি অনুসারে",
+      "example": "States must act in accordance with international law.",
+      "exampleBn": "রাষ্ট্রগুলোকে আন্তর্জাতিক আইন অনুসারে কাজ করতে হবে।"
+    },
+    {
+      "phrase": "At risk of",
+      "bn": "ঝুঁকির মুখে",
+      "example": "Global security is at risk of deterioration.",
+      "exampleBn": "বৈশ্বিক নিরাপত্তা অবনতির ঝুঁকিতে রয়েছে।"
+    },
+    {
+      "phrase": "Under the terms of",
+      "bn": "চুক্তির শর্ত অনুযায়ী",
+      "example": "Under the terms of the treaty, both states must share information.",
+      "exampleBn": "চুক্তির শর্ত অনুযায়ী উভয় রাষ্ট্রকে তথ্য বিনিময় করতে হবে।"
+    }
+  ],
+  "idioms": {
+    "items": [
+      {
+        "phrase": "A sword of Damocles",
+        "bn": "সবসময় ঝুলে থাকা বড় বিপদ",
+        "example": "Nuclear weapons hang over humanity like a sword of Damocles."
+      },
+      {
+        "phrase": "A double-edged sword",
+        "bn": "ভালো ও খারাপ দুই দিক আছে",
+        "example": "Nuclear technology can be a double-edged sword."
+      },
+      {
+        "phrase": "Pave the way for",
+        "bn": "পথ সুগম করা",
+        "example": "Dialogue can pave the way for peace."
+      },
+      {
+        "phrase": "Keep something in check",
+        "bn": "নিয়ন্ত্রণে রাখা",
+        "example": "Arms-control agreements can keep tensions in check."
+      },
+      {
+        "phrase": "Hold one’s ground",
+        "bn": "নিজের অবস্থানে অটল থাকা",
+        "example": "States must hold their ground on international law."
+      }
+    ]
+  },
+  "writers": {
+    "intro": "আজকের বিষয়ের সঙ্গে সম্পর্কিত দুজন লেখক — H. G. Wells ও Nevil Shute — এবং তাঁদের দুটি করে উল্লেখযোগ্য গ্রন্থ।",
+    "items": [
+      {
+        "name": "H. G. Wells",
+        "nationality": "British",
+        "identity": "Novelist and Pioneer of Science Fiction (1866–1946)",
+        "book": "The Time Machine",
+        "published": "1895",
+        "genre": "Science Fiction Novella",
+        "summary": "এক বিজ্ঞানী সময় ভ্রমণ করে ভবিষ্যতে যান এবং Eloi ও Morlocks নামে দুটি মানবগোষ্ঠী দেখেন। বিষয়: শ্রেণিবৈষম্য ও সভ্যতার ভবিষ্যৎ।",
+        "characters": [
+          {
+            "name": "The Time Traveller",
+            "desc": "বিজ্ঞানী"
+          },
+          {
+            "name": "Weena",
+            "desc": "Eloi তরুণী"
+          },
+          {
+            "name": "Eloi",
+            "desc": "উপরিভাগের জনগোষ্ঠী"
+          },
+          {
+            "name": "Morlocks",
+            "desc": "ভূগর্ভের জনগোষ্ঠী"
+          }
+        ],
+        "message": [
+          "ব্রিটিশ লেখক; আধুনিক science fiction-এর পথিকৃৎ।"
+        ],
+        "bcsUse": [
+          "Class Inequality",
+          "Future of Civilisation",
+          "Science and Society"
+        ],
+        "cover": {
+          "src": "/writing/img/book-time-machine.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        }
+      },
+      {
+        "name": "H. G. Wells",
+        "nationality": "British",
+        "identity": "Novelist and Pioneer of Science Fiction (1866–1946)",
+        "book": "The War of the Worlds",
+        "published": "1898",
+        "genre": "Science Fiction Novel",
+        "summary": "মঙ্গলগ্রহের প্রাণীরা পৃথিবী আক্রমণ করে; উন্নত প্রযুক্তির মুখে মানুষের প্রতিরক্ষা ভেঙে পড়ে।",
+        "characters": [
+          {
+            "name": "The Narrator",
+            "desc": "বর্ণনাকারী"
+          },
+          {
+            "name": "The Artilleryman",
+            "desc": "সৈনিক"
+          },
+          {
+            "name": "The Curate",
+            "desc": "ধর্মযাজক"
+          },
+          {
+            "name": "Ogilvy",
+            "desc": "জ্যোতির্বিজ্ঞানী"
+          }
+        ],
+        "message": [
+          "ব্রিটিশ লেখক; আধুনিক science fiction-এর পথিকৃৎ।"
+        ],
+        "bcsUse": [
+          "Technology and Warfare",
+          "Human Vulnerability",
+          "Global Security"
+        ],
+        "cover": {
+          "src": "/writing/img/book-war-of-the-worlds.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        }
+      },
+      {
+        "name": "Nevil Shute",
+        "nationality": "British-born Australian",
+        "identity": "Novelist and Aeronautical Engineer (1899–1960)",
+        "book": "On the Beach",
+        "published": "1957",
+        "genre": "Post-apocalyptic Novel",
+        "summary": "বৈশ্বিক পারমাণবিক যুদ্ধের পর তেজস্ক্রিয় দূষণ অস্ট্রেলিয়ার দিকে ছড়িয়ে পড়ে।",
+        "characters": [
+          {
+            "name": "Dwight Towers",
+            "desc": "সাবমেরিন অধিনায়ক"
+          },
+          {
+            "name": "Moira Davidson",
+            "desc": "তরুণী"
+          },
+          {
+            "name": "Peter Holmes",
+            "desc": "নৌ কর্মকর্তা"
+          },
+          {
+            "name": "Mary Holmes",
+            "desc": "Peter-এর স্ত্রী"
+          },
+          {
+            "name": "John Osborne",
+            "desc": "বিজ্ঞানী"
+          }
+        ],
+        "message": [
+          "ব্রিটিশ বংশোদ্ভূত ঔপন্যাসিক ও প্রকৌশলী; যুদ্ধ, প্রযুক্তি ও মানবিক সংকট তাঁর রচনায় গুরুত্বপূর্ণ।"
+        ],
+        "bcsUse": [
+          "Nuclear War",
+          "Nuclear Disarmament",
+          "Weapons of Mass Destruction",
+          "Global Peace"
+        ],
+        "photo": {
+          "src": "/writing/img/nevil-shute.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": null
+      },
+      {
+        "name": "Nevil Shute",
+        "nationality": "British-born Australian",
+        "identity": "Novelist and Aeronautical Engineer (1899–1960)",
+        "book": "A Town Like Alice",
+        "published": "1950",
+        "genre": "War and Romance Novel",
+        "summary": "যুদ্ধকালে মালয়ায় আটক Jean Paget যুদ্ধের পর নতুন জীবন গড়েন এবং Joe Harman-এর সঙ্গে পুনরায় যুক্ত হন।",
+        "characters": [
+          {
+            "name": "Jean Paget",
+            "desc": "সাহসী নারী"
+          },
+          {
+            "name": "Joe Harman",
+            "desc": "অস্ট্রেলীয় ব্যক্তি"
+          },
+          {
+            "name": "Noel Strachan",
+            "desc": "solicitor"
+          }
+        ],
+        "message": [
+          "ব্রিটিশ বংশোদ্ভূত ঔপন্যাসিক ও প্রকৌশলী; যুদ্ধ, প্রযুক্তি ও মানবিক সংকট তাঁর রচনায় গুরুত্বপূর্ণ।"
+        ],
+        "bcsUse": [
+          "Impact of War on Civilians",
+          "Women's Resilience",
+          "Post-war Reconstruction"
+        ],
+        "photo": {
+          "src": "/writing/img/nevil-shute.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": null
+      }
+    ]
+  },
+  "quote": {
+    "text": "Every man, woman and child lives under a nuclear sword of Damocles",
+    "author": "John F. Kennedy",
+    "work": "Address to the UN General Assembly, 25 September 1961",
+    "bn": "প্রত্যেক নারী, পুরুষ ও শিশু পারমাণবিক বিপদের এক অনিশ্চিত তলোয়ারের নিচে বসবাস করছে।",
+    "explanation": "১৯৬১ সালে জাতিসংঘে কেনেডি বলেছিলেন, পারমাণবিক অস্ত্র মানবজাতির মাথার ওপর সুতোয় ঝোলানো তলোয়ারের মতো — যেকোনো দুর্ঘটনা, ভুল হিসাব বা উন্মত্ততায় তা নেমে আসতে পারে। তাই নিরস্ত্রীকরণ কোনো একক রাষ্ট্রের নয়, সমগ্র মানবজাতির নিরাপত্তার প্রশ্ন।",
+    "useIn": [
+      "Nuclear Disarmament",
+      "International Peace",
+      "Global Cooperation",
+      "Weapons of Mass Destruction"
+    ]
+  },
+  "sentences": [
+    {
+      "en": "Nuclear weapons remain one of the gravest threats to international security.",
+      "bn": "পারমাণবিক অস্ত্র আন্তর্জাতিক নিরাপত্তার গুরুতর হুমকিগুলোর অন্যতম।"
+    },
+    {
+      "en": "Although nuclear deterrence is often presented as a way to prevent war, excessive dependence on it can deepen mistrust and encourage an arms race.",
+      "bn": "যদিও পারমাণবিক নিবৃত্তকরণকে যুদ্ধ প্রতিরোধের উপায় বলা হয়, এর ওপর অতিরিক্ত নির্ভরতা অবিশ্বাস বাড়াতে ও অস্ত্র প্রতিযোগিতা উৎসাহিত করতে পারে।"
+    },
+    {
+      "en": "Arms control seeks to limit the number, deployment or testing of weapons, while disarmament aims to reduce or eliminate them.",
+      "bn": "অস্ত্র নিয়ন্ত্রণ অস্ত্রের সংখ্যা, মোতায়েন বা পরীক্ষা সীমিত করতে চায়; নিরস্ত্রীকরণ অস্ত্র কমানো বা বিলুপ্তির লক্ষ্য রাখে।"
+    },
+    {
+      "en": "The NPT supports three goals: preventing the spread of nuclear weapons, promoting peaceful uses of nuclear energy and pursuing disarmament.",
+      "bn": "NPT-এর লক্ষ্য পারমাণবিক অস্ত্রের বিস্তার রোধ, শান্তিপূর্ণ পারমাণবিক ব্যবহার এবং নিরস্ত্রীকরণ।"
+    },
+    {
+      "en": "Yet progress has weakened.",
+      "bn": "তবুও অগ্রগতি দুর্বল হয়েছে।"
+    },
+    {
+      "en": "The New START treaty expired on 5 February 2026, and the NPT Review Conference ended without consensus in May 2026.",
+      "bn": "New START-এর মেয়াদ ৫ ফেব্রুয়ারি ২০২৬-এ শেষ হয় এবং NPT সম্মেলন মে ২০২৬-এ ঐকমত্য ছাড়াই শেষ হয়।"
+    },
+    {
+      "en": "These setbacks underline the need for dialogue, transparency and verifiable agreements.",
+      "bn": "এসব ঘটনা সংলাপ, স্বচ্ছতা ও যাচাইযোগ্য চুক্তির প্রয়োজনীয়তা তুলে ধরে।"
+    },
+    {
+      "en": "As a non-nuclear-weapon state, Bangladesh has a strong interest in a stable international order and should continue supporting multilateral disarmament efforts.",
+      "bn": "পারমাণবিক অস্ত্রবিহীন রাষ্ট্র হিসেবে বাংলাদেশের স্থিতিশীল আন্তর্জাতিক ব্যবস্থায় স্বার্থ রয়েছে এবং বহুপাক্ষিক নিরস্ত্রীকরণ প্রচেষ্টায় সমর্থন অব্যাহত রাখা উচিত।"
+    }
+  ],
+  "wordChoice": {
+    "items": [
+      {
+        "title": "Deterrence vs Prevention vs Defence",
+        "rows": [
+          {
+            "word": "Deterrence",
+            "meaning": "পাল্টা আক্রমণের ভয় দেখিয়ে বিরত রাখা"
+          },
+          {
+            "word": "Prevention",
+            "meaning": "আগে থেকে প্রতিরোধ"
+          },
+          {
+            "word": "Defence",
+            "meaning": "আক্রমণ থেকে রক্ষা"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Arms control vs Disarmament vs Non-proliferation",
+        "rows": [
+          {
+            "word": "Arms control",
+            "meaning": "অস্ত্র নিয়ন্ত্রণ"
+          },
+          {
+            "word": "Disarmament",
+            "meaning": "অস্ত্র হ্রাস বা বিলুপ্তি"
+          },
+          {
+            "word": "Non-proliferation",
+            "meaning": "নতুন রাষ্ট্রে বিস্তার প্রতিরোধ"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Reduce vs Restrict vs Eliminate",
+        "rows": [
+          {
+            "word": "Reduce",
+            "meaning": "কমানো"
+          },
+          {
+            "word": "Restrict",
+            "meaning": "সীমিত করা"
+          },
+          {
+            "word": "Eliminate",
+            "meaning": "বিলুপ্ত করা"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Credible vs Reliable vs Verifiable",
+        "rows": [
+          {
+            "word": "Credible",
+            "meaning": "বিশ্বাসযোগ্য"
+          },
+          {
+            "word": "Reliable",
+            "meaning": "নির্ভরযোগ্য"
+          },
+          {
+            "word": "Verifiable",
+            "meaning": "যাচাইযোগ্য"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Threat vs Risk vs Danger",
+        "rows": [
+          {
+            "word": "Threat",
+            "meaning": "হুমকি"
+          },
+          {
+            "word": "Risk",
+            "meaning": "ক্ষতির সম্ভাবনা"
+          },
+          {
+            "word": "Danger",
+            "meaning": "বিপজ্জনক অবস্থা"
+          }
+        ],
+        "examples": []
+      }
+    ]
+  },
+  "grammar": [
+    {
+      "title": "Although — Contrast Clause",
+      "structure": "Although + Subject + Verb, Main Clause.",
+      "example": "Although nuclear deterrence may prevent war, excessive dependence can deepen mistrust.",
+      "explanation": "বিপরীত ধারণা প্রকাশ করে। Although-এর সঙ্গে একই বাক্যে but ব্যবহার করবে না।",
+      "wrong": "Although deterrence may prevent war, but it can deepen mistrust.",
+      "right": "Although deterrence may prevent war, it can deepen mistrust."
+    },
+    {
+      "title": "Aim to + Base Verb / Aim at + Verb-ing",
+      "structure": "Subject + aim(s) to + Base Verb  |  be aimed at + Noun/Verb-ing",
+      "example": "The treaty aims to prevent proliferation.",
+      "explanation": "কোনো কিছুর লক্ষ্য বোঝাতে aim to + base verb ব্যবহার হয়। Aim at-এর পরে noun বা gerund বসে।",
+      "more": [
+        "Governments aim to strengthen cooperation.",
+        "The policy is aimed at reducing tensions."
+      ]
+    }
+  ],
+  "collocations": [
+    {
+      "expr": "Nuclear arms race",
+      "bn": "পারমাণবিক অস্ত্র প্রতিযোগিতা"
+    },
+    {
+      "expr": "Nuclear deterrence",
+      "bn": "পারমাণবিক নিবৃত্তকরণ"
+    },
+    {
+      "expr": "Arms-control agreement",
+      "bn": "অস্ত্র নিয়ন্ত্রণ চুক্তি"
+    },
+    {
+      "expr": "Strategic stability",
+      "bn": "কৌশলগত স্থিতিশীলতা"
+    },
+    {
+      "expr": "Nuclear proliferation",
+      "bn": "পারমাণবিক অস্ত্রের বিস্তার"
+    },
+    {
+      "expr": "Global disarmament",
+      "bn": "বৈশ্বিক নিরস্ত্রীকরণ"
+    },
+    {
+      "expr": "Peaceful use of nuclear energy",
+      "bn": "পারমাণবিক শক্তির শান্তিপূর্ণ ব্যবহার"
+    },
+    {
+      "expr": "Mutual trust",
+      "bn": "পারস্পরিক আস্থা"
+    },
+    {
+      "expr": "International security framework",
+      "bn": "আন্তর্জাতিক নিরাপত্তা কাঠামো"
+    },
+    {
+      "expr": "Multilateral cooperation",
+      "bn": "বহুপাক্ষিক সহযোগিতা"
+    }
+  ],
+  "connectors": [
+    {
+      "word": "Nevertheless",
+      "bn": "তা সত্ত্বেও",
+      "use": "বিপরীত বক্তব্য"
+    },
+    {
+      "word": "Furthermore",
+      "bn": "অধিকন্তু",
+      "use": "অতিরিক্ত তথ্য"
+    },
+    {
+      "word": "Consequently",
+      "bn": "ফলস্বরূপ",
+      "use": "পরিণতি"
+    },
+    {
+      "word": "In contrast",
+      "bn": "বিপরীতে",
+      "use": "তুলনা ও পার্থক্য"
+    },
+    {
+      "word": "Therefore",
+      "bn": "অতএব / তাই",
+      "use": "সিদ্ধান্ত বা করণীয়"
+    },
+    {
+      "word": "In this regard",
+      "bn": "এ প্রসঙ্গে",
+      "use": "আলোচ্য বিষয়ে ফিরে আসা"
+    }
+  ],
+  "connectorsExample": "Deterrence may prevent direct war. Nevertheless, it can encourage an arms race. Therefore, verifiable arms-control agreements remain essential.",
+  "transformation": [
+    {
+      "label": "Simple Sentence",
+      "text": "Following the treaty’s expiry, new negotiations are necessary."
+    },
+    {
+      "label": "Compound Sentence",
+      "text": "The treaty expired, so new negotiations are necessary."
+    },
+    {
+      "label": "Complex Sentence",
+      "text": "Since the treaty has expired, new negotiations are necessary."
+    },
+    {
+      "label": "Advanced Expression",
+      "text": "The expiry of the treaty makes renewed negotiations essential for restoring strategic stability."
+    }
+  ],
+  "translation": {
+    "note": "প্রথমে নিজে অনুবাদ করবে। নিজের অনুবাদ শেষ হলে উত্তর মিলিয়ে নেবে।",
+    "bnToEn": [
+      {
+        "q": "পারমাণবিক অস্ত্রের বিস্তার আন্তর্জাতিক নিরাপত্তাকে ঝুঁকির মুখে ফেলে।",
+        "a": "The proliferation of nuclear weapons puts international security at risk."
+      },
+      {
+        "q": "কার্যকর অস্ত্র নিয়ন্ত্রণের জন্য যাচাইযোগ্য চুক্তি ও পারস্পরিক আস্থা প্রয়োজন।",
+        "a": "Effective arms control requires verifiable agreements and mutual trust."
+      }
+    ],
+    "enToBn": [
+      {
+        "q": "Disarmament cannot be achieved without sustained political commitment.",
+        "a": "অব্যাহত রাজনৈতিক অঙ্গীকার ছাড়া নিরস্ত্রীকরণ অর্জন সম্ভব নয়।"
+      },
+      {
+        "q": "The treaty seeks to prevent the spread of nuclear weapons while allowing peaceful nuclear cooperation.",
+        "a": "চুক্তিটি শান্তিপূর্ণ পারমাণবিক সহযোগিতার সুযোগ রেখে অস্ত্রের বিস্তার রোধ করতে চায়।"
+      }
+    ]
+  },
+  "assignment": {
+    "intro": "নিচের ১০টি Expression থেকে অন্তত ৫টি ব্যবহার করে নিজে ৫টি English Sentence লিখবে।",
+    "expressions": [
+      "Nuclear deterrence",
+      "Arms race",
+      "Arms control",
+      "Non-proliferation",
+      "Peaceful uses of nuclear energy",
+      "Verifiable agreement",
+      "Mutual trust",
+      "Strategic stability",
+      "Multilateral cooperation",
+      "Disarmament efforts"
+    ],
+    "criteria": [
+      "Grammar Accuracy",
+      "Right Word Selection",
+      "Sentence Structure",
+      "Natural Expression",
+      "BCS Written Standard"
+    ],
+    "note": "শর্ত: একটি complex sentence ও বাংলাদেশের অবস্থান নিয়ে একটি বাক্য থাকবে। তোমার লেখা বাক্যগুলো নিচের ঘরে লিখে রাখো (এই ডিভাইসে সংরক্ষিত থাকবে)। তারপর প্রতিটি বাক্যে Grammar mistake, Corrected sentence, Better expression ও বাংলা ব্যাখ্যা—এই চারটি দিক ধরে নিজে মিলিয়ে দেখো।"
+  },
+  "sections": [
+    {
+      "title": "Current Affairs & Key Facts",
+      "sub": "Paragraph-এ ব্যবহৃত সাম্প্রতিক তথ্য — তারিখসহ মনে রাখবে।",
+      "blocks": [
+        {
+          "t": "ul",
+          "items": [
+            "New START Treaty: যুক্তরাষ্ট্র ও রাশিয়ার ২০১০ সালের চুক্তির মেয়াদ ৫ ফেব্রুয়ারি ২০২৬-এ শেষ হয়; deployed strategic nuclear warheads প্রতিটি দেশের জন্য ১,৫৫০-এ সীমিত ছিল।",
+            "NPT Review Conference: ২০২৬ সালের মে মাসে ১১তম পর্যালোচনা সম্মেলন consensus outcome document ছাড়াই শেষ হয়।",
+            "CTBT: ২২ সেপ্টেম্বর ২০২৬-এর হিসাবে ১৮৮টি রাষ্ট্র স্বাক্ষর করেছে এবং ১৭৯টি অনুসমর্থন করেছে; প্রয়োজনীয় Annex 2 রাষ্ট্রের অনুসমর্থন না থাকায় কার্যকর হয়নি।",
+            "বাংলাদেশ ৮ মার্চ ২০০০ তারিখে CTBT অনুসমর্থন করে এবং NPT-র সদস্য।",
+            "NPT ১৯৬৮ সালে স্বাক্ষরের জন্য উন্মুক্ত হয় এবং ১৯৭০ সালে কার্যকর হয়।"
+          ]
+        },
+        {
+          "t": "table",
+          "head": [
+            "NPT-এর স্তম্ভ",
+            "অর্থ"
+          ],
+          "rows": [
+            [
+              "Non-proliferation",
+              "পারমাণবিক অস্ত্রের বিস্তার রোধ"
+            ],
+            [
+              "Disarmament",
+              "পারমাণবিক অস্ত্র হ্রাস বা বিলুপ্তি"
+            ],
+            [
+              "Peaceful use",
+              "পারমাণবিক শক্তির শান্তিপূর্ণ ব্যবহার"
+            ]
+          ]
+        },
+        {
+          "t": "tip",
+          "label": "লেখার নিয়ম",
+          "text": "চলমান আন্তর্জাতিক ঘটনার ক্ষেত্রে তারিখ, সংশ্লিষ্ট পক্ষের বক্তব্য এবং স্বাধীনভাবে যাচাইকৃত তথ্য আলাদা রাখবে।"
+        }
+      ]
+    },
+    {
+      "title": "Revision Checklist",
+      "sub": "পাঠ শেষে নিজেকে যাচাই করো।",
+      "blocks": [
+        {
+          "t": "ul",
+          "items": [
+            "Arms control, disarmament ও non-proliferation-এর পার্থক্য জানি।",
+            "NPT-এর তিনটি স্তম্ভ মনে আছে।",
+            "New START-এর মেয়াদ শেষ হওয়ার তারিখ জানি।",
+            "CTBT-এর অবস্থা ও বাংলাদেশের অনুসমর্থনের তারিখ জানি।",
+            "Although এবং aim to সঠিকভাবে ব্যবহার করতে পারি।",
+            "Nuclear arms control নিয়ে ১২০–১৫০ শব্দের paragraph লিখতে পারি।"
+          ]
+        }
+      ]
+    }
+  ],
+  "finalGoal": {
+    "title": "Day 07 — আজকের মূল শিক্ষা",
+    "text": [
+      "Arms control, disarmament ও non-proliferation আলাদা ধারণা — এগুলোর পার্থক্য স্পষ্ট রেখে, NPT-এর তিন স্তম্ভ ও সাম্প্রতিক ঘটনা (New START-এর মেয়াদ শেষ, NPT সম্মেলনে ঐকমত্য না হওয়া) উল্লেখ করে এবং বাংলাদেশের অবস্থান যুক্ত করে ভারসাম্যপূর্ণ paragraph লিখবে।"
+    ]
+  }
+}

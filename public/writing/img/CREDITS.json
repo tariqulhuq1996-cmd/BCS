@@ -136,5 +136,83 @@
   "source": "https://commons.wikimedia.org/wiki/File:Cannery_Row_(1945_1st_ed_dust_jacket).jpg",
   "license": "Public domain",
   "author": "Illustrated by Arthur Hawkins, Jr. Published by Viking Press."
+ },
+ "camus": {
+  "file": "/writing/img/camus.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Albert_Camus,_gagnant_de_prix_Nobel,_portrait_en_buste,_pos%C3%A9_au_bureau,_faisant_face_%C3%A0_gauche,_cigarette_de_tabagisme.jpg",
+  "license": "Public domain",
+  "author": "Photograph by United Press International"
+ },
+ "nevil-shute": {
+  "file": "/writing/img/nevil-shute.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Neville_Shute_AWW_1949.jpg",
+  "license": "Public domain",
+  "author": "w:Australian Women's Weekly"
+ },
+ "hemingway": {
+  "file": "/writing/img/hemingway.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Ernest_Hemingway_1923_passport_photo.jpg",
+  "license": "Public domain",
+  "author": "Unknown authorUnknown author. United States Government Printing Office."
+ },
+ "zola": {
+  "file": "/writing/img/zola.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:%C3%89mile_Zola_Nadar.jpg",
+  "license": "Public domain",
+  "author": "Nadar"
+ },
+ "mahfouz": {
+  "file": "/writing/img/mahfouz.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Naguib_Mahfouz_in_1960s.jpg",
+  "license": "Public domain",
+  "author": "AUCpress"
+ },
+ "kanafani": {
+  "file": "/writing/img/kanafani.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Ghassan_Kanafani.jpg",
+  "license": "Public domain",
+  "author": "Unknown authorUnknown author"
+ },
+ "book-the-plague": {
+  "file": "/writing/img/book-the-plague.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:La_Peste_book_cover.jpg",
+  "license": "Public domain",
+  "author": "Gallimard"
+ },
+ "book-the-stranger": {
+  "file": "/writing/img/book-the-stranger.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:L%27%C3%89tranger_-_Albert_Camus.jpg",
+  "license": "Public domain",
+  "author": "Jean Louis"
+ },
+ "book-arrowsmith": {
+  "file": "/writing/img/book-arrowsmith.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Arrowsmith_(1925_cover).jpg",
+  "license": "Public domain",
+  "author": "Unknown authorUnknown author"
+ },
+ "book-time-machine": {
+  "file": "/writing/img/book-time-machine.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:The_Time_Machine_(Heinemann_text)_-_front_cover.jpg",
+  "license": "Public domain",
+  "author": "Author Herbert George Wells\n\nPublisher William Heinemann"
+ },
+ "book-war-of-the-worlds": {
+  "file": "/writing/img/book-war-of-the-worlds.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:The_War_of_the_Worlds_first_edition.jpg",
+  "license": "Public domain",
+  "author": "H. G. Wells"
+ },
+ "book-bell-tolls": {
+  "file": "/writing/img/book-bell-tolls.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:For_Whom_the_Bell_Tolls_(1940)_1st_edition_cover.jpg",
+  "license": "Public domain",
+  "author": "Unknown; published by Charles Scribner's Sons \n\nAuthor's photograph by Lloyd Arnold (uncredited)"
+ },
+ "book-germinal": {
+  "file": "/writing/img/book-germinal.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Germinal_first_edition_cover.jpg",
+  "license": "Public domain",
+  "author": "G. Charpentier (publisher)"
  }
 }

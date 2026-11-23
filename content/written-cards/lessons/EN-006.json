@@ -1,0 +1,652 @@
+{
+  "series": "Daily English Writing Practice",
+  "day": "Day 06",
+  "exam": "52nd BCS Written",
+  "lessonNo": "Lesson 06",
+  "theme": "Public Health & Social Development",
+  "topic": "Public Health and Universal Access to Healthcare",
+  "intro": [
+    "আজকের লক্ষ্য: জনস্বাস্থ্য, প্রতিরোধমূলক স্বাস্থ্যসেবা, সমতা এবং সবার জন্য স্বাস্থ্যসেবার গুরুত্ব নিয়ে formal paragraph লেখা।"
+  ],
+  "paragraph": {
+    "title": "Public Health and Universal Access to Healthcare",
+    "words": 141,
+    "text": "Public health is essential to social and economic development because a healthy population can learn, work and contribute to society. However, access to healthcare remains unequal, particularly for people living in rural areas and low-income communities. Preventive services, vaccination, safe drinking water and proper sanitation can reduce the prevalence of many diseases. At the same time, health systems need trained professionals, affordable medicines and well-equipped facilities. Universal health coverage aims to ensure that everyone receives essential health services without suffering financial hardship. Greater investment in primary healthcare, maternal health and mental health can make health systems more inclusive and resilient. Governments should also remove physical, financial and communication barriers faced by older people and persons with disabilities. Ultimately, public health is not merely a medical issue; it is a shared responsibility that requires effective policies, community participation and international cooperation."
+  },
+  "structure": [
+    {
+      "step": "Public health and development",
+      "what": "জনস্বাস্থ্যের গুরুত্ব"
+    },
+    {
+      "step": "Unequal access",
+      "what": "সেবাপ্রাপ্তির বৈষম্য"
+    },
+    {
+      "step": "Prevention",
+      "what": "রোগ প্রতিরোধ"
+    },
+    {
+      "step": "Health systems",
+      "what": "কার্যকর স্বাস্থ্যব্যবস্থার উপাদান"
+    },
+    {
+      "step": "Universal coverage",
+      "what": "সবার জন্য সেবা"
+    },
+    {
+      "step": "Inclusion",
+      "what": "প্রবীণ ও প্রতিবন্ধী ব্যক্তির অন্তর্ভুক্তি"
+    },
+    {
+      "step": "Shared responsibility",
+      "what": "সমন্বিত উদ্যোগ"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "Preventive",
+      "bn": "প্রতিরোধমূলক",
+      "pos": "Adjective",
+      "synonym": "Prophylactic",
+      "antonym": "Curative",
+      "example": "Preventive healthcare can reduce the burden of disease.",
+      "exampleBn": "প্রতিরোধমূলক স্বাস্থ্যসেবা রোগের বোঝা কমাতে পারে।"
+    },
+    {
+      "word": "Equitable",
+      "bn": "ন্যায্য ও সমতাভিত্তিক",
+      "pos": "Adjective",
+      "synonym": "Fair",
+      "antonym": "Unfair",
+      "example": "Every citizen deserves equitable access to healthcare.",
+      "exampleBn": "প্রত্যেক নাগরিক স্বাস্থ্যসেবায় ন্যায্য ও সমতাভিত্তিক প্রবেশাধিকারের দাবিদার।"
+    },
+    {
+      "word": "Prevalence",
+      "bn": "রোগের ব্যাপকতা/বিদ্যমানতার হার",
+      "pos": "Noun",
+      "synonym": "Occurrence",
+      "antonym": "Rarity",
+      "example": "The prevalence of diabetes is increasing.",
+      "exampleBn": "ডায়াবেটিসের ব্যাপকতা বাড়ছে।"
+    },
+    {
+      "word": "Immunisation",
+      "bn": "টিকাদানের মাধ্যমে রোগপ্রতিরোধ",
+      "pos": "Noun",
+      "synonym": "Vaccination",
+      "example": "Immunisation protects children from preventable diseases.",
+      "exampleBn": "টিকাদান শিশুদের প্রতিরোধযোগ্য রোগ থেকে রক্ষা করে।"
+    },
+    {
+      "word": "Sanitation",
+      "bn": "পয়ঃনিষ্কাশন ও স্বাস্থ্যসম্মত পরিবেশব্যবস্থা",
+      "pos": "Noun",
+      "synonym": "Hygiene facilities",
+      "example": "Improved sanitation prevents waterborne diseases.",
+      "exampleBn": "উন্নত স্যানিটেশন পানিবাহিত রোগ প্রতিরোধ করে।"
+    }
+  ],
+  "prepositional": [
+    {
+      "phrase": "At risk of",
+      "bn": "কোনো কিছুর ঝুঁকিতে",
+      "example": "Children without proper nutrition are at risk of illness.",
+      "exampleBn": "যথাযথ পুষ্টি ছাড়া শিশুরা অসুস্থতার ঝুঁকিতে থাকে।"
+    },
+    {
+      "phrase": "In need of",
+      "bn": "কোনো কিছুর প্রয়োজন",
+      "example": "Rural communities are in need of better healthcare.",
+      "exampleBn": "গ্রামীণ জনগোষ্ঠীর উন্নত স্বাস্থ্যসেবা প্রয়োজন।"
+    },
+    {
+      "phrase": "In the event of",
+      "bn": "কোনো ঘটনা ঘটলে",
+      "example": "In the event of an outbreak, rapid action is essential.",
+      "exampleBn": "কোনো রোগের প্রাদুর্ভাব ঘটলে দ্রুত পদক্ষেপ নেওয়া অপরিহার্য।"
+    },
+    {
+      "phrase": "On a regular basis",
+      "bn": "নিয়মিতভাবে",
+      "example": "People should receive check-ups on a regular basis.",
+      "exampleBn": "মানুষের নিয়মিতভাবে স্বাস্থ্য পরীক্ষা করানো উচিত।"
+    },
+    {
+      "phrase": "In collaboration with",
+      "bn": "সহযোগিতার ভিত্তিতে",
+      "example": "The programme was implemented in collaboration with local organisations.",
+      "exampleBn": "কর্মসূচিটি স্থানীয় সংগঠনগুলোর সহযোগিতায় বাস্তবায়িত হয়েছিল।"
+    }
+  ],
+  "idioms": {
+    "items": [
+      {
+        "phrase": "Under the weather",
+        "bn": "শরীর খারাপ বোধ করা",
+        "example": "I was feeling under the weather yesterday. (Informal)"
+      },
+      {
+        "phrase": "A clean bill of health",
+        "bn": "স্বাস্থ্য পরীক্ষায় সুস্থতার ছাড়পত্র",
+        "example": "She received a clean bill of health."
+      },
+      {
+        "phrase": "Nip something in the bud",
+        "bn": "শুরুতেই সমস্যা দমন করা",
+        "example": "Early screening can nip health problems in the bud."
+      },
+      {
+        "phrase": "Back on one’s feet",
+        "bn": "অসুস্থতা কাটিয়ে স্বাভাবিক হওয়া",
+        "example": "Treatment helped him get back on his feet."
+      },
+      {
+        "phrase": "Take a toll",
+        "bn": "ক্ষতিকর প্রভাব ফেলা",
+        "example": "Air pollution takes a toll on public health."
+      }
+    ]
+  },
+  "writers": {
+    "intro": "আজকের বিষয়ের সঙ্গে সম্পর্কিত দুজন লেখক — Albert Camus ও Sinclair Lewis — এবং তাঁদের দুটি করে উল্লেখযোগ্য গ্রন্থ।",
+    "items": [
+      {
+        "name": "Albert Camus",
+        "nationality": "French (born in French Algeria)",
+        "identity": "Novelist, Philosopher and Journalist (1913–1960)",
+        "book": "The Plague",
+        "published": "1947",
+        "genre": "Philosophical Novel",
+        "summary": "Oran শহরে প্লেগ মহামারি ছড়িয়ে পড়ে। চিকিৎসক Bernard Rieux ও অন্য বাসিন্দারা রোগ, বিচ্ছিন্নতা ও মৃত্যুর বিরুদ্ধে লড়াই করেন। বিষয়: মহামারি, মানবিক সংহতি, দায়িত্ব ও সম্মিলিত প্রতিরোধ।",
+        "characters": [
+          {
+            "name": "Dr. Bernard Rieux",
+            "desc": "চিকিৎসক ও বর্ণনাকারী"
+          },
+          {
+            "name": "Jean Tarrou",
+            "desc": "স্বেচ্ছাসেবী স্বাস্থ্যদল গঠনে সহায়ক"
+          },
+          {
+            "name": "Raymond Rambert",
+            "desc": "সাংবাদিক"
+          },
+          {
+            "name": "Joseph Grand",
+            "desc": "সাধারণ কর্মচারী"
+          },
+          {
+            "name": "Cottard",
+            "desc": "সংকটে নিজের সুবিধা খোঁজে"
+          }
+        ],
+        "message": [
+          "ফরাসি-আলজেরীয় ঔপন্যাসিক, দার্শনিক ও সাংবাদিক; ১৯৫৭ সালে সাহিত্যে নোবেল পুরস্কার পান। মানবিক দায়িত্ব, সংকট ও সংহতি তাঁর লেখায় গুরুত্বপূর্ণ।"
+        ],
+        "bcsUse": [
+          "Public Health",
+          "Pandemic Preparedness",
+          "Human Solidarity",
+          "Social Responsibility"
+        ],
+        "photo": {
+          "src": "/writing/img/camus.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": {
+          "src": "/writing/img/book-the-plague.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        }
+      },
+      {
+        "name": "Albert Camus",
+        "nationality": "French (born in French Algeria)",
+        "identity": "Novelist, Philosopher and Journalist (1913–1960)",
+        "book": "The Stranger",
+        "published": "1942",
+        "genre": "Philosophical Novel",
+        "summary": "Meursault-এর জীবন, মায়ের মৃত্যু, বিচ্ছিন্নতা ও একটি হত্যাকাণ্ডকে কেন্দ্র করে উপন্যাস।",
+        "characters": [
+          {
+            "name": "Meursault",
+            "desc": "কেন্দ্রীয় চরিত্র"
+          },
+          {
+            "name": "Marie Cardona",
+            "desc": "প্রেমিকা"
+          },
+          {
+            "name": "Raymond Sintès",
+            "desc": "প্রতিবেশী"
+          },
+          {
+            "name": "The Chaplain",
+            "desc": "ধর্মীয় বিশ্বাস ও মৃত্যুচিন্তার প্রসঙ্গে গুরুত্বপূর্ণ"
+          }
+        ],
+        "message": [
+          "ফরাসি-আলজেরীয় ঔপন্যাসিক, দার্শনিক ও সাংবাদিক; ১৯৫৭ সালে সাহিত্যে নোবেল পুরস্কার পান। মানবিক দায়িত্ব, সংকট ও সংহতি তাঁর লেখায় গুরুত্বপূর্ণ।"
+        ],
+        "bcsUse": [
+          "Alienation in Modern Society",
+          "Individual and Society",
+          "Justice System"
+        ],
+        "photo": {
+          "src": "/writing/img/camus.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": {
+          "src": "/writing/img/book-the-stranger.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        }
+      },
+      {
+        "name": "Sinclair Lewis",
+        "nationality": "American",
+        "identity": "Novelist and Playwright (1885–1951)",
+        "book": "Arrowsmith",
+        "published": "1925",
+        "genre": "Social Novel",
+        "summary": "Martin Arrowsmith একজন চিকিৎসক ও গবেষক; বৈজ্ঞানিক সততা ও পেশাগত সাফল্যের দ্বন্দ্বের মুখোমুখি হন। বিষয়: জনস্বাস্থ্য, চিকিৎসা গবেষণা, ওষুধশিল্পের বাণিজ্যিক চাপ ও বৈজ্ঞানিক নৈতিকতা।",
+        "characters": [
+          {
+            "name": "Martin Arrowsmith",
+            "desc": "গবেষক"
+          },
+          {
+            "name": "Leora Tozer",
+            "desc": "স্ত্রী ও সমর্থক"
+          },
+          {
+            "name": "Dr. Max Gottlieb",
+            "desc": "গবেষণায় সততার প্রতীক"
+          },
+          {
+            "name": "Dr. Terry Wickett",
+            "desc": "বিজ্ঞানমনস্ক সহকর্মী"
+          }
+        ],
+        "message": [
+          "মার্কিন ঔপন্যাসিক ও নাট্যকার; ১৯৩০ সালে সাহিত্যে নোবেল পুরস্কার পান। চিকিৎসাব্যবস্থা, সামাজিক ভণ্ডামি ও পেশাগত নৈতিকতা তাঁর রচনায় উঠে এসেছে।"
+        ],
+        "bcsUse": [
+          "Medical Research",
+          "Ethics in Science",
+          "Public Health",
+          "Commercialisation of Healthcare"
+        ],
+        "cover": {
+          "src": "/writing/img/book-arrowsmith.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        }
+      },
+      {
+        "name": "Sinclair Lewis",
+        "nationality": "American",
+        "identity": "Novelist and Playwright (1885–1951)",
+        "book": "Main Street",
+        "published": "1920",
+        "genre": "Satirical Novel",
+        "summary": "Carol Kennicott ছোট শহর Gopher Prairie-তে এসে সমাজকে আধুনিক করার চেষ্টা করেন। বিষয়: রক্ষণশীলতা, সামাজিক সংকীর্ণতা ও পরিবর্তনের বাধা।",
+        "characters": [
+          {
+            "name": "Carol Kennicott",
+            "desc": "সমাজ পরিবর্তনে আগ্রহী"
+          },
+          {
+            "name": "Dr. Will Kennicott",
+            "desc": "স্বামী"
+          },
+          {
+            "name": "Vida Sherwin",
+            "desc": "বন্ধু ও শিক্ষিকা"
+          },
+          {
+            "name": "Guy Pollock",
+            "desc": "আইনজীবী"
+          }
+        ],
+        "message": [
+          "মার্কিন ঔপন্যাসিক ও নাট্যকার; ১৯৩০ সালে সাহিত্যে নোবেল পুরস্কার পান। চিকিৎসাব্যবস্থা, সামাজিক ভণ্ডামি ও পেশাগত নৈতিকতা তাঁর রচনায় উঠে এসেছে।"
+        ],
+        "bcsUse": [
+          "Social Change",
+          "Conservatism and Reform",
+          "Rural Development"
+        ],
+        "cover": null
+      }
+    ]
+  },
+  "quote": {
+    "text": "Health is a state of complete physical, mental and social well-being and not merely the absence of disease or infirmity",
+    "author": "Constitution of the World Health Organization (WHO)",
+    "work": "Preamble (1946)",
+    "bn": "স্বাস্থ্য হলো সম্পূর্ণ শারীরিক, মানসিক ও সামাজিক সুস্থতার অবস্থা; কেবল রোগ বা দুর্বলতার অনুপস্থিতি নয়।",
+    "explanation": "স্বাস্থ্য বলতে শুধু রোগমুক্ত থাকা বোঝায় না; মানসিক ও সামাজিক সুস্থতাও এর অংশ। তাই জনস্বাস্থ্য নীতিতে চিকিৎসার পাশাপাশি মানসিক স্বাস্থ্য, পুষ্টি, পরিবেশ ও সামাজিক সুরক্ষাকেও গুরুত্ব দিতে হয়।",
+    "useIn": [
+      "Public Health",
+      "Universal Health Coverage",
+      "Mental Health",
+      "Health Equity",
+      "Social Development"
+    ]
+  },
+  "sentences": [
+    {
+      "en": "Public health is essential to social and economic development because a healthy population can learn, work and contribute to society.",
+      "bn": "জনস্বাস্থ্য সামাজিক ও অর্থনৈতিক উন্নয়নের জন্য অপরিহার্য, কারণ সুস্থ জনগোষ্ঠী শিক্ষা, কাজ ও সমাজে অবদান রাখতে পারে।"
+    },
+    {
+      "en": "However, access to healthcare remains unequal, particularly for people living in rural areas and low-income communities.",
+      "bn": "তবে স্বাস্থ্যসেবা পাওয়ার সুযোগ এখনো অসম, বিশেষ করে গ্রামীণ ও স্বল্প আয়ের জনগোষ্ঠীর জন্য।"
+    },
+    {
+      "en": "Preventive services, vaccination, safe drinking water and proper sanitation can reduce the prevalence of many diseases.",
+      "bn": "প্রতিরোধমূলক সেবা, টিকাদান, নিরাপদ পানি ও স্যানিটেশন বহু রোগের ব্যাপকতা কমাতে পারে।"
+    },
+    {
+      "en": "At the same time, health systems need trained professionals, affordable medicines and well-equipped facilities.",
+      "bn": "একই সঙ্গে স্বাস্থ্যব্যবস্থায় প্রশিক্ষিত পেশাজীবী, সাশ্রয়ী ওষুধ ও পর্যাপ্ত সরঞ্জামসমৃদ্ধ প্রতিষ্ঠান প্রয়োজন।"
+    },
+    {
+      "en": "Universal health coverage aims to ensure that everyone receives essential health services without suffering financial hardship.",
+      "bn": "সর্বজনীন স্বাস্থ্যসেবার লক্ষ্য হলো আর্থিক সংকটে না পড়ে সবাই প্রয়োজনীয় সেবা পাবে তা নিশ্চিত করা।"
+    },
+    {
+      "en": "Greater investment in primary healthcare, maternal health and mental health can make health systems more inclusive and resilient.",
+      "bn": "প্রাথমিক স্বাস্থ্যসেবা, মাতৃস্বাস্থ্য ও মানসিক স্বাস্থ্যে বিনিয়োগ স্বাস্থ্যব্যবস্থাকে আরও অন্তর্ভুক্তিমূলক ও সহনশীল করতে পারে।"
+    },
+    {
+      "en": "Governments should also remove physical, financial and communication barriers faced by older people and persons with disabilities.",
+      "bn": "প্রবীণ ও প্রতিবন্ধী ব্যক্তিদের শারীরিক, আর্থিক ও যোগাযোগগত বাধাও সরকারের দূর করা উচিত।"
+    },
+    {
+      "en": "Ultimately, public health is not merely a medical issue; it is a shared responsibility that requires effective policies, community participation and international cooperation.",
+      "bn": "পরিশেষে, জনস্বাস্থ্য কেবল চিকিৎসার বিষয় নয়; এটি কার্যকর নীতি, জনগণের অংশগ্রহণ ও আন্তর্জাতিক সহযোগিতানির্ভর যৌথ দায়িত্ব।"
+    }
+  ],
+  "wordChoice": {
+    "items": [
+      {
+        "title": "Health vs Healthcare vs Public Health",
+        "rows": [
+          {
+            "word": "Health",
+            "meaning": "সুস্থতা"
+          },
+          {
+            "word": "Healthcare",
+            "meaning": "চিকিৎসা ও স্বাস্থ্যসেবা"
+          },
+          {
+            "word": "Public Health",
+            "meaning": "জনগোষ্ঠীর স্বাস্থ্য রক্ষার নীতি ও কার্যক্রম"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Preventive vs Curative vs Palliative",
+        "rows": [
+          {
+            "word": "Preventive",
+            "meaning": "রোগ প্রতিরোধ"
+          },
+          {
+            "word": "Curative",
+            "meaning": "রোগ সারানো"
+          },
+          {
+            "word": "Palliative",
+            "meaning": "গুরুতর অসুস্থতায় কষ্ট কমানো"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Equitable vs Equal vs Fair",
+        "rows": [
+          {
+            "word": "Equal",
+            "meaning": "সমান"
+          },
+          {
+            "word": "Equitable",
+            "meaning": "প্রয়োজন অনুযায়ী ন্যায্য"
+          },
+          {
+            "word": "Fair",
+            "meaning": "ন্যায়সংগত"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Prevalence vs Incidence vs Mortality",
+        "rows": [
+          {
+            "word": "Prevalence",
+            "meaning": "মোট বিদ্যমান রোগের হার"
+          },
+          {
+            "word": "Incidence",
+            "meaning": "নতুন রোগীর হার"
+          },
+          {
+            "word": "Mortality",
+            "meaning": "মৃত্যুহার"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "title": "Outbreak vs Epidemic vs Pandemic",
+        "rows": [
+          {
+            "word": "Outbreak",
+            "meaning": "নির্দিষ্ট স্থানে আকস্মিক বৃদ্ধি"
+          },
+          {
+            "word": "Epidemic",
+            "meaning": "অঞ্চলে ব্যাপক বিস্তার"
+          },
+          {
+            "word": "Pandemic",
+            "meaning": "বহু দেশ/মহাদেশে বিস্তার"
+          }
+        ],
+        "examples": []
+      }
+    ]
+  },
+  "grammar": [
+    {
+      "title": "Not only … but also (Inversion)",
+      "structure": "Not only + Auxiliary + Subject + Verb …, but + Subject + also + Verb …",
+      "example": "Not only does vaccination protect individuals, but it also reduces the spread of infectious diseases.",
+      "explanation": "দুটি বিষয়কে সমান গুরুত্ব দিয়ে যুক্ত করে। বাক্যের শুরুতে Not only বসলে auxiliary verb (do/does/did, is, can ইত্যাদি) subject-এর আগে আসে — একে inversion বলে।",
+      "wrong": "Not only vaccination protects individuals, but it also reduces the spread of diseases.",
+      "right": "Not only does vaccination protect individuals, but it also reduces the spread of diseases."
+    },
+    {
+      "title": "Gerund after a Preposition",
+      "structure": "Preposition (in/by/for/of/without …) + Verb-ing",
+      "example": "Governments can help by strengthening primary care.",
+      "explanation": "Preposition-এর পরে verb এলে সাধারণত -ing form (gerund) হয়।",
+      "wrong": "Governments can help by improve primary care.",
+      "right": "Governments can help by improving primary care.",
+      "more": [
+        "Investment in improving healthcare is essential."
+      ]
+    }
+  ],
+  "collocations": [
+    {
+      "expr": "Universal health coverage",
+      "bn": "সর্বজনীন স্বাস্থ্যসেবা"
+    },
+    {
+      "expr": "Primary healthcare",
+      "bn": "প্রাথমিক স্বাস্থ্যসেবা"
+    },
+    {
+      "expr": "Preventive healthcare",
+      "bn": "প্রতিরোধমূলক স্বাস্থ্যসেবা"
+    },
+    {
+      "expr": "Maternal and child health",
+      "bn": "মা ও শিশুস্বাস্থ্য"
+    },
+    {
+      "expr": "Affordable medicines",
+      "bn": "সাশ্রয়ী মূল্যের ওষুধ"
+    },
+    {
+      "expr": "Health equity",
+      "bn": "স্বাস্থ্যক্ষেত্রে সমতা"
+    },
+    {
+      "expr": "Disease prevention",
+      "bn": "রোগ প্রতিরোধ"
+    },
+    {
+      "expr": "Trained healthcare professionals",
+      "bn": "প্রশিক্ষিত স্বাস্থ্যকর্মী"
+    }
+  ],
+  "connectors": [
+    {
+      "word": "However",
+      "bn": "তবে / তবুও",
+      "use": "বিপরীত বক্তব্য"
+    },
+    {
+      "word": "Moreover",
+      "bn": "অধিকন্তু",
+      "use": "অতিরিক্ত তথ্য"
+    },
+    {
+      "word": "In addition",
+      "bn": "এ ছাড়া",
+      "use": "অতিরিক্ত তথ্য"
+    },
+    {
+      "word": "Therefore",
+      "bn": "অতএব / তাই",
+      "use": "সিদ্ধান্ত বা করণীয়"
+    },
+    {
+      "word": "Ultimately",
+      "bn": "পরিশেষে",
+      "use": "উপসংহার"
+    }
+  ],
+  "connectorsExample": "Preventive services can reduce disease. Moreover, they lower the cost of treatment. Therefore, governments should invest in primary healthcare.",
+  "transformation": [
+    {
+      "label": "Simple Sentence",
+      "text": "Unable to afford healthcare, many people experience deteriorating health."
+    },
+    {
+      "label": "Compound Sentence",
+      "text": "Many people cannot afford healthcare, and their health deteriorates."
+    },
+    {
+      "label": "Complex Sentence",
+      "text": "Because many people cannot afford healthcare, their health deteriorates."
+    },
+    {
+      "label": "Advanced Expression",
+      "text": "Limited financial access to essential healthcare services can undermine the health and well-being of vulnerable communities."
+    }
+  ],
+  "translation": {
+    "note": "প্রথমে নিজে অনুবাদ করবে। নিজের অনুবাদ শেষ হলে উত্তর মিলিয়ে নেবে।",
+    "bnToEn": [
+      {
+        "q": "প্রতিরোধমূলক স্বাস্থ্যসেবা রোগের বিস্তার কমাতে গুরুত্বপূর্ণ ভূমিকা পালন করে।",
+        "a": "Preventive healthcare plays an important role in reducing the spread of diseases."
+      },
+      {
+        "q": "সবার জন্য সাশ্রয়ী ও মানসম্মত স্বাস্থ্যসেবা নিশ্চিত করা সরকারের দায়িত্ব।",
+        "a": "Ensuring affordable and quality healthcare for all is a responsibility of the government."
+      }
+    ],
+    "enToBn": [
+      {
+        "q": "Universal health coverage can reduce the financial burden of illness.",
+        "a": "সর্বজনীন স্বাস্থ্যসেবা অসুস্থতার আর্থিক বোঝা কমাতে পারে।"
+      },
+      {
+        "q": "Improved sanitation and vaccination are essential for disease prevention.",
+        "a": "উন্নত স্যানিটেশন ও টিকাদান রোগ প্রতিরোধের জন্য অপরিহার্য।"
+      }
+    ]
+  },
+  "assignment": {
+    "intro": "নিচের ১০টি Expression থেকে অন্তত ৫টি ব্যবহার করে নিজে ৫টি English Sentence লিখবে।",
+    "expressions": [
+      "Preventive healthcare",
+      "Equitable access",
+      "Universal health coverage",
+      "Disease prevention",
+      "Primary healthcare",
+      "Maternal health",
+      "Mental well-being",
+      "Affordable medicines",
+      "Health infrastructure",
+      "Public health policy"
+    ],
+    "criteria": [
+      "Grammar Accuracy",
+      "Right Word Selection",
+      "Sentence Structure",
+      "Natural Expression",
+      "BCS Written Standard"
+    ],
+    "note": "শর্ত: অন্তত একটি complex sentence ও বাংলাদেশের স্বাস্থ্যব্যবস্থার একটি চ্যালেঞ্জ উল্লেখ করবে। তোমার লেখা বাক্যগুলো নিচের ঘরে লিখে রাখো (এই ডিভাইসে সংরক্ষিত থাকবে)। তারপর প্রতিটি বাক্যে Grammar mistake, Corrected sentence, Better expression ও বাংলা ব্যাখ্যা—এই চারটি দিক ধরে নিজে মিলিয়ে দেখো।"
+  },
+  "sections": [
+    {
+      "title": "Day 06–10: ব্যবহারের নির্দেশনা",
+      "blocks": [
+        {
+          "t": "ul",
+          "items": [
+            "প্রথমে Model Paragraph পড়ে মূল বক্তব্য ও logical flow বোঝার চেষ্টা করবে।",
+            "Vocabulary ও collocations দিয়ে নিজে নতুন বাক্য তৈরি করবে।",
+            "Translation Practice-এর উত্তর দেখার আগে নিজে অনুবাদ করবে।",
+            "Writing Task জমা দিলে Grammar, Vocabulary, Structure ও BCS Written Standard অনুযায়ী মূল্যায়ন করা যাবে।",
+            "চলমান আন্তর্জাতিক ঘটনার ক্ষেত্রে তারিখ, সংশ্লিষ্ট পক্ষের বক্তব্য এবং স্বাধীনভাবে যাচাইকৃত তথ্য আলাদা রাখবে।"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Revision Checklist",
+      "sub": "পাঠ শেষে নিজেকে যাচাই করো।",
+      "blocks": [
+        {
+          "t": "ul",
+          "items": [
+            "Preventive, Equitable, Prevalence, Immunisation ও Sanitation-এর অর্থ জানি।",
+            "Health, Healthcare ও Public Health-এর পার্থক্য বুঝেছি।",
+            "WHO-এর স্বাস্থ্যসংজ্ঞা মনে রাখতে পারি।",
+            "Not only…but also এবং gerund after preposition ব্যবহার করতে পারি।",
+            "জনস্বাস্থ্য বিষয়ে ১২০–১৫০ শব্দের paragraph লিখতে পারি।"
+          ]
+        }
+      ]
+    }
+  ],
+  "finalGoal": {
+    "title": "Day 06 — আজকের মূল শিক্ষা",
+    "text": [
+      "জনস্বাস্থ্য কেবল হাসপাতাল ও চিকিৎসার বিষয় নয়; প্রতিরোধমূলক সেবা, সমতাভিত্তিক প্রবেশাধিকার, সর্বজনীন স্বাস্থ্যসেবা এবং প্রবীণ ও প্রতিবন্ধী মানুষের অন্তর্ভুক্তি — এই দিকগুলো যুক্ত করলেই স্বাস্থ্যবিষয়ক লেখা পূর্ণাঙ্গ হয়।"
+    ]
+  }
+}
