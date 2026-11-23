@@ -214,5 +214,29 @@
   "source": "https://commons.wikimedia.org/wiki/File:Germinal_first_edition_cover.jpg",
   "license": "Public domain",
   "author": "G. Charpentier (publisher)"
+ },
+ "sinclair-lewis": {
+  "file": "/writing/img/sinclair-lewis.jpg",
+  "source": "https://tile.loc.gov/storage-services/service/pnp/agc/7a10000/7a10200/7a10227r.jpg (LOC agc.7a10227)",
+  "license": "Public domain",
+  "author": "Arnold Genthe Collection, Library of Congress"
+ },
+ "thomas-hardy": {
+  "file": "/writing/img/thomas-hardy.jpg",
+  "source": "https://archive.org/details/artofthomashardy00johnuoft",
+  "license": "Public domain",
+  "author": "William Strang (etching, frontispiece of The Art of Thomas Hardy, 1894)"
+ },
+ "book-casterbridge": {
+  "file": "/writing/img/book-casterbridge.jpg",
+  "source": "https://archive.org/details/mayorofcasterbri02hard",
+  "license": "Public domain",
+  "author": "Smith, Elder & Co., London, 1886 (title page)"
+ },
+ "book-all-quiet": {
+  "file": "/writing/img/book-all-quiet.jpg",
+  "source": "https://archive.org/details/allquietonwest00rema",
+  "license": "Public domain",
+  "author": "Grosset & Dunlap, New York, c1930 (cover)"
  }
 }

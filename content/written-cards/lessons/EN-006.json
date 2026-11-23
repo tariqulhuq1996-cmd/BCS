@@ -278,6 +278,10 @@
           "Public Health",
           "Commercialisation of Healthcare"
         ],
+        "photo": {
+          "src": "/writing/img/sinclair-lewis.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
         "cover": {
           "src": "/writing/img/book-arrowsmith.jpg",
           "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
@@ -317,6 +321,10 @@
           "Conservatism and Reform",
           "Rural Development"
         ],
+        "photo": {
+          "src": "/writing/img/sinclair-lewis.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
         "cover": null
       }
     ]

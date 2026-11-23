@@ -241,7 +241,14 @@
           "Competition",
           "Leadership and Accountability"
         ],
-        "cover": null
+        "photo": {
+          "src": "/writing/img/thomas-hardy.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
+        "cover": {
+          "src": "/writing/img/book-casterbridge.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        }
       },
       {
         "name": "Thomas Hardy",
@@ -277,6 +284,10 @@
           "Access to Education",
           "Social Mobility"
         ],
+        "photo": {
+          "src": "/writing/img/thomas-hardy.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        },
         "cover": null
       }
     ]

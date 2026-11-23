@@ -154,7 +154,10 @@
           "Impact of War on Youth",
           "International Peace"
         ],
-        "cover": null
+        "cover": {
+          "src": "/writing/img/book-all-quiet.jpg",
+          "credit": "Wikimedia Commons (পাবলিক ডোমেইন)"
+        }
       },
       {
         "name": "Erich Maria Remarque",
