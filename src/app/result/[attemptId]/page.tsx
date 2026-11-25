@@ -124,6 +124,9 @@ async function Content({ params }: { params: Promise<{ attemptId: string }> }) {
           )}
         </p>
       </div>
+      <p className="mt-3">
+        <Link href={`/performance/${attemptId}`} className="font-semibold text-green underline underline-offset-4">এই পরীক্ষার বিস্তারিত বিশ্লেষণ (২০০-এর অনুপাতে নম্বর, সময়, করণীয়)</Link>
+      </p>
       {levelDone && <LevelComplete userId={user.id} levelId={task!.levelId} />}
       <div className="mt-6 rounded-xl border-2 border-green bg-surface p-5 sm:p-6">
         <p className="text-lg leading-relaxed">{headline}</p>

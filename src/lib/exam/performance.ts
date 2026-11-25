@@ -1,22 +1,30 @@
 /**
- * Performance Dashboard (সব পরীক্ষা) ও পরীক্ষা-পরবর্তী বিশ্লেষণ (একটি পরীক্ষা)।
+ * Performance Dashboard (সব পরীক্ষা) ও পরীক্ষা-পরবর্তী বিশ্লেষণ (একটি পরীক্ষা) — সব Level-এর সব ধরনের পরীক্ষার জন্য।
  *
  * নীতি:
- *  - শুধু জমা দেওয়া (সম্পন্ন) Model Test গোনা হয়; চলমান/অসম্পূর্ণ পরীক্ষা বাদ।
+ *  - শুধু জমা দেওয়া (সম্পন্ন) পরীক্ষা গোনা হয়; চলমান/অসম্পূর্ণ পরীক্ষা বাদ।
+ *  - বিভিন্ন আকারের পরীক্ষা তুলনীয় করতে নম্বর ২০০-এর অনুপাতে রূপান্তর: নেট × ২০০ ÷ প্রশ্নসংখ্যা
+ *    (যেমন ৫০ প্রশ্নে ৩৮ নেট → ১৫২/২০০)। বরাদ্দ সময়ও একই অনুপাতে: প্রশ্নসংখ্যা × (১০৫ মিনিট ÷ ২০০)।
+ *  - নেট = সঠিক − নেগেটিভ × ভুল। Model Test-এ ইঞ্জিনের সংরক্ষিত netScore; অন্য পরীক্ষায় একই নিয়মে হিসাব
+ *    (সেগুলোতে আসলে নম্বর কাটে না, তবে বাস্তব Preliminary-র সঙ্গে তুলনার জন্য একই নিয়ম)।
+ *  - বিষয়ভিত্তিক নেট ধরা হয় বিষয়ের ২০০-নম্বরের মানবণ্টন (Subject.marks200) অনুযায়ী।
  *  - তথ্য না থাকা মানে শূন্য নয় — null; UI "তথ্য নেই" দেখায়।
- *  - প্রতিটি গড়ের সঙ্গে কতটি পরীক্ষা ধরা হয়েছে (n) আর গড়ের ধরন: প্রতি-পরীক্ষার গড় ("per_exam") নাকি সব প্রশ্ন মিলিয়ে ভারযুক্ত ("weighted")।
+ *  - প্রতিটি গড়ের সঙ্গে কতটি পরীক্ষা (n) আর গড়ের ধরন: প্রতি-পরীক্ষার গড় ("per_exam") নাকি সব প্রশ্ন মিলিয়ে ভারযুক্ত ("weighted")।
  *  - উন্নতি/অবনতি বলা হয় কেবল analysis.min_exams_trend টি পরীক্ষা হলে; একটি পরীক্ষা থেকে কখনো নয়।
  *  - OMR পূরণের সময় কোনো সমাধান-সময়ে যোগ হয় না; আলাদা দেখানো হয়।
- *  - নম্বর আসে বিদ্যমান ইঞ্জিন থেকে: TestAttempt.netScore (submitAttempt), বিষয়ভিত্তিক হিসাব perSubject, প্রশ্নভিত্তিক analyzeTiming (getResultView)।
+ *  - নম্বর আসে বিদ্যমান ইঞ্জিন থেকে: TestAttempt (submitAttempt), বিষয়ভিত্তিক হিসাব perSubject, প্রশ্নভিত্তিক analyzeTiming (getResultView)।
  */
 import type { PrismaClient } from "@prisma/client";
 import { loadRules, type Rules } from "@/lib/rules";
 import { bn } from "@/lib/bn";
 import { numify } from "../sql";
 import { perSubject } from "./analysis";
-import { ExamError, getResultView } from "./service";
+import { ExamError, KIND_TITLE, attemptTitle, getResultView } from "./service";
 
 type Db = PrismaClient;
+
+/** সব পরীক্ষা এই পূর্ণমানে রূপান্তরিত হয়। */
+export const FULL_MARKS = 200;
 
 export type Benchmarks = { strongNet: number; goodNet: number; accHigh: number; accLow: number; attemptHigh: number; attemptLow: number; stableSd: number; unstableSd: number };
 export type AnalysisConfig = {
@@ -26,6 +34,7 @@ export type AnalysisConfig = {
   negativeMark: number;
   minTrend: number;
   minConsistency: number;
+  smallExam: number;
   bench: Benchmarks;
 };
 
@@ -38,6 +47,7 @@ export function analysisConfig(rules: Rules): AnalysisConfig {
     negativeMark: rules.get<number>("l3.negative_mark"),
     minTrend: Math.max(2, rules.get<number>("analysis.min_exams_trend")),
     minConsistency: Math.max(2, rules.get<number>("analysis.min_exams_consistency")),
+    smallExam: rules.get<number>("analysis.small_exam_questions"),
     bench: rules.get<Benchmarks>("analysis.benchmarks"),
   };
 }
@@ -56,6 +66,9 @@ const median = (xs: number[]) => {
   const m = Math.floor(s.length / 2);
   return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
 };
+
+/** নম্বরকে ২০০-এর অনুপাতে: ৫০ প্রশ্নে ৩৮ → ১৫২। */
+export const toFull = (value: number, total: number) => (total > 0 ? (value * FULL_MARKS) / total : 0);
 
 /** একটি গড় এবং কতটি পরীক্ষা থেকে, কোন ধরনের গড়। */
 export type Avg = { value: number | null; n: number; kind: "per_exam" | "weighted" };
@@ -81,57 +94,114 @@ export function splitTrend(values: number[], minTrend: number) {
   return { k, recent, before, delta: recent - before };
 }
 
-// ───────────────────────────────────────── সম্পন্ন পরীক্ষা
-
-async function completedExams(db: Db, userId: string, opts: { before?: Date } = {}) {
-  return db.testAttempt.findMany({
-    where: { userId, kind: "MODEL_TEST", submittedAt: { not: null, ...(opts.before ? { lt: opts.before } : {}) }, netScore: { not: null } },
-    orderBy: { submittedAt: "asc" },
-    select: { id: true, startedAt: true, submittedAt: true, correct: true, wrong: true, unanswered: true, netScore: true, questionIds: true, task: { select: { titleBn: true } } },
-  });
+/** ভারযুক্ত প্রবণতা (%): শেষ k পরীক্ষার Σলব ÷ Σহর বনাম আগের k — ছোট নমুনার পরীক্ষা যেন বেশি দোলা না দেয়। */
+export function splitTrendWeighted(items: { num: number; den: number }[], minTrend: number) {
+  if (items.length < minTrend) return null;
+  const k = Math.min(5, Math.floor(items.length / 2));
+  const agg = (xs: typeof items) => {
+    const d = xs.reduce((a, x) => a + x.den, 0);
+    return d ? (xs.reduce((a, x) => a + x.num, 0) / d) * 100 : 0;
+  };
+  const recent = agg(items.slice(-k));
+  const before = agg(items.slice(-2 * k, -k));
+  return { k, recent, before, delta: recent - before };
 }
 
+// ───────────────────────────────────────── কোন পরীক্ষা কোন Level-এর
+
+export type Scope = "all" | "0" | "1" | "2" | "3" | "other";
+export const SCOPES: { key: Scope; label: string }[] = [
+  { key: "all", label: "সব পরীক্ষা" },
+  { key: "0", label: "ধাপ ০" },
+  { key: "1", label: "Level ১" },
+  { key: "2", label: "Level ২" },
+  { key: "3", label: "Level ৩" },
+  { key: "other", label: "Revision ও অনুশীলন" },
+];
+export const parseScope = (v: unknown): Scope => (SCOPES.some((s) => s.key === v) ? (v as Scope) : "all");
+
+/** কাজের ধরন (L0_/L1_/L2_/L3_) থেকে Level; কাজ ছাড়া Model Test → ৩; দৈনিক Revision/ভুলের অনুশীলন ইত্যাদি → "other"। */
+export function levelOf(a: { kind: string; task: { kind: string } | null }): Exclude<Scope, "all"> {
+  const m = a.task?.kind.match(/^L([0-3])_/);
+  if (m) return m[1] as "0" | "1" | "2" | "3";
+  if (a.kind === "MODEL_TEST") return "3";
+  if (a.kind === "DIAGNOSTIC") return "0";
+  return "other";
+}
+
+// ───────────────────────────────────────── সম্পন্ন পরীক্ষা
+
+async function completedExams(db: Db, userId: string, opts: { before?: Date; kind?: string } = {}) {
+  const rows = await db.testAttempt.findMany({
+    where: { userId, submittedAt: { not: null, ...(opts.before ? { lt: opts.before } : {}) }, ...(opts.kind ? { kind: opts.kind as never } : {}) },
+    orderBy: { submittedAt: "asc" },
+    select: { id: true, kind: true, partNo: true, startedAt: true, submittedAt: true, correct: true, wrong: true, unanswered: true, netScore: true, questionIds: true, task: { select: { titleBn: true, kind: true } } },
+  });
+  return rows.filter((a) => a.questionIds.length > 0 && a.correct != null);
+}
+type Attempt = Awaited<ReturnType<typeof completedExams>>[number];
+
 export type ExamRow = {
-  id: string; i: number; title: string; date: string;
+  id: string; i: number; title: string; kind: string; kindLabel: string; level: Exclude<Scope, "all">; date: string;
   total: number; correct: number; wrong: number; unanswered: number; attempted: number;
-  net: number; accuracy: number | null; attemptRate: number;
-  solveSec: number | null; timedShare: number; avgSecPerAttempted: number | null;
+  /** আসল নেট (এই পরীক্ষার প্রশ্নসংখ্যায়) ও ২০০-এর অনুপাতে */
+  net: number; net200: number; gross200: number;
+  /** নেগেটিভ মার্কিং কি পরীক্ষাতেই ছিল (Model Test), নাকি তুলনার জন্য হিসাব করা */
+  negativeInExam: boolean;
+  small: boolean;
+  accuracy: number | null; attemptRate: number;
+  solveSec: number | null; budgetSec: number; utilization: number | null; avgSecPerAttempted: number | null;
 };
+
+function toRow(a: Attempt, idx: number, rows: Awaited<ReturnType<typeof perSubject>>, cfg: AnalysisConfig): ExamRow {
+  const total = a.questionIds.length;
+  const correct = a.correct ?? 0, wrong = a.wrong ?? 0;
+  const unanswered = a.unanswered ?? total - correct - wrong;
+  const attempted = correct + wrong;
+  const net = a.netScore ?? correct - cfg.negativeMark * wrong;
+  const timed = rows.reduce((x, r) => x + r.timed, 0);
+  const solveSec = timed ? rows.reduce((x, r) => x + r.timeMs, 0) / 1000 : null;
+  const budgetSec = (total * cfg.solveMin * 60) / FULL_MARKS;
+  return {
+    id: a.id, i: idx + 1, title: attemptTitle(a), kind: a.kind, kindLabel: KIND_TITLE[a.kind] ?? a.kind, level: levelOf(a), date: a.submittedAt!.toISOString(),
+    total, correct, wrong, unanswered, attempted,
+    net, net200: toFull(net, total), gross200: toFull(correct, total),
+    negativeInExam: a.netScore != null,
+    small: total < cfg.smallExam,
+    accuracy: ratio(correct, attempted), attemptRate: ratio(attempted, total) ?? 0,
+    solveSec, budgetSec, utilization: solveSec != null ? (solveSec / budgetSec) * 100 : null,
+    avgSecPerAttempted: timed && attempted ? rows.reduce((x, r) => x + r.attemptedMs, 0) / 1000 / attempted : null,
+  };
+}
 
 // ───────────────────────────────────────── ১. Performance Dashboard
 
-export async function getPerformanceDashboard(db: Db, userId: string) {
+export async function getPerformanceDashboard(db: Db, userId: string, scope: Scope = "all") {
   const cfg = analysisConfig(await loadRules(db));
-  const attempts = await completedExams(db, userId);
-  const subj = await perSubject(db, attempts.map((a) => a.id));
+  const all = await completedExams(db, userId);
+  const counts = Object.fromEntries(SCOPES.map((s) => [s.key, s.key === "all" ? all.length : all.filter((a) => levelOf(a) === s.key).length])) as Record<Scope, number>;
+  const attempts = scope === "all" ? all : all.filter((a) => levelOf(a) === scope);
+  const [subj, subjectMeta] = await Promise.all([
+    perSubject(db, attempts.map((a) => a.id)),
+    db.subject.findMany({ select: { code: true, marks200: true } }),
+  ]);
+  const marks200 = new Map(subjectMeta.map((s) => [s.code, s.marks200]));
   const byAttempt = new Map<string, typeof subj>();
   for (const s of subj) (byAttempt.get(s.attemptId) ?? byAttempt.set(s.attemptId, []).get(s.attemptId)!).push(s);
 
-  const exams: ExamRow[] = attempts.map((a, idx) => {
-    const rows = byAttempt.get(a.id) ?? [];
-    const total = a.questionIds.length;
-    const correct = a.correct ?? 0, wrong = a.wrong ?? 0;
-    const unanswered = a.unanswered ?? total - correct - wrong;
-    const attempted = correct + wrong;
-    const timed = rows.reduce((x, r) => x + r.timed, 0);
-    const ms = rows.reduce((x, r) => x + r.timeMs, 0);
-    return {
-      id: a.id, i: idx + 1, title: a.task?.titleBn ?? `Model Test ${idx + 1}`, date: a.submittedAt!.toISOString(),
-      total, correct, wrong, unanswered, attempted,
-      net: a.netScore!, accuracy: ratio(correct, attempted), attemptRate: ratio(attempted, total) ?? 0,
-      solveSec: timed ? ms / 1000 : null,
-      timedShare: total ? timed / total : 0,
-      avgSecPerAttempted: timed && attempted ? rows.reduce((x, r) => x + r.attemptedMs, 0) / 1000 / attempted : null,
-    };
-  });
+  const exams = attempts.map((a, idx) => toRow(a, idx, byAttempt.get(a.id) ?? [], cfg));
   const n = exams.length;
-  const nets = exams.map((e) => e.net);
+  const nets = exams.map((e) => e.net200);
+  const kinds = new Set(exams.map((e) => e.kind));
 
-  // ── KPI (প্রতিটি পরীক্ষার মান সমান ওজনে গড়)
+  // ── KPI (২০০-এর অনুপাতে; প্রতিটি পরীক্ষার মান সমান ওজনে গড়)
   const kpi = {
     total: n,
+    questions: exams.reduce((a, e) => a + e.total, 0),
+    small: exams.filter((e) => e.small).length,
+    mixedKinds: kinds.size > 1,
     avgNet: perExam(nets),
-    avgGross: perExam(exams.map((e) => e.correct)),
+    avgGross: perExam(exams.map((e) => e.gross200)),
     avgAccuracy: perExam(exams.map((e) => e.accuracy)),
     avgAttemptRate: perExam(exams.map((e) => e.attemptRate)),
     weightedAccuracy: { value: ratio(exams.reduce((a, e) => a + e.correct, 0), exams.reduce((a, e) => a + e.attempted, 0)), n, kind: "weighted" } as Avg,
@@ -144,33 +214,35 @@ export async function getPerformanceDashboard(db: Db, userId: string) {
   const netTrend = splitTrend(nets, cfg.minTrend);
   const accTrend = splitTrend(exams.map((e) => e.accuracy).filter((x): x is number => x != null), cfg.minTrend);
 
-  // ── বিষয়ভিত্তিক (সব পরীক্ষা মিলিয়ে)
+  // ── বিষয়ভিত্তিক (সব পরীক্ষা মিলিয়ে, ভারযুক্ত; নেট বিষয়ের ২০০-নম্বরের ভাগে)
   const examIndex = new Map(exams.map((e) => [e.id, e.i]));
-  const sAgg = new Map<string, { code: string; name: string; ord: number; exams: Set<string>; total: number; correct: number; wrong: number; perExamNet: { i: number; net: number; total: number }[]; ms: number; timed: number }>();
+  const sAgg = new Map<string, { code: string; name: string; ord: number; exams: Set<string>; total: number; correct: number; wrong: number; perExam: { i: number; num: number; den: number }[]; ms: number; timed: number }>();
   for (const s of subj) {
-    const x = sAgg.get(s.code) ?? { code: s.code, name: s.name, ord: s.ord, exams: new Set(), total: 0, correct: 0, wrong: 0, perExamNet: [], ms: 0, timed: 0 };
+    const x = sAgg.get(s.code) ?? { code: s.code, name: s.name, ord: s.ord, exams: new Set(), total: 0, correct: 0, wrong: 0, perExam: [], ms: 0, timed: 0 };
     x.exams.add(s.attemptId);
     x.total += s.total; x.correct += s.correct; x.wrong += s.wrong; x.ms += s.attemptedMs; x.timed += s.timed;
-    x.perExamNet.push({ i: examIndex.get(s.attemptId) ?? 0, net: s.correct - cfg.negativeMark * s.wrong, total: s.total });
+    x.perExam.push({ i: examIndex.get(s.attemptId) ?? 0, num: s.correct - cfg.negativeMark * s.wrong, den: s.total });
     sAgg.set(s.code, x);
   }
   const subjects = [...sAgg.values()].sort((a, b) => a.ord - b.ord).map((x) => {
     const attempted = x.correct + x.wrong;
     const accuracy = ratio(x.correct, attempted);
     const attemptRate = ratio(attempted, x.total);
-    const series = x.perExamNet.sort((a, b) => a.i - b.i);
-    const pctSeries = series.map((p) => (p.total ? (p.net / p.total) * 100 : 0));
+    const netPct = x.total ? ((x.correct - cfg.negativeMark * x.wrong) / x.total) * 100 : null;
+    const fullMarks = marks200.get(x.code) ?? null;
     return {
       code: x.code, name: x.name,
       examsCount: x.exams.size,
-      marksPerExam: x.total / x.exams.size,
-      avgNet: { value: mean(series.map((p) => p.net)), n: x.exams.size, kind: "per_exam" } as Avg,
+      questions: x.total,
+      fullMarks,
+      /** বিষয়ের ২০০-নম্বরের মানবণ্টনে নেট (যেমন বাংলা ৩০-এর মধ্যে) — সব প্রশ্ন মিলিয়ে */
+      net: { value: netPct != null && fullMarks != null ? (netPct / 100) * fullMarks : null, n: x.exams.size, kind: "weighted" } as Avg,
       accuracy: { value: accuracy, n: x.exams.size, kind: "weighted" } as Avg,
       attemptRate: { value: attemptRate, n: x.exams.size, kind: "weighted" } as Avg,
-      netPct: x.total ? ((x.correct - cfg.negativeMark * x.wrong) / x.total) * 100 : null,
+      netPct,
       avgSec: x.timed && attempted ? x.ms / 1000 / attempted : null,
       status: subjectStatus(accuracy, attemptRate, cfg.bench),
-      trend: splitTrend(pctSeries, cfg.minTrend),
+      trend: splitTrendWeighted(x.perExam.sort((a, b) => a.i - b.i), cfg.minTrend),
     };
   });
   const ranked = subjects.filter((s) => s.netPct != null).sort((a, b) => b.netPct! - a.netPct!);
@@ -182,19 +254,19 @@ export async function getPerformanceDashboard(db: Db, userId: string) {
     trendReady: n >= cfg.minTrend,
   };
 
-  // ── সময় (শুধু যেসব পরীক্ষায় সময় মাপা হয়েছে)
+  // ── সময় (শুধু যেসব পরীক্ষায় সময় মাপা হয়েছে; ২০০ প্রশ্নের সমতুল্যে)
   const timedExams = exams.filter((e) => e.solveSec != null);
   const time = {
     n: timedExams.length,
-    solveMin: perExam(timedExams.map((e) => e.solveSec! / 60)),
+    solveMin200: perExam(timedExams.map((e) => toFull(e.solveSec!, e.total) / 60)),
     avgSec: perExam(timedExams.map((e) => e.avgSecPerAttempted)),
-    utilization: perExam(timedExams.map((e) => (e.solveSec! / 60 / cfg.solveMin) * 100)),
-    overBudget: timedExams.filter((e) => e.solveSec! / 60 > cfg.solveMin).length,
+    utilization: perExam(timedExams.map((e) => e.utilization)),
+    overBudget: timedExams.filter((e) => (e.utilization ?? 0) > 100).length,
     trend: splitTrend(timedExams.map((e) => e.avgSecPerAttempted).filter((x): x is number => x != null), cfg.minTrend),
-    budgetSecPerQ: (cfg.solveMin * 60) / 200,
+    budgetSecPerQ: (cfg.solveMin * 60) / FULL_MARKS,
   };
 
-  // ── স্থিতিশীলতা (উন্নতি থেকে আলাদা)
+  // ── স্থিতিশীলতা (উন্নতি থেকে আলাদা; ২০০-এর অনুপাতে)
   const netSd = n >= cfg.minConsistency ? sd(nets) : null;
   const consistency = netSd == null
     ? null
@@ -206,7 +278,7 @@ export async function getPerformanceDashboard(db: Db, userId: string) {
         level: (netSd <= cfg.bench.stableSd ? "stable" : netSd <= cfg.bench.unstableSd ? "moderate" : "unstable") as "stable" | "moderate" | "unstable",
       };
 
-  return { cfg, exams, kpi, progress, netTrend, accTrend, subjects, highlights, time, consistency };
+  return { cfg, scope, counts, exams, kpi, progress, netTrend, accTrend, subjects, highlights, time, consistency };
 }
 export type PerformanceDashboard = Awaited<ReturnType<typeof getPerformanceDashboard>>;
 
@@ -214,11 +286,11 @@ export type PerformanceDashboard = Awaited<ReturnType<typeof getPerformanceDashb
 
 export type Diagnosis = { key: "strong" | "balanced" | "reckless" | "cautious" | "foundation" | "developing"; label: string; detail: string };
 
-/** বেঞ্চমার্ক অনুযায়ী এক লাইনের রোগনির্ণয়; প্রমাণ (নেট, Accuracy, Attempt) লেখায় থাকে। */
+/** বেঞ্চমার্ক অনুযায়ী এক লাইনের রোগনির্ণয় (নেট নম্বর ২০০-এর অনুপাতে); প্রমাণ (নেট, Accuracy, Attempt) লেখায় থাকে। */
 export function diagnose(net: number, accuracy: number | null, attemptRate: number, b: Benchmarks): Diagnosis {
   const acc = accuracy ?? 0;
   const f = (x: number) => x.toFixed(1).replace(/^-/, "−");
-  const ev = `নেট ${f(net)}, Accuracy ${f(acc)}%, Attempt ${f(attemptRate)}%`;
+  const ev = `২০০-এ নেট ${f(net)}, Accuracy ${f(acc)}%, Attempt ${f(attemptRate)}%`;
   if (net >= b.strongNet && acc >= b.accHigh) return { key: "strong", label: "শক্তিশালী প্রস্তুতি", detail: `${ev} — নম্বর ও নির্ভুলতা দুটোই মানদণ্ডের ওপরে।` };
   if (attemptRate >= b.attemptHigh && acc < b.accLow) return { key: "reckless", label: "ঝুঁকিপূর্ণ উত্তরদান", detail: `${ev} — প্রায় সব প্রশ্নে উত্তর দিলেও নির্ভুলতা কম; নেগেটিভ মার্কিংয়ে নম্বর হারাচ্ছে।` };
   if (acc >= b.accHigh && attemptRate < b.attemptLow) return { key: "cautious", label: "অতি সতর্ক", detail: `${ev} — যা দিয়েছেন তা মূলত সঠিক, কিন্তু অনেক প্রশ্ন ছেড়ে দেওয়ায় নম্বর কম আসছে।` };
@@ -229,7 +301,7 @@ export function diagnose(net: number, accuracy: number | null, attemptRate: numb
 
 type Item = Awaited<ReturnType<typeof getResultView>>["items"][number];
 
-/** আগের পরীক্ষাগুলোর সঠিক উত্তরে শিক্ষার্থীর নিজের গড় সময় — বিষয় × কঠিনতা, আর শুধু বিষয়। */
+/** আগের সব জমা দেওয়া পরীক্ষার সঠিক উত্তরে শিক্ষার্থীর নিজের গড় সময় — বিষয় × কঠিনতা, আর শুধু বিষয়। */
 async function ownTimeBaseline(db: Db, userId: string, before: Date) {
   const rows = numify(
     await db.$queryRaw<{ code: string; diff: string | null; n: number; ms: number }[]>`
@@ -237,7 +309,7 @@ async function ownTimeBaseline(db: Db, userId: string, before: Date) {
       from AttemptAnswer aa join TestAttempt ta on ta.id = aa.attemptId
       join Question q on q.id = aa.questionId
       join Subtopic st on st.id = q.subtopicId join Topic tp on tp.id = st.topicId join Subject sj on sj.id = tp.subjectId
-      where ta.userId = ${userId} and ta.kind = 'MODEL_TEST' and ta.submittedAt is not null and ta.submittedAt < ${before}
+      where ta.userId = ${userId} and ta.submittedAt is not null and ta.submittedAt < ${before}
         and aa.isCorrect = true and aa.timeMs > 0
       group by sj.code, q.difficulty`,
   );
@@ -259,6 +331,8 @@ export type TimeWaster = {
 };
 
 const MIN_BASE_N = 5;
+/** আগের পরীক্ষার সঙ্গে বিষয়ভিত্তিক তুলনায় ন্যূনতম প্রশ্ন। */
+const MIN_SUBJECT_Q = 5;
 
 /**
  * সময় নষ্ট হওয়া প্রশ্ন: শুধু "৩১.৫ সেকেন্ডের বেশি" নয় — প্রত্যাশিত সময় ধরা হয় শিক্ষার্থীর নিজের ইতিহাস থেকে
@@ -295,28 +369,35 @@ export function findTimeWasters(
 }
 
 export async function getExamReport(db: Db, userId: string, attemptId: string) {
-  const a = await db.testAttempt.findUnique({ where: { id: attemptId }, select: { userId: true, kind: true, submittedAt: true, startedAt: true, netScore: true, task: { select: { titleBn: true } } } });
+  const a = await db.testAttempt.findUnique({ where: { id: attemptId }, select: { userId: true, kind: true, partNo: true, submittedAt: true, startedAt: true, netScore: true, task: { select: { titleBn: true, kind: true } } } });
   if (!a || a.userId !== userId) throw new ExamError("FORBIDDEN", "এই ফলাফল আপনার নয়।");
-  if (a.kind !== "MODEL_TEST") throw new ExamError("BAD_INPUT", "শুধু Model Test-এর বিশ্লেষণ পাওয়া যায়।");
-  if (!a.submittedAt || a.netScore == null) throw new ExamError("NOT_READY", "পরীক্ষাটি এখনও জমা হয়নি।");
+  if (!a.submittedAt) throw new ExamError("NOT_READY", "পরীক্ষাটি এখনও জমা হয়নি।");
 
   const rules = await loadRules(db);
   const cfg = analysisConfig(rules);
   const r = await getResultView(db, userId, [attemptId]); // বিদ্যমান ইঞ্জিন: প্রশ্নভিত্তিক অবস্থা + analyzeTiming
+  if (!r.total) throw new ExamError("EMPTY", "এই পরীক্ষায় কোনো প্রশ্ন নেই।");
   const t = r.timing;
-  const meta = await db.question.findMany({
-    where: { id: { in: r.items.map((i) => i.qid) } },
-    select: { id: true, difficulty: true, subtopic: { select: { topic: { select: { subject: { select: { code: true } } } } } } },
-  });
+  const [meta, rawModes, subjectMeta] = await Promise.all([
+    db.question.findMany({
+      where: { id: { in: r.items.map((i) => i.qid) } },
+      select: { id: true, difficulty: true, subtopic: { select: { topic: { select: { subject: { select: { code: true } } } } } } },
+    }),
+    db.attemptAnswer.findMany({ where: { attemptId, selected: { not: null } }, select: { mode: true } }),
+    db.subject.findMany({ select: { code: true, marks200: true } }),
+  ]);
   const metaBy = new Map(meta.map((m) => [m.id, { diff: m.difficulty as string | null, code: m.subtopic.topic.subject.code }]));
-  const rawModes = await db.attemptAnswer.findMany({ where: { attemptId, selected: { not: null } }, select: { mode: true } });
+  const marks200 = new Map(subjectMeta.map((s) => [s.code, s.marks200]));
 
   const total = r.total, correct = r.correct, wrong = r.wrong, unanswered = r.unanswered;
   const attempted = correct + wrong;
-  const net = a.netScore;
+  const negativeInExam = a.netScore != null;
+  const net = a.netScore ?? correct - cfg.negativeMark * wrong;
+  const net200 = toFull(net, total);
   const accuracy = ratio(correct, attempted);
   const attemptRate = ratio(attempted, total) ?? 0;
-  const diagnosis = diagnose(net, accuracy, attemptRate, cfg.bench);
+  const small = total < cfg.smallExam;
+  const diagnosis = diagnose(net200, accuracy, attemptRate, cfg.bench);
 
   // ── বিষয়ভিত্তিক
   const subjCode = new Map<string, string>();
@@ -328,9 +409,14 @@ export async function getExamReport(db: Db, userId: string, attemptId: string) {
       const ar = ratio(att, s.total);
       const sNet = s.correct - cfg.negativeMark * s.wrong;
       const timeSec = s.secs.length ? s.secs.reduce((x, y) => x + y, 0) : null;
+      const code = subjCode.get(s.subject) ?? s.subject;
+      const fullMarks = marks200.get(code) ?? null;
       return {
-        code: subjCode.get(s.subject) ?? s.subject, name: s.subject, total: s.total, correct: s.correct, wrong: s.wrong, unanswered: s.total - att,
-        net: sNet, netPct: (sNet / s.total) * 100, accuracy: acc, attemptRate: ar, guess: s.guess,
+        code, name: s.subject, total: s.total, correct: s.correct, wrong: s.wrong, unanswered: s.total - att,
+        net: sNet, netPct: (sNet / s.total) * 100,
+        /** বিষয়ের ২০০-নম্বরের মানবণ্টনে সমতুল্য নেট (যেমন ৩০-এর মধ্যে) */
+        netFull: fullMarks != null ? (sNet / s.total) * fullMarks : null, fullMarks,
+        accuracy: acc, attemptRate: ar, guess: s.guess,
         timeSec, avgSec: timeSec != null && s.secs.length ? timeSec / s.secs.length : null,
         status: subjectStatus(acc, ar, cfg.bench),
         lost: cfg.negativeMark * s.wrong,
@@ -339,20 +425,21 @@ export async function getExamReport(db: Db, userId: string, attemptId: string) {
   const subjectLine = (s: (typeof subjects)[number]) => {
     const f = (x: number | null) => (x == null ? "—" : x.toFixed(0).replace(/^-/, "−"));
     if (s.status === "strong") return `শক্তির জায়গা — ${s.total}টির ${s.correct}টি সঠিক, Accuracy ${f(s.accuracy)}%।`;
-    if (s.accuracy != null && s.accuracy < cfg.bench.accLow && s.wrong > 0) return `${s.wrong}টি ভুলে ${s.lost.toFixed(1)} নম্বর কাটা গেছে; Accuracy ${f(s.accuracy)}% — নিশ্চিত না হলে উত্তর না দেওয়াই ভালো।`;
+    if (s.accuracy != null && s.accuracy < cfg.bench.accLow && s.wrong > 0) return `${s.wrong}টি ভুলে ${s.lost.toFixed(1)} নম্বর কাটা ${negativeInExam ? "গেছে" : "যেত (বাস্তব পরীক্ষায়)"}; Accuracy ${f(s.accuracy)}% — নিশ্চিত না হলে উত্তর না দেওয়াই ভালো।`;
     if (s.attemptRate != null && s.attemptRate < cfg.bench.attemptLow) return `${s.unanswered}টি প্রশ্ন ছেড়ে দিয়েছেন (Attempt ${f(s.attemptRate)}%) — এখানে নম্বর বাড়ানোর সুযোগ।`;
     return `মোটামুটি — নেট ${s.net.toFixed(1)}/${s.total}, Accuracy ${f(s.accuracy)}%।`;
   };
   const subjectsWithLine = subjects.map((s) => ({ ...s, line: bn(subjectLine(s)) }));
 
-  // ── সময়
+  // ── সময় (বরাদ্দ সময় প্রশ্নসংখ্যার অনুপাতে)
   const timedItems = r.items.filter((i) => i.timeMs != null && i.timeMs > 0);
   const hasTime = timedItems.length > 0;
   const secOf = (i: Item) => (i.timeMs != null && i.timeMs > 0 ? i.timeMs / 1000 : null);
   const attemptedTimed = timedItems.filter((i) => i.status !== "unanswered");
   const solveSec = hasTime ? t.solveSec : null; // শুধু প্রশ্নে কাটানো মাপা সময় — OMR যোগ হয় না
   const slowestSubject = [...subjectsWithLine].filter((s) => s.avgSec != null).sort((x, y) => y.avgSec! - x.avgSec!)[0] ?? null;
-  const budgetSecPerQ = (cfg.solveMin * 60) / total;
+  const budgetSecPerQ = (cfg.solveMin * 60) / FULL_MARKS;
+  const solveBudgetMin = (cfg.solveMin * total) / FULL_MARKS;
   const time = {
     hasTime,
     timedCount: timedItems.length,
@@ -362,9 +449,10 @@ export async function getExamReport(db: Db, userId: string, attemptId: string) {
     // প্রতিটি সঠিক উত্তরের "খরচ": মোট সমাধান-সময় ÷ সঠিক উত্তর
     perCorrect: solveSec != null && correct ? solveSec / correct : null,
     slowestSubject: slowestSubject && { name: slowestSubject.name, avgSec: slowestSubject.avgSec!, timeSec: slowestSubject.timeSec! },
-    utilization: solveSec != null ? (solveSec / 60 / cfg.solveMin) * 100 : null,
-    solveMin: cfg.solveMin,
-    omrMin: cfg.omrMin,
+    utilization: solveSec != null ? (solveSec / 60 / solveBudgetMin) * 100 : null,
+    solveMin: solveBudgetMin,
+    omrMin: (cfg.omrMin * total) / FULL_MARKS,
+    scaled: total !== FULL_MARKS,
     budgetSecPerQ,
     wallMin: (a.submittedAt.getTime() - a.startedAt.getTime()) / 60e3,
   };
@@ -389,19 +477,16 @@ export async function getExamReport(db: Db, userId: string, attemptId: string) {
       }
     : null;
 
-  // ── আগের পরীক্ষা (ঐচ্ছিক তুলনা)
-  const prevList = await completedExams(db, userId, { before: a.submittedAt });
+  // ── আগের একই ধরনের পরীক্ষা (ঐচ্ছিক তুলনা; ২০০-এর অনুপাতে)
+  const prevList = await completedExams(db, userId, { before: a.submittedAt, kind: a.kind });
   const prevA = prevList.at(-1) ?? null;
-  let previous = null as null | { id: string; title: string; net: number; accuracy: number | null; attemptRate: number; solveSec: number | null; subjects: Map<string, number> };
+  let previous = null as null | { id: string; title: string; net200: number; accuracy: number | null; attemptRate: number; utilization: number | null; subjects: Map<string, { pct: number; n: number }> };
   if (prevA) {
     const ps = await perSubject(db, [prevA.id]);
-    const pc = prevA.correct ?? 0, pw = prevA.wrong ?? 0;
-    const timed = ps.reduce((x, s) => x + s.timed, 0);
+    const row = toRow(prevA, 0, ps, cfg);
     previous = {
-      id: prevA.id, title: prevA.task?.titleBn ?? "আগের Model Test", net: prevA.netScore!,
-      accuracy: ratio(pc, pc + pw), attemptRate: ratio(pc + pw, prevA.questionIds.length) ?? 0,
-      solveSec: timed ? ps.reduce((x, s) => x + s.timeMs, 0) / 1000 : null,
-      subjects: new Map(ps.map((s) => [s.code, s.correct - cfg.negativeMark * s.wrong])),
+      id: prevA.id, title: row.title, net200: row.net200, accuracy: row.accuracy, attemptRate: row.attemptRate, utilization: row.utilization,
+      subjects: new Map(ps.map((s) => [s.code, { pct: ((s.correct - cfg.negativeMark * s.wrong) / s.total) * 100, n: s.total }])),
     };
   }
 
@@ -412,25 +497,28 @@ export async function getExamReport(db: Db, userId: string, attemptId: string) {
   const byNetPct = [...subjectsWithLine].sort((x, y) => x.netPct - y.netPct);
   const weakest = byNetPct[0];
   const strongest = byNetPct.at(-1);
+  if (total !== FULL_MARKS) insights.push(`${total} প্রশ্নের পরীক্ষায় নেট ${f1(net)} — ২০০-এর অনুপাতে ${f1(net200)}।`);
   if (strongest && strongest !== weakest) insights.push(`সবচেয়ে ভালো ${strongest.name}: ${strongest.total}টির ${strongest.correct}টি সঠিক, নেট ${f1(strongest.net)}।`);
-  if (weakest) {
+  if (weakest && byNetPct.length > 1) {
     insights.push(`সবচেয়ে দুর্বল ${weakest.name}: নেট ${f1(weakest.net)}/${weakest.total} (Accuracy ${weakest.accuracy == null ? "—" : f1(weakest.accuracy) + "%"})।`);
     actions.push({ weakness: `${weakest.name}-এ নেট ${f1(weakest.net)}/${weakest.total}`, action: `${weakest.name}-এর ভুল প্রশ্নগুলো ভুলের ভান্ডার থেকে অনুশীলন করুন; পরের পরীক্ষার আগে এই বিষয়ের অন্তত একটি পূর্ণ সেট দিন।` });
+  } else if (weakest && weakest.status !== "strong") {
+    actions.push({ weakness: `${weakest.name}-এ নেট ${f1(weakest.net)}/${weakest.total}`, action: `${weakest.name}-এর ভুল প্রশ্নগুলো ব্যাখ্যাসহ আবার পড়ুন এবং Revision-এ অনুশীলন করুন।` });
   }
   const totalLost = cfg.negativeMark * wrong;
   const mostLost = [...subjectsWithLine].sort((x, y) => y.lost - x.lost)[0];
-  if (wrong > 0) insights.push(`${wrong}টি ভুলে মোট ${f1(totalLost)} নম্বর কাটা গেছে${mostLost && mostLost.lost > 0 ? `, সবচেয়ে বেশি ${mostLost.name}-এ (${f1(mostLost.lost)})` : ""}।`);
+  if (wrong > 0) insights.push(`${wrong}টি ভুলে মোট ${f1(totalLost)} নম্বর ${negativeInExam ? "কাটা গেছে" : "কাটা যেত বাস্তব Preliminary-তে"}${mostLost && mostLost.lost > 0 && subjectsWithLine.length > 1 ? `, সবচেয়ে বেশি ${mostLost.name}-এ (${f1(mostLost.lost)})` : ""}।`);
   if (accuracy != null && accuracy < cfg.bench.accLow && mostLost && mostLost !== weakest)
     actions.push({ weakness: `Accuracy ${f1(accuracy)}% — ${mostLost.name}-এ ${mostLost.wrong}টি ভুল`, action: `${mostLost.name}-এ নিশ্চিত না হলে উত্তর দেবেন না; অন্তত দুটি অপশন বাদ দিতে পারলে তবেই Guess করুন।` });
   const lowAttempt = [...subjectsWithLine].filter((s) => s.attemptRate != null && s.attemptRate < cfg.bench.attemptLow).sort((x, y) => (x.attemptRate ?? 0) - (y.attemptRate ?? 0))[0];
   if (lowAttempt) {
     insights.push(`${lowAttempt.name}-এ ${lowAttempt.unanswered}টি প্রশ্ন অনুত্তরিত (Attempt ${f1(lowAttempt.attemptRate!)}%)।`);
-    actions.push({ weakness: `${lowAttempt.name}-এ Attempt ${f1(lowAttempt.attemptRate!)}%`, action: `${lowAttempt.name}-এর মূল টপিকগুলো Level ২ থেকে আবার Revision করুন, যাতে আরও প্রশ্নে আত্মবিশ্বাসের সঙ্গে উত্তর দিতে পারেন।` });
+    actions.push({ weakness: `${lowAttempt.name}-এ Attempt ${f1(lowAttempt.attemptRate!)}%`, action: `${lowAttempt.name}-এর মূল টপিকগুলো আবার Revision করুন, যাতে আরও প্রশ্নে আত্মবিশ্বাসের সঙ্গে উত্তর দিতে পারেন।` });
   }
   if (hasTime && time.utilization != null) {
     if (time.utilization > 100) {
-      insights.push(`প্রশ্ন সমাধানে ${f1(solveSec! / 60)} মিনিট লেগেছে — বরাদ্দ ${cfg.solveMin} মিনিটের চেয়ে বেশি।`);
-      actions.push({ weakness: `সমাধানে ${f1(solveSec! / 60)} মিনিট (বরাদ্দ ${cfg.solveMin})`, action: `প্রতি প্রশ্নে ${f1(budgetSecPerQ)} সেকেন্ডের সীমা মেনে অনুশীলন করুন; আটকে গেলে চিহ্ন দিয়ে পরের প্রশ্নে যান।` });
+      insights.push(`প্রশ্ন সমাধানে ${f1(solveSec! / 60)} মিনিট লেগেছে — ${total}টি প্রশ্নে বরাদ্দ ${f1(solveBudgetMin)} মিনিটের চেয়ে বেশি।`);
+      actions.push({ weakness: `সমাধানে ${f1(solveSec! / 60)} মিনিট (বরাদ্দ ${f1(solveBudgetMin)})`, action: `প্রতি প্রশ্নে ${f1(budgetSecPerQ)} সেকেন্ডের সীমা মেনে অনুশীলন করুন; আটকে গেলে চিহ্ন দিয়ে পরের প্রশ্নে যান।` });
     } else if (slowestSubject && slowestSubject.avgSec! > budgetSecPerQ * 1.3) {
       insights.push(`${slowestSubject.name}-এ প্রশ্নপ্রতি গড়ে ${f1(slowestSubject.avgSec!)} সেকেন্ড — বরাদ্দ ${f1(budgetSecPerQ)} সেকেন্ডের চেয়ে অনেক বেশি।`);
     }
@@ -445,16 +533,19 @@ export async function getExamReport(db: Db, userId: string, attemptId: string) {
     if (guessing.net < 0) actions.push({ weakness: `Guess থেকে নিট ${f1(guessing.net)} নম্বর`, action: "দুটি অপশন নিশ্চিতভাবে বাদ দিতে না পারলে Guess করবেন না।" });
   }
   if (previous) {
-    const d = net - previous.net;
-    insights.push(`আগের পরীক্ষার (${previous.title}) তুলনায় নেট ${d >= 0 ? "+" : ""}${f1(d)} — এটি একটি পরীক্ষার পার্থক্য, প্রবণতা নয়।`);
+    const d = net200 - previous.net200;
+    insights.push(`আগের ${KIND_TITLE[a.kind] ?? "পরীক্ষা"}-এর তুলনায় ২০০-এর অনুপাতে নেট ${d >= 0 ? "+" : ""}${f1(d)} — এটি একটি পরীক্ষার পার্থক্য, প্রবণতা নয়।`);
   }
 
   return {
     id: attemptId,
-    title: a.task?.titleBn ?? "Model Test",
+    title: attemptTitle(a),
+    kind: a.kind,
+    kindLabel: KIND_TITLE[a.kind] ?? a.kind,
+    level: levelOf(a),
     date: a.submittedAt.toISOString(),
     cfg,
-    snapshot: { total, correct, wrong, unanswered, attempted, net, accuracy, attemptRate, deduction: cfg.negativeMark * wrong },
+    snapshot: { total, correct, wrong, unanswered, attempted, net, net200, scaled: total !== FULL_MARKS, negativeInExam, small, accuracy, attemptRate, deduction: cfg.negativeMark * wrong },
     diagnosis: { ...diagnosis, detail: bn(diagnosis.detail) },
     subjects: subjectsWithLine,
     time,
@@ -464,21 +555,18 @@ export async function getExamReport(db: Db, userId: string, attemptId: string) {
     insights: insights.slice(0, 5).map(bn),
     actions: actions.slice(0, 5).map((x) => ({ weakness: bn(x.weakness), action: bn(x.action) })),
     previous: previous && {
-      ...previous,
-      subjects: undefined,
-      deltaNet: net - previous.net,
+      id: previous.id, title: previous.title,
+      deltaNet200: net200 - previous.net200,
       deltaAccuracy: accuracy != null && previous.accuracy != null ? accuracy - previous.accuracy : null,
       deltaAttempt: attemptRate - previous.attemptRate,
-      deltaSolveMin: solveSec != null && previous.solveSec != null ? (solveSec - previous.solveSec) / 60 : null,
-      subjectDelta: subjectsWithLine.map((s) => ({ code: s.code, name: s.name, delta: previous!.subjects.has(s.code) ? s.net - previous!.subjects.get(s.code)! : null })),
+      deltaUtilization: time.utilization != null && previous.utilization != null ? time.utilization - previous.utilization : null,
+      /** বিষয়ভিত্তিক নেট % (প্রশ্নসংখ্যা আলাদা হলেও তুলনীয়) */
+      // বিষয়ভিত্তিক নেট % — দুই পরীক্ষাতেই বিষয়টিতে অন্তত MIN_SUBJECT_Q টি প্রশ্ন থাকলে তবেই (নইলে ছোট নমুনায় ±১০০% দোলে)
+      subjectDelta: subjectsWithLine.map((s) => {
+        const p = previous!.subjects.get(s.code);
+        return { code: s.code, name: s.name, delta: p && p.n >= MIN_SUBJECT_Q && s.total >= MIN_SUBJECT_Q ? s.netPct - p.pct : null };
+      }),
     },
   };
 }
 export type ExamReport = Awaited<ReturnType<typeof getExamReport>>;
-
-/** dashboard-এ সর্বশেষ সম্পন্ন Model Test-এর id (লিংকের জন্য)। */
-export async function latestCompletedExamId(db: Db, userId: string) {
-  const a = await db.testAttempt.findFirst({ where: { userId, kind: "MODEL_TEST", submittedAt: { not: null }, netScore: { not: null } }, orderBy: { submittedAt: "desc" }, select: { id: true } });
-  return a?.id ?? null;
-}
-

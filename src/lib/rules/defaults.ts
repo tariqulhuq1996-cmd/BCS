@@ -81,6 +81,7 @@ export const DEFAULT_RULES: Record<string, { value: RuleValue; noteBn: string }>
   "analysis.omr_minutes": { value: 15, noteBn: "OMR পূরণের বরাদ্দ সময় (মিনিট) — কোনো সমাধান-সময়ের হিসাবে যোগ হয় না" },
   "analysis.min_exams_trend": { value: 4, noteBn: "উন্নতি/অবনতি বলার আগে ন্যূনতম কতটি সম্পন্ন পরীক্ষা লাগবে" },
   "analysis.min_exams_consistency": { value: 3, noteBn: "স্থিতিশীলতা মাপতে ন্যূনতম কতটি সম্পন্ন পরীক্ষা লাগবে" },
+  "analysis.small_exam_questions": { value: 20, noteBn: "এর চেয়ে কম প্রশ্নের পরীক্ষাকে \"ছোট পরীক্ষা\" চিহ্নিত করা হয় — ২০০-এর অনুপাতে রূপান্তরিত নম্বর সেখানে কম নির্ভরযোগ্য" },
   "analysis.benchmarks": {
     value: { strongNet: 150, goodNet: 125, accHigh: 80, accLow: 65, attemptHigh: 90, attemptLow: 75, stableSd: 5, unstableSd: 10 },
     noteBn: "রোগনির্ণয়ের মানদণ্ড: নেট নম্বর (strongNet/goodNet), Accuracy % (accHigh/accLow), Attempt % (attemptHigh/attemptLow), স্থিতিশীলতার আদর্শ বিচ্যুতি (stableSd/unstableSd)",

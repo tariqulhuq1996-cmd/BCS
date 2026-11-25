@@ -3,7 +3,7 @@
  * রোগনির্ণয়, প্রবণতার ন্যূনতম পরীক্ষা, বিষয়ের অবস্থা, সময় নষ্ট হওয়া প্রশ্নের ভিত্তি।
  *   npx tsx scripts/test-performance.ts
  */
-import { diagnose, findTimeWasters, splitTrend, subjectStatus, type Benchmarks } from "../src/lib/exam/performance";
+import { diagnose, findTimeWasters, levelOf, parseScope, splitTrend, splitTrendWeighted, subjectStatus, toFull, type Benchmarks } from "../src/lib/exam/performance";
 
 let fails = 0;
 const check = (name: string, cond: boolean, info: unknown = "") => {
@@ -53,6 +53,22 @@ check("কঠিনতা অজানা হলে বিষয়ের গড
 check("সময় রেকর্ড না থাকা প্রশ্ন বাদ", !w.some((x) => x.no === 4));
 const noHist = findTimeWasters([{ no: 1, text: "", subject: "গণিত", code: "MA", difficulty: "HARD", sec: 120, status: "wrong" }], { byDiff: new Map(), bySubj: new Map() }, 31.5);
 check("ইতিহাস না থাকলে বরাদ্দ সময় ভিত্তি", noHist[0]?.baselineSource === "budget", noHist);
+
+// ── ২০০-এর অনুপাত
+check("৫০ প্রশ্নে ৩৮ নেট → ১৫২/২০০", toFull(38, 50) === 152);
+check("২০০ প্রশ্নে নম্বর অপরিবর্তিত", toFull(141.5, 200) === 141.5);
+check("২০ প্রশ্নে ১৫ নেট → ১৫০/২০০", toFull(15, 20) === 150);
+check("প্রশ্ন না থাকলে ০ (ভাগে শূন্য নয়)", toFull(5, 0) === 0);
+const wt = splitTrendWeighted([{ num: 1, den: 2 }, { num: 1, den: 2 }, { num: 18, den: 20 }, { num: 2, den: 20 }], 4);
+check("ভারযুক্ত প্রবণতা: প্রশ্নসংখ্যার ভারে (৫০% → ৫০%)", wt != null && Math.abs(wt.before - 50) < 1e-9 && Math.abs(wt.recent - 50) < 1e-9, wt);
+
+// ── কোন পরীক্ষা কোন Level-এর
+check("L1 কাজের Mastery → Level ১", levelOf({ kind: "MASTERY", task: { kind: "L1_EXAM" } }) === "1");
+check("L2 উপবিষয়ের Revision → Level ২", levelOf({ kind: "REVISION", task: { kind: "L2_SUBTOPIC" } }) === "2");
+check("শুরুর মূল্যায়ন → ধাপ ০", levelOf({ kind: "DIAGNOSTIC", task: { kind: "L0_DIAGNOSTIC" } }) === "0" && levelOf({ kind: "DIAGNOSTIC", task: null }) === "0");
+check("কাজ ছাড়া Model Test → Level ৩", levelOf({ kind: "MODEL_TEST", task: null }) === "3");
+check("দৈনিক Revision → অন্যান্য", levelOf({ kind: "SRS_REVIEW", task: null }) === "other");
+check("অজানা level মান → সব", parseScope("x") === "all" && parseScope("2") === "2");
 
 console.log(fails ? `\n${fails}টি ব্যর্থ` : "\nসব পাস");
 process.exitCode = fails ? 1 : 0;

@@ -53,20 +53,32 @@ async function Content({ params }: { params: Promise<{ attemptId: string }> }) {
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
           <h1 className="text-[28px] font-extrabold sm:text-[36px]" style={{ fontStretch: "110%" }}>পরীক্ষা-পরবর্তী বিশ্লেষণ</h1>
-          <p className="mt-1 text-ink-2">{r.title} · জমা {bnDate(r.date)}</p>
+          <p className="mt-1 text-ink-2">{r.title} · {bn(s.total)}টি প্রশ্ন · জমা {bnDate(r.date)}</p>
         </div>
         <Link href={`/result/${r.id}`} className="rounded-lg border-2 border-green px-4 py-2 font-semibold text-green hover:bg-green-wash">প্রশ্নভিত্তিক উত্তর ও ব্যাখ্যা</Link>
       </div>
 
       {/* ── Snapshot */}
       <section aria-label="ফলাফলের সারাংশ" className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-        <Kpi label="প্রাপ্ত নম্বর (নেট)" value={<>{bnNum(s.net, 1)}<span className="text-base font-semibold text-muted">/{bn(s.total)}</span></>} sub={`ভুলে কাটা −${bnNum(s.deduction, 1)}`} tone="green" />
+        <Kpi
+          label={s.scaled ? "নেট নম্বর (২০০-এর অনুপাতে)" : "প্রাপ্ত নম্বর (নেট)"}
+          value={<>{bnNum(s.net200, 1)}<span className="text-base font-semibold text-muted">/২০০</span></>}
+          sub={`${s.scaled ? `আসল ${bnNum(s.net, 1)}/${bn(s.total)} · ` : ""}ভুলে ${s.negativeInExam ? "কাটা" : "কাটা যেত"} −${bnNum(s.deduction, 1)}`}
+          tone="green"
+        />
         <Kpi label="✓ সঠিক" value={bn(s.correct)} />
         <Kpi label="✗ ভুল" value={bn(s.wrong)} tone={s.wrong ? "danger" : undefined} />
         <Kpi label="– উত্তর নয়" value={bn(s.unanswered)} />
         <Kpi label="Accuracy" value={fmt(s.accuracy, 1, "%")} sub="সঠিক ÷ উত্তর দেওয়া" />
         <Kpi label="Attempt" value={`${bnNum(s.attemptRate, 1)}%`} sub="উত্তর দেওয়া ÷ মোট" />
       </section>
+      {(s.scaled || !s.negativeInExam) && (
+        <p className="mt-3 text-sm text-muted">
+          {s.scaled && `${bn(s.total)} প্রশ্নের পরীক্ষা, তাই নম্বর ও বরাদ্দ সময় ২০০ প্রশ্নের অনুপাতে রূপান্তরিত (নেট × ২০০ ÷ ${bn(s.total)})। `}
+          {!s.negativeInExam && `এই পরীক্ষায় আসলে নম্বর কাটে না; বাস্তব Preliminary-র সঙ্গে তুলনার জন্য প্রতি ভুলে ${bn(String(r.cfg.negativeMark))} ধরে হিসাব করা হয়েছে। `}
+          {s.small && <b className="text-ink-2">! মাত্র {bn(s.total)}টি প্রশ্ন — অনুপাতিক নম্বর ও মূল্যায়ন কম নির্ভরযোগ্য।</b>}
+        </p>
+      )}
 
       {/* ── রোগনির্ণয় + সময় */}
       <div className="mt-5 grid gap-5 lg:grid-cols-2">
@@ -74,17 +86,17 @@ async function Content({ params }: { params: Promise<{ attemptId: string }> }) {
           <h2 id="diag-h" className="text-sm font-semibold text-ink-2">সার্বিক মূল্যায়ন</h2>
           <p className="mt-1 flex items-center gap-2 text-2xl font-extrabold"><span aria-hidden="true">{DIAG_ICON[r.diagnosis.key]}</span>{r.diagnosis.label}</p>
           <p className="mt-2 text-[15px] leading-relaxed">{r.diagnosis.detail}</p>
-          <p className="mt-2 text-xs text-ink-2">মানদণ্ড (অ্যাডমিন বদলাতে পারেন): ভালো নেট {bn(r.cfg.bench.goodNet)}+, শক্তিশালী {bn(r.cfg.bench.strongNet)}+; Accuracy {bn(r.cfg.bench.accLow)}–{bn(r.cfg.bench.accHigh)}%; Attempt {bn(r.cfg.bench.attemptLow)}–{bn(r.cfg.bench.attemptHigh)}%।</p>
+          <p className="mt-2 text-xs text-ink-2">মানদণ্ড (অ্যাডমিন বদলাতে পারেন; নেট ২০০-এর অনুপাতে): ভালো নেট {bn(r.cfg.bench.goodNet)}+, শক্তিশালী {bn(r.cfg.bench.strongNet)}+; Accuracy {bn(r.cfg.bench.accLow)}–{bn(r.cfg.bench.accHigh)}%; Attempt {bn(r.cfg.bench.attemptLow)}–{bn(r.cfg.bench.attemptHigh)}%।</p>
         </section>
 
         <Card id="time-h" title="সময় ব্যবস্থাপনা">
           {t.hasTime ? (
             <>
               <div className="flex flex-wrap items-baseline justify-between gap-2 text-[15px]">
-                <span>প্রশ্ন সমাধান: <b className="tabular">{mmss(t.solveSec!)}</b> / {bn(t.solveMin)} মিনিট</span>
-                <span className="text-ink-2">OMR: {bn(t.omrMin)} মিনিট (আলাদা)</span>
+                <span>প্রশ্ন সমাধান: <b className="tabular">{mmss(t.solveSec!)}</b> / {fmt(t.solveMin, t.scaled ? 1 : 0)} মিনিট{t.scaled && <span className="text-sm text-muted"> ({bn(t.total)} প্রশ্নে বরাদ্দ)</span>}</span>
+                <span className="text-ink-2">OMR: {fmt(t.omrMin, t.scaled ? 1 : 0)} মিনিট (আলাদা)</span>
               </div>
-              <div className="mt-2"><Meter thick pct={t.utilization} tone={t.utilization! > 100 ? "danger" : "green"} label="বরাদ্দ সমাধান-সময়ের ব্যবহার" valueText={`${fmt(t.utilization, 0, "%")} — ${mmss(t.solveSec!)} / ${bn(t.solveMin)} মিনিট`} /></div>
+              <div className="mt-2"><Meter thick pct={t.utilization} tone={t.utilization! > 100 ? "danger" : "green"} label="বরাদ্দ সমাধান-সময়ের ব্যবহার" valueText={`${fmt(t.utilization, 0, "%")} — ${mmss(t.solveSec!)} / ${fmt(t.solveMin, 1)} মিনিট`} /></div>
               <table className="mt-3 w-full text-[15px] tabular">
                 <tbody className="divide-y divide-line">
                   <tr><th scope="row" className="py-1.5 pr-3 text-left font-normal text-ink-2">সময়ের ব্যবহার</th><td className={`py-1.5 text-right font-semibold ${t.utilization! > 100 ? "text-danger" : ""}`}>{t.utilization! > 100 ? "! " : ""}{fmt(t.utilization, 0, "%")}</td></tr>
@@ -121,7 +133,10 @@ async function Content({ params }: { params: Promise<{ attemptId: string }> }) {
               {r.subjects.map((x) => (
                 <tr key={x.code} className="align-top">
                   <th scope="row" className="py-2 pr-3 text-left font-normal">{x.name}</th>
-                  <td className="py-2 pr-3 text-right font-semibold">{bnNum(x.net, 1)}<span className="font-normal text-muted">/{bn(x.total)}</span></td>
+                  <td className="py-2 pr-3 text-right font-semibold">
+                    {bnNum(x.net, 1)}<span className="font-normal text-muted">/{bn(x.total)}</span>
+                    {s.scaled && x.netFull != null && <span className="block text-xs font-normal text-muted">≈ {bnNum(x.netFull, 1)}/{bn(x.fullMarks!)} মানবণ্টনে</span>}
+                  </td>
                   <td className="py-2 pr-3">
                     <div className="flex items-center gap-2 pt-1">
                       <div className="flex-1"><Meter pct={x.accuracy} label={`${x.name}: Accuracy`} valueText={fmt(x.accuracy, 1, "%")} tone={x.status === "weak" ? "danger" : x.status === "ok" ? "omr" : "green"} /></div>
@@ -217,13 +232,13 @@ async function Content({ params }: { params: Promise<{ attemptId: string }> }) {
 
       {/* ── আগের পরীক্ষার সঙ্গে তুলনা */}
       {r.previous ? (
-        <Card id="prev-h" title="আগের পরীক্ষার সঙ্গে তুলনা" className="mt-5" aside={<Link href={`/performance/${r.previous.id}`} className="text-sm font-semibold text-green underline-offset-4 hover:underline">{r.previous.title}</Link>}>
+        <Card id="prev-h" title={`আগের ${r.kindLabel}-এর সঙ্গে তুলনা`} className="mt-5" aside={<Link href={`/performance/${r.previous.id}`} className="text-sm font-semibold text-green underline-offset-4 hover:underline">{r.previous.title}</Link>}>
           <dl className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {[
-              { k: "নেট নম্বর", v: signed(r.previous.deltaNet), up: r.previous.deltaNet >= 0 },
+              { k: "নেট (২০০-এ)", v: signed(r.previous.deltaNet200), up: r.previous.deltaNet200 >= 0 },
               { k: "Accuracy", v: r.previous.deltaAccuracy == null ? "—" : `${signed(r.previous.deltaAccuracy)}%`, up: (r.previous.deltaAccuracy ?? 0) >= 0 },
               { k: "Attempt", v: `${signed(r.previous.deltaAttempt)}%`, up: null },
-              { k: "সমাধান-সময়", v: r.previous.deltaSolveMin == null ? "—" : `${signed(r.previous.deltaSolveMin)} মি.`, up: null },
+              { k: "সময়ের ব্যবহার", v: r.previous.deltaUtilization == null ? "—" : `${signed(r.previous.deltaUtilization, 0)}%`, up: null },
             ].map((x) => (
               <div key={x.k} className="rounded-lg bg-paper px-3 py-2">
                 <dt className="text-sm text-muted">{x.k}</dt>
@@ -232,12 +247,14 @@ async function Content({ params }: { params: Promise<{ attemptId: string }> }) {
             ))}
           </dl>
           <p className="mt-3 text-sm text-ink-2">
-            বিষয়ভিত্তিক নেটের পার্থক্য: {r.previous.subjectDelta.filter((x) => x.delta != null).map((x) => `${x.name} ${signed(x.delta!)}`).join(" · ")}
+            {r.previous.subjectDelta.some((x) => x.delta != null)
+              ? <>বিষয়ভিত্তিক নেট-হারের পার্থক্য (%): {r.previous.subjectDelta.filter((x) => x.delta != null).map((x) => `${x.name} ${signed(x.delta!)}`).join(" · ")}</>
+              : "বিষয়ভিত্তিক তুলনা দেখানো হচ্ছে না — কোনো বিষয়ে দুই পরীক্ষাতেই অন্তত ৫টি প্রশ্ন নেই।"}
           </p>
           <p className="mt-2 text-xs text-muted">এটি শুধু দুটি পরীক্ষার পার্থক্য — উন্নতির প্রবণতা নয়। প্রবণতা দেখুন <Link href="/performance" className="text-green underline">Performance Dashboard</Link>-এ।</p>
         </Card>
       ) : (
-        <p className="mt-5 text-sm text-muted">এটি আপনার প্রথম সম্পন্ন Model Test — তুলনার জন্য আগের পরীক্ষা নেই।</p>
+        <p className="mt-5 text-sm text-muted">এটি আপনার প্রথম সম্পন্ন {r.kindLabel} — একই ধরনের আগের পরীক্ষা নেই, তাই তুলনা দেখানো হচ্ছে না।</p>
       )}
     </>
   );

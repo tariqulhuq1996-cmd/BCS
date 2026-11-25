@@ -2,12 +2,12 @@
  * শুধু স্থানীয় ডেভেলপমেন্টের জন্য: একটি পরীক্ষামূলক শিক্ষার্থী-অ্যাকাউন্টে কয়েকটি সম্পূর্ণ Model Test (২০০ প্রশ্ন) তৈরি করে,
  * যাতে Performance Dashboard (/performance) ও পরীক্ষা-পরবর্তী বিশ্লেষণ ব্রাউজারে যাচাই করা যায়।
  *
- *   npx tsx scripts/seed-dev-mock-exams.ts            (১২টি পরীক্ষা)
+ *   npx tsx scripts/seed-dev-mock-exams.ts            (১২টি Model Test + একটি ৫০ প্রশ্নের শুরুর মূল্যায়ন + ৩টি ২০ প্রশ্নের ভুলের অনুশীলন)
  *   npx tsx scripts/seed-dev-mock-exams.ts --exams 5
  *
  * - উত্তর ও সময় একটি নির্ধারিত (seed-যুক্ত) সিমুলেশন থেকে আসে; গ্রেডিং ও নেট নম্বর হয় আসল ইঞ্জিনে
  *   (saveAnswer → addTime → submitAttempt), তাই হিসাবগুলো বাস্তব পথেই তৈরি।
- * - বারবার চালালে আগের সিমুলেটেড পরীক্ষা মুছে নতুন করে তৈরি হয় (শুধু এই অ্যাকাউন্টের)।
+ * - বারবার চালালে এই অ্যাকাউন্টের আগের সব পরীক্ষা মুছে নতুন করে তৈরি হয় (শুধু এই অ্যাকাউন্টের)।
  * - localhost/127.0.0.1 ছাড়া অন্য ডেটাবেসে চলে না।
  */
 import { PrismaClient } from "@prisma/client";
@@ -42,7 +42,7 @@ async function main() {
     update: { passwordHash, disabled: false },
     create: { email: EMAIL, passwordHash, role: "STUDENT", profile: { create: { name: "বিশ্লেষণ পরীক্ষার্থী" } } },
   });
-  const old = await db.testAttempt.findMany({ where: { userId: user.id, kind: "MODEL_TEST" }, select: { id: true } });
+  const old = await db.testAttempt.findMany({ where: { userId: user.id }, select: { id: true } });
   await db.testAttempt.deleteMany({ where: { id: { in: old.map((o) => o.id) } } });
   await db.questionStat.deleteMany({ where: { userId: user.id } });
 
@@ -61,19 +61,27 @@ async function main() {
   const skill: Record<string, number> = { BN: 0.72, EN: 0.6, BD: 0.82, IA: 0.76, GE: 0.7, SC: 0.74, IT: 0.73, MA: 0.58, MN: 0.66, ET: 0.8 };
   const baseSec: Record<string, number> = { BN: 22, EN: 28, BD: 20, IA: 21, GE: 24, SC: 25, IT: 23, MA: 62, MN: 48, ET: 19 };
   const diffK = { EASY: { p: 0.12, t: 0.8 }, MEDIUM: { p: 0, t: 1 }, HARD: { p: -0.18, t: 1.35 } } as const;
-  const day0 = Date.now() - (N * 4 + 1) * 864e5;
+  const day0 = Date.now() - (N * 4 + 8) * 864e5;
 
-  for (let e = 0; e < N; e++) {
+  // শুরুতে ৫০ প্রশ্নের শুরুর মূল্যায়ন, প্রতি ৪টি Model Test-এর পর ২০ প্রশ্নের ভুলের অনুশীলন — বিভিন্ন আকারের পরীক্ষা (২০০-এর অনুপাত যাচাই)
+  const plan: { kind: "MODEL_TEST" | "DIAGNOSTIC" | "MISTAKE_PRACTICE"; size: number }[] = [{ kind: "DIAGNOSTIC", size: 50 }];
+  for (let k = 0; k < N; k++) {
+    plan.push({ kind: "MODEL_TEST", size: 200 });
+    if (k % 4 === 3) plan.push({ kind: "MISTAKE_PRACTICE", size: 20 });
+  }
+  for (let e = 0; e < plan.length; e++) {
+    const spec = plan[e];
     const r = rng(1000 + e);
-    const growth = e * 0.012; // ধীরে উন্নতি
+    const growth = e * 0.01; // ধীরে উন্নতি
     const qs: typeof pool = [];
     for (const [code, m] of Object.entries(MARKS)) {
       const list = [...(bySubj.get(code) ?? [])];
-      for (let i = 0; i < m && list.length; i++) qs.push(list.splice(Math.floor(r() * list.length), 1)[0]);
+      const want = Math.max(1, Math.round((m * spec.size) / 200));
+      for (let i = 0; i < want && list.length; i++) qs.push(list.splice(Math.floor(r() * list.length), 1)[0]);
     }
     const ids = qs.map((q) => q.id);
     const a = await db.testAttempt.create({
-      data: { userId: user.id, kind: "MODEL_TEST", questionIds: ids, optionPerms: Object.fromEntries(ids.map((id) => [id, [0, 1, 2, 3]])), deadlineAt: new Date(Date.now() + 2 * 3600e3) },
+      data: { userId: user.id, kind: spec.kind, questionIds: ids, optionPerms: Object.fromEntries(ids.map((id) => [id, [0, 1, 2, 3]])), deadlineAt: new Date(Date.now() + 2 * 3600e3) },
     });
     let totalMs = 0;
     for (const q of qs) {
@@ -105,11 +113,11 @@ async function main() {
       await addTime(db, user.id, a.id, q.id, ms);
     }
     await submitAttempt(db, user.id, a.id);
-    const startedAt = new Date(day0 + e * 4 * 864e5 + 10 * 3600e3);
+    const startedAt = new Date(day0 + e * 3 * 864e5 + 10 * 3600e3);
     const submittedAt = new Date(startedAt.getTime() + totalMs + 4 * 60e3);
-    await db.testAttempt.update({ where: { id: a.id }, data: { startedAt, submittedAt, deadlineAt: new Date(startedAt.getTime() + 120 * 60e3) } });
+    await db.testAttempt.update({ where: { id: a.id }, data: { startedAt, submittedAt, deadlineAt: new Date(startedAt.getTime() + spec.size * 36e3) } });
     const done = await db.testAttempt.findUniqueOrThrow({ where: { id: a.id }, select: { correct: true, wrong: true, netScore: true } });
-    console.log(`পরীক্ষা ${e + 1}: সঠিক ${done.correct}, ভুল ${done.wrong}, নেট ${done.netScore}, সমাধান ${(totalMs / 60e3).toFixed(1)} মি.`);
+    console.log(`${spec.kind} ${spec.size}: সঠিক ${done.correct}, ভুল ${done.wrong}, নেট ${done.netScore}, সমাধান ${(totalMs / 60e3).toFixed(1)} মি.`);
   }
   console.log(`\nঅ্যাকাউন্ট: ${EMAIL} (পাসওয়ার্ড data/dev-test-accounts.example.json-এ)`);
 }
