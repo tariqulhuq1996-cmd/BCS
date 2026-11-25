@@ -15,5 +15,11 @@
     "email": "journey.student@bcs52.test",
     "password": "Jr-521d36ab0339",
     "note": "নতুন শিক্ষার্থী (ধাপ ০ থেকে) — যাত্রা পরীক্ষার জন্য"
+  },
+  "analyticsStudent": {
+    "name": "বিশ্লেষণ পরীক্ষার্থী",
+    "email": "analytics.demo@bcs52.test",
+    "password": "Analytics-Demo-2026",
+    "note": "scripts/seed-dev-mock-exams.ts চালালে তৈরি হয়; সিমুলেটেড Model Test দিয়ে /performance যাচাইয়ের জন্য"
   }
 }

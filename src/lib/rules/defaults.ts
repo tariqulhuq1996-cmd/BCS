@@ -75,6 +75,16 @@ export const DEFAULT_RULES: Record<string, { value: RuleValue; noteBn: string }>
     value: { "1": [50, 40, 10], "2": [30, 50, 20], "3": [20, 45, 35] },
     noteBn: "স্তরভেদে সহজ/মাঝারি/কঠিন (%)",
   },
+  // ── পরীক্ষা-বিশ্লেষণ (Performance Dashboard ও পরীক্ষা-পরবর্তী বিশ্লেষণ; src/lib/exam/performance.ts)
+  "analysis.target_net": { value: 160, noteBn: "Performance Dashboard-এর লক্ষ্য নেট নম্বর (২০০-এর মধ্যে); ০ = লক্ষ্য নেই, তখন শুধু প্রবণতা দেখায়" },
+  "analysis.solve_minutes": { value: 105, noteBn: "২০০ প্রশ্নের পরীক্ষায় প্রশ্ন সমাধানের বরাদ্দ সময় (মিনিট) — OMR পূরণের সময় বাদে" },
+  "analysis.omr_minutes": { value: 15, noteBn: "OMR পূরণের বরাদ্দ সময় (মিনিট) — কোনো সমাধান-সময়ের হিসাবে যোগ হয় না" },
+  "analysis.min_exams_trend": { value: 4, noteBn: "উন্নতি/অবনতি বলার আগে ন্যূনতম কতটি সম্পন্ন পরীক্ষা লাগবে" },
+  "analysis.min_exams_consistency": { value: 3, noteBn: "স্থিতিশীলতা মাপতে ন্যূনতম কতটি সম্পন্ন পরীক্ষা লাগবে" },
+  "analysis.benchmarks": {
+    value: { strongNet: 150, goodNet: 125, accHigh: 80, accLow: 65, attemptHigh: 90, attemptLow: 75, stableSd: 5, unstableSd: 10 },
+    noteBn: "রোগনির্ণয়ের মানদণ্ড: নেট নম্বর (strongNet/goodNet), Accuracy % (accHigh/accLow), Attempt % (attemptHigh/attemptLow), স্থিতিশীলতার আদর্শ বিচ্যুতি (stableSd/unstableSd)",
+  },
   "exam.marks_distribution": {
     value: { BN: 30, EN: 30, BD: 25, IA: 25, GE: 10, SC: 15, IT: 15, MA: 20, MN: 15, ET: 15 },
     noteBn: "২০০ নম্বরের বিষয়ভিত্তিক মানবণ্টন (৫১তম থেকে; পিএসসি প্রজ্ঞাপনের সঙ্গে মিলিয়ে নিন)",

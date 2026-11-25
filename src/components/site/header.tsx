@@ -93,6 +93,7 @@ async function TopBar() {
   const right: MenuItem[] = [
     ...(user.role === "ADMIN" ? [{ href: "/admin", label: "অ্যাডমিন প্যানেল", icon: "admin", tone: "omr" } satisfies MenuItem] : []),
     { href: "/readiness-report", label: "প্রস্তুতি রিপোর্ট", icon: "report", tone: "green" },
+    { href: "/performance", label: "Performance Dashboard", icon: "report", tone: "plain" },
     { href: "/revision", label: "Revision", icon: "revision", tone: "plain" },
     { href: "/#roadmap", label: "Roadmap", icon: "roadmap", tone: "plain" },
   ];

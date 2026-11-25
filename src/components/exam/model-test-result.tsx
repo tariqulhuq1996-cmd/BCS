@@ -32,6 +32,9 @@ export async function ModelTestResult({ attemptId, userId, r }: { attemptId: str
           {an.prev && <span className={`ml-2 font-semibold ${an.net >= an.prev.net ? "text-green" : "text-danger"}`}>(আগের টেস্টের তুলনায় {signed(an.net - an.prev.net)})</span>}
         </p>
       </div>
+      <p className="mt-3">
+        <Link href={`/performance/${attemptId}`} className="font-semibold text-green underline underline-offset-4">এই পরীক্ষার বিস্তারিত বিশ্লেষণ (সময়, Guessing, করণীয়)</Link>
+      </p>
       {rank && (
         <p className="mt-2 text-[15px] text-ink-2">
           এই টেস্টে যারা দিয়েছেন ({bn(rank.peers)} জন, প্রত্যেকের প্রথম চেষ্টা), তাদের মধ্যে আপনি <span className="font-semibold text-ink">শীর্ষ {bn(rank.top)}%</span>-এ। কারো নাম দেখানো হয় না।

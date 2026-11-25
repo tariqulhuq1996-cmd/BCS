@@ -16,6 +16,7 @@ const SUITES = [
   ["Level ১", "test-level1.ts"],
   ["Level ২ ও Revision", "test-level2.ts"],
   ["Level ৩", "test-level3.ts"],
+  ["পরীক্ষা-বিশ্লেষণ (Performance)", "test-performance.ts"],
   ["অ্যাডমিন", "test-admin.ts"],
   ["নিরাপত্তা ও একযোগে অনুরোধ", "test-security.ts"],
   ["Current Affairs", "test-current-affairs.ts"],

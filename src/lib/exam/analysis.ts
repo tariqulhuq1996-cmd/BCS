@@ -8,13 +8,17 @@ import { ExamError } from "./service";
 
 type Db = PrismaClient;
 
-async function perSubject(db: Db, attemptIds: string[]) {
-  const rows = await db.$queryRaw<{ attemptId: string; code: string; name: string; ord: number; total: number; correct: number; wrong: number; timeMs: number }[]>`
+/** প্রতিটি পরীক্ষা × বিষয়: মোট, সঠিক, ভুল, সময় (মিলিসেকেন্ড), কতটি উত্তরে সময় মাপা হয়েছে (timed) ও উত্তর দেওয়া প্রশ্নে সময় (attemptedMs)। */
+export async function perSubject(db: Db, attemptIds: string[]) {
+  if (!attemptIds.length) return [];
+  const rows = await db.$queryRaw<{ attemptId: string; code: string; name: string; ord: number; total: number; correct: number; wrong: number; timeMs: number; timed: number; attemptedMs: number }[]>`
     select aa.attemptId, sj.code, sj.nameBn as name, sj.order as ord,
       count(*) as total,
       sum(case when aa.isCorrect then 1 else 0 end) as correct,
       sum(case when aa.selected is not null and not aa.isCorrect then 1 else 0 end) as wrong,
-      coalesce(sum(aa.timeMs), 0) as timeMs
+      coalesce(sum(aa.timeMs), 0) as timeMs,
+      sum(case when aa.timeMs > 0 then 1 else 0 end) as timed,
+      coalesce(sum(case when aa.selected is not null then aa.timeMs else 0 end), 0) as attemptedMs
     from AttemptAnswer aa join Question q on q.id = aa.questionId
     join Subtopic st on st.id = q.subtopicId join Topic tp on tp.id = st.topicId join Subject sj on sj.id = tp.subjectId
     where aa.attemptId in (${Prisma.join(attemptIds)})

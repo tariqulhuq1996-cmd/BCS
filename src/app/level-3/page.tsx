@@ -61,7 +61,7 @@ async function Content() {
         <p className="mt-6 rounded-lg border border-dashed border-line-strong px-4 py-3 text-ink-2">Level ৩ তালাবন্ধ। {LOCKED_MESSAGE} Level ১ ও Level ২ সম্পন্ন হলে খুলবে।</p>
       )}
       {done > 0 && (
-        <p className="mt-6"><Link href="/readiness-report" className="font-semibold text-green underline underline-offset-4">আপনার প্রস্তুতির প্রতিবেদন দেখুন</Link></p>
+        <p className="mt-6 flex flex-wrap gap-x-6 gap-y-2"><Link href="/performance" className="font-semibold text-green underline underline-offset-4">Performance Dashboard</Link><Link href="/readiness-report" className="font-semibold text-green underline underline-offset-4">আপনার প্রস্তুতির প্রতিবেদন দেখুন</Link></p>
       )}
 
       {TIER.map((t) => {
