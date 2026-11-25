@@ -9,6 +9,7 @@ import { startRevisionAction, startStepAction } from "@/lib/exam/actions";
 import { taskHref } from "@/lib/progress/dashboard";
 import { bn, bnNum } from "@/lib/bn";
 import { ResultBody } from "@/components/exam/result-body";
+import { tryExamReport } from "@/lib/exam/performance";
 import { ModelTestResult } from "@/components/exam/model-test-result";
 import { LevelComplete } from "@/components/exam/level-complete";
 import { BackLink } from "@/components/site/back-link";
@@ -124,15 +125,12 @@ async function Content({ params }: { params: Promise<{ attemptId: string }> }) {
           )}
         </p>
       </div>
-      <p className="mt-3">
-        <Link href={`/performance/${attemptId}`} className="font-semibold text-green underline underline-offset-4">এই পরীক্ষার বিস্তারিত বিশ্লেষণ (২০০-এর অনুপাতে নম্বর, সময়, করণীয়)</Link>
-      </p>
       {levelDone && <LevelComplete userId={user.id} levelId={task!.levelId} />}
       <div className="mt-6 rounded-xl border-2 border-green bg-surface p-5 sm:p-6">
         <p className="text-lg leading-relaxed">{headline}</p>
         <div className="mt-4">{next}</div>
       </div>
-      <ResultBody r={r} />
+      <ResultBody r={r} analysis={await tryExamReport(prisma, user.id, attemptId)} />
     </>
   );
 }

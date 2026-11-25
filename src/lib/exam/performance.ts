@@ -570,3 +570,13 @@ export async function getExamReport(db: Db, userId: string, attemptId: string) {
   };
 }
 export type ExamReport = Awaited<ReturnType<typeof getExamReport>>;
+
+/** ফলাফল-পাতার জন্য: বিশ্লেষণ তৈরি না গেলে (যেমন প্রশ্নহীন পরীক্ষা) null — পাতা তখন আগের Performance Report দেখায়। */
+export async function tryExamReport(db: Db, userId: string, attemptId: string): Promise<ExamReport | null> {
+  try {
+    return await getExamReport(db, userId, attemptId);
+  } catch (e) {
+    if (e instanceof ExamError) return null;
+    throw e;
+  }
+}

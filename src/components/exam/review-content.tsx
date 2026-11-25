@@ -5,6 +5,7 @@ import { getResultView } from "@/lib/exam/service";
 import { acknowledgeReviewAction } from "@/lib/exam/actions";
 import { bn, bnNum } from "@/lib/bn";
 import { ResultBody } from "./result-body";
+import { tryExamReport } from "@/lib/exam/performance";
 import { LockedNotice } from "@/components/portal/step-page";
 import { BackLink } from "@/components/site/back-link";
 
@@ -34,7 +35,7 @@ export async function ReviewContent({ taskKey, path }: { taskKey: string; path: 
           <button className="mt-4 rounded-lg bg-green px-5 py-3 font-semibold text-white hover:bg-green-strong dark:text-paper">পর্যালোচনা শেষ, Revision-এ যান</button>
         </form>
       )}
-      <ResultBody r={r} />
+      <ResultBody r={r} analysis={solved.length === 1 ? await tryExamReport(prisma, user.id, solved[0].id) : null} />
     </>
   );
 }
