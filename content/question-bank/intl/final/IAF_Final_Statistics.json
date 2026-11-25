@@ -1,0 +1,50 @@
+{
+  "total": 1500,
+  "accepted": 1500,
+  "target": 1500,
+  "byPriority": {
+    "A": 288,
+    "B": 251,
+    "C": 647,
+    "D": 314
+  },
+  "byDifficulty": {
+    "Medium": 729,
+    "Hard": 729,
+    "Easy": 42
+  },
+  "answerPosition": {
+    "A": 383,
+    "B": 375,
+    "C": 373,
+    "D": 369
+  },
+  "bySubtopic": {
+    "IA.SN.ANC": 171,
+    "IA.SN.UNO": 117,
+    "IA.SN.UNA": 97,
+    "IA.SN.ARF": 97,
+    "IA.SN.OTH": 57,
+    "IA.DS.ARN": 83,
+    "IA.DS.SMK": 70,
+    "IA.DS.NET": 57,
+    "IA.DS.DIB": 57,
+    "IA.IT.SNG": 70,
+    "IA.DS.RAJ": 50,
+    "IA.CH.CHK": 89,
+    "IA.IT.PRA": 84,
+    "IA.PR.KHL": 37,
+    "IA.IT.MDE": 50,
+    "IA.SA.AST": 55,
+    "IA.IT.SNY": 64,
+    "IA.DS.UPN": 23,
+    "IA.PR.SKT": 44,
+    "IA.IT.BPL": 37,
+    "IA.PR.NOB": 24,
+    "IA.CH.SML": 17,
+    "IA.IT.WW1": 23,
+    "IA.IT.WW2": 17,
+    "IA.PR.OTH": 10
+  },
+  "targetMismatch": []
+}

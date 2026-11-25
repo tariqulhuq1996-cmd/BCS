@@ -44,7 +44,8 @@ async function main() {
     const hasBank = new Set((await db.question.groupBy({ by: ["subtopicId"], where: { kind: "TOPIC", status: "PUBLISHED" } })).map((g) => g.subtopicId));
     const free = phaseA.filter((t) => !hasBank.has(t.subtopicId!));
     const subA = free[0];
-    const subB = free.find((t) => t.subtopic!.topic.subjectId !== subA.subtopic!.topic.subjectId)!;
+    // ভিন্ন বিষয়ের ফাঁকা উপবিষয় না থাকলে (প্রশ্নব্যাংক বসে গেলে) একই বিষয়ের পরের ফাঁকা উপবিষয়
+    const subB = free.find((t) => t.subtopic!.topic.subjectId !== subA.subtopic!.topic.subjectId) ?? free[1];
     const codeA = subA.subtopic!.code, codeB = subB.subtopic!.code;
 
     // ── Import
