@@ -1,0 +1,46 @@
+{
+  "total": 800,
+  "accepted": 800,
+  "target": 800,
+  "byPriority": {
+    "B": 333,
+    "C": 275,
+    "D": 192
+  },
+  "byDifficulty": {
+    "Medium": 388,
+    "Hard": 405,
+    "Easy": 7
+  },
+  "answerPosition": {
+    "B": 201,
+    "C": 199,
+    "D": 197,
+    "A": 203
+  },
+  "bySubtopic": {
+    "SC.PH.ADH": 59,
+    "SC.PH.BID": 42,
+    "SC.CH.JOU": 59,
+    "SC.PH.BAL": 45,
+    "SC.BI.ROG": 76,
+    "SC.BI.MAN": 52,
+    "SC.BI.PUS": 52,
+    "SC.CH.PRM": 34,
+    "SC.BI.UDB": 34,
+    "SC.CH.BKN": 34,
+    "SC.AS.MHK": 35,
+    "SC.PH.SHB": 24,
+    "SC.PR.ABS": 31,
+    "SC.AS.SOR": 31,
+    "SC.BI.KOS": 34,
+    "SC.CH.JBR": 31,
+    "SC.PH.ALO": 24,
+    "SC.PR.PRJ": 31,
+    "SC.PH.PDR": 17,
+    "SC.BI.PRN": 24,
+    "SC.PH.TAP": 21,
+    "SC.PH.EKK": 10
+  },
+  "targetMismatch": []
+}
