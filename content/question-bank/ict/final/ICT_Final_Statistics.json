@@ -1,0 +1,43 @@
+{
+  "total": 800,
+  "accepted": 800,
+  "target": 800,
+  "byPriority": {
+    "A": 237,
+    "B": 393,
+    "C": 70,
+    "D": 100
+  },
+  "byDifficulty": {
+    "Medium": 296,
+    "Hard": 495,
+    "Easy": 9
+  },
+  "answerPosition": {
+    "A": 203,
+    "B": 200,
+    "C": 199,
+    "D": 198
+  },
+  "bySubtopic": {
+    "IT.NT.INT": 113,
+    "IT.NT.TEL": 71,
+    "IT.NS.SNG": 53,
+    "IT.EM.NEW": 59,
+    "IT.NT.NET": 45,
+    "IT.HW.CPU": 46,
+    "IT.SW.OPS": 63,
+    "IT.SW.PRG": 40,
+    "IT.HW.IOD": 46,
+    "IT.SC.SEC": 51,
+    "IT.HW.MEM": 43,
+    "IT.DB.DBS": 34,
+    "IT.NS.LOG": 36,
+    "IT.GN.ABR": 26,
+    "IT.SW.GEN": 23,
+    "IT.HW.ITH": 20,
+    "IT.SW.APP": 17,
+    "IT.BD.EGV": 14
+  },
+  "targetMismatch": []
+}

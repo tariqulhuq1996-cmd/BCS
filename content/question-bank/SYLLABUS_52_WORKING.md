@@ -120,24 +120,27 @@ Level 2-এর প্রতিটি নতুন বিষয় যোগ ক�
 
 উৎস: BCS_General_Science.docx (লেকচার ০১–১২; লেকচার ১৩ প্রাকৃতিক ভূগোল বলে বাদ) এবং মাধ্যমিক-উচ্চমাধ্যমিক পদার্থ, রসায়ন ও জীববিজ্ঞান পাঠ্যবই, NASA, WHO, এনসাইক্লোপিডিয়া ব্রিটানিকা। বিগত বিসিএসের SC.* প্রশ্ন ও লেকচারের MCQ-এর সঙ্গে মিল যাচাই করা হয়েছে (বিগতের সঙ্গে সর্বোচ্চ মিল ০.৪৫-এর নিচে, লেকচারের সঙ্গে ০.৬২-এর নিচে; simcheck ০.৮-এ ফ্ল্যাগ ০)। নাম পরিবর্তন নিয়ে অনিশ্চয়তা থাকায় বাংলাদেশের প্রথম যোগাযোগ উপগ্রহ ও কর্ণফুলী টানেলের প্রশ্নে স্থাপনার নাম ব্যবহার করা হয়নি।
 
-## ৭. কম্পিউটার ও তথ্যপ্রযুক্তি (১৫)
+## ৭. কম্পিউটার ও তথ্যপ্রযুক্তি (১৫) — প্রশ্নব্যাংক ৮০০ (level2_targets.csv বণ্টন), Level 2-এ যোগ হয়েছে
 
-| সিলেবাস | নম্বর | উপবিষয় | অবস্থা |
-|---|---|---|---|
-| Peripherals, Architecture (CPU, Hard disk, ALU), Performance | কম্পিউটার ১০ | IT.HW.IOD, CPU, MEM | ✅ |
-| Computer in Practical Fields, Embedded Computer | | — | ⚠️ আলাদা নেই (IT.HW.ITH/IT.EM.NEW-এ রাখতে হবে) |
-| Number Systems, OS, History, Types | | IT.NS.SNG, SW.OPS, HW.ITH | ✅ |
-| Computer Program: Virus, Firewall | | IT.SC.SEC, SW.GEN | ✅ |
-| Database System | | IT.DB.DBS | ✅ |
-| E-Commerce | তথ্যপ্রযুক্তি ৫ | — | ⚠️ আলাদা নেই |
-| Cellular Data Network (2G/3G/4G, WiMAX), Smartphone, Mobile Features | | IT.NT.TEL | ✅ |
-| Computer Network (LAN, MAN, Wi-Fi), Client-Server | | IT.NT.NET | ✅ |
-| WWW, Internet, E-mail, Fax, Social Networking | | IT.NT.INT | ✅ |
-| Tech-Giants Services & News (Google, Microsoft, IBM) | | — | ⚠️ আলাদা নেই |
-| Cloud Computing, Robotics | | IT.EM.NEW | ✅ |
-| Cyber Crime | | IT.SC.SEC | ✅ |
+| সিলেবাস (৫০তম) | নম্বর | উপবিষয় | প্রশ্ন | অবস্থা |
+|---|---|---|---|---|
+| Peripherals, Architecture (CPU, Hard disk, ALU), Performance | কম্পিউটার ১০ | IT.HW.IOD (৪৬), CPU (৪৬), MEM (৪৩) | ১৩৫ | ✅ |
+| Computer in Practical Fields, Embedded Computer | | IT.HW.CPU, ITH-এর ভেতরে | — | ✅ (এমবেডেড কম্পিউটার, মাইক্রোকন্ট্রোলার, SoC, হাইব্রিড কম্পিউটারের প্রয়োগ); আলাদা উপবিষয় নেই |
+| Number Systems, OS, History, Types | | IT.NS.SNG (৫৩), SW.OPS (৬৩), HW.ITH (২০) | ১৩৬ | ✅ |
+| Computer Program: Virus, Firewall | | IT.SW.GEN (২৩) (+ ভাইরাস-ফায়ারওয়াল SC.SEC-এ) | ২৩ | ✅ |
+| Database System | | IT.DB.DBS | ৩৪ | ✅ |
+| E-Commerce | তথ্যপ্রযুক্তি ৫ | IT.NT.INT-এর ভেতরে | — | ✅ (B2B/B2C/C2C, ক্যাশ অন ডেলিভারি, মোবাইল আর্থিক সেবা); আলাদা উপবিষয় নেই |
+| Cellular Data Network (2G/3G/4G, WiMAX), Smartphone, Mobile Features | | IT.NT.TEL | ৭১ | ✅ (৪জি ২০১৮, ৫জি ২০২১, এমএনপি, ই-সিম, ফ্যাক্স) |
+| Computer Network (LAN, MAN, Wi-Fi), Client-Server | | IT.NT.NET | ৪৫ | ✅ |
+| WWW, Internet, E-mail, Fax, Social Networking | | IT.NT.INT | ১১৩ | ✅ |
+| Tech-Giants Services & News (Google, Microsoft, IBM) | | IT.NT.INT-এর ভেতরে | — | ✅ (গুগল, মাইক্রোসফট, আইবিএম, অ্যাপল, অ্যামাজন, মেটা, এক্স, অধিগ্রহণ); আলাদা উপবিষয় নেই |
+| Cloud Computing, Robotics | | IT.EM.NEW | ৫৯ | ✅ (এআই, নোবেল ২০২৪, আইওটি, ব্লকচেইন, কোয়ান্টাম) |
+| Cyber Crime | | IT.SC.SEC | ৫১ | ✅ (রিজার্ভ চুরি ২০১৬, আইসিটি আইন ২০০৬, সাইবার নিরাপত্তা আইন ২০২৩) |
+| ➕ লজিক গেট, প্রোগ্রামিং, অ্যাপ্লিকেশন সফটওয়্যার, সংক্ষিপ্ত রূপ, ডিজিটাল বাংলাদেশ | — | IT.NS.LOG (৩৬), SW.PRG (৪০), SW.APP (১৭), GN.ABR (২৬), BD.EGV (১৪) | ১৩৩ | ➕ সিলেবাসে নামে নেই, তবে বিগত প্রশ্নে নিয়মিত |
 
-➕ সিলেবাসে নামে নেই: বুলিয়ান অ্যালজেবরা ও লজিক গেট (IT.NS.LOG, ৩৬), প্রোগ্রামিং ভাষা (IT.SW.PRG, ৪০) — বিগত প্রশ্নে আসে।
+নম্বরের অনুপাত: সিলেবাসে কম্পিউটার অংশ ১০ (৬৭%) ও তথ্যপ্রযুক্তি অংশ ৫ (৩৩%)। ব্যাংকে কম্পিউটার অংশ ৪১% (৩২৮), তথ্যপ্রযুক্তি অংশ ৪২% (৩৩৯), ➕ ১৭% (১৩৩)। বণ্টন level2_targets.csv (বিগত প্রশ্নের ঘনত্ব) অনুযায়ী; তথ্যপ্রযুক্তি অংশ সিলেবাসের নম্বরের তুলনায় বেশি। আগের ⚠️ তিনটি ফাঁক (এমবেডেড কম্পিউটার, ই-কমার্স, টেক জায়ান্ট) এখন সংশ্লিষ্ট উপবিষয়ের ভেতরে প্রশ্ন দিয়ে পূরণ করা হয়েছে।
+
+উৎস: BCS_ICT.docx (লেকচার ০১–০৫) এবং উচ্চমাধ্যমিক আইসিটি পাঠ্যবই, IEEE/ITU মানদণ্ড, সংশ্লিষ্ট প্রতিষ্ঠানের অফিশিয়াল ডকুমেন্টেশন, বাংলাদেশ সরকারের আইসিটি নীতি ও আইন। বিগত বিসিএসের IT.* প্রশ্ন ও লেকচারের MCQ-এর সঙ্গে মিল যাচাই করা হয়েছে (বিগতের সঙ্গে সর্বোচ্চ মিল ০.৪৫-এর নিচে, লেকচারের সঙ্গে ০.৬২-এর নিচে; simcheck ০.৮-এ ফ্ল্যাগ ০)। নাম পরিবর্তনের অনিশ্চয়তায় জাতীয় ডেটা সেন্টার ও হাই-টেক পার্কের প্রশ্নে স্থাপনার নাম ব্যবহার করা হয়নি।
 
 ## ৮. গাণিতিক যুক্তি (২০) — প্রশ্নব্যাংক ১০০০ + সম্পূরক ৯০ = ১০৯০, Level 2-এ যোগ হয়েছে
 

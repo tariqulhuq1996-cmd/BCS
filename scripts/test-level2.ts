@@ -37,12 +37,23 @@ async function main() {
   const batches: number[] = [];
   const u = await db.user.create({ data: { email: `${tag}@exam.test`, passwordHash: "x" } });
   const admin = await db.user.create({ data: { email: `${tag}-a@exam.test`, passwordHash: "x", role: "ADMIN" } });
+  const hidden: string[] = []; // সাময়িকভাবে DRAFT করা প্রশ্নব্যাংকের প্রশ্ন — শেষে আবার PUBLISHED
   try {
     // ── দুটি Priority A উপবিষয়, ভিন্ন বিষয় থেকে
     const phaseA = await db.learningTask.findMany({ where: { kind: "L2_SUBTOPIC", phase: 1 }, include: { subtopic: { include: { topic: true } } }, orderBy: { order: "asc" } });
     // তৈরি প্রশ্নব্যাংক বসানো উপবিষয় বাদ — পরীক্ষার হিসাব (৩০টি প্রশ্ন ইত্যাদি) ফাঁকা উপবিষয় ধরে
     const hasBank = new Set((await db.question.groupBy({ by: ["subtopicId"], where: { kind: "TOPIC", status: "PUBLISHED" } })).map((g) => g.subtopicId));
-    const free = phaseA.filter((t) => !hasBank.has(t.subtopicId!));
+    let free = phaseA.filter((t) => !hasBank.has(t.subtopicId!));
+    if (free.length < 3) {
+      // সব Priority A উপবিষয়ে প্রশ্নব্যাংক বসে গেলে: তিনটি উপবিষয়ের প্রশ্ন সাময়িকভাবে DRAFT করে ফাঁকা বানানো
+      const first = phaseA[0];
+      const second = phaseA.find((t) => t !== first && t.subtopic!.topic.subjectId !== first.subtopic!.topic.subjectId) ?? phaseA[1];
+      const third = phaseA.find((t) => t !== first && t !== second)!;
+      free = [first, second, third];
+      const qs = await db.question.findMany({ where: { subtopicId: { in: free.map((t) => t.subtopicId!) }, kind: "TOPIC", status: "PUBLISHED" }, select: { id: true } });
+      hidden.push(...qs.map((q) => q.id));
+      await db.question.updateMany({ where: { id: { in: hidden } }, data: { status: "DRAFT" } });
+    }
     const subA = free[0];
     // ভিন্ন বিষয়ের ফাঁকা উপবিষয় না থাকলে (প্রশ্নব্যাংক বসে গেলে) একই বিষয়ের পরের ফাঁকা উপবিষয়
     const subB = free.find((t) => t.subtopic!.topic.subjectId !== subA.subtopic!.topic.subjectId) ?? free[1];
@@ -154,6 +165,7 @@ async function main() {
     // ── সময়
     check("বাংলাদেশ সময়ে দিনের শুরু", dhakaDayStart(new Date("2026-11-10T20:00:00Z")).toISOString() === "2026-11-10T18:00:00.000Z");
   } finally {
+    if (hidden.length) await db.question.updateMany({ where: { id: { in: hidden } }, data: { status: "PUBLISHED" } });
     await db.auditLog.deleteMany({ where: { actorId: admin.id } });
     await db.user.deleteMany({ where: { email: { startsWith: tag } } });
     await db.question.deleteMany({ where: { importBatchId: { in: batches } } });
